@@ -17,6 +17,7 @@
 \newcommand{\bkdag}{\hat{b}^\dagger_{\mathbf{k}_\perp}}
 \newcommand{\bmk}{\hat{b}_{-\mathbf{k}_\perp}}
 \newcommand{\bmkdag}{\hat{b}^\dagger_{-\mathbf{k}_\perp}}
+\newcommand{\Vintra}{\dfrac{4\pi e^2}{L^3q^2\epsilon_{sc}}}
 
 \graphicspath{{./}{./fig/}{./chap1/fig/}}
 
@@ -211,7 +212,7 @@ In these kind of samples, excitonic resonances can only be observed at cryogenic
 Another important exciton characteristic is their huge Bohr Radius $a_X= \frac{\epsilon_r \hbar^2}{m_X e^2}= 11.6 \ \mathrm{nm}$ in GaAs which  is much larger then the typical size of a unit crystalline cell $a_0 = 5.65 \SI{1}{\angstrom}$. This means that the exciton wavefunction is delocalized over many unit cells. Such excitons, are called Wannier-Mott and constrast with Frenkel excitons which are localized on a single unit cell and are typically found in organic materials.
  \bigskip\noindent
 
-\subsection{A few words about exciton scattering}
+\subsection{Electron scattering in semiconductors}
 As excitons are made of an electron and a hole bound by Coulombic interactions they undergo dipolar interactions.
  Since these interactions are precisely what will latter turn microcavity photons into an interacting quantum fluid, let us have a few words about the main scattering processes that can occur among the different electrons in the semiconductor. 
 \bigskip
@@ -295,16 +296,40 @@ By summing the contributions of processes with all possible numbers of bubbles, 
 
 \begin{equation}
     V_q = \dfrac{4\pi e^2}{L^3q^2\epsilon_{sc}}
+    \label{eq:effective_potential_intraband_scattering}
 \end{equation}
 
-where $\epsilon_{sc}$ is a dielectric constant mainly stemming from the infinite sum over the number of bubbles.
+where $\epsilon_{sc}$ is a dielectric constant stemming from the infinite sum over the number of bubbles. The discussion that we just made also holds for the intraband scattering between two conduction band electrons or two valence band electrons.
+Indeed, it graphically boils down two change the letter of the bands in the Feynman diagrams of \autoref{fig:intra_bubbles} which doesn't change the overall energy budget of the process. Consequently, the potential \eqref{eq:effective_potential_intraband_scattering} is valid for all intraband scattering processes.
+Based on the previous discussion we restrict the Coulomb potential that describe any scattering process to interactions that conserve the number of particle in each band, namely the intraband scattering potential between conduction and valence band electrons derived above.
+The general form of the potential is then in second quantization :
+\begin{equation}
+    V_{coul}\simeq \dfrac{1}{2}\sum_{\textbf{q}\neq 0}\Vintra\sum_{\mathbf{k_{1}, k_{2}}}\sum_{\mathrm{i_1,i_2}} a^{\dagger}_{\mathrm{i_{1}},\mathbf{k_1+q}}a^{\dagger}_{\mathrm{i_{2}},\mathbf{k_2-q}}a_{\mathrm{i_{2}},\mathbf{k_2}}a_{\mathrm{i_{1}},\mathbf{k_1}}
+\end{equation}
 
+\noindent where $\mathrm{i_1,i_2} \in (c,v)$. The creation operators $a^{\dagger}_{c,\mathbf{k}}$ and $a^{\dagger}_{v,\mathbf{k}}$ create respectively a conduction and a valence band electron with momentum $\mathbf{k}$.
+The $\textbf{q}=0$ contribution is not included and treated separately by the wise choice of an average electron-electron potential $V_{e-e}$ that cancels it. More details can be found in the Appendix of \cite{Combescot_cooper_excitons_2015}.
+It is worth noting that, in the conduction-valence electron framework, all intraband interactions are identical and repulsive. However, as we will see in the next section, transitioning to the electron-hole description transforms one of these scattering interactions into an attractive interaction.
+ This transformation is central to the energy splitting between two types of excitons: bright excitons, which couple to light, and dark excitons, which do not.
 
+\subsection{From the conduction-valence electrons to electron-hole picture}
 
+So far we described the scattering processs within the semiconductor using valence and conduction electrons. However, the exciton results form the binding between a conduction band electron and the absence of a valence band electron that we usually describe as a hole.
+While the conduction electron description stays the same, moving from one picture to the other require to define the hole creation operator that account for the removal of a valence band electron or equivalently the creation of a hole in the valence band.
 
+\begin{equation}
+    a^{\dagger}_{c,\mathbf{k}} = a_{\mathbf{k}}, \\
+    a_{v,\mathbf{k}} = b^{\dagger}_{\mathbf{-k}},
+    \label{eq:hole_creation_operator}
+\end{equation}
 
+\noindent where $b^{\dagger}_{\mathbf{-k}}$ creates a hole in the valence band with momentum $-\mathbf{k}$. The - sign 
+is imposed by energy and momentum conservation laws. When we substitute the full valence band with a missing electron with momentum $\mathbf{k_v}$ by a hole, the hole needs to have opposite charge $+|e|$, momentum $\mathbf{k_h}=-\mathbf{k_v}$ and energy $E_h = - E_v$ to account for the "absence" of the valence band electron. 
+Since in the small momentum limit we have $E_v = E_{v_0}+ \hbar^2 k_v^2/2m_v$ with $m_v$ the valence electron effective mass that is negative as visible in \autoref{fig:Direct_gap_disp}.
+If we drop the $k=0$ offset we obtain $E_h = -E_v =  - \hbar^2 k_h^2/2m_v$ making the effective mass of the hole positive. Its charge and mass being positive it can has attractive interactions 
+with a conduction band electron and eventually form an exciton.
 
-\noindent\textbf{Exciton-photon interaction :} Experimentally excitons appears as narrow lines in the absorption spectrum of the material as excitons are bound states that are very well coupled to photons. 
+\subsection{Exciton-photon interaction :} Experimentally excitons appears as narrow lines in the absorption spectrum of the material as excitons are bound states that are very well coupled to photons. 
 The interaction at stake when a photon is absorbed by the material an thus mediating the creation of an exciton can be described by a simple electron-photon Hamiltonian which in the electric dipole approximation reads :
 
 \begin{equation}

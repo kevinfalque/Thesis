@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.7)  14 JAN 2025 15:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.7)  14 JAN 2025 19:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1373,7 +1373,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./appendices/SU.pdf, id=55, 400.18558pt x 169.0315pt>
+<./appendices/SU.pdf, id=63, 400.18558pt x 169.0315pt>
 File: ./appendices/SU.pdf Graphic file (type pdf)
 <use ./appendices/SU.pdf>
 Package pdftex.def Info: ./appendices/SU.pdf  used on input line 150.
@@ -1422,7 +1422,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `qhv' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<logo_lkb.pdf, id=56, 300.89021pt x 108.7357pt>
+<logo_lkb.pdf, id=64, 300.89021pt x 108.7357pt>
 File: logo_lkb.pdf Graphic file (type pdf)
 <use logo_lkb.pdf>
 Package pdftex.def Info: logo_lkb.pdf  used on input line 150.
@@ -1463,10 +1463,10 @@ Overfull \hbox (7.00812pt too wide) in paragraph at lines 150--150
 
 ] [2]
 Chapter 1.
-<chap1/fig/cavity_geometry.pdf, id=128, 317.96495pt x 135.27115pt>
+<chap1/fig/cavity_geometry.pdf, id=140, 317.96495pt x 135.27115pt>
 File: chap1/fig/cavity_geometry.pdf Graphic file (type pdf)
 <use chap1/fig/cavity_geometry.pdf>
-Package pdftex.def Info: chap1/fig/cavity_geometry.pdf  used on input line 45.
+Package pdftex.def Info: chap1/fig/cavity_geometry.pdf  used on input line 46.
 (pdftex.def)             Requested size: 317.96416pt x 135.2708pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1474,10 +1474,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [3
 
 ]
-<chap1/fig/DBR.pdf, id=134, 542.03818pt x 203.9165pt>
+<chap1/fig/DBR.pdf, id=146, 542.03818pt x 203.9165pt>
 File: chap1/fig/DBR.pdf Graphic file (type pdf)
 <use chap1/fig/DBR.pdf>
-Package pdftex.def Info: chap1/fig/DBR.pdf  used on input line 74.
+Package pdftex.def Info: chap1/fig/DBR.pdf  used on input line 75.
 (pdftex.def)             Requested size: 542.03685pt x 203.916pt.
 
 
@@ -1487,15 +1487,15 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 2150) has occurred while \output is active []
 
  [5{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <./chap1/fig/DBR.pdf>] [6] [7]
-<chap1/fig/band_theory.pdf, id=584, 381.54683pt x 204.98853pt>
+<chap1/fig/band_theory.pdf, id=596, 381.54683pt x 204.98853pt>
 File: chap1/fig/band_theory.pdf Graphic file (type pdf)
 <use chap1/fig/band_theory.pdf>
-Package pdftex.def Info: chap1/fig/band_theory.pdf  used on input line 177.
+Package pdftex.def Info: chap1/fig/band_theory.pdf  used on input line 178.
 (pdftex.def)             Requested size: 381.5459pt x 204.988pt.
-<chap1/fig/DirectGapDisp.png, id=587, 795.9336pt x 569.0058pt>
+<chap1/fig/DirectGapDisp.png, id=599, 795.9336pt x 569.0058pt>
 File: chap1/fig/DirectGapDisp.png Graphic file (type png)
 <use chap1/fig/DirectGapDisp.png>
-Package pdftex.def Info: chap1/fig/DirectGapDisp.png  used on input line 190.
+Package pdftex.def Info: chap1/fig/DirectGapDisp.png  used on input line 191.
 (pdftex.def)             Requested size: 795.93166pt x 569.00441pt.
 
 
@@ -1513,26 +1513,26 @@ Package siunitx Warning: Unit macro \angstrom has been deprecated in this
 (siunitx)                \DeclareSIUnit\angstrom{\text {Å}}
 
 [9 <./chap1/fig/DirectGapDisp.png>]
-<chap1/fig/intra-inter-band-processes.pdf, id=610, 691.8701pt x 182.04956pt>
+<chap1/fig/intra-inter-band-processes.pdf, id=622, 691.8701pt x 182.04956pt>
 File: chap1/fig/intra-inter-band-processes.pdf Graphic file (type pdf)
 <use chap1/fig/intra-inter-band-processes.pdf>
-Package pdftex.def Info: chap1/fig/intra-inter-band-processes.pdf  used on input line 221.
+Package pdftex.def Info: chap1/fig/intra-inter-band-processes.pdf  used on input line 222.
 (pdftex.def)             Requested size: 691.86841pt x 182.0491pt.
  [10 <./chap1/fig/intra-inter-band-processes.pdf>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 272.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 273.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [11{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-<chap1/fig/intra_band_dressed_bubbles.pdf, id=637, 497.17336pt x 229.39989pt>
+<chap1/fig/intra_band_dressed_bubbles.pdf, id=649, 497.17336pt x 229.39989pt>
 File: chap1/fig/intra_band_dressed_bubbles.pdf Graphic file (type pdf)
 <use chap1/fig/intra_band_dressed_bubbles.pdf>
-Package pdftex.def Info: chap1/fig/intra_band_dressed_bubbles.pdf  used on input line 285.
+Package pdftex.def Info: chap1/fig/intra_band_dressed_bubbles.pdf  used on input line 286.
 (pdftex.def)             Requested size: 497.17213pt x 229.39932pt.
- [12 <./chap1/fig/intra_band_dressed_bubbles.pdf>]) [13] [14
+ [12 <./chap1/fig/intra_band_dressed_bubbles.pdf>] [13]) [14] [15
 
 
 
-] [15] [16] (./mythesis.bbl (./mythesis.brf)
+] [16] (./mythesis.bbl (./mythesis.brf)
 \tf@brf=\write7
 \openout7 = `mythesis.brf'.
 
@@ -1595,23 +1595,23 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `mythesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7E8EF9FB61E9CD32F0B71D5D6203457B;2269.
+(rerunfilecheck)             Checksum: 3523AF7A0E98C8A386833885E84079DC;2932.
 Package rerunfilecheck Info: File `mythesis.brf' has not changed.
-(rerunfilecheck)             Checksum: AA00F1CC19F99DC6B153C83713B5CB79;355.
+(rerunfilecheck)             Checksum: 53E02D34AC5E625C7255F2CCE341E901;426.
  ) 
 Here is how much of TeX's memory you used:
- 31960 strings out of 474116
- 610818 string characters out of 5743689
+ 31978 strings out of 474116
+ 611085 string characters out of 5743689
  1944187 words of memory out of 5000000
- 53401 multiletter control sequences out of 15000+600000
- 709812 words of font info for 271 fonts, out of 8000000 for 9000
+ 53406 multiletter control sequences out of 15000+600000
+ 710153 words of font info for 275 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,13n,145p,1334b,1122s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmb10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbo10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsco10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmib7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb>
-Output written on mythesis.pdf (26 pages, 686426 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmb10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbo10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsco10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmib7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb>
+Output written on mythesis.pdf (26 pages, 750543 bytes).
 PDF statistics:
- 849 PDF objects out of 1000 (max. 8388607)
- 612 compressed objects within 7 object streams
- 66 named destinations out of 1000 (max. 500000)
- 88213 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 885 PDF objects out of 1000 (max. 8388607)
+ 642 compressed objects within 7 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 88229 words of extra memory for PDF output out of 89155 (max. 10000000)
 
