@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.7)  14 JAN 2025 15:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.7)  14 JAN 2025 15:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1528,11 +1528,7 @@ File: chap1/fig/intra_band_dressed_bubbles.pdf Graphic file (type pdf)
 <use chap1/fig/intra_band_dressed_bubbles.pdf>
 Package pdftex.def Info: chap1/fig/intra_band_dressed_bubbles.pdf  used on input line 285.
 (pdftex.def)             Requested size: 497.17213pt x 229.39932pt.
- [12 <./chap1/fig/intra_band_dressed_bubbles.pdf>]
-
-LaTeX Warning: Reference `fig:inter_band_bubbles' on page 13 undefined on input line 307.
-
-) [13] [14
+ [12 <./chap1/fig/intra_band_dressed_bubbles.pdf>]) [13] [14
 
 
 
@@ -1598,25 +1594,21 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `mythesis.out' has not changed.
 (rerunfilecheck)             Checksum: 7E8EF9FB61E9CD32F0B71D5D6203457B;2269.
 Package rerunfilecheck Info: File `mythesis.brf' has not changed.
 (rerunfilecheck)             Checksum: AA00F1CC19F99DC6B153C83713B5CB79;355.
  ) 
 Here is how much of TeX's memory you used:
- 31961 strings out of 474116
- 610842 string characters out of 5743689
+ 31960 strings out of 474116
+ 610818 string characters out of 5743689
  1944187 words of memory out of 5000000
- 53402 multiletter control sequences out of 15000+600000
+ 53401 multiletter control sequences out of 15000+600000
  709812 words of font info for 271 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,13n,145p,1334b,1122s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmb10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbo10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsco10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmib7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb>
-Output written on mythesis.pdf (26 pages, 686767 bytes).
+Output written on mythesis.pdf (26 pages, 686426 bytes).
 PDF statistics:
  849 PDF objects out of 1000 (max. 8388607)
  612 compressed objects within 7 object streams

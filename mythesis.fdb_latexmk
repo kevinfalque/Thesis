@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex mythesis"] 1736863991.89171 "mythesis.aux" "mythesis.bbl" "mythesis" 1736864045.60235 0
+["bibtex mythesis"] 1736863991.89171 "mythesis.aux" "mythesis.bbl" "mythesis" 1736865739.00697 0
   "./Quantum_optics_lkb.bib" 1736850013.27854 555248 56f2f4a11ee400002e5381a7aebfd5e4 ""
   "./assets/thfrnatay-href.bst" 1736850013.29054 34376 e3bc349689bea62468ccdfa3af105478 ""
-  "chap1/polariton_theory.aux" 1736864045.26694 9956 402c0d739a88e575f5c92a4ed0adcd9f "pdflatex"
-  "mythesis.aux" 1736864045.29494 1081 2c6f46aca3be7e615d7a41d437e17452 "pdflatex"
+  "chap1/polariton_theory.aux" 1736865738.62698 9956 402c0d739a88e575f5c92a4ed0adcd9f "pdflatex"
+  "mythesis.aux" 1736865738.65498 1081 2c6f46aca3be7e615d7a41d437e17452 "pdflatex"
   (generated)
   "mythesis.bbl"
   "mythesis.blg"
   (rewritten before read)
-["pdflatex"] 1736864043.84384 "/home/kfalque/Documents/These-Falquos-main/mythesis.tex" "mythesis.pdf" "mythesis" 1736864045.60249 0
+["pdflatex"] 1736865737.01416 "/home/kfalque/Documents/These-Falquos-main/mythesis.tex" "mythesis.pdf" "mythesis" 1736865739.00714 0
   "/home/kfalque/Documents/These-Falquos-main/mythesis.tex" 1736850013.33854 8076 59d9e2adef0bcb5072d98416d31f6b1c ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1202520719 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
@@ -272,15 +272,15 @@
   "chap1/fig/cavity_geometry.pdf" 1736850013.30254 55734 379740666afec9cb156e4b8d417b5c21 ""
   "chap1/fig/intra-inter-band-processes.pdf" 1736850013.30254 5767 db0f3f5f7fb4e2d49ced9c8d362a267c ""
   "chap1/fig/intra_band_dressed_bubbles.pdf" 1736864035.37094 26042 d4ea069dc8fcff912b73540e05be9b63 ""
-  "chap1/polariton_theory.aux" 1736864045.26694 9956 402c0d739a88e575f5c92a4ed0adcd9f "pdflatex"
-  "chap1/polariton_theory.tex" 1736863990.00294 29499 83f09b65be3c1d4cdbf2195185037eb9 ""
+  "chap1/polariton_theory.aux" 1736865738.62698 9956 402c0d739a88e575f5c92a4ed0adcd9f "pdflatex"
+  "chap1/polariton_theory.tex" 1736865736.81498 29350 95e6bcbc509311981714e8adaefb28f9 ""
   "logo_lkb.pdf" 1736850013.33054 3013 87f5b4f29aa618161352b8c51a67966a ""
-  "mythesis.aux" 1736864045.29494 1081 2c6f46aca3be7e615d7a41d437e17452 "pdflatex"
+  "mythesis.aux" 1736865738.65498 1081 2c6f46aca3be7e615d7a41d437e17452 "pdflatex"
   "mythesis.bbl" 1736863991.98294 801 ee84f9f5806764e3b14b2ee9fae54616 "bibtex mythesis"
-  "mythesis.brf" 1736864045.29494 355 aa00f1cc19f99dc6b153c83713b5cb79 "pdflatex"
-  "mythesis.out" 1736864045.29494 2269 7e8ef9fb61e9cd32f0b71d5d6203457b "pdflatex"
+  "mythesis.brf" 1736865738.65898 355 aa00f1cc19f99dc6b153c83713b5cb79 "pdflatex"
+  "mythesis.out" 1736865738.65898 2269 7e8ef9fb61e9cd32f0b71d5d6203457b "pdflatex"
   "mythesis.tex" 1736850013.33854 8076 59d9e2adef0bcb5072d98416d31f6b1c ""
-  "mythesis.toc" 1736864045.29494 979 7c1df9d1a717c1055c12265d2957b77e "pdflatex"
+  "mythesis.toc" 1736865738.65898 979 7c1df9d1a717c1055c12265d2957b77e "pdflatex"
   "mythesis_meta_SU.tex" 1736850013.33854 2259 c98d97177aae43b9eaa2b2e485e16d4b ""
   (generated)
   "chap1/polariton_theory.aux"
