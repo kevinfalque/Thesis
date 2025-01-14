@@ -1,0 +1,186 @@
+% !TEX encoding = UTF-8
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+\ProvidesPackage{utf8ext}[2018/11/11 add utf8 shortcuts for test, greek, and math symbols (J.Hare)]
+%% How to enter them ? look at UserChar.zip
+\RequirePackage[utf8]{inputenc}[2015/03/17 v1.2c7]
+%\RequirePackage{newunicodechar}
+\newif\ifutfVIIIext@text \utfVIIIext@texttrue
+\newif\ifutfVIIIext@math \utfVIIIext@mathfalse
+\newif\ifutfVIIIext@greek \utfVIIIext@greekfalse
+\newif\ifutfVIIIext@upgreek \utfVIIIext@upgreekfalse
+\DeclareOption{text}{\utfVIIIext@texttrue}
+\DeclareOption{greek}{\utfVIIIext@greektrue}
+\DeclareOption{upgreek}{\utfVIIIext@upgreektrue}
+\DeclareOption{math}{\utfVIIIext@mathtrue \utfVIIIext@greektrue}
+\DeclareOption{all}{\utfVIIIext@mathtrue \utfVIIIext@greektrue \utfVIIIext@texttrue}
+
+\ProcessOptions
+%%text symbols
+\global\let\savesharpess\ss
+\ifutfVIIIext@text % text only shortcuts
+\typeout{*** utf8ext : adding text chars ***}
+\DeclareUnicodeCharacter{FB01}{ff} %ﬀ
+\DeclareUnicodeCharacter{FB01}{fi} % ﬁ
+\DeclareUnicodeCharacter{FB02}{fl} %ﬂ
+\DeclareUnicodeCharacter{FB04}{ffi} %ﬃ
+\DeclareUnicodeCharacter{FB04}{ffl} % ﬄ
+\DeclareUnicodeCharacter{00B5}{\ensuremath{\upmu}}				% µ
+\DeclareUnicodeCharacter{2060}{\nolinebreak}
+\DeclareUnicodeCharacter{23B5}{\textvisiblespace}
+\DeclareUnicodeCharacter{00AA}{\textordfeminine}    % ª
+\DeclareUnicodeCharacter{00BA}{\textordmasculine}    % numero º
+\DeclareUnicodeCharacter{00B0}{\ensuremath{^{\scriptscriptstyle\circ}}} % ° degree
+\DeclareUnicodeCharacter{2013}{\textendash}		% –
+\DeclareUnicodeCharacter{2666}{\textemdash}		% —
+\AtBeginDocument{\DeclareUnicodeCharacter{2019}{\ifmmode{^{\prime}}\else\textquoteright\fi}} % 
+\DeclareUnicodeCharacter{00AB}{\guillemotleft\,}  % «, redéf. \guillemotleft «
+\DeclareUnicodeCharacter{00BB}{\,\guillemotright} % », redéf. \guillemotright »
+\DeclareUnicodeCharacter{2020}{\dag}				% †, redéf. \textdagger
+\DeclareUnicodeCharacter{2021}{\ddag}			% ‡, redéf. \textdaggerdbl
+\DeclareUnicodeCharacter{2030}{\textperthousand}			%  ‰
+\DeclareUnicodeCharacter{00DF}{{\savesharpess}}         %ß
+\DeclareUnicodeCharacter{2070}{\ensuremath{{}^{0}}}
+\DeclareUnicodeCharacter{2071}{\ensuremath{{}^{1}}}
+\DeclareUnicodeCharacter{2072}{\ensuremath{{}^{2}}}
+\DeclareUnicodeCharacter{2073}{\ensuremath{{}^{3}}}
+\DeclareUnicodeCharacter{2074}{\ensuremath{{}^{4}}}
+\DeclareUnicodeCharacter{2075}{\ensuremath{{}^{5}}}
+\DeclareUnicodeCharacter{2076}{\ensuremath{{}^{6}}}
+\DeclareUnicodeCharacter{2077}{\ensuremath{{}^{7}}}
+\DeclareUnicodeCharacter{2078}{\ensuremath{{}^{8}}}
+\DeclareUnicodeCharacter{2079}{\ensuremath{{}^{9}}}
+\DeclareUnicodeCharacter{2080}{\ensuremath{{}_{0}}}
+\DeclareUnicodeCharacter{2081}{\ensuremath{{}_{1}}}
+\DeclareUnicodeCharacter{2082}{\ensuremath{{}_{2}}}
+\DeclareUnicodeCharacter{2083}{\ensuremath{{}_{3}}}
+\DeclareUnicodeCharacter{2084}{\ensuremath{{}_{4}}}
+\DeclareUnicodeCharacter{2085}{\ensuremath{{}_{5}}}
+\DeclareUnicodeCharacter{2086}{\ensuremath{{}_{6}}}
+\DeclareUnicodeCharacter{2087}{\ensuremath{{}_{7}}}
+\DeclareUnicodeCharacter{2088}{\ensuremath{{}_{8}}}
+\DeclareUnicodeCharacter{2089}{\ensuremath{{}_{9}}}
+\DeclareUnicodeCharacter{2660}{\spadesuit}		% ♠
+\DeclareUnicodeCharacter{2663}{\clubsuit}		% ♣
+\DeclareUnicodeCharacter{2665}{\heartsuit}		% ♥
+\fi
+%
+%Greek
+\ifutfVIIIext@greek
+\typeout{*** utf8ext : adding greek chars ***}
+\DeclareUnicodeCharacter{03B1}{\alpha}       		% α
+\DeclareUnicodeCharacter{03B2}{\beta}        		% β 
+\DeclareUnicodeCharacter{03B3}{\gamma}			% γ 
+\DeclareUnicodeCharacter{03B4}{\delta}       		% δ
+\DeclareUnicodeCharacter{03B5}{\varepsilon}		% ε 
+\DeclareUnicodeCharacter{03B6}{\zeta}			% ζ 
+\DeclareUnicodeCharacter{03B7}{\eta}				% η 
+\DeclareUnicodeCharacter{03B8}{\theta}			% θ 
+\DeclareUnicodeCharacter{03B9}{\iota}			% ι 
+\DeclareUnicodeCharacter{03BA}{\kappa}			% κ
+\DeclareUnicodeCharacter{03BB}{\lambda}			% λ
+\DeclareUnicodeCharacter{03BC}{\mu}				% μ
+\DeclareUnicodeCharacter{03BD}{\nu}				% ν
+\DeclareUnicodeCharacter{03BE}{\xi}				% ξ
+\DeclareUnicodeCharacter{03C0}{\pi}				% π 
+\DeclareUnicodeCharacter{03C1}{\rho}				% ρ 
+\DeclareUnicodeCharacter{03C2}{\varsigma}			% ς 
+\DeclareUnicodeCharacter{03C3}{\sigma}			% σ 
+\DeclareUnicodeCharacter{03C4}{\tau}				% τ 
+\DeclareUnicodeCharacter{03C5}{\upsilon}			% υ 
+\DeclareUnicodeCharacter{03C6}{\varphi}			% φ 
+\DeclareUnicodeCharacter{03C7}{\chi}				% χ 
+\DeclareUnicodeCharacter{03C8}{\psi}				% ψ 
+\DeclareUnicodeCharacter{03C9}{\omega}			% ω 
+\DeclareUnicodeCharacter{0391}{A}
+\DeclareUnicodeCharacter{0392}{B}
+\DeclareUnicodeCharacter{0393}{\Gamma}			% Γ
+\DeclareUnicodeCharacter{0394}{\Delta}			% Δ
+\DeclareUnicodeCharacter{0395}{E}
+\DeclareUnicodeCharacter{0396}{Z}
+\DeclareUnicodeCharacter{0397}{H}
+\DeclareUnicodeCharacter{0398}{\Theta}			% Θ
+\DeclareUnicodeCharacter{0399}{I}
+\DeclareUnicodeCharacter{039A}{K}
+\DeclareUnicodeCharacter{039B}{\Lambda}     		 % Λ
+\DeclareUnicodeCharacter{039C}{M}
+\DeclareUnicodeCharacter{039D}{N}
+\DeclareUnicodeCharacter{039E}{\Xi}          		% Ξ
+\DeclareUnicodeCharacter{039F}{O}
+\DeclareUnicodeCharacter{03A0}{\Pi}          		% Π
+\DeclareUnicodeCharacter{03A1}{P}
+% Le code 03A2 est une variante de sigma hors de la norme unicode 
+\DeclareUnicodeCharacter{03A3}{\Sigma}			% Σ
+\DeclareUnicodeCharacter{03A4}{T}
+\DeclareUnicodeCharacter{03A5}{\Upsilon}			% Υ
+\DeclareUnicodeCharacter{03A6}{\Phi}				% Φ
+\DeclareUnicodeCharacter{03A7}{X}
+\DeclareUnicodeCharacter{03A8}{\Psi}				% Ψ
+\DeclareUnicodeCharacter{03A9}{\Omega}			% Ω
+\DeclareUnicodeCharacter{03D5}{\phi}				% ϕ
+\DeclareUnicodeCharacter{03D6}{\varpi}			% ϖ
+\DeclareUnicodeCharacter{03DB}{\varsigma}			% ϛ
+\DeclareUnicodeCharacter{03F1}{\varrho}			% ϱ
+\DeclareUnicodeCharacter{03F5}{\epsilon}			% ϵ
+\fi
+% math symbols
+\ifutfVIIIext@math
+\typeout{*** utf8ext : adding math chars ***}
+\DeclareUnicodeCharacter{22A5}{\bot}          	% ⊥
+\DeclareUnicodeCharacter{028C}{\wedge}          	% ʌ (prod vectoriel)
+\DeclareUnicodeCharacter{02C6}{\hat}            	% circonflexe chapeau
+\DeclareUnicodeCharacter{2200}{\forall}          	% ∀
+\DeclareUnicodeCharacter{2203}{\exists}         	% ∃
+\DeclareUnicodeCharacter{00B1}{\pm}          		% ±
+\DeclareUnicodeCharacter{2213}{\mp}          		% ∓ 
+\DeclareUnicodeCharacter{00B7}{\cdot}			% · point median ·
+\DeclareUnicodeCharacter{2551}{\Vert}   			% ║ douvle filet vertical
+\DeclareUnicodeCharacter{2016}{\Vert}			% ‖ double ligne verticale
+\DeclareUnicodeCharacter{2225}{\parallel}			% ∥
+\DeclareUnicodeCharacter{226A}{\lg}   			% ≪
+\DeclareUnicodeCharacter{226B}{\gg}   			% ≫
+\DeclareUnicodeCharacter{0127}{\hbar}          	% ħ
+\DeclareUnicodeCharacter{00BD}{\textstyle\frac{1}{2}}   	% ½
+\DeclareUnicodeCharacter{00D7}{\times}			% ×, redéf. \texttimes
+\DeclareUnicodeCharacter{2297}{\otimes}			% ⊗ \otimes
+\DeclareUnicodeCharacter{00F7}{\over}			% ÷, redéf. \textdiv
+\DeclareUnicodeCharacter{2190}{{\leftarrow}}	% ←, redéf. \textrightarrow
+\DeclareUnicodeCharacter{2191}{{\uparrow}}		% ↑
+\DeclareUnicodeCharacter{2193}{{\downarrow}}	% ↓
+\DeclareUnicodeCharacter{2192}{{\rightarrow}}	% →, 
+\DeclareUnicodeCharacter{0111}{\mathrm{d}}		% redéf. ₫ pour diff.
+\DeclareUnicodeCharacter{2202}{\partial}		% ∂
+\DeclareUnicodeCharacter{2207}{\nabla}			% ∇
+\DeclareUnicodeCharacter{2206}{\triangle}		% ∆
+\DeclareUnicodeCharacter{2113}{\ell}			% ℓ
+\DeclareUnicodeCharacter{2205}{\emptyset}		% ∅
+\DeclareUnicodeCharacter{221D}{\propto}			% ∝
+\DeclareUnicodeCharacter{2208}{\in}				% ∈
+\DeclareUnicodeCharacter{220F}{\prod}			% ∏
+\DeclareUnicodeCharacter{2211}{\sum}			% ∑
+\DeclareUnicodeCharacter{2219}{\bullet}			% ∙ operateur puce
+\DeclareUnicodeCharacter{221A}{\sqrt}			% √
+\DeclareUnicodeCharacter{221E}{\infty}			% ∞
+\DeclareUnicodeCharacter{2229}{\cap}				% ∩
+\DeclareUnicodeCharacter{222B}{\int}				% ∫
+\DeclareUnicodeCharacter{2248}{\approx}			% ≈
+\DeclareUnicodeCharacter{2260}{\not=}			% ≠
+\DeclareUnicodeCharacter{2261}{\equiv}			% ≡
+\DeclareUnicodeCharacter{2264}{\leqslant}			% ≤
+\DeclareUnicodeCharacter{2265}{\geqslant}			% ≥
+\DeclareUnicodeCharacter{2282}{\subset}			% ⊂
+\DeclareUnicodeCharacter{22EF}{\cdots}			% ⋯
+\DeclareUnicodeCharacter{22F1}{\ddots}			% ⋱
+\DeclareUnicodeCharacter{25A1}{\Box}				% □
+\DeclareUnicodeCharacter{255E}{\left(}			% ╞
+\DeclareUnicodeCharacter{2561}{\right)}			% ╡
+\DeclareUnicodeCharacter{2560}{\left[}			% ╠
+\DeclareUnicodeCharacter{2563}{\right]}			% ╣
+\DeclareUnicodeCharacter{2329}{\langle}			% 〈〉 
+\DeclareUnicodeCharacter{232A}{\rangle}			% 〈〉 
+\DeclareUnicodeCharacter{019B}{\lambdabar}		% ƛ 
+\fi
+
+\ifutfVIIIext@upgreek
+\RequirePackage{upgreek}
+\fi
+

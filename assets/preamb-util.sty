@@ -1,0 +1,109 @@
+% !TeX encoding = UTF-8=
+% !TEX spellcheck = en_US
+\NeedsTeXFormat{LaTeX2e}[2021/06/01]
+\ProvidesPackage{preamb-util}[2023/03/07 v 0.76 Utilities and handy macros for PhD thesis (JH)]
+%%%%%%%%% preamble for  utilities and handy macros %%%
+\PassOptionsToPackage{pdftex,svgnames,table,fixpdftex,hyperref}{xcolor}
+%%-----  utilities packages -----
+\RequirePackage{etoolbox}          % many advanced finctions using e-tex
+\RequirePackage{afterpage}         % to place items/commands at the top of the next page
+\RequirePackage{kvoptions} 		     % options handling
+\RequirePackage{silence} 		       % to suppress some warnings
+\RequirePackage{xparse}
+\RequirePackage{xstring}
+\RequirePackage{xspace}
+\RequirePackage{versions}
+\RequirePackage{afterpackage}
+\RequirePackage{infwarerr}
+\RequirePackage{ltxcmds}
+\RequirePackage{pdftexcmds}
+\RequirePackage{letltxmacro}
+\RequirePackage{textcase}
+\RequirePackage{listofitems}
+\RequirePackage{iftex}
+\RequirePackage{versions}          % activate or not some environnements
+\RequirePackage{setspace}		    % if you need things like \onehalfspacing or\doublespacing
+\RequirePackage{iflang}		        % babel’s  \iflanguagename is not reliable
+\RequirePackage[cbgreek]{textgreek}	% greek characters in text (namely sectionning commands)
+\newcommand{\inputpath}[1]{\gdef\input@path{#1}}
+%\AfterEndPreamble{\typeout{** ----- Execute  \string\AfterEndPreamble clauses ----- **}}
+\AtEndPreamble{\typeout{** ----- Execute  \string\AtEndPreamble clauses ----- **}}
+\AtBeginDocument{\typeout{** ----- Execute  \string\AtBeginDocument clauses ----- **}}
+\newcommand*\@iflatexlater{\@ifl@t@r\fmtversion}
+%% Get Classname and store it in \@currentclass
+\def\@getcl@ss#1.cls#2\relax{\def\@currentclass{#1}}
+\def\@getclass{\expandafter\@getcl@ss\@filelist\relax}
+\@getclass
+%\RequirePackage{fmtcount}		    % format counters value as words
+%\RequirePackage{calc}          % infix compute length, but prefer builtin \dimexpr
+%%=========  handy macros ============
+%% ---- \inputpath ---
+%%% defines additionnal directories where to search packaqges, inputed and inclided files
+%%% argument must be a list of paths, terminated by a / , inside braces, and without separators
+%% %like  \inputpath{{./}{../extra/}{./ch1/}{./appA/}}
+%\providecommand\inputpath[1]{\providecommand*{\input@path}{}\g@addto@macro\input@path{#1}}
+
+%%% ---- \fmeaning ---- formated meaning of command
+%%% use \fmeaning\cmd where \cmd is an existing command, like \fmeaning\section
+\newcommand\fmeaning[1]{{\raggedright\noindent\ttfamily\textbf{\string#1 =}\par\meaning#1\par\medskip}}
+
+%%% Enhanced version working for protcted macro or with optionnal arguments
+\ExplSyntaxOn
+\NewDocumentCommand{\ToStr}{m}{ \cs_to_str:N #1}
+\ExplSyntaxOff
+\newcommand\xfmeaning[1]{%
+	{\raggedright\noindent\ttfamily\textbf{\string #1} =\par%
+	\ifdefltxprotect{#1}{\expandafter\meaning \csname \ToStr{#1}\space\endcsname}%
+		{\ifdefprotected{#1}{\expandafter\meaning \csname \ToStr{#1}\space\endcsname}%
+		{\meaning #1}}
+	\par \bigskip}
+}
+
+%%% length unit conversion --- \convertto{cm}{\the\mylength} cm
+\def\convertto#1#2{\strip@pt\dimexpr \the#2*65536/\number\dimexpr 1#1\relax\,#1}
+%%% Formating commands used by some custom bst
+\providecommand{\bibnamefont}[1]{\textsc{#1}}  % author names in smallcaps
+\providecommand{\bibfnamefont}[1]{#1}
+
+%%%
+%\DeclareRobustCommand{\myGenericInfoNoLine}[2]{%
+%\begingroup\def\MessageBreak{^^J #1}\set@display@protect\immediate\write\@unused{#2.}\endgroup}
+%\ifdef{\PackageInfoNoline}{\relax}{
+%\newcommand\PackageInfoNoLine[2]{\myGenericInfoNoLine{(#1) \@spaces\@spaces\@spaces}{*** Package #1 Info: #2 ***}}
+%}
+%\newcommand\PackageInfoNoLine[2]{%
+%\GenericInfo {#2\@goblle \@spaces \@spaces \@spaces }{Package #1 Info Noline}
+%}
+\DeclareRobustCommand{\GenericInfoNoLine}[2]{%
+\begingroup
+\def\MessageBreak{^^J#1}%
+\set@display@protect
+\immediate\write\m@ne{#2.}%
+\endgroup
+}
+
+\newcommand\PackageInfoNoLine[2]{%
+	\GenericInfoNoLine{(#1) \@spaces\@spaces\@spaces}{Package #1 Info: #2}%
+}
+\AtEndPreamble{%
+%%% provide the \numberwithin of Amsmath, in case it is not loaded
+  \@ifpackageloaded{amsmath}{}{%
+     \providecommand{\numberwithin}[2]{\@addtoreset{#1}{#2}\csdef{the#1}{\csuse{the#2}.\arabic{#1}}}
+     %%% This could also used sith te stabdard \counterwithin/\counterwithoiut
+}%
+%%% provides commands which would be missing if hyperref is not loaded
+  \@ifpackageloaded{hyperref}{}{%
+    \providecommand{\phantomsection}{\relax}
+    \providecommand{\url}[1]{\bgroup\catcode`\%=12\catcode`\$=12\catcode`\#=12catcode`\~=12 \texttt{#1}\egroup}
+    \providecommand{\href}[2]{#1 (\url{#2})}%
+  }%
+%%% provides correct French guillemets
+\@ifpackageloaded{inputenc}{%
+	\@ifpackagewith{inputenc}{utf8}{%
+		\DeclareUnicodeCharacter{00AB}{\og\,\ignorespaces}  % «, redef. \guillemotleft 
+		\DeclareUnicodeCharacter{00BB}{\unskip\,\fg{}}        % », redéf. \guillemotright 
+ 	}{}
+}{}
+} 
+\endinput
+%end of preamb-util package

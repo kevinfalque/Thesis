@@ -1,0 +1,410 @@
+\NeedsTeXFormat{LaTeX2e}[2021/06/01]
+%%% Preamble for graphicss %%%
+\ProvidesPackage{thcover}[2023/04/03  v7.2 Build coverpage 1 and 4 for thesis (J.Hare)]
+%\typeout{*** Package thcover v7.2 : Build coverpage 1 and 4 for thesis (J.Hare)}
+\RequirePackage{preamb-util}
+\RequirePackage{listofitems}
+%%% The following package should have been loaded in ain or in preamb- packages
+%\RequirePackage{graphicx}
+%\PassOptionsToPackage{verbose=false}{geometry}
+%\RequirePackage{geometry}[2010/03/13]
+%\PassOptionsToPackage{svgnames}{xcolor}
+%\RequirePackage{xcolor}
+%\RequirePackage{etoolbox}
+%\RequirePackage{graphicx}
+%\RequirePackage{kvoptions}
+%\PassOptionsToPackage{gridunit=mm}{eso-pic}
+%\RequirePackage{eso-pic}
+% \IfLanguageName{french}{\PassOptionsToPackage{french}{datetime2}}%
+% {\PassOptionsToPackage{english}{datetime2}}
+\PassOptionsToPackage{french}{datetime2}
+\RequirePackage{datetime2}
+\PassOptionsToPackage{Export,etex}{adjustbox}
+% Option "Export" sets \includegraphics to be identical to \adjincludegraphics, 
+% which also allows the usage of all \adjustbox keys.
+\AtBeginDocument{\usepackage{xkeyval}\usepackage{adjustbox}} 		      
+
+%\newcommand\myfrenchdate[1]{\DTMsavedate{mydate}{#1}%
+%\if\DTMfetchday{mydate}1\DTMfetchday{mydate}\ier\else\DTMfetchday{mydate}\fi~% 
+%\DTMfrenchmonthname{\DTMfetchmonth{mydate}}~\DTMfetchyear{mydate}%
+%}
+%\DTMlangsetup{ord=raise}
+%\DTMtryregional[french]{fr}{FR}
+%\RequireDateTimeModule{french-ascii}
+
+%% NOTICE hyperref is not required by this package, but :
+%% - if loaded, it is used  to set PDF metadata (assuming PDF mode is active)
+%% - is required for pdfa, and will  be loaded by pdfx with suitable options
+%% Options needed at loadtime must be passed with required options
+%% \PassOptionsToPackage{<options>}{hyperref}  before calling thcover.
+%% Other options can be passed latter by using \hypersetup 
+
+%% SETTING
+%\longdate
+\gdef\listofetabacro{SU,PSL,UPCité,UPSACLAY}
+\gdef\listofformat{pdf14,pdf15,pdf17,pdfa}
+\gdef\listoflang{french,english}
+\gdef\listofxmpfield{Title,Author,Subject,Keywords,Copyright,Publisher,CreatorTool,CoverDisplayDate,CoverDate}
+\providecommand{\metadata@file}{\jobname_meta.tex}
+\providecommand{\pdfxopt}{a-2b}
+\providecommand{\pdfversion}{pdf17}
+\providecommand{\pathgraph}{./img}
+
+\providecommand\absmaxlength{1700}
+\providecommand\widthodparbox{0.7}
+\newrobustcmd{\Mme}{M\textsuperscript{me}}
+\newrobustcmd{\Mr}{M\textsuperscript{r}}
+\newrobustcmd{\Mrs}{M\textsuperscript{rs}}
+
+
+%%%% Options definition %%%%G
+% Options
+\SetupKeyvalOptions{family=\@currname, prefix=thc@}
+\DeclareStringOption{etab}[none]
+\DeclareStringOption{meta}[none]
+\DeclareStringOption[pdf15]{pdf}[pdf15]
+\DeclareStringOption[1]{startpage}[1]
+\DeclareStringOption[]{lang}[]
+\DeclareLocalOptions{lang,pdf,etab,meta,startpage}
+\DeclareBoolOption[false]{final}
+\DeclareBoolOption[false]{arial}
+\DeclareBoolOption[false]{creativecommons}
+
+% Unknown options
+\DeclareDefaultOption{%
+\ifx\CurrentOptionValue\relax
+	\PackageWarning{\@currname}{Unknown option `\CurrentOption'\MessageBreak}
+\fi}
+
+%% Process options
+\ProcessKeyvalOptions{thcover}
+
+%%%% Handy functions %%%%
+\newcommand{\numchars}[1]{\noindent The string ``#1'' has {\StrLen{#1}} characters.\\}
+\newcommand{\textcl@p}[1]{{\hbox to 0pt{\hss#1\hss}}}
+% custom Info macros for printing in console
+\DeclareRobustCommand{\myGenericInfo}[2]{%
+\begingroup\def\MessageBreak{^^J #1}\set@display@protect\immediate\write\@unused{#2\on@line.}\endgroup}
+\def\myPackageInfo#1#2{\myGenericInfo{(#1) \@spaces\@spaces\@spaces}{*** Package #1 Info: #2 ***}}
+\DeclareRobustCommand{\myGenericInfoNoline}[2]{%
+\begingroup\def\MessageBreak{^^J #1}\set@display@protect\immediate\write\@unused{#2.}\endgroup}
+\def\myPackageInfoNoline#1#2{\myGenericInfoNoline{(#1) \@spaces\@spaces\@spaces}{*** Package #1 Info: #2 ***}}
+\renewcommand{\maketitle}{\AfterEndPreamble{\frontcover}\AtEndDocument{\backcover}}
+%% build etoolbox internal list from macro
+\newcommand\buildlist[3][,]{% #1=separ #2=listname #3=source macro
+\ifdef{\addfrommacro}{\undef\addfrommacro}{\relax} 
+\DeclareListParser{\addfrommacro}{#1}
+\gdef#2{} \renewcommand*{\do}[1]{\listgadd{#2}{##1}}
+\expandafter\addfrommacro\expandafter{#3}}
+%%%% eso-pic overlay shorthand %%%% atbegshi
+\def\atXYesoFG(#1,#2)#3[#4]{%
+\AddToShipoutPictureFG*{\AtPageUpperLeft{\hspace{#1}\raisebox{-#2}{\parbox[#4]{\widthodparbox\paperwidth}{#3}}}}}
+\def\setesoBG(#1,#2)#3{%
+\AddToShipoutPictureBG*{\includegraphics[width=#1,height=#2]{#3}}}
+%%%% placement of backcover
+\newcommand{\clearevenpage}{\cleardoublepage\if@twoside \ifodd\c@page
+    \hbox{}\clearpage\if@twocolumn\hbox{}\clearpage\fi\fi\fi}
+%%%% checking length
+\newbool{resumetoolong}
+\newbool{abstracttoolong}
+\newcommand\checkLength[1]{ %% 1 is a name to be converted to cs
+	\def\localcontent{\csname @#1\endcsname}%   
+	\def\boolname{#1toolong}
+   	\StrLen{\localcontent}[\locallen]
+	\ifnumcomp{\numexpr\locallen}{>}{\absmaxlength}{\booltrue{\boolname}}{\boolfalse{\boolname}}
+   	\csgdef{#1len}{\locallen}
+%   	\ifnum\numexpr\locallen>\absmaxlength \booltrue{\boolname} \else \boolfalse{\boolname} \fi
+	\ifbool{\boolname}{\PackageWarningNoLine{thcover}{%
+	#1 is \locallen\space chars long, \MessageBreak but the max is \absmaxlength, including spaces}}{}
+}
+\newcommand\printwarntoolong[1]{%
+\def\boolname{#1toolong}
+\def\len{\csuse{#1len}}
+\ifbool{\boolname}{{\bfseries \len \space characters exceed max=\absmaxlength\par}}{}
+}
+%%%% Writing to  xmpdata file for PDF/A with uft8 coding
+\newcommand{\disable@UTF}{%
+  \def\UTFviii@two@octets##1##2{\string##1\string##2}%
+  \def\UTFviii@three@octets##1##2##3{\string##1\string##2\string##3}%
+  \def\UTFviii@four@octets##1##2##3##4{\string##1\string##2\string##3\string##4}%
+}
+\newwrite\xmp@out
+\newcommand{\xmpwrite}[2][\jobname.xmpdata]{%
+\myPackageInfoNoline{thcover}{Writing to file `#1`.}
+\immediate\openout\xmp@out=#1
+\protected@write\xmp@out{\disable@UTF}{#2}%
+}
+%% Date functions
+\DTMnewdatestyle{frenchdateraise}{
+\renewcommand{\DTMdisplaydate}[4]{\ifnum##3=1 ##3\ier\else##3\fi~\DTMfrenchmonthname{##2}~\number##1}%
+\renewcommand{\DTMDisplaydate}{\DTMdisplaydate}%
+}
+
+\DTMnewdatestyle{frenchdatelevel}{
+\renewcommand{\DTMdisplaydate}[4]{\ifnum##3=1 ##3er\else##3\fi\ \DTMfrenchmonthname{##2}\ \number##1}%
+\renewcommand{\DTMDisplaydate}{\DTMdisplaydate}%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\buildlist{\etablist}\listofetabacro
+\buildlist{\formatlist}\listofformat
+\buildlist{\langlist}\listoflang
+\buildlist{\xmpfieldlist}\listofxmpfield
+
+
+%%%%% Handle options %%%%
+%% etab
+\xifinlist{\thc@etab}{\etablist}{
+	% loads additional packages for PSL and UPSaclay
+	\ifdefstring{\thc@etab}{PSL}{%
+	\RequirePackage{xr}
+	\RequirePackage{refcount}
+	\RequirePackage[absolute]{textpos}}{} 
+	\ifdefstring{\thc@etab}{UPSACLAY}{%
+	\RequirePackage{xr}
+	\RequirePackage{refcount}
+	\RequirePackage[absolute]{textpos}}{} 
+	% Loads metadata
+	\def\definitionfile{\thc@etab cover.def}
+	\IfFileExists{\definitionfile}{
+		\myPackageInfoNoline{thcover}{Loading \definitionfile}
+		\input{\definitionfile}%
+	}{%
+		\PackageError{thcover}{\definitionfile\space does not exists}%
+	}
+}{%
+	\PackageError{Missing or invalid etab = `\thc@etab` --- etab=\etab or \thc@etab }
+}
+%% startpage numbering
+\ifdefstring{\thc@startpage}{-1}{\gdef\thc@front@page{-1}}{\gdef\thc@front@page{\thc@startpage}}
+%% format pdf
+\xifinlist{\thc@pdf}{\formatlist}{
+	\ifdefstring{\thc@pdf}{pdf17}{
+		\myPackageInfoNoline{thcover}{PDF 1.7 conformance is required.}
+		\pdfminorversion=7
+	}{}
+	\ifdefstring{\thc@pdf}{pdf15}{
+		\myPackageInfoNoline{thcover}{PDF 1.5 conformance is required.}
+		\pdfminorversion=5
+	}{}
+	\ifdefstring{\thc@pdf}{pdf14}{
+		\myPackageInfoNoline{thcover}{PDF 1.4 conformance is required.}
+		\pdfminorversion=4
+	}{} 
+	\ifdefstring{\thc@pdf}{pdfa}{ %%load pdfx and hypertref
+		\myPackageInfoNoline{thcover}{PDF/A level \pdfxopt, with pdf version \pdfversion\ conformance is enabled.^^J}%
+		\PassOptionsToPackage{unicode,hyperfigures,hyperindex}{hyperref}
+		\PassOptionsToPackage{\pdfxopt,\pdfversion}{pdfx}
+		\RequirePackage{pdfx}
+	}{}
+}{
+	\PackageWarning{thcover}{Unknown format option `\thc@pdf`.}
+}
+%% metadata file
+\ifdefstring{\thc@meta}{none}{\relax}{\gdef\metadata@file{\thc@meta}}
+%%% lang 
+\newtoggle{langisfrench}
+\global\toggletrue{langisfrench}
+\ifdefempty{\thc@lang}{%
+	\myPackageInfoNoline{thcover}{thc@lang=empty}
+	% read from babel if loaded
+	\@ifpackageloaded{babel}{
+		\myPackageInfoNoline{thcover}{lang `\languagename`\space is read from Babel options}%
+		\iflanguage{french}{\global\toggletrue{langisfrench}}{\global\togglefalse{langisfrench}}%
+	}{\myPackageInfoNoline{thcover}{** Babel is not yet loaded **}}%
+}{%
+	\myPackageInfoNoline{thcover}{`lang=\thc@lang` is explicly provided as option}%
+	\xifinlist{\thc@lang}{\langlist}{%
+		\ifdefstring{\thc@lang}{french}{\global\toggletrue{langisfrench}}{\global\togglefalse{langisfrench}}%
+	}{%
+		\PackageWarning{thcover}{Unknown lang option `\thc@lang`.}%
+	}%
+}
+\iftoggle{langisfrench}%
+{\myPackageInfoNoline{thcover}{French  titlefr is set as main title}}%
+{\myPackageInfoNoline{thcover}{English  titleen is set as main title}}%
+%%Fonts : use Arial-like for couv (TeX Gyre Heros)
+\global\let\sfdefaultbackup\sfdefault
+%\ifthc@arial
+	\myPackageInfoNoline{thcover}{Arial-like font requested, loading 'TeX Gyre Heros'}
+	\RequirePackage{tgheros}
+%\else
+%	\myPackageInfoNoline{thcover}{*** Arial not requested, using Latin Modern ***}
+%\fi
+%% custom size
+\newcommand\cp@fsize[2]{{%
+\def\b@skip{\dimexpr 1.3pt*#1}%
+\fontsize{#1bp}{\the\b@skip}\selectfont\sffamily #2\par}}
+
+%%%%%% Parsing of (meta)data %%%%
+%% initize some mandatory fields
+\providecommand\@thesisname{Thèse de doctorat}
+\providecommand\@univ{Define full name of University, prceded by 'at keyword'}
+\providecommand\@atlab{Define labname if requested by univ}
+\providecommand\@atinstitution{Define institution of work/registration, if relevent} 
+\providecommand\@atinstitutionacro{Acronym for instittion} 
+\providecommand\@ecoledoct{Define fullname of doctoral school} 
+\providecommand\@ecoledoctnum{Define number of doctoral school}
+\providecommand\@ecoledoctacro{Define aconym of doctoral school}
+\providecommand\@advisor{Define name of advisor} 
+\providecommand\@specialite{Define specialytty}
+\providecommand\@dateiso{\today}
+
+%% initize some optional fields
+\providecommand\@logolab{}
+\providecommand\@titlemetafr{}
+\providecommand\@titlemetaen{}
+\providecommand\@reference{}
+\providecommand\@gradename{docteur}
+\providecommand\@jointunivname{}
+\providecommand\@jointunivlogo{}
+\providecommand\@jointadvisor{}
+
+%% parse provided values
+\def\author#1{\gdef\@author{#1}}
+\def\@author{\@latex@warning{No \noexpand\author given}}
+\long\def\titlefr#1{\gdef\@titlefr{#1}}
+\def\@titlefr{\@latex@warning{No \noexpand\titlefr given}}
+\long\def\titleen#1{\gdef\@titleen{#1}}
+\def\@titleen{\@latex@warning{No \noexpand\titleen given}}
+\long\def\titlemetafr#1{\gdef\@titlemetafr{#1}}
+\long\def\titlemetaen#1{\gdef\@titlemetaen{#1}}
+\def\univ#1{\gdef\@univ{#1}}
+\def\@univ{\@latex@warning{No \noexpand\univ given}}
+\def\atlab#1{\gdef\@atlab{#1}}
+\def\@atlab{\@latex@warning{No \noexpand\atlab given}}
+\def\logolab#1{\gdef\@logolab{#1}}
+\def\atinstitution#1{\gdef\@atinstitution{#1}}
+\def\@atinstitution{\@latex@warning{No \noexpand\atinstitution given}}
+\def\atinstitutionacro#1{\gdef\@atinstitutionacro{#1}}
+\def\@atinstitutionacro{\@latex@warning{No \noexpand\atinstitutionacro given}}
+\def\ecoledoctnum#1{\gdef\@ecoledoctnum{#1}}
+\def\@ecoledoctnum{\@latex@warning{No \noexpand\ecoledoctnum given}}
+\def\ecoledoct#1{\gdef\@ecoledoct{#1}}
+\def\@ecoledoct{\@latex@warning{No \noexpand\ecoledoct given}}
+\def\ecoledoctacro#1{\gdef\@ecoledoctacro{#1}}
+\def\specialite#1{\gdef\@specialite{#1}}
+\def\@specialite{\@latex@warning{No \noexpand\specialite given}}
+\def\advisor#1{\gdef\@advisor{#1}}
+\def\@advisor{\@latex@warning{No \noexpand\advisor given}}
+\def\dateiso#1{\gdef\@dateiso{#1}}
+\gdef\@dateiso{\today}
+%%readjury as a 2D list of listofitems package
+\long\def\jury#1{\gdef\@jury{#1}\reademptyitems%
+\setsepchar[/]{\\/&}\greadlist*\@jurylist\@jury}
+\def\@jury{\@latex@warning{No \noexpand\jury given}}
+\long\def\resume#1{\gdef\@resume{#1}}
+\def\@resume{\@latex@warning{No \noexpand\resume given}}
+\long\def\motscles#1{\gdef\@motscles{#1}}
+\def\@motscles{\@latex@warning{No \noexpand\motscles given}}
+\long\def\abstract#1{\gdef\@abstract{#1}}
+\def\@abstract{\@latex@warning{No \noexpand\abstract given}}
+\long\def\keywords#1{\gdef\@keywords{#1}}
+\def\@keywords{\@latex@warning{No \noexpand\keywords given}}
+\def\thesisname#1{\gdef\@thesisname{#1}}
+\def\gradename#1{\gdef\@gradename{#1}}
+\def\defensecity#1{\gdef\@defensecity{#1}}
+\def\reference#1{\gdef\@reference{#1}}
+\def\jointunivname#1{\gdef\@jointunivname{#1}}
+\def\jointunivlogo#1{\gdef\@jointunivlogo{#1}}
+\def\jointadvisor#1{\gdef\@jointadvisor{#1}}
+
+%%% Metadata file name 
+\newcommand\setPdfMetaData{
+\ifpdf 
+	\AtBeginDocument{
+		\ifdef{\hypersetup}{	%% hyperref loaded
+			\hypersetup{
+					pdftitle={\@titlemetalang}, 
+					pdfauthor={\@author},
+					pdfsubject={\@titlemetaalt},
+					pdfkeywords={\@motscles,\@keywords}
+			  }%
+		}{%
+		  	\pdfinfo {   %% pdfLaTeX without hyperref
+				/Title (\@titlemetalang)
+				/Creator (pdfLaTeX)
+				/Author (\@author)
+				/Subject (\@titlemetaalt)
+				/Keywords (\@motscles, \@keywords) 
+			}%
+		}%
+	}%
+\else
+	\PackageWarning{thcover}{Use pdfLaTex or add metadata after conversion to PDF}
+\relax
+\fi
+}
+
+%%function for handling the keywords and univ
+\gdef\thc@tmpmotcle{}
+\newcounter{thc@cntmotcle}
+\newcommand\thc@addwithsep[1]{\stepcounter{thc@cntmotcle}%
+\ifnum\value{thc@cntmotcle}=1\relax\else\g@addto@macro{\thc@tmpmotcle}{\string\sep\ }\fi%
+\g@addto@macro{\thc@tmpmotcle}{#1}}
+\newcommand\thc@addwithsepcond[1]{\ifinlist{#1}{\thc@mots}{}{\g@addto@macro{\thc@tmpmotcle}{\string\sep\  #1 }}}
+\pdfsuppresswarningpagegroup=1
+%% Include meta file
+\IfFileExists{\metadata@file}{
+	\myPackageInfoNoline{thcover}{Metadata file `\metadata@file` exists}
+	\input{\metadata@file}
+	%% tabularlike jury parsing with listofitems done in tge XXX.def file
+	%% Handle date
+	\DTMsavedate{date@defense}{\@dateiso}
+	\DTMmakeglobal{date@defense}
+	\DTMsetdatestyle{frenchdateraise}	
+	\gdef\@tmp{}
+	\g@addto@macro\@tmp{\DTMusedate{date@defense}}
+	\global\let\@coverdatedisplay\@tmp
+	%% Handle titles
+	\ifdefempty{\@titlemetafr}{\let\@titlemetafr=\@titlefr \typeout{*** titlemetafr copied from titlefr ***}}{}
+	\ifdefempty{\@titlemetaen}{\let\@titlemetaen=\@titleen \typeout{*** titlemetaen copied from titleen ***}}{}
+	\iftoggle{langisfrench}%
+		{\let\@titlemetalang=\@titlemetafr \let\@titlemetaalt=\@titlemetaen}%
+		{\let\@titlemetalang=\@titlemetaen \let\@titlemetaalt=\@titlemetafr}
+	%% Setup PDF/A
+	\ifdefstring{\thc@pdf}{pdfa}{%
+		\buildlist[,]{\thc@mots}{\@motscles}
+		\forlistloop{\thc@addwithsep}{\thc@mots}
+		\buildlist[,]{\thc@words}{\@keywords}
+		\forlistloop{\thc@addwithsepcond}{\thc@words}
+		\IfFileExists{\jobname.xmpdata}{%
+			\myPackageInfoNoline{thcover}{** \jobname.xmpdata already exists. For update, delete it. **}}%
+		{ %% adpapt or creates metadata values for xmpdata
+%			\DTMsetdatestyle{frenchdatelevel}
+			\ifthc@creativecommons
+				\gdef\@copyright{\@author CC-BY-NC-ND}
+			\else%
+				\gdef\@copyright{\copyright\  \@author\  + \@univmeta}
+          \fi
+%%
+%% writing xmpdata file if does not extst
+\xmpwrite[\jobname.xmpdata]{%
+\string\Author{\@author}^^J%
+\string\Title{\@titlemetalang}^^J%
+\string\Subject{\@titlemetaalt}^^J%
+\string\CreatorTool{pdfTeX + pdfx.sty with options \pdfxopt, \pdfversion}^^J%
+\string\Copyright{\@copyright}^^J%
+\string\Keywords{\thc@tmpmotcle}^^J%
+\string\Publisher{\@univmeta}^^J%
+\string\CoverDisplayDate{\@coverdatedisplay}^^J%	
+\string\CoverDate{\@dateiso}^^J%	
+}
+\DTMsetdatestyle{frenchdateraise}
+}
+%% adding color profile : automatic by pdfx
+%		\@ifpackagewith{xcolor}{cmyk}{%
+%			\setCMYKcolorprofile{\ColorProfileDir coated_FOGRA39L_argl.icc}{Coated FOGRA39}%
+%			{FOGRA39 (ISO Coated v2 300\%\space (ECI))}{http://www.color.org}
+%			\FOGRAXXXIX
+%		}{%
+%			\setRGBcolorprofile{sRGB_IEC61966-2-1_black_scaled.icc}{sRGB_IEC61966-2-1_black_scaled}%
+%			{sRGB IEC61966 v2.1 with black scaling}{http://www.color.org}
+%		}
+	}{\setPdfMetaData}
+}%
+{
+	\PackageWarning{thcover}{Metadata file \metadata@file\ DOES NOT exist}%
+}
+\endinput
+%end of thcover package

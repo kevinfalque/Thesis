@@ -1,0 +1,88 @@
+% !TeX encoding = UTF-8
+% !TEX spellcheck = en_US
+\NeedsTeXFormat{LaTeX2e}[2021/06/01]
+%%% Preamble for mathematics %%%
+\ProvidesPackage{preamb-math}[2023/04/03 0.71 math options for PhD thesis (JH)]
+\RequirePackage{preamb-util}
+%% OPTIONS
+\SetupKeyvalOptions{
+  family=PM,
+  prefix=PM@
+}
+\DeclareBoolOption[false]{ams}
+\DeclareBoolOption[false]{showonlyrefs}
+\DeclareBoolOption[false]{slantedgreekcaps}
+\DeclareBoolOption[false]{boldmath}
+\DeclareBoolOption[false]{mathfixs}
+
+% Default option rule
+\DeclareDefaultOption{\PackageWarning{\@currname}{Unknown option `\CurrentOption'}}
+
+%%% PROCESS OPTIONS
+\ProcessKeyvalOptions*
+
+%%% IMPLEMENTATION DEPENDING ON OPTION VALUES
+%% Macro to define slanted greek capitals           
+\DeclareListParser*{\slantedgreekcaps}{,}
+\newcommand\ch@ngedef[1]{\csletcs{tmp#1}{#1}\csletcs{#1}{var#1}\csletcs{var#1}{tmp#1}\csgundef{tmp#1}}
+\newcommand\make@slantedgreekcaps{\slantedgreekcaps{\ch@ngedef}{Gamma,Delta,Theta,Lambda,Xi,Pi,Sigma,Upsilon,Phi,Psi,Omega}}
+
+%%% ensure boldmath in bold titles
+\ifPM@boldmath
+	\g@addto@macro\bfseries{\boldmath}%
+\fi
+
+% Load AMS Code 
+\ifPM@ams
+	\PackageInfoNoLine{preamb-math}{amsmath is ON}
+	\ifdef{\numberwithin}{\undef\numberwithin}{\relax}
+	\RequirePackage{mathtools}    % loads a super set of amsmath
+	\RequirePackage{amssymb,bm}   % AMS math symbols+boldmath (loads amsfonts)
+	% better blackboard fnt than AMS’s, include digits, exists in Type1
+	\RequirePackage{dsfont} 
+	\let\SAV@mathbb\mathbb      
+	\renewrobustcmd{\mathbb}[1]{\mathds{#1}} 
+	%% better equation
+	\let\equation\gather
+  \let\endequation\endgather
+  %% redefine  \eqnarray to use align, from
+	\AtBeginDocument{%
+		\RequirePackage{eqnalign}%
+		\pretocmd{\eqna@hook}{\marginpar{\raisebox{-2\baselineskip}{%
+		\color{red}\llap{\scriptsize Never Use \texttt{\string\eqnarray}!\hspace{4em} }}}}%
+		{}{}%
+	}
+  % numbering only equations referenced in the text (option)
+	\ifPM@showonlyrefs
+		\PackageInfoNoLine{preamb-math}{"showonlyrefs" option set to true}
+		\mathtoolsset{showonlyrefs,showmanualtags}
+	\fi
+	\ifPM@slantedgreekcaps
+  		\make@slantedgreekcaps%
+	\fi
+	\ifPM@mathfixs
+			\Requirepackage[frac,rfrac,vfrac,root,rootclose=0.85]{mathfixs}
+	\fi
+\else
+	\PackageInfoNoLine{preamb-math}{amsmath is OFF}
+	\ifPM@showonlyrefs \PackageInfoNoLine{preamb-math}{showonlyrefs option requires mathtools/amsmath}
+	\fi
+	\ifPM@slantedgreekcaps \PackageInfoNoLine{preamb-math}{slantedgreekcaps option requires mathtools/amsmath}
+	\fi
+	\ifPM@mathfixs
+			\PackageInfoNoLine{preamb-math}{mathfixs option requires mathtools/amsmath}
+	\fi
+\fi
+
+\RequirePackage{icomma}              % comma as  decimal separator
+\RequirePackage{upgreek}             % greek upright letters  for  μm and β-decay  
+%\RequirePackage{bbm}                 % dobble strocke
+
+\@ifpackagewith{inputenc}{utf8}{%
+\DeclareUnicodeCharacter{00B5}{\ensuremath{\upmu}}  % µ
+%\DeclareUnicodeCharacter{03C3}{\sigma}             % σ  
+}{\relax}
+
+\endinput
+%%
+%% End of file `preamb-math.sty'

@@ -1,0 +1,13 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Contents}{iii}{chapter*.1}%
+\contentsline {chapter}{Remerciements}{v}{chapter*.2}%
+\contentsline {part}{I\hspace {1em}Theory of Microcavity Exciton Polaritons}{1}{part.1}%
+\contentsline {chapter}{\numberline {1}Microcavity Exciton Polaritons}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Microcavity Photons}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Excitons in Semiconductors}{7}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Band theory in brief}{7}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Band structure of semiconductors}{8}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Excitons in bulk semiconductor}{8}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}A few words about exciton scattering}{10}{subsection.1.2.4}%
+\contentsline {part}{Appendices}{15}{section*.9}%
+\contentsline {part}{Bibliography}{17}{section*.11}%

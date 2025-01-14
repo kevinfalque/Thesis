@@ -1,0 +1,122 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = en_US
+\NeedsTeXFormat{LaTeX2e}[2021/06/01] % texdef -t latex fmtversion to check yous install
+\ProvidesPackage{preamb-work}[2023/03/09 0.71 Temporary use packages during thesis writing (JH)]
+%%% Generation of fake text, display of labels, marking of working versions: 
+%%% to be deleted for the final version, or better, add final in docimenetclass options%%%
+\RequirePackage{preamb-util}
+\IfLanguageName{french}{\PassOptionsToPackage{french}{datetime2}}%
+{\PassOptionsToPackage{english}{datetime2}}
+\RequirePackage{datetime2}
+
+\SetupKeyvalOptions{family=PW,prefix=PW@,setkeys=\kvsetkeys}
+\DeclareBoolOption[true]{showkeys}
+\DeclareBoolOption[false]{changebar}
+\DeclareBoolOption[false]{finalize}
+\DeclareComplementaryOption{drafting}{finalize}
+\DeclareDefaultOption{\PackageWarning{\@currname}{Unknown option `\CurrentOption'}}
+
+%%% PROCESS OPTIONS
+\ProcessKeyvalOptions*
+
+%%% save local draft mode
+\ifPW@finalize
+	\def\my@draftmode{the local "finalize" option}
+\else
+	\def\my@draftmode{the local "drafting" option}
+\fi
+
+%%%take into account the global dratt mode
+\@ifclasswith{final}{book}{%
+	\def\my@draftmode{the \string\documentclass\space document wide "final" option}%
+	\PW@finalizetrue
+}{}
+\@ifclasswith{draft}{book}{%
+	\def\my@draftmode{the \string\documentclass\space document wide "draft" option}%
+	\PW@finalizefalse%
+}{}
+
+\ifPW@finalize
+	\PW@showkeysfalse
+	\PW@changebarfalse
+	\hfuzz=1pt
+	\vfuzz=1pt
+	\overfullrule=0pt
+	\RequirePackage{microtype}
+    \ifdef{\lipsum}{\renewcommand\lipsum[1][]{\relax}}{\newcommand\lipsum[1][]{\relax}}
+    \ifdef{\blindmathtrue}{\blindmathfalse}{\relax}
+    \PackageInfoNoLine{preamb-work}{%
+	  This package detects \my@draftmode,
+	  to be used in the ultimate finalization phase.
+	  }
+\else
+    \PackageInfoNoLine{preamb-work}{%
+	  This package detects \my@draftmode, 
+	  useful when working on the first drafts.\MessageBreak
+	  For the production phase, comment it out, 
+	  or better pass to it the option "finalize" 
+	  or even better pass the "final" option  to \string\documentclass.}
+	\hfuzz=4pt
+	\vfuzz=4pt
+	\overfullrule=2mm
+	\AddToShipoutPictureBG{%
+		\ifodd\value{page}\relax\else%
+	    \AtPageLowerLeft{\raisebox{3\baselineskip}{\makebox[\paperwidth][c]%
+	    {Version compilée  le \today, à \DTMcurrenttime}}%
+	}\fi}
+	\RequirePackage{lipsum}%
+%	\RequirePackage[math,toc]{blindtext}%
+%	\renewcommand{\blindmarkup}[1]{\emph{#1}}%
+%	\blindmathtrue
+\fi
+
+%%% Showkeys
+\ifPW@showkeys
+	\RequirePackage[color,notref,notcite]{showkeys}
+	\definecolor{refkey}{rgb}{1,0.5,0}
+	\definecolor{labelkey}{rgb}{1,0,1}
+	\AtEndDocument{\vfill\newpage\thispagestyle{empty}\null\vfil\bfseries %
+     To remove the \textcolor{refkey}{refkey} and 
+	 \textcolor{labelkey}{labelkey} tags, pass the \texttt{showkeys=false}  option 
+	 to the \texttt{preamb-work} package.\\%
+     Or to disable all the temporary features use the \texttt{final} option of \texttt{\string\documentclass}.\\%
+    In both cases this page will disappear.\vfill%
+    }
+	%%\renewcommand*\showkeyslabelformat[1]{}
+	%%\def\SK@@ref#1>#2\SK@{}
+\fi
+
+%%% Change bars (loaded on compile time as it can't be stored in format)
+\@ifclasswith{final}{book}{\PW@changebarfalse}{\PW@changebartrue}
+
+\ifPW@finalize
+	\PW@changebarfalse
+\fi
+
+\ifPW@changebar
+	\AtEndPreamble{%
+		\PackageWarning{preamb-work}{changebar is true}
+		\usepackage[pdftex,outerbars,xcolor]{changebar}%
+		\setlength{\changebarsep}{8pt}%
+		\cbcolor{green}%
+		 \LetLtxMacro{\sav@cbstart}{\cbstart}
+		 \RenewDocumentCommand{\cbstart}{!d()}{% %\cb@current@color
+			\IfValueT{#1}{\cbcolor{#1}}%
+			\sav@cbstart
+		}%
+	}%
+\else
+	\AtEndPreamble{%
+		\PackageWarning{preamb-work}{changebar is false}
+		\ifundef{\cbstart}{\providecommand{\cbstart}{\relax}}{}
+		\ifundef{\cbstart}{\providecommand{\cbstart}{\relax}}{}
+		\ifundef{\cbcolor}{\providecommand{\cbcolor}[1]{\relax}}{}
+		\ifundef{\changebarsep}{\newlength{\changebarsep}}{}
+		\ifundef{\changebarwidth}{\newlength{\changebarwidth}}{}
+		\ifundef{\changebar}{\providecommand{\changebar}{\relax}}{}
+%		\ifundef{\endchangebar}{\providecommand{\endchangebar}{\relax}}{}
+	}
+\fi
+
+\endinput
+%end of preamb-work package

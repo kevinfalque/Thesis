@@ -1,0 +1,43 @@
+% !TeX encoding = UTF-8
+% !TEX spellcheck = en_US
+\NeedsTeXFormat{LaTeX2e}[2021/06/01]
+%%% Include some pages in A3 format in A4 docupment %%%
+\ProvidesPackage{a3pages}[2023/03/15 0.7 Create A3 page in A4 documpent (JH)]
+%%% Based On Mike's answer to
+%%% https://tex.stackexchange.com/questions/431422/centering-captions-in-document-that-contains-a3-and-a4-paper-sizes
+\@ifpackageloaded{etoolbox}{\relax}{\RequirePackage{etoolbox}}
+\@ifpackageloaded{geometry}{\relax}{\RequirePackage{geometry}}
+\@ifpackageloaded{kvoptions}{\relax}{\RequirePackage{kvoptions}}
+
+\newcommand{\newgeometryfull}[1]{%
+	\clearpage
+	\if@twoside%
+		\ifodd\c@page%
+			\null\clearpage%
+	\fi\fi%
+	\Gm@restore@org
+	\Gm@initnewgm
+%   \Gm@newgmtrue
+	\setkeys{Gm}{#1}%
+%   \Gm@newgmfalse
+	\Gm@process
+	\ifnum\mag=\@m\else\Gm@magtooffset\fi
+	\Gm@changelayout
+	\Gm@showparams{newgeometry}%
+}%
+
+
+%% Allow A3 sheets - - New environment
+\newenvironment{a3page}{%
+    \newgeometryfull{a3paper,landscape,width=360 mm,top=25 mm,bottom=25 mm}
+    % set the correct dimension for the PDF viewer
+    \pdfpageheight=\paperheight
+    \pdfpagewidth=\paperwidth
+}{%
+    \restoregeometry
+    % set the correct dimension for the PDF viewer
+    \pdfpageheight=\paperheight
+    \pdfpagewidth=\paperwidth
+}
+
+\endinput

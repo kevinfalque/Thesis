@@ -1,0 +1,163 @@
+% !TeX encoding = UTF-8
+%%%%%%%%%%%% UPSACLAY definition for thcover package %%%%%%%%%%%
+\RequirePackage{multicol}
+\providecommand\@univmeta{Université Paris-Saclay}
+\gdef\widthodparbox{0.60}
+%%%%%%%%%%% Jury format %%%%%%%%%%%
+\gdef\jurytablinesmacro{}
+\newcommand\formatMember[1]{%
+	\stepcounter{jurycnt}	
+	\ifnum\value{jurycnt}=1\relax\else\g@addto@macro\jurytablinesmacro{\\[0.5ex]}\fi
+	\g@addto@macro\jurytablinesmacro{%
+		\GetListMember[-+-]{#1}{2}\ \textsc{\GetListMember[-+-]{#1}{3}}\\[-0.5 ex]
+		{\footnotesize \GetListMember[-+-]{#1}{4}, \GetListMember[-+-]{#1}{5}}  
+		& {\footnotesize \GetListMember[-+-]{#1}{6} }
+	}
+}
+%%%%%%%%%% local commands and colors %%%%%%%%%%
+\def\BigSkip{\vspace*{11mm}}
+\definecolor{upsaclay@purple}{rgb/cmyk}{0.35 0.00 0.24/0 100 33 65}
+\newcommand\faketextsc[1]{\MakeUppercase{#1}}
+%%%%%%%%%%% Start of front page %%%%%%%%%%%
+\long\def\frontcover{%
+	\typeout{*** creating frontcover ***}
+    \begingroup
+   \ifthc@arial
+    		\renewcommand{\sfdefault}{qhv}
+    \else
+    		\DeclareFontShape{T1}{lmss}{bx}{sc}{<->ssub*cmss/bx/n}{}%
+		\DeclareFontShape{T1}{lmss}{m}{sc}{<->ssub*cmss/m/n}{}%
+    \fi
+    \ifdef{\hypersetup}{\begin{NoHyper}}{}
+    \setcounter{page}{-1}
+    \thispagestyle{empty}%
+    \strut
+    	\hbadness=10000 \vbadness=10000
+    	\raggedbottom 
+    	% logos
+	\atXYesoFG(63mm,30mm){\centering    
+		\setpathlogos
+		\ifdefmacro{\@logoone}{%
+			\ifboolexpr{test {\IfFileExists{\@logoone.pdf}} or test {\IfFileExists{\@logoone.png}}}%
+			{\includegraphics[height=22mm]{\@logoone}}%
+			{\getlogos{\@logoone}{\pathgraphics}}}{\strut}%
+		\hfil\hfil
+		\ifdefmacro{\@logotwo}{%
+			\ifboolexpr{test {\IfFileExists{\@logotwo.pdf}} or test {\IfFileExists{\@logotwo.png}}}%
+			{\includegraphics[height=22mm]{\@logotwo}}%
+			{\getlogos{\@logotwo}{\pathgraphics}}}{\strut}%
+	}[t]
+    \atXYesoFG(63mm,35mm){
+		\flushright
+		{\iftoggle{langisfrench}%
+		{\color{upsaclay@purple} \sffamily\Huge\@title\\}{\color{upsaclay@purple} \sffamily\Huge\@titleen\\}}
+		\BigSkip 
+ 	   	{\sffamily\large \@thesisname~\@univ\\}
+		{\sffamily\large préparée~\@atinstitution\\}
+		\BigSkip 
+		{\sffamily\large École doctorale nº\@ecoledoctnum, \@ecoledoct~(\@ecoledoctacro)\\}
+		\smallskip
+		{\sffamily\large Spécialité  du doctorat : \@specialite\\}
+		\BigSkip
+		{\sffamily\small Thèse présentée et soutenue \@defensecity\ le~\DTMusedate{date@defense}~par\\}
+		\bigskip
+		{\sffamily\LARGE \bfseries \@author}
+	}[t] 
+	\atXYesoFG(68mm,150mm){%
+		{\sffamily \large Composition du jury :}%
+		\smallskip%
+		\ifdef{\@jury}{%
+			\sffamily%
+			\flushleft%
+			\ifthc@arial\relax\else\let\textsc\faketextsc\fi
+			\buildlist[\\]{\jurylist}{\@jury}%
+   			\newcounter{jurycnt}	%
+			\forlistloop{\formatMember}{\jurylist}%
+     		\noindent\begin{tabular}[t]{p{90mm}l}
+			\jurytablinesmacro
+			\end{tabular}
+		}{}
+    }[t]
+    %reference
+    \ifdefempty{\@reference}{}{%
+    \atXYesoFG(10mm,80mm){%
+    	\rotatebox{90}{{\sffamily\large\color{white} NNT :\@reference}}
+    }}[t]
+    % creativecommons
+	\ifthc@creativecommons
+		\atXYesoFG(68mm,288mm){ \centering \includegraphics{ccbyncnd} }[t]
+	\fi
+    % background left strip
+	\AddToShipoutPictureBG*{%
+		\setpathlogos	%
+		\includegraphics[page=1,height=\paperheight]{background}}
+	\ifdef{\hypersetup}{\end{NoHyper}}{}
+  \endgroup
+  \clearpage{\thispagestyle{empty}\cleardoublepage}
+  \ifthc@arial \renewcommand{\sfdefault}{\sfdefaultbackup}\fi%
+%  \clearpage{\thispagestyle{empty}\cleardoublepage}
+}
+%%%%%%%%%%% Start of back page %%%%%%%%%%%
+\long\def\backcover{%
+	\typeout{*** creating backcover ***}
+	\checkLength{abstract}
+	\checkLength{resume}
+	\begingroup
+	\gdef\widthodparbox{0.9}
+    \ifthc@arial
+    		\renewcommand{\sfdefault}{qhv}
+    \else
+    		\DeclareFontShape{T1}{lmss}{bx}{sc}{<->ssub*cmss/bx/n}{}%
+		\DeclareFontShape{T1}{lmss}{m}{sc}{<->ssub*cmss/m/n}{}%
+    \fi
+	\newgeometry{left=20mm,right=20mm,bottom=20mm,top=20mm}
+	\clearevenpage
+     \pagestyle{empty}%
+    \rmfamily \strut
+    	\hbadness=10000 \vbadness=10000
+    	\raggedbottom
+    \fontsize{11}{13}\selectfont
+    \thispagestyle{empty}
+	\atXYesoFG(16mm,30mm){%
+		\setpathlogos
+		\ifdefmacro{\@ecoledoctacro}{%
+			\ifboolexpr{test {\IfFileExists{\@ecoledoctacro.pdf}} or test {\IfFileExists{\@ecoledoctacro.png}}}%
+			{\includegraphics[height=22mm]{\@ecoledoctacro}}%
+			{\getlogos{\@ecoledoctacro}{\pathgraphics}}}{\strut}%
+	}[t]
+	\atXYesoFG(18mm,42mm){
+		\adjustbox{padding =2ex 2ex 2ex 2ex,max width=160mm,max height=100mm,cfbox=upsaclay@purple 1pt}{
+		\begin{minipage}[t][105mm]{160mm} 
+		\noindent\textbf{Titre :}~\@title \\[1ex]
+		\noindent\textbf{Mots clés :}~\@motscles
+		\vspace*{-2ex}\vfil
+		\begin{multicols}{2}
+		\textbf{Résumé :}~\@resume
+		\ifthc@final\relax\else\printwarntoolong{resume}\fi
+		\end{multicols}
+		\vfil
+		\end{minipage}}
+	}[t]
+	\atXYesoFG(18mm,160mm){
+		\adjustbox{padding =2ex 2ex 2ex 2ex,max width=160mm,max height=100mm,cfbox=upsaclay@purple 1pt}{
+		\begin{minipage}[t][105mm]{160mm} 
+		\noindent\textbf{Title:}~\@titleen \\[1ex]
+		\noindent\textbf{Keywords:}~\@keywords
+		\vspace*{-2ex}\vfil
+		\begin{multicols}{2}
+		\textbf{Abstract:}~\@abstract
+		\ifthc@final\relax\else\printwarntoolong{abstract}\fi
+		\end{multicols}
+		\vfil
+		\end{minipage}}
+	}[t]
+
+	\AddToShipoutPictureBG*{%
+		\setpathlogos
+		\ifboolexpr{test {\IfFileExists{background.pdf}} or test {\IfFileExists{background.png}}}%
+		{\includegraphics[page=2,width=\paperwidth]{background}}%
+		{\getlogos{background}{\pathgraphics}}%
+	}
+	\clearpage
+  	\endgroup
+}

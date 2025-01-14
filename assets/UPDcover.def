@@ -1,0 +1,156 @@
+% !TeX encoding = UTF-8
+% !TeX root = thsample.tex
+%%%%%%%%%%% UPD definition for thcover package %%%%%%%%%%%
+\RequirePackage{multido}
+%% spacing fror front pages
+\newcommand{\Vfil}[1][1]{\multido{}{#1}{\vfil }}
+\providecommand\@univmeta{Université Paris Diderot}
+\newcommand\faketextsc[1]{\MakeUppercase{#1}}
+%%%%%%%%%%% Jury format %%%%%%%%%%%
+\gdef\jurytablinesmacro{}
+\newcommand\formatMember[1]{%
+	\stepcounter{jurycnt}	
+	\ifnum\value{jurycnt}=1\relax\else\g@addto@macro\jurytablinesmacro{\\}\fi
+	\g@addto@macro\jurytablinesmacro{%
+		 \GetListMember[-+-]{#1}{6} : & {\textsc{\GetListMember[-+-]{#1}{3}}}\ \GetListMember[-+-]{#1}{2}%&\\
+		  &{\small\GetListMember[-+-]{#1}{4}} & 	{\small \GetListMember[-+-]{#1}{5}}
+	}
+}
+%%%%%%%%%%% Start of front page %%%%%%%%%%%
+\long\def\frontcover{%
+	\typeout{*** building frontcover ***}%
+    \begingroup
+    \ifthc@arial
+    		\renewcommand{\sfdefault}{qhv}    
+    		\sffamily
+    \else
+    		\DeclareFontShape{T1}{lmss}{bx}{sc}{<->ssub*cmss/bx/n}{}%
+		\DeclareFontShape{T1}{lmss}{m}{sc}{<->ssub*cmss/m/n}{}%
+    \fi
+    \newgeometry{left=25mm,right=25mm,top=15mm,bottom=15mm}
+    \setcounter{page}{-1}
+	\thispagestyle{empty}%
+ 	\ifdef{\hypersetup}{\begin{NoHyper}}{}
+    	\hbadness=10000 \vbadness=10000
+    	\AddToShipoutPictureBG*{\AtPageUpperLeft{\raisebox{-4.5cm}{%
+    		\includegraphics[page=6,scale=1,interpolate=false]{background}}}}
+    	\raggedbottom 
+    \sffamily
+	\begin{center} 
+    \vspace*{1cm}
+%     \ifdefempty{\@logoone}{\par}{\centerline{%
+%        \rlap{\includegraphics[height=2cm]{\@logoone}}\hfill%
+%        \ifdefempty{\@logotwo}{\hfill\textcl@p{ }\hfill}{%
+%        		\hfill\textcl@p{\includegraphics[height=2cm]{\@logotwo}}\hfill}%
+%        \ifdefempty{\@logothree}{\relax}{%
+%             \hfill\llap{\includegraphics[height=2cm]{\@logothree}}}%
+%        }%
+%    }%
+%    \Vfil[1] 
+    {\LARGE\@thesisname\par}
+    \medskip
+    {\LARGE\@univ\par}
+     \medskip
+    {\LARGE Préparée \@atinstitution\par}
+    \medskip
+    {\Large\bfseries École doctorale «\@ecoledoct», Nº\,\@ecoledoctnum\par}
+    \bigskip
+    {\large\itshape\@atlab\par}
+	\Vfil[3]
+   	{\iftoggle{langisfrench}{\cp@fsize{26}{\@title}\par}{\huge\@titleen\par}}
+ 	\bigskip
+	\ifdef{\@subtitle}{\iftoggle{langisfrench}{\cp@fsize{20}{\@subtitle}\par}{\Huge\@suntitleen\par}}{\bigskip}
+	\Vfil[2]
+     {\cp@fsize{18}{Par \@author}\par}
+	\Vfil[3]
+	{\cp@fsize{16}{\@thesisname\ de \@specialite}\par}
+	\Vfil[2]
+	{\Large Dirigée par \@advisor\par}
+	\Vfil[3]
+	{\cp@fsize{13}{Présentée et soutenue publiquement \@defensecity\ le \DTMusedate{date@defense}\par
+		devant le jury composé de :}\par}
+    \bigskip
+    \ifdef{\@jury}{%
+    		\normalsize
+		\buildlist[\\]{\jurylist}{\@jury} % create internal list
+    		\newcounter{jurycnt}	
+		\forlistloop{\formatMember}{\jurylist}
+     	\begin{tabular}{llll}
+		\jurytablinesmacro
+		\end{tabular}
+	}{}
+	\Vfil[2]
+	% creativecommons
+	\ifthc@creativecommons 
+		\AddToShipoutPictureBG*{
+		\AtPageUpperLeft{\raisebox{-28.5cm}{\parbox[t]{\paperwidth}{
+	 	\centering \includegraphics[scale=1.2]{ccbyncnd}}}}}
+	\fi
+  \bigskip
+  \end{center}
+  \par
+  \ifdef{\hypersetup}{\end{NoHyper}}{} %\hypersetup{pageanchor=true}
+  \endgroup
+  \restoregeometry
+  \clearpage{\thispagestyle{empty}\cleardoublepage}
+  \ifthc@arial \renewcommand{\sfdefault}{\sfdefaultbackup}\fi%
+}
+ 
+%%%%%%%%%%% Start of back page %%%%%%%%%%%
+
+%\long\def\backcover
+%{%
+%	\typeout{*** building backcover ***}
+%	\hbadness=10000 \vbadness=10000
+%    \newlength{\th@bskip}	
+%    \setlength{\th@bskip}{8mm plus 5mm minus 5mm}%
+%    \checkLength{resume}
+%    \checkLength{abstract}
+%    \begingroup
+%    \ifthc@arial
+%    		\renewcommand{\sfdefault}{qhv}    
+%    		\sffamily
+%    \else
+%    		\DeclareFontShape{T1}{lmr}{bx}{sc}{<->ssub*cmr/bx/sc}{}%
+%    \fi
+%    \pagestyle{empty}%
+%    \newgeometry{left=20mm,right=20mm,bottom=20mm,top=20mm}
+%	\ifdef{\hypersetup}{\begin{NoHyper}}{}
+%	\clearevenpage
+%	\flushbottom
+%    %\vskip \th@skip%
+%    \begin{center}\Large\bfseries
+%    \framebox[\linewidth][c]{\rule[-0.5ex]{0pt}{3ex}\@author\hfil\hfil\DTMusedate{date@defense}\\[\th@bskip]
+%	  \hrulefill\\[1ex]
+%   	{\Large\bfseries Sujet~: \@title\par}
+%   	\hrulefill
+%   	\end{center}
+%   	\adjustbox{max width=\textwidth,max totalheight=0.40\textheight,center}{
+%	\parbox{0.95\linewidth}{
+%   	\noindent\textbf{Résumé}~:~\normalfont\normalsize%
+%   	\@resume\par
+%   	\ifthc@final\relax\else\printwarntoolong{resume}\fi
+%   	\medskip
+%   	\noindent\textbf{Mots clés}~:~\normalfont\normalsize%
+%   	\@motscles}
+%   	}
+%   	\vskip \th@bskip%
+%   	\begin{center}
+%   	\hrulefill\\[1ex]
+%   	{\Large\bfseries Subject~: \@titleen\par}
+%   	\hrulefill
+%   	\end{center}
+%   	\adjustbox{max width=\textwidth,max totalheight=0.36\textheight,center}{
+%	\parbox{0.95\linewidth}{
+%   	\noindent\textbf{Abstract}:~\normalfont\normalsize%
+%   	\@abstract\par
+%   	\ifthc@final\relax\else\printwarntoolong{abstract}\fi
+%   	\medskip
+%   	\noindent\textbf{Keywords}~:~\normalfont\normalsize%
+%   	\@keywords}
+%   	}
+%%   	\hrulefill
+%	\ifdef{\hypersetup}{\end{NoHyper}}{}
+%   	\restoregeometry
+%   	\endgroup
+%}

@@ -1,0 +1,41 @@
+% !TeX encoding = UTF-8
+% !TEX spellcheck = en_US
+%%% This package must be loaded before hyperref
+\NeedsTeXFormat{LaTeX2e}[2018/04/01]
+\ProvidesPackage{citebackref}[2023/03/12 0.5 back references in  bibliography (J.Hare)]
+\@ifpackageloaded{etoolbox}{\relax}{\RequirePackage{etoolbox}}
+\@ifpackageloaded{iflang}{\relax}{\RequirePackage{iflang}}
+\PassOptionsToPackage{pagebackref}{hyperref} % hyperpageref
+
+\IfLanguageName{french}{%
+		\newcommand{\BR@cit@d}{Cité }
+		\newcommand{\BR@not@cit@d}{Non cité.}
+		\newcommand{\BR@nd}{et}%
+		\newcommand{\Br@lang}{french}
+		\PassOptionsToPackage{french}{backref}
+}{% assumes english
+	\newcommand{\BR@cit@d}{Cited }
+	\newcommand{\BR@not@cit@d}{Not cited.}
+	\newcommand{\BR@nd}{and}%
+	\newcommand{\Br@lang}{english}
+	\PassOptionsToPackage{english}{backref}
+}
+
+\AtEndPreamble{
+\@ifpackageloaded{hyperref}{}{\PassOptionsToPackage{pageref}{backref}\RequirePackage{backref}}
+\newcommand{\frm@tbackref}[1]{\hspace*{\fill}\mbox{\small #1}}
+\renewcommand*{\backref}[1]{}
+\renewcommand*{\backrefalt}[4]{%
+\ifcase#1\frm@tbackref{\BR@not@cit@d}\or\frm@tbackref{\BR@cit@d~page #2}\else\frm@tbackref{\BR@cit@d~pages #2}\fi}
+\renewcommand*{\backreftwosep}{ \BR@nd~}
+\renewcommand*{\backreflastsep}{, \BR@nd~}
+}
+
+\@ifpackageloaded{natbib}{%
+	\@ifpackagewith{natbib}{sort&compress}{%
+		\AfterPackage{hyperref}{\RequirePackage{hypernat}}%
+	}{}%
+}{}
+
+\endinput
+%end of citebackref package

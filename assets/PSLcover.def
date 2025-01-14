@@ -1,0 +1,215 @@
+%!TeX Root = D:/Jean/Desktop/thcover-sample/thsamplecover.tex
+%%%%%%%%%%% PSL definition for thcover package %%%%%%%%%%%
+\providecommand\@univmeta{Université Paris Sciences et Lettres}
+\providecommand\@logoinstitution{PSL-LogoINST}
+%\providecommand\hyper@newdestlabel[2]{}
+%\relax 
+%%retieval of pictures by xr package requires this aux-file
+\begin{filecontents*}{\@logoinstitution.aux}
+\newlabel{ENSCP}{{}{1}{}{Doc-Start}{}}
+\newlabel{ENC}{{}{2}{}{Doc-Start}{}}
+\newlabel{ENS}{{}{3}{}{Doc-Start}{}}
+\newlabel{EPHE}{{}{4}{}{Doc-Start}{}}
+\newlabel{ESPCI}{{}{5}{}{Doc-Start}{}}
+\newlabel{CURIE}{{}{6}{}{Doc-Start}{}}
+\newlabel{MINES}{{}{7}{}{Doc-Start}{}}
+\newlabel{OBSPM}{{}{8}{}{Doc-Start}{}}
+\newlabel{DAUPHINE}{{}{9}{}{Doc-Start}{}}
+\newlabel{CDF}{{}{10}{}{Doc-Start}{}}
+\newlabel{CNSAD}{{}{11}{}{Doc-Start}{}}
+\newlabel{CNSMDP}{{}{12}{}{Doc-Start}{}}
+\newlabel{EHESS}{{}{13}{}{Doc-Start}{}}
+\newlabel{ENSAD}{{}{14}{}{Doc-Start}{}}
+\newlabel{ENSBA}{{}{15}{}{Doc-Start}{}}
+\newlabel{FEMIS}{{}{16}{}{Doc-Start}{}}
+\newlabel{IBPC}{{}{17}{}{Doc-Start}{}}
+\end{filecontents*}
+\externaldocument[logo-]{\@logoinstitution}
+\gdef\widthodparbox{1}
+%%%%%%%%%%% Jury format %%%%%%%%%%%
+\ifthc@arial
+\newcommand\myscshape[1]{{\scshape #1}}
+\else
+\newcommand\myscshape[1]{\uppercase{#1}}
+\fi
+%------------------
+\gdef\@jurytablinesmacro{}
+\gdef\nb@menbers{\@jurylistlen}
+\newcommand\formatjury{%
+\foreachitem \member \in \@jurylist[]{%
+	\xappto\@jurytablinesmacro{\\ \@jurylist[\membercnt,2]\ \myscshape{\@jurylist[\membercnt,3]} & \\}
+	\xappto\@jurytablinesmacro{\noexpand\small\@jurylist[\membercnt,4]}
+	\itemtomacro\@jurylist[\membercnt,5]\@inst
+	\ifdefempty{\@inst}{\xappto\@jurytablinesmacro{&}}{%
+	\xappto\@jurytablinesmacro{\noexpand\small,\ \@jurylist[\membercnt,5]&}}
+   \xappto\@jurytablinesmacro{\noexpand\small\@jurylist[\membercnt,6] \\}
+}}
+%%%%%%%%%% local commands and colors %%%%%%%%%%
+\definecolor{psld@rkblue}{rgb/cmyk}{0.14 0.22 0.55/79 57 0 47}
+\definecolor{ca@doie}{rgb/cmyk}{0.90 0.90 0.90 / 0 0 0 10}
+\def\p@bl{\color{psld@rkblue}}
+\def\w@h{\color{white}}
+\def\b@k{\color{black}}
+%%%%%%%%%%% Start of front page %%%%%%%%%%%
+\long\def\frontcover{%
+	\typeout{*** creating frontcover for PSL***}%
+    \begingroup%
+    \setlength{\parindent}{0pt}
+    \ifdef{\hypersetup}{\begin{NoHyper}}{}%
+    \newgeometry{left=20mm,right=20mm,top=10mm,bottom=20mm}
+    \TPoptions{absolute=true,showboxes=false,overlay=true}
+	\textblockrulecolor{red}
+    \textblockorigin{20mm}{0pt}
+    % background
+	\begin{textblock*}{\paperwidth}[0,0](-20mm,0mm)%
+	\includegraphics[page=1,interpolate=false,width=\paperwidth,height=\paperheight]{PSL-bkgrd}
+	\end{textblock*}
+    \setcounter{page}{\thc@front@page}
+    \thispagestyle{empty}%
+    \hbadness=10000 \vbadness=10000
+	\sffamily
+	\ifdefempty{\@jointunivlogo}{\relax}{%
+		\begin{textblock*}{\dimexpr0.5\textwidth}[0,0.5](\dimexpr0.5\textwidth,25mm)
+		\hfill
+		\includegraphics[min height=25mm,max height=4cm,max width=\dimexpr0.4\textwidth]{\@jointunivlogo}\qquad 
+		\end{textblock*}
+	}
+	\begin{textblock*}{\textwidth}[0,0](0mm,75mm)%
+	\p@bl\Large%
+    Préparée~\@atinstitution%
+    \ifdefempty{\@jointunivname}{\relax}{\\[0.4ex]En cotutelle avec \@jointunivname}%
+    \ifdefempty{\@atlab}{\relax}{\\[0.4ex] \normalsize\@atlab}%
+    \end{textblock*}	
+    \begin{textblock*}{\textwidth}[0.5,0.5](\dimexpr0.5\textwidth,117mm)%
+	\b@k\huge\bfseries\centering%
+   	\iftoggle{langisfrench}{\@titlefr}{\@titleen}%
+    \end{textblock*}%
+	\begin{textblock*}{75mm}[0,0](0mm,158mm)%
+	\p@bl\large Soutenue par%
+	\end{textblock*}
+	\begin{textblock*}{75mm}[0,1](0mm,168mm)%
+	\b@k\LARGE \myscshape{\@author}%
+	\end{textblock*}%	\atXYesoFG(20mm,177mm){\large\sffamily Le~\DTMusedate{date@defense}}[c]
+	\begin{textblock*}{75mm}[0,1](0mm,175mm)%
+	\b@k\large Le~\DTMusedate{date@defense}%
+	\end{textblock*}%
+    \ifdefempty{\@ecoledoct}{\relax}{%
+		\begin{textblock*}{75mm}[0,1](0mm,193mm)%
+		\p@bl\large École doctorale nº\;\@ecoledoctnum%
+		\end{textblock*}
+		\begin{textblock*}{75mm}[0,1](0mm,200mm)%
+		\b@k\Large\bfseries\@ecoledoct%
+		\end{textblock*}%
+	}
+   	\ifdefempty{\@specialite}{\relax}{%
+		\begin{textblock*}{75mm}[0,1](0mm,220mm)%
+		\p@bl\large Spécialité
+		\end{textblock*}
+		\begin{textblock*}{75mm}[0,1](0mm,226mm)%
+		\b@k\Large\bfseries\@specialite%
+		\end{textblock*}%
+	}
+	% logos
+	\begin{textblock*}{\textwidth}[0.5,0.5](\dimexpr0.5\textwidth,268mm)%
+	\includegraphics[height=25mm,interpolate=false,page=\getpagerefnumber{logo-\@atinstitutionacro}]{\@logoinstitution}
+	\ifdefempty{\@logolab}{\relax}{\quad\hfill\includegraphics[height=25mm,interpolate=false]{\@logolab}\quad\par}
+	\end{textblock*}
+	% jury
+    \formatjury%
+    \TPMargin{4pt}
+    \textblockcolor{ca@doie}
+	\begin{textblock*}{95mm}[0,0](76mm,\dimexpr158mm-4pt-\medskipamount)\parbox{94mm}{%
+		\medskip%
+		\p@bl\large\ \ Composition du jury :\\
+		\b@k\normalsize%
+		\renewcommand\arraystretch{0.9}
+		\ifnum\@jurylistlen>7\renewcommand\arraystretch{0.65}\fi
+		\ifnum\@jurylistlen>6\renewcommand\arraystretch{0.75}\fi
+		\ifnum\@jurylistlen>5\renewcommand\arraystretch{0.8}\fi
+	    \begin{tabular}{p{51mm}p{40mm}}%
+			\@jurytablinesmacro
+		\end{tabular}%
+		}\medskip%
+	\end{textblock*}%
+	% creativecommons
+	\TPMargin{0pt}
+    \textblockcolor{white}
+    \ifthc@creativecommons%
+		\begin{textblock*}{\textwidth}[0.5,0.5](\dimexpr0.5\textwidth,292mm)
+		\centering\includegraphics{CC-BY-NC-ND}\par
+		\end{textblock*}
+	\fi
+	\ifdef{\hypersetup}{\end{NoHyper}}{}
+  	\endgroup
+  	\strut
+  	\clearpage{\thispagestyle{empty}\cleardoublepage}
+	\ifthc@arial \let\sfdefault=\sfdefaultbackup\fi%
+	\color{black}
+}
+  
+%%%% Back page %%%%
+\long\def\backcover{%
+	\typeout{*** creating backcover ***}
+	\checkLength{abstract}
+	\checkLength{resume}
+	\begingroup
+	\hbadness=10000 \vbadness=10000
+	\raggedbottom
+   	\ifthc@arial
+    	     \renewcommand{\sfdefault}{qhv}    		
+    \else
+    		\DeclareFontShape{T1}{lmss}{bx}{sc}{<->ssub*cmss/bx/n}{}%
+		\DeclareFontShape{T1}{lmss}{m}{sc}{<->ssub*cmss/m/n}{}%
+    \fi
+	\clearevenpage
+  	\newgeometry{left=20mm,right=20mm,bottom=40mm,top=40mm}
+     \thispagestyle{empty}%
+     \strut
+	\atXYesoFG(28mm,\dimexpr\textheight-60mm){
+	\renewcommand{\sfdefault}{qhv} %  		
+	\noindent\begin{minipage}[c][\textheight]{\dimexpr\textwidth+4pt}%
+		\hbadness=10000 \vbadness=10000
+		\raggedbottom
+     	\newcommand{\rulehere}{\smash{\p@bl\rule[1.2ex]{\dimexpr\linewidth-3pt}{1.5pt}}\\[0.5ex]}%
+		{\noindent\sffamily\small\p@bl RÉSUMÉ}\\[0ex]
+		\rulehere
+		\adjustbox{max width=\textwidth,max totalheight=85mm}{
+		\noindent	\begin{minipage}[t]{\textwidth}
+		\sffamily\small\@resume
+		\ifthc@final\relax\else\printwarntoolong{resume}\fi
+		\end{minipage}
+		}\\[2ex]
+		{\noindent\sffamily\small\p@bl MOTS CLÉS}\\[0ex]
+		\rulehere
+		\adjustbox{max width=\linewidth,max totalheight=15mm}{
+		\noindent\begin{minipage}[t]{\textwidth} 
+		\sffamily\small\@motscles
+		\end{minipage}}\\[2ex]
+		\vfil
+		{\noindent\sffamily\small\p@bl ABSTRACT}\\[0ex]
+		\rulehere
+		\adjustbox{max width=\linewidth,max totalheight=85mm}{
+		\noindent\begin{minipage}[t]{\textwidth}
+		\sffamily\small\@abstract
+		\ifthc@final\relax\else\printwarntoolong{abstract}\fi
+		\end{minipage}
+		}\\[2ex]
+		{\noindent\sffamily\small\p@bl KEYWORDS}\\[0ex]
+		\rulehere
+		\adjustbox{max width=\linewidth,max totalheight=15mm}{
+		\noindent\begin{minipage}[t]{\textwidth} 
+		\sffamily\small\@keywords
+		\end{minipage}}
+		\vfil \strut
+	\end{minipage}
+	}[b]		
+	\AddToShipoutPictureBG*{\AtPageUpperLeft{\raisebox{-189mm}{%
+		\includegraphics[page=2,scale=1,interpolate=false]{PSL-bkgrd}}}
+	}
+	\AddToShipoutPictureBG*{\hspace{\dimexpr\paperwidth-43.5mm}%
+		\includegraphics[page=3,scale=1,interpolate=false]{PSL-bkgrd}}
+   	\endgroup
+   	\clearpage%
+}
+
+

@@ -1,0 +1,176 @@
+% !TeX encoding = UTF-8
+% !TEX spellcheck = en_US
+\NeedsTeXFormat{LaTeX2e}[2021/06/01]
+\ProvidesPackage{versionswitch}[2023/03/12 0.92 Switch between archiv and diffus (JH)]
+%\RequirePackage{graphicx}
+%\RequirePackage{etoolbox}
+%\RequirePackage{bibentry}
+\@ifpackageloaded{etoolbox}{\relax}{\RequirePackage{etoolbox}}
+\@ifpackageloaded{iflang}{\relax}{\RequirePackage{iflang}}
+\@ifpackageloaded{bibentry}{\relax}{\RequirePackage{bibentry}}
+
+%% \@iflatexlater defned in preamb-util.tex
+%\@iflatexlater{2020/10/01}{\relax}{\RequirePackage{xparse}}
+% as of 2020/10/01 the  kernel also provides  \IfFormatAtLeastTF{<date>}
+\let\savebibentry=\bibentry
+\newif\if@diffus
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% OPTIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DeclareOption{archiv}{\@diffusfalse} 
+\DeclareOption{archive}{\@diffusfalse} 
+\DeclareOption{diffus}{\@diffustrue}
+\DeclareOption{diffusion}{\@diffustrue}
+\DeclareOption{draft}{\@diffustrue}
+\ProcessOptions\relax
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% UTILITIES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% In case where bib style uses them, make them available for bibentry :
+\providecommand{\bibAnnoteFile}[1]{%
+  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
+\providecommand{\bibAnnote}[2]{%
+  \begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ #2\end{quotation}}
+\@ifpackageloaded{babel}{
+	\IfLanguageName{french}{\providecommand{\enquote}[1]{«#1»}}{\providecommand{\enquote}[1]{“#1”}}
+}{\providecommand{\enquote}[1]{“#1”}}
+\AtBeginDocument{
+\@ifpackageloaded{hyperref}{\relax}{\providecommand{\url}[1]{\texttt{1}}}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% COPYRIGHTED PICTURE %%%%%%%%%%%%%%%%%%%%%%%%%
+%% define \patched \diffus@Gin@setfile to use in draft mode
+	\providecommand\@draftcontent{-- not shown because of  \copyright--}
+	\let\diffus@Gin@setfile=\Gin@setfile
+%	\expandafter\filename@parse\expandafter{\@tempa}% get filename without path
+%	\ttfamily \expandafter\filename@base.\filename@ext	%% display filebame
+%% main environement for graphics
+%% a local optionnal argument "diffus" can be added to emulate diffus in archiv mode
+%% the optionnal third argument is an explicit reference
+%\ExplSyntaxOn
+	\NewDocumentEnvironment{copyrighted}{o +m !+o}{
+	\bgroup%
+	\renewcommand{\newblock}{\par}
+	\IfValueTF{#3}{\gdef\@draftcontent{#3}}{\gdef\@draftcontent{\bibentry{#2}}}%
+	%% define matched caption copyrighted figure, in any mode %%%
+    \patchcmd{\@makecaption}{2}{2\ --\ {\upshape Source:~\citet{#2}}}%
+     {\relax}{\message{** \string\@makecaption patch failure **}}	
+     \ifstrequal{#1}{diffus}{\@diffustrue}{\relax}
+     \if@diffus
+		\Gin@drafttrue
+	 \else
+		\Gin@draftfalse
+	\fi%
+}{%
+	\egroup
+}
+%\ExplSyntaxOff
+%%%%%%%%%%%%%%%%% COPYRIGHTED TEXT %%%%%%%%%%%%%%%%% 
+\newsavebox{\CRtext@box}
+\providecommand\citationname{Citation of:}
+%------------------- provide tranbslation  of \citationname-------------------
+\@ifpackageloaded{babel}{
+	\IfLanguageName{french}{\addto\captionfrench{\gdef\citationname{Citation de :}}}{}
+}{}
+
+%\ExplSyntaxOn
+\NewDocumentEnvironment{copyrightedtext}{o +m !+o}{%
+	\bgroup
+	\renewcommand{\newblock}{\par}
+	\IfValueTF{#3}%
+		{\long\gdef\@boxcontent{\citationname\par#3}}%
+		{\long\gdef\@boxcontent{\citationname\par\bibentry{#2}}}%
+
+%	\gdef\copyright@replacetext{#2#1.}%
+	\vspace*{0.5\baselineskip}%
+	\begin{lrbox}{\CRtext@box}%
+	\begin{minipage}{\linewidth}%
+	\begin{quote}%
+}{%
+	\footnotemark%
+	\end{quote}
+	\end{minipage}
+	\end{lrbox}
+	\if@diffus 
+		\setlength{\fboxsep}{0pt}\setlength{\fboxrule}{0.5ptmm}
+		\noindent\fbox{%
+		\begin{minipage}[t]{\linewidth}%
+		\mbox{\llap{\vphantom{\usebox\CRtext@box}}	}
+		\smash{\parbox[c]{\linewidth}{\centering\@boxcontent}\\}
+		\end{minipage}%
+		}
+	\else
+		\noindent\usebox\CRtext@box
+	\fi%
+	\vspace*{0.5\baselineskip}%
+	\footnotetext{Source:~\citet{#2}}
+	\gdef\@boxcontent{}%
+	\egroup
+}
+%\ExplSyntaxOff
+
+%%%%%%%% Patch \Gin@setfile to add bibitem (for graphics) %%%%%%%%%%%%%%%%
+
+\@ifpackageloaded{epstopdf-base}%
+{ \typeout{*** epstopdf-base was ALREADY loaded ***}}%
+{ \typeout{*** epstopdf-base NOT YET loaded, load it ***}%
+	\RequirePackage{epstopdf-base}%
+}%
+%% the patch is applyed independently of GLOBAL option 'diffus'
+%% in order to enable the LOCAL option 'diffus'
+%% but is not done in case of GLOBAL 'draft' to keep the normal behavior
+\ifGin@draft
+	\typeout{*** \string\Gin@draft\space is true ***}%
+\else
+	\typeout{*** \string\Gin@draft\space is false ***}%
+	  \newsavebox{\VS@bibentry@box}%
+	  \gdef\@draftcontent{Hello !}%
+	  \ifdefined\ETE@OrgGin@setfile% \Gin@setfile redefined by epstopdf
+				\typeout{*** patching \string\ETE@OrgGin@setfile\space ***}
+		  	\patchcmd{\ETE@OrgGin@setfile}%
+		  		{\rlap{ \ttfamily \expandafter \strip@prefix \meaning \@tempa}}%
+		  		{\expandafter\filename@parse\expandafter\@tempa%
+		  		 \savebox{\VS@bibentry@box}{\parbox{\dimexpr\Gin@req@width-1em}{%
+			 	  	{\ttfamily\filename@base.\filename@ext \par}%
+%			 	  	{\ttfamily \expandafter \strip@prefix \meaning \filename@base \par}%
+			 	  	\medskip{\footnotesize\@draftcontent}}}%
+			     \rlap{\hskip0.5em\usebox{\VS@bibentry@box}}%
+		 			}%
+		 			{\typeout{Patch \string\ETE@OrgGin@setfile\space OK}}%
+		 			{\typeout{Patch \string\ETE@OrgGin@setfile\space FAIL}}%
+	 	\else 
+			\typeout{*** \string\ETE@OrgGin@setfile\space does not exist***}		
+	 \fi
+\fi
+
+
+%%%%%%%%%%%%%%%%% COMMANDS DIFFERED TO DOCUMENT START %%%%%%%%%%%%%%%%%
+\AtBeginDocument{%
+%--------prevent showeys to break \nobibliography* needed for bibitem ----
+	\@ifpackageloaded{showkeys}%
+		{%
+		\let\save@SK@@label=\SK@@label
+		\def\SK@@label#1>#2\SK@{}
+		\nobibliography*
+		\let\SK@@label=\save@SK@@label%
+		}%
+		{\nobibliography*}
+	%
+	\@ifpackageloaded{natbib}{\relax}{\let\citet=\cite\let\citep=\cite}
+	%
+%------------------- redefinition of \bibentry  command -------------------
+	\@ifpackageloaded{hyperref}{%
+		\typeout{*** redefine \string\bibentry ***}%
+	   \newcounter{bib@entry@cnt}%
+	   \renewcommand\bibentry[1]{\stepcounter{bib@entry@cnt}{\noindent\frenchspacing%
+	   \hyper@natanchorstart {#1\@extra@b@citeb.\thebib@entry@cnt }\@nameuse
+	   {BR@r@#1\@extra@b@citeb }\hyper@natanchorend}\ \nocite{#1}\par}%
+		\robustify{\bibentry}%
+	}{%
+		\typeout{*** restore \string\bibentry ***}%
+		\let\bibentry=\savebibentry%
+		\apptocmd{\bibentry}{\ \citet{#1}}{}{}
+		\robustify{\bibentry}%
+	}
+	%
+}
+
+%end of versionswitch package
+\endinput

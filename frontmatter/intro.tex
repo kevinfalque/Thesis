@@ -1,0 +1,184 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = fr_FR
+% !TeX root = mythesis.tex
+
+\chapter*{Introduction}
+
+%%% the two following lines are needed for  starred chaper 
+%%% in main matter and want it to appear in  TOC ans bookmarks
+\phantomsection
+\addcontentsline{toc}{chapter}{Introduction}
+%%% the next lne is needed to update the headers dor a starred chapter
+\markboth{INTRODUCTION}{INTRODUCTION}
+
+\section*{General context}
+
+The last thirty years have been marked by what has been dubbed the "second quantum 
+revolution".
+Physicists have aimed at switching from the understanding of the foundations of quantum
+mechanics to actually harnessing these laws in order to control quantum systems.
+In this context, tremendous efforts have been made to develop platforms of controllable
+ensembles of quantum particles: cold gases 
+\cite{dalibard_fluides_cdf_2016,dalibard_12_superfluidity,pitaevskij_bose-einstein_2016}, 
+exciton polariton condensates \cite{amo_polariton_2011,Amo_fluidlightexp_2009, kasprzak_boseeinstein_2006}, 
+superconducting circuits \cite{Wendin_2017}, 
+dye-filled cavities \cite{Kurtscheid2019-vw, Ozturk2022-hp, Nyman2021-pd}
+or in our case hot atomic vapors 
+\cite{glorieuxHotAtomicVapors2023}.
+
+Study of these systems brought experimental confirmation of many seminal effects of the 
+many-body quantum physics like Bose-Einstein condensation 
+\cite{bec_jila_1995, Ozturk2022-hp, kasprzak_boseeinstein_2006}, 
+superfluidity \cite{dalibard_12_superfluidity}, 
+superconductivity \cite{strinati_bcsbec_2018} or 
+quantum entanglement \cite{josse_entanglement_2004}.
+These effects were subsequently harnessed to great success bringing considerable 
+technological advancement for medical imagery thanks to superconducting magnets \cite{mri_magnets},
+guidance systems with the advance of atomic clocks \cite{optical_clocks} for the GPS and 
+communications with fully optical links \cite{fiber_amplifiers}.
+
+In this effervescence, quantum fluids of light
+have emerged as a competitive option due to their relative simplicity and excellent 
+imaging capabilities comparatively to cold gases for instance, where non destructive measurement of 
+the system is difficult.
+In fluids of light, the quantum particles are directly photons whose control has been 
+perfected by hundreds of years of optics, both classical, and more recently quantum.
+This grants near unlimited access to the full field, making fluids of light the only 
+platform where the correlation functions of all moments can be computed directly.
+However, photons do not interact in a vacuum.
+In order to obtain a collective behavior in an ensemble of photons, one needs to engineer
+interactions between them.
+In a medium, photons acquire an effective mass due to the index of refraction of the 
+medium.
+If in addition this medium has an intensity dependant nonlinear index, the 
+photons will acquire effective interactions.
+Under the right conditions, if the interactions are repulsive, the photons will behave
+collectively, exhibiting fluid-like behavior.
+
+Such a nonlinear medium can be found in hot atomic vapors that have several key advantages
+to other nonlinear media:
+\begin{itemize}
+    \item Compared to photorefractive crystals \cite{michel_superfluid_2018,michel_phonon_2016}, 
+    they are repeatable in the sense that two cells 
+    containing the same element will behave in the same manner, while photorefractive
+    crystals are by nature flawed by large variations of their properties between samples.
+    Also, the non-linearity of atoms can be several orders of magnitude larger and this 
+    non-linearity can be tuned over several orders of magnitude through the exponential
+    dependance of the atomic density on temperature.
+
+    \item Compared to exciton polaritons, hot atomic vapors do not require vacuum chambers and 
+    cryostats in order to bring the samples to their working conditions. 
+    Furthermore these samples require very advanced nanofabrication techniques that 
+    forbid fast iterations between samples.
+    While the coupling between light and excitons in polariton cavities is exceptionnal, 
+    it can hardly be tuned.
+    Furthermore, exciton polaritons fluids are driven dissipative, meaning that there is 
+    a complex exchange between the exciton reservoir, cavity photons and polaritons.
+    This makes interpretation of the experiments more challenging.
+\end{itemize}
+
+This platform has proven very successful allowing to probe hydrodynamical effects from 
+vortex dynamics \cite{azam_2022}, dispersive shock waves \cite{bienaime_quantitative_2021} 
+up 
+to large scale hydrodynamical phenomena like turbulence \cite{abobaker2022inverse}. 
+Statistical properties of quantum fluids were also observed shedding light on the
+response to interaction quenches \cite{steinhauer_analogue_2022} as well as prethermalization
+\cite{Abuzarli_2022}.
+
+These results and the fruitful collaboration between theory and experiments 
+shows great promise for the future of our community. 
+
+\section*{Motivations}
+
+The hydrodynamical properties of fluids of light in hot atomic vapors were first demonstrated in \cite{fontaine_phd} 
+where Quentin Fontaine laid the ground work of the experiments carried out in this thesis:
+the first methods to measure the Bogoliubov dispersion were developped and the interference of Bogoliubov 
+particles was evidenced.
+In \cite{abuzarli_phd}, Murad Abuzarli introduced new methods to precisely characterize the nonlinear index of 
+refraction, as well as observables in order to probe the out-of-equilibrium nature of paraxial fluids of light
+presenting blast wave dynamics as well as studies on the coherence properties of the fluid after a quench.
+The motivation of this thesis is to build on these works and mature the experimental set up into 
+a fully controlled sandbox.
+In order to provide a credible alternative to the leading experimental platforms like cold atoms, we
+build a theoretical, numerical and experimental framework in order to be able to predict ab initio, 
+simulate and put into practice the Hamiltonian we want to study.
+
+The goal of reaching this full control of the system is also to address important theoretical questions of 
+paraxial fluids of light: the system dimensionality (2D or 3D), the meaning of the space-time mapping or the limits 
+of the Bogoliubov theory.
+We can thus summarize the motivation of this thesis as an attempt to from passive observation to active planning 
+and control of a specific physical effect.
+
+\section*{Summary}
+
+This thesis manuscript contains five chapters, structured in increasing scale order: from the lowest quantum level scale 
+to the macroscopical large scale.
+The common thread across chapters is the system Hamiltonian: 
+in each chapter, we focus on the description and control of one term.
+This corresponds to the degrees of freedom of the fluid (kinetic, interaction and potential energy) and we ultimately
+link these to experimental tuning knobs.
+In each chapter, we try to present the theoretical framework, numerical methods and experimental results in 
+order to try and paint a complete picture.
+The first chapter is devoted to introducing the theoretical concepts and description of paraxial fluids of light.
+The second chapter explores the effects arising from quantum fluctuations of vacuum and interaction quenches.
+The third chapter describes the atomic medium that generates the all important photon-photon interactions.
+The fourth chapter presents a detailed study of superfluidity. 
+Finally the fifth chapter opens up new perspectives on energy transfer accross scales presenting results on 
+turbulence and quantum phase transitions.
+
+\paragraph*{Chapter 1}
+
+The theoretical framework used to describe paraxial fluids of light starting from the description of light
+propagation in nonlinear media.
+After establishing the nonlinear Schrödinger equation, the quantum formulation is introduced and the 
+Bogoliubov theory is presented.
+A detailed comparison with the Gross Pitaevskii equation of cold gases is presented.
+The last section presents the numerical analysis tools used to solve the evolution equation of the system.
+
+\paragraph*{Chapter 2}
+
+The impact of the interaction quenches on the statistical properties of the fluid is presented.
+The evolution equation is solved analytically and we present an experimental measurement of the 
+predicted structure factor.
+We present a novel experimental technique to measure the structure factor using a balanced homodyne 
+detection. 
+We conclude by presenting the expected signatures of effects that highlight scattering processes 
+between Bogoliubov excitations, going beyond the theory presented in chap.\ref{chap:quantumfol}.
+
+\paragraph*{Chapter 3}
+
+The structure of the Rubidium atom is presented and the interaction with the electric field is derived.
+A three-level model is presented, before extending it to four levels and describing optical pumping.
+Transit effects due to the thermal motion of atoms are then explored with Monte Carlo numerical 
+simulations.
+Finally, we propose two new configurations in order to tune the atomic response using electromagnetically 
+induced transparency (EIT).
+
+\paragraph*{Chapter 4}
+
+In this chapter we explore the emergence and breakdown of superfluid flow in fluids of light.
+We start by a comparison of the relevant observables to identify the superfluid transition.
+We present the scattering experiment that we will use to probe the critical velocity for 
+superfluidity and detail the measurement methods used to characterize the defect induced in 
+the fluid.
+We then derive a more refined model in order to describe the back-reaction of the fluid 
+on the defect and use this back-reaction to obtain a time resolved measurement of the drag force.
+We use this coupled model to numerically predict the critical velocity for various defects 
+and compare this to experimental results.
+We conclude by presenting measurements of the Bogoliubov dispersion relation hinting at 
+nonlocal behavior in the fluid.
+
+\paragraph*{Chapter 5}
+
+We conclude this thesis by presenting recent results on turbulent behavior in fluids of light.
+We start by introducing the dynamical instability phenomenon giving rise to the turbulent 
+behavior.
+We then present experimental results of vortex clustering and inverse energy cascade that
+are trademarks of turbulence.
+We then study more closely the vortex dynamics as individual objects by deriving the 
+Berezinskii-Kosterlitz-Thouless (BKT) transition, extracting the vortex interaction 
+potential and present experimental measurements of this interaction potential.
+We finish by an experimental proposal to try and evidence the BKT transition by monitoring the
+vortex correlations and clustering.
+Finally, we go back to the fluid of light and explore the thermodynamics of the fluid
+by using the beyond mean field predictions of chap.\ref{chap:static}.

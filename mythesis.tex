@@ -1,0 +1,191 @@
+%&"mythesis"
+% !TeX encoding = UTF-8
+% !TEX TS-program = pdflatex (build)
+% !TeX spellcheck = fr_FR
+% !TEX bibfile = bibdemo.bib
+%%% !BIB TS-program =BibTeX (build)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% PhD Thesis template for pdfLaTeX              (c) Jean Hare 2017-2023 %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% The first line is passed to the compiler to use a custom format.
+%%% mythesis.fmt created using mylatexformat.ltx script. Add another % if not used.
+%%% The five 'magic comments' below it (starting with % !) are for the editor only
+%%% The included one are for TeXworks and TeX-Studio, close to those of TeXshop
+%%% For WinEdt write : % !Mode:: "TeX:FR:UTF-8"
+%%% For emacs :   % -*- mode: TeX -*- and % -*- coding: utf-8 -*-
+%%% For TeXmaker : no 'magic comments' (but Options > Set as master file)
+%%% For other : refer to the documentation of your editor/IDE 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Further lines starting with single %:disabled options,  with %%%:documentation
+%%% All of  them can be discarded
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,11pt, final]{book}
+%-------------------------------------
+\usepackage[utf8]{inputenc} % do not use other options like latin9 =(ISO 8859-15)
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[verbose=false,margin=28mm,includeheadfoot,bindingoffset=0mm]{geometry}[2010/03/13]
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\usepackage{assets/preamb-util}  % required by other custom packages and most settings\usepackage{preamb-
+%%% natbib is needed by versionswitch and must be loaded BEFORE babel
+%\PassOptionsToPackage{english,main=french}{babel}
+%\AfterPackage!{natbib}{\usepackage{babel}}  
+%\usepackage{babel}
+%%%%%%%%%%%%%%%%%%%%%%% BIBLIOPRAPHY SETUP (using natbib & BiBTeX %%%%%%%%%%%%%%
+\usepackage[numbers,sort&compress]{natbib} 
+%%% Automatic creation of 1st and 4th cover pages and embedding of meta data
+\usepackage[etab=SU,pdf=pdf17,meta=mythesis_meta_SU.tex,startpage=1,
+            arial=true, lang=english]{assets/thcover}
+\usepackage[french,english]{babel}
+\usepackage{assets/citebackref} % bib back-referencing (for hyperlinks, load here) 
+\bibliographystyle{assets/thfrnatay-href}          %% bib style, without extension .bst
+%%% if thfrnatay-href is not suitable, fell free to ask me for another custom bst.
+\makeatletter
+\@ifpackageloaded{natbib}{%
+\bibpunct{[}{]}{;}{n}{\;}{,}                %% see natbib documentation
+\renewcommand{\bibnamefont}[1]{\textsc{#1}} %% Author Lastname
+\renewcommand{\bibfnamefont}[1]{#1}         %% Author Firstname
+\setlength{\bibsep}{0.5ex}                  %% bibitem separation
+\setlength{\bibhang}{2em}					%% Hand numbers in margin
+}
+\makeatother
+%%% bib level is set to chapter, but put in toc at part level, in preamb-titles
+%%% bib preamble is redefined in preamb-titles, but text can be appended with:
+% \newcommand\custombibpreamblecontent{%
+% {\centering\slshape Example of Content inserted after chapter title and list\par}\bigskip}
+%%% if style is unsort-like, disable \cite in toc or captions
+%\usepackage{notoccite}   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INDEXES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\input{indices.inc.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CUSTOM PACKAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Preamble packages
+\usepackage{assets/preamb-graph}
+\usepackage[ams=true,showonlyrefs=false,slantedgreekcaps=true,boldmath]{assets/preamb-math}
+\usepackage[titlesfam=sffamily,romanchap=false,%
+            alphsubsub=false,headings=slantsc,minitoc=false]{assets/preamb-titles}
+\usepackage[finalize]{assets/preamb-work}  
+%%%%%%%%%%%%% Handling of archival an diffusion versions %%%%%%%%%%%%%%%%%%%%%%
+\usepackage{assets/versionswitch}
+%%%%%%%%%%%%%%%%%%% ADD OTHER PACKAGES HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyvrb}
+%\usepackage[normalem]{ulem}
+%\usepackage{varioref}\AfterPackage{hyperref}{\usepackage{cleveref}}
+\usepackage{assets/a3pages}
+%%%%%%%%%%%%%%%%%%%%%%%%% LOAD ans SETUP HYPERREF %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Internal hyperlink and bookmarks and external references
+%%% hyperref must be loaded as late as possible (after most packages)
+%%% See http://tug.ctan.org/macros/latex/contrib/hyperref/doc/manual.html#x1-520009
+%%% and https://tex.stackexchange.com/questions/1863 
+%%% and https://texblog.net/hyperref/ to know exceptions
+%%% Options passed on next line, if relevant, must be provided at LOADING time
+\PassOptionsToPackage{unicode,breaklinks,hyperfigures,
+linktoc=all,ocgcolorlinks,hyperfootnotes=true,pageanchor=true,hyperindex=true,
+pdfpagelayout=TwoPageRight,bookmarks,raiselinks}{hyperref}
+%%% Load hyperref without options (avoid option clash)
+\usepackage{hyperref}
+%%% Options provided by \hypersetup that can be defined after package loading
+\hypersetup{colorlinks,
+linkcolor=DarkBlue,anchorcolor=DarkRed,urlcolor=DarkGreen,citecolor=DarkGreen,
+pdfdisplaydoctitle=false,pdfpagemode=UseOutlines,%
+bookmarksnumbered=true,bookmarksdepth=3,bookmarksopen=true,bookmarksopenlevel=2}
+%\hypersetup{} % other options for hyperref
+%%%%%%%%%%% ADD HERE THE PACKAGES THAT NEED TO BE LOADED AFLTER hyperref %%%%%%
+%\usepackage{glossaries}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% END OF CUTOM FORMAT  %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\csname endofdump\endcsname
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% ADD OTHER PACKAGES HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%[overwrite,nosearch,noheader]
+\usepackage[normalem]{ulem}
+\usepackage{afterpage}
+\usepackage{physics}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{relsize}
+\usepackage{siunitx}
+
+\PassOptionsToPackage{unicode,breaklinks,hyperfigures,
+hyperfootnotes=false,linktoc=all,ocgcolorlinks,
+pdfpagelayout=TwoPageRight,bookmarks,raiselinks}{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Numbering settings 
+\setcounter{secnumdepth}{4}              % number chapter,section,sub & sussub
+\numberwithin{equation}{chapter}         % reset equation counter 
+\numberwithin{figure}{chapter}           % and figure counter 
+\numberwithin{table}{chapter}            % and table counter for each chapter
+\setcounter{tocdepth}{2}                 % depth of table of contents
+
+\graphicspath{{./}{../logos/}{./demo/}{./appendices/}}
+% to create boxes around eqs
+% Syntax: \colorboxed[<color model>]{<color specification>}{<math formula>}
+\newcommand*{\colorboxed}{}
+\def\colorboxed#1#{%
+  \colorboxedAux{#1}%
+}
+\newcommand*{\colorboxedAux}[3]{%
+  % #1: optional argument for color model
+  % #2: color specification
+  % #3: formula
+  \begingroup
+    \setlength{\fboxrule}{.5mm}
+    \colorlet{cb@saved}{.}%
+    \color#1{#2}%
+    \boxed{%
+      \color{cb@saved}%
+      #3%
+    }%
+  \endgroup
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\Ham}{\mathcal{H}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Introductory pages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
+\csuse{frontcover}
+\tableofcontents
+% \listoffigures
+
+
+
+\chapter{Remerciements}
+
+Merci à tous
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MINN PAGRES %%%%%%%%%%%%%%%%
+%%% if you want  the normal behaviour with page counter reset
+\mainmatter
+%%% if you prefer a continuous page numbering
+%\mainmatter[continue]
+%------------------------------------------------------------
+\include{chap1/polariton_theory}
+
+
+\appendix
+
+
+
+
+% \include{appendices/abstractfrench}
+% Appendice avec un lexique des méthodes expérimentales. 
+% Ex : - N2
+%      - Phase
+%      - SLM stuff etc ...
+
+
+%%%%%%%%%%%%%% les pages finales %%%%%%%%%%%%%%%%
+\backmatter
+%\nocite{*} %%% pour les test, mais à proscrire en production
+%%% utilisation de BiBTeX
+\cleardoublepage
+\setlength{\bibhang}{2em}
+\raggedright
+\bibliography{Quantum_optics_lkb}
+
+\csuse{backcover}
+\end{document}

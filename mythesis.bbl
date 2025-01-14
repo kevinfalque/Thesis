@@ -1,0 +1,21 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\bibnamefont}[1]{\textsc{#1}}
+\providecommand{\bibfnamefont}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Combescot \& Shiue-Yuan()}]{Combescot_cooper_excitons_2015}
+\bibfnamefont{Monique} \bibnamefont{Combescot} \& \bibfnamefont{Shiau} \bibnamefont{Shiue-Yuan}.
+\newblock \emph{Excitons and Cooper Pairs Two Composite Bosons in Many-Body Physics}.
+\newblock 1st ed \'edition.
+\newblock ISBN 9780191815287.
+
+\bibitem[{Kittel()}]{kittel_introduction_2005}
+\bibfnamefont{Charles} \bibnamefont{Kittel}.
+\newblock \emph{Introduction to solid state physics}.
+\newblock 8th ed \'edition.
+\newblock ISBN 978-0-471-41526-8.
+
+\end{thebibliography}

@@ -1,0 +1,169 @@
+%%%%%%%%%%% SU definition for thcover package %%%%%%%%%%%
+\ProvidesFile{SU.def} [2021/01/07 v0.7 Type set coverpages for Sorbonne université (J. Hare)]
+\RequirePackage{multido}
+%% spacing for front/back pages
+\newcommand*{\VVfil}[1][1]{\par\thskip}
+\newcommand{\Vfil}[1][1]{\par\multido{\i=1+1}{#1}{\vfil }}
+\providecommand\@univmeta{Sorbonne Université}
+\newlength{\th@bskip}%
+\newcommand\thskip{\vspace*{\th@bskip}}
+
+%%%%%%%%%%% Jury format %%%%%%%%%%%
+\ifthc@arial
+\newcommand\myscshape[1]{\scshape #1}
+\else
+\newcommand\myscshape[1]{\uppercase{#1}}
+\fi
+%------------------
+\gdef\@jurytablinesmacro{}
+\newcommand\formatjury{
+\foreachitem \member \in \@jurylist[]{%
+	\xappto\@jurytablinesmacro{%
+		\@jurylist[\membercnt,1]& {\myscshape{\@jurylist[\membercnt,3]}}\ \@jurylist[\membercnt,2],
+	}
+	\itemtomacro\@jurylist[\membercnt,4]\fun
+	\ifdefempty{\fun}%
+		{\xappto\@jurytablinesmacro{& }}%
+		{\xappto\@jurytablinesmacro{&\fun,}}
+	\itemtomacro\@jurylist[\membercnt,5]\inst
+	\ifdefempty{\inst}%
+		{\xappto\@jurytablinesmacro{& }}%
+		{\xappto\@jurytablinesmacro{&\inst,}}
+	\xappto\@jurytablinesmacro{ & \@jurylist[\membercnt,6]\\}
+}}
+%%%%%%%%%%% Start of front page %%%%%%%%%%%
+\long\def\frontcover{%
+	\typeout{*** building frontcover for SU***}%
+    \begingroup
+	\sffamily
+    \newgeometry{left=20mm,right=20mm,top=10mm,bottom=20mm}
+    \setlength{\th@bskip}{10mm plus 5mm minus 5mm}%
+    \setcounter{page}{\thc@front@page}
+    \thispagestyle{empty}%
+    \hbadness=10000 \vbadness=10000
+	\ifdef{\hypersetup}{\begin{NoHyper}}{} %\hypersetup{pageanchor=false}% 
+	\raggedbottom %
+    \begin{center}%
+    \ifdefempty{\@jointunivlogo}{
+        \rlap{\includegraphics[height=25mm,interpolate=false]{SU}}%
+        }{
+        \includegraphics[height=25mm,interpolate=false]{SU}%
+        \hfill\includegraphics[height=25mm,interpolate=false]{\@jointunivlogo}%
+        }
+    \VVfil[2]% 
+    {\bfseries\Large%
+    	\MakeUppercase{\@thesisname}\\[0.3ex] \MakeUppercase{\@univ}%
+    	\ifdefempty{\@jointunivname}{\par}{\\[0.3ex] \MakeUppercase{\@jointunivname}\par}
+    }
+    \VVfil[3]
+    \ifdefempty{\@specialite}{\thskip}{{\Large Spécialité~: \@specialite\par}}%
+    \medskip%
+    \ifdefempty{\@ecoledoct}{\thskip}{{\large École doctorale~nº\@ecoledoctnum : \@ecoledoct\par}}%
+    \VVfil[3]
+    {\large 
+    réalisée sous la direction de \@advisor%
+    \ifdefempty{\@jointadvisor}{\par}{\\ et de \@jointadvisor\par}
+    }
+    \medskip
+	\VVfil[1]    
+	\ifdefempty{\@atlab}{\thskip}{{\bfseries\Large\@atlab\par}}%
+    \bigskip
+    \ifdefempty{\@logolab}{\vspace*{15mm}}{\includegraphics[height=35mm,interpolate=false]{\@logolab}\par}
+    \bigskip
+    {\large présentée par}\par\medskip
+    {\bfseries\LARGE\@author\par}
+    \VVfil[4]
+   	{\large Sujet de la thèse~:}\par\medskip
+   	{\iftoggle{langisfrench}{\bfseries\LARGE\@titlefr\par}{\bfseries\LARGE\@titleen\par}}
+    \VVfil[3]
+    {\Large soutenue le \DTMusedate{date@defense}\par}%
+    \medskip
+    {\large devant le jury composé de~:}\par%
+    \bigskip
+	\formatjury  		
+     	{\large\noindent\mdseries
+     	\begin{tabular}{p{1.2em}*3{l}r}
+		\@jurytablinesmacro
+		\end{tabular}}
+  \par
+  \VVfil[2]
+  \strut
+%%  % creativecommons
+	\ifthc@creativecommons%
+		\atXYesoFG(20mm,285mm){ {\centering \includegraphics{CC-BY-NC-ND}\\} }[t]
+	\fi
+  \VVfil[1]
+  \end{center}%
+  \par
+  \ifdef{\hypersetup}{\end{NoHyper}}{} %\hypersetup{pageanchor=true}
+  \restoregeometry
+  \clearpage{\thispagestyle{empty}\cleardoublepage}
+%  \global\let\sfdefault\sfdefaultbackup
+  \endgroup
+}
+ 
+%%%%%%%%%%% Start of back page %%%%%%%%%%%
+
+\long\def\backcover{%
+    \newgeometry{margin=18mm,bindingoffset=0mm}
+    \begingroup
+    \pagestyle{empty}
+    \clearevenpage
+	\typeout{*** building backcover ***}
+	\hbadness=10000 \vbadness=10000
+    \setlength{\th@bskip}{8mm plus 5mm minus 5mm}%
+    \checkLength{resume}%
+    \checkLength{abstract}%
+    \ifthc@arial
+    		\renewcommand{\sfdefault}{qhv}    
+    		\sffamily
+    \else
+    		\DeclareFontShape{T1}{lmr}{bx}{sc}{<->ssub*cmr/bx/sc}{}%
+    \fi
+
+	\ifdef{\hypersetup}{\begin{NoHyper}}{}
+    \thispagestyle{empty}%
+	\flushbottom%
+     \begin{center}\Large\bfseries%
+     \hfil\@author\hfil\hfil\DTMusedate{date@defense}\hfil\par
+    \vskip0.5\th@bskip
+	\hrulefill\\[1ex]
+   	{\Large\bfseries Sujet~: \@titlefr\par}
+   	\hrulefill
+   	\end{center}
+   	\adjustbox{max width=\textwidth,max totalheight=0.40\textheight,center}{
+	\parbox{0.95\linewidth}{
+   	\noindent\textbf{Résumé}~:~\normalfont\normalsize%
+   	\@resume\par
+   	\ifthc@final\relax\else\printwarntoolong{resume}\fi
+   	\medskip
+   	\noindent\textbf{Mots clés}~:~\normalfont\normalsize%
+   	\@motscles}
+   	}
+   	\vskip \th@bskip%
+   	\begin{center}
+   	\hrulefill\\[1ex]
+   	{\Large\bfseries Subject~: \@titleen\par}
+   	\hrulefill
+   	\end{center}
+   	\adjustbox{max width=\textwidth,max totalheight=0.36\textheight,center}{
+	\parbox{0.95\linewidth}{
+   	\noindent\textbf{Abstract}:~\normalfont\normalsize%
+   	\@abstract\par
+   	\ifthc@final\relax\else\printwarntoolong{abstract}\fi
+   	\medskip
+   	\noindent\textbf{Keywords}~:~\normalfont\normalsize%
+   	\@keywords}
+   	}
+   	\vskip\th@bskip
+   	\begin{center}
+%   	\hbox{}
+   	\hrulefill\\[1ex]
+   	\end{center}   	
+	\ifdef{\hypersetup}{\end{NoHyper}}{}
+%   	\restoregeometry
+   	\endgroup
+}
+\endinput
+%%
+%%End of 'SU.def' 

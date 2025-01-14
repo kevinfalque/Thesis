@@ -1,0 +1,51 @@
+% !TEX encoding = UTF-8
+%% Shortcut and macros for quantum mechanics
+%\catcode`\ˆ=\active
+%\defˆ{\hat}
+%\DeclareUnicodeCharacter{2329}{\langle} %〈〉 
+%\DeclareUnicodeCharacter{232A}{\rangle} % 〈〉
+\def\t#1{\widetilde{#1}} 
+\def\kt|#1>{|#1\rangle}
+\def\br<#1|{\langle#1|}
+\def\mv<#1>{\langle#1\rangle}
+\def\bk<#1|#2>{\langle#1|#2\rangle}
+\def\kb|#1><#2|{|#1\rangle\langle#2|}
+\def\elm<#1|#2|#3>{\langle#1|#2|#3\rangle}
+\def\com[#1,#2]{\big[#1,#2\big]}
+\def\Kt|#1>{\big|#1\big\rangle}
+\def\Br<#1|{\big\langle#1\big|}
+\def\Bk<#1|#2>{\big\langle#1\big|#2\big\rangle}
+\def\Elm<#1|#2|#3>{\big\langle#1\big|#2\big|#3\big\rangle}
+\def\Mv<#1>{\big\langle#1\big\rangle}
+\def\Com[#1,#2]{\Big[#1,#2\Big]}
+\def\KT|#1>{\Big|#1\Big\rangle}
+\def\BR<#1|{\Big\langle#1\Big|}
+\def\BK<#1|#2>{\Big\langle#1\Big|#2\Big\rangle}
+\def\ELM<#1|#2|#3>{\Big\langle#1\Big|#2\Big|#3\Big\rangle}
+\def\MV<#1>{\Big\langle#1\Big\rangle}
+\def\COM[#1,#2]{\Bigg[#1,#2\Bigg]}
+\def\cro#1#2{\big\{#1,#2\big\}}
+%extensible versions 
+\newcommand{\vph}[1]{\vphantom{#1}}
+\def\eKT|#1>{\left|#1\right\rangle}
+\def\eBR<#1|{\left\langle#1\right|}
+\def\eBK<#1|#2>{\left\langle#1\vph{#2}\right|\left.#2\vph{#1}\right\rangle}
+\def\eELM<#1|#2|#3>{\left\langle#1\vph{#2 #3}\right.\left|#2\vph{#1 #3}\right|\left.#3\vph{#1 #2}\right\rangle}
+\def\eMV<#1>{\left\langle#1\Right\rangle}
+\def\eCOM[#1,#2]{\left[#1,#2\right]}
+\mathchardef\varPhi="0108
+\mathchardef\varPsi="0109
+\mathchardef\varOmega="010A
+\let\Om=\varOmega
+\let\om=\omega
+\let\eps=\epsilon
+\let\th=\theta
+\let\ph=\varphi
+\let\h=\hbar
+\let\l=\ell
+\def\a{\asf}
+\def\ad{\asf^{\dag}}
+\def\tad{\widetilde{\asf}^{\dag}}
+\def\hc{\mathrm{h.c.}}
+%%%%%%%%%%%%%%%
+

@@ -1,0 +1,91 @@
+% !TeX encoding = UTF-8
+% !TEX spellcheck = en_US
+\NeedsTeXFormat{LaTeX2e}[2021/06/01]
+%%% Preamble for graphicss %%%
+\ProvidesPackage{preamb-graph}[2023/03/07 v0.61 graphics options for PhD thesis (JH)]
+%%% Options
+\RequirePackage{preamb-util}
+\PassOptionsToPackage{gridunit=mm}{eso-pic}
+\RequirePackage{eso-pic}
+
+\SetupKeyvalOptions{family=PGH,prefix=PGH@,setkeys=\kvsetkeys}
+\DeclareStringOption[]{floatbarrier}[]
+\DeclareBoolOption[false]{draft}
+\DeclareComplementaryOption{final}{draft}
+\DeclareBoolOption[false]{wrapfig}
+\DeclareBoolOption[false]{epstopdf}
+
+\DeclareDefaultOption{\PackageWarning{preamb-graph}{Unknown option ‘\CurrentOption’ in preamb-graph}}
+\PassOptionsToPackage{pdftex,svgnames,table,fixpdftex,hyperref}{xcolor}% Only color names from SVG
+\RequirePackage{xcolor} 
+
+%%% Paths to  figures (better defined locally in each chapter file)
+%\graphicspath{{./fig1/},{../fig2/}}
+
+%%% Options handling %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ProcessKeyvalOptions*
+%%% Placeins for  \FloatBarrier
+\forcsvlist{\listadd\placeinsOption}{section,above,below,verbose}
+\ifdefempty{\PGH@floatbarrier}{\relax}{%
+\ifinlist{\PGH@floatbarrier}{\placeinsOption}{%
+	\PassOptionsToPackage{\PGH@floatbarrier}{placeins}}{\relax}%
+}
+\RequirePackage{placeins} 
+%%% Graphicx
+\@ifclasswith{draft}{book}{\PGH@drafttrue}{%
+\@ifclasswith{final}{book}{\PGH@draftfalse}{}}
+
+\ifPGH@draft  
+	\RequirePackage[draft]{graphicx} 
+	\PackageWarningNoLine{preamb-graph}{You have selected the "draft" option for \string\includegraphics. 
+	The images will not be included, but space will be saved for them.
+	To include them, set option "final" or "draft=false".}
+\else
+	\RequirePackage{graphicx}
+	\PackageInfoNoLine{preamb-graph}{You have selected the "final" option for \string\includegraphics.
+	The images will be included, but the compilation time will be larger.
+	To speed up, set option "draft" or "final=false", then space will be saved for them, 
+but they won't be included.}
+\fi 
+
+%%% to include pages or part of  PDF files
+\RequirePackage{grffile,pdfpages}	
+
+%%% wrapfig wrap text around graphics  (discouraged for a thesis)
+\ifPGH@wrapfig
+	\RequirePackage{wrapfig}
+\fi
+%\RequirePackage{picins,floatflt}   
+
+%%% Epsfopdf for on-the-fly conversion of EPS
+\ifPGH@epstopdf
+	\RequirePackage{epstopdf}
+	\epstopdfsetup{update}
+\fi
+
+%%% Setting or a better control of floats placement  (figures, tables)
+%%% see https://tex.stackexchange.com/questions/39017
+%%% & https://www.latex-project.org/publications/2014-FMi-TUB-tb111mitt-float-placement.pdf
+\renewcommand{\topfraction}{0.8}       % up to 80% of page of top-floats (default 0.7)
+\renewcommand{\bottomfraction}{0.4}    % up to 50% of page of bottom-floats (default 0.3)
+\renewcommand{\textfraction}{0.15}     % minimum size of the text area (default 0.2)
+\renewcommand{\floatpagefraction}{0.4} % min of the page/column filled by floats on a floatpage (defaut 0.5)
+
+%%% Other usefull packages
+\AtBeginDocument{%% move  float target to the top 
+\@ifpackageloaded{hyperref}%
+	{ \PassOptionsToPackage{hypcap=true,hypcapspace=\baselineskip}{caption}}%
+	{} 
+}
+	%\PassOptionsToPackage{all}{hypcap}\RequirePackage{hypcap}}%
+%%% Float captions
+\RequirePackage{subcaption} % this loads caption and defines subfigure environment
+%%% Format français des légendes
+\captionsetup[figure]{name=Fig.,labelsep=quad,labelfont=normalfont,textfont=sl,%
+   singlelinecheck=true,width=0.9\linewidth}
+  \captionsetup[subfigure]{labelformat=brace}
+
+%\RequirePackage{lapdf}   %  directly write PDF graphics prmitive into PDF
+%\RequirePackage{float} \RequirePackage{nonfloat} \RequirePackage{endfloat} \RequirePackage{topfloat}
+\endinput
+%end of preamb-graph package

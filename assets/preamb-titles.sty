@@ -1,0 +1,285 @@
+% !TeX encoding = UTF-8
+% !TEX spellcheck = en_US
+\NeedsTeXFormat{LaTeX2e}[2021/06/01]
+%%% Preamble for titles, ToC, page headers abd numbering %%%
+\ProvidesPackage{preamb-titles}[2023/04/03 0.81 titles options for PhD thesis (JH)]
+%%% Options
+\RequirePackage{preamb-util}       
+\WarningsOff[tocbibind]
+\RequirePackage[chapter,notbib]{tocbibind}
+\SetupKeyvalOptions{family=PT,prefix=PT@,setkeys=\kvsetkeys}
+%\DeclareBoolOption[false]{titlessf}
+\DeclareBoolOption[false]{minitoc}
+\DeclareBoolOption[false]{romanchap}
+\DeclareBoolOption[false]{alphsubsub}
+\DeclareStringOption[]{headings}[]
+\DeclareStringOption[sffamily]{titlesfam}[sffamily]
+
+\DeclareDefaultOption{\PackageWarning{preamb-titles}{Unknown option ‘\CurrentOption’ in preamb-titles}}
+%%% Warn compatibility
+\ifdefstring{\@currentclass}{book}{\relax}{%
+\PackageError{preamb-titles}{This package is intended to be used with the standard "book" class and not for "\@currentclass". Its patching mechanism of sectioning commands is incompatible 
+	with those if "scrbook" or "memoir", and its  status is not known for other classes.}%
+}
+	
+\AfterEndPreamble{%
+\@ifpackageloaded{titlesec}{%
+	\PackageError{preamb-titles}{This package has its own sectioning commands patch, incompatible with 	"titlesec" package. Oppositely to the later it is fully compatible with "hyperref"  (provided "hyperref" is loaded after), and with "minitoc" accessible via its option "minitoc".}}%
+}
+
+%%% Headings
+\pagestyle{headings}
+\patchcmd{\sectionmark}{\thesection.}{\thesection}{}{}       % suppress trailing dot IV.1. -> IV.1
+\providecommand\custombibpreamblecontent{}
+\@ifpackageloaded{natbib}{%
+\renewcommand{\bibpreamble}{%
+	\phantomsection\addcontentsline{toc}{part}{\bibname}%
+  \pagestyle{headings}\thispagestyle{plain}%
+  \raggedright\raggedbottom
+  \markboth{{\font@headings\bibname}}{{\font@headings\bibname}}\raggedright%
+  \ifdefempty{\custombibpreamblecontent}{\relax}{\custombibpreamblecontent\par}
+}
+}
+
+%%% Change headings font 
+%%add font control to toc-like and regular pages 
+\renewcommand{\tocetcmark}[1]{\@mkboth{\font@headings{#1}}{\font@headings{#1}}}
+\renewcommand{\chaptermark}[1]{%
+	\markboth {\ifnum \c@secnumdepth >\m@ne%
+	\if@mainmatter \font@headings{\@chapapp \ \thechapter. \ }\fi \fi  \font@headings{#1}}{}%
+}
+\renewcommand{\sectionmark}[1]{%
+	\markright{\ifnum \c@secnumdepth >\z@ \font@headings{\thesection%
+	\ }\fi \font@headings{#1}}%
+}
+
+\newcommand\headingsslantsc{%
+%\RequirePackage{slantsc}
+\renewcommand{\font@headings}[1]{\scshape\slshape ##1}%
+}
+%%% Change headings font to small (but  uppercase as default)
+\newcommand\headingssmall{
+\renewcommand{\font@headings}[1]{{\small\slshape\MakeTextUppercase{##1}}}%
+}
+%%% Change headings font to small bold sans-serif without uppercase
+\newcommand\headingssmallsfbold{
+\renewcommand{\font@headings}[1]{{\footnotesize\sffamily\bfseries ##1}}%
+}
+%%% Numbering
+\newcommand\romanchap{
+\renewcommand{\thechapter}{\Roman{chapter}}          % Chapter numbers in Roman (4 -> IV)
+\patchcmd{\l@chapter}{{1.5em}}{{3em}}{}{} 
+}
+\newcommand\alphsubsub{
+\renewcommand{\thesubsubsection}{\alph{subsubsection})}
+\newcommand*{\theHsubsubsection}{\theHsubsection.\number\value{subsubsection}}
+\patchcmd{\l@subsubsection}{{7.0em}{4.1em}}{{5em}{2em}}{}{}
+}
+%\renewcommand*{\l@section}{\@dottedtocline{1}{1.5em}{8em}}
+%\patchcmd{\l@section}{{2.3em}}{{5em}}{}{}
+
+%%% mainmater : add option [continue] to suppress page reset
+\newcounter{save@counter}
+\renewcommand\mainmatter[1][]{
+\ifstrequal{#1}{continue}%
+{\typeout{***option=continue***}\setcounter{save@counter}{\value{page}}%
+\cleardoublepage\@mainmattertrue
+\setcounter{page}{\numexpr\value{save@counter}+1}
+\renewcommand\thepage{\arabic{page}}}%
+{\cleardoublepage\@mainmattertrue\pagenumbering{arabic}}}
+
+\RenewDocumentCommand{\cleardoublepage}{o}{%
+\clearpage\thispagestyle{empty}%
+\if@twoside	\ifodd \c@page\relax \else%
+\IfNoValueTF{#1}{\hbox{}}{\null\raggedbottom\vfill\parbox{0.9\linewidth}{\centering #1}\vfill}%
+\newpage%
+\fi \if@twocolumn\hbox{}\newpage \fi \fi%
+}
+
+
+%%% Parse sectioning command to ease font changing
+  \patchcmd{\@sect}{#6}{\csname font@#1\endcsname}{}%
+    {\PackageWarning{preamb-titles}{patching \string\@sect (1) failed}}
+  \patchcmd{\@sect}{#6}{\csname font@#1\endcsname}{}%
+    {\PackageWarning{preamb-titles}{patching \string\@sect (2) failed}}
+%%%  pacth of chapter and part
+	\patchcmd{\@makechapterhead}{\huge\bfseries}{\font@chapterchapname}{}%
+		{\PackageWarning{preamb-titles}{patching \string\@makechapterhead (1) failed}}
+	\patchcmd{\@makechapterhead}{\Huge\bfseries}{\font@chaptertitle}{}%
+		{\PackageWarning{preamb-titles}{patching \string\@makechapterhead (2) failed}}
+	\patchcmd{\@makechapterhead}{\if@mainmatter}{\if@mainmatter\raggedright}{}%
+		{\PackageWarning{preamb-titles}{patching \string\@makechapterhead (3) failed}}
+	\patchcmd{\@makechapterhead}{\fi\fi}{\else\centering\fi\fi}{}%
+		{\PackageWarning{preamb-titles}{patching \string\@makechapterhead (4) failed}}
+	\patchcmd{\@makeschapterhead}{\Huge\bfseries}{\font@chaptertitle}{}%
+		{\PackageWarning{preamb-titles}{patching \string\@makeschapterhead  (1) failed}}
+	\patchcmd{\@makeschapterhead}{\raggedright}{\centering}{}%
+		{\PackageWarning{preamb-titles}{patching \string\@makeschapterhead  (2) failed}}
+	\patchcmd{\@part}{\huge\bfseries}{\font@chapterchapname}{}%
+		{\PackageWarning{preamb-titles}{patching \string\@part\space  failed}}
+	\patchcmd{\@spart}{\Huge\bfseries}{\font@chapterchapname}{}%
+		{\PackageWarning{preamb-titles}{patching \string\@spart\space  failed}}
+	\patchcmd{\part}{\thispagestyle{plain}}{\thispagestyle{empty}}{}%
+		{\PackageWarning{preamb-titles}{patching \string\part\space  failed}}
+%	\patchcmd{\@spart}{\par}{\par\addcontentsline{toc}{part}{##1}}{}%
+%		{\PackageWarning{preamb-titles}{patching \string\@spart failed}}
+%%% Furtherpatching\@makechapterhead  to remove the line containing \chaptername
+%  \patchcmd{\@makechapterhead}{\@chapapp\space\thechapter\par\nobreak\vskip 20\p@}%
+%  {\Huge\thechapter\space--\space}{}%
+%    {\PackageWarning{preamb-titles}{Further patching \string\@makechapterhead failed}}
+%  \patchcmd{\@makechapterhead}{\raggedright}{\centering}{}%
+%    {\PackageWarning{preamb-titles}{Further patching \string\@makechapterhead failed}}
+%	\patchcmd{\@makeschapterhead}{\raggedright}{\centering}{}%
+%    {\PackageWarning{preamb-titles}{Further patching \string\@makechapterhead failed}}
+
+%%% define font commands :  default setting as in normal book.cls
+\providecommand\font@chapterchapname{\huge\normalfont\bfseries}
+\providecommand\font@chaptertitle{\Huge\normalfont\bfseries}
+\providecommand\font@section{\Large\normalfont\bfseries}
+\providecommand\font@subsection{\large\normalfont\bfseries}
+\providecommand\font@subsubsection{\normalsize\normalfont\bfseries}
+\providecommand\font@paragraph{\normalsize\rmfamily\bfseries}
+\providecommand\font@subparagraph{\normalsize\rmfamily\bfseries\slshape}
+\providecommand{\font@headings}[1]{\scshape\MakeTextUppercase{#1}}
+
+%% command to override previous values
+\newcommand\setsectioningfont[2]{%
+\expandafter\gdef\csname font@#1\expandafter\endcsname\expandafter{#2}}
+\newcommand\addtosectioningfont[2]{%
+\expandafter\appto\csname font@#1\expandafter\endcsname\expandafter{#2}}
+
+\newcommand\setheadingsfont[1]{\gdef\font@headings{#1}}
+\newcommand\addtosheadingsfont[1]{\gappto\font@headings{#1}}
+%%%%%%%%%%%%%%%%%%%%%% Options handling %%%%%%%%%%%%%%%%%%%%%%%%
+\ProcessKeyvalOptions*
+%%% titlessf option
+\ifcsempty{\PT@titlesfam}{\relax}{%
+	\expandafter\def\expandafter\PTf@m{\csname \PT@titlesfam\endcsname}
+	\renewcommand\font@chapterchapname{\huge\PTf@m\bfseries}
+	\renewcommand\font@chaptertitle{\Huge\PTf@m\bfseries}
+	\renewcommand\font@section{\Large\PTf@m\bfseries}
+	\renewcommand\font@subsection{\large\PTf@m\bfseries}
+	\renewcommand\font@subsubsection{\normalsize\PTf@m\bfseries}
+%	\renewcommand\font@paragraph{\normalsize\rmfamily\bfseries} % already defautt
+%	\renewcommand\font@subparagraph{\normalsize\rmfamily\bfseries\slshape} % already defautt
+}
+
+%%% Minitoc Option
+\ifPT@minitoc%
+	\PackageInfo{preamb-titles}{minitoc is loaded and prepared for mtc at chapter level
+	 It's up to you to add \string\minitoc after each \string\chapter where a minitoc is needed,
+    or \string\addstarredchapter/\string\adjustmtc  at the begining/end for unnumbered chapters, 
+   and any formating \string\mtc... you need (see manual).\MessageBreak 
+   For any other settings, set minitoc=false and do it by hand.}
+   \PassOptionsToPackage{notoccite,checkfiles,undotted}{minitoc}%
+   \let\@input@SAV=\input \let\input=\@gobble%
+		\RequirePackage{minitoc}%
+		\let\input=\@input@SAV%
+		\appto{\tableofcontents}{\mtcaddchapter}%
+		\appto{\listoffigures}{\mtcaddchapter}%
+		\appto{\listoftables}{\mtcaddchapter}%
+		\AtEndPreamble{%
+			\mtcsetdepth{minitoc}{4}	
+			\@ifpackagewith{babel}{french}{\addto\captionsfrench{\mtcselectlanguage{french}}}{\relax}%
+			\mtcsecondpartfalse%
+		}
+		\AfterEndPreamble{
+			\xdef\mytocdepth{\numexpr\value{tocdepth}+2\relax}
+			\dominitoc
+		}
+}
+\else%
+	\providecommand\dominitoc{\relax}%
+	\providecommand\minitoc{\relax}%
+	\providecommand\mtcaddchapter{\relax}%
+\fi
+
+\ifcsempty{PT@headings}{\relax}{%
+\ifdefstring{\PT@headings}{slantsc}{\headingsslantsc}{\relax}
+\ifdefstring{\PT@headings}{small}{\headingssmall}{\relax}
+\ifdefstring{\PT@headings}{smallsfbold}{\headingssmallsfbold}{\relax}
+}
+
+\ifPT@romanchap\romanchap\fi
+\ifPT@alphsubsub\alphsubsub\fi
+
+%%%%%%%%%%%%%%%% APPENDIX-%%%%%%%%%
+%%% define special unnumbered part for appendix
+\AtEndPreamble{%
+\@ifpackageloaded{hyperref}{\let\spart@phantomsection=\phantomsection}%
+{\let\spart@phantomsection=\relax}}
+%\providecommand\spart@phantomsection{}
+\newcommand{\spart}[1]{%
+\if@openright \cleardoublepage\else\clearpage\fi
+\spart@phantomsection%
+\addcontentsline{toc}{part}{#1}
+\thispagestyle{empty}
+\null\vfil
+{\centering\interlinepenalty\@M \font@chaptertitle #1\par }
+\vfil \newpage%
+\if@twoside\if@openright\null\thispagestyle{empty}\newpage\fi\fi 
+}
+%%% Fonmating Appendices part
+\AfterEndPreamble{%
+\@ifpackageloaded{hyperref}{%
+	\@ifpackageloaded{minitoc}{% hyperref and minitoc
+		\pretocmd{\appendix}{%
+		\addtocontents{toc}{\patchcmd{\string\l@chapter}{{1.5em}}{{6em}}{}{}}%
+		\patchcmd{\mtc@svchapter}{\numberline{\thechapter}}{\numberline{\appendixname~\thechapter }}%
+			{\PackageInfo{Fixing hyperref-minitoc conflict for appendix \string\spart success}}%
+			{\PackageWarning{Fixing hyperref-minitoc conflict for appendix \string\spart failed}}%
+ 	  \spart{Appendices}
+		}{}{}%
+	}{% hyperref and not minitoc
+	  \pretocmd{\appendix}{%		
+%		\addtocontents{toc}{\patchcmd{\string\l@chapter}{{1.5em}}{{6em}}{}{}}%
+%		\def\app@NR@chapter[#1]#2{
+%			\refstepcounter{chapter}%
+%			\typeout {\@chapapp \space \thechapter .}%
+%			\addcontentsline{toc}{chapter}{\protect \numberline {\@chapapp~\thechapter }#1}%
+%			\chaptermark {#1}%
+			\addtocontents {lof}{\protect \addvspace {10\p@}}%
+%		\addtocontents {lot}{\protect \addvspace {10\p@ }}%
+%			\@makechapterhead{#2}\@afterheading%
+%		}
+%		\patchcmd{\Hy@org@chapter}{\NR@chapter}{\app@NR@chapter}%
+%			{\PackageInfo{Fixing hyperref for appendix \string\spart\space success}}%
+%			{\PackageWarning{Fixing hyperref for appendix \string\spart\space failed}}%
+		 \spart{Appendices}}{}{}%
+	}}%
+ {% no hyperref
+	\pretocmd{\appendix}{%
+	\addtocontents{toc}{\patchcmd{\string\l@chapter}{{1.5em}}{{6em}}{}{}}%
+	\patchcmd{\@chapter}{\numberline{\thechapter}}{\numberline{\appendixname~\thechapter }}%
+			{\PackageInfo{Fixing appendix \string\spart withouts hyperref nor minitoc success}}%
+			{\PackageWarning{Fixing  appendix \string\spart withouts hyperref nor minitoc failed}}%
+	\spart{Appendices}}{}{}%
+ }
+}
+%%--------------- Headers-----------------%%% 
+%%% In class book,  option "headings" is usualy enough
+%%% To localy switch to  "myheadings", 
+%%% use \thispagestyle{myheadings} \markboth{<left>}{<right>}%
+%%% To fully customize headers and footers
+%\RequirePackage{fancyhdr}
+
+
+
+
+%%% Fancy chapters with  tikz et titlesec
+%\newcommand{\numput}[1]{\tikz{%
+%	\node(ch) at (0,0) {\chaptertitlename};
+%	\node[right=20mmm,fill=gray!50,rounded corners=5pt,scale=1.5] 
+%         at (ch.east){\textcolor{white}{#1}};}%
+%}
+%\titleformat{\chapter}[display]{\raggedleft\Huge\sffamily\bfseries}{\numput{\thechapter}}{0pt}{}
+
+%%% TikZ % à compléter avecles \usetkzlibrary{} nécessaires
+%\usepackage{tikz}
+%\usepgfmodule{decorations}
+%\usetikzlibrary{calc,patterns,spy,decorations,arrows.meta,matrix,positioning,decorations.pathreplacing, decorations.pathmorphing}
+%\BeforeBeginEnvironment{tikzpicture}{\shorthandoff{:;!?}}
+%\AfterEndEnvironment{tikzpicture}{\shorthandon{:;!?}}
+
+\endinput
+%end of preamb-titles package
