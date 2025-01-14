@@ -246,7 +246,7 @@ and thus remaining finite when $q\to 0$. Remarkably, in both the single and two 
 Indeed, in second order perturbation theory the transition amplitude between an initial state $\ket{i}$ and a final state $\ket{f}$ may be written as :
 
 \begin{equation}
-    \Gamma_{i\to f}^{(2)} = \dfrac{2\pi}{\hbar} \bigg \vert \sum_{m} \dfrac{\bra{f}V_q\ket{m}\bra{m}V_q\ket{i}}{E_i - E_n}\bigg \vert^2 \delta(E_f - E_i)
+    \Gamma_{i\to f}^{(2)} = \dfrac{2\pi}{\hbar} \bigg \vert \sum_{m} \dfrac{\bra{f}V_q\ket{m}\bra{m}V_q\ket{i}}{E_i - E_m}\bigg \vert^2 \delta(E_f - E_i)
     \label{eq:transition_amplitude}
 \end{equation}
 
@@ -255,15 +255,30 @@ Indeed, in second order perturbation theory the transition amplitude between an 
 
  
 \bigskip
-\noindent \textbf{Dressing intraband scattering with interband jumps }
 
 
 
-To clarify this idea let us consider this time the scattering between a conduction and a valence band electron. 
-The same scattering process can also occur in two steps. First, a conduction band electron is scattered in its band while a valence band electron is promoted to the conduction band. Since an electron changes band it brings a potential $\propto 1/q$. Secondly, 
- the excited electron goes back to the valence band while a valence band electron is scattered in its band yielding again a potential $\propto 1/q$. This two steps interaction end up with the same initial and final states than direct intraband scattering but involves both the creation and the annihilation of an exciton.  In other words the overall process conserves the number of electrons in each band but is made of two not number-conserving transitions.
- As it combine two scatterings behaving as $1/q$ potentials the overall potential behaves also as $1/q^2$ but with an additionnal $1/E_{gap}$ factor. More specifically the two steps contribution is : $\left( 4\pi e^2/L^3q^2 \right)\left[ (e^2/L^3\kappa^2)/E_{gap}\right]$.  
-It is possible to arbitrary increase the number of intermediate states by adding "bubbles" of exchange interaction in between the two steps : a previously excited conduction band electron returns to the valence band while a valence band electron is promoted to the conduction band.
+
+To clarify this idea let us now consider the scattering between a conduction and a valence band electron. 
+The same scattering process can also occur in two steps. First, a conduction band electron is scattered in its band while a valence band electron is promoted to the conduction band. Since an electron changes band it brings a potential $V_q(q/\kappa)$. Secondly, 
+ the excited electron goes back to the valence band while a valence band electron is scattered in its band yielding again a potential $V_q(q/\kappa)$. This two steps interaction end up with the same initial and final states than direct intraband scattering and the number of electrons in each band is conserved.  
+In terms of energy, the two scatterings behaving as $1/q$ potentials the overall potential behaves also as $1/q^2$ but with an additionnal $1/E_{g}$ factor coming from the intermediate interband jumps. More specifically the two steps contribution is : $\left( 4\pi e^2/L^3q^2 \right)\left[ (e^2/L^3\kappa^2)/E_{g}\right]$.  
+
+\bigskip
+It is also possible to make it a three steps scattering by adding an intermediate interband exchange after the first step : the previously excited conduction band electron returns to the valence band while a valence band electron is promoted to the conduction band. 
+Moe explicitly the process is as follows : 
+
+\begin{itemize}
+    \item \textbf{Step 1 :} a valence band electron is promoted to the conduction band while a conduction bandis scattered in its band. The potential reads $V_q(q/\kappa) \propto \frac{1}{q}$ and the energy cost is of the order of $E_g$.
+    \item \textbf{Step 2 :} the previously excited conduction band electron returns to the valence band while another valence band electron is excited to the conduction band. The potential read $V_q(q/\kappa)^2 \propto q$ and the energy cost is of the order of $2E_g$.
+    \item \textbf{Step 3 :} the excited electron goes back to the valence band while a valence band electron is scattered in its band. The potential read again $V_q(q/\kappa) \propto \frac{1}{q}$ and the energy cost is of the order of $E_g$.
+\end{itemize}
+
+\noindent The total energy budget is then : $\left( 4\pi e^2/L^3q^2 \right)\left[ (e^2/L^3\kappa^2)/E_{g}\right]^2$. Remarkably, one might expect the overall potential to scale as $1/E_g^3$  since each step requires at least one electron to change band. However, the structure of perturbation theory ensures that the total energy denominator accounts for the number of coupled interband transitions, rather than treating each step independently. 
+Step 2 effectively "couples" the transitions in such a way that two energy denominators are introduced, rather than three independent ones, which explains the 
+$1/E_g^2$ dependence. This coupling reflects the fact that intermediate states are shared between adjacent steps in the perturbative sequence.
+\bigskip 
+
 
 \begin{figure}[h]
     \centering
@@ -274,12 +289,15 @@ It is possible to arbitrary increase the number of intermediate states by adding
     \label{fig:intra_bubbles}
 \end{figure}
 
+Finally, the number of intermediate states can be arbitrarily increased by adding 'bubbles' of exchange interaction, as illustrated in the Feynman diagram in \autoref{fig:intra_bubbles} b). Each pair of adjacent bubbles represents an interband interaction similar to the one described in Step 2 above. While it conserves the number of electrons in each band, it involves two interband jumps. 
+The interaction between two bubbles is then $\propto q^0$ and is finite in the small momentum limit.
+By summing the contributions of processes with all possible numbers of bubbles, we obtain an effective Coulomb potential:
 
-\noindent  This decomposition through intermediate states can be easily understood using the Feynman diagram of \autoref{fig:intra_b} b). From this, we can already see
- how interbands jumps can dress the direct intraband scattering and reduce
- 
- This intermediate "bubbles" are referred as electron-hole exchanges and can occur multiple time.  
-in \autoref{fig:inter_band_bubbles}.
+\begin{equation}
+    V_q = \dfrac{4\pi e^2}{L^3q^2\epsilon_{sc}}
+\end{equation}
+
+where $\epsilon_{sc}$ is a dielectric constant mainly stemming from the infinite sum over the number of bubbles.
 
 
 
