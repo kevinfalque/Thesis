@@ -1,4 +1,4 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{19}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibnamefont}[1]{\textsc{#1}}
 \providecommand{\bibfnamefont}[1]{#1}
@@ -6,16 +6,106 @@
 \providecommand{\urlprefix}{URL }
 \providecommand{\eprint}[2][]{\url{#2}}
 
+\bibitem[{Carusotto \& Ciuti(2013)}]{carusotto_quantum_2013}
+\bibfnamefont{Iacopo} \bibnamefont{Carusotto} \& \bibfnamefont{Cristiano} \bibnamefont{Ciuti} 2013.
+\newblock \enquote{Quantum fluids of light}.
+\newblock \href{http://dx.doi.org/10.1103/RevModPhys.85.299}{ \emph{Rev. Mod. Phys.} \textbf{85}(1), p. 299--366}.
+
+\bibitem[{Claude \emph{et~al.}(2022)Claude, Jacquet, Usciati, Carusotto, Giacobino, Bramati \& Glorieux}]{claude_high-resolution_2022}
+\bibfnamefont{F.}~\bibnamefont{Claude}, \bibfnamefont{M.~J.} \bibnamefont{Jacquet}, \bibfnamefont{R.}~\bibnamefont{Usciati}, \bibfnamefont{I.}~\bibnamefont{Carusotto}, \bibfnamefont{E.}~\bibnamefont{Giacobino}, \bibfnamefont{A.}~\bibnamefont{Bramati} \& \bibfnamefont{Q.}~\bibnamefont{Glorieux} 2022.
+\newblock \enquote{High-{Resolution} {Coherent} {Probe} {Spectroscopy} of a {Polariton} {Quantum} {Fluid}}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRevLett.129.103601}{ \emph{Physical Review Letters} \textbf{129}(10), p. 103\,601}.
+\newblock Publisher: American Physical Society.
+
+\bibitem[{Claude(2022)}]{claude_phd}
+\bibfnamefont{Ferdinand} \bibnamefont{Claude} 2022.
+\newblock \emph{{High resolution coherent spectroscopy of a polariton fluid : Bogoliubov modes, non equilibrium phase transitions and turbulence}}.
+\newblock Theses {Sorbonne Universit{\'e}}.
+\newblock \urlprefix\url{https://theses.hal.science/tel-04009505}.
+
+\bibitem[{Cohen-Tannoudji \emph{et~al.}()Cohen-Tannoudji, Dupont-Roc \& Grynberg}]{cohen-tannoudji_photons_2004}
+\bibfnamefont{Claude} \bibnamefont{Cohen-Tannoudji}, \bibfnamefont{Jacques} \bibnamefont{Dupont-Roc} \& \bibfnamefont{Gilbert} \bibnamefont{Grynberg}.
+\newblock \emph{Photons and atoms: introduction to quantum electrodynamics}.
+\newblock Physics textbook. Nachdr. \'edition.
+\newblock ISBN 978-0-471-18433-1.
+
+\bibitem[{Combescot \emph{et~al.}(2007)Combescot, Dupertuis \& Betbeder-Matibet}]{Combescot_2007_exact_pol_pol_interactions}
+\bibfnamefont{M.}~\bibnamefont{Combescot}, \bibfnamefont{M.~A.} \bibnamefont{Dupertuis} \& \bibfnamefont{O.}~\bibnamefont{Betbeder-Matibet} 2007.
+\newblock \enquote{Polariton-polariton scattering: Exact results through a novel approach}.
+\newblock \href{http://dx.doi.org/10.1209/0295-5075/79/17001}{ \emph{Europhysics Letters} \textbf{79}(1), p. 17\,001}.
+
 \bibitem[{Combescot \& Shiue-Yuan()}]{Combescot_cooper_excitons_2015}
 \bibfnamefont{Monique} \bibnamefont{Combescot} \& \bibfnamefont{Shiau} \bibnamefont{Shiue-Yuan}.
 \newblock \emph{Excitons and Cooper Pairs Two Composite Bosons in Many-Body Physics}.
 \newblock 1st ed \'edition.
 \newblock ISBN 9780191815287.
 
+\bibitem[{{De Broglie, Louis}(1925)}]{deBroglie1925}
+\bibnamefont{{De Broglie, Louis}} 1925.
+\newblock \enquote{Recherches sur la th\'eorie des quanta}.
+\newblock \href{http://dx.doi.org/10.1051/anphys/192510030022}{ \emph{Ann. Phys.} \textbf{10}(3), p. 22--128}.
+
+\bibitem[{Gross(1961)}]{Gross1961}
+\bibfnamefont{E~P} \bibnamefont{Gross} 1961.
+\newblock \enquote{Structure of a quantized vortex in boson systems}.
+\newblock \href{http://dx.doi.org/10.1007/BF02731494}{ \emph{Nuovo Cimento (Italy) Divided into Nuovo Cimento A and Nuovo Cimento B} \textbf{10}(10)}.
+
+\bibitem[{Grynberg \emph{et~al.}()Grynberg, Aspect \& Fabre}]{grynberg_aspect_fabre}
+\bibfnamefont{Gilbert} \bibnamefont{Grynberg}, \bibfnamefont{Alain} \bibnamefont{Aspect} \& \bibfnamefont{Claude} \bibnamefont{Fabre}.
+\newblock \emph{Introduction to {Quantum} {Optics}}.
+
+\bibitem[{Hopfield()}]{hopfield_theory_1958}
+\bibfnamefont{J.~J.} \bibnamefont{Hopfield}.
+\newblock \enquote{Theory of the contribution of excitons to the complex dielectric constant of crystals}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRev.112.1555}{ \emph{Physical Review} \textbf{112}(5), p. 1555--1567}.
+
+\bibitem[{Kasprzak \emph{et~al.}()Kasprzak, Richard, Kundermann, Baas, Jeambrun, Keeling, Marchetti, Szymańska, André, Staehli \emph{et~al.}}]{kasprzak_boseeinstein_2006}
+\bibfnamefont{J.}~\bibnamefont{Kasprzak}, \bibfnamefont{M.}~\bibnamefont{Richard}, \bibfnamefont{S.}~\bibnamefont{Kundermann}, \bibfnamefont{A.}~\bibnamefont{Baas}, \bibfnamefont{P.}~\bibnamefont{Jeambrun}, \bibfnamefont{J.~M.~J.} \bibnamefont{Keeling}, \bibfnamefont{F.~M.} \bibnamefont{Marchetti}, \bibfnamefont{M.~H.} \bibnamefont{Szymańska}, \bibfnamefont{R.}~\bibnamefont{André}, \bibfnamefont{J.~L.} \bibnamefont{Staehli} \emph{et~al.}
+\newblock \enquote{Bose–einstein condensation of exciton polaritons}.
+\newblock \href{http://dx.doi.org/10.1038/nature05131}{ \emph{Nature} \textbf{443}(7110), p. 409--414}.
+
 \bibitem[{Kittel()}]{kittel_introduction_2005}
 \bibfnamefont{Charles} \bibnamefont{Kittel}.
 \newblock \emph{Introduction to solid state physics}.
 \newblock 8th ed \'edition.
 \newblock ISBN 978-0-471-41526-8.
+
+\bibitem[{Liew \emph{et~al.}(2008)Liew, Kavokin \& Shelykh}]{liew_optical_circuit_2008}
+\bibfnamefont{T.~C.~H.} \bibnamefont{Liew}, \bibfnamefont{A.~V.} \bibnamefont{Kavokin} \& \bibfnamefont{I.~A.} \bibnamefont{Shelykh} 2008.
+\newblock \enquote{Optical circuits based on polariton neurons in semiconductor microcavities}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRevLett.101.016402}{ \emph{Phys. Rev. Lett.} \textbf{101}, p. 016\,402}.
+
+\bibitem[{Maitre()}]{maitre_thesis}
+\bibfnamefont{Anne} \bibnamefont{Maitre}.
+\newblock \emph{Generation, propagation and control of quantized vortices and dark solitons in polariton superfluids}.
+\newblock Th\`ese de doctorat.
+\newblock \urlprefix\url{https://theses.hal.science/tel-03147158}.
+
+\bibitem[{Pitaevskii(1961)}]{pitaevskii1961}
+\bibfnamefont{Lev~P} \bibnamefont{Pitaevskii} 1961.
+\newblock \enquote{Vortex lines in an imperfect bose gas}.
+\newblock \emph{Sov. Phys. JETP} \textbf{13}(2), p. 451--454.
+
+\bibitem[{Pitaevskij \& Stringari(2016)}]{pitaevskij_bose-einstein_2016}
+\bibfnamefont{Lev~P.} \bibnamefont{Pitaevskij} \& \bibfnamefont{Sandro} \bibnamefont{Stringari} 2016.
+\newblock \emph{Bose-Einstein condensation and superfluidity}.
+\newblock Num\'ero 164 dans International series of monographs on physics. Reprinted (with corrections) \'edition.
+\newblock ISBN 978-0-19-875888-4.
+
+\bibitem[{Usui(1960)}]{usui_sat_potential_1960}
+\bibfnamefont{Tunemaru} \bibnamefont{Usui} 1960.
+\newblock \enquote{Excitations in a high density electron gas. i:}.
+\newblock \href{http://dx.doi.org/10.1143/PTP.23.787}{ \emph{Progress of Theoretical Physics} \textbf{23}(5), p. 787--798}.
+
+\bibitem[{Utsunomiya \emph{et~al.}()Utsunomiya, Tian, Roumpos, Lai, Kumada, Fujisawa, Kuwata-Gonokami, Löffler, Höfling, Forchel \emph{et~al.}}]{Utsunomiya_fluidlightexp_2008}
+\bibfnamefont{S.}~\bibnamefont{Utsunomiya}, \bibfnamefont{L.}~\bibnamefont{Tian}, \bibfnamefont{G.}~\bibnamefont{Roumpos}, \bibfnamefont{C.~W.} \bibnamefont{Lai}, \bibfnamefont{N.}~\bibnamefont{Kumada}, \bibfnamefont{T.}~\bibnamefont{Fujisawa}, \bibfnamefont{M.}~\bibnamefont{Kuwata-Gonokami}, \bibfnamefont{A.}~\bibnamefont{Löffler}, \bibfnamefont{S.}~\bibnamefont{Höfling}, \bibfnamefont{A.}~\bibnamefont{Forchel} \emph{et~al.}
+\newblock \enquote{Observation of bogoliubov excitations in exciton-polariton condensates}.
+\newblock \href{http://dx.doi.org/10.1038/nphys1034}{ \emph{Nature Physics} \textbf{4}(9), p. 700--705}.
+
+\bibitem[{Weisbuch \& Rarity(1996)}]{weisbuch_microcavities_1996}
+\bibfnamefont{C.}~\bibnamefont{Weisbuch} \& \bibfnamefont{.J}~\bibnamefont{Rarity} 1996.
+\newblock \emph{Microcavities and Photonic Bandgaps: Physics and Applications}.
+\newblock ISBN 978-94-009-0313-5.
+\newblock \urlprefix\url{https://link.springer.com/book/10.1007/978-94-009-0313-5}.
 
 \end{thebibliography}

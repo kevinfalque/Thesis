@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.7)  14 JAN 2025 19:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.7)  7 FEB 2025 11:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1146,40 +1146,44 @@ Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages 
    defining Unicode char U+00AB (decimal 171)
    defining Unicode char U+00BB (decimal 187)
 
-Package preamb-work Warning: changebar is false on input line 147.
+Package preamb-work Warning: changebar is false on input line 148.
 
 \changebarsep=\skip66
 \changebarwidth=\skip67
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 147.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 148.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./mythesis.aux (./chap1/polariton_theory.aux))
+) (./mythesis.aux (./chap1/polariton_theory.aux
+
+LaTeX Warning: Label `eq:electron_hole_hamiltonian' multiply defined.
+
+))
 \openout1 = `mythesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 147.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 147.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 148.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 148.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1252,8 +1256,8 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@loff=\dimen276
 \@vwid@roff=\dimen277
 ))
-LaTeX Info: Redefining \degres on input line 147.
-LaTeX Info: Redefining \up on input line 147.
+LaTeX Info: Redefining \degres on input line 148.
+LaTeX Info: Redefining \up on input line 148.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count355
@@ -1283,19 +1287,19 @@ Package caption Info: End \AtBeginDocument code.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/eqnalign/eqnalign.sty
 Package: eqnalign 2017/02/19 v1.0a Make eqnarray(*) behave like align(*).
 )
-LaTeX Info: Redefining \microtypecontext on input line 147.
-Package microtype Info: Applying patch `item' on input line 147.
-Package microtype Info: Applying patch `toc' on input line 147.
-Package microtype Info: Applying patch `eqnum' on input line 147.
-Package microtype Info: Applying patch `footnote' on input line 147.
-Package microtype Info: Applying patch `verbatim' on input line 147.
+LaTeX Info: Redefining \microtypecontext on input line 148.
+Package microtype Info: Applying patch `item' on input line 148.
+Package microtype Info: Applying patch `toc' on input line 148.
+Package microtype Info: Applying patch `eqnum' on input line 148.
+Package microtype Info: Applying patch `footnote' on input line 148.
+Package microtype Info: Applying patch `verbatim' on input line 148.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 147.
+LaTeX Info: Redefining \showhyphens on input line 148.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1304,9 +1308,9 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 ) (./mythesis.bbl)
 *** redefine \bibentry***
 \c@bib@entry@cnt=\count361
-Package backref Info: ** backref set up for natbib ** on input line 147.
-Package hyperref Info: Option `colorlinks' set `true' on input line 147.
-Package hyperref Info: Link coloring ON on input line 147.
+Package backref Info: ** backref set up for natbib ** on input line 148.
+Package hyperref Info: Option `colorlinks' set `true' on input line 148.
+Package hyperref Info: Link coloring ON on input line 148.
 (./mythesis.out) (./mythesis.out)
 \@outlinefile=\write5
 \openout5 = `mythesis.out'.
@@ -1326,14 +1330,14 @@ Package siunitx Warning: Detected the "physics" package:
 (/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 147.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 148.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-french.trsl
 File: translations-basic-dictionary-french.trsl (french translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `french'. on input line 147.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `french'. on input line 148.
 
 *** building frontcover for SU***
-LaTeX Font Info:    Trying to load font information for T1+qhv on input line 150.
+LaTeX Font Info:    Trying to load font information for T1+qhv on input line 151.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
 File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 )
@@ -1373,40 +1377,40 @@ Package microtype Info: Loading generic protrusion settings for font family
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./appendices/SU.pdf, id=63, 400.18558pt x 169.0315pt>
+<./appendices/SU.pdf, id=115, 400.18558pt x 169.0315pt>
 File: ./appendices/SU.pdf Graphic file (type pdf)
 <use ./appendices/SU.pdf>
-Package pdftex.def Info: ./appendices/SU.pdf  used on input line 150.
+Package pdftex.def Info: ./appendices/SU.pdf  used on input line 151.
 (pdftex.def)             Requested size: 400.18459pt x 169.03107pt.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 150.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 151.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 150.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 151.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 150.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 151.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 150.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 151.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 150.
+(Font)              <10.95> on input line 151.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 150.
+(Font)              <8> on input line 151.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 150.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 150.
+(Font)              <6> on input line 151.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 151.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 150.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 151.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -1414,7 +1418,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for TS1+qhv on input line 150.
+LaTeX Font Info:    Trying to load font information for TS1+qhv on input line 151.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/tex-gyre/ts1qhv.fd
 File: ts1qhv.fd 2009/09/25 v1.2 font definition file for TS1/qhv
 )
@@ -1422,18 +1426,18 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `qhv' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<logo_lkb.pdf, id=64, 300.89021pt x 108.7357pt>
+<logo_lkb.pdf, id=116, 300.89021pt x 108.7357pt>
 File: logo_lkb.pdf Graphic file (type pdf)
 <use logo_lkb.pdf>
-Package pdftex.def Info: logo_lkb.pdf  used on input line 150.
+Package pdftex.def Info: logo_lkb.pdf  used on input line 151.
 (pdftex.def)             Requested size: 300.88947pt x 108.73541pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 150.
+(Font)              <12> on input line 151.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/qhv/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Overfull \hbox (7.00812pt too wide) in paragraph at lines 150--150
+Overfull \hbox (7.00812pt too wide) in paragraph at lines 151--151
 []|\T1/qhv/m/n/12 (-20) M$[]$| 
  []
 
@@ -1463,10 +1467,10 @@ Overfull \hbox (7.00812pt too wide) in paragraph at lines 150--150
 
 ] [2]
 Chapter 1.
-<chap1/fig/cavity_geometry.pdf, id=140, 317.96495pt x 135.27115pt>
+<chap1/fig/cavity_geometry.pdf, id=205, 317.96495pt x 135.27115pt>
 File: chap1/fig/cavity_geometry.pdf Graphic file (type pdf)
 <use chap1/fig/cavity_geometry.pdf>
-Package pdftex.def Info: chap1/fig/cavity_geometry.pdf  used on input line 46.
+Package pdftex.def Info: chap1/fig/cavity_geometry.pdf  used on input line 69.
 (pdftex.def)             Requested size: 317.96416pt x 135.2708pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1474,10 +1478,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [3
 
 ]
-<chap1/fig/DBR.pdf, id=146, 542.03818pt x 203.9165pt>
+<chap1/fig/DBR.pdf, id=211, 542.03818pt x 203.9165pt>
 File: chap1/fig/DBR.pdf Graphic file (type pdf)
 <use chap1/fig/DBR.pdf>
-Package pdftex.def Info: chap1/fig/DBR.pdf  used on input line 75.
+Package pdftex.def Info: chap1/fig/DBR.pdf  used on input line 98.
 (pdftex.def)             Requested size: 542.03685pt x 203.916pt.
 
 
@@ -1487,15 +1491,15 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 2150) has occurred while \output is active []
 
  [5{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <./chap1/fig/DBR.pdf>] [6] [7]
-<chap1/fig/band_theory.pdf, id=596, 381.54683pt x 204.98853pt>
+<chap1/fig/band_theory.pdf, id=661, 381.54683pt x 204.98853pt>
 File: chap1/fig/band_theory.pdf Graphic file (type pdf)
 <use chap1/fig/band_theory.pdf>
-Package pdftex.def Info: chap1/fig/band_theory.pdf  used on input line 178.
+Package pdftex.def Info: chap1/fig/band_theory.pdf  used on input line 201.
 (pdftex.def)             Requested size: 381.5459pt x 204.988pt.
-<chap1/fig/DirectGapDisp.png, id=599, 795.9336pt x 569.0058pt>
+<chap1/fig/DirectGapDisp.png, id=664, 795.9336pt x 569.0058pt>
 File: chap1/fig/DirectGapDisp.png Graphic file (type png)
 <use chap1/fig/DirectGapDisp.png>
-Package pdftex.def Info: chap1/fig/DirectGapDisp.png  used on input line 191.
+Package pdftex.def Info: chap1/fig/DirectGapDisp.png  used on input line 214.
 (pdftex.def)             Requested size: 795.93166pt x 569.00441pt.
 
 
@@ -1513,37 +1517,100 @@ Package siunitx Warning: Unit macro \angstrom has been deprecated in this
 (siunitx)                \DeclareSIUnit\angstrom{\text {Å}}
 
 [9 <./chap1/fig/DirectGapDisp.png>]
-<chap1/fig/intra-inter-band-processes.pdf, id=622, 691.8701pt x 182.04956pt>
+<chap1/fig/intra-inter-band-processes.pdf, id=686, 691.8701pt x 182.04956pt>
 File: chap1/fig/intra-inter-band-processes.pdf Graphic file (type pdf)
 <use chap1/fig/intra-inter-band-processes.pdf>
-Package pdftex.def Info: chap1/fig/intra-inter-band-processes.pdf  used on input line 222.
+Package pdftex.def Info: chap1/fig/intra-inter-band-processes.pdf  used on input line 250.
 (pdftex.def)             Requested size: 691.86841pt x 182.0491pt.
  [10 <./chap1/fig/intra-inter-band-processes.pdf>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 273.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 301.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [11{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-<chap1/fig/intra_band_dressed_bubbles.pdf, id=649, 497.17336pt x 229.39989pt>
+) [11]
+<chap1/fig/intra_band_dressed_bubbles.pdf, id=712, 497.17336pt x 229.39989pt>
 File: chap1/fig/intra_band_dressed_bubbles.pdf Graphic file (type pdf)
 <use chap1/fig/intra_band_dressed_bubbles.pdf>
-Package pdftex.def Info: chap1/fig/intra_band_dressed_bubbles.pdf  used on input line 286.
+Package pdftex.def Info: chap1/fig/intra_band_dressed_bubbles.pdf  used on input line 314.
 (pdftex.def)             Requested size: 497.17213pt x 229.39932pt.
- [12 <./chap1/fig/intra_band_dressed_bubbles.pdf>] [13]) [14] [15
+ [12{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} <./chap1/fig/intra_band_dressed_bubbles.pdf>] [13] [14] [15] [16]
+<chap1/fig/InGaAs.pdf, id=810, 536.11926pt x 361.35pt>
+File: chap1/fig/InGaAs.pdf Graphic file (type pdf)
+<use chap1/fig/InGaAs.pdf>
+Package pdftex.def Info: chap1/fig/InGaAs.pdf  used on input line 528.
+(pdftex.def)             Requested size: 536.11795pt x 361.34912pt.
+ [17] [18 <./chap1/fig/InGaAs.pdf>] [19] [20]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 665.
+
+<chap1/fig/polariton_cavity.pdf, id=922, 590.62527pt x 215.16525pt>
+File: chap1/fig/polariton_cavity.pdf Graphic file (type pdf)
+<use chap1/fig/polariton_cavity.pdf>
+Package pdftex.def Info: chap1/fig/polariton_cavity.pdf  used on input line 667.
+(pdftex.def)             Requested size: 590.62383pt x 215.16472pt.
+[21] [22 <./chap1/fig/polariton_cavity.pdf>]
+Underfull \vbox (badness 7397) has occurred while \output is active []
+
+ [23]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 782.
+
+<chap1/fig/wedge_and_hopfields.pdf, id=964, 1247.99661pt x 963.43158pt>
+File: chap1/fig/wedge_and_hopfields.pdf Graphic file (type pdf)
+<use chap1/fig/wedge_and_hopfields.pdf>
+Package pdftex.def Info: chap1/fig/wedge_and_hopfields.pdf  used on input line 784.
+(pdftex.def)             Requested size: 1247.99358pt x 963.42923pt.
+[24] [25 <./chap1/fig/wedge_and_hopfields.pdf>] [26]
+<chap1/fig/anticrossing.pdf, id=1089, 402.74799pt x 247.7531pt>
+File: chap1/fig/anticrossing.pdf Graphic file (type pdf)
+<use chap1/fig/anticrossing.pdf>
+Package pdftex.def Info: chap1/fig/anticrossing.pdf  used on input line 866.
+(pdftex.def)             Requested size: 402.747pt x 247.75249pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[27] [28 <./chap1/fig/anticrossing.pdf>] [29] [30] [31] [32]
+<chap1/fig/polariton_bec.pdf, id=1169, 1540.6787pt x 698.59769pt>
+File: chap1/fig/polariton_bec.pdf Graphic file (type pdf)
+<use chap1/fig/polariton_bec.pdf>
+Package pdftex.def Info: chap1/fig/polariton_bec.pdf  used on input line 1084.
+(pdftex.def)             Requested size: 1540.67494pt x 698.59598pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33] [34 <./chap1/fig/polariton_bec.pdf>]
+
+LaTeX Warning: Reference `fig:optical_bistability' on page 35 undefined on input line 1105.
+
+
+LaTeX Warning: Reference `fig:optical_bistability' on page 35 undefined on input line 1113.
+
+) [35] [36] [37
 
 
 
-] [16] (./mythesis.bbl (./mythesis.brf)
+] [38] (./mythesis.bbl (./mythesis.brf)
 \tf@brf=\write7
 \openout7 = `mythesis.brf'.
 
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-) [17
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 25.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [39
 
 
 
-]
+]) [40]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1576,42 +1643,49 @@ Package microtype Info: Character `029' is missing
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [18
+ [41
 
 
-] [19]
+]
 *** building backcover ***
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 190.
+(Font)              <14.4> on input line 191.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 190.
+(Font)              <10> on input line 191.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 190.
-[20
+(Font)              <7> on input line 191.
+[42
 
 ] (./mythesis.aux (./chap1/polariton_theory.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `mythesis.out' has not changed.
-(rerunfilecheck)             Checksum: 3523AF7A0E98C8A386833885E84079DC;2932.
+(rerunfilecheck)             Checksum: 31A2D29B1511259DF04FC7B5697C3A74;6016.
 Package rerunfilecheck Info: File `mythesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 53E02D34AC5E625C7255F2CCE341E901;426.
+(rerunfilecheck)             Checksum: 5832DA308A8A85DE567551E7848F4BE2;1647.
  ) 
 Here is how much of TeX's memory you used:
- 31978 strings out of 474116
- 611085 string characters out of 5743689
- 1944187 words of memory out of 5000000
- 53406 multiletter control sequences out of 15000+600000
- 710153 words of font info for 275 fonts, out of 8000000 for 9000
+ 32564 strings out of 474116
+ 622533 string characters out of 5743689
+ 1945187 words of memory out of 5000000
+ 53736 multiletter control sequences out of 15000+600000
+ 717156 words of font info for 340 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,13n,145p,1334b,1122s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmb10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbo10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsco10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmib7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb>
-Output written on mythesis.pdf (26 pages, 750543 bytes).
+ 98i,21n,145p,1723b,1140s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmb10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbo10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsco10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmib7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb>
+Output written on mythesis.pdf (48 pages, 2306375 bytes).
 PDF statistics:
- 885 PDF objects out of 1000 (max. 8388607)
- 642 compressed objects within 7 object streams
- 71 named destinations out of 1000 (max. 500000)
- 88229 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 1452 PDF objects out of 1728 (max. 8388607)
+ 1105 compressed objects within 12 object streams
+ 197 named destinations out of 1000 (max. 500000)
+ 92966 words of extra memory for PDF output out of 106986 (max. 10000000)
 

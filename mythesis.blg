@@ -6,49 +6,60 @@ A level-1 auxiliary file: chap1/polariton_theory.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: Quantum_optics_lkb.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty year in cohen-tannoudji_photons_2004
+Warning--missing publisher in cohen-tannoudji_photons_2004
 Warning--empty year in Combescot_cooper_excitons_2015
 Warning--missing publisher in Combescot_cooper_excitons_2015
+Warning--empty year in grynberg_aspect_fabre
+Warning--missing publisher in grynberg_aspect_fabre
+Warning--empty year in hopfield_theory_1958
+Warning--empty year in kasprzak_boseeinstein_2006
 Warning--empty year in kittel_introduction_2005
 Warning--missing publisher in kittel_introduction_2005
-You've used 2 entries,
+Warning--empty year in maitre_thesis
+Warning--missing school in maitre_thesis
+Warning--missing publisher in pitaevskij_bose-einstein_2016
+Warning--empty year in Utsunomiya_fluidlightexp_2008
+Warning--missing publisher in weisbuch_microcavities_1996
+You've used 19 entries,
             3379 wiz_defined-function locations,
-            632 strings with 4755 characters,
-and the built_in function-call counts, 1159 in all, are:
-= -- 74
-> -- 39
-< -- 3
-+ -- 23
-- -- 13
-* -- 89
-:= -- 170
-add.period$ -- 8
-call.type$ -- 2
-change.case$ -- 13
-chr.to.int$ -- 3
-cite$ -- 6
-duplicate$ -- 98
-empty$ -- 100
-format.name$ -- 21
-if$ -- 215
+            765 strings with 8673 characters,
+and the built_in function-call counts, 20343 in all, are:
+= -- 1917
+> -- 690
+< -- 67
++ -- 622
+- -- 202
+* -- 1462
+:= -- 2170
+add.period$ -- 66
+call.type$ -- 19
+change.case$ -- 152
+chr.to.int$ -- 20
+cite$ -- 34
+duplicate$ -- 1949
+empty$ -- 1301
+format.name$ -- 348
+if$ -- 4014
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 19
-newline$ -- 21
-num.names$ -- 8
-pop$ -- 55
+missing$ -- 204
+newline$ -- 111
+num.names$ -- 76
+pop$ -- 711
 preamble$ -- 1
-purify$ -- 11
+purify$ -- 133
 quote$ -- 0
-skip$ -- 35
+skip$ -- 1161
 stack$ -- 0
-substring$ -- 22
-swap$ -- 47
-text.length$ -- 3
+substring$ -- 755
+swap$ -- 1544
+text.length$ -- 67
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
-warning$ -- 4
-while$ -- 8
+type$ -- 153
+warning$ -- 15
+while$ -- 111
 width$ -- 0
-write$ -- 34
-(There were 4 warnings)
+write$ -- 266
+(There were 15 warnings)
