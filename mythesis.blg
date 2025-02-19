@@ -19,47 +19,48 @@ Warning--missing publisher in kittel_introduction_2005
 Warning--empty year in maitre_thesis
 Warning--missing school in maitre_thesis
 Warning--missing publisher in pitaevskij_bose-einstein_2016
+Warning--empty year in stepanov_dispersion_2019
 Warning--empty year in Utsunomiya_fluidlightexp_2008
 Warning--missing publisher in weisbuch_microcavities_1996
-You've used 19 entries,
+You've used 30 entries,
             3379 wiz_defined-function locations,
-            765 strings with 8673 characters,
-and the built_in function-call counts, 20343 in all, are:
-= -- 1917
-> -- 690
-< -- 67
-+ -- 622
-- -- 202
-* -- 1462
-:= -- 2170
-add.period$ -- 66
-call.type$ -- 19
-change.case$ -- 152
-chr.to.int$ -- 20
-cite$ -- 34
-duplicate$ -- 1949
-empty$ -- 1301
-format.name$ -- 348
-if$ -- 4014
+            863 strings with 12197 characters,
+and the built_in function-call counts, 38836 in all, are:
+= -- 3678
+> -- 1493
+< -- 139
++ -- 1432
+- -- 428
+* -- 2883
+:= -- 3900
+add.period$ -- 100
+call.type$ -- 30
+change.case$ -- 274
+chr.to.int$ -- 31
+cite$ -- 46
+duplicate$ -- 3660
+empty$ -- 2325
+format.name$ -- 743
+if$ -- 7663
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 204
-newline$ -- 111
-num.names$ -- 76
-pop$ -- 711
+missing$ -- 358
+newline$ -- 167
+num.names$ -- 120
+pop$ -- 1423
 preamble$ -- 1
-purify$ -- 133
+purify$ -- 245
 quote$ -- 0
-skip$ -- 1161
+skip$ -- 2240
 stack$ -- 0
-substring$ -- 755
-swap$ -- 1544
-text.length$ -- 67
+substring$ -- 1438
+swap$ -- 3006
+text.length$ -- 139
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 153
-warning$ -- 15
-while$ -- 111
+type$ -- 249
+warning$ -- 16
+while$ -- 188
 width$ -- 0
-write$ -- 266
-(There were 15 warnings)
+write$ -- 419
+(There were 16 warnings)

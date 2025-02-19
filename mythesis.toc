@@ -13,16 +13,17 @@
 \contentsline {subsubsection}{\numberline {1.2.4.2}From the conduction-valence electrons to electron-hole picture}{13}{subsubsection.1.2.4.2}%
 \contentsline {subsubsection}{\numberline {1.2.4.3}The electron-hole hamiltonian}{15}{subsubsection.1.2.4.3}%
 \contentsline {subsection}{\numberline {1.2.5}Exciton-photon interaction in bulk semiconductor:}{17}{subsection.1.2.5}%
-\contentsline {subsection}{\numberline {1.2.6}Exciton in 2D quantum well}{17}{subsection.1.2.6}%
+\contentsline {subsection}{\numberline {1.2.6}Exciton in 2D quantum well}{18}{subsection.1.2.6}%
 \contentsline {subsection}{\numberline {1.2.7}Exciton-exciton interaction}{21}{subsection.1.2.7}%
-\contentsline {subsubsection}{\numberline {1.2.7.1}Fermionic exchange interaction}{21}{subsubsection.1.2.7.1}%
-\contentsline {subsubsection}{\numberline {1.2.7.2}Coulomb interaction}{21}{subsubsection.1.2.7.2}%
-\contentsline {section}{\numberline {1.3}Excitons-polaritons}{21}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Polariton interactions}{27}{subsection.1.3.1}%
-\contentsline {section}{\numberline {1.4}Polariton dynamics}{30}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Mean field approximation}{30}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Excitation scheme}{32}{subsection.1.4.2}%
-\contentsline {subsubsection}{\numberline {1.4.2.1}Off resonance excitation}{33}{subsubsection.1.4.2.1}%
-\contentsline {subsubsection}{\numberline {1.4.2.2}Resonant excitation.}{34}{subsubsection.1.4.2.2}%
-\contentsline {part}{Appendices}{37}{section*.14}%
-\contentsline {part}{Bibliography}{39}{section*.16}%
+\contentsline {subsubsection}{\numberline {1.2.7.1}Coulomb interaction}{21}{subsubsection.1.2.7.1}%
+\contentsline {subsubsection}{\numberline {1.2.7.2}Fermionic exchange interaction}{21}{subsubsection.1.2.7.2}%
+\contentsline {section}{\numberline {1.3}Excitons-polaritons}{23}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Polariton interactions}{29}{subsection.1.3.1}%
+\contentsline {section}{\numberline {1.4}Polariton dynamics}{31}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Mean field approximation}{32}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Driven dissipative Gross-Pitaevskii Equation.}{33}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Excitation scheme}{34}{subsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.3.1}Off resonance excitation}{35}{subsubsection.1.4.3.1}%
+\contentsline {subsubsection}{\numberline {1.4.3.2}Resonant excitation.}{36}{subsubsection.1.4.3.2}%
+\contentsline {part}{Appendices}{43}{section*.16}%
+\contentsline {part}{Bibliography}{45}{section*.18}%

@@ -39,6 +39,13 @@
 \newcommand{\gamlp}{\gamma_{LP}}
 \newcommand{\omlp}{\omega_{LP}}
 \newcommand{\mlp}{m_{LP}}
+\newcommand{\omp}{\omega_p}
+\newcommand{\gamr}{\gamma_r}
+\newcommand{\gamin}{\gamma_{in}}
+\newcommand{\gr}{g_r}
+\newcommand{\kp}{k_p}
+\newcommand{\nr}{n_r}
+\newcommand{\gamc}{\gamma_c}
 
 \graphicspath{{./}{./fig/}{./chap1/fig/}}
 
@@ -440,6 +447,8 @@ a factor $1/\epsilon_{sc}$. Remarkably, the intraband scatterings between valenc
 Let us now explain how the aforementioned electron-hole attractive interactions can lead to exciton formation.
 
 \subsubsection{The electron-hole hamiltonian}
+\label{e-h_hamiltonian}
+
 If we restrict the previous description to a one pair subspace namely to the interactions between a single electron and a single hole, electron-electron and hole-hole
 interactions can be safely dropped since they require two holes or electrons. The one pair hamiltonian then reads : 
 
@@ -492,6 +501,7 @@ whose eigenstates are $b^{\dagger}_{\mathbf{Q_i,\nu_i}}\ket{0}$ with energy $E_{
 In the following section we will see how the excitons interact with light.
 
  \subsection{Exciton-photon interaction in bulk semiconductor:} 
+ \label{sub:exciton_photon_interaction}
 The creation of an exciton can be mediated by the absorption of a photon by the material. On the other the annihiliation of a exciton can lead to photon emission.
 As a start we describe this interaction with an usual electron-photon Hamiltonian in first quantization:
 
@@ -513,7 +523,10 @@ microscopic constitutive particles : a conduction band electron and a hole in th
 Since $J_z = J_z + S_z$ and the electron spin is $S_z = \pm 1/2$ we obtain for the valence band $J_z^{v} = (3/2, 1/2, -1/2, -3/2)$ and for the conduction band $J_z^{c} = \pm 1/2$. If we now move to the electron-hole picture the electron angular momentum remains unchanged $J_z^{e}=J_z^{c}= \pm 1/2$ while the hole angular momentum is the opposite of the valence band electron $J_z^{h} = -J_z^{v}=(3/2, 1/2, -1/2, -3/2)$.
  The exciton angular momentum is then $J_z = J_z^{e} + J_z^{h} = (-2,-1,0,1,2)$. We can thus distinguish \textbf{bright} excitons with $J_z = (-1,0,1)$ that couple to light with polarization $\pi , \sigma_+ , \sigma_-$ and \textbf{dark} excitons with $J_z = (-2,2)$ that do not couple to light. 
 In the latter case the spin of the electron and the hole are aligned : $J_z= \pm 2$ excitons are made of $\pm1/2$ electrons and $\pm3/2$ holes. It means it corresponds to a situation in which the valence band electron flipped spin when it got promoted to the electron band. Yet, dark excitons can subsequently not undergo interband transitions that are spin preserving as mentionned in \autoref{sub:electron_hole_picture}. 
-On the other hand, bright excitons result from interband transitions since both photon absorption and emission involve an electron changing band. \textcolor{red}{RAJOUTER QQ CHOSE ICI}
+On the other hand, bright excitons result from interband transitions since both photon absorption and emission involve an electron changing band. In the framework of polariton which involve exciton creation through light one could think that since
+Coulomb inter and intraband scatterings are spin preserving, dark excitons are of no interest and won't play any role in the system. However, we will see that dark excitons can be created from bright excitons thanks to exchange carrier.
+that only bright excit
+
 
 
 \subsection{Exciton in 2D quantum well}
@@ -570,7 +583,9 @@ of the QW exciton is twice smaller than the bulk exciton Bohr radius. This is a 
 \end{equation}
 The design of the sample used in the experiement is done such as the n=1 level is sufficiently far form the next level that we can restrict our description to 
 the first 1s exciton state. In the following we will therefore drop the n index by setting it to one.
+
 \bigskip
+
 
 \noindent \textbf{Bosonic nature of excitons.} Since an exciton is made of two fermions its pseudo spin is an integer. However, when reaching regimes of high excitons densities
 the fermionic nature of their microscopic constitutives can no longer be neglected. The composite nature of excitons can then be safely dropped provided that the exciton density per unit area 
@@ -583,6 +598,7 @@ is such as $n_X(a_X^{QW})^2 \ll 1$. This condition state that the average distan
 \end{equation}
 
 \bigskip
+
 
 
 \noindent \textbf{Optical selection rules in the planar quantum well.}In bulk semiconductors, a single exciton mode couples exclusively to a single photon mode. In quasi-two-dimensional systems, due to the breaking of translationnal invariance in the growth direction $z$ the momentum
@@ -638,12 +654,64 @@ the values adressed in the experiment. Now that the exciton formation is well et
 \subsection{Exciton-exciton interaction}
 \label{sub:exciton_exciton_interaction}
 
-From the previous sections it appears obvious that two excitons can interact through the Coulomb interaction between their constitutive charged particles.
-However, even in the absence of any coulomb potential two excitons can interact through the so called fermionic exchange. 
+The scope of this section is to answer the question of what can lead two excitons in states $(i,j)$ to end up in states $(f,g)$. Obviously, direct
+coulomb interactions between the excitons constitutive is an unambiguous valid answer. Nonetheless, an interaction giving the same result can also occur in the absence of any Coulomb interactions via pure carrier exchange.
+Namely, excitons $i$ and $j$ can exchange either their electron or hole. The latter is a direct consequences of the Pauli exclusion principle stating that two fermions cannot occupy the same quantum state. 
+
+
+\subsubsection{Coulomb interaction}
+
+As explained in the previous section, holes and electrons undergo Coulomb interaction. As a consequence, the interaction
+between two excitons $(e_1,h_1)$ and $(e_2,h_2)$ consist of $V_{e_1e_2}+V_{h_1h_2}+V_{e_1h_2}+V_{h_1e_2}$. However, if the exciton were made of $(e_1,h_2)$ and $(e_2,h_1)$ the cross term in the interaction potentail would be replaced
+by $V_{e_1h_1}+V_{e_2h2}$. Because there are different possible ways to form excitons, the total interaction energy depends on the specific pairing choice.
+This makes it impossible to define a single, clean exciton-exciton interaction potential that works in all cases.
+Hence, treating them as pure bosons with a simple interaction potential fail because the effective exciton-exciton potential is not unique and depends on the microscopic way the excitons are formed.
+Nevertheless, it is clear that, through Coulomb interaction, excitons can change states and thus interact in the most general sense. This being said, we will as experimentalist, focus on the most 
+important scattering process that is actually coming from exchange carrier among excitons and that is a unique feature of composite particle.
 
 \subsubsection{Fermionic exchange interaction}
 
-\subsubsection{Coulomb interaction}
+Let us consider two excitons $X_1=\ket{\mathbf{k_e},\mathbf{k_h}}$ and $X_2=\ket{\mathbf{k_e}',\mathbf{k_h}'}$. If their wavefunction
+start to overlap the two electrons for example might see their qunatum state becaming almost equal which is forbidden by the Pauli exclusion principle. To regularize this situation 
+the exciton can exchange their carrier to form $X'_1=\ket{\mathbf{k_e}',\mathbf{k_h}}$ and $X'_2=\ket{\mathbf{k_e},\mathbf{k_h}'}$. This is might look counterintuitive since exchanging two particles in the same quantum state doesn't seem to solve the problem. However,
+it's truly the exchange process itself put together with wavefunction symmetries that modify the quantum state configuration to avoid Pauli principle violation.
+Take two indistinguishable particles, in state $\psi_a$ and $\psi_b$ in a 1D system  \cite{CCT_tome2}. Normalization consideration aside, the wavefunction of the system can be written in two ways : $\psi_{ab} =\psi_a(x_1)\psi_b(x_2) \pm \psi_a(x_1)\psi_b(x_2)$.
+Depending on the plus or minus sign, the wavefunction is symmetric or antisymmetric under position exchange. The two different configurations imply different physics.
+For instance the mean value of the particle interdistance is :
+
+\begin{equation}
+    \langle(x_1-x_2)^2\rangle = \langle x_1^2\rangle + \langle x_2^2\rangle \mp 2\langle x_1x_2\rangle ,
+\end{equation}
+
+provided the wavefunctions overlap $\langle x_1x_2\rangle\neq0$, the expected value is decreased for bosons and increased for fermions. Although, it seems to act 
+as a force repelling or attracting particles, it is rather a geometrical constraint arising from the Pauli principle and the quantum nature of the particle at stake.
+This is precisely what happend during carrier exchange and can, at the end, lead to scattering processes between excitons. Forgetting about this interaction ad try to fully bosonize excitons would then be a mistake \cite{ciuti_carrier_exchanges_1998}.
+As an example, some features experimentally measured like exciton stark effect, precisely needs to put exchange carrier on the table to be understood \cite{exciton_stark_VonLehmen_86,exciton_stark_Mysyrowicz_86,joffre_m_subpicosecond_1987}.
+Furthermore, in a 2D quantum well system this scatterings are dominant at larger scale while direct Coulomb interactions are dominant at scales smaller than the Bohr radius of
+excitons. Therefore, by considering only radiative modes, i.e. dynamics occuring on scales much larger than the Bohr radius of
+excitons $ka_X\ll 1$, Coulomb interactions can be neglected. Despite all the differences with true bosons above mentionned and the hot debates still going on about polaritons interactions \cite{Combescot_2007_exact_pol_pol_interactions,I_frerot_PRX_2023} this enable us, as experimentalist, to escape from ambiguity and write the main exciton-exciton potential that 
+will be relevant in the experiment reported in this work. Written in momentum space this exciton-exciton potential $V_{XX}(\kvec)$ appear as four body contact interaction \cite{Rochat2000}. The corresponding hamiltonian follows as :
+
+
+\begin{equation}
+    \Ham_{XX} = \dfrac{1}{2}\sum_{\kvec, \kvec', \vec{q}} V_{XX}(\vec{q}) \hat{b}^\dagger_{\kvec+\vec{q}} \hat{b}^\dagger_{\kvec'-\vec{q}} \hat{b}_{\kvec} \hat{b}_{\kvec'}.
+\label{exciton_interaction_ham}
+\end{equation}
+
+The potential $V_{XX}(\vec{q})$ is a function of the exchanged momentum $\vec{q}$. However, it can be approximated by a constant in the limit of low wavevectors since, being four order of magnitude heavier than microcavities photons, their varies only slightly with $\kvec$ in the range of the photon wavevector that excite them. Therefore $V_{XX}$ can be assumed constant. The numerical calculation gives $A \times V_{XX}\simeq$ 3 $\mu$eV$\cdot \mu$m$^{2}$ for our InGaAs system.
+\begin{equation}
+    V_{XX} = \dfrac{e^2 a_X^{QW}}{\epsilon A},
+\end{equation}
+
+with $A$ the quantization area equal to the  quantum well surface. The numerical calculation gives $A \times V_{XX}\simeq$ 3 $\mu$eV$\cdot \mu$m$^{2}$ in our GaAs-InGaAs system.
+
+
+
+\textbf{Dark excitons creation through carrier exchange.}
+
+As discussed in \autoref{sub:exciton_photon_interaction} electron-hole pairs with a total spin of $\pm1$ are coupled to $\sigma\pm$ photons, meaning that photon absorption leads to the creation of only bright exciton states $\pm1$. However, dark exciton states can also be present in the system, arising from fermion exchange processes.
+Namely, fermion exchange between two bright excitons $(+1,1)$ made of $(\mp1/2)$ electrons and $(\pm3/2)$ holes leads to dark excitons $(+2,-2)$. Hence, eventhough photon absorption only create bright excitons, excitons not coupled to light are likely to be indirectly excited and participate to the overall interactions of the system.
+This being said, we will in the following only tackle this problem from a phenomenological point of view and consider the exciton-exciton interaction as a unique potential $V_{XX}$ whereas dark excitons will be accounted for thorugh a reservoir.
 
   
 \section{Excitons-polaritons}
@@ -870,6 +938,8 @@ will turn light into a fluid of interacting particles. This is the subject of th
 \end{figure}
 
 \subsection{Polariton interactions}
+\label{sub:polariton_interactions}
+
 It is now clear that shinning a strong laser with the right frequency on a semiconducting microcavity will create plenty of polaritons. Since the have an excitonic part,
 they may undergo many body effects that were not taken into account in the linear hamiltonian model derived earlier. More precisely, polaritons experience 
 all the exciton-exciton interactions described in \autoref{sub:exciton_exciton_interaction} as well as additional features coming from their coupling with light.
@@ -985,7 +1055,7 @@ For now let us focus on the description of the mean field dynamics and justify m
 
 \bigskip
 
-\textbf{One wavefunction to describe them all.} A pioneering result in the early stages of quantum mechanics is the so called wave-particle duality proposed by Louis de Broglie \cite{deBroglie1925} in 1924.
+\textbf{One wavefunction to rule them all.} A pioneering result in the early stages of quantum mechanics is the so called wave-particle duality proposed by Louis de Broglie \cite{deBroglie1925} in 1924.
 It states that particles can exhibit both wave and particle properties. 
 More precisely, to any particle with momentum $\mathbf{p}$ can be associated a wavelength $\lambda=h/|\mathbf{p}|$. This wavelength is the characteristic of the wave associated with the particle and is called the de Broglie wavelength. 
 As a result if two particle are separated by a distance smaller than their de Broglie wavelength their corresponding wavefunction will sum and possibly give rise to wave like effect as interferences.
@@ -1003,7 +1073,7 @@ Now that we have a single order parameter to describe the system, let us see how
 
 \bigskip
 
-\textbf{Driven dissipative Gross-Pitaevskii Equation.}
+\subsection{Driven dissipative Gross-Pitaevskii Equation.}
 In the context of Bose gas this problem was first tackled by Gross \cite{Gross1961} and Pitaevskii \cite{pitaevskii1961} to describe
 the structure of quantized vortices in liquid Helium. The resulting equation is known as the \textit{Gross-Pitaevskii equation} or non-linear Schrödinger equation :
 
@@ -1049,17 +1119,40 @@ where $V_\gamma(\rvec)$ and $V_X(\rvec)$ are the mean external potentials felt b
     \begin{bmatrix}
     \hbar \omega_X & \hbar \OmR / 2 \\
     \hbar \OmR / 2 & \hbar \omega_\gamma(-i \nabla_\rvec)  
-    \end{bmatrix}. 
+    \end{bmatrix}. https://doi.org/10.1103/PhysRevLett.61.117
 \end{equation}
 as explained earlier, the exciton dispersion relation can be safely considered constant with respect to the photon one, $\hbar \omega_X(\kvec)=\hbar \omega_X(0)$.
 We can then transition to the polariton basis, obtaining two decoupled equations for the lower and upper polariton fields, $\psi_{LP}(\rvec,t)$ and $\psi_{UP}(\rvec,t)$. Focusing on the lower polariton branch, this leads to the so-called \textit{driven-dissipative Gross-Pitaevskii equation}:
 \begin{equation}
     i \hbar \dfrac{\partial}{\partial t} \psilp(\rvec, t) = \left[ \hbar \omlp^0 -\dfrac{\hbar^2}{2 \mlp}\nabla_\rvec^2 + V_{LP}(\rvec) + \hbar g n(\rvec, t) - i \hbar \dfrac{\gamlp}{2} \right] \psilp(\rvec, t) + \hbar \eta_{LP} F_p(\rvec, t).
-\label{generalized_GPE}
+    \label{eq:generalized_GPE}
 \end{equation}
 where $V_{LP}$ is the external potential experienced by the polaritons which depend on those felt by photons and excitons through the Hopfield 
 coefficients $V_{LP}(\rvec) = C^2_\kvec V_{\gamma} + X^2_\kvec V_{X}$, $\kvec$ being here the pump wavevector. The term $\hbar \omlp^0$ is the polaritons energy at zero wavevector while the $\hbar^2\nabla^2_\rvec /2\mlp$ is again the kinetic energy. Finally, the prefactor $\eta_{LP}$ account for the coupling efficiency of the pump photons whithin the system.
 Since the presence of a fluid in the sample change the optical resonance through non linear interaction this term is generally not constant. However, in first approximation it is linked the reflectivity of the sample front mirror and can be considered as a constant. A full derivation of this equation as well as a complete discussion on its validity can be found in \cite{carusotto_quantum_2013}.
+
+\bigskip
+
+
+\textbf{Dark reservoir. }Along our description of excitons we mentionned the presence of dark excitons that are not directly coupled to light because of spin selection rules. As a consequence, one could think 
+that they are not involved in the polariton dynamics. It is actually not the case. Indeed, eventhough they do not interact with photons they can still interact with bright excitons through the many complex electron-hole interactions described in \autoref{sub:exciton_exciton_interaction}.
+Forgetting them in the description of the polariton dynamics would then be a mistake \cite{Menard2014, stepanov_dispersion_2019}. To derive a single master equation starting from the many microscopic interactions between photons, dark and bright excitons would require a full spin resolved description and is beyond the scope of this manuscript.
+Nevertheless, we will account for their presence phenomenologically by considering them as a reservoir of density $n_r$ coupled to polaritons through a relaxation term $\gamma_{r}$. In terms of equations it reads as :
+
+
+\begin{align}
+    \begin{split}
+        i \hbar \dfrac{\partial}{\partial t} \psilp(\rvec, t) ={}& \left[ \hbar \omlp^0 -\dfrac{\hbar^2}{2 \mlp}\nabla_\rvec^2 + V_{LP}(\rvec) + \hbar g n(\rvec, t) + \hbar \gr \nr(\rvec, t) - i \hbar \dfrac{\gamlp + \gamin}{2} \right] \psilp(\rvec, t)  \\&+ \hbar \eta_{LP} F_p(\rvec, t),
+    \end{split}
+    \end{align}
+    
+    \begin{equation}
+         \dfrac{\partial}{\partial t} \nr = -\gamr \nr + \gamin n.
+    \label{reservoir_eq}
+    \end{equation}
+
+As it will be shown in the following the presence of a dark reservoir is of great importance when it comes to describing the quantum fluctuations of the polariton fluid.
+
 
 \subsection{Excitation scheme} So far, the derivation of the master equation was initiated by stating that a polaritonic state could be macroscopically populated 
 through optical pumping. However, the pump term was not yet defined in the sense that we did not specify the frequency of the pump photons with respect to the polariton dispersion relation.
@@ -1102,15 +1195,89 @@ non-linearities and resonance conditions is at the heart of what is called optic
 
 \bigskip
 
-To avoid first complications due to cross Kerr effect we consider a ring cavity of geometrical length $L_{cav}^0$ filled with Kerr medium of lenght $l$ as shown in \autoref{fig:optical_bistability} a). 
-As explained for a planar cavity in \autoref{sec:photon}, the cavity has transmission peaks whenever the optical path of a round trip in the cavity (a photon going back and forth) $L_{cav}$ is an integer multiple of the laser wavelength $\lambda$.
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{chap1/fig/bistability_grynberg.pdf}
+    \caption{\textbf{Optical bistability.} \textbf{a)} Schematic of a ring cavity filled with a Kerr medium. The cavity has a length $L_{cav}^{(0)}$ and the Kerr medium a length $l$. \textbf{b)} Transmission of the cavity as a function of the optical length of the cavity $L_{cav}$. The straight line represent the values $T_{cav}$ as a function of $L_{cav}$ for different values of
+    $I_{in}$. The operating points lie at the intersections of the cavity resonance curve and the straigth lines. Depending on $I_{in}$ one or three operating point can be found. Adapted from \cite{grynberg_aspect_fabre}.}
+    \label{fig:optical_bistability}
+\end{figure}
+
+To avoid first complications due to cross Kerr effect we consider a ring cavity of geometrical length $L$ filled with Kerr medium of lenght $l$ as shown in \autoref{fig:optical_bistability} a). The optical length of
+such a cavity is :
+
+\begin{equation}
+    L_{cav}= L+(n_0-1)l+n_2I_{cav}l,
+    \label{eq:optical_length}
+\end{equation}
+where $n_0$ is the refractive index of the medium, $n_2$ the non linear refractive index and $I_{cav}$ the intracavity intensity.
+As explained for a planar cavity in \autoref{sec:photon}, the cavity has transmission peaks whenever the optical path of a round trip in the cavity (a photon going back and forth) is an integer multiple of the laser wavelength $\lambda$.
 In the case of a ring cavity this condition reads as :
 
 \begin{equation}
     T_{cav} = \dfrac{1}{1+\dfrac{4F^2}{\pi^2}\mathrm{sin}^2\left(\dfrac{kL_{cav}}{2}\right)},
     \label{eq:ring_cavity_transmission}
 \end{equation}
-where $F$ is the cavity finesse and $k=2\pi/\lambda$ the wavevector of the laser. The transmission of the cavity as a function of the laser frequency is plotted in \autoref{fig:optical_bistability} b).
+where $F$ is the cavity finesse and $k=2\pi/\lambda$ the wavevector of the laser. The transmission of the cavity as a function of $L_{cav}$ is plotted in \autoref{fig:optical_bistability} b). 
+On the other hand the transmission of the cavity is defined as :
+\begin{equation}
+    T_{cav} = \dfrac{I_{out}}{I_{in}}= T\dfrac{I_{cav}}{I_{in}}= \dfrac{T}{n_2l}\dfrac{L_{cav}-L^{(0)}_{cav}}{I_{in}},
+    \label{eq:linear_transmission}
+\end{equation}
+where $T$ is the transmission of the outpout mirror and $L_{cav}^{(0)}$ the optical length of the cavity at low intensity $I_{cav}\approx 0$. An operating point is then defined as the intersection of the transmission curve \autoref{eq:ring_cavity_transmission} and the straight line of \autoref{eq:linear_transmission}. Graphically the slope 
+of the linear relation between $T_{cav}$ and $L_{cav}$ depend on the value of $I_{in}$.
+As a consequence several regime are possible depending on the value of the input intensity as shown in \autoref{fig:optical_bistability} b). For low intensity as $I_1$, the operating point is unique and the system is in a stable regime but yields a low transmission. For higher input intensity like $I_3$, the system exhibits three operating points. However, it can be shown that the intersection points with a negative derivative between B and D are unstable. At even higher 
+intensity the system has again a single operating point and a poor transmission. When the input intensity lies between $I_2$ and $I_4$ the system is said to be in a bistable regime. 
+
+\bigskip 
+
+In the case of microcavity-polariton the same behavior can be observed as the exciton-exciton non-linear interactions are of the same nature as the Kerr effect.
+Analytically, polariton bistability can be found by looking at the steady state of the driven-dissipative Gross-Pitaevskii equation in the presence of a driving pump term nearly resonant with the LP branch. In first approximation, it can be written as a plane wave $F_p(\rvec,t)=F_p e^{i\kvec_p.\rvec-i\omega_p t}$.
+As it is usually done for equations including a resonant forcing term, we look for solution of the same form namely, plane wave with the same phase, $\psi(\rvec,t)= \psi^0e^{i\kvec_p.\rvec-i\omega_p t}$.
+Inserting this ansatz into \autoref{eq:generalized_GPE} in the absence of external potential $V_{LP}=0$ and setting the time derivative to zero one obtain the steady state equation :
+
+\begin{equation}
+    \left[\omp -\omlp - \dfrac{\hbar \kp^2}{2 \mlp} - g \abs{\psilp^0}^2 + i \dfrac{\gamlp}{2} \right] \psilp^0= \eta_{LP} F_p^0.
+    \label{eq:steady_state}
+\end{equation}
+
+It is the equivalent of the equation of state of a conservative system with the difference that, in this case, it results of a complex equilibrium between interactions, pumping and losses. Notice that 
+the contribution of the dark reservoir was neglected as the goal of this section is to understand in a general way bistability in polariton microcavity. Nonetheless, it 
+actually has remarkable consequences on the hysteresis cycle and the later can be used to probe polariton-dark excitons interactions with optical means, notably through two photon excitation to overcome spin forbidden transitions \cite{dark_exciton_pol_interactions}
+
+To end up with an equation linking the pump intensity to the polariton density one can multiply this equation by its complex conjugate which gives :
+
+\begin{equation}
+    n \left[ \dfrac{\gamlp^2}{4} + \left(\delta(\kp) - g n \right)^2 \right] =  \eta_{LP}^2 I,
+\label{eq:eq_of_state}
+\end{equation}
+
+where $\delta(\kp)$ is the effective detuning between the pump laser and the LP branch at the pump wavevector in a parabolic approximation, $\delta(\kp) = \omp - \omlp-{\hbar\kp^2}/2\mlp$ and $I$ the pump intensity. Being a polynomial of degree 3 in the polariton density, this equation have up to three solutions.
+Three distinct real solutions can be found only if $\delta>\sqrt{3/2}\gamlp$, as explained in the previous paragraph, one of this solution is known to be unstable. However, in some peculiar cases, namely when the fluid dimension is ramped down from 2D to 1D this solution can be explored and is responsible for the emergence of first order phase transition as investigated in \cite{li_dissipative_2022}.
+This being said, we don't take into account this solution in the present work since the dimension of the fluid will always be 2D.
+The evolution of $n$ as a function of $I$ in this regime is plotted in \autoref{fig:bistability}. The system is in a bistable regime when the curve exhibits two stable solutions for a given intensity : one at low density and one at high density.
+It's worth noticing that the actual state in which the system is depend on its past history. More precisely, if the incident intensity is initially low, since the laser is blue detuned with the polariton energy, the photon injection whithin the sample is poor and a few polariton are created. However, their presence in the cavity tends to blueshift their own resonance energy as explained in \autoref{sub:polariton_interactions}. As the intensity is ramped up, the system will follow the low density branch until the energy renormalisation is sufficient to reach the point B. At this point the system is compelled to jump to the high density branch and will suddenly move from point B to point C.
+If the pump intensity is then decreased, the situation is rather different since many polaritons are already present in the sample and support the laser injection and thus polariton creation. The system will follow the high density branch untill it reaches the point D' where interactions can no longer compensate for the losses making it fall again on the low density branch. A particular attention must be given to this so called turning point D'. Indeed, as it can be seen on \autoref{fig:optical_bistability} it's the only point at which the laser is exactly resonant with the cavity filled with non linearities.
+This point can only be reached by travelling on the whole hysteresis loop. The corresponding density can determined by solving $\frac{dI}{dn}=0$ which gives the discriminants :
+
+\begin{equation}
+    \Delta = g^2 \left( \delta^2 - \dfrac{3\gamlp^2}{2}\right).
+\end{equation}
+
+The bistable regime require two distinct solution for $\frac{dI}{dn}=0$ which require $\Delta>0$ and provide the afromentionned condition $\delta>\sqrt{3/2}\gamlp$.
+From this one can find that the density corresponding to the turning point fullfill $\delta(\kp)=gn$. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{chap1/fig/bistability.pdf}
+    \caption{\textbf{Optical bistability in a polariton fluid.} a) The polariton density as a function of the pump intensity when $\delta>\frac{\sqrt{3}\gamlp}{2}$. The blue point represent the so called turning point at which the detuning is exactly equal to the interaction energy.
+    b) Polariton density as a function of $\delta$ for a fixed pump intensity. c) Polariton density as a function of the pump intensity for different values of $\delta$, bistability is observed when $\delta>\frac{\sqrt{3}\gamlp}{2}$.}
+    \label{fig:bistability}
+\end{figure}
+
+Conversely, when the detunig is two small with respect to the system losses the system is monostable and said to be in the optical limiter regime.
+In the bistable regime, the system exhibits 
+
 
 \textbf{All optical control.} In the context of analog gravity, the ability to easily control and monitor the fluid of light is a great asset. Indeed, the study of 
 Hawking radiation in a quantum fluid require the creation of an acoustic horizon as well as the possibility to measure what is emitted by the latter. In particular,

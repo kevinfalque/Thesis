@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex mythesis"] 1738924569.89298 "mythesis.aux" "mythesis.bbl" "mythesis" 1738924572.04511 0
-  "./Quantum_optics_lkb.bib" 1738161507.91363 563837 4ac5d6a4262fb3d6665b1fff257daa9d ""
+["bibtex mythesis"] 1739972186.04529 "mythesis.aux" "mythesis.bbl" "mythesis" 1739972188.2846 0
+  "./Quantum_optics_lkb.bib" 1739970624.02923 569390 266e0c310abb634c2cfbaf85f39c83ee ""
   "./assets/thfrnatay-href.bst" 1736850013.29054 34376 e3bc349689bea62468ccdfa3af105478 ""
-  "chap1/polariton_theory.aux" 1738924571.65217 29317 d4bd11658266adfc338bc184b125a24e "pdflatex"
-  "mythesis.aux" 1738924571.70017 2657 289d4180e4836eaa5faaecf0927ee607 "pdflatex"
+  "chap1/polariton_theory.aux" 1739972187.88198 34957 875be2a44da4910544e4ea5c90ce43d7 "pdflatex"
+  "mythesis.aux" 1739972187.94198 4159 136d9a512517c212b15a6d513964d5e5 "pdflatex"
   (generated)
   "mythesis.bbl"
   "mythesis.blg"
   (rewritten before read)
-["pdflatex"] 1738924569.99594 "/home/kfalque/Documents/These-Falquos-main/mythesis.tex" "mythesis.pdf" "mythesis" 1738924572.04532 0
+["pdflatex"] 1739972186.16778 "/home/kfalque/Documents/These-Falquos-main/mythesis.tex" "mythesis.pdf" "mythesis" 1739972188.28478 0
   "/home/kfalque/Documents/These-Falquos-main/mythesis.tex" 1737483082.87138 8118 a46c3b508685c5a52c80032ccbcc76ad ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1202520719 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
@@ -281,21 +281,23 @@
   "chap1/fig/InGaAs.pdf" 1736850013.29054 89738 4993879a854c1d01eb89dc492653b8a3 ""
   "chap1/fig/anticrossing.pdf" 1736850013.30254 231467 aeeb1fd8905e5690fd94c91cfb81dc32 ""
   "chap1/fig/band_theory.pdf" 1736850013.30254 20288 fe765beafd011507df78789b1138f450 ""
+  "chap1/fig/bistability.pdf" 1739872333.5981 62907 5cbcd53a52993a9f21f543b97ee4ef0b ""
+  "chap1/fig/bistability_grynberg.pdf" 1739445219.96817 102508 e774e12db92c21bc6fbd406d1b4272d8 ""
   "chap1/fig/cavity_geometry.pdf" 1736850013.30254 55734 379740666afec9cb156e4b8d417b5c21 ""
   "chap1/fig/intra-inter-band-processes.pdf" 1736850013.30254 5767 db0f3f5f7fb4e2d49ced9c8d362a267c ""
   "chap1/fig/intra_band_dressed_bubbles.pdf" 1736864035.37094 26042 d4ea069dc8fcff912b73540e05be9b63 ""
   "chap1/fig/polariton_bec.pdf" 1738263156.20007 592955 d0b55ebb4d940d4c09187b904abbb18d ""
   "chap1/fig/polariton_cavity.pdf" 1736850013.31054 392410 4219df55a3525fdff3aa76706897d80b ""
   "chap1/fig/wedge_and_hopfields.pdf" 1737637126.63687 84912 860c0c0a49faa84ee6c008e1e14ddd91 ""
-  "chap1/polariton_theory.aux" 1738924571.65217 29317 d4bd11658266adfc338bc184b125a24e "pdflatex"
-  "chap1/polariton_theory.tex" 1738924567.32809 98572 98efcc78808466767a76a0a3100af701 ""
+  "chap1/polariton_theory.aux" 1739972187.88198 34957 875be2a44da4910544e4ea5c90ce43d7 "pdflatex"
+  "chap1/polariton_theory.tex" 1739972183.59399 115664 8a610c1fedecf14e8744a3082fb0d03e ""
   "logo_lkb.pdf" 1736850013.33054 3013 87f5b4f29aa618161352b8c51a67966a ""
-  "mythesis.aux" 1738924571.70017 2657 289d4180e4836eaa5faaecf0927ee607 "pdflatex"
-  "mythesis.bbl" 1738924569.98814 7850 a8b9bc4f0f97da5d8a2c5e7c2193e73a "bibtex mythesis"
-  "mythesis.brf" 1738924571.70017 1647 5832da308a8a85de567551e7848f4be2 "pdflatex"
-  "mythesis.out" 1738924571.70017 6016 31a2d29b1511259df04fc7b5697c3a74 "pdflatex"
+  "mythesis.aux" 1739972187.94198 4159 136d9a512517c212b15a6d513964d5e5 "pdflatex"
+  "mythesis.bbl" 1739972186.15799 14645 40ab50aea1eb1f9e19e8a150451ecfd8 "bibtex mythesis"
+  "mythesis.brf" 1739972187.94598 2505 543051d19662e9c93683abfa985a1efe "pdflatex"
+  "mythesis.out" 1739972187.94598 6345 26d08900c72c1db6210d2462a78285cc "pdflatex"
   "mythesis.tex" 1737483082.87138 8118 a46c3b508685c5a52c80032ccbcc76ad ""
-  "mythesis.toc" 1738924571.70017 2521 c15efe26a96a4c2c176a182cf71aa5a7 "pdflatex"
+  "mythesis.toc" 1739972187.94598 2637 e836501c206beae92ecbd06e2253ae44 "pdflatex"
   "mythesis_meta_SU.tex" 1736850013.33854 2259 c98d97177aae43b9eaa2b2e485e16d4b ""
   (generated)
   "chap1/polariton_theory.aux"
