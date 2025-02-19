@@ -7,8 +7,8 @@
 \contentsline {section}{\numberline {1.2}Excitons in Semiconductors}{7}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Band theory in brief}{7}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Band structure of semiconductors}{8}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Excitons in bulk semiconductor}{8}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}Exciton-exciton non linear interactions}{10}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.3}Exciton phenomenological approach}{8}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Electron-hole interactions and exciton formation}{10}{subsection.1.2.4}%
 \contentsline {subsubsection}{\numberline {1.2.4.1}Electron scattering in semiconductors}{10}{subsubsection.1.2.4.1}%
 \contentsline {subsubsection}{\numberline {1.2.4.2}From the conduction-valence electrons to electron-hole picture}{13}{subsubsection.1.2.4.2}%
 \contentsline {subsubsection}{\numberline {1.2.4.3}The electron-hole hamiltonian}{15}{subsubsection.1.2.4.3}%
