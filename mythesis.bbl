@@ -1,4 +1,4 @@
-\begin{thebibliography}{30}
+\begin{thebibliography}{32}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibnamefont}[1]{\textsc{#1}}
 \providecommand{\bibfnamefont}[1]{#1}
@@ -70,6 +70,11 @@
 \bibfnamefont{Gilbert} \bibnamefont{Grynberg}, \bibfnamefont{Alain} \bibnamefont{Aspect} \& \bibfnamefont{Claude} \bibnamefont{Fabre}.
 \newblock \emph{Introduction to {Quantum} {Optics}}.
 
+\bibitem[{Hawking()}]{hawking_black_1972}
+\bibfnamefont{S.~W.} \bibnamefont{Hawking}.
+\newblock \enquote{Black holes in general relativity}.
+\newblock \href{http://dx.doi.org/10.1007/BF01877517}{ \emph{Communications in Mathematical Physics} \textbf{25}(2), p. 152--166}.
+
 \bibitem[{Hopfield()}]{hopfield_theory_1958}
 \bibfnamefont{J.~J.} \bibnamefont{Hopfield}.
 \newblock \enquote{Theory of the contribution of excitons to the complex dielectric constant of crystals}.
@@ -132,6 +137,11 @@
 \newblock \emph{Bose-Einstein condensation and superfluidity}.
 \newblock Num\'ero 164 dans International series of monographs on physics. Reprinted (with corrections) \'edition.
 \newblock ISBN 978-0-19-875888-4.
+
+\bibitem[{Popoff()}]{wavefront_shapping}
+\bibfnamefont{S.}~\bibnamefont{Popoff}.
+\newblock \enquote{Wavefront shapping}.
+\newblock \url{https://www.wavefrontshaping.net/}.
 
 \bibitem[{Rochat \emph{et~al.}(2000)Rochat, Ciuti, Savona, Piermarocchi, Quattropani \& Schwendimann}]{Rochat2000}
 \bibfnamefont{G.}~\bibnamefont{Rochat}, \bibfnamefont{C.}~\bibnamefont{Ciuti}, \bibfnamefont{V.}~\bibnamefont{Savona}, \bibfnamefont{C.}~\bibnamefont{Piermarocchi}, \bibfnamefont{A.}~\bibnamefont{Quattropani} \& \bibfnamefont{P.}~\bibnamefont{Schwendimann} 2000.
