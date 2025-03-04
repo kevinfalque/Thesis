@@ -29,12 +29,25 @@
 \contentsline {section}{\numberline {2.1}Optical generation of arbitrary fluid velocity field}{44}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Waterfall configuration}{44}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Target velocity profile}{44}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Wavefront shapping}{46}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Effective 1D polariton fluid}{51}{subsection.2.1.4}%
-\contentsline {section}{\numberline {2.2}Experimental spectroscopy of the collective excitation spectrum}{51}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}High resolution pump-probe spectroscopy method}{52}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Experimental setup}{52}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Experimental results}{53}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Homogeneous fluid}{53}{subsection.2.4.1}%
-\contentsline {part}{Appendices}{55}{section*.23}%
-\contentsline {part}{Bibliography}{57}{section*.25}%
+\contentsline {subsection}{\numberline {2.1.3}Effective 1D fluid}{46}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Experimental spectroscopy of the collective excitation spectrum}{48}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}High resolution pump-probe spectroscopy method}{49}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Experimental setup}{50}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Experimental results}{51}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Homogeneous fluid}{51}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Smooth transition geometry}{56}{subsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.2.1}Speed of sound measurement}{56}{subsubsection.2.4.2.1}%
+\contentsline {subsubsection}{\numberline {2.4.2.2}Critical velocity}{57}{subsubsection.2.4.2.2}%
+\contentsline {subsubsection}{\numberline {2.4.2.3}Paired emission frequency range}{59}{subsubsection.2.4.2.3}%
+\contentsline {subsection}{\numberline {2.4.3}Steep horizon geometry}{61}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Quasi-normal mode configuration}{64}{subsection.2.4.4}%
+\contentsline {section}{\numberline {2.5}Conclusion}{65}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Outlook}{65}{subsection.2.5.1}%
+\contentsline {part}{Appendices}{67}{section*.30}%
+\contentsline {chapter}{\numberline {A}Mean field shaping and monitoring}{69}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Phase printing}{69}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Spatial light modulator.}{69}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Phase measurement}{70}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Off axis inteferometry}{70}{subsection.A.1.3}%
+\contentsline {subsection}{\numberline {A.1.4}Controlling the local intensity}{70}{subsection.A.1.4}%
+\contentsline {part}{Bibliography}{73}{section*.34}%

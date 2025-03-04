@@ -1,10 +1,15 @@
-\begin{thebibliography}{36}
+\begin{thebibliography}{39}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibnamefont}[1]{\textsc{#1}}
 \providecommand{\bibfnamefont}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 \providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Barceló \emph{et~al.}()Barceló, Liberati, Sonego \& Visser}]{barcelo_hawking-like_2006}
+\bibfnamefont{Carlos} \bibnamefont{Barceló}, \bibfnamefont{Stefano} \bibnamefont{Liberati}, \bibfnamefont{Sebastiano} \bibnamefont{Sonego} \& \bibfnamefont{Matt} \bibnamefont{Visser}.
+\newblock \enquote{Hawking-like radiation does not require a trapped region}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRevLett.97.171301}{ \emph{Physical Review Letters} \textbf{97}(17)}.
 
 \bibitem[{Carusotto \& Ciuti(2013)}]{carusotto_quantum_2013}
 \bibfnamefont{Iacopo} \bibnamefont{Carusotto} \& \bibfnamefont{Cristiano} \bibnamefont{Ciuti} 2013.
@@ -79,6 +84,11 @@
 \bibfnamefont{J.~J.} \bibnamefont{Hopfield}.
 \newblock \enquote{Theory of the contribution of excitons to the complex dielectric constant of crystals}.
 \newblock \href{http://dx.doi.org/10.1103/PhysRev.112.1555}{ \emph{Physical Review} \textbf{112}(5), p. 1555--1567}.
+
+\bibitem[{Jacquet \emph{et~al.}(2023)Jacquet, Giacomelli, Valnais, Joly, Claude, Giacobino, Glorieux, Carusotto \& Bramati}]{jacquet_quantum_2023}
+\bibfnamefont{M.J.} \bibnamefont{Jacquet}, \bibfnamefont{L.}~\bibnamefont{Giacomelli}, \bibfnamefont{Q.}~\bibnamefont{Valnais}, \bibfnamefont{M.}~\bibnamefont{Joly}, \bibfnamefont{F.}~\bibnamefont{Claude}, \bibfnamefont{E.}~\bibnamefont{Giacobino}, \bibfnamefont{Q.}~\bibnamefont{Glorieux}, \bibfnamefont{I.}~\bibnamefont{Carusotto} \& \bibfnamefont{A.}~\bibnamefont{Bramati} 2023.
+\newblock \enquote{Quantum {Vacuum} {Excitation} of a {Quasinormal} {Mode} in an {Analog} {Model} of {Black} {Hole} {Spacetime}}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRevLett.130.111501}{ \emph{Physical Review Letters} \textbf{130}, p. 111\,501}.
 
 \bibitem[{{Joffre, M.} \emph{et~al.}(1987){Joffre, M.}, {Hulin, D.}, {Migus, A.}, {Mysyrowicz, A.} \& {Antonetti, A.}}]{joffre_m_subpicosecond_1987}
 \bibnamefont{{Joffre, M.}}, \bibnamefont{{Hulin, D.}}, \bibnamefont{{Migus, A.}}, \bibnamefont{{Mysyrowicz, A.}} \& \bibnamefont{{Antonetti, A.}} 1987.
@@ -157,6 +167,11 @@
 \bibfnamefont{S.}~\bibnamefont{Popoff}.
 \newblock \enquote{Wavefront shapping}.
 \newblock \url{https://www.wavefrontshaping.net/}.
+
+\bibitem[{Porro \emph{et~al.}(2024)Porro, Liberati \& Schneider}]{delporro2024tunneling}
+\bibfnamefont{Francesco~Del} \bibnamefont{Porro}, \bibfnamefont{Stefano} \bibnamefont{Liberati} \& \bibfnamefont{Marc} \bibnamefont{Schneider} 2024.
+\newblock \enquote{Tunneling method for hawking quanta in analogue gravity}.
+\newblock \emph{arXiv:2406.14603} .
 
 \bibitem[{Rochat \emph{et~al.}(2000)Rochat, Ciuti, Savona, Piermarocchi, Quattropani \& Schwendimann}]{Rochat2000}
 \bibfnamefont{G.}~\bibnamefont{Rochat}, \bibfnamefont{C.}~\bibnamefont{Ciuti}, \bibfnamefont{V.}~\bibnamefont{Savona}, \bibfnamefont{C.}~\bibnamefont{Piermarocchi}, \bibfnamefont{A.}~\bibnamefont{Quattropani} \& \bibfnamefont{P.}~\bibnamefont{Schwendimann} 2000.
