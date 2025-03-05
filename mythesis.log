@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.7)  4 MAR 2025 19:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.7)  5 MAR 2025 10:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1612,13 +1612,13 @@ Overfull \hbox (25.13184pt too wide) has occurred while \output is active
 <chap3_custom_st/fig/target_velocity.pdf, id=1543, 794.97pt x 578.16pt>
 File: chap3_custom_st/fig/target_velocity.pdf Graphic file (type pdf)
 <use chap3_custom_st/fig/target_velocity.pdf>
-Package pdftex.def Info: chap3_custom_st/fig/target_velocity.pdf  used on input line 85.
+Package pdftex.def Info: chap3_custom_st/fig/target_velocity.pdf  used on input line 82.
 (pdftex.def)             Requested size: 794.96806pt x 578.15858pt.
  [45 <./chap3_custom_st/fig/target_velocity.pdf>]
 <chap3_custom_st/fig/wavefront_shapping.pdf, id=1577, 1114.33269pt x 667.81802pt>
 File: chap3_custom_st/fig/wavefront_shapping.pdf Graphic file (type pdf)
 <use chap3_custom_st/fig/wavefront_shapping.pdf>
-Package pdftex.def Info: chap3_custom_st/fig/wavefront_shapping.pdf  used on input line 117.
+Package pdftex.def Info: chap3_custom_st/fig/wavefront_shapping.pdf  used on input line 113.
 (pdftex.def)             Requested size: 1114.32997pt x 667.81639pt.
 
 Overfull \hbox (25.13184pt too wide) has occurred while \output is active
@@ -1629,7 +1629,7 @@ Overfull \hbox (25.13184pt too wide) has occurred while \output is active
 <chap3_custom_st/fig/phase_example.pdf, id=9126, 578.16pt x 216.81pt>
 File: chap3_custom_st/fig/phase_example.pdf Graphic file (type pdf)
 <use chap3_custom_st/fig/phase_example.pdf>
-Package pdftex.def Info: chap3_custom_st/fig/phase_example.pdf  used on input line 154.
+Package pdftex.def Info: chap3_custom_st/fig/phase_example.pdf  used on input line 149.
 (pdftex.def)             Requested size: 578.15858pt x 216.80946pt.
 
 Overfull \hbox (25.13184pt too wide) has occurred while \output is active
@@ -1640,14 +1640,14 @@ Overfull \hbox (25.13184pt too wide) has occurred while \output is active
 <chap3_custom_st/fig/setup_bogoliubov.pdf, id=9159, 283.36856pt x 299.5073pt>
 File: chap3_custom_st/fig/setup_bogoliubov.pdf Graphic file (type pdf)
 <use chap3_custom_st/fig/setup_bogoliubov.pdf>
-Package pdftex.def Info: chap3_custom_st/fig/setup_bogoliubov.pdf  used on input line 171.
+Package pdftex.def Info: chap3_custom_st/fig/setup_bogoliubov.pdf  used on input line 166.
 (pdftex.def)             Requested size: 283.36786pt x 299.50655pt.
  [49 <./chap3_custom_st/fig/setup_bogoliubov.pdf>]
 
-LaTeX Warning: Reference `fig:set_up' on page 50 undefined on input line 189.
+LaTeX Warning: Reference `fig:set_up' on page 50 undefined on input line 184.
 
 
-LaTeX Warning: Reference `fig:sample_map' on page 50 undefined on input line 191.
+LaTeX Warning: Reference `fig:sample_map' on page 50 undefined on input line 186.
 
 
 Overfull \hbox (25.13184pt too wide) has occurred while \output is active
@@ -1655,7 +1655,7 @@ Overfull \hbox (25.13184pt too wide) has occurred while \output is active
  []
 
 [50]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 213.
+LaTeX Font Info:    Trying to load font information for U+euf on input line 208.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-euf.cfg
@@ -1664,7 +1664,7 @@ File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
 <chap3_custom_st/fig/set_up_spacetime.pdf, id=9702, 601.69617pt x 517.3686pt>
 File: chap3_custom_st/fig/set_up_spacetime.pdf Graphic file (type pdf)
 <use chap3_custom_st/fig/set_up_spacetime.pdf>
-Package pdftex.def Info: chap3_custom_st/fig/set_up_spacetime.pdf  used on input line 224.
+Package pdftex.def Info: chap3_custom_st/fig/set_up_spacetime.pdf  used on input line 219.
 (pdftex.def)             Requested size: 601.6947pt x 517.36734pt.
  [51]
 Overfull \hbox (25.13184pt too wide) has occurred while \output is active
@@ -1673,12 +1673,12 @@ Overfull \hbox (25.13184pt too wide) has occurred while \output is active
 
 [52 <./chap3_custom_st/fig/set_up_spacetime.pdf>]
 
-LaTeX Warning: Reference `eq:norm' on page 53 undefined on input line 258.
+LaTeX Warning: Reference `eq:norm' on page 53 undefined on input line 253.
 
 <chap3_custom_st/fig/homogeneous_doppler.pdf, id=10251, 722.7pt x 433.62pt>
 File: chap3_custom_st/fig/homogeneous_doppler.pdf Graphic file (type pdf)
 <use chap3_custom_st/fig/homogeneous_doppler.pdf>
-Package pdftex.def Info: chap3_custom_st/fig/homogeneous_doppler.pdf  used on input line 265.
+Package pdftex.def Info: chap3_custom_st/fig/homogeneous_doppler.pdf  used on input line 260.
 (pdftex.def)             Requested size: 722.69823pt x 433.61894pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1686,7 +1686,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <chap3_custom_st/fig/supersonic_homogenous.pdf, id=10256, 578.16pt x 289.08pt>
 File: chap3_custom_st/fig/supersonic_homogenous.pdf Graphic file (type pdf)
 <use chap3_custom_st/fig/supersonic_homogenous.pdf>
-Package pdftex.def Info: chap3_custom_st/fig/supersonic_homogenous.pdf  used on input line 302.
+Package pdftex.def Info: chap3_custom_st/fig/supersonic_homogenous.pdf  used on input line 297.
 (pdftex.def)             Requested size: 578.15858pt x 289.07928pt.
 [53]
 Underfull \vbox (badness 3343) has occurred while \output is active []
@@ -1705,7 +1705,7 @@ Overfull \hbox (25.13184pt too wide) has occurred while \output is active
 <chap3_custom_st/fig/bh_smooth.pdf, id=10409, 1156.3211pt x 814.92761pt>
 File: chap3_custom_st/fig/bh_smooth.pdf Graphic file (type pdf)
 <use chap3_custom_st/fig/bh_smooth.pdf>
-Package pdftex.def Info: chap3_custom_st/fig/bh_smooth.pdf  used on input line 364.
+Package pdftex.def Info: chap3_custom_st/fig/bh_smooth.pdf  used on input line 359.
 (pdftex.def)             Requested size: 1156.3183pt x 814.92561pt.
  [57]
 Overfull \hbox (25.13184pt too wide) has occurred while \output is active
@@ -1716,14 +1716,14 @@ Overfull \hbox (25.13184pt too wide) has occurred while \output is active
 <chap3_custom_st/fig/critical_velocity_map.pdf, id=12765, 433.62pt x 433.62pt>
 File: chap3_custom_st/fig/critical_velocity_map.pdf Graphic file (type pdf)
 <use chap3_custom_st/fig/critical_velocity_map.pdf>
-Package pdftex.def Info: chap3_custom_st/fig/critical_velocity_map.pdf  used on input line 428.
+Package pdftex.def Info: chap3_custom_st/fig/critical_velocity_map.pdf  used on input line 423.
 (pdftex.def)             Requested size: 433.61894pt x 433.61894pt.
 
 
-Package natbib Warning: Citation `jacquet_hawking_2019' on page 59 undefined on input line 437.
+Package natbib Warning: Citation `jacquet_hawking_2019' on page 59 undefined on input line 432.
 
 
-Package natbib Warning: Citation `jacquet_hawking_2019' on page 59 undefined on input line 439.
+Package natbib Warning: Citation `jacquet_hawking_2019' on page 59 undefined on input line 434.
 
 [59]
 Overfull \hbox (25.13184pt too wide) has occurred while \output is active
@@ -1734,18 +1734,18 @@ Overfull \hbox (25.13184pt too wide) has occurred while \output is active
 <chap3_custom_st/fig/max_freq_hawking.pdf, id=12818, 578.16pt x 289.08pt>
 File: chap3_custom_st/fig/max_freq_hawking.pdf Graphic file (type pdf)
 <use chap3_custom_st/fig/max_freq_hawking.pdf>
-Package pdftex.def Info: chap3_custom_st/fig/max_freq_hawking.pdf  used on input line 459.
+Package pdftex.def Info: chap3_custom_st/fig/max_freq_hawking.pdf  used on input line 454.
 (pdftex.def)             Requested size: 578.15858pt x 289.07928pt.
  [61 <./chap3_custom_st/fig/max_freq_hawking.pdf>]
 <chap3_custom_st/fig/bistab_to_gn.pdf, id=12862, 343.2825pt x 318.18875pt>
 File: chap3_custom_st/fig/bistab_to_gn.pdf Graphic file (type pdf)
 <use chap3_custom_st/fig/bistab_to_gn.pdf>
-Package pdftex.def Info: chap3_custom_st/fig/bistab_to_gn.pdf  used on input line 491.
+Package pdftex.def Info: chap3_custom_st/fig/bistab_to_gn.pdf  used on input line 486.
 (pdftex.def)             Requested size: 343.28165pt x 318.18796pt.
 <chap3_custom_st/fig/bh_steep.pdf, id=12867, 1250.32599pt x 1211.13734pt>
 File: chap3_custom_st/fig/bh_steep.pdf Graphic file (type pdf)
 <use chap3_custom_st/fig/bh_steep.pdf>
-Package pdftex.def Info: chap3_custom_st/fig/bh_steep.pdf  used on input line 508.
+Package pdftex.def Info: chap3_custom_st/fig/bh_steep.pdf  used on input line 503.
 (pdftex.def)             Requested size: 1250.32295pt x 1211.1344pt.
 
 Overfull \hbox (25.13184pt too wide) has occurred while \output is active
@@ -1756,16 +1756,16 @@ Overfull \hbox (25.13184pt too wide) has occurred while \output is active
 <chap3_custom_st/fig/qnm_target_velocity.pdf, id=13975, 578.16pt x 216.81pt>
 File: chap3_custom_st/fig/qnm_target_velocity.pdf Graphic file (type pdf)
 <use chap3_custom_st/fig/qnm_target_velocity.pdf>
-Package pdftex.def Info: chap3_custom_st/fig/qnm_target_velocity.pdf  used on input line 525.
+Package pdftex.def Info: chap3_custom_st/fig/qnm_target_velocity.pdf  used on input line 520.
 (pdftex.def)             Requested size: 578.15858pt x 216.80946pt.
 <chap3_custom_st/fig/bh_qnm.pdf, id=13978, 1258.02774pt x 692.28963pt>
 File: chap3_custom_st/fig/bh_qnm.pdf Graphic file (type pdf)
 <use chap3_custom_st/fig/bh_qnm.pdf>
-Package pdftex.def Info: chap3_custom_st/fig/bh_qnm.pdf  used on input line 541.
+Package pdftex.def Info: chap3_custom_st/fig/bh_qnm.pdf  used on input line 536.
 (pdftex.def)             Requested size: 1258.02469pt x 692.28795pt.
 
 
-Package natbib Warning: Citation `brito_gravitational_2015' on page 64 undefined on input line 556.
+Package natbib Warning: Citation `brito_gravitational_2015' on page 64 undefined on input line 551.
 
 
 Overfull \hbox (25.13184pt too wide) has occurred while \output is active
@@ -1889,15 +1889,15 @@ Package rerunfilecheck Info: File `mythesis.brf' has not changed.
 (rerunfilecheck)             Checksum: FBA6349FAB47625FDD67F8B83082614B;3596.
  ) 
 Here is how much of TeX's memory you used:
- 33245 strings out of 474116
- 640854 string characters out of 5743689
+ 33247 strings out of 474116
+ 640878 string characters out of 5743689
  1948187 words of memory out of 5000000
  54187 multiletter control sequences out of 15000+600000
- 727718 words of font info for 381 fonts, out of 8000000 for 9000
+ 727850 words of font info for 382 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,21n,145p,1730b,1164s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmb10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbo10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsco10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmib7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb>
-Output written on mythesis.pdf (84 pages, 14345645 bytes).
+Output written on mythesis.pdf (84 pages, 14345809 bytes).
 PDF statistics:
  14490 PDF objects out of 15390 (max. 8388607)
  10035 compressed objects within 101 object streams
