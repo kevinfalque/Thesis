@@ -4,6 +4,7 @@ The top-level auxiliary file: mythesis.aux
 The style file: assets/thfrnatay-href.bst
 A level-1 auxiliary file: chap2_theory/polariton_theory.aux
 A level-1 auxiliary file: chap3_custom_st/chap_3_custom_st.aux
+A level-1 auxiliary file: chap_correlation/chap_correlation.aux
 A level-1 auxiliary file: appendices/appendices.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: Quantum_optics_lkb.bib
@@ -17,6 +18,7 @@ Warning--empty year in Combescot_cooper_excitons_2015
 Warning--missing publisher in Combescot_cooper_excitons_2015
 Warning--empty year in grynberg_aspect_fabre
 Warning--missing publisher in grynberg_aspect_fabre
+Warning--empty year in carusotto_stimulatedfluid_2016
 Warning--empty year in hawking_black_1972
 Warning--empty year in hopfield_theory_1958
 Warning--empty year in kasprzak_boseeinstein_2006
@@ -28,48 +30,49 @@ Warning--missing school in maitre_thesis
 Warning--empty year in nguyen_acoustic_2015
 Warning--missing publisher in pitaevskij_bose-einstein_2016
 Warning--empty year in wavefront_shapping
+Warning--empty year in steinhauer_observation_2016
 Warning--empty year in stepanov_dispersion_2019
 Warning--empty year in Utsunomiya_fluidlightexp_2008
 Warning--missing publisher in weisbuch_microcavities_1996
-You've used 39 entries,
+You've used 41 entries,
             3379 wiz_defined-function locations,
-            927 strings with 14446 characters,
-and the built_in function-call counts, 50934 in all, are:
-= -- 4729
-> -- 2036
-< -- 191
-+ -- 1961
-- -- 582
-* -- 3864
-:= -- 5119
-add.period$ -- 127
-call.type$ -- 39
-change.case$ -- 365
-chr.to.int$ -- 40
-cite$ -- 60
-duplicate$ -- 4752
-empty$ -- 3047
-format.name$ -- 1010
-if$ -- 10030
+            940 strings with 14939 characters,
+and the built_in function-call counts, 53674 in all, are:
+= -- 5025
+> -- 2108
+< -- 199
++ -- 2032
+- -- 603
+* -- 4045
+:= -- 5376
+add.period$ -- 133
+call.type$ -- 41
+change.case$ -- 381
+chr.to.int$ -- 42
+cite$ -- 64
+duplicate$ -- 5031
+empty$ -- 3207
+format.name$ -- 1046
+if$ -- 10583
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 469
-newline$ -- 212
-num.names$ -- 156
-pop$ -- 1867
+missing$ -- 491
+newline$ -- 222
+num.names$ -- 164
+pop$ -- 1990
 preamble$ -- 1
-purify$ -- 327
+purify$ -- 341
 quote$ -- 0
-skip$ -- 2896
+skip$ -- 3045
 stack$ -- 0
-substring$ -- 1841
-swap$ -- 3890
-text.length$ -- 191
+substring$ -- 1975
+swap$ -- 4137
+text.length$ -- 199
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 330
-warning$ -- 21
-while$ -- 243
+type$ -- 348
+warning$ -- 23
+while$ -- 258
 width$ -- 0
-write$ -- 536
-(There were 23 warnings)
+write$ -- 562
+(There were 25 warnings)

@@ -1,4 +1,4 @@
-\begin{thebibliography}{39}
+\begin{thebibliography}{41}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibnamefont}[1]{\textsc{#1}}
 \providecommand{\bibfnamefont}[1]{#1}
@@ -74,6 +74,11 @@
 \bibitem[{Grynberg \emph{et~al.}()Grynberg, Aspect \& Fabre}]{grynberg_aspect_fabre}
 \bibfnamefont{Gilbert} \bibnamefont{Grynberg}, \bibfnamefont{Alain} \bibnamefont{Aspect} \& \bibfnamefont{Claude} \bibnamefont{Fabre}.
 \newblock \emph{Introduction to {Quantum} {Optics}}.
+
+\bibitem[{Grǐsšins \emph{et~al.}()Grǐsšins, Nguyen, Bloch, Amo \& Carusotto}]{carusotto_stimulatedfluid_2016}
+\bibfnamefont{Pjotrs} \bibnamefont{Grǐsšins}, \bibfnamefont{Hai~Son} \bibnamefont{Nguyen}, \bibfnamefont{Jacqueline} \bibnamefont{Bloch}, \bibfnamefont{Alberto} \bibnamefont{Amo} \& \bibfnamefont{Iacopo} \bibnamefont{Carusotto}.
+\newblock \enquote{Theoretical study of stimulated and spontaneous hawking effects from an acoustic black hole in a hydrodynamically flowing fluid of light}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRevB.94.144518}{ \emph{Phys. Rev. B} \textbf{94}(14), p. 144\,518}.
 
 \bibitem[{Hawking()}]{hawking_black_1972}
 \bibfnamefont{S.~W.} \bibnamefont{Hawking}.
@@ -187,6 +192,11 @@
 \bibfnamefont{Mark} \bibnamefont{Steger}, \bibfnamefont{Gangqiang} \bibnamefont{Liu}, \bibfnamefont{Bryan} \bibnamefont{Nelsen}, \bibfnamefont{Chitra} \bibnamefont{Gautham}, \bibfnamefont{David~W.} \bibnamefont{Snoke}, \bibfnamefont{Ryan} \bibnamefont{Balili}, \bibfnamefont{Loren} \bibnamefont{Pfeiffer} \& \bibfnamefont{Ken} \bibnamefont{West} 2013.
 \newblock \enquote{Long-range ballistic motion and coherent flow of long-lifetime polaritons}.
 \newblock \href{http://dx.doi.org/10.1103/PhysRevB.88.235314}{ \emph{Phys. Rev. B} \textbf{88}, p. 235\,314}.
+
+\bibitem[{Steinhauer()}]{steinhauer_observation_2016}
+\bibfnamefont{Jeff} \bibnamefont{Steinhauer}.
+\newblock \enquote{Observation of quantum hawking radiation and its entanglement in an analogue black hole}.
+\newblock \href{http://dx.doi.org/10.1038/nphys3863}{ \emph{Nature Physics} \textbf{12}(10), p. 959--965}.
 
 \bibitem[{Stepanov \emph{et~al.}()Stepanov, Amelio, Rousset, Bloch, Lemaître, Amo, Minguzzi, Carusotto \& Richard}]{stepanov_dispersion_2019}
 \bibfnamefont{Petr} \bibnamefont{Stepanov}, \bibfnamefont{Ivan} \bibnamefont{Amelio}, \bibfnamefont{Jean-Guy} \bibnamefont{Rousset}, \bibfnamefont{Jacqueline} \bibnamefont{Bloch}, \bibfnamefont{Aristide} \bibnamefont{Lemaître}, \bibfnamefont{Alberto} \bibnamefont{Amo}, \bibfnamefont{Anna} \bibnamefont{Minguzzi}, \bibfnamefont{Iacopo} \bibnamefont{Carusotto} \& \bibfnamefont{Maxime} \bibnamefont{Richard}.

@@ -330,6 +330,9 @@ INPUT chap2_theory/polariton_theory.aux
 INPUT ./chap3_custom_st/chap_3_custom_st.aux
 INPUT ./chap3_custom_st/chap_3_custom_st.aux
 INPUT chap3_custom_st/chap_3_custom_st.aux
+INPUT ./chap_correlation/chap_correlation.aux
+INPUT ./chap_correlation/chap_correlation.aux
+INPUT chap_correlation/chap_correlation.aux
 INPUT ./appendices/appendices.aux
 INPUT ./appendices/appendices.aux
 INPUT appendices/appendices.aux
@@ -670,6 +673,12 @@ INPUT ./chap3_custom_st/fig/bh_qnm.pdf
 INPUT ./chap3_custom_st/fig/bh_qnm.pdf
 INPUT ./chap3_custom_st/fig/bh_qnm.pdf
 INPUT ./chap3_custom_st/fig/bh_qnm.pdf
+INPUT ./chap_correlation/chap_correlation.tex
+INPUT ./chap_correlation/chap_correlation.tex
+OUTPUT chap_correlation/chap_correlation.aux
+INPUT ./chap_correlation/chap_correlation.tex
+INPUT ./chap_correlation/chap_correlation.tex
+INPUT chap_correlation/chap_correlation.tex
 INPUT ./appendices/appendices.tex
 INPUT ./appendices/appendices.tex
 OUTPUT appendices/appendices.aux
@@ -726,6 +735,9 @@ INPUT chap2_theory/polariton_theory.aux
 INPUT ./chap3_custom_st/chap_3_custom_st.aux
 INPUT ./chap3_custom_st/chap_3_custom_st.aux
 INPUT chap3_custom_st/chap_3_custom_st.aux
+INPUT ./chap_correlation/chap_correlation.aux
+INPUT ./chap_correlation/chap_correlation.aux
+INPUT chap_correlation/chap_correlation.aux
 INPUT ./appendices/appendices.aux
 INPUT ./appendices/appendices.aux
 INPUT appendices/appendices.aux
