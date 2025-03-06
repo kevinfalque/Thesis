@@ -2,8 +2,9 @@ This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: mythesis.aux
 The style file: assets/thfrnatay-href.bst
-A level-1 auxiliary file: chap2_theory/polariton_theory.aux
-A level-1 auxiliary file: chap3_custom_st/chap_3_custom_st.aux
+A level-1 auxiliary file: chap_theory/polariton_theory.aux
+A level-1 auxiliary file: chap_AG_theory/chap_AG_theory.aux
+A level-1 auxiliary file: chap_custom_st/chap_custom_st.aux
 A level-1 auxiliary file: chap_correlation/chap_correlation.aux
 A level-1 auxiliary file: appendices/appendices.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -36,7 +37,7 @@ Warning--empty year in Utsunomiya_fluidlightexp_2008
 Warning--missing publisher in weisbuch_microcavities_1996
 You've used 41 entries,
             3379 wiz_defined-function locations,
-            940 strings with 14939 characters,
+            941 strings with 14968 characters,
 and the built_in function-call counts, 53674 in all, are:
 = -- 5025
 > -- 2108
