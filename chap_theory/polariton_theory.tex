@@ -1119,12 +1119,15 @@ where $V_\gamma(\rvec)$ and $V_X(\rvec)$ are the mean external potentials felt b
     \begin{bmatrix}
     \hbar \omega_X & \hbar \OmR / 2 \\
     \hbar \OmR / 2 & \hbar \omega_\gamma(-i \nabla_\rvec)  
-    \end{bmatrix}. https://doi.org/10.1103/PhysRevLett.61.117
+    \end{bmatrix}.
 \end{equation}
 as explained earlier, the exciton dispersion relation can be safely considered constant with respect to the photon one, $\hbar \omega_X(\kvec)=\hbar \omega_X(0)$.
 We can then transition to the polariton basis, obtaining two decoupled equations for the lower and upper polariton fields, $\psi_{LP}(\rvec,t)$ and $\psi_{UP}(\rvec,t)$. Focusing on the lower polariton branch, this leads to the so-called \textit{driven-dissipative Gross-Pitaevskii equation}:
 \begin{equation}
-    i \hbar \dfrac{\partial}{\partial t} \psilp(\rvec, t) = \left[ \hbar \omlp^0 -\dfrac{\hbar^2}{2 \mlp}\nabla_\rvec^2 + V_{LP}(\rvec) + \hbar g n(\rvec, t) - i \hbar \dfrac{\gamlp}{2} \right] \psilp(\rvec, t) + \hbar \eta_{LP} F_p(\rvec, t).
+    \begin{align}
+    i \hbar \dfrac{\partial}{\partial t} \psilp(\rvec, t) &= \left[ \hbar \omlp^0 -\dfrac{\hbar^2}{2 \mlp}\nabla_\rvec^2 + V_{LP}(\rvec) + \hbar g n(\rvec, t) - i \hbar \dfrac{\gamlp}{2} \right] \psilp(\rvec, t) + \hbar \eta_{LP} F_p(\rvec, t) \\
+        &\coloneq \Ham_{LP} \psilp(\rvec, t) + \hbar \eta_{LP} F_p(\rvec, t),
+    \end{align}
     \label{eq:generalized_GPE}
 \end{equation}
 where $V_{LP}$ is the external potential experienced by the polaritons which depend on those felt by photons and excitons through the Hopfield 
@@ -1148,7 +1151,7 @@ Nevertheless, we will account for their presence phenomenologically by consideri
     
     \begin{equation}
          \dfrac{\partial}{\partial t} \nr = -\gamr \nr + \gamin n.
-    \label{reservoir_eq}
+         \label{reservoir_eq}
     \end{equation}
 
 As it will be shown in the following the presence of a dark reservoir is of great importance when it comes to describing the quantum fluctuations of the polariton fluid.

@@ -1,0 +1,334 @@
+
+
+% !TeX encoding = UTF-8
+% !TeX spellcheck = fr_FR
+% !TeX root = ../mythesis.tex
+% !TeX program = pdflatex (build)
+%%% TeXmaker : no 'magic comments' but set Root with Options > Set as master file
+
+%useful stuff for what follows
+
+\newcommand{\xbf}{\pmb{x}}
+\newcommand{\ci}{\mathrm{i}}
+\newcommand{\ee}{\mathrm{e}}
+\newcommand{\lr}[1]{\left(#1\right)}
+\newcommand{\lrsq}[1]{\left[#1\right]}
+\newcommand{\tp}{\mathrm{p}}
+\newcommand{\tv}{\mathrm{v}}
+\newcommand{\vtv}{\boldsymbol{\mathrm{v}}}
+\newcommand{\vna}{\boldsymbol{\nabla}}
+\newcommand{\vx}{\mathbf{x}}
+\newcommand{\tx}{\mathrm{x}}
+\newcommand{\vobf}{\pmb{v_0}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+
+\newcommand{\kbf}{\pmb{k}}
+\newcommand{\vbf}{\pmb{v}}
+\newcommand{\rbf}{\pmb{r}}
+\newcommand{\ombog}{\omega_{\mathrm{b}}}
+
+\newcommand{\rmexp}{\mathrm{exp}}
+\newcommand{\im}{\mathfrak{Im}}
+\newcommand{\re}{\mathfrak{Re}}
+\newcommand{\mbogo}{m_{\mathrm{det}}}
+\newcommand{\cs}{c_{\mathrm{s}}}
+\newcommand{\dpsi}{\delta\psi}
+\newcommand{\opsi}{\hat{\psi}}
+\newcommand{\odpsi}{\hat{\delta\psi}}
+% \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+\newcommand{\Lbog}{\mathcal{L}_B}
+
+
+\graphicspath{{./}{./fig/}{./chap_Ag_theory/fig/}}
+
+\chapter{Hawking radiation in a polariton quantum fluid}
+\label{chap:AG_theory}
+
+Now that polaritons have been introduced, we can start to discuss the theoretical framework that will be used to 
+describe Hawking radiation in a polariton quantum fluid. In this chapter, we will first establish the original hydrodynamical analogy between the propagation 
+of acoustic waves in a moving fluid and scalar fields in curved spacetime. This analogy is at the heart of what motivated the study 
+of Hawking radiation in analog systems, leading to a first variety of experiment in classical systems such as water tanks. These great experiments,
+\cite{rousseaux_observation_2008,weinfurtner_measurement_2011} demonstrated positive to negative frequency conversion of shallow surface waves at the vicinity of a sonic horizon. However the temperature
+of classical fluids is too high to quantize their collective excitation field which prevent the study of quantum effects. More precisely, Hawking radiation is expected 
+to create entanglement between the emitted modes which can not be tested with water waves. Quantum fluids appear then as promising candidate since the 
+fluctuations around the ground or steady state require a quantum treatment to be understood. In fact we will see that tackling a fluid with trans-critical flow with the usual Bogoliubov theory of condensed matter also predict particle creation from vacuum. Studying the effect from this point of view will reveal a strong robustness 
+of the effect beyond the original hydrodynamical approach and widen the range of regimes where Hawking radiation can be observed.
+
+
+\section{The hydrodynamical analogy}
+
+In the previous chapter, we established that the dynamics of microcavity polaritons can be described by a driven dissipative Gross-Pitaevskii equation.
+By writting the wavefunction in term of phase and density the Gross-Pitaevskii equation can be cast into a continuity equation and an Euler equation for a non-barotropic fluid in the pump rotating frame. Starting from the GPE
+a system pumped by a laser of the general form $F_{\tp}e^{i\phi(x,t)}$ lead the fluid to a stationnary state whose wavefunction $\psi(x,t)=\sqrt{n_0}e^{i\phi(x,t)}$ phase and modulus respect :
+\begin{equation}
+    \begin{align}
+    \partial_t \phi +& \frac{\mlp v_0^2}{2\hbar}+\frac{\hbar}{2\mlp}\frac{\partial_x^2\sqrt{n_0}}{\sqrt{n_0}}+V_{LP}+gn+g_rn_r+\frac{\re\lrsq{F_{\tp}e^{-i\theta}}}{\mlp}=0\,\\
+    \partial_t n_0 +& \partial_x(n_0v)= \gamma n_0 -2\im\lrsq{F_{\tp}e^{-i\theta}}\sqrt{n_0}
+    \end{align}
+\end{equation}
+If we neglect the pump and dissipation terms which is basically the situation of a conservative fluid, we recover the original equation describing 
+sound waves in a convergent flow. This is precisely the equation that was used in the initial analogy made by W. Unruh \cite{unruh_experimental_1981}.
+However, the out of equilibrium nature of the microcavity polaritons brings different phenomenology. In particular, perturbations propagating in
+the fluid are not necessary sound waves as we will se latter. It means that the dispersion of these perturbation is not linear and 
+can remarkably exhibit a gap which can be associated to massive excitations. To avoid making approximation and encapsulate as much as possible 
+the complexity of the system it is convenient to make the same calculation in the pump rotating frame. It equivalently means that all frequencies
+will be taken with respect to the pump. In practice this is done by writting the pump $F_{\tp}(x)= F_{\tp}e^{i\theta_p(x)}$ and look for steady state wavefunction 
+of the same form $\psi(x,t)=\sqrt{n_0}e^{i\theta_p(x)}$. Plugging this into the GPE we obtain that the phase and density of the fluid must fullfill the following equations :
+
+\begin{equation}
+    \lrsq{-\frac{\hbar}{2\mlp}\nabla^2-i\frac{\hbar}{2}(\vna\cdot\pmb{v_0}) -i\hbar(\pmb{v_0}\cdot\vna)- \delta(v_0)+g_{\rm r}n_{\rm r}+g n_0-\ci\frac{\hbar\gamma}{2}}\sqrt{n_0}+|F_\tp|=0\,,
+        \label{eq:StatHomogEOSDens}
+\end{equation}
+with $\hbar \delta(v_0)=\hbar\omega_\tp-\hbar\omega_0-\mlp v_0^2/2$ (note that this is just $\delta(k_p)$ in a homogeneous configuration where $\pmb{v_0}=\hbar\pmb{k_p}/\mlp$).
+To study the low energy collective perturbations of the fluid state we linearize the system around the steady state by writing the wavefunction
+$\psi(x,t)=(\sqrt{n_0}+\delta\psi(x,t))e^{i\theta_p(x)}$. Injecting this expression in \autoref{reservoir_eq} and using \autoref{eq:StatHomogEOSDens} we obtain at linear order in $\delta\psi$ :
+
+\begin{equation}
+    \ci \hbar \lr{\partial_t+\pmb{v_0}\cdot{\vna}}\delta\psi=\lrsq{-\frac{\hbar}{2m^*}\nabla^2+\rho-\ci\sigma}\phi+g n_0 \delta\psi^*,
+        \label{eq:DefPertGPE}
+\end{equation}
+where $$\rho\coloneqq2g n_0- \delta(v_0)+g_{\rm r}n_{\rm r}\qquad\text{and}\qquad\sigma\coloneqq\hbar/2\vna \cdot\pmb{v_0}.$$
+Note that here we have assumed that there is no external potential without loss of generality since it can be included in the definition of $\rho$.
+
+\textcolor{red}{Ici il faut finir le calcul et notamment cette histoire de masse et de Klein gordon de mes couilles}
+
+\section{At the heart of particle creation : Bogoliubov transformation}
+
+\subsection{The ambiguity of vacuum definition}
+The quantum vacuum state is defined as the quantum state of a system with the lowest possible energy. Eventhough 
+this definition is commonly used and looks quite intuitive, it in fact implies some deep properties. First, a minimum energy state exists. In a finite dimension
+problem, this is obvious since the spectrum has also a finite dimension but whenever the dimension of the Hilbert space is infinite, the existence of a minimum energy state is a priori not guaranteed.
+Secondly, it seems to depend on the system which suggests that the vacuum is not a universal concept. This is particularly true in the context of quantum field theory in curved spacetime where the vacuum state is observer dependent.
+For instance, in the Unruh effect, an accelerating observer detect a thermal radiation while an inertial observer sees 'standard' vacuum. This ambiguity is
+as at the root of particle creation phenomena like the Hawking effect and once it is understood, make these effects appear less surprising.
+
+
+\subsubsection{The harmonic oscillator}
+
+To start with, let us consider the usual harmonic oscillator describing a massive particle in a one dimensionnal harmonic potential and
+see how the defintion vacuum arise in this simple case \cite{CCT_tome1}. The Hamiltonian of the particle of mass $m$ is :
+
+
+\begin{equation}
+    H=\frac{P^2}{2m}+\frac{1}{2}m\omega^2X^2
+\end{equation}
+Where $P$ and $X$ are the momentum and position operators satisfying the canonical commutation relation $[X,P]=i\hbar$.
+It is convenient to define the dimensionless operators :
+
+\begin{subequations}
+    \begin{align}
+        \hat{P}&=\frac{1}{\sqrt{\hbar m\omega}}P,\\
+        \hat{X}&=\sqrt{\frac{m\omega}{\hbar}}X, 
+    \end{align}
+\end{subequations}
+which respect the commutation relation $[\hat{X},\hat{P}]=i$. The Hamiltonian is then written as :
+\begin{equation}
+    H=\hbar\omega\hat{H}
+\end{equation}
+with :
+\begin{equation}
+    \label{eq:dimensionless_hamiltonian}
+    \hat{H}=\frac{1}{2}\lr{\hat{P}^2+\hat{X}^2}.
+\end{equation}
+The corresponding eigenproblem is usually tackled by introducing the creation and annihilation operators :
+
+\begin{subequations}
+    \begin{align}
+        \hat{a}&=\frac{1}{\sqrt{2}}\lr{\hat{X}+i\hat{P}},\\
+        \hat{a}^\dagger&=\frac{1}{\sqrt{2}}\lr{\hat{X}-i\hat{P}},
+    \end{align}
+\end{subequations}
+which satisfy the commutation relation $[\hat{a},\hat{a}^\dagger]=1$.
+Taking the definition of $\hat{a}$ and $\hat{a}^\dagger$ we look a the quantity $\hat{a}^\dagger\hat{a}$ :
+
+\begin{equation}
+    \begin{align}
+    \hat{a}^\dagger\hat{a}&=\frac{1}{2}\lr{\hat{X}-i\hat{P}}\lr{\hat{X}+i\hat{P}} \\
+                          &=\frac{1}{2}\lr{\hat{X}^2+\hat{P}^2+i\lr{\hat{X}\hat{P}-\hat{P}\hat{X}}} \\
+                          &=\frac{1}{2}\lr{\hat{X}^2+\hat{P}^2-1}.
+    \end{align}
+\end{equation}
+Comparing with \autoref{eq:dimensionless_hamiltonian} we see that :
+
+\begin{equation}
+    \label{eq:ham_number_operator}
+    \hat{H}=\hat{a}^\dagger\hat{a}+\frac{1}{2}.
+\end{equation}
+We then naturally introduce the operator $\hat{N}=\hat{a}^\dagger\hat{a}$. Eventhough this operator 
+is known to be the number operator, we will on purpose treat it without prior knowledge and see what can be learned from the derivation.
+From \autoref{eq:ham_number_operator} we see that the an eigenstate $\ket{\phi^i_\nu}$ of $\hat{N}$ with eigenvalue $\nu$ is also
+an eigenstate of $\hat{H}$ with eigenvalue $\nu+\frac{1}{2}$. Solving the problem then boils down to find the spectrum of $\hat{N}$.
+
+\textbf{Spectrum determination.} The operator $\hat{N}$ is hermitian and its eigenstates form a complete basis of the Hilbert space. Let us 
+show two usefull lemmas resulting directly from the definition of $\hat{N}$ :
+
+\begin{lemma}
+    The eigenvalues of $\hat{N}$ are positive or zero.
+\end{lemma}
+
+\begin{proof}
+    Let us consider any eigenstate $\ket{\phi_\nu}$ of $\hat{N}$. The square of norm of the state $\hat{a}\ket{\phi_\nu}$ is 
+    \begin{equation}
+            \norm{\hat{a}\ket{\phi_\nu}}^2=\bra{\phi_\nu}\hat{a}^\dagger\hat{a}\ket{\phi^i_\nu} \geq 0   
+\end{equation}
+    Using the definition of $\hat{N}$ we have :
+    \begin{equation}
+        \label{eq:positive_eigenvalue}
+        \bra{\phi_\nu}\hat{a}^\dagger\hat{a}\ket{\phi_\nu}=\nu\bra{\phi_\nu}\ket{\phi_\nu} \geq 0.
+    \end{equation}
+Since $\bra{\phi_\nu}\ket{\phi_\nu}>0$ we have $\nu\geq 0$.
+\end{proof}
+
+\begin{lemma}
+    Let $\ket{\phi_\nu}$ be an eigenstate of $\hat{N}$ with eigenvalue $\nu$.
+    \begin{itemize}
+        \item \ $\nu=0$ if and only if $\hat{a}\ket{\phi_\nu}=0$.
+        \item If $\nu>0$ then $\hat{a}\ket{\phi_\nu}$ is an eigenstate of $\hat{N}$ with eigenvalue $\nu-1$.
+    \end{itemize}
+\end{lemma}
+
+\begin{proof}
+    If $\nu=0$, \autoref{eq:positive_eigenvalue} implies that $\bra{\phi_\nu}\ket{\phi_\nu}=0$ which imposes that $\ket{\phi_\nu}=0$.
+    Reciprocally, if $\hat{a}\ket{\phi_\nu}=0$ a multiplication by $\hat{a}^\dagger$ gives $\hat{N}\ket{\phi^i_\nu}=0$. Since $\ket{\phi_\nu}$ is not zero we conclude
+    that $\ket{\phi_\nu}$ is an eigenvector of $\hat{N}$ with eigenvalue $\nu =0$.
+
+    COnsider now that $\nu>0$, we now know that $\hat{a}\ket{\phi_\nu}$ is not zero. By using the identity $\bigl[\hat{N},\hat{a}\bigr] = -\hat{a}$ we 
+    obtain :
+    \begin{equation}
+        \hat{N}\hat{a}\ket{\phi_\nu}=\hat{a}\hat{N}\ket{\phi_\nu}-\hat{a}\ket{\phi_\nu}=(\nu-1)\hat{a}\ket{\phi_\nu},
+    \end{equation}
+    which shows that $\hat{a}\ket{\phi_\nu}$ is an eigenstate of $\hat{N}$ with eigenvalue $\nu-1$.
+\end{proof}
+
+\noindent Let us summarize what we know so far :
+\begin{itemize}
+    \item The operator $\hat{N}$ has a non negative spectrum. 
+    \item If $\nu$ is an eigenvalue of $\hat{N}$ then $\nu-1$ is also an eigenvalue of $\hat{N}$.
+\end{itemize}
+
+This two properties are in fact sufficient to show that the spectrum of $\hat{N}$ are the positive or zero integers. \\
+\bigskip 
+
+Assume, by contradiction, that there is a positive non integer eigenvalue $\nu$ associated with the eigenvector $\ket{\phi_\nu}$ . Then, by the second lemma, $\nu-1$ is also a non integer eigenvalue of $\hat{N}$ generated by 
+the action of $\hat{a}$ on $\ket{\phi_\nu}$. By iterating this process we obtain a sequence of eigenvalues $\nu,\ \nu-1,\ \nu-2,\dots$ which is impossible since the spectrum is bounded from below. More precisely, it exists
+a positive integer $p$ such that $\nu-p<0$ which contradicts the fact that the spectrum is non negative. We conclude that the spectrum of $\hat{N}$ is the positive or zero integers.
+
+
+
+
+\section{Elementary excitations of the fluid : Bogoliubov theory}
+
+In contrast with classical systems where Hawking radiation can only originate from disturbance external to the system, the analogous Hawking 
+radiation in quantum fluids may be seeded by vacuum fluctuations. Perturbations of the quantum fluid are emitted at the horizon and propagate in opposite directions as it would 
+happen in the vicinity of a gravitationnal event horizon. However, it is worth noticing that at this point, the analogy with black holes physics originating from 
+hydrodynamical equations may be dropped and rather be seen as an inspiration to look for particle creation in a quantum fluid. Indeed, treating the collective excitations
+of a transsonic Bose Einstein condensate with the Bogoliubov theory of condensed matter already predicts emission of mode at the horizon from vacuum. In fact, 
+both the Stephen Hawking original calculation and the quantum fluid analog rely on a Bogoliubov transformation between 
+two set of operators, \cite{hawking_black_1972} which ultimately leads to the mixing of creation and annihilation operators. This section will establish 
+the strucutre of the collective excitation spectrum and show how a certain fluid configuration can lead to mode emission from vacuum. Furthermore,
+we will show that the Hawking effect is robust against departures from the original hydrodynamical analogy and don't even require the excitations to be sound waves. The out 
+of equilibrium nature of the polariton system will indeed reveal a much richer phenomenology that conservative systems extending the possibility to observe 
+Hawking radiation of massive excitations.
+
+\subsection{Homogeneous fluid}
+
+Let us consider a monochromatic pump described by a plane wave $F_{\tp}(\rbf,t)=F_{\tp}e^{i(\kbf_p \rbf -\omega_pt)}$. As explained in the previous chapter, this will drive the system
+to a steady state of the form $\psi_0(\rbf,t)=\psi_0e^{i(\kbf_p \rbf -\omega_pt)}$ and respecting :
+
+\begin{equation}
+    \left[\omp -\omlp - \dfrac{\hbar \kp^2}{2 \mlp} - g \abs{\psilp^0}^2 + i \dfrac{\gamlp}{2} \right] \psilp^0= \eta_{LP} F_p^0.
+    \label{eq:steady_state}
+\end{equation}
+
+We now look for the elementary excitations following the Bogoliubov prescription which consists in linearizing the GPE around $\psi_0$. We write the wavefunction as :
+
+\begin{equation}
+    \psi(\rbf,t)=\biggl[\psi_0(\rbf)+\dpsi(\rbf,t)\biggr]e^{i(\kbf_p \rbf -\omega_pt)}.
+    \label{eq:linearization_ansatz}
+\end{equation}
+
+The second term in this writting can be interpreted as the polaritons that are not in the steady state and therefore have a global phase different from the pump. 
+This imply that they can have different energy and momentum that the fluid and undergo scatterings or spontaneous effects since their dynamics is not fixed by the pump. It is 
+worth noticing that this term do not originate from the out of equilibrium nature of the system and would be not zero even at zero temperature due to interactions.
+In the case of Bose Einstein condensates, this linearization process actually introduces a state that is not physical in the sense that it suggest the breaking of the $U(1)$ symmetry of the system or equivalently 
+ that the condensates picked a phase \cite{castin_bose-einstein_2001}. The true physical state is recovered through a statistical mixtures of all these "symetry broken states" which then rather appear 
+as intermediate state convenient for calculation. In the case of a polariton fluid pumped quasi resonantly the situation is different since the mean field phase 
+is fixed by the pump. 
+
+\bigskip
+
+Injecting \autoref{eq:linearization_ansatz} in the GPE, using \autoref{eq:steady_state} and keeping only the linear terms in $\dpsi$ we obtain :
+
+\begin{equation}
+    \begin{split}
+        i  \hbar \partial_t \dpsi =& \biggl(\hbar\omlp^0 - \hbar \omp+\dfrac{\hbar^2}{2\mlp}\left[\nabla^2 +2i\kbf_p\nabla-\kbf_p^2\right]+\hbar g_rn_r + 2\hbar g \abs{\psi_0}^2+ \dfrac{i\hbar\gamma}{2} \biggr) \dpsi \\
+                                    &+ \hbar g \psi_0^2 \dpsi^*. 
+    \end{split}
+    \label{eq:bogo_v1}
+\end{equation}
+
+Yet, this equation is not stricly speaking linear in $\dpsi$ since there is a term involving its complex conjugated $\dpsi^*$. A way to solve this problem
+is to decompose $\dpsi$ in its real and imaginary part and to obtain two independant equations. An equivalent procedure, more common in the litterature, is to find an equation on 
+the complex conjugated and consider $\dpsi^*$ as an independant variable. This is the approach we will follow here. The equation on $\dpsi^*$ is obtained by simple complex conjugation of \autoref{eq:bogo_v1} :
+
+\begin{equation}
+    \begin{split}
+    -i  \hbar \partial_t \dpsi^* = &\biggl(\hbar\omlp^0 - \hbar \omp+\dfrac{\hbar^2}{2\mlp}\left[\nabla^2 -2i\kbf_p\nabla-\kbf_p^2\right]+\hbar g_rn_r + 2\hbar g \abs{\psi_0}^2- \dfrac{i\hbar\gamma}{2}\biggr) \dpsi^* \\
+      &+ \hbar g \psi_0^{*2} \dpsi.
+    \end{split}
+    \label{eq:bogo_v2}
+\end{equation}
+For the sake of clarity we define the operator :
+\begin{equation}
+    \Ham_{bog}= \hbar\omlp^0 - \hbar \omp+\dfrac{\hbar^2}{2\mlp}\left[\nabla^2 +2i\kbf_p\nabla-\kbf_p^2\right]+\hbar g_rn_r + 2\hbar g \abs{\psi_0}^2+\dfrac{i\hbar}{2}.
+    \label{eq:hambog}
+\end{equation}
+We can now wirte the fully linearized problem under its matrix form :
+
+\begin{equation}
+    \begin{matrix}i\hbar \partial_t
+        \begin{pmatrix}
+             \dpsi \\
+             \dpsi^*
+        \end{pmatrix}
+        = \Lbog
+        \begin{pmatrix}
+             \dpsi \\
+             \dpsi^*
+        \end{pmatrix},
+    \end{matrix}
+    \label{eq:bogo_matrix}
+\end{equation}
+where $\Lbog$ is the Bogoliubov matrix defined as :
+\begin{equation}
+    \begin{matrix}
+    \Lbog =
+    \begin{pmatrix}
+        \Ham_{bog} &  \hbar g \psi_0^2\\
+        -\hbar g \psi_0^{*2} & -\Ham_{bog}^*
+    \end{pmatrix}
+\end{matrix}
+\end{equation}
+
+\bigskip 
+
+\noindent \textbf{Bogoliubov matrix symetries.} As in general for quadratic hamiltonian of bosonic systems \cite{castin_bose-einstein_2001} the Bogoliubov matrix is not hermitian. Therefore its eigenvalues are not 
+necessarily real and $\Lbog$ is not even ensured to be diagonalizable. However, it can easily be shown that the following symetry is respected :
+
+\begin{equation}
+    \Lbog^\dagger = \eta^{-1} \Lbog \eta \ \ \ \mathrm{with} \ \ \ \eta = \eta^{-1} =\begin{pmatrix}
+        1 & 0 \\
+        0 & -1
+    \end{pmatrix}.
+    \label{eq:symetry_bog}
+\end{equation}
+
+It means that the Bogoliubov operator is "hermitian" for the inner product :
+
+\begin{equation}
+    \langle \vec{X_1},\vec{X_2} \rangle = \vec{X_1}^\dagger \cdot \eta \vec{X_2},
+    \label{eq:inner_product}
+\end{equation}
+where $cdot$ is the usual euclidian scalar product. It means that for any vectors $\vec{X_1}$ and $\vec{X_2}$ we have $\langle \vec{X_1},\Lbog\vec{X_2} \rangle = \langle \Lbog\vec{X_1},\vec{X_2} \rangle^*$. 

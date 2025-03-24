@@ -1,4 +1,4 @@
-\begin{thebibliography}{41}
+\begin{thebibliography}{46}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibnamefont}[1]{\textsc{#1}}
 \providecommand{\bibfnamefont}[1]{#1}
@@ -15,6 +15,11 @@
 \bibfnamefont{Iacopo} \bibnamefont{Carusotto} \& \bibfnamefont{Cristiano} \bibnamefont{Ciuti} 2013.
 \newblock \enquote{Quantum fluids of light}.
 \newblock \href{http://dx.doi.org/10.1103/RevModPhys.85.299}{ \emph{Rev. Mod. Phys.} \textbf{85}(1), p. 299--366}.
+
+\bibitem[{Castin(2001)}]{castin_bose-einstein_2001}
+\bibfnamefont{Y.}~\bibnamefont{Castin} 2001.
+\newblock \emph{Bose-{Einstein} {Condensates} in {Atomic} {Gases}: {Simple} {Theoretical} {Results}} (Springer Berlin Heidelberg, Berlin, Heidelberg).
+\newblock ISBN 978-3-540-45338-3.
 
 \bibitem[{Ciuti \emph{et~al.}(1998)Ciuti, Savona, Piermarocchi, Quattropani \& Schwendimann}]{ciuti_carrier_exchanges_1998}
 \bibfnamefont{C.}~\bibnamefont{Ciuti}, \bibfnamefont{V.}~\bibnamefont{Savona}, \bibfnamefont{C.}~\bibnamefont{Piermarocchi}, \bibfnamefont{A.}~\bibnamefont{Quattropani} \& \bibfnamefont{P.}~\bibnamefont{Schwendimann} 1998.
@@ -33,8 +38,14 @@
 \newblock Theses {Sorbonne Universit{\'e}}.
 \newblock \urlprefix\url{https://theses.hal.science/tel-04009505}.
 
-\bibitem[{Cohen-Tannoudji \emph{et~al.}(2018)Cohen-Tannoudji, Diu \& Laloe}]{CCT_tome2}
-\bibfnamefont{C.}~\bibnamefont{Cohen-Tannoudji}, \bibfnamefont{B.}~\bibnamefont{Diu} \& \bibfnamefont{F.}~\bibnamefont{Laloe} 2018.
+\bibitem[{Cohen-Tannoudji \emph{et~al.}(2018{\natexlab{a}})Cohen-Tannoudji, Diu \& Laloe}]{CCT_tome1}
+\bibfnamefont{C.}~\bibnamefont{Cohen-Tannoudji}, \bibfnamefont{B.}~\bibnamefont{Diu} \& \bibfnamefont{F.}~\bibnamefont{Laloe} 2018{\natexlab{a}}.
+\newblock \emph{Mécanique {Quantique} - {Tome} 1: {Nouvelle} édition} (EDP sciences).
+\newblock ISBN 978-2-7598-2285-0.
+\newblock \urlprefix\url{https://books.google.fr/books?id=9KxxDwAAQBAJ}.
+
+\bibitem[{Cohen-Tannoudji \emph{et~al.}(2018{\natexlab{b}})Cohen-Tannoudji, Diu \& Laloe}]{CCT_tome2}
+\bibfnamefont{C.}~\bibnamefont{Cohen-Tannoudji}, \bibfnamefont{B.}~\bibnamefont{Diu} \& \bibfnamefont{F.}~\bibnamefont{Laloe} 2018{\natexlab{b}}.
 \newblock \emph{Mécanique {Quantique} - {Tome} 2: {Nouvelle} édition} (EDP sciences).
 \newblock ISBN 978-2-7598-2285-0.
 \newblock \urlprefix\url{https://books.google.fr/books?id=9KxxDwAAQBAJ}.
@@ -183,6 +194,11 @@
 \newblock \enquote{Excitonic bloch equations for a two-dimensional system of interacting excitons}.
 \newblock \href{http://dx.doi.org/10.1103/PhysRevB.61.13856}{ \emph{Phys. Rev. B} \textbf{61}, p. 13\,856--13\,862}.
 
+\bibitem[{Rousseaux \emph{et~al.}()Rousseaux, Mathis, Maïssa, Philbin \& Leonhardt}]{rousseaux_observation_2008}
+\bibfnamefont{Germain} \bibnamefont{Rousseaux}, \bibfnamefont{Christian} \bibnamefont{Mathis}, \bibfnamefont{Philippe} \bibnamefont{Maïssa}, \bibfnamefont{Thomas~G} \bibnamefont{Philbin} \& \bibfnamefont{Ulf} \bibnamefont{Leonhardt}.
+\newblock \enquote{Observation of negative-frequency waves in a water tank: a classical analogue to the hawking effect?}
+\newblock \href{http://dx.doi.org/10.1088/1367-2630/10/5/053015}{ \emph{New Journal of Physics} \textbf{10}(5), p. 053\,015}.
+
 \bibitem[{Rozas \emph{et~al.}(2023)Rozas, Sedov, Brune, H\"ofling, Kavokin \& A\ss{}mann}]{dark_exciton_pol_interactions}
 \bibfnamefont{Elena} \bibnamefont{Rozas}, \bibfnamefont{Evgeny} \bibnamefont{Sedov}, \bibfnamefont{Yannik} \bibnamefont{Brune}, \bibfnamefont{Sven} \bibnamefont{H\"ofling}, \bibfnamefont{Alexey} \bibnamefont{Kavokin} \& \bibfnamefont{Marc} \bibnamefont{A\ss{}mann} 2023.
 \newblock \enquote{Polariton--dark exciton interactions in bistable semiconductor microcavities}.
@@ -203,6 +219,11 @@
 \newblock \enquote{Dispersion relation of the collective excitations in a resonantly driven polariton fluid}.
 \newblock \href{http://dx.doi.org/10.1038/s41467-019-11886-3}{ \emph{Nat Commun} \textbf{10}(1), p. 1--8}.
 
+\bibitem[{Unruh()}]{unruh_experimental_1981}
+\bibfnamefont{W.~G.} \bibnamefont{Unruh}.
+\newblock \enquote{Experimental black-hole evaporation?}
+\newblock \href{http://dx.doi.org/10.1103/PhysRevLett.46.1351}{ \emph{Physical Review Letters} \textbf{46}(21), p. 1351--1353}.
+
 \bibitem[{Usui(1960)}]{usui_sat_potential_1960}
 \bibfnamefont{Tunemaru} \bibnamefont{Usui} 1960.
 \newblock \enquote{Excitations in a high density electron gas. i:}.
@@ -212,6 +233,11 @@
 \bibfnamefont{S.}~\bibnamefont{Utsunomiya}, \bibfnamefont{L.}~\bibnamefont{Tian}, \bibfnamefont{G.}~\bibnamefont{Roumpos}, \bibfnamefont{C.~W.} \bibnamefont{Lai}, \bibfnamefont{N.}~\bibnamefont{Kumada}, \bibfnamefont{T.}~\bibnamefont{Fujisawa}, \bibfnamefont{M.}~\bibnamefont{Kuwata-Gonokami}, \bibfnamefont{A.}~\bibnamefont{Löffler}, \bibfnamefont{S.}~\bibnamefont{Höfling}, \bibfnamefont{A.}~\bibnamefont{Forchel} \emph{et~al.}
 \newblock \enquote{Observation of bogoliubov excitations in exciton-polariton condensates}.
 \newblock \href{http://dx.doi.org/10.1038/nphys1034}{ \emph{Nature Physics} \textbf{4}(9), p. 700--705}.
+
+\bibitem[{Weinfurtner \emph{et~al.}()Weinfurtner, Tedford, Penrice, Unruh \& Lawrence}]{weinfurtner_measurement_2011}
+\bibfnamefont{Silke} \bibnamefont{Weinfurtner}, \bibfnamefont{Edmund~W.} \bibnamefont{Tedford}, \bibfnamefont{Matthew C.~J.} \bibnamefont{Penrice}, \bibfnamefont{William~G.} \bibnamefont{Unruh} \& \bibfnamefont{Gregory~A.} \bibnamefont{Lawrence}.
+\newblock \enquote{Measurement of stimulated hawking emission in an analogue system}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRevLett.106.021302}{ \emph{Physical Review Letters} \textbf{106}(2), p. 021\,302}.
 
 \bibitem[{Weisbuch \& Rarity(1996)}]{weisbuch_microcavities_1996}
 \bibfnamefont{C.}~\bibnamefont{Weisbuch} \& \bibfnamefont{.J}~\bibnamefont{Rarity} 1996.
