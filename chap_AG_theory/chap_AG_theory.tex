@@ -23,9 +23,9 @@
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}[theorem]{Lemma}
 
-\newcommand{\kbf}{\pmb{k}}
+\newcommand{\kbf}{\mathbf{k}}
 \newcommand{\vbf}{\pmb{v}}
-\newcommand{\rbf}{\pmb{r}}
+\newcommand{\rbf}{\mathbf{r}}
 \newcommand{\ombog}{\omega_{\mathrm{b}}}
 
 \newcommand{\rmexp}{\mathrm{exp}}
@@ -37,7 +37,7 @@
 \newcommand{\opsi}{\hat{\psi}}
 \newcommand{\odpsi}{\hat{\delta\psi}}
 % \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
-
+\newcommand{\dr}{\mathrm{d}\mathbf{r}}
 \newcommand{\Lbog}{\mathcal{L}_B}
 
 
@@ -219,20 +219,17 @@ a positive integer $p$ such that $\nu-p<0$ which contradicts the fact that the s
 
 
 \section{Elementary excitations of the fluid : Bogoliubov theory}
+Unlike in classical systems, where Hawking radiation can only be triggered by external disturbances, its analog in quantum fluids may instead arise from vacuum fluctuations. In this context, perturbations of the quantum fluid are emitted at the horizon and propagate in opposite directions, mirroring the behavior expected near a gravitational event horizon. 
+However, it is important to recognize that at this stage, the analogy with black hole physics—initially derived from hydrodynamical equations—should not be taken as a strict equivalence but rather as an inspiration for exploring particle creation in a quantum fluid.
 
-In contrast with classical systems where Hawking radiation can only originate from disturbance external to the system, the analogous Hawking 
-radiation in quantum fluids may be seeded by vacuum fluctuations. Perturbations of the quantum fluid are emitted at the horizon and propagate in opposite directions as it would 
-happen in the vicinity of a gravitationnal event horizon. However, it is worth noticing that at this point, the analogy with black holes physics originating from 
-hydrodynamical equations may be dropped and rather be seen as an inspiration to look for particle creation in a quantum fluid. Indeed, treating the collective excitations
-of a transsonic Bose Einstein condensate with the Bogoliubov theory of condensed matter already predicts emission of mode at the horizon from vacuum. In fact, 
-both the Stephen Hawking original calculation and the quantum fluid analog rely on a Bogoliubov transformation between 
-two set of operators, \cite{hawking_black_1972} which ultimately leads to the mixing of creation and annihilation operators. This section will establish 
-the strucutre of the collective excitation spectrum and show how a certain fluid configuration can lead to mode emission from vacuum. Furthermore,
-we will show that the Hawking effect is robust against departures from the original hydrodynamical analogy and don't even require the excitations to be sound waves. The out 
-of equilibrium nature of the polariton system will indeed reveal a much richer phenomenology that conservative systems extending the possibility to observe 
-Hawking radiation of massive excitations.
+Indeed, treating the collective excitations of a transonic Bose-Einstein condensate within the framework of Bogoliubov theory already predicts the spontaneous emission of modes at the horizon from vacuum fluctuations. Fundamentally, both Stephen Hawking's original calculation and its quantum fluid analog rely on a Bogoliubov transformation between two sets of operators \cite{hawking_black_1972}, which ultimately leads to the mixing of creation and annihilation operators.
 
-\subsection{Homogeneous fluid}
+This section will establish the structure of the collective excitation spectrum and demonstrate how specific fluid configurations can give rise to mode emission from vacuum. Furthermore, we will show that the Hawking effect remains robust even when deviating from the original hydrodynamical analogy, and it does not necessarily require the excitations to be sound waves. 
+In fact, the intrinsically out-of-equilibrium nature of the polariton system reveals a phenomenology far richer than that of conservative systems, extending the possibility of observing Hawking radiation to massive excitations.
+
+
+
+\subsection{Linearization of the Gross-Pitaevskii equation}
 
 Let us consider a monochromatic pump described by a plane wave $F_{\tp}(\rbf,t)=F_{\tp}e^{i(\kbf_p \rbf -\omega_pt)}$. As explained in the previous chapter, this will drive the system
 to a steady state of the form $\psi_0(\rbf,t)=\psi_0e^{i(\kbf_p \rbf -\omega_pt)}$ and respecting :
@@ -263,7 +260,7 @@ Injecting \autoref{eq:linearization_ansatz} in the GPE, using \autoref{eq:steady
 
 \begin{equation}
     \begin{split}
-        i  \hbar \partial_t \dpsi =& \biggl(\hbar\omlp^0 - \hbar \omp+\dfrac{\hbar^2}{2\mlp}\left[\nabla^2 +2i\kbf_p\nabla-\kbf_p^2\right]+\hbar g_rn_r + 2\hbar g \abs{\psi_0}^2+ \dfrac{i\hbar\gamma}{2} \biggr) \dpsi \\
+        i  \hbar \partial_t \dpsi =& \biggl(\hbar\omlp^0 - \hbar \omp-\dfrac{\hbar^2}{2\mlp}\left[\nabla^2 +2i\kbf_p\nabla-\kbf_p^2\right]+\hbar g_rn_r + 2\hbar g \abs{\psi_0}^2+ \dfrac{i\hbar\gamma}{2} \biggr) \dpsi \\
                                     &+ \hbar g \psi_0^2 \dpsi^*. 
     \end{split}
     \label{eq:bogo_v1}
@@ -275,17 +272,18 @@ the complex conjugated and consider $\dpsi^*$ as an independant variable. This i
 
 \begin{equation}
     \begin{split}
-    -i  \hbar \partial_t \dpsi^* = &\biggl(\hbar\omlp^0 - \hbar \omp+\dfrac{\hbar^2}{2\mlp}\left[\nabla^2 -2i\kbf_p\nabla-\kbf_p^2\right]+\hbar g_rn_r + 2\hbar g \abs{\psi_0}^2- \dfrac{i\hbar\gamma}{2}\biggr) \dpsi^* \\
+    -i  \hbar \partial_t \dpsi^* = &\biggl(\hbar\omlp^0 - \hbar \omp-\dfrac{\hbar^2}{2\mlp}\left[\nabla^2 -2i\kbf_p\nabla-\kbf_p^2\right]+\hbar g_rn_r + 2\hbar g \abs{\psi_0}^2- \dfrac{i\hbar\gamma}{2}\biggr) \dpsi^* \\
       &+ \hbar g \psi_0^{*2} \dpsi.
     \end{split}
     \label{eq:bogo_v2}
 \end{equation}
 For the sake of clarity we define the operator :
 \begin{equation}
-    \Ham_{bog}= \hbar\omlp^0 - \hbar \omp+\dfrac{\hbar^2}{2\mlp}\left[\nabla^2 +2i\kbf_p\nabla-\kbf_p^2\right]+\hbar g_rn_r + 2\hbar g \abs{\psi_0}^2+\dfrac{i\hbar}{2}.
+    \Ham_{bog}= \hbar\omlp^0 - \hbar \omp-\dfrac{\hbar^2}{2\mlp}\left[\nabla^2 +2i\kbf_p\nabla-\kbf_p^2\right]+\hbar g_rn_r + 2\hbar g \abs{\psi_0}^2.
     \label{eq:hambog}
 \end{equation}
-We can now wirte the fully linearized problem under its matrix form :
+
+We can now write the fully linearized problem under its matrix form :
 
 \begin{equation}
     \begin{matrix}i\hbar \partial_t
@@ -293,11 +291,11 @@ We can now wirte the fully linearized problem under its matrix form :
              \dpsi \\
              \dpsi^*
         \end{pmatrix}
-        = \Lbog
+        = (\Lbog  +\dfrac{i\hbar\gamma}{2}\mathrm{I_2})
         \begin{pmatrix}
              \dpsi \\
              \dpsi^*
-        \end{pmatrix},
+        \end{pmatrix}
     \end{matrix}
     \label{eq:bogo_matrix}
 \end{equation}
@@ -310,12 +308,26 @@ where $\Lbog$ is the Bogoliubov matrix defined as :
         -\hbar g \psi_0^{*2} & -\Ham_{bog}^*
     \end{pmatrix}
 \end{matrix}
+\end{equation} 
+Since $\Lbog$ is time independant the usual procedure to solve \autoref{eq:bogo_matrix} is to diagonalize the bogoliubov matrix and write any generic solution 
+in the basis of eigenmodes defined by :
+
+\begin{equation}
+    \Lbog \begin{pmatrix}
+        u_{i} \\
+        v_{i}
+    \end{pmatrix} = (\hbar\omega_i+\dfrac{i\hbar}{2}) \begin{pmatrix}
+        u_{i} \\
+        v_{i}
+    \end{pmatrix}.
 \end{equation}
+As the entire the spectrum is fully determined by the eigenvalues of $\Lbog$ we will drop the losses term in the following for the sake of simplicity and 
+take them into account at the end of the calculation by multiplying the solutions by $\exp(-\gamma t/2)$ :
 
-\bigskip 
+\bigskip
 
-\noindent \textbf{Bogoliubov matrix symetries.} As in general for quadratic hamiltonian of bosonic systems \cite{castin_bose-einstein_2001} the Bogoliubov matrix is not hermitian. Therefore its eigenvalues are not 
-necessarily real and $\Lbog$ is not even ensured to be diagonalizable. However, it can easily be shown that the following symetry is respected :
+\textbf{Bogoliubov matrix symmetries.} As in general for quadratic hamiltonian of bosonic systems \cite{castin_bose-einstein_2001} the Bogoliubov matrix is not hermitian. Therefore its eigenvalues are not 
+necessarily real and $\Lbog$ is not even ensured to be diagonalizable. However, it can easily be shown that the following symmetry is respected :
 
 \begin{equation}
     \Lbog^\dagger = \eta^{-1} \Lbog \eta \ \ \ \mathrm{with} \ \ \ \eta = \eta^{-1} =\begin{pmatrix}
@@ -328,7 +340,276 @@ necessarily real and $\Lbog$ is not even ensured to be diagonalizable. However, 
 It means that the Bogoliubov operator is "hermitian" for the inner product :
 
 \begin{equation}
-    \langle \vec{X_1},\vec{X_2} \rangle = \vec{X_1}^\dagger \cdot \eta \vec{X_2},
+    \langle \vec{X_1},\vec{X_2} \rangle = (\vec{X_1}^*)^{\mathrm{T}} \eta \vec{X_2},
     \label{eq:inner_product}
 \end{equation}
-where $cdot$ is the usual euclidian scalar product. It means that for any vectors $\vec{X_1}$ and $\vec{X_2}$ we have $\langle \vec{X_1},\Lbog\vec{X_2} \rangle = \langle \Lbog\vec{X_1},\vec{X_2} \rangle^*$. 
+It means that for any vectors $\vec{X_1}$ and $\vec{X_2}$ we have $\langle \vec{X_1},\Lbog\vec{X_2} \rangle = \langle \Lbog\vec{X_1},\vec{X_2} \rangle$. 
+Consequently the inner product between two modes $\ket{\phi}= (u_{\phi}, v_{\phi})^\mathrm{T}$ and $\ket{\psi}=(u_{\psi}, v_{\psi})^\mathrm{T}$ :
+
+\begin{equation}
+    \langle \psi| \phi \rangle_B \coloneqq \int \dr[\psi^\dagger(\rbf)\eta\psi(\rbf)] = \int \dr[u_{\psi}^*(\rbf)u_{\phi}(\rbf)-v_{\psi}^*(\rbf)v_{\phi}(\rbf)],
+    \label{eq:inner_product}
+\end{equation}
+is conserved in time. This product induce a modified norm for the modes : 
+
+\begin{equation}
+    \norm{\psi}_{B}\coloneqq \langle \psi| \psi \rangle_B.
+    \label{eq:modified_norm}
+\end{equation}
+It's worth noticing that since the inner product defined in \autoref{eq:inner_product} is neither positive nor definite, the induced norm of a given mode $\ket{\psi}$
+can be positive, negative or zero. Let us now see what the symmetry \autoref{eq:symetry_bog} implies on the spectrum of $\Lbog$. Consider an eigenvector $\ket{\psi}= (u_k,v_k)^\mathrm{T}$ of $\Lbog$ with eigenvalue $\hbar\omega_k$ : 
+
+\begin{equation}
+    \Lbog \begin{pmatrix}
+        u_k \\
+        v_k
+    \end{pmatrix} = \hbar\omega_k \begin{pmatrix}
+        u_k \\
+        v_k
+    \end{pmatrix}.
+\end{equation}
+Direct substitution of \autoref{eq:symetry_bog} in the eigenvalue equation gives directly :
+
+\begin{equation}
+    \Lbog^\dagger \begin{pmatrix}
+        u_k \\
+        -v_k
+    \end{pmatrix} = \hbar\omega_k \begin{pmatrix}
+        u_k \\
+        -v_k
+    \end{pmatrix}.
+\end{equation}
+From this, we obtain that $\hbar\omega_k^*$ is also an eigenvalue of $\Lbog$ with since we have the relation :
+\begin{equation}
+    \mathrm{det}(\Lbog-\hbar\omega_k^*\mathrm{I_d}) = [\mathrm{det}(\Lbog^\dagger-\hbar\omega_k\mathrm{I_d})]^* = 0.
+\end{equation}
+The Bogoliubov matrix as well as its adjoint operator also respect the symmetry :
+\begin{equation}
+    \Lbog^* = -\sigma^{-1} \Lbog \sigma \ \ \ \mathrm{with} \ \ \ \sigma = \sigma^{-1} =\begin{pmatrix}
+        0 & 1 \\
+        1 & 0
+    \end{pmatrix},
+    \label{eq:symetry_bog_2}
+\end{equation}
+The latter implies that $-\hbar\omega_k^*$ is also an eigenvalue of $\Lbog$ :
+
+\begin{equation}
+    \Lbog \begin{pmatrix}
+        v_k^* \\
+        u_k^*
+    \end{pmatrix} = -\hbar\omega_k^* \begin{pmatrix}
+        v_k^* \\
+        u_k^*
+    \end{pmatrix}.
+\end{equation}
+which can be again obtained by direct substitution. Putting together all this properties we find that $\hbar \omega_k, -\hbar \omega_k, \hbar\omega_k^*$ and $-\hbar\omega_k^*$ are simultaneously eigenvalues of $\Lbog$.
+A special attention must be given to the fact that if $\ket{\psi}=(u_k,v_k)^\mathrm{T}$ is an eigenvector of $\Lbog$ with eigenvalue $\hbar\omega_k$ the eigenvector $\ket{\phi}=(v_k^*,u_k^*)^\mathrm{T}$ linked to $-\hbar\omega_k^*$ has opposite norm.
+\begin{equation}
+    \langle \psi| \psi \rangle_B = \bra{u_k}\ket{u_k} - \bra{v_k}\ket{v_k} = -\langle \phi| \phi \rangle_B.
+\end{equation}
+\bigskip
+
+
+\textbf{Orthogonality condition.} An orthogonality condition can be derived by calculating the quantity $\bra{\psi_i}\eta\Lbog\ket{\psi_j}-\bra{\psi_j}\eta\Lbog\ket{\psi_i}^*$. On one hand we find this term to be zero because 
+the symmetry of \autoref{eq:symetry_bog} equivalently means that $\eta\Lbog$ is hermitian. On the other hand we find :
+
+\begin{equation}
+    \begin{align}
+    \bra{\psi_i}\eta\Lbog\ket{\psi_j}-\bra{\psi_i}\eta\Lbog\ket{\psi_j}^*&=\hbar\omega_i\bra{\psi_i}\eta\ket{\psi_j}-\hbar\omega_j^*\bra{\psi_i}\eta\ket{\psi_j}, \\
+    &=(\hbar\omega_i-\hbar\omega_j^*)\bra{\psi_i}\eta\ket{\psi_j},
+    \end{align}
+\end{equation}
+which gives the orthogonality condition :
+\begin{equation}
+    (\hbar\omega_i-\hbar\omega_j^*)\bra{\psi_i}\eta\ket{\psi_j}=0
+\end{equation}
+showing that the modified scalar product $\bra{\cdot}\ket{\cdot}_B$ between two eigenvector with different eigenvalues is zero and that 
+eigenmodes with complex eigenvalues have a vanishing norm. The modes with non zero norm are then associated to non zero real eigenvalues.
+
+
+At the end, if we normalize the eigenvectors to unity in the usual sense, the spectrum of $\Lbog$ can be split in three parts :
+
+\begin{itemize}
+    \item The $S_+$ family of modes $\ket{\dpsi^+_k}=(u_k,v_k)^\mathrm{T}$ with positive norm : $\bra{u_k}\ket{u_k} - \bra{v_k}\ket{v_k}=+1$ and real eigenvalues $\hbar\omega_k>0$
+    \item The $S_-$ family of modes $\ket{\dpsi^-_k}=(v^*_k,u^*_k)^\mathrm{T}$ with negative norm : $\bra{v^*_k}\ket{v^*_k} - \bra{u^*_k}\ket{u^*_k}=-1$ and real eigenvalues $-\hbar\omega_k>0$
+    \item The $S_0$ family of modes with zero norm : $\bra{u_k}\ket{u_k} - \bra{v_k}\ket{v_k}=0$ and zero or complex eigenvalues.
+\end{itemize}
+Note that the eigenvectors of the $S_-$ subspace are expressed in terms of the $u_k$ and $v_k$ component of the $S_+$ vectors to show reflect the dual structure of the solution space. The modes with zero norm are usually related to anormal modes. One of them is the vector whose component are $\psi_0$ and -$\psi_0$ which satisfy the Bogoliubov equations with a zero eigenvalue because 
+$\psi_0$ obeys the Gross Pitaevskii equation. It corresponds to global change of the phase condensate and is very similar to the appereance of the Goldstone mode twhen he $U(1)$ phase symmetry of a system is broken. Other modes of $S_0$ are related to dynamical instabilities 
+due to non zero imaginary part of their eigenvalues.
+
+\bigskip
+
+\textbf{Dynamical stability.} The free evolution of a mode is given by $\mathrm{exp}(-i\omega_k t)$ so it remains 
+bounded in time provided that the imaginary part of $\hbar\omega_k$ is negative or zero. This is known as the dynamical stability condition.
+In fact, this condition must be refined in the polaritonic case since as one can see from \autoref{eq:bogo_matrix}, the eigenvalues already 
+contain a non zero imaginary part due to the inherent losses in the system. Since eigenvalues come in pairs of complex conjugated the stability condition 
+apply both on $\im{(\hbar\omega_k)}$ and $\im{(\hbar\omega_k^*)}=-\im{(\hbar\omega_k)}$ which gives :
+
+\begin{equation}
+    \abs{\im{(\hbar\omega_k)}} \leq \dfrac{\hbar\gamma}{2}   \ \ \ \ \mathrm{for \  all  \  k.}
+\end{equation}
+
+In practice, the losses can dump dynamical instabilities that
+would destroy a conservative system while still exhibiting precursors of the instabilities which make polariton system very usefull for the study of such phenomena 
+\cite{claude_high-resolution_2022}. This being said, the present experiments always take place in regime where these modes are not present and the system is stable. 
+
+\bigskip
+
+At the end, if we restrict our description to modes with non zero norm, a general solution of the Bogoliubov equation can be written as :
+
+
+\begin{equation}
+    \ket{\psi}=
+    \begin{pmatrix}
+    \dpsi \\
+    \dpsi^*
+    \end{pmatrix} = \sum_{\kbf \in S_+} A_\kbf
+    \begin{pmatrix}
+    u_k \\
+    v_k
+    \end{pmatrix}e^{-i\omega_kt}
+    + A^*_\kbf   
+     \begin{pmatrix}
+        v^*_k \\
+        u^*_k
+        \end{pmatrix}e^{i\omega_kt}
+\end{equation}
+where 
+\begin{equation}
+    A_\kbf = \int \dr u_k^*(\rbf)\dpsi(\rbf)-v_k^*(\rbf)\dpsi(\rbf). 
+\end{equation}
+
+The redundancy of the first line being the complex conjugated of the second is the price we pay now for our initial assumption that considered $\dpsi$ and $\dpsi^*$ as independant variables. The advantage of the
+procedure followed here is the natural emergence of the inner product of \autoref{eq:inner_product} from the symmetries of $\Lbog$. It allowed for the definition of a norm and the establishment of orthogonality among the eigenvectors, 
+thereby revealing the structure of the solution space as the direct sum of two dual subspaces. This decomposition results in norms with opposite signs and paired complex-conjugated eigenvalues. Another possible approach would have been
+to directly look for solutions as linear combination of plane wave with opposite frequencies as it is done in \cite{pethick_bose-einstein_2008}. This method however does not provide a natural way to define a norm and as we shall
+see later, it's the sign of the norm and not the sign of the eigenvalues that is relevant for mode classification. The last advantage of the approach followed here is that the derivation
+is closer to the full quantum derivation and will ease the latter quantization of the classical fields obtained here. Taking into account the dissipative part of \autoref{eq:bogo_matrix} and dropping the redundancy a generic
+expression for the fluctuations of the order parameter is :
+
+\begin{equation}
+    \dpsi(\rbf,t) = \sum_{\kbf \in S_+} \left[A_\kbf u_k(\rbf)e^{-i\omega_kt}+A_\kbf^*v_k^*(\rbf)e^{i\omega_kt}\right]e^{-\gamma t/2}.
+    \label{eq:fluctuation_order_parameter}
+\end{equation}
+\bigskip
+
+\textbf{Particle-hole symmetry.} Under this form one might be tempted to interpret the fluctuations order parameter has a superposition of plane waves with opposite directions and frequencies.
+This would be a mistake. Indeed, the coefficient $u_k$ and $v_k^*$ are coupled through the Bogoliubov matrix and respect the particle hole symmetry \autoref{eq:symetry_bog_2}. The first term
+can be interpreted as the addition of a particle with energy $\hbar\omega_k$ and momentum $\hbar\kbf$ while the second term can be interpreted as the addition of a hole with energy $-\hbar\omega_k^*$ and momentum $-\hbar\kbf$. The coupling
+between the two terms reflect that a fluctuation of the system is particle-hole hybrid excitation, while the norm $\bra{\cdot}\ket{\cdot}_B$ of the mode reflects the relative weight of the particle and hole components.
+
+\begin{itemize}
+    \item If $\int \dr[\abs{u_k}^2-\abs{v_k}^2]>0$ the mode is mostly made of $u_k$ and can be interpreted as a particle excitation.
+    \item If $\int \dr[\abs{u_k}^2-\abs{v_k}^2]<0$ the mode is mostly made of $v_k^*$ and can be interpreted as a hole excitation.
+\end{itemize}
+
+In conservative systems this symmetry is often related to the fluctuation of the number of particles in the condensed state. When the system is out of equilibrium 
+this interpretation seems less straightforward since the number of particles in the mean field is not strictly speaking fixed in time. However, these 
+modes still account for small deviation from the pump mode $(\kbf_p,\omega_p)$ both in frequency and wavevector. To clarify that, imagine that an experimentalist had the possibility to track simultaneously the incoming laser and 
+ its copy that went through the microcavity. Since the linewidth of the laser is much smaller that the microcavity resonance the latter doesn't act as a filter. Hence, the experimentalist would first notice that the two beams share the random events from which the shot noise of the laser originates. 
+Then, he would notice that the polariton field exhibit additional fluctuations, namely the random emission of photons with a frequency and wavevector that are not the same as the pump.
+These photons originate from the bogoliubov modes of the fluid due to interactions. The photonic nature of this system then appear again as a great asset because the fluctuations of the system
+are translated in the noise spectrum of the outcoming laser. 
+
+
+\subsection{Homogeneous fluid}
+
+So far, the description of the collective excitations spectrum remained quite general and we didn't use the homogeneity of system.
+In this case $\psi_0$ is invariant under translation meaning the eigenvectors of $\Lbog$ are just plane waves. The $S_+$ vectors then may be written as :
+
+\begin{subequations}
+    \begin{align}
+        u_k(\rbf)&=U_k\cdot\mathrm{exp}(i\kbf\rbf) \\
+        v_k(\rbf)&=V_k \cdot\mathrm{exp}(i\kbf\rbf).
+    \end{align}
+\end{subequations}
+Before going further in the calculation, let us comment the ansatz of the total field including the fluctuations in terms of reference frame. To obtain the bogoliubov matrix 
+we set our description in the rotating frame of the pump by factorizing the total field : $\psi(r,t)=(\psi_0+\dpsi)e^{i(\kbf_p\rbf-\omega_pt)}$. Consequently, all the dynamics on $\dpsi$ we might extract from the equation derived earlier
+happen in the moving frame where the fluid is at rest. However, in practice all the accessible observables are measured in the lab frame and are consequently dressed by the motion of the fluid. To directly predict the excitation spectrum as we expect to measure it in the lab
+we explictly write the wavefunction as a function of the wavevevector measured in the lab frame $\kbf$ as : $\psi(r,t)=\psi_0e^{i(\kbf_p\rbf-\omega_pt)}+ u_k e^{i\kbf\rbf}$ and look for their dynamics in the pump rotating frame by writting again $\psi(r,t)=(\psi_0+u_ke^{i(\kbf-\kbf_p)\rbf})e^{i(\kbf_p\rbf-\omega_pt)}$. Under this form
+the wavevector $\kbf'=\kbf-\kbf_p$ appear as the wavevector of the fluctuations in the moving frame. 
+To obtain the corresponding Bogoliubov matrix we first express the action of $\Ham_{bog}$ on the fluctuations plane wave : $u_ke^{i((\kbf-\kbf_p)\rbf)}$ :
+
+\begin{equation}
+    \begin{align}
+    \Ham_{bog}u_k(\rbf) &= \biggl[\hbar\omlp^0 - \hbar \omp-\dfrac{\hbar^2}{2\mlp}\left[-(\kbf-\kbf_p)^2 -2\kbf_p(\kbf-\kbf_p)-\kbf_p^2\right]+\hbar g_rn_r + 2\hbar g n_0 \biggr]u_ke^{i(\kbf-\kbf_p)\rbf} \\
+            &= \biggl[-\hbar\delta(k_p)+\dfrac{\hbar^2(\kbf-\kbf_p)^2}{2\mlp}+\hbar g_rn_r + 2\hbar g n_0\biggr]u_ke^{i(\kbf-\kbf_p)\rbf} + \dfrac{\hbar^2\kbf_p(\kbf-\kbf_p)}{\mlp}u_ke^{i(\kbf-\kbf_p)\rbf}.
+    \end{align}
+    \label{eq:ham_bog_plane_wave}
+\end{equation}
+
+where $\delta(k_p)=\omega_p - \omlp^0 - \dfrac{\hbar k_p^2}{2\mlp}$ is the detuning between the pump and the LP polariton dispersion at $\kbf_p$ provided we stay in the low wavevector
+parabolic approximation. The second term proportionnal to $(\kbf-\kbf_p)^2$ shows that due to the fluid motion, the Bogoliubov spectrum observed in the lab frame is as expected
+centered on the fluid wavevector. The last term describe the temporal frequency shift due to the fluid motion  $\Delta\omega =\hbar^2\kbf_p(\kbf-\kbf_p)/\mlp=\hbar\vbf_0(\kbf-\kbf_p)$ where $\vbf_0=\hbar\kbf_p/\mlp$ is the fluid velocity. This term is precisely
+the term that emerge naturally in the Doppler effect demonstration.
+Doing the same procedure for the complex conjugated the Bogoliubov matrix can be written as :
+
+
+
+\begin{equation}
+    \begin{aligned}
+    \Lbog = \ &
+    \begin{pmatrix}
+        -\hbar\delta(k_p)+\dfrac{\hbar^2(\kbf-\kbf_p)^2}{2\mlp}+\hbar g_rn_r + 2\hbar g n_0 &  \hbar g n_0e^{2ik_p} \\
+        -\hbar g n_0^{-2ik_p} & \hbar\delta(k_p)-\dfrac{\hbar^2(\kbf-\kbf_p)^2}{2\mlp}-\hbar g_rn_r - 2\hbar g n_0
+    \end{pmatrix}\\
+    &+\begin{pmatrix}
+        \hbar \vbf_0(\kbf-\kbf_p) & 0 \\
+        0 & \hbar \vbf_0(\kbf-\kbf_p)
+    \end{pmatrix}\\
+    = \ &\Lbog^{'} + \hbar \vbf_0(\kbf-\kbf_p)\mathrm{I_2}
+    \end{aligned}
+\end{equation}
+where the doppler effect appears naturally in the second diagonal matrix and shifts the spectrum of $\Lbog^{'}$ in the fluid rest frame. 
+Looking at the roots of the $\mathrm{det}(\Lbog^{'}-X\mathrm{I_2})=0$ we find the eigenvalues in the fluid frame through :
+
+\begin{equation}
+    (\hbar\omega'_k)^2 = \left(\dfrac{\hbar^2(k-k_p)^2}{2\mlp}-\hbar\delta(k_p)+\hbar g_rn_r +2\hbar g n_0\right)^2 - \left(\hbar g n_0\right)^2,
+\end{equation}
+From this we obtain the two branches of the so called bogoliubov dispersion relation in the free falling frame :
+
+\begin{equation}
+    \begin{aligned}
+    \omega^{'\pm}_B(k)&=\pm\sqrt{\left(\dfrac{\hbar(k-k_p)^2}{2\mlp}-\delta(k_p)+ g_rn_r +2g n_0\right)^2 - \left(g n_0\right)^2} \\
+    &=\pm\sqrt{\left(\dfrac{\hbar k'^2}{2\mlp}-\delta(k_p)+ g_rn_r +2g n_0\right)^2 - \left(g n_0\right)^2}.
+    \end{aligned}
+\end{equation}
+while in the laboratory frame it yields :
+
+\begin{equation}
+    \begin{aligned}
+    \omega^{\pm}_B(k)&=\vbf_0\cdot(\kbf-\kbf_p)+\omega^{'\pm}_B(k) \\
+            &=\vbf_0\cdot(\kbf-\kbf_p)\pm\sqrt{\left(\dfrac{\hbar(k-k_p)^2}{2\mlp}-\delta(k_p)+ g_rn_r +2g n_0\right)^2 - \left(g n_0\right)^2}.
+    \label{eq:bogo_lab_frame}
+    \end{aligned}
+\end{equation}
+This expression is exactly what we would have obtained by directly applying a Galilean transformation to the spectrum in the free falling frame. With this form
+the dual structure of the solution space exhibited earlier appear less clear. In fact, the motion of the fluid breaks the symmetry and the bogoliubov matrix no longer respects \autoref{eq:symetry_bog_2}. However, while changing the reference frame doppler shifts the eigenvalues, it leaves the eigenvectors untouched. More precisely, if $(u_{k'},v_{k'})^{\mathrm{T}}$ is an eigevector with eigenvalues $\hbar\omega_k'$ in the fluid frame it is also an eigenvector 
+in the lab frame for the shifted frequency. As a consequence, the norm of the eigenvectors is the same and our description of the solution space remains relevant.
+
+\subsubsection{Static fluid}
+
+
+Let us start our description with the case of a static fluid. The dispersion is the same in both reference frame which can be seen by setting $\kbf_p=0$ 
+in \autoref{eq:bogo_lab_frame} :
+
+\begin{equation}
+    \omega^\pm_B(k)= \pm\sqrt{\left(\dfrac{\hbar k^2}{2\mlp}-\delta(k_p)+ g_rn_r +2g n_0\right)^2 - \left(g n_0\right)^2}.
+\end{equation}
+This expression is in general drastically different from conservative systems where the Bogoliubov spectrum is linear. This feature is a direct consequence of 
+interactions and thermodynamical equilibrium which imposes that the energetic cost of adding a particles to the system $\mu$ is equal
+to the interaction energy due to the presence of the other bosons. Whenever the system is perturbed, it is thus more energetically favorable 
+to dissipate energy through a collective excitation -- phonons -- rather than to add a particle to the condensate.
+
+The polaritons dynamics is instead dictated by the interplay between losses, pumping and interactions. As a consequence, the 
+collective excitations are not necessarily sound waves and can be massive or even energetically unstable. Indeed, 
+
+\subsubsection{Bogoliubov modes energy}
+The gravitationnal Hawking effect involve the emission of particles with opposite energy and momentum at the horizon. In our analog
+system we demonstrated the existence of modes with opposite frequency and norm. However, the concept of "opposite" 
+
+\subsubsection{Quantization of the fluctuations}
+So far, we described the fluctuations of the order parameter as classical fields. This approach
+show that the bogoliubov modes can exist in the system as solutions to the equation of motion. Nonetheless, this framework require 
+an external perturbation for the modes to be excited

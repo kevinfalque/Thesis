@@ -1,4 +1,4 @@
-\begin{thebibliography}{46}
+\begin{thebibliography}{47}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibnamefont}[1]{\textsc{#1}}
 \providecommand{\bibfnamefont}[1]{#1}
@@ -167,6 +167,11 @@
 \bibfnamefont{H.S.} \bibnamefont{Nguyen}, \bibfnamefont{D.}~\bibnamefont{Gerace}, \bibfnamefont{I.}~\bibnamefont{Carusotto}, \bibfnamefont{D.}~\bibnamefont{Sanvitto}, \bibfnamefont{E.}~\bibnamefont{Galopin}, \bibfnamefont{A.}~\bibnamefont{Lemaître}, \bibfnamefont{I.}~\bibnamefont{Sagnes}, \bibfnamefont{J.}~\bibnamefont{Bloch} \& \bibfnamefont{A.}~\bibnamefont{Amo}.
 \newblock \enquote{Acoustic black hole in a stationary hydrodynamic flow of microcavity polaritons}.
 \newblock \href{http://dx.doi.org/10.1103/PhysRevLett.114.036402}{ \emph{Phys. Rev. Lett.} \textbf{114}(3), p. 036\,402}.
+
+\bibitem[{Pethick \& Smith(2008)}]{pethick_bose-einstein_2008}
+\bibfnamefont{Christopher} \bibnamefont{Pethick} \& \bibfnamefont{Henrik} \bibnamefont{Smith} 2008.
+\newblock \emph{Bose-{Einstein} condensation in dilute gases} (Cambridge university press, Cambridge) 2nd ed \'edition.
+\newblock ISBN 978-0-521-84651-6.
 
 \bibitem[{Pitaevskii(1961)}]{pitaevskii1961}
 \bibfnamefont{Lev~P} \bibnamefont{Pitaevskii} 1961.

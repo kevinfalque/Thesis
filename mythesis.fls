@@ -319,6 +319,8 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amscls/amsthm.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amscls/amsthm.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/bigints/bigints.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/bigints/bigints.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd

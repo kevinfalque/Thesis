@@ -39,45 +39,45 @@ Warning--empty year in unruh_experimental_1981
 Warning--empty year in Utsunomiya_fluidlightexp_2008
 Warning--empty year in weinfurtner_measurement_2011
 Warning--missing publisher in weisbuch_microcavities_1996
-You've used 46 entries,
+You've used 47 entries,
             3379 wiz_defined-function locations,
-            973 strings with 15992 characters,
-and the built_in function-call counts, 59416 in all, are:
-= -- 5583
-> -- 2292
-< -- 217
-+ -- 2201
-- -- 656
-* -- 4457
-:= -- 5965
-add.period$ -- 149
-call.type$ -- 46
-change.case$ -- 419
-chr.to.int$ -- 47
-cite$ -- 73
-duplicate$ -- 5587
-empty$ -- 3575
-format.name$ -- 1138
-if$ -- 11733
+            980 strings with 16158 characters,
+and the built_in function-call counts, 60079 in all, are:
+= -- 5629
+> -- 2319
+< -- 219
++ -- 2219
+- -- 664
+* -- 4513
+:= -- 6054
+add.period$ -- 152
+call.type$ -- 47
+change.case$ -- 426
+chr.to.int$ -- 48
+cite$ -- 74
+duplicate$ -- 5645
+empty$ -- 3632
+format.name$ -- 1153
+if$ -- 11864
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 545
-newline$ -- 248
-num.names$ -- 184
-pop$ -- 2179
+missing$ -- 556
+newline$ -- 253
+num.names$ -- 188
+pop$ -- 2208
 preamble$ -- 1
-purify$ -- 376
+purify$ -- 382
 quote$ -- 0
-skip$ -- 3391
+skip$ -- 3412
 stack$ -- 0
-substring$ -- 2212
-swap$ -- 4591
-text.length$ -- 217
+substring$ -- 2223
+swap$ -- 4621
+text.length$ -- 219
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 387
+type$ -- 393
 warning$ -- 27
-while$ -- 288
+while$ -- 292
 width$ -- 0
-write$ -- 629
+write$ -- 643
 (There were 29 warnings)
