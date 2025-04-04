@@ -500,8 +500,8 @@ can be interpreted as the addition of a particle with energy $\hbar\omega_k$ and
 between the two terms reflect that a fluctuation of the system is particle-hole hybrid excitation, while the norm $\bra{\cdot}\ket{\cdot}_B$ of the mode reflects the relative weight of the particle and hole components.
 
 \begin{itemize}
-    \item If $\int \dr[\abs{u_k}^2-\abs{v_k}^2]>0$ the mode is mostly made of $u_k$ and can be interpreted as a particle excitation.
-    \item If $\int \dr[\abs{u_k}^2-\abs{v_k}^2]<0$ the mode is mostly made of $v_k^*$ and can be interpreted as a hole excitation.
+    \item If $\int \dr\norm{u_k}^2-\norm{v_k}^2>0$ the mode is mostly made of $u_k$ and can be interpreted as a particle excitation.
+    \item If $\int \dr\norm{u_k}^2-\norm{v_k}^2<0$ the mode is mostly made of $v_k^*$ and can be interpreted as a hole excitation.
 \end{itemize}
 
 In conservative systems this symmetry is often related to the fluctuation of the number of particles in the condensed state. When the system is out of equilibrium 
@@ -513,7 +513,7 @@ These photons originate from the bogoliubov modes of the fluid due to interactio
 are translated in the noise spectrum of the outcoming laser. 
 
 
-\subsection{Homogeneous fluid}
+\section{Homogeneous fluid}
 
 So far, the description of the collective excitations spectrum remained quite general and we didn't use the homogeneity of system.
 In this case $\psi_0$ is invariant under translation meaning the eigenvectors of $\Lbog$ are just plane waves. The $S_+$ vectors then may be written as :
@@ -528,7 +528,7 @@ Before going further in the calculation, let us comment the ansatz of the total 
 we set our description in the rotating frame of the pump by factorizing the total field : $\psi(r,t)=(\psi_0+\dpsi)e^{i(\kbf_p\rbf-\omega_pt)}$. Consequently, all the dynamics on $\dpsi$ we might extract from the equation derived earlier
 happen in the moving frame where the fluid is at rest. However, in practice all the accessible observables are measured in the lab frame and are consequently dressed by the motion of the fluid. To directly predict the excitation spectrum as we expect to measure it in the lab
 we explictly write the wavefunction as a function of the wavevevector measured in the lab frame $\kbf$ as : $\psi(r,t)=\psi_0e^{i(\kbf_p\rbf-\omega_pt)}+ u_k e^{i\kbf\rbf}$ and look for their dynamics in the pump rotating frame by writting again $\psi(r,t)=(\psi_0+u_ke^{i(\kbf-\kbf_p)\rbf})e^{i(\kbf_p\rbf-\omega_pt)}$. Under this form
-the wavevector $\kbf'=\kbf-\kbf_p$ appear as the wavevector of the fluctuations in the moving frame. 
+the wavevector $\delta k=\kbf-\kbf_p$ appear as the wavevector of the fluctuations in the moving frame. 
 To obtain the corresponding Bogoliubov matrix we first express the action of $\Ham_{bog}$ on the fluctuations plane wave : $u_ke^{i((\kbf-\kbf_p)\rbf)}$ :
 
 \begin{equation}
@@ -572,7 +572,7 @@ From this we obtain the two branches of the so called bogoliubov dispersion rela
 \begin{equation}
     \begin{aligned}
     \omega^{'\pm}_B(k)&=\pm\sqrt{\left(\dfrac{\hbar(k-k_p)^2}{2\mlp}-\delta(k_p)+ g_rn_r +2g n_0\right)^2 - \left(g n_0\right)^2} \\
-    &=\pm\sqrt{\left(\dfrac{\hbar k'^2}{2\mlp}-\delta(k_p)+ g_rn_r +2g n_0\right)^2 - \left(g n_0\right)^2}.
+    &=\pm\sqrt{\left(\dfrac{\hbar \delta k^2}{2\mlp}-\delta(k_p)+ g_rn_r +2g n_0\right)^2 - \left(g n_0\right)^2}.
     \end{aligned}
 \end{equation}
 while in the laboratory frame it yields :
@@ -588,22 +588,141 @@ This expression is exactly what we would have obtained by directly applying a Ga
 the dual structure of the solution space exhibited earlier appear less clear. In fact, the motion of the fluid breaks the symmetry and the bogoliubov matrix no longer respects \autoref{eq:symetry_bog_2}. However, while changing the reference frame doppler shifts the eigenvalues, it leaves the eigenvectors untouched. More precisely, if $(u_{k'},v_{k'})^{\mathrm{T}}$ is an eigevector with eigenvalues $\hbar\omega_k'$ in the fluid frame it is also an eigenvector 
 in the lab frame for the shifted frequency. As a consequence, the norm of the eigenvectors is the same and our description of the solution space remains relevant.
 
+\subsubsection{Bogoliubov mode energy}
+The gravitationnal Hawking effect involve the emission of particles with opposite energy and momentum at the horizon. In our analog
+system, we demonstrated the existence of modes with opposite frequency and norm. However, the concept of "opposite" is in our case only relative to the fluid energy and momentum. Consequently, what we
+called negative frequencies so far are actually positive frequencies that can be measured in the lab. The concept of negative energy can nevertheless be understood as Landau did 
+to describe the emission of phonons in a superfluid \cite{landau_superfluidity_1941}. Consider a fluid in motion with a velocity $\vbf_0$ and a Bogoliubov spectrum $\omega'_B(k)$ in the fluid frame. 
+In the moving frame, the total energy of the system before any excitations are created is just the internal energy of the superfluid while in the lab frame it is the sum of the internal energy and the kinetic energy of the fluid.
+Landau's criterion results from analyzing when excitations can be spontaneously created without increasing the total energy. The fundamental condition for this to happen is:
+\begin{equation}
+    v_0>v_c = \min_k \dfrac{\omega'_B(k)}{k}
+\end{equation}
+When $v_0>v_c$ certain excitations become energetically favorable, meaning that their spontaneous creation extracts energy from the bulk flow. From
+an external observer these modes seem then to carry away energy from the bulk motion or in other word that the fluid is loosing energy. 
+
+Let us clarify this more quantitatively for the modes of interest here.
+
+\subsection{Bogoliubov spectrum characterization}
+ 
 \subsubsection{Static fluid}
-
-
 Let us start our description with the case of a static fluid. The dispersion is the same in both reference frame which can be seen by setting $\kbf_p=0$ 
 in \autoref{eq:bogo_lab_frame} :
 
 \begin{equation}
-    \omega^\pm_B(k)= \pm\sqrt{\left(\dfrac{\hbar k^2}{2\mlp}-\delta(k_p)+ g_rn_r +2g n_0\right)^2 - \left(g n_0\right)^2}.
+    \begin{aligned}
+    \omega^\pm_B(k)&= \pm\sqrt{\left(\dfrac{\hbar k^2}{2\mlp}-\delta(0)+ g_rn_r +2g n_0\right)^2 - \left(g n_0\right)^2}-\dfrac{i\gamma}{2} \\
+                   &= \pm\sqrt{\left(\dfrac{\hbar k^2}{2\mlp}-\delta(0)+ g_rn_r +3g n_0\right)\left(\dfrac{\hbar k^2}{2\mlp}-\delta(0)+ g_rn_r +g n_0\right)}-\dfrac{i\gamma}{2}.
+    \label{eq:bogo_static}
+    \end{aligned}
 \end{equation}
+Where we put the losses term back in the expression. 
 This expression is in general drastically different from conservative systems where the Bogoliubov spectrum is linear. This feature is a direct consequence of 
 interactions and thermodynamical equilibrium which imposes that the energetic cost of adding a particles to the system $\mu$ is equal
-to the interaction energy due to the presence of the other bosons. Whenever the system is perturbed, it is thus more energetically favorable 
+to the interaction energy due to the presence of the other bosons $gn_0$. Whenever the system is perturbed, it is thus more energetically favorable 
 to dissipate energy through a collective excitation -- phonons -- rather than to add a particle to the condensate.
 
-The polaritons dynamics is instead dictated by the interplay between losses, pumping and interactions. As a consequence, the 
-collective excitations are not necessarily sound waves and can be massive or even energetically unstable. Indeed, 
+\bigskip
+
+The polaritons dynamics is instead dictated by the interplay between losses, pumping and interactions which can give rise to optical bistability. As a consequence, the 
+collective excitations are not necessarily sound waves and can be massive or even energetically unstable. Indeed, one can see from the 
+second line of \autoref{eq:bogo_static} that one of the term in the square root might be negative depending on the values of the parameters. In the following,
+we will discuss the modifications of elementary excitations depending on the fluid excitation regime.
+
+\bigskip
+
+\textbf{Interplay with the bistability.} As demonstrated in the previous chapter, the system exhibits two distinct density regimes depending on the value of $\delta(k_p)$ :  
+
+\begin{enumerate}
+    \item \textit{Optical bistability}, when $\delta(k_p)>\sqrt{3} \gamlp / 2$, which allows for two different interaction regimes depending on the pump intensity: a high-density regime characterized by strong interactions and a low-density regime with weak interactions.
+    \item \textit{Optical limiter}, when $\delta(k_p)<\sqrt{3} \gamlp / 2$. This case will not be considered here, as the various types of elementary excitations it entails are also present in the bistable regime.
+\end{enumerate} 
+
+To explore the different regimes of collective excitation along the bistability loop, we fix the detuning to be $\delta(0)=0.2 \mathrm{meV}$ and vary the pump intensity. The corresponding
+values that $gn_0$ can take are plotted in \autoref{fig:bist_et_bogo} \textbf{a)}. At each operating point the collective excitation spectrum is calculated using \autoref{eq:bogo_static} and the results are shown in the subpanel b) of \autoref{fig:bist_et_bogo}.
+Note that for the discussion we arbitrarily set the reservoir contribution to $g_rn_r=\alpha gn_0$ with $\alpha=1.84$ based on previous measurement in the team \cite{claude_phd}. The value of $\alpha$ is expected to depend on sample parameters and more specifically on the exciton-photon detunning $\omega_X-\omega_\gamma$. In practice, the value we chose doesn't change much the discussion since the only relevant effect the reservoir has on the spectrum is to increase the total blueshift 
+due to interaction. However, it must be taken into account whenever one wants to extract quantitative value from a measured spectrum as we shall see in the next chapter.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{chap_AG_theory/fig/bist_et_bogo.pdf}
+    \caption{\textbf{a)} Bistability loop of the system for $\delta(k_p)=0.2 \mathrm{meV}$. The different points correspond to the operating points for which the excitation spectrum are plotted in the subpanel below. \textbf{b)} Real and imaginary part of the bogoliubov dispersion for different operating points for a static fluid $\kbf_p=0$. The solid 
+    red lines represent the positive norm modes branch also referred as the normal branch while the red dashed lines represent the negative norm modes branch also referred as the ghost branch. \textbf{c)} Real and imaginary part of the bogoliubov dispersion for a fluid in motion at $\kbf_p=0.3 \mathrm{\mu m^{-1}}$ as a function of $\delta \kbf = \kbf-\kbf_p$.}
+    \label{fig:bist_et_bogo}
+\end{figure}
+
+\bigskip
+
+\textbf{Linear spectrum.}
+Let us first examine the most distinctive regime, which establishes a direct connection with conservative systems and was, in fact, the primary motivation for exploring this platform in the context of analog gravity experiments \cite{claude_high-resolution_2022}.
+When the fluid operates at the turning point of the bistability (D) we demonstrated in the previous chapter that the detuning compensates the total interaction blueshift $\delta(0)=g_rn_r + gn_0$. 
+Plugging this constraint in \autoref{eq:bogo_static} we obtain :
+
+\begin{equation}
+    \omega_B(k) = \pm \sqrt{\dfrac{\hbar k^2}{2\mlp} \left({\dfrac{\hbar k^2}{2\mlp}} + g n_0 \right)}.
+\end{equation}
+
+We introduce the healing length $\xi=\sqrt{\hbar^2/mgn_0}$ which is the characteristic length scale of the system below which the collective description of the fluid breaks down and microscopic effects
+must be taken into account. The spectrum exhibits two trends depending whether $k$ is smaller or larger than $1/\xi$ as shown on the (D) plot of \autoref{fig:bist_et_bogo} \textbf{b)}. At low wavevector $k \ll 1/ \xi$ the spectrum is linear, for the normal branch we have :
+
+\begin{equation}
+    \re(\omega^+_B(k)) \sim c_s\abs{k}
+\end{equation}
+where $c_s = \sqrt{\hbar g n_0/\mlp}$ is the speed of sound in the fluid. For the ghost branch, represented by the red dashed line $c_s$ is be replaced by $-c_s$. At this operating point the driving laser is forcing the system exactly at its proper energy and 
+doesn't fix the phase of the excitations. In this regime, the long range interactions are dominated by collective deformation of the fluid --phonons-- that propagate with the same group velocity $\partial\omega/\partial k =c_s$ regardless their wavevector. 
+The idea of having --in the low wavevector limit -- a fixed velocity at all frequencies remind the light cone with the difference that the sound velocity is not the same in all the reference frames.
+The linearity is a typical feature of quantum fluids and give rise to spectacular collective behavior such as superfluidity \cite{Amo_fluidlightexp_2009} as well as topological protection of quantized vortices and dark solitons \cite{maitre_thesis}.
+The bogoliuvov spectrum was reported in several experiments \cite{utsunomiya_observation_2008,stepanov_dispersion_2019} with different experimental methods while the linearity have been measured with 
+an unprecedented resolution in the group \cite{claude_high-resolution_2022}. The latter experiment was performed with a spectroscopy method recently developped \cite{claude_prb} that we will describe and use in the next chapter.
+
+\bigskip
+
+In the high wavevector limit, $k \gg 1/\xi $, we recover the standard parabolic dispersion blueshifted by the interaction.
+
+\begin{equation}
+    \re\left(\ombog^+(k)\right) \sim \dfrac{\hbar k^2}{2\mlp} + g n.
+\end{equation}
+
+It's worth noticing that at even higher wavevector the parabolic approximation is not true anymore and the full LP dispersion must be plugged in the bogoliubov matrix. In this case one would observe that the bogoliubov spectrum is flattened
+by the exciton line at high wavevector \cite{I_frerot_PRX_2023}.
+
+\bigskip
+
+\textbf{Massive excitations regime.} If the system is brought further along the high density branch ie if $gn_0+g_rn_r>\delta(0)$ a gap opens in the spectrum and linearity is lost as it can be seen 
+in plot (E) and (F). A limited development of the spectrum around $k=0$ gives the parabolic approximation:
+\begin{equation}
+    \re\left(\ombog^+(k)\right) \sim \omega^+_B(0) + \dfrac{\hbar k^2}{2\mlp}\dfrac{\left(2g n_0 + g_r n_r - \delta(0)\right)}{\sqrt{\left(2g n_0 + g_r n_r - \delta(0)\right)^2 - (g n_0)^2}}.
+\end{equation}
+This enable to provide the Bogoliubov modes with an effective mass :
+\begin{equation}
+    m_{\mathrm{det}}= \mlp\dfrac{\sqrt{\left(2g n_0 + g_r n_r - \delta(0)\right)^2 - (g n_0)^2}}{\left(2g n_0 + g_r n_r - \delta(0)\right)}.
+\end{equation}
+Note that in the limit $gn_0+g_rn_r\to \delta(0)$, the system recovers the massless scenario described earlier. 
+The emergence of a gap in the spectrum can be understood as follows: when the system is driven too strongly relative to the turning point, the phase of the Bogoliubov excitations tends to become locked to the phase of the pump. 
+This induces a form of "rigidity" in the fluid's phase, implying that introducing a phase fluctuation into the system requires a minimum energy.
+
+\bigskip
+
+In both of the previous regimes, the terms in the square root of \autoref{eq:bogo_static} remain positive at all wavevectors meaning the imaginary part of 
+full dispersion never deviate from $\gamma/2$ as shown in the subpanels of \autoref{fig:bist_et_bogo} \textbf{b)} ensuring the stability of the system.
+
+\bigskip
+
+\textbf{Low density regime.} Conversely, when the sytem is operating on the lower branch of the hysteresis loop, the amount of interaction is not sufficient to 
+compensates for the detuning. Equivalently, it means that for some value of the wavevector the term in the square root of \autoref{eq:bogo_static} becomes negative
+giving rise to additionnal contribution to the imaginary part of the spectrum. Note that it doesn't necessarily mean that the system is unstable. Indeed, an instability 
+requires that the overall imaginary part of $\omega^{\pm}_B$ is positive. At very low density like in (A), the inherent losses of the system 
+are sufficient to dump the instability and the imaginary part remains negative at all $k$. If the pump strength is ramped up near the lower branch turning point (B) 
+the imaginary part of the spectrum might become positive at some wavevector and make the system is unstable. Note that the point at which this happens depend on the experimental
+parameters. Finally, the point (C), located between the two branches, has an imaginary part that is highly positive at low wavevectors. This is the reason why this branch of excitation
+is often referred as unstable and can not be observed. 
+
+
+\bigskip 
+
+The discussion above also holds for the case of a moving fluid provided we set our description in the comoving frame where the fluid is at rest and replace $k$ by $\delta k=k-k_p$ in \autoref{eq:bogo_static}.
+
+\subsubsection{Moving polaritons at finite $k_p$}
+
 
 \subsubsection{Bogoliubov modes energy}
 The gravitationnal Hawking effect involve the emission of particles with opposite energy and momentum at the horizon. In our analog

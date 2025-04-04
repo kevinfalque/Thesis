@@ -1,10 +1,15 @@
-\begin{thebibliography}{47}
+\begin{thebibliography}{51}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibnamefont}[1]{\textsc{#1}}
 \providecommand{\bibfnamefont}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 \providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Amo \emph{et~al.}()Amo, Lefrère, Pigeon, Adrados, Ciuti, Carusotto, Houdré, Giacobino \& Bramati}]{Amo_fluidlightexp_2009}
+\bibfnamefont{Alberto} \bibnamefont{Amo}, \bibfnamefont{Jérôme} \bibnamefont{Lefrère}, \bibfnamefont{Simon} \bibnamefont{Pigeon}, \bibfnamefont{Claire} \bibnamefont{Adrados}, \bibfnamefont{Cristiano} \bibnamefont{Ciuti}, \bibfnamefont{Iacopo} \bibnamefont{Carusotto}, \bibfnamefont{Romuald} \bibnamefont{Houdré}, \bibfnamefont{Elisabeth} \bibnamefont{Giacobino} \& \bibfnamefont{Alberto} \bibnamefont{Bramati}.
+\newblock \enquote{Superfluidity of polaritons in semiconductor microcavities}.
+\newblock \href{http://dx.doi.org/10.1038/nphys1364}{ \emph{Nat. Phys.} \textbf{5}(11), p. 805--810}.
 
 \bibitem[{Barceló \emph{et~al.}()Barceló, Liberati, Sonego \& Visser}]{barcelo_hawking-like_2006}
 \bibfnamefont{Carlos} \bibnamefont{Barceló}, \bibfnamefont{Stefano} \bibnamefont{Liberati}, \bibfnamefont{Sebastiano} \bibnamefont{Sonego} \& \bibfnamefont{Matt} \bibnamefont{Visser}.
@@ -25,6 +30,11 @@
 \bibfnamefont{C.}~\bibnamefont{Ciuti}, \bibfnamefont{V.}~\bibnamefont{Savona}, \bibfnamefont{C.}~\bibnamefont{Piermarocchi}, \bibfnamefont{A.}~\bibnamefont{Quattropani} \& \bibfnamefont{P.}~\bibnamefont{Schwendimann} 1998.
 \newblock \enquote{Role of the exchange of carriers in elastic exciton-exciton scattering in quantum wells}.
 \newblock \href{http://dx.doi.org/10.1103/PhysRevB.58.7926}{ \emph{Phys. Rev. B} \textbf{58}, p. 7926--7933}.
+
+\bibitem[{Claude \emph{et~al.}(2023)Claude, Jacquet, Carusotto, Glorieux, Giacobino \& Bramati}]{claude_prb}
+\bibfnamefont{F.}~\bibnamefont{Claude}, \bibfnamefont{M.~J.} \bibnamefont{Jacquet}, \bibfnamefont{I.}~\bibnamefont{Carusotto}, \bibfnamefont{Q.}~\bibnamefont{Glorieux}, \bibfnamefont{E.}~\bibnamefont{Giacobino} \& \bibfnamefont{A.}~\bibnamefont{Bramati} 2023.
+\newblock \enquote{Spectrum of collective excitations of a quantum fluid of polaritons}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRevB.107.174507}{ \emph{Phys. Rev. B} \textbf{107}, p. 174\,507}.
 
 \bibitem[{Claude \emph{et~al.}(2022)Claude, Jacquet, Usciati, Carusotto, Giacobino, Bramati \& Glorieux}]{claude_high-resolution_2022}
 \bibfnamefont{F.}~\bibnamefont{Claude}, \bibfnamefont{M.~J.} \bibnamefont{Jacquet}, \bibfnamefont{R.}~\bibnamefont{Usciati}, \bibfnamefont{I.}~\bibnamefont{Carusotto}, \bibfnamefont{E.}~\bibnamefont{Giacobino}, \bibfnamefont{A.}~\bibnamefont{Bramati} \& \bibfnamefont{Q.}~\bibnamefont{Glorieux} 2022.
@@ -121,6 +131,11 @@
 \newblock \emph{Introduction to solid state physics}.
 \newblock 8th ed \'edition.
 \newblock ISBN 978-0-471-41526-8.
+
+\bibitem[{Landau(1941)}]{landau_superfluidity_1941}
+\bibfnamefont{L.}~\bibnamefont{Landau} 1941.
+\newblock \enquote{Theory of the superfluidity of helium ii}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRev.60.356}{ \emph{Phys. Rev.} \textbf{60}, p. 356--358}.
 
 \bibitem[{Lehmen \emph{et~al.}(1986)Lehmen, Chemla, Zucker \& Heritage}]{exciton_stark_VonLehmen_86}
 \bibfnamefont{A.~Von} \bibnamefont{Lehmen}, \bibfnamefont{D.~S.} \bibnamefont{Chemla}, \bibfnamefont{J.~E.} \bibnamefont{Zucker} \& \bibfnamefont{J.~P.} \bibnamefont{Heritage} 1986.
@@ -237,6 +252,11 @@
 \bibitem[{Utsunomiya \emph{et~al.}()Utsunomiya, Tian, Roumpos, Lai, Kumada, Fujisawa, Kuwata-Gonokami, Löffler, Höfling, Forchel \emph{et~al.}}]{Utsunomiya_fluidlightexp_2008}
 \bibfnamefont{S.}~\bibnamefont{Utsunomiya}, \bibfnamefont{L.}~\bibnamefont{Tian}, \bibfnamefont{G.}~\bibnamefont{Roumpos}, \bibfnamefont{C.~W.} \bibnamefont{Lai}, \bibfnamefont{N.}~\bibnamefont{Kumada}, \bibfnamefont{T.}~\bibnamefont{Fujisawa}, \bibfnamefont{M.}~\bibnamefont{Kuwata-Gonokami}, \bibfnamefont{A.}~\bibnamefont{Löffler}, \bibfnamefont{S.}~\bibnamefont{Höfling}, \bibfnamefont{A.}~\bibnamefont{Forchel} \emph{et~al.}
 \newblock \enquote{Observation of bogoliubov excitations in exciton-polariton condensates}.
+\newblock \href{http://dx.doi.org/10.1038/nphys1034}{ \emph{Nature Physics} \textbf{4}(9), p. 700--705}.
+
+\bibitem[{Utsunomiya \emph{et~al.}(2008)Utsunomiya, Tian, Roumpos, Lai, Kumada, Fujisawa, Kuwata-Gonokami, Löffler, Höfling, Forchel \emph{et~al.}}]{utsunomiya_observation_2008}
+\bibfnamefont{S.}~\bibnamefont{Utsunomiya}, \bibfnamefont{L.}~\bibnamefont{Tian}, \bibfnamefont{G.}~\bibnamefont{Roumpos}, \bibfnamefont{C.~W.} \bibnamefont{Lai}, \bibfnamefont{N.}~\bibnamefont{Kumada}, \bibfnamefont{T.}~\bibnamefont{Fujisawa}, \bibfnamefont{M.}~\bibnamefont{Kuwata-Gonokami}, \bibfnamefont{A.}~\bibnamefont{Löffler}, \bibfnamefont{S.}~\bibnamefont{Höfling}, \bibfnamefont{A.}~\bibnamefont{Forchel} \emph{et~al.} 2008.
+\newblock \enquote{Observation of {Bogoliubov} excitations in exciton-polariton condensates}.
 \newblock \href{http://dx.doi.org/10.1038/nphys1034}{ \emph{Nature Physics} \textbf{4}(9), p. 700--705}.
 
 \bibitem[{Weinfurtner \emph{et~al.}()Weinfurtner, Tedford, Penrice, Unruh \& Lawrence}]{weinfurtner_measurement_2011}

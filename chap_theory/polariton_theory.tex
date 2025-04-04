@@ -1237,22 +1237,33 @@ intensity the system has again a single operating point and a poor transmission.
 
 In the case of microcavity-polariton the same behavior can be observed as the exciton-exciton non-linear interactions are of the same nature as the Kerr effect.
 Analytically, polariton bistability can be found by looking at the steady state of the driven-dissipative Gross-Pitaevskii equation in the presence of a driving pump term nearly resonant with the LP branch. In first approximation, it can be written as a plane wave $F_p(\rvec,t)=F_p e^{i\kvec_p.\rvec-i\omega_p t}$.
-As it is usually done for equations including a resonant forcing term, we look for solution of the same form namely, plane wave with the same phase, $\psi(\rvec,t)= \psi^0e^{i\kvec_p.\rvec-i\omega_p t}$.
-Inserting this ansatz into \autoref{eq:generalized_GPE} in the absence of external potential $V_{LP}=0$ and setting the time derivative to zero one obtain the steady state equation :
+As it is usually done for equations including a resonant forcing term, we look for solution of the same form namely, plane wave with the same phase, $\psi(\rvec,t)= \sqrt{n_0}e^{i\kvec_p.\rvec-i\omega_p t}$.
+Inserting this ansatz into \autoref{eq:generalized_GPE} in the absence of external potential $V_{LP}=0$ one obtain the steady state equation :
 
 \begin{equation}
-    \left[\omp -\omlp - \dfrac{\hbar \kp^2}{2 \mlp} - g \abs{\psilp^0}^2 + i \dfrac{\gamlp}{2} \right] \psilp^0= \eta_{LP} F_p^0.
+    \left[\omp -\omlp - \dfrac{\hbar \kp^2}{2 \mlp} - g n_0 - g_rn_r + i \dfrac{\gamlp}{2} \right] \sqrt{n_0}= \eta_{LP} F_p^0,
     \label{eq:steady_state}
 \end{equation}
-
+while the reservoir rate equation gives :
+\begin{equation}
+    n_r = \dfrac{\gamma_{in}}{\gamma_r}n_0.
+\end{equation}
+To eliminate the reservoir density we follow the procedure done in \cite{stepanov_dispersion_2019} and introduce an effective interaction strenght $g_{e}=g+g_r\frac{\gamma_{in}}{\gamma_r}$ so that $g_rn_r+gn=g_{eff}n$. 
+We can then rewrite \autoref{eq:steady_state} as :
+\begin{equation}
+    \left[\omp -\omlp - \dfrac{\hbar \kp^2}{2 \mlp} - g_{e}n_0 + i \dfrac{\gamlp}{2} \right] \sqrt{n_0}= \eta_{LP} F_p^0.
+    \label{eq:steady_state_2}
+\end{equation}
 It is the equivalent of the equation of state of a conservative system with the difference that, in this case, it results of a complex equilibrium between interactions, pumping and losses. Notice that 
-the contribution of the dark reservoir was neglected as the goal of this section is to understand in a general way bistability in polariton microcavity. Nonetheless, it 
-actually has remarkable consequences on the hysteresis cycle and the later can be used to probe polariton-dark excitons interactions with optical means, notably through two photon excitation to overcome spin forbidden transitions \cite{dark_exciton_pol_interactions}
+the contribution of the dark reservoir just appear as a correction on the interaction strength and thus doesn't change much the phenomenology discussed earlier. Nonetheless, it 
+ has quantitative consequences on the hysteresis cycle that can be used to probe polariton-dark excitons interactions with optical means, notably through two photon excitation to overcome spin forbidden transitions \cite{dark_exciton_pol_interactions}
+
+\bigskip
 
 To end up with an equation linking the pump intensity to the polariton density one can multiply this equation by its complex conjugate which gives :
 
 \begin{equation}
-    n \left[ \dfrac{\gamlp^2}{4} + \left(\delta(\kp) - g n \right)^2 \right] =  \eta_{LP}^2 I,
+    n \left[ \dfrac{\gamlp^2}{4} + \left(\delta(\kp) - g_{e} n \right)^2 \right] =  \eta_{LP}^2 I,
 \label{eq:eq_of_state}
 \end{equation}
 
@@ -1265,17 +1276,17 @@ If the pump intensity is then decreased, the situation is rather different since
 This point can only be reached by travelling on the whole hysteresis loop. The corresponding density can determined by solving $\frac{dI}{dn}=0$ which gives the discriminants :
 
 \begin{equation}
-    \Delta = g^2 \left( \delta^2 - \dfrac{3\gamlp^2}{2}\right).
+    \Delta = g_{e}^2 \left( \delta^2 - \dfrac{3\gamlp^2}{2}\right).
 \end{equation}
 
 The bistable regime require two distinct solution for $\frac{dI}{dn}=0$ which require $\Delta>0$ and provide the afromentionned condition $\delta>\sqrt{3/2}\gamlp$.
-From this one can find that the density corresponding to the turning point fullfill $\delta(\kp)=gn$. 
+From this one can find that the density corresponding to the turning point fulfill $\delta(\kp)=g_{eff}n = gn_0+g_rn_r$. 
 
 \begin{figure}
     \centering
     \includegraphics[width=0.8\linewidth]{chap_theory/fig/bistability.pdf}
-    \caption{\textbf{Optical bistability in a polariton fluid.} a) The polariton density as a function of the pump intensity when $\delta>\frac{\sqrt{3}\gamlp}{2}$. The blue point represent the so called turning point at which the detuning is exactly equal to the interaction energy.
-    b) Polariton density as a function of $\delta$ for a fixed pump intensity. c) Polariton density as a function of the pump intensity for different values of $\delta$, bistability is observed when $\delta>\frac{\sqrt{3}\gamlp}{2}$.}
+    \caption{\textbf{Optical bistability in a polariton fluid.} \textbf{a)} The polariton density as a function of the pump intensity when $\delta>\frac{\sqrt{3}\gamlp}{2}$. The blue point represent the so called turning point at which the detuning is exactly equal to the interaction energy.
+    \textbf{b)} Polariton density as a function of $\delta$ for a fixed pump intensity. c) Polariton density as a function of the pump intensity for different values of $\delta$, bistability is observed when $\delta>\frac{\sqrt{3}\gamlp}{2}$.}
     \label{fig:bistability}
 \end{figure}
 
