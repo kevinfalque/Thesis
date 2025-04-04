@@ -589,6 +589,7 @@ the dual structure of the solution space exhibited earlier appear less clear. In
 in the lab frame for the shifted frequency. As a consequence, the norm of the eigenvectors is the same and our description of the solution space remains relevant.
 
 \subsubsection{Bogoliubov mode energy}
+\label{subsub:bogo_energy}
 The gravitationnal Hawking effect involve the emission of particles with opposite energy and momentum at the horizon. In our analog
 system, we demonstrated the existence of modes with opposite frequency and norm. However, the concept of "opposite" is in our case only relative to the fluid energy and momentum. Consequently, what we
 called negative frequencies so far are actually positive frequencies that can be measured in the lab. The concept of negative energy can nevertheless be understood as Landau did 
@@ -599,9 +600,68 @@ Landau's criterion results from analyzing when excitations can be spontaneously 
     v_0>v_c = \min_k \dfrac{\omega'_B(k)}{k}
 \end{equation}
 When $v_0>v_c$ certain excitations become energetically favorable, meaning that their spontaneous creation extracts energy from the bulk flow. From
-an external observer these modes seem then to carry away energy from the bulk motion or in other word that the fluid is loosing energy. 
+an external observer it seems that these modes carry energy away from the bulk motion or in other words, that the fluid is loosing energy. 
 
-Let us clarify this more quantitatively for the modes of interest here.
+Let us clarify this more quantitatively for the modes of interest here. To compute the energy of a given mode we introduce
+the energy fonctionnal of the system \cite{castin_bose-einstein_2001}:
+
+\begin{equation}
+    \begin{aligned}
+        E &= \int \dr \left(\dfrac{\hbar^2}{2\mlp}\abs{\nabla\psi}^2 + \dfrac{g_e}{2}\abs{\psi}^4\right) \\
+    \end{aligned}
+\end{equation}
+where we set the external potential to zero.
+\textcolor{red}{\textbf{TODO : check how it is midified by losses}}
+Inserting the expression of the total field including the fluctuations it is possible to expand the energy in terms of the fluctuations  
+$E=E^{(0)}+E^{(1)}+E^{(2)}$. The first order vanishes because $\psi_0$ minimizes the energy functionnal. The second order term is given by :
+\begin{equation}
+    \begin{aligned}
+        E^{(2)} &= \int \dr \left(\dfrac{\hbar^2}{2\mlp}\abs{\nabla\dpsi}^2 +[2g_e\abs{\psi_0}^2-\delta(k_p)]\abs{\dpsi}^2+\dfrac{g_e}{2}(\psi_0^*)^2\dpsi^2+ \dfrac{g_e}{2}\psi_0^2(\dpsi^*)\right)
+    \end{aligned}
+\end{equation}
+which can be cast in the vectorial form 
+\begin{equation}
+    E^{(2)} = \dfrac{1}{2}\bra{\dpsi} \eta\Lbog\ket{\dpsi}
+\end{equation}
+ where 
+
+\begin{equation}
+    \begin{aligned}
+    \eta\Lbog = \ &
+    \begin{pmatrix}
+        -\hbar\delta(k_p)+\dfrac{\hbar^2(\kbf-\kbf_p)^2}{2\mlp}+\hbar g_rn_r + 2\hbar g n_0 &  \hbar g n_0e^{2ik_p} \\
+        \hbar g n_0^{-2ik_p} & -\hbar\delta(k_p)+\dfrac{\hbar^2(\kbf-\kbf_p)^2}{2\mlp}+\hbar g_rn_r + 2\hbar g n_0
+    \end{pmatrix}\\
+    &+\begin{pmatrix}
+        \hbar \vbf_0(\kbf-\kbf_p) & 0 \\
+        0 & -\hbar \vbf_0(\kbf-\kbf_p)
+    \end{pmatrix}.
+    \end{aligned}
+\end{equation}
+Expanding the fluctuations in the eigenvectors basis of $\Lbog$ we obtain :
+\begin{equation}
+    \begin{aligned}
+    E^{(2)} &= \dfrac{1}{2}\sum_{k,l}\bra{\dpsi_k}\eta\Lbog\ket{\dpsi_l}=\dfrac{1}{2}\sum_k\bra{\dpsi_k}\eta\ket{\dpsi_k}\hbar\omega_k \\
+    &=\dfrac{1}{2}\sum_k\bra{\dpsi_k}\eta\ket{\dpsi_k}(\hbar\omega'_k+\hbar \vbf_0(\kbf-\kbf_p)).
+    \end{aligned}
+    \label{eq:energy_bogo_lab_frame}
+\end{equation}
+Let us analyze the case of a static fluid or equivalently what we obtain in the co moving frame. Setting $\kbf_p=0$ the energy contribution is :
+
+\begin{equation}
+    \dfrac{1}{2}\bra{\dpsi_k}\eta\Lbog'\ket{\dpsi_k} =\dfrac{1}{2}\hbar\omega'_k\bra{\dpsi_k}\ket{\dpsi_k}_B.
+    \label{eq:energy_bogo_fluid_frame}
+\end{equation}
+When the system operates on the high density branch of the bistability loop one can show that the operator $\eta\Lbog'$ is positive definite.
+This means that the left hand side of \autoref{eq:energy_bogo_fluid_frame} is real and stricly positive which imposes 
+that $\bra{\dpsi_k}\ket{\dpsi_k}_B$ is not zero. We can thus divide the whole expression by the norm and we deduce that the $\hbar\omega'_k$ is also real.
+Finally, the positivity of $\eta\Lbog'$ imply that the norm and the eigenvalue of a mode share the same sign. Hence,
+in the frame where the fluid is at rest the energy of a mode is always positive even if the corresponding frequency is negative.
+
+In the lab frame, the eigenvalue must be replaced by its counterpart in the lab frame $\hbar\omega_k=\hbar\omega'_k+\hbar \vbf_0(\kbf-\kbf_p)$ while the norm remains unchanged.
+If the fluid velocity is large enough one can see that the doppler shift can give rise to negative energies which remind the above discussion on the Landau criterion. Indeed, above a certain 
+velocity, a mode emitted in the fluid with positive energy can appear as a negative contribution for an external observer sat in the lab frame.
+
 
 \subsection{Bogoliubov spectrum characterization}
  
@@ -719,16 +779,38 @@ is often referred as unstable and can not be observed.
 
 \bigskip 
 
-The discussion above also holds for the case of a moving fluid provided we set our description in the comoving frame where the fluid is at rest and replace $k$ by $\delta k=k-k_p$ in \autoref{eq:bogo_static}.
+The discussion above also holds for the case of a moving fluid provided we set our description in the comoving frame and replace $k$ by $\delta k=k-k_p$ in \autoref{eq:bogo_static}.
 
 \subsubsection{Moving polaritons at finite $k_p$}
+In this section we consider again a fluid in motion at $\kbf_p\neq0$ that we describe in the lab frame. In terms of regime of collective excitations nature, the phenomenology is similar to the one
+described above and the discussion can be carried out in the same way. The only difference is that the dispersion relation is now centered around the fluid wavevector $\kbf_p$ and "tilted" by the doppler effect. Consequently, the bogoliubov spectrum graphically 
+loses an axis of symmetry which is a graphical manifestation that $\Lbog$ no longer respects the symmetry of \autoref{eq:symetry_bog}.
+Again we set $\delta(k_p)=0.2 \mathrm{meV}$ and we plot the dispersion relation for the same operating points than in the static case, the results are presented in the subpanels of \autoref{fig:bist_et_bogo} \textbf{c)}. Note that the spectra are displayed as function 
+of the wavevector in the fluid frame since \autoref{eq:bogo_lab_frame} mathematically depends only on $\delta k$ enabling to compare the spectra in the two reference frame.
+
+In the linear case $gn_0+g_rn_r=\delta(k_p)$, the low wavevector slope is modified by the fluid velocity :
+\begin{equation}
+    \begin{aligned}
+    \re\left(\ombog^+(\delta k)\right)& \sim (c_s + \vbf_0)\abs{\delta k} \ \ \mathrm{for} \ \delta k > 0 \\
+    \re\left(\ombog^+(\delta k)\right)& \sim (c_s - \vbf_0)\abs{\delta k} \ \ \mathrm{for} \ \delta k < 0
+    \end{aligned}
+\end{equation}
+From this, one can see that when the fluid is supersonic $\vbf_0>c_s$ as in plot (D) some modes of the normal branch --the positive norm modes-- are pulled down to the negative frequency domain. Symmetrically, some ghost branch modes --the negative norm modes-- are pulled up to the positive frequency domain.
+In both case, the excitations carry negative energy as explained in \autoref{subsub:bogo_energy}, in this regime superfluidity is lost and any defect in the fluid flow 
+can create excitations \cite{Amo_fluidlightexp_2009}. If the pump intensity is increased further like in (E) and (F), a gap opens again in the spectrum, the excitations are massive while
+the negative energy modes may disappear due to the gap opening. However, it doesn't mean that the possibility to create excitations with negative energy 
+is lost whenever the spectrum is massive. Indeed, increasing further the pump velocity can lead to situations where the spectrum is massive but still has negative energy modes.
+A typical example of this case is presented in \autoref{fig:gapped_supersonic}, where the pump wavevector was set to $k_p=0.7 \mathrm{\mu m^{-1}}$ and the other parameters stayed the same. 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{chap_AG_theory/fig/bogo_gap_supersonic_dispersion.pdf}
+    \caption{Bogoliubov spectrum for a fluid in motion at $k_p=0.7 \mathrm{\mu m^{-1}}$ and $\delta(k_p)=0.2 \mathrm{meV}$. The dashed line represent the ghost branch ie the negative norm branch while the solid line
+    represent the normal branch ie the positive norm branch. The blue color represents the positive energy modes while the orange represent the negative energy modes resulting from the 
+    product of a norm and a frequency with opposite signs.}
+    \label{fig:gapped_supersonic}
+\end{figure}
 
 
-\subsubsection{Bogoliubov modes energy}
-The gravitationnal Hawking effect involve the emission of particles with opposite energy and momentum at the horizon. In our analog
-system we demonstrated the existence of modes with opposite frequency and norm. However, the concept of "opposite" 
-
-\subsubsection{Quantization of the fluctuations}
 So far, we described the fluctuations of the order parameter as classical fields. This approach
 show that the bogoliubov modes can exist in the system as solutions to the equation of motion. Nonetheless, this framework require 
 an external perturbation for the modes to be excited
