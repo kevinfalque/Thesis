@@ -83,6 +83,7 @@ linktoc=all,ocgcolorlinks,hyperfootnotes=true,pageanchor=true,hyperindex=true,
 pdfpagelayout=TwoPageRight,bookmarks,raiselinks}{hyperref}
 %%% Load hyperref without options (avoid option clash)
 \usepackage{hyperref}
+\usepackage[most]{tcolorbox}
 %%% Options provided by \hypersetup that can be defined after package loading
 \hypersetup{colorlinks,
 linkcolor=DarkBlue,anchorcolor=DarkRed,urlcolor=DarkGreen,citecolor=DarkGreen,
@@ -144,6 +145,28 @@ pdfpagelayout=TwoPageRight,bookmarks,raiselinks}{hyperref}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\Ham}{\mathcal{H}}
+
+
+\tcbset{
+  infernoSummary/.style={
+    colback={rgb:red,1;yellow,2;white,8},        % Fond chaud plus clair
+    colframe={rgb:red,2;yellow,3},        % Bordure rouge foncé
+    coltitle=black,                      % Titre noir
+    fonttitle=\bfseries\large,
+    title=Summary,
+    boxrule=0.7pt,
+    arc=3pt,
+    left=8pt,
+    right=8pt,
+    top=6pt,
+    bottom=6pt,
+    sharp corners=south,
+    enhanced,
+    drop shadow,
+    halign=left,
+    width=\textwidth
+  }
+}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,4 +1,4 @@
-\begin{thebibliography}{51}
+\begin{thebibliography}{54}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibnamefont}[1]{\textsc{#1}}
 \providecommand{\bibfnamefont}[1]{#1}
@@ -111,6 +111,11 @@
 \newblock \enquote{Theory of the contribution of excitons to the complex dielectric constant of crystals}.
 \newblock \href{http://dx.doi.org/10.1103/PhysRev.112.1555}{ \emph{Physical Review} \textbf{112}(5), p. 1555--1567}.
 
+\bibitem[{Isoard \& Pavloff()}]{isoard_quantum_2019}
+\bibfnamefont{M.}~\bibnamefont{Isoard} \& \bibfnamefont{N.}~\bibnamefont{Pavloff}.
+\newblock \enquote{Quantum fluctuations close to an acoustic horizon in a bose-einstein condensate}.
+\newblock \emph{{arXiv}:1909.02509 [cond-mat, physics:gr-qc]} .
+
 \bibitem[{Jacquet \emph{et~al.}(2023)Jacquet, Giacomelli, Valnais, Joly, Claude, Giacobino, Glorieux, Carusotto \& Bramati}]{jacquet_quantum_2023}
 \bibfnamefont{M.J.} \bibnamefont{Jacquet}, \bibfnamefont{L.}~\bibnamefont{Giacomelli}, \bibfnamefont{Q.}~\bibnamefont{Valnais}, \bibfnamefont{M.}~\bibnamefont{Joly}, \bibfnamefont{F.}~\bibnamefont{Claude}, \bibfnamefont{E.}~\bibnamefont{Giacobino}, \bibfnamefont{Q.}~\bibnamefont{Glorieux}, \bibfnamefont{I.}~\bibnamefont{Carusotto} \& \bibfnamefont{A.}~\bibnamefont{Bramati} 2023.
 \newblock \enquote{Quantum {Vacuum} {Excitation} of a {Quasinormal} {Mode} in an {Analog} {Model} of {Black} {Hole} {Spacetime}}.
@@ -209,6 +214,11 @@
 \newblock \enquote{Tunneling method for hawking quanta in analogue gravity}.
 \newblock \emph{arXiv:2406.14603} .
 
+\bibitem[{Recati \emph{et~al.}()Recati, Pavloff \& Carusotto}]{Recati_acousticHR_2009}
+\bibfnamefont{A.}~\bibnamefont{Recati}, \bibfnamefont{N.}~\bibnamefont{Pavloff} \& \bibfnamefont{I.}~\bibnamefont{Carusotto}.
+\newblock \enquote{Bogoliubov theory of acoustic hawking radiation in bose-einstein condensates}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRevA.80.043603}{ \emph{Phys. Rev. A} \textbf{80}(4), p. 043\,603}.
+
 \bibitem[{Rochat \emph{et~al.}(2000)Rochat, Ciuti, Savona, Piermarocchi, Quattropani \& Schwendimann}]{Rochat2000}
 \bibfnamefont{G.}~\bibnamefont{Rochat}, \bibfnamefont{C.}~\bibnamefont{Ciuti}, \bibfnamefont{V.}~\bibnamefont{Savona}, \bibfnamefont{C.}~\bibnamefont{Piermarocchi}, \bibfnamefont{A.}~\bibnamefont{Quattropani} \& \bibfnamefont{P.}~\bibnamefont{Schwendimann} 2000.
 \newblock \enquote{Excitonic bloch equations for a two-dimensional system of interacting excitons}.
@@ -269,5 +279,9 @@
 \newblock \emph{Microcavities and Photonic Bandgaps: Physics and Applications}.
 \newblock ISBN 978-94-009-0313-5.
 \newblock \urlprefix\url{https://link.springer.com/book/10.1007/978-94-009-0313-5}.
+
+\bibitem[{Zel'dovich()}]{zeldovich__1970}
+\bibfnamefont{Ya.~B.} \bibnamefont{Zel'dovich}.
+\newblock \emph{Pis'ma Zh. Eksp. Teor. Fiz} \textbf{12}, p. 443.
 
 \end{thebibliography}

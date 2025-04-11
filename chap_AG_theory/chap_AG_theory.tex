@@ -7,7 +7,6 @@
 %%% TeXmaker : no 'magic comments' but set Root with Options > Set as master file
 
 %useful stuff for what follows
-
 \newcommand{\xbf}{\pmb{x}}
 \newcommand{\ci}{\mathrm{i}}
 \newcommand{\ee}{\mathrm{e}}
@@ -27,7 +26,8 @@
 \newcommand{\vbf}{\pmb{v}}
 \newcommand{\rbf}{\mathbf{r}}
 \newcommand{\ombog}{\omega_{\mathrm{b}}}
-
+\newcommand{\betin}{\beta^{\mathrm{in}}}
+\newcommand{\betout}{\beta^{\mathrm{out}}}
 \newcommand{\rmexp}{\mathrm{exp}}
 \newcommand{\im}{\mathfrak{Im}}
 \newcommand{\re}{\mathfrak{Re}}
@@ -39,7 +39,10 @@
 % \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 \newcommand{\dr}{\mathrm{d}\mathbf{r}}
 \newcommand{\Lbog}{\mathcal{L}_B}
-
+\newcommand{\ha}{\hat{a}}
+\newcommand{\hadag}{\hat{a}^\dagger}
+\newcommand{\hb}{\hat{b}}
+\newcommand{\hbdag}{\hat{b}^\dagger}
 
 \graphicspath{{./}{./fig/}{./chap_Ag_theory/fig/}}
 
@@ -460,16 +463,17 @@ At the end, if we restrict our description to modes with non zero norm, a genera
 
 
 \begin{equation}
+    \label{eq:general_solution_for_fluctuations_classical}
     \ket{\psi}=
     \begin{pmatrix}
     \dpsi \\
     \dpsi^*
-    \end{pmatrix} = \sum_{\kbf \in S_+} A_\kbf
+    \end{pmatrix} = \sum_{\kbf \in S_+} b_\kbf
     \begin{pmatrix}
     u_k \\
     v_k
     \end{pmatrix}e^{-i\omega_kt}
-    + A^*_\kbf   
+    + b^*_\kbf   
      \begin{pmatrix}
         v^*_k \\
         u^*_k
@@ -477,7 +481,7 @@ At the end, if we restrict our description to modes with non zero norm, a genera
 \end{equation}
 where 
 \begin{equation}
-    A_\kbf = \int \dr u_k^*(\rbf)\dpsi(\rbf)-v_k^*(\rbf)\dpsi(\rbf). 
+    b_\kbf = \int \dr u_k^*(\rbf)\dpsi(\rbf)-v_k^*(\rbf)\dpsi(\rbf). 
 \end{equation}
 
 The redundancy of the first line being the complex conjugated of the second is the price we pay now for our initial assumption that considered $\dpsi$ and $\dpsi^*$ as independant variables. The advantage of the
@@ -533,14 +537,14 @@ To obtain the corresponding Bogoliubov matrix we first express the action of $\H
 
 \begin{equation}
     \begin{align}
-    \Ham_{bog}u_k(\rbf) &= \biggl[\hbar\omlp^0 - \hbar \omp-\dfrac{\hbar^2}{2\mlp}\left[-(\kbf-\kbf_p)^2 -2\kbf_p(\kbf-\kbf_p)-\kbf_p^2\right]+\hbar g_rn_r + 2\hbar g n_0 \biggr]u_ke^{i(\kbf-\kbf_p)\rbf} \\
-            &= \biggl[-\hbar\delta(k_p)+\dfrac{\hbar^2(\kbf-\kbf_p)^2}{2\mlp}+\hbar g_rn_r + 2\hbar g n_0\biggr]u_ke^{i(\kbf-\kbf_p)\rbf} + \dfrac{\hbar^2\kbf_p(\kbf-\kbf_p)}{\mlp}u_ke^{i(\kbf-\kbf_p)\rbf}.
+    \Ham_{bog}u_k(\rbf) &= \biggl[\hbar\omlp^0 - \hbar \omp-\dfrac{\hbar^2}{2\mlp}\left[-(\kbf-\kbf_p)^2 -2\kbf_p(\kbf-\kbf_p)-\kbf_p^2\right]+\hbar g_rn_r + 2\hbar g n_0 \biggr]U_ke^{i(\kbf-\kbf_p)\rbf} \\
+            &= \biggl[-\hbar\delta(k_p)+\dfrac{\hbar^2(\kbf-\kbf_p)^2}{2\mlp}+\hbar g_rn_r + 2\hbar g n_0\biggr]U_ke^{i(\kbf-\kbf_p)\rbf} + \dfrac{\hbar^2\kbf_p(\kbf-\kbf_p)}{\mlp}U_ke^{i(\kbf-\kbf_p)\rbf}.
     \end{align}
     \label{eq:ham_bog_plane_wave}
 \end{equation}
 
 where $\delta(k_p)=\omega_p - \omlp^0 - \dfrac{\hbar k_p^2}{2\mlp}$ is the detuning between the pump and the LP polariton dispersion at $\kbf_p$ provided we stay in the low wavevector
-parabolic approximation. The second term proportionnal to $(\kbf-\kbf_p)^2$ shows that due to the fluid motion, the Bogoliubov spectrum observed in the lab frame is as expected
+parabolic approximation. The second term proportionnal to $(\kbf-\kbf_p)^2$ is the kinetic energy shows that due to the fluid motion, the Bogoliubov spectrum observed in the lab frame is as expected
 centered on the fluid wavevector. The last term describe the temporal frequency shift due to the fluid motion  $\Delta\omega =\hbar^2\kbf_p(\kbf-\kbf_p)/\mlp=\hbar\vbf_0(\kbf-\kbf_p)$ where $\vbf_0=\hbar\kbf_p/\mlp$ is the fluid velocity. This term is precisely
 the term that emerge naturally in the Doppler effect demonstration.
 Doing the same procedure for the complex conjugated the Bogoliubov matrix can be written as :
@@ -702,15 +706,18 @@ To explore the different regimes of collective excitation along the bistability 
 values that $gn_0$ can take are plotted in \autoref{fig:bist_et_bogo} \textbf{a)}. At each operating point the collective excitation spectrum is calculated using \autoref{eq:bogo_static} and the results are shown in the subpanel b) of \autoref{fig:bist_et_bogo}.
 Note that for the discussion we arbitrarily set the reservoir contribution to $g_rn_r=\alpha gn_0$ with $\alpha=1.84$ based on previous measurement in the team \cite{claude_phd}. The value of $\alpha$ is expected to depend on sample parameters and more specifically on the exciton-photon detunning $\omega_X-\omega_\gamma$. In practice, the value we chose doesn't change much the discussion since the only relevant effect the reservoir has on the spectrum is to increase the total blueshift 
 due to interaction. However, it must be taken into account whenever one wants to extract quantitative value from a measured spectrum as we shall see in the next chapter.
-\begin{figure}[h]
+\begin{figure}[!htbp]
     \centering
     \includegraphics[width=1\textwidth]{chap_AG_theory/fig/bist_et_bogo.pdf}
-    \caption{\textbf{a)} Bistability loop of the system for $\delta(k_p)=0.2 \mathrm{meV}$. The different points correspond to the operating points for which the excitation spectrum are plotted in the subpanel below. \textbf{b)} Real and imaginary part of the bogoliubov dispersion for different operating points for a static fluid $\kbf_p=0$. The solid 
-    red lines represent the positive norm modes branch also referred as the normal branch while the red dashed lines represent the negative norm modes branch also referred as the ghost branch. \textbf{c)} Real and imaginary part of the bogoliubov dispersion for a fluid in motion at $\kbf_p=0.3 \mathrm{\mu m^{-1}}$ as a function of $\delta \kbf = \kbf-\kbf_p$.}
-    \label{fig:bist_et_bogo}
+   \label{fig:bist_et_bogo}
+\end{figure}
+\addtocounter{figure}{-1}
+\begin{figure} 
+    \caption{\textbf{Analytical Bogoliubov dispersion relations.} (a) Bistability curve of the fluid density $n_0$ as a function of the pump intensity $I$, calculated from \autoref{eq:steady_state}, for a pump detuning $\hbar\delta$ = 0.2 meV. (b) Positive (solid red lines) and negative (dashed red lines) solutions of the Bogoliubov dispersion relation in the fluid reference frame, computed from \autoref{eq:bogo_lab_frame}, at the pump wavevector $\kbf_p$ = 0 (zero flow velocity), at the pump detuning $\delta(0)$ = 0.2 meV and for pump intensities indicated by the points A, ..., F in (a). Upper line: real part of the energy of elementary excitations. The black dotted line highlights the pump energy. Lower line: imaginary part of the energy of the elementary excitations. As long as it remains negative (below the black dashed line), the Bogoliubov solutions are dynamically stable. Note that near and all along the negative slope branch of the bistability, the modes are unstable, giving rise at the point B and C respectively to modulation instabilities (coupling of the positive solution with the negative solution at $\kvec \neq 0$) and Kerr instabilities (coupling of the positive and the negative solutions with the pump mode at $\kvec = 0$). At the other points A, D, E, F, the system losses fix the imaginary part at $-\gamlp/2$, stabilizing the fluid. (c) Same considerations as for (b) but at a pump wavevector $k_p$ = 0.5 $\mu$m$^{-1}$. The fluid speed of flow is no longer zero, leading to an asymmetrization of the Bogoliubov solutions. In both (a) and (b) cases, the linearization of the solutions at low-k, relating the generation of phonon-type elementary excitations, appears only at the turning point D. \textit{Adapted from} \cite{claude_phd}}
+    \label{analytical_bog}
 \end{figure}
 
-\bigskip
+\bigskip 
 
 \textbf{Linear spectrum.}
 Let us first examine the most distinctive regime, which establishes a direct connection with conservative systems and was, in fact, the primary motivation for exploring this platform in the context of analog gravity experiments \cite{claude_high-resolution_2022}.
@@ -788,6 +795,15 @@ loses an axis of symmetry which is a graphical manifestation that $\Lbog$ no lon
 Again we set $\delta(k_p)=0.2 \mathrm{meV}$ and we plot the dispersion relation for the same operating points than in the static case, the results are presented in the subpanels of \autoref{fig:bist_et_bogo} \textbf{c)}. Note that the spectra are displayed as function 
 of the wavevector in the fluid frame since \autoref{eq:bogo_lab_frame} mathematically depends only on $\delta k$ enabling to compare the spectra in the two reference frame.
 
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{chap_AG_theory/fig/bogo_gap_supersonic_dispersion.pdf}
+    \caption{Bogoliubov spectrum for a fluid in motion at $k_p=0.7 \mathrm{\mu m^{-1}}$ and $\delta(k_p)=0.2 \ \mathrm{meV}$. The dashed line represent the ghost branch ie the negative norm branch while the solid line
+    represent the normal branch ie the positive norm branch. The blue color represents the positive energy modes while the orange represent the negative energy modes resulting from the 
+    product of a norm and a frequency with opposite signs.}
+    \label{fig:gapped_supersonic}
+\end{figure}
+
 In the linear case $gn_0+g_rn_r=\delta(k_p)$, the low wavevector slope is modified by the fluid velocity :
 \begin{equation}
     \begin{aligned}
@@ -799,18 +815,406 @@ From this, one can see that when the fluid is supersonic $\vbf_0>c_s$ as in plot
 In both case, the excitations carry negative energy as explained in \autoref{subsub:bogo_energy}, in this regime superfluidity is lost and any defect in the fluid flow 
 can create excitations \cite{Amo_fluidlightexp_2009}. If the pump intensity is increased further like in (E) and (F), a gap opens again in the spectrum, the excitations are massive while
 the negative energy modes may disappear due to the gap opening. However, it doesn't mean that the possibility to create excitations with negative energy 
-is lost whenever the spectrum is massive. Indeed, increasing further the pump velocity can lead to situations where the spectrum is massive but still has negative energy modes.
+is lost as soon as the spectrum is no longer linear. Indeed, increasing further the pump velocity can lead to situations where the spectrum is massive but still has negative energy modes.
 A typical example of this case is presented in \autoref{fig:gapped_supersonic}, where the pump wavevector was set to $k_p=0.7 \mathrm{\mu m^{-1}}$ and the other parameters stayed the same. 
-\begin{figure}[h]
+A gap is present but the doppler effect is strong enough to excite negative energy modes on both branches which are represented by the orange lines. Unlike the linear case, it is not possible to define 
+a sound velocity for the low wavevector excitations. Consequently, the critical velocity to exceed for the apperance of negative energy modes doesn't match the velocity $\sqrt{\hbar g n_0/\mlp}$ that we still refer to as the sound velocity
+by analogy with linear case. Moreover, since the velocity affects the dispersion itself through the detuning $\delta(k_p)$, the usual procedure of applying the Landau criterion---where the energy of excitations is modified solely through a Doppler shift $\omega_B(k) \to \omega_B'(k) + v_0 k$---is no longer valid. In this case, the spectrum itself is inherently altered by the fluid motion, meaning that the flow velocity does not simply act as a shift parameter but fundamentally changes the nature of the excitations.
+ As a result, the criterion must be modified to account for this direct dependence. In practice, the knowledge of an analytical 
+ expression for the critical velocity is not necessary and knowing that there exist one is sufficient as we will see in the experimental section.
+ 
+
+
+
+
+\bigskip
+
+
+
+It is now clear that depending on its velocity and parameters the fluid can exhibit a rich variety of collective excitations. Let us summarize what we learned so far.
+\begin{tcolorbox}[infernoSummary]
+    \begin{itemize}
+        \item The polariton fluid exhibits a rich variety of collective excitations depending on the pump intensity and detuning through the bistability cycle. The different 
+        modes are characterized by their norm and frequency.
+        \item There exist a peculiar operating point at which the spectrum is linear allowing for the definition of a sound velocity $c_s=\sqrt{\hbar g n_0/\mlp}$.
+        \item The spectrum can also be massive if the system is pumped further along the high density branch and the effective mass depend on the detuning and the pump intensity.
+        \item In the low density regime, the spectrum can become unstable and exhibit a positive imaginary part. 
+        \item Putting the fluid in motion can lead to the appereance of negative energy modes. The critical velocity for this to happen is a complex function of the detuning and the interactions. It doesn't 
+         match the speed of sound $c_s$ as soon as the system doesn't operate at the turning point of the hysteresis loop.
+    \end{itemize}
+    \end{tcolorbox}
+
+
+In particular, if we restrict ourselves to high density regime where, inherent losses appart, the bogoliubov dispersion remains real, the fluid can be either subcritical --all the modes carry positive energy-- or supercritical --some modes carry negative energy.
+The long way we have made to proove that quite simple feature paves the way to already understand how Hawking radiation can be observed in a polariton fluid. Indeed, creating 
+an interface between a subcritical and a supercitical region will mix positive and negative energy modes just as a gravitationnal event horizon would. Obviously, 
+ showing that it can leads to paired correlated emission from vacuum will require to quantize the modes as we will see in the next section.
+
+\section{Hawking radiation in a transcritical fluid}
+ 
+
+
+\subsection{Inhomogeneous pumping}
+We consider a driving pump defined as follow :
+
+\begin{equation}
+    F_p(r,t) = \left\{
+        \begin{array}{ll}
+            F_ue^{i(k_ux-\omega_p t)} & \mbox{if } \ x<x_h \\
+            F_de^{i(k_dx-\omega_p t)} & \mbox{if} \ x>x_h
+        \end{array}
+    \right.
+\end{equation}
+where $x_h$ is an arbitrary position that will define the interface bewteen the two regions. The wavevectors are chosen so that $0<k_u<k_d$ and $k_d$ is sufficiently high to create a subcritical flow. The fluid is 
+flowing toward the $x>0$ direction and the label $"u"$ and $"d"$ refer respectively to "upstream" and "downstream" region of the fluid with respect to the interface. We want to study Hawking emission of propagating modes so we set 
+the laser frequency in order to ensure bistability in both region namely $\delta(k_u),\ \delta(k_d)>\sqrt{3}\gamlp/2$, and the pump amplitudes $F_u$ and $F_d$ so the fluids operate on the high density branch of their 
+respective hysteresis cycle. Note that the pump is two dimensionnal but only depend on $x$. As we will justify it in the experimental section, the sample is in some extent also translationally invariant in the $y$ direction. Henceforth, we restrict our description to an effective 1D model.
+Solving the GPE far from the interface gives two homogeneous regions with different asymptotic velocities $v_u=\hbar k_u/\mlp$ and $v_d=\hbar k_d/\mlp$, and different densities $n_u$ and $n_d$. We also 
+account for fluctuations around each of these solutions the same way we did in the previous section which gives the asymptotic wavefunctions :
+
+\begin{equation}
+    \psi(x,t) = \left\{
+        \begin{array}{ll}
+            (\sqrt{n_u}+\dpsi_u)e^{i(k_ux-\omega_p t)} & \mbox{if } \ x \ll x_h \\
+            (\sqrt{n_d}+\dpsi_d)e^{i(k_dx-\omega_p t)} & \mbox{if} \ x \gg x_h.
+        \end{array}
+    \right.
+\end{equation}
+\textcolor{red}{Note that continuity condition at $x_h$ makes the definition of the wavefunction near the interface unclear for now.}
+Typical density and velocity profiles are shown in ??. For the sake of clarity, the speed of sound is plotted allowing direct comparison with 
+the fluid velocity. We remind nonetheless that the previous section made clear that the relevant velocity to cross generally differ from $c_s$.
+
+\bigskip
+
+We wish to solve the scattering problem for the Bogoliubov modes at the interface. In each homogeneous region, fluctuations are plane wave oscilatting at $\omega$ of the form :
+\begin{equation}
+    \begin{pmatrix}
+        u_k(x) \\
+        v_k(x)
+    \end{pmatrix} = \begin{pmatrix}
+        U_k^u  \\
+        V_k^u 
+    \end{pmatrix}e^{i(k+k_{u,d})x}.
+\end{equation}
+The wavevector $k$ and frequency $\omega$ satisfy the Bogoliubov dispersion relation $\omega=\omega_B(k)$ that we remind here :
+
+\begin{equation}
+    \omega_B(k)=v_{u,d}k\pm\sqrt{\left(\dfrac{\hbar k^2}{2\mlp}-\delta(k_{u,d})+ g_rn_r +2g n_0\right)^2 - \left(g n_0\right)^2}-\dfrac{i\gamma}{2} 
+    \label{eq:bogo_lab_frame_both_regions}
+\end{equation}
+where $v_{u,d}=\hbar k_u/\mlp$ are the fluid velocities in the upstream and downstream regions. The corresponding dispersions are plotted in \autoref{fig:bogo_up_and_down}. We see that, in the subcritical region ($x<x_h$), positive- and negative-norm modes are still found exclusively at positive and negative frequency, respectively.
+However, in the supercritical region ($x>x_h$), some positive-norm modes are dragged to negative frequencies (and reciprocally for negative-norm modes) by the Doppler effect.
+
+\bigskip
+
+
+Since there is redundandy of the information with respect to the zero frequency line let us fix $\omega>0$ and look for the wavevectors $k$ satisfying $\omega=\omega_B(k)$ in each region.
+\begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{chap_AG_theory/fig/bogo_gap_supersonic_dispersion.pdf}
-    \caption{Bogoliubov spectrum for a fluid in motion at $k_p=0.7 \mathrm{\mu m^{-1}}$ and $\delta(k_p)=0.2 \mathrm{meV}$. The dashed line represent the ghost branch ie the negative norm branch while the solid line
-    represent the normal branch ie the positive norm branch. The blue color represents the positive energy modes while the orange represent the negative energy modes resulting from the 
-    product of a norm and a frequency with opposite signs.}
-    \label{fig:gapped_supersonic}
+    \includegraphics[width=1\textwidth]{chap_AG_theory/fig/bogo_gap_dispersion.pdf}
+    \caption{\textbf{Bogoliubov spectrum in the upstream and downstream regions.} The Bogoliubov spectrum in the asymptotic upstream region \textbf{(a)} and downstream region \textbf{(b)} of the fluid, calculated from \autoref{eq:bogo_lab_frame} with $\delta(0)=30$ (GHz), $k_u= \SI{0.2}{\per \micro \meter}$ and
+    $k_d=\SI{0.7}{\per\micro\meter}$.}
+    \label{fig:bogo_up_and_down}
 \end{figure}
 
+\bigskip
 
+\textbf{Subcritical region.} In the upstream region $x<xh$, for any $\omega>0$ there always exist two real solution corresponding to positive norm modes as visible on the left panel of \autoref{fig:bogo_up_and_down}. Depending
+on the sign of their group velocity $v_g=\partial\omega/\partial k$, we label the solution $"out"$ if it propagates away from the interface and $"in"$ if it goes toward the interface. 
+Taking the square of \autoref{eq:bogo_lab_frame_both_regions} the problem can be cast under a real coefficient polynomial equation of degree 4 in $k$. As a consequence,
+there exist two additionnal complex conjugate solutions. Depending on the sign of their imaginary part, they are either exponentially growing or decaying. 
+
+\bigskip
+
+
+\textbf{Supercritical region.} In the downstream region $x>x_h$, the situation is different and require a disjunct analysis. If $\omega>\omega_{max}$ the situation is the same than in the upstream 
+region. There exist two propagating solutions $d_{1in}$ and $d_{1out}$ lying on the normal branch with opposite group velocity as well as two non propagating modes. When $\omega<\omega_{max}$, in addition to the positive norm solution, the doppler shift pull two negative norm solutions $d_{2in}$ and $d_{2out}$ herited from $\omega=\omega^-_B(k)$
+
+
+\textbf{Scattering solutions-\textit{in} global modes}
+A general function to describe the fluctuations at $\omega$ is obtained by the linear combination of all the possible propagating solutions :
+\begin{equation}
+    \begin{pmatrix}
+        u_k(x) \\
+        v_k(x)
+    \end{pmatrix}_{u,d} = \left(\sum_{i\in \mathrm{in}}\betin_i e^{ik^{in}_ix}\begin{pmatrix}
+        U_{k^\mathrm{in}_i}  \\
+        V_{k^\mathrm{in}_i}
+    \end{pmatrix}+\sum_{i\in \mathrm{out}}\betout_i e^{ik^{out}_ix}\begin{pmatrix}
+        U_{k^\mathrm{out}_i}  \\
+        V_{k^\mathrm{out}_i}
+    \end{pmatrix}\right)_{u,d}
+\end{equation}
+From this expression we can form the so called scattering solutions. Such a solution reflect how a given mode impinging on the interface is scattered into the other channels.
+For instance, for the case of an incoming mode from the upstream region, the scattering solution is a piece-wise function given by :
+\begin{itemize}
+    
+\item\begin{equation}
+    \begin{pmatrix}
+        u_k(x) \\
+        v_k(x)
+    \end{pmatrix}_{u} =\betin_ue^{{ik_u^{{\mathrm{in}}x}}}\begin{pmatrix}
+        U_{k^\mathrm{in}_{u}} \\
+        V_{k^\mathrm{in}_{u}}
+    \end{pmatrix}
+    +
+    \betout_u e^{ik_u^{{\mathrm{out}}x}}\begin{pmatrix}
+        U_{k^\mathrm{out}_{u}} \\
+        V_{k^\mathrm{out}_{u}}
+    \end{pmatrix} \ \mathrm{for} \ x\leq x_h
+\end{equation} 
+
+\item\begin{equation}
+    \begin{pmatrix}
+        u_k(x) \\
+        v_k(x)
+    \end{pmatrix}_{d} = \betout_{d2} e^{ik^{\mathrm{out}}_{d2}x}
+    \begin{pmatrix}
+        U_{k^\mathrm{out}_{d2}} \\
+        V_{k^\mathrm{out}_{d2}}
+    \end{pmatrix} + \betout_{d1} e^{ik^{\mathrm{out}}_{d1}x}
+    \begin{pmatrix}
+        U_{k^\mathrm{out}_{d1}} \\
+        V_{k^\mathrm{out}_{d1}} 
+    \end{pmatrix} \ \mathrm{for} \ x\geq x_h.
+\end{equation}
+\end{itemize}
+
+A given solution and its derivative has to be a continuous in space which imposes matching condition at the interface. This condition will fix the coefficients $\beta_i^{in}$ and $\beta_i^{out}$ that can be interpted as reflection and transmission coefficents of the incoming wave at the inteface. 
+These modes are definded on the whole space and solve the equations of motion everywhere. From the three $in$ modes $u_{in}$ $d_{1in}$ and $d_{2in}$ in the $\omega_{gap}<\omega<\omega_{max}$ regime it is possible to construct three scattering solutions. At a given frequency $\omega$ one can verify that these solutions are orthonormal with respect to the Bogoliubov inner product :
+\begin{equation}
+    \bra{\dpsi^\mathrm{in}_i(\omega)}\ket{\dpsi^\mathrm{in}_j(\omega')}_B = \int \mathrm{d}x  \ u^*_{i,\omega}(x)u_{j,\omega'}(x)-v^*_{i,\omega}(x)v_{j,\omega'}(x)  = \mathrm{sign}(\bra{\psi^\mathrm{in}_i}\ket{\psi^\mathrm{in}_i}_B)\delta_{ij}\delta(\omega-\omega').
+\end{equation} 
+where $i,j \in \{u_{in},d_{1in},d_{2in}\}$ and $\mathrm{sign}$ is the sign function. 
+As defined, the $in$ global modes (GM) form a basis of the Bogoliubov problem valid at any $x$ in the system.
+
+\bigskip
+
+\textbf{Outgoing global modes.} It also possible to define the global solution of an outgoing wave. Take the outgoing mode $d_{1out}$ in the downstream region, in the scattering picture it results from the 
+ the transmission of an ingoing upstream mode $u_{in}$ and the reflection of the two ingoing downstream modes $d_{2in}$ and $d_{1in}$. Doing this procedure in the $\omega_{gap}<\omega<\omega_{max}$ range, the three $out$ modes
+define three outgoing GM. Just as the $in$ solutions, the $out$ ones form an orthonormal basis of the solution space.
+
+Since we found two basis describing the same set it is possible to express the $out$ modes in terms of the $in$ modes. 
+Each three $out$ modes are linear combination of the three $in$ modes which define the so called $3\times3$ scattering matrix $S(\omega)$ :
+
+\begin{equation}
+    \begin{pmatrix}
+        \betout_{u}(\omega) \\
+        \betout_{d1}(\omega) \\
+        \betout_{d2}(\omega)
+        \end{pmatrix} =
+    S(\omega)\begin{pmatrix}
+        \betin_{u}(\omega) \\
+        \betin_{d1}(\omega) \\
+        \betin_{d2}(\omega)
+    \end{pmatrix}.
+    \label{eq:scattering_matrix}
+\end{equation}
+Note that in $\omega>\omega_{max}$ case the $d_{2out}$ mode is not present and the scattering matrix should be $2\times2$. However, to keep 
+the notation the same everywhere, we also take into account the evanescent modes and allow coefficient some coefficient to be zero in the scattering matrix.
+
+Since the orthonormal structure of the Bogoliubov modes was built with the modified norm $\bra{\cdot}\ket{\cdot}_B$ it imply
+that $S$ is unitary for the corresponding extented metric $\nu$ :
+
+\begin{equation}
+    S^\dagger(\omega)\eta S(\omega) = \eta.
+    \label{eq:unitarity}
+\end{equation}
+where $\nu=\mathrm{diag}(1,1,-1)$. The unitary condition ensure energy conservation even in the presence of negative energy modes.  Indeed, the $-1$ sign in the third diagonal term account for norm conversion and originate from the scattering of positive norm modes into negative norm modes.
+The square modulus of a given coefficient $\abs{S_{ij}}^2$ gives the proability of reflexion or transmission of the mode $i$ into the mode $j$.
+
+To make this point clear, let us tackle the example of the scattering of an incoming mode $u_{in}$ with energy $\hbar\omega$ in the upstream region. 
+There is a probability $\abs{S_{uu}}^2$ that the mode get reflected in $u_{out}$ and a probability $\abs{S_{d1u}}^2$ that it gets transmitted into $d_{1out}$ both of this mode have the same energy. The remaining term $\abs{S_{u2}}^2$ is the probability that the mode get transmitted into a negative norm mode $d_{2out}$ which has the opposite energy $-\hbar\omega$
+The unitary condition \autoref{eq:unitarity} ensures that the total energy is conserved $1=\abs{S_{uu}}^2+\abs{S_{d1u}}^2-\abs{S_{d2u}}^2$.
+
+
+It is interesting to stress that the asymptotic classification of modes as $in$ or $out$ mirrors the procedure used in the study of quantum fields in black hole spacetimes, where a causal, time-oriented interpretation is adopted: in modes represent incoming configurations in the remote past, while out modes correspond to outgoing configurations in the distant future.
+ This structure forms the basis of the Bogoliubov transformation formalism, which relates the two mode bases and captures the mixing between positive and negative frequency components that underlies processes such as particle production.
+\subsection{Modes quantization}
+\label{subsec:quantization}
 So far, we described the fluctuations of the order parameter as classical fields. This approach
-show that the bogoliubov modes can exist in the system as solutions to the equation of motion. Nonetheless, this framework require 
-an external perturbation for the modes to be excited
+show that the bogoliubov modes can exist in the system as solutions to the equations of motion. The scattering matrix
+a priori tells us how an incoming wavepacket is scattered at the interface.
+Yet, our classical description require an external pertubation to inject non zero amplitude in a given mode. Hence it doesn't
+predict what would happen with highly non classical state as an input, like the vacuum state. To achive this, we need to quantize the modes.
+
+\textbf{Quadratic Hamiltonian.} The first step is to write the field operator : 
+\begin{equation}
+    \hat{\psi}(x,t)= \psi_0(x,t)\hat{a}_{\psi_0}+\hat{\dpsi}(x)
+\end{equation}
+where $\hat{a}_{\psi_0}$ is the operator that annihiliate a polariton in the mean field state and $\hat{\dpsi}(x)$ is the fluctuation operator that 
+annihilate a fluctuation. Pluggin this ansatz into the GPE in its second quantization form \ref{eq:pol_non_linear_hamiltonian} and going to first order in the fluctuations, one
+finds that the hamiltonian has a quadratic form in the fluctuation operator. As a consequence, the Heisenberg
+equations of motion for the Bogoliubov operator are linear in the fluctuations \cite{castin_bose-einstein_2001}. This property is of great importance.
+Indeed, it allows to use a very simple quantization procedure. The fully quantum decomposition of the 
+fluctuation operator is obtained from its classical counterpart ~\ref{eq:general_solution_for_fluctuations_classical} by promoting the coefficients $b_k$ to bosonic operators. A positive norm modes coefficient
+is promoted to an annihilation operator $\bk$ while a negative norm mode has to be replaced by a creation operator. Under this prescription
+the classical fluctuations field becomes :
+
+\begin{equation}
+    \delta\hat{\psi}(x,t) =\sum_{k\in S_+}\left[u_k(x)\bk e^{-i\omega_k t}+ v^*_k(x)\bkdag e^{i\omega_k t}\right]
+\end{equation}
+with the commutation relation 
+\begin{equation}
+    \norm{\phi_i}_B\norm{\phi_j}_B[\hat{b}_i, \hat{b}_j^\dagger]  = \norm{\phi_i}_B\delta_{ij}
+\end{equation}
+which is the usual bosonic commutation relation for positive norm modes while for negative norm modes the annihilation operator and the creation operator are exchanged. To encode this property in a convenient way in the notation we rewrite the fluctuation field in a way that also count modes with negative 
+norm at the cost of a redundancy.
+
+\begin{equation}
+    \delta\hat{\psi}(x,t) =\sum_{k\in S_+}\left[u_k(x)\bk e^{-i\omega_k t}+ v^*_k(x)\bkdag e^{i\omega_k t}\right] + \sum_{k\in S_-}\left[u_k(x)\bkdag e^{-i\omega_k t}+ v^*_k(x)\bkdag e^{i\omega_k t}\right]
+\end{equation}
+This writting has the advantage of making explicit that for negative norm modes the frequency $\omega_k$ is associated to annihilation operators reflecting the particle-hole symmetry :
+the creation of a particle a yields the same contribution as the annihilation of a hole.
+
+
+
+This procedure remains valid regardless the basis initially chosen and can especially be applied to the global modes exhibited earlier. The fully quantized fluctuations field for fluctuations can then be expressed in terms of $in$ global operators as :
+
+\begin{equation}
+    \hat{\dpsi}(x,t) = \int \mathrm{d}\omega\sum_{j\in \{u_{in},d_{1in}\} }[\ha_j(\omega)u_{j,\omega}(x)+\hadag_j(\omega)v^*_{j,\omega}(x)] + \int \mathrm{d}\omega[\hadag_{d_2}(\omega)u_{d_2,\omega}(x)+\ha_{d_2}(\omega)v^*_{d_2,\omega}(x)]
+    \label{eq:fluctuation_quantization}
+\end{equation}
+where the operator $\hat{a}_j(\omega)$ is the operator that annihilates a global $in$ mode in channel $j$ at frequency $\omega$. An equivalent
+expression can be written for the $out$ global modes noted $\hb_i$. The two sets of operators are again related by the scattering matrix :
+
+\begin{equation}
+    \begin{pmatrix}
+        \hat{b}_u(\omega) \\
+        \hat{b}_{d1}(\omega) \\
+        \hat{b}_{d2}^\dagger(\omega)
+    \end{pmatrix}=S(\omega)\begin{pmatrix}
+        \hat{a}_u(\omega) \\
+        \hat{a}_{d1}(\omega) \\
+        \hat{a}_{d2}^\dagger(\omega)    
+    \end{pmatrix}
+\end{equation}
+
+
+Few comments are in order at this stage. First, since we deal with quadratic Hamiltonian, the matrix is exactly the same obtained in the classical case.
+From an experimental point of view this property is a crucial asset. Indeed, it means one can reconstruct the full matrix and hence all its quantum 
+properties by just solving the scattering problem for classical modes which are much easier to engineer than quantum state. Any quantum correlation between the modes are in fact encoded in the matrix coefficient 
+under phase and amplitude value of the reflexion-transmission coefficients. Of course, solving the scattering problem
+would only be a way to infer correlations between the modes but not to measure them. Still, it gives information about what you can expect from a given 
+analog horizon.
+
+\bigskip
+
+Secondly, while the $in$ and $out$ operators describe the same physical system they generate two different Fock states and thus two distinct vacuum states $\ket{0_{\mathrm{in}}}$ and $\ket{0_{\mathrm{out}}}$, as explained in the harmonic oscillator example.
+This raises the question of whether a preferential basis can be found to provide a unequivocal description of the system. The answer is no.
+ Indeed, unlike the Harmonic oscillator the system doesn't exhibit symmetries that justify one choice over the other. This being said, the $in$
+and $out$ basis remain wise choices to describe the system since they are natural basis to infer what can be measured in the lab.
+
+\bigskip
+
+Finally, the transformation induced by the scattering matrix between the $in$ and $out$ operators is a Bogoliubov transformation where the 
+normalisation condition is hidden in the unitarity condition \ref{eq:unitarity}. We already discussed how such a transformation is the heart 
+of any particle creation process and in particular of the gravitationnal Hawking radiation. From an academic point of view, it is simultanesously satisfying and puzzling 
+that this simple transformation can help understanding the behavior of drastically different objects : a gravitationnal black hole and a transcritical quantum fluid. 
+However one must remain careful with the analogy and never mistakenly deduce that the polariton fluid is "like a black hole". Indeed, a quantum fluid and a black hole are obviously 
+too dissimilar to make that statement true and any quantitative measurement made on analog system may never be transposed to gravitationnal objects. But what these two systems do have in common is the presence of a horizon that mixes positive and negative energy modes. The polariton 
+platform should then rather be seen as a system to study quantum field theory predictions --initially made for gravitationnal event horizons-- through the universality of the underlying 
+mathematical structure, a bogoliubov transformation.
+
+\subsection{Spontaneous emission}
+
+\label{subsec:spontaneous_emission}
+
+Now that we have a fully quantized description of the system, expectation values of physical observables can be straightfrowardly
+computed by plugging the desired input quantum state and look how it is modified by the scattering matrix. Let us start with the most spectacular and that
+Stephen Hawking demonstrated in its original work \cite{hawking_black_1972} : spontaneous emission of correlated pairs from vacuum.
+
+
+We are interested in the expectation value of the outgoing mode that is radiated by the interface away from the supercritical region $\hat{b}_u$.
+Its decomposition in terms of the $in$ modes is :
+
+\begin{equation}
+    \hat{b}_u = S_{uu}\hat{a}_u + S_{ud_1}\hat{a}_{d_1} + S_{ud_2}\hat{a}_{d_2}^\dagger.
+\end{equation}
+The corresponding number operator $\hat{N}_u^{out}=\hat{b}_u^\dagger\hat{b}_u$ then reads :
+\begin{equation}
+    \begin{aligned}
+        \hat{N}_u^{out} = &\abs{S_{uu}}^2\hat{a}_u^\dagger\hat{a}_u + \abs{S_{ud_1}}^2\hat{a}_{d_1}^\dagger\hat{a}_{d_1} + \abs{S_{ud_2}}^2\hat{a}_{d_2}\hat{a}_{d_2}^\dagger \\ 
+        + & S_{uu}^*S_{ud_1}\hat{a}_u^\dagger\hat{a}_{d_1}+ S_{uu}^*S_{ud_2}\hat{a}_u^\dagger\hat{a}_{d_2}^\dagger + S_{ud_1}^*S_{uu}\hat{a}_u^\dagger\hat{a}_{d_1}^\dagger  \\
+        + & S_{ud_1}^*S_{ud_2}\hat{a}_{d_1}^\dagger\hat{a}_{d_2}^\dagger+ S_{ud_2}^*S_{uu}\hat{a}_{d_2}\hat{a}_u+ S_{ud_2}^*S_{ud_1}\hat{a}_{d_2}\hat{a}_{d_1}. 
+    \end{aligned}
+\end{equation}
+Using the bosonic commutation relation for the negative norm term $\abs{S_{ud_2}}^2\hat{a}_{d_2}\hat{a}_{d_2}^\dagger=\abs{S_{ud_2}}^2(1+\hat{a}_{d_2}^\dagger\hat{a}_{d_2})$, the expectation
+value of the number operator in the $in$ vacuum state $\ket{0_{in}}$ is :
+
+\begin{equation}
+    \bra{0_{in}}\hat{N}_u^{out}\ket{0_{in}} = \abs{S_{ud_2}}^2 
+\end{equation}
+In the $\omega \notin [\omega_{gap}, \omega_{max}]$ frequency range, the $d_2$ mode is not present and there is no emisssion. Conversely, when $\omega_{gap}<\omega<\omega_{max}$ 
+the negative energy mode $d_2$ is present and yields a non zero emission from vacuum. This is the so-called Hawking effect. In fact,
+ this radiation is correlated with all the other outgoing modes and one could even show tripartite entanglement among them \cite{isoard_quantum_2019}. Nonetheless, this is beyond the
+ scope of this work and we will not go into the details of this calculation. Usually in the litterature, correlation at the horizon 
+ between the out mode are inferred by computing the two point density correlation function \cite{Recati_acousticHR_2009, nguyen_acoustic_2015} :
+
+ \begin{equation}
+    g^{(2)}(x,x')=\dfrac{\langle{\hat{\dpsi}}^\dagger(x)\hat{\dpsi}^\dagger(x')\hat{\dpsi}(x)\hat{\dpsi}(x')\rangle}{\langle \hat{\dpsi}^\dagger(x)\hat{\dpsi}(x)\rangle\langle \hat{\dpsi}^\dagger(x')\hat{\dpsi}(x')\rangle}
+ \end{equation}
+ Plenty of numerical study in the group have been performed \cite{jacquet_quantum_2023}, and demonstrated that the interface of transcritical 
+ flow of polariton can indeed exhibits Hawking radiation signature in its density correlation map.
+
+
+ An experimental measurement of this correlation map has already been performed in Bose Einstein Condensate of Rb atoms \cite{steinhauer_observation_2016}.
+ In this experiment the same analogue black hole is created 7400 times, each shot provide a realization of the density fluctuation map. The two point density correlation
+ function is then computed by taking the average of $\hat{\dpsi}^\dagger(x)\hat{\dpsi}^\dagger(x')\hat{\dpsi}(x)\hat{\dpsi}(x')$. 
+ In the case of a polariton fluid the density fluctuations map is harder to obtain due to 
+ the out of equilibrium nature of the system. Indeed, due to the finite lifetime of the polaritons $1/\gamma\sim \SI{10}{\pico \second}$, a single 
+ image of the fluid, even with the fastest camera, is already the results of many realization of the fluctuations which hence average to zero. In the conservative case,
+ a given shot of the experiment freezes the system at given time when the trap is released. Therefore, looking for spontaneous
+ emission in the polariton fluid is not a trivial task. As a first approach one can look for a stimulated version of the experiment which, in the light of the previous section,
+ can be theoretically grasped by injecting a coherent state in the scattering problem.
+ \textcolor{red}{pas sur de ce que je raconte ici}
+
+\subsection{Stimulated emission}
+
+Consider a coherent state input state $\ket{\alpha_{in}}$ in the upstream region eigenstate of the annihilation operator $\hat{a}_u$ with eigenvalue $\alpha_u \in \mathbb{C}$.
+A convenient writting is to express the coherent state as a displaced vacuum $\ket{\alpha_{in}}=D_u(\alpha)\ket{0_{in}}$ where $D(_u\alpha)=e^{\alpha \hat{a}_u^\dagger-\alpha^*\hat{a}_u}$ is the displacement operator relative to the 
+$\hat{a}_u$ operator. All the other input state are left in vacuum which gives the overall input product state :
+
+\begin{equation}
+    \ket{\alpha_{in}}=\ket{\alpha_u}\otimes\ket{0_{d1}}\otimes\ket{0_{d2}} = D_u(\alpha)\ket{0_{in}}.
+\end{equation}
+By just using that $\hat{a}_u\ket{\alpha_{in}}=\alpha_u\ket{\alpha_{in}}$ the expectation value in this state is straightfrowardly computed as :
+\begin{equation}
+    \bra{\alpha_{in}}\hat{N}_u^{out}\ket{\alpha_{in}} = \abs{S_{uu}}^2\abs{\alpha_u}^2 + \abs{S_{ud_2}}^2
+    \label{eq:stimulated_expectation_value}
+\end{equation}
+The presence of a coherent input state give rise to an additionnal term $\abs{S_{uu}}^2\abs{\alpha_u}^2$ which is the "classical" reflexion of the input mode on the interface.
+To obtain a full scattering picture we also compute what is transferred in the other outgoig modes. The calculation are similar and we find :
+
+\begin{equation}
+    \bra{\alpha_{in}}\hat{N}_{d_1}^{out}\ket{\alpha_{in}} = \abs{S_{d_1u}}^2\abs{\alpha_u}^2 + \abs{S_{d_1d_2}}^2
+    \label{eq:d1_stimulated_expectation_value}
+\end{equation}
+for the $d_1$ outgoing mode and 
+\begin{equation}
+    \bra{\alpha_{in}}\hat{N}_{d_2}^{out}\ket{\alpha_{in}} = \abs{S_{d_2u}}^2\abs{\alpha_u}^2 + \abs{S_{d_2d_2}}^2
+    \label{eq:d2_stimulated_expectation_value}
+\end{equation}
+for the $d_2$ outgoing mode. This negative energy mode can be interpreted as the Hawking partner of the positive energy mode $u_{out}$ studied in the first place.
+If we assume that $\abs{\alpha_u}$ is large enough, the first term in each of the above equation dominates the second one which gives :
+
+\begin{equation}
+    \dfrac{\bra{\alpha_{in}}\hat{N}_i^{out}\ket{\alpha_{in}}}{\abs{\alpha_u}^2} \approx \abs{S_{i u}}^2 \ \mathrm{for} \ i\in\{u,d_1,d_2\}.
+\end{equation}
+This quantity is accessible in the lab since it boils down to measuring the classical reflexion and transmission coefficients of the interface when a
+coherent state is sent toward the interface from the upstream region. Eventhough this feature is not triggered by quantum vacuum 
+fluctuations it is still a manifestation of the Hawking effect. To understand this one must compare the scenarios
+whether $\omega$ is in $[\omega_{gap}, \omega_{max}]$ or not. In the latter case, energy conservation is simply $\abs{S_{uu}}^2\abs{\alpha_u}^2+\abs{S_{d_1u}}\abs{\alpha_u}^2=\abs{\alpha_u}^2$ and reflects that each of the output channels
+carry a fraction of the incoming energy. While when $\omega \in [\omega_{gap}, \omega_{max}]$ the same condition reads $\abs{S_{uu}}^2\abs{\alpha_u}^2+\abs{S_{d_1u}}^2\abs{\alpha_u}^2-\abs{S_{d_2u}}^2\abs{\alpha_u}^2=\abs{\alpha_u}^2$ due to the negative energy mode.
+This directly implies $\abs{S_{uu}}^2\abs{\alpha_u}^2+\abs{S_{d_1u}}^2\abs{\alpha_u}^2\geq \abs{\alpha_u}^2$ which means that the two positive energy channels
+carry more energy than what was injected, the excess being compensated by the negative energy mode. This amplification means that the incoming 
+coherent state extracted energy from the transcritical region by exciting a negative energy mode.This is the same 
+argument that led to the prediction of rotationnal superradiance in black hole physics \cite{hawking_black_1972} as well as in classical electromagnetic systems \cite{zeldovich__1970}.
+
+\section{Conclusion}
+
+In this chapter, we have explored the theoretical framework underlying the observation of Hawking radiation in a polariton quantum fluid. Starting from the Gross-Pitaevskii equation, we derived the Bogoliubov spectrum of collective excitations, highlighting the rich variety of regimes depending on the fluid's density, velocity, and interaction strength. We demonstrated how the interplay between positive- and negative-energy modes leads to the possibility of particle creation at a transcritical interface, analogous to the Hawking effect in black hole physics.
+
+The quantization of Bogoliubov modes revealed the fundamental role of the scattering matrix in describing the mixing of positive- and negative-norm modes at the horizon. This mixing not only enables spontaneous emission from vacuum but also provides a framework to study stimulated emission, where coherent input states amplify the Hawking-like radiation. Importantly, we showed that the amplification of outgoing modes, driven by the presence of negative-energy modes, is a manifestation of superradiance, a phenomenon rooted in energy conservation.
+
+These results establish a robust theoretical foundation for the experimental investigation of analog Hawking radiation in polariton systems. By leveraging the unique properties of polariton fluids, such as their out-of-equilibrium nature and tunable parameters, this platform offers a promising avenue to probe fundamental aspects of quantum field theory in curved spacetime. In the next chapter, we will focus on the experimental implementation of these concepts and the challenges associated with observing Hawking radiation in practice.

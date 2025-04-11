@@ -24,6 +24,7 @@ Warning--missing publisher in grynberg_aspect_fabre
 Warning--empty year in carusotto_stimulatedfluid_2016
 Warning--empty year in hawking_black_1972
 Warning--empty year in hopfield_theory_1958
+Warning--empty year in isoard_quantum_2019
 Warning--empty year in kasprzak_boseeinstein_2006
 Warning--empty year in kittel_introduction_2005
 Warning--missing publisher in kittel_introduction_2005
@@ -33,6 +34,7 @@ Warning--missing school in maitre_thesis
 Warning--empty year in nguyen_acoustic_2015
 Warning--missing publisher in pitaevskij_bose-einstein_2016
 Warning--empty year in wavefront_shapping
+Warning--empty year in Recati_acousticHR_2009
 Warning--empty year in rousseaux_observation_2008
 Warning--empty year in steinhauer_observation_2016
 Warning--empty year in stepanov_dispersion_2019
@@ -40,45 +42,47 @@ Warning--empty year in unruh_experimental_1981
 Warning--empty year in Utsunomiya_fluidlightexp_2008
 Warning--empty year in weinfurtner_measurement_2011
 Warning--missing publisher in weisbuch_microcavities_1996
-You've used 51 entries,
+Warning--empty year in zeldovich__1970
+Warning--empty title in zeldovich__1970
+You've used 54 entries,
             3379 wiz_defined-function locations,
-            1005 strings with 17008 characters,
-and the built_in function-call counts, 67348 in all, are:
-= -- 6325
-> -- 2632
-< -- 250
-+ -- 2542
-- -- 752
-* -- 5069
-:= -- 6720
-add.period$ -- 164
-call.type$ -- 51
-change.case$ -- 473
-chr.to.int$ -- 52
-cite$ -- 79
-duplicate$ -- 6326
-empty$ -- 4028
-format.name$ -- 1304
-if$ -- 13297
+            1020 strings with 17445 characters,
+and the built_in function-call counts, 70082 in all, are:
+= -- 6583
+> -- 2709
+< -- 258
++ -- 2604
+- -- 775
+* -- 5262
+:= -- 7024
+add.period$ -- 172
+call.type$ -- 54
+change.case$ -- 493
+chr.to.int$ -- 55
+cite$ -- 86
+duplicate$ -- 6593
+empty$ -- 4212
+format.name$ -- 1345
+if$ -- 13841
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 615
-newline$ -- 273
-num.names$ -- 204
-pop$ -- 2452
+missing$ -- 643
+newline$ -- 287
+num.names$ -- 216
+pop$ -- 2565
 preamble$ -- 1
-purify$ -- 425
+purify$ -- 443
 quote$ -- 0
-skip$ -- 3875
+skip$ -- 4018
 stack$ -- 0
-substring$ -- 2491
-swap$ -- 5217
-text.length$ -- 250
+substring$ -- 2604
+swap$ -- 5417
+text.length$ -- 258
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 429
-warning$ -- 28
-while$ -- 323
+type$ -- 456
+warning$ -- 32
+while$ -- 341
 width$ -- 0
-write$ -- 698
-(There were 30 warnings)
+write$ -- 732
+(There were 34 warnings)
