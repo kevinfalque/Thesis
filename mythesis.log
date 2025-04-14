@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.7)  10 APR 2025 18:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.7)  14 APR 2025 16:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1466,7 +1466,7 @@ LaTeX Warning: Label `eq:steady_state' multiply defined.
 
 LaTeX Warning: Label `eq:inner_product' multiply defined.
 
-) (./chap_custom_st/chap_custom_st.aux) (./chap_correlation/chap_correlation.aux) (./appendices/appendices.aux))
+) (./chap_custom_st/chap_custom_st.aux) (./chap_stimulated_hawking/chap_stimulated_hawking.aux) (./chap_correlation/chap_correlation.aux) (./appendices/appendices.aux))
 \openout1 = `mythesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 173.
@@ -1688,7 +1688,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./appendices/SU.pdf, id=331, 400.18558pt x 169.0315pt>
+<./appendices/SU.pdf, id=347, 400.18558pt x 169.0315pt>
 File: ./appendices/SU.pdf Graphic file (type pdf)
 <use ./appendices/SU.pdf>
 Package pdftex.def Info: ./appendices/SU.pdf  used on input line 176.
@@ -1737,7 +1737,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `qhv' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<logo_lkb.pdf, id=332, 300.89021pt x 108.7357pt>
+<logo_lkb.pdf, id=348, 300.89021pt x 108.7357pt>
 File: logo_lkb.pdf Graphic file (type pdf)
 <use logo_lkb.pdf>
 Package pdftex.def Info: logo_lkb.pdf  used on input line 176.
@@ -1762,7 +1762,12 @@ Overfull \hbox (7.00812pt too wide) in paragraph at lines 176--176
 
 ] (./mythesis.toc [3
 
-{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}])
+{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}]
+Overfull \hbox (17.96782pt too wide) in paragraph at lines 64--64
+ [] [][][] []  
+ []
+
+)
 \tf@toc=\write7
 \openout7 = `mythesis.toc'.
 
@@ -1778,7 +1783,7 @@ Overfull \hbox (7.00812pt too wide) in paragraph at lines 176--176
 
 ] [2]
 Chapter 1.
-<chap_theory/fig/cavity_geometry.pdf, id=497, 317.96495pt x 135.27115pt>
+<chap_theory/fig/cavity_geometry.pdf, id=521, 317.96495pt x 135.27115pt>
 File: chap_theory/fig/cavity_geometry.pdf Graphic file (type pdf)
 <use chap_theory/fig/cavity_geometry.pdf>
 Package pdftex.def Info: chap_theory/fig/cavity_geometry.pdf  used on input line 77.
@@ -1789,7 +1794,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [3
 
 ]
-<chap_theory/fig/DBR.pdf, id=503, 542.03818pt x 203.9165pt>
+<chap_theory/fig/DBR.pdf, id=527, 542.03818pt x 203.9165pt>
 File: chap_theory/fig/DBR.pdf Graphic file (type pdf)
 <use chap_theory/fig/DBR.pdf>
 Package pdftex.def Info: chap_theory/fig/DBR.pdf  used on input line 106.
@@ -1802,12 +1807,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 2150) has occurred while \output is active []
 
  [5{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <./chap_theory/fig/DBR.pdf>] [6] [7]
-<chap_theory/fig/band_theory.pdf, id=952, 381.54683pt x 204.98853pt>
+<chap_theory/fig/band_theory.pdf, id=976, 381.54683pt x 204.98853pt>
 File: chap_theory/fig/band_theory.pdf Graphic file (type pdf)
 <use chap_theory/fig/band_theory.pdf>
 Package pdftex.def Info: chap_theory/fig/band_theory.pdf  used on input line 209.
 (pdftex.def)             Requested size: 381.5459pt x 204.988pt.
-<chap_theory/fig/DirectGapDisp.png, id=955, 795.9336pt x 569.0058pt>
+<chap_theory/fig/DirectGapDisp.png, id=979, 795.9336pt x 569.0058pt>
 File: chap_theory/fig/DirectGapDisp.png Graphic file (type png)
 <use chap_theory/fig/DirectGapDisp.png>
 Package pdftex.def Info: chap_theory/fig/DirectGapDisp.png  used on input line 222.
@@ -1828,7 +1833,7 @@ Package siunitx Warning: Unit macro \angstrom has been deprecated in this
 (siunitx)                \DeclareSIUnit\angstrom{\text {Å}}
 
 [9 <./chap_theory/fig/DirectGapDisp.png>]
-<chap_theory/fig/intra-inter-band-processes.pdf, id=977, 691.8701pt x 182.04956pt>
+<chap_theory/fig/intra-inter-band-processes.pdf, id=1001, 691.8701pt x 182.04956pt>
 File: chap_theory/fig/intra-inter-band-processes.pdf Graphic file (type pdf)
 <use chap_theory/fig/intra-inter-band-processes.pdf>
 Package pdftex.def Info: chap_theory/fig/intra-inter-band-processes.pdf  used on input line 258.
@@ -1838,13 +1843,13 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 30
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [11]
-<chap_theory/fig/intra_band_dressed_bubbles.pdf, id=1003, 497.17336pt x 229.39989pt>
+<chap_theory/fig/intra_band_dressed_bubbles.pdf, id=1027, 497.17336pt x 229.39989pt>
 File: chap_theory/fig/intra_band_dressed_bubbles.pdf Graphic file (type pdf)
 <use chap_theory/fig/intra_band_dressed_bubbles.pdf>
 Package pdftex.def Info: chap_theory/fig/intra_band_dressed_bubbles.pdf  used on input line 322.
 (pdftex.def)             Requested size: 497.17213pt x 229.39932pt.
  [12{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} <./chap_theory/fig/intra_band_dressed_bubbles.pdf>] [13] [14] [15] [16]
-<chap_theory/fig/InGaAs.pdf, id=1101, 536.11926pt x 361.35pt>
+<chap_theory/fig/InGaAs.pdf, id=1125, 536.11926pt x 361.35pt>
 File: chap_theory/fig/InGaAs.pdf Graphic file (type pdf)
 <use chap_theory/fig/InGaAs.pdf>
 Package pdftex.def Info: chap_theory/fig/InGaAs.pdf  used on input line 542.
@@ -1854,7 +1859,7 @@ Package pdftex.def Info: chap_theory/fig/InGaAs.pdf  used on input line 542.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 734.
 
-<chap_theory/fig/polariton_cavity.pdf, id=1243, 590.62527pt x 215.16525pt>
+<chap_theory/fig/polariton_cavity.pdf, id=1267, 590.62527pt x 215.16525pt>
 File: chap_theory/fig/polariton_cavity.pdf Graphic file (type pdf)
 <use chap_theory/fig/polariton_cavity.pdf>
 Package pdftex.def Info: chap_theory/fig/polariton_cavity.pdf  used on input line 736.
@@ -1864,13 +1869,13 @@ Package pdftex.def Info: chap_theory/fig/polariton_cavity.pdf  used on input lin
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 851.
 
-<chap_theory/fig/wedge_and_hopfields.pdf, id=1287, 1247.99661pt x 963.43158pt>
+<chap_theory/fig/wedge_and_hopfields.pdf, id=1311, 1247.99661pt x 963.43158pt>
 File: chap_theory/fig/wedge_and_hopfields.pdf Graphic file (type pdf)
 <use chap_theory/fig/wedge_and_hopfields.pdf>
 Package pdftex.def Info: chap_theory/fig/wedge_and_hopfields.pdf  used on input line 853.
 (pdftex.def)             Requested size: 1247.99358pt x 963.42923pt.
 [26] [27 <./chap_theory/fig/wedge_and_hopfields.pdf>] [28]
-<chap_theory/fig/anticrossing.pdf, id=1413, 402.74799pt x 247.7531pt>
+<chap_theory/fig/anticrossing.pdf, id=1437, 402.74799pt x 247.7531pt>
 File: chap_theory/fig/anticrossing.pdf Graphic file (type pdf)
 <use chap_theory/fig/anticrossing.pdf>
 Package pdftex.def Info: chap_theory/fig/anticrossing.pdf  used on input line 935.
@@ -1881,7 +1886,7 @@ Overfull \hbox (17.09398pt too wide) detected at line 1151
  []
 
 [34]
-<chap_theory/fig/polariton_bec.pdf, id=1494, 1540.6787pt x 698.59769pt>
+<chap_theory/fig/polariton_bec.pdf, id=1518, 1540.6787pt x 698.59769pt>
 File: chap_theory/fig/polariton_bec.pdf Graphic file (type pdf)
 <use chap_theory/fig/polariton_bec.pdf>
 Package pdftex.def Info: chap_theory/fig/polariton_bec.pdf  used on input line 1181.
@@ -1890,13 +1895,13 @@ Package pdftex.def Info: chap_theory/fig/polariton_bec.pdf  used on input line 1
 Underfull \vbox (badness 6477) has occurred while \output is active []
 
  [35] [36 <./chap_theory/fig/polariton_bec.pdf>]
-<chap_theory/fig/bistability_grynberg.pdf, id=1521, 1464.77672pt x 616.55344pt>
+<chap_theory/fig/bistability_grynberg.pdf, id=1545, 1464.77672pt x 616.55344pt>
 File: chap_theory/fig/bistability_grynberg.pdf Graphic file (type pdf)
 <use chap_theory/fig/bistability_grynberg.pdf>
 Package pdftex.def Info: chap_theory/fig/bistability_grynberg.pdf  used on input line 1205.
 (pdftex.def)             Requested size: 1464.77315pt x 616.55193pt.
  [37 <./chap_theory/fig/bistability_grynberg.pdf>] [38]
-<chap_theory/fig/bistability.pdf, id=1568, 1131.22626pt x 1043.9pt>
+<chap_theory/fig/bistability.pdf, id=1592, 1131.22626pt x 1043.9pt>
 File: chap_theory/fig/bistability.pdf Graphic file (type pdf)
 <use chap_theory/fig/bistability.pdf>
 Package pdftex.def Info: chap_theory/fig/bistability.pdf  used on input line 1288.
@@ -1959,7 +1964,7 @@ See the caption package documentation for explanation.
 
 LaTeX Warning: Reference `fig:bist_et_bogo' on page 57 undefined on input line 706.
 
-<chap_AG_theory/fig/bist_et_bogo.pdf, id=1847, 880.28876pt x 1223.57124pt>
+<chap_AG_theory/fig/bist_et_bogo.pdf, id=1872, 880.28876pt x 1223.57124pt>
 File: chap_AG_theory/fig/bist_et_bogo.pdf Graphic file (type pdf)
 <use chap_AG_theory/fig/bist_et_bogo.pdf>
 Package pdftex.def Info: chap_AG_theory/fig/bist_et_bogo.pdf  used on input line 711.
@@ -1999,13 +2004,13 @@ See the caption package documentation for explanation.
 
 LaTeX Warning: Reference `fig:bist_et_bogo' on page 61 undefined on input line 795.
 
-<chap_AG_theory/fig/bogo_gap_supersonic_dispersion.pdf, id=2385, 445.90591pt x 279.68492pt>
+<chap_AG_theory/fig/bogo_gap_supersonic_dispersion.pdf, id=2409, 445.90591pt x 279.68492pt>
 File: chap_AG_theory/fig/bogo_gap_supersonic_dispersion.pdf Graphic file (type pdf)
 <use chap_AG_theory/fig/bogo_gap_supersonic_dispersion.pdf>
 Package pdftex.def Info: chap_AG_theory/fig/bogo_gap_supersonic_dispersion.pdf  used on input line 800.
 (pdftex.def)             Requested size: 445.90483pt x 279.68423pt.
 [61] [62 <./chap_AG_theory/fig/bogo_gap_supersonic_dispersion.pdf>] [63] [64]
-<chap_AG_theory/fig/bogo_gap_dispersion.pdf, id=2475, 588.27782pt x 279.68492pt>
+<chap_AG_theory/fig/bogo_gap_dispersion.pdf, id=2499, 588.27782pt x 279.68492pt>
 File: chap_AG_theory/fig/bogo_gap_dispersion.pdf Graphic file (type pdf)
 <use chap_AG_theory/fig/bogo_gap_dispersion.pdf>
 Package pdftex.def Info: chap_AG_theory/fig/bogo_gap_dispersion.pdf  used on input line 914.
@@ -2055,13 +2060,13 @@ Overfull \hbox (25.13184pt too wide) has occurred while \output is active
  []
 
 [74]
-<chap_custom_st/fig/target_velocity.pdf, id=2687, 794.97pt x 578.16pt>
+<chap_custom_st/fig/target_velocity.pdf, id=2712, 794.97pt x 578.16pt>
 File: chap_custom_st/fig/target_velocity.pdf Graphic file (type pdf)
 <use chap_custom_st/fig/target_velocity.pdf>
 Package pdftex.def Info: chap_custom_st/fig/target_velocity.pdf  used on input line 73.
 (pdftex.def)             Requested size: 794.96806pt x 578.15858pt.
  [75 <./chap_custom_st/fig/target_velocity.pdf>]
-<chap_custom_st/fig/wavefront_shapping.pdf, id=2722, 1114.33269pt x 667.81802pt>
+<chap_custom_st/fig/wavefront_shapping.pdf, id=2746, 1114.33269pt x 667.81802pt>
 File: chap_custom_st/fig/wavefront_shapping.pdf Graphic file (type pdf)
 <use chap_custom_st/fig/wavefront_shapping.pdf>
 Package pdftex.def Info: chap_custom_st/fig/wavefront_shapping.pdf  used on input line 104.
@@ -2072,7 +2077,7 @@ Overfull \hbox (25.13184pt too wide) has occurred while \output is active
  []
 
 [76] [77 <./chap_custom_st/fig/wavefront_shapping.pdf>]
-<chap_custom_st/fig/phase_example.pdf, id=10270, 578.16pt x 216.81pt>
+<chap_custom_st/fig/phase_example.pdf, id=10294, 578.16pt x 216.81pt>
 File: chap_custom_st/fig/phase_example.pdf Graphic file (type pdf)
 <use chap_custom_st/fig/phase_example.pdf>
 Package pdftex.def Info: chap_custom_st/fig/phase_example.pdf  used on input line 140.
@@ -2083,7 +2088,7 @@ Overfull \hbox (25.13184pt too wide) has occurred while \output is active
  []
 
 [78 <./chap_custom_st/fig/phase_example.pdf>]
-<chap_custom_st/fig/setup_bogoliubov.pdf, id=10303, 283.36856pt x 299.5073pt>
+<chap_custom_st/fig/setup_bogoliubov.pdf, id=10327, 283.36856pt x 299.5073pt>
 File: chap_custom_st/fig/setup_bogoliubov.pdf Graphic file (type pdf)
 <use chap_custom_st/fig/setup_bogoliubov.pdf>
 Package pdftex.def Info: chap_custom_st/fig/setup_bogoliubov.pdf  used on input line 157.
@@ -2101,7 +2106,7 @@ Overfull \hbox (25.13184pt too wide) has occurred while \output is active
  []
 
 [80]
-<chap_custom_st/fig/set_up_spacetime.pdf, id=10847, 601.69617pt x 517.3686pt>
+<chap_custom_st/fig/set_up_spacetime.pdf, id=10871, 601.69617pt x 517.3686pt>
 File: chap_custom_st/fig/set_up_spacetime.pdf Graphic file (type pdf)
 <use chap_custom_st/fig/set_up_spacetime.pdf>
 Package pdftex.def Info: chap_custom_st/fig/set_up_spacetime.pdf  used on input line 210.
@@ -2115,7 +2120,7 @@ Overfull \hbox (25.13184pt too wide) has occurred while \output is active
 
 LaTeX Warning: Reference `eq:norm' on page 83 undefined on input line 244.
 
-<chap_custom_st/fig/homogeneous_doppler.pdf, id=11395, 722.7pt x 433.62pt>
+<chap_custom_st/fig/homogeneous_doppler.pdf, id=11419, 722.7pt x 433.62pt>
 File: chap_custom_st/fig/homogeneous_doppler.pdf Graphic file (type pdf)
 <use chap_custom_st/fig/homogeneous_doppler.pdf>
 Package pdftex.def Info: chap_custom_st/fig/homogeneous_doppler.pdf  used on input line 251.
@@ -2123,7 +2128,7 @@ Package pdftex.def Info: chap_custom_st/fig/homogeneous_doppler.pdf  used on inp
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<chap_custom_st/fig/supersonic_homogenous.pdf, id=11400, 578.16pt x 289.08pt>
+<chap_custom_st/fig/supersonic_homogenous.pdf, id=11424, 578.16pt x 289.08pt>
 File: chap_custom_st/fig/supersonic_homogenous.pdf Graphic file (type pdf)
 <use chap_custom_st/fig/supersonic_homogenous.pdf>
 Package pdftex.def Info: chap_custom_st/fig/supersonic_homogenous.pdf  used on input line 288.
@@ -2142,7 +2147,7 @@ Overfull \hbox (25.13184pt too wide) has occurred while \output is active
  []
 
 [86]
-<chap_custom_st/fig/bh_smooth.pdf, id=11552, 1156.3211pt x 814.92761pt>
+<chap_custom_st/fig/bh_smooth.pdf, id=11576, 1156.3211pt x 814.92761pt>
 File: chap_custom_st/fig/bh_smooth.pdf Graphic file (type pdf)
 <use chap_custom_st/fig/bh_smooth.pdf>
 Package pdftex.def Info: chap_custom_st/fig/bh_smooth.pdf  used on input line 350.
@@ -2153,7 +2158,7 @@ Overfull \hbox (25.13184pt too wide) has occurred while \output is active
  []
 
 [88 <./chap_custom_st/fig/bh_smooth.pdf>]
-<chap_custom_st/fig/critical_velocity_map.pdf, id=13908, 433.62pt x 433.62pt>
+<chap_custom_st/fig/critical_velocity_map.pdf, id=13932, 433.62pt x 433.62pt>
 File: chap_custom_st/fig/critical_velocity_map.pdf Graphic file (type pdf)
 <use chap_custom_st/fig/critical_velocity_map.pdf>
 Package pdftex.def Info: chap_custom_st/fig/critical_velocity_map.pdf  used on input line 414.
@@ -2171,18 +2176,18 @@ Overfull \hbox (25.13184pt too wide) has occurred while \output is active
  []
 
 [90 <./chap_custom_st/fig/critical_velocity_map.pdf>]
-<chap_custom_st/fig/max_freq_hawking.pdf, id=13961, 578.16pt x 289.08pt>
+<chap_custom_st/fig/max_freq_hawking.pdf, id=13985, 578.16pt x 289.08pt>
 File: chap_custom_st/fig/max_freq_hawking.pdf Graphic file (type pdf)
 <use chap_custom_st/fig/max_freq_hawking.pdf>
 Package pdftex.def Info: chap_custom_st/fig/max_freq_hawking.pdf  used on input line 445.
 (pdftex.def)             Requested size: 578.15858pt x 289.07928pt.
  [91 <./chap_custom_st/fig/max_freq_hawking.pdf>]
-<chap_custom_st/fig/bistab_to_gn.pdf, id=14005, 343.2825pt x 318.18875pt>
+<chap_custom_st/fig/bistab_to_gn.pdf, id=14029, 343.2825pt x 318.18875pt>
 File: chap_custom_st/fig/bistab_to_gn.pdf Graphic file (type pdf)
 <use chap_custom_st/fig/bistab_to_gn.pdf>
 Package pdftex.def Info: chap_custom_st/fig/bistab_to_gn.pdf  used on input line 477.
 (pdftex.def)             Requested size: 343.28165pt x 318.18796pt.
-<chap_custom_st/fig/bh_steep.pdf, id=14010, 1250.32599pt x 1211.13734pt>
+<chap_custom_st/fig/bh_steep.pdf, id=14034, 1250.32599pt x 1211.13734pt>
 File: chap_custom_st/fig/bh_steep.pdf Graphic file (type pdf)
 <use chap_custom_st/fig/bh_steep.pdf>
 Package pdftex.def Info: chap_custom_st/fig/bh_steep.pdf  used on input line 494.
@@ -2193,12 +2198,12 @@ Overfull \hbox (25.13184pt too wide) has occurred while \output is active
  []
 
 [92 <./chap_custom_st/fig/bistab_to_gn.pdf>] [93 <./chap_custom_st/fig/bh_steep.pdf>]
-<chap_custom_st/fig/qnm_target_velocity.pdf, id=15118, 578.16pt x 216.81pt>
+<chap_custom_st/fig/qnm_target_velocity.pdf, id=15143, 578.16pt x 216.81pt>
 File: chap_custom_st/fig/qnm_target_velocity.pdf Graphic file (type pdf)
 <use chap_custom_st/fig/qnm_target_velocity.pdf>
 Package pdftex.def Info: chap_custom_st/fig/qnm_target_velocity.pdf  used on input line 511.
 (pdftex.def)             Requested size: 578.15858pt x 216.80946pt.
-<chap_custom_st/fig/bh_qnm.pdf, id=15121, 1258.02774pt x 692.28963pt>
+<chap_custom_st/fig/bh_qnm.pdf, id=15146, 1258.02774pt x 692.28963pt>
 File: chap_custom_st/fig/bh_qnm.pdf Graphic file (type pdf)
 <use chap_custom_st/fig/bh_qnm.pdf>
 Package pdftex.def Info: chap_custom_st/fig/bh_qnm.pdf  used on input line 527.
@@ -2213,34 +2218,78 @@ Overfull \hbox (25.13184pt too wide) has occurred while \output is active
  []
 
 [94 <./chap_custom_st/fig/qnm_target_velocity.pdf> <./chap_custom_st/fig/bh_qnm.pdf>]) [95]
-\openout2 = `chap_correlation/chap_correlation.aux'.
+\openout2 = `chap_stimulated_hawking/chap_stimulated_hawking.aux'.
 
- (./chap_correlation/chap_correlation.tex [96
+ (./chap_stimulated_hawking/chap_stimulated_hawking.tex [96
 
 
 
 
 ]
 Chapter 4.
-) [97] [98
+[97]
+<chap_stimulated_hawking/fig/typical_dens_2D.pdf, id=15275, 545.27493pt x 517.2758pt>
+File: chap_stimulated_hawking/fig/typical_dens_2D.pdf Graphic file (type pdf)
+<use chap_stimulated_hawking/fig/typical_dens_2D.pdf>
+Package pdftex.def Info: chap_stimulated_hawking/fig/typical_dens_2D.pdf  used on input line 36.
+(pdftex.def)             Requested size: 545.27359pt x 517.27454pt.
+<chap_stimulated_hawking/fig/bh_k_space.pdf, id=15280, 532.31802pt x 326.39877pt>
+File: chap_stimulated_hawking/fig/bh_k_space.pdf Graphic file (type pdf)
+<use chap_stimulated_hawking/fig/bh_k_space.pdf>
+Package pdftex.def Info: chap_stimulated_hawking/fig/bh_k_space.pdf  used on input line 63.
+(pdftex.def)             Requested size: 532.31673pt x 326.39796pt.
+
+
+LaTeX Warning: Reference `fig:typical_dens_2D)' on page 98 undefined on input line 68.
+
+
+LaTeX Warning: Reference `fig:typical_dens_2D)' on page 98 undefined on input line 68.
+
+
+LaTeX Warning: Reference `fig:typical_dens_2D)' on page 98 undefined on input line 68.
+
+
+LaTeX Warning: Reference `fig:typical_dens_2D)' on page 98 undefined on input line 68.
+
+
+Overfull \hbox (133.47423pt too wide) has occurred while \output is active
+\T1/lmr/m/n/10.95 98 \T1/lmr/m/scsl/10.95 Chapter 4.  Experimental observation of stimulated Hawking radiation in a polariton quantum fluid
+ []
+
+[98] [99 <./chap_stimulated_hawking/fig/typical_dens_2D.pdf>]
+Overfull \hbox (138.94922pt too wide) has occurred while \output is active
+\T1/lmr/m/n/10.95 100 \T1/lmr/m/scsl/10.95 Chapter 4.  Experimental observation of stimulated Hawking radiation in a polariton quantum fluid
+ []
+
+[100 <./chap_stimulated_hawking/fig/bh_k_space.pdf>]) [101]
+\openout2 = `chap_correlation/chap_correlation.aux'.
+
+ (./chap_correlation/chap_correlation.tex [102
 
 
 
-] [99] [100]
+
+]
+Chapter 5.
+) [103] [104
+
+
+
+] [105] [106]
 \openout2 = `appendices/appendices.aux'.
 
  (./appendices/appendices.tex
 Appendix A.
-<appendices/fig0/SLMprinciple.png, id=15270, 383.7537pt x 129.1224pt>
+<appendices/fig0/SLMprinciple.png, id=15519, 383.7537pt x 129.1224pt>
 File: appendices/fig0/SLMprinciple.png Graphic file (type png)
 <use appendices/fig0/SLMprinciple.png>
 Package pdftex.def Info: appendices/fig0/SLMprinciple.png  used on input line 21.
 (pdftex.def)             Requested size: 383.75275pt x 129.12209pt.
-[101
+[107
 
 
 ]
-<appendices/fig0/slm_typical.pdf, id=15281, 445.4099pt x 266.31961pt>
+<appendices/fig0/slm_typical.pdf, id=15530, 445.4099pt x 266.31961pt>
 File: appendices/fig0/slm_typical.pdf Graphic file (type pdf)
 <use appendices/fig0/slm_typical.pdf>
 Package pdftex.def Info: appendices/fig0/slm_typical.pdf  used on input line 36.
@@ -2250,7 +2299,7 @@ Overfull \hbox (43.82135pt too wide) in paragraph at lines 35--39
  [] 
  []
 
-) [102 <./appendices/fig0/SLMprinciple.png>] [103 <./appendices/fig0/slm_typical.pdf>] [104
+) [108 <./appendices/fig0/SLMprinciple.png>] [109 <./appendices/fig0/slm_typical.pdf>] [110
 
 
 
@@ -2269,10 +2318,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [105
+ [111
 
 
-] [106] [107]) [108]
+] [112] [113]) [114]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -2305,23 +2354,23 @@ Package microtype Info: Loading generic protrusion settings for font family
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [109
+ [115
 
 
 ]
 *** building backcover ***
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 217.
+(Font)              <14.4> on input line 218.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 217.
+(Font)              <10> on input line 218.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 217.
+(Font)              <7> on input line 218.
 
 Package natbib Warning: There were undefined citations.
 
-[110
+[116
 
-] (./mythesis.aux (./chap_theory/polariton_theory.aux) (./chap_AG_theory/chap_AG_theory.aux) (./chap_custom_st/chap_custom_st.aux) (./chap_correlation/chap_correlation.aux) (./appendices/appendices.aux))
+] (./mythesis.aux (./chap_theory/polariton_theory.aux) (./chap_AG_theory/chap_AG_theory.aux) (./chap_custom_st/chap_custom_st.aux) (./chap_stimulated_hawking/chap_stimulated_hawking.aux) (./chap_correlation/chap_correlation.aux) (./appendices/appendices.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -2334,23 +2383,23 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `mythesis.out' has not changed.
-(rerunfilecheck)             Checksum: 278441D16F242D5F8184F5FB88E412C9;16884.
+(rerunfilecheck)             Checksum: E489CFEE23E126A45BF6D629D0E8B16A;18395.
 Package rerunfilecheck Info: File `mythesis.brf' has not changed.
-(rerunfilecheck)             Checksum: CEB9C668B8AB20982F96F94AFA13553F;5836.
+(rerunfilecheck)             Checksum: FD4EDC2E4508801D6FBF3B97142C4CB3;5840.
  ) 
 Here is how much of TeX's memory you used:
- 50585 strings out of 474116
- 1044813 string characters out of 5743689
+ 50656 strings out of 474116
+ 1047548 string characters out of 5743689
  1951187 words of memory out of 5000000
- 70984 multiletter control sequences out of 15000+600000
- 733145 words of font info for 406 fonts, out of 8000000 for 9000
+ 71025 multiletter control sequences out of 15000+600000
+ 733731 words of font info for 411 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,24n,145p,2041b,1192s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmb10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbo10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsco10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmib7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb>
-Output written on mythesis.pdf (116 pages, 14716220 bytes).
+Output written on mythesis.pdf (122 pages, 15508908 bytes).
 PDF statistics:
- 15733 PDF objects out of 18468 (max. 8388607)
- 10986 compressed objects within 110 object streams
- 500 named destinations out of 1000 (max. 500000)
- 99723 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 15988 PDF objects out of 18468 (max. 8388607)
+ 11167 compressed objects within 112 object streams
+ 512 named destinations out of 1000 (max. 500000)
+ 99765 words of extra memory for PDF output out of 106986 (max. 10000000)
 

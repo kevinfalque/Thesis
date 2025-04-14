@@ -5,6 +5,7 @@ The style file: assets/thfrnatay-href.bst
 A level-1 auxiliary file: chap_theory/polariton_theory.aux
 A level-1 auxiliary file: chap_AG_theory/chap_AG_theory.aux
 A level-1 auxiliary file: chap_custom_st/chap_custom_st.aux
+A level-1 auxiliary file: chap_stimulated_hawking/chap_stimulated_hawking.aux
 A level-1 auxiliary file: chap_correlation/chap_correlation.aux
 A level-1 auxiliary file: appendices/appendices.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -46,7 +47,7 @@ Warning--empty year in zeldovich__1970
 Warning--empty title in zeldovich__1970
 You've used 54 entries,
             3379 wiz_defined-function locations,
-            1020 strings with 17445 characters,
+            1021 strings with 17496 characters,
 and the built_in function-call counts, 70082 in all, are:
 = -- 6583
 > -- 2709

@@ -61,12 +61,16 @@
 \contentsline {subsection}{\numberline {3.4.4}Quasi-normal mode configuration}{94}{subsection.3.4.4}%
 \contentsline {section}{\numberline {3.5}Conclusion}{95}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}Outlook}{95}{subsection.3.5.1}%
-\contentsline {chapter}{\numberline {4}Bogoliubov modes correlations in polariton quantum fluid}{97}{chapter.4}%
-\contentsline {part}{Appendices}{99}{section*.34}%
-\contentsline {chapter}{\numberline {A}Mean field shaping and monitoring}{101}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Phase printing}{101}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Spatial light modulator.}{101}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Phase measurement}{102}{subsection.A.1.2}%
-\contentsline {subsection}{\numberline {A.1.3}Off axis inteferometry}{102}{subsection.A.1.3}%
-\contentsline {subsection}{\numberline {A.1.4}Controlling the local intensity}{102}{subsection.A.1.4}%
-\contentsline {part}{Bibliography}{105}{section*.38}%
+\contentsline {chapter}{\numberline {4}Experimental observation of stimulated Hawking radiation in a polariton quantum fluid}{97}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Interferometric measurement of the scattering matrix }{97}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Challenges of the measurement}{98}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Interferometric Reconstruction of the Fluctuation Field}{101}{subsection.4.1.2}%
+\contentsline {chapter}{\numberline {5}Bogoliubov modes correlations in polariton quantum fluid}{103}{chapter.5}%
+\contentsline {part}{Appendices}{105}{section*.36}%
+\contentsline {chapter}{\numberline {A}Mean field shaping and monitoring}{107}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Phase printing}{107}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Spatial light modulator.}{107}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Phase measurement}{108}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Off axis inteferometry}{108}{subsection.A.1.3}%
+\contentsline {subsection}{\numberline {A.1.4}Controlling the local intensity}{108}{subsection.A.1.4}%
+\contentsline {part}{Bibliography}{111}{section*.40}%
