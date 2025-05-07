@@ -499,7 +499,7 @@ expression for the fluctuations of the order parameter is :
 \end{equation}
 \bigskip
 
-\textbf{Particle-hole symmetry.} Under this form one might be tempted to interpret the fluctuations order parameter has a superposition of plane waves with opposite directions and frequencies.
+\textbf{Particle-hole symmetry.} Under this form one might be tempted to interpret the fluctuations order parameter has a superposition of independent plane waves with opposite directions and frequencies.
 This would be a mistake. Indeed, the coefficient $u_k$ and $v_k^*$ are coupled through the Bogoliubov matrix and respect the particle hole symmetry \autoref{eq:symetry_bog_2}. The first term
 can be interpreted as the addition of a particle with energy $\hbar\omega_k$ and momentum $\hbar\kbf$ while the second term can be interpreted as the addition of a hole with energy $-\hbar\omega_k^*$ and momentum $-\hbar\kbf$. The coupling
 between the two terms reflect that a fluctuation of the system is particle-hole hybrid excitation, while the norm $\bra{\cdot}\ket{\cdot}_B$ of the mode reflects the relative weight of the particle and hole components.
@@ -963,7 +963,7 @@ For instance, for the case of an incoming mode from the upstream region, the sca
         U_{k^\mathrm{out}_{u}} \\
         V_{k^\mathrm{out}_{u}}
     \end{pmatrix} \ \mathrm{for} \ x\leq x_h
-\end{equation} 
+\end{equation}  
 
 \item\begin{equation}
     \begin{pmatrix}
@@ -1063,7 +1063,8 @@ which is the usual bosonic commutation relation for positive norm modes while fo
 norm at the cost of a redundancy.
 
 \begin{equation}
-    \delta\hat{\psi}(x,t) =\sum_{k\in S_+}\left[u_k(x)\bk e^{-i\omega_k t}+ v^*_k(x)\bkdag e^{i\omega_k t}\right] + \sum_{k\in S_-}\left[u_k(x)\bkdag e^{-i\omega_k t}+ v^*_k(x)\bkdag e^{i\omega_k t}\right]
+    \delta\hat{\psi}(x,t) =\sum_{k\in S_+}\left[u_k(x)\bk e^{-i\omega_k t}+ v^*_k(x)\bkdag e^{i\omega_k t}\right] + \sum_{k\in S_-}\left[u_k(x)\bkdag e^{-i\omega_k t}+ v^*_k(x)\bk e^{i\omega_k t}\right]
+    \label{eq:fluctuation_field_local_modes}
 \end{equation}
 This writting has the advantage of making explicit that for negative norm modes the frequency $\omega_k$ is associated to annihilation operators reflecting the particle-hole symmetry :
 the creation of a particle a yields the same contribution as the annihilation of a hole.
@@ -1173,15 +1174,9 @@ the negative energy mode $d_2$ is present and yields a non zero emission from va
 \subsection{Stimulated emission}
 
 Consider a coherent state input state $\ket{\alpha_{in}}$ in the upstream region eigenstate of the annihilation operator $\hat{a}_u$ with eigenvalue $\alpha_u \in \mathbb{C}$.
-A convenient writting is to express the coherent state as a displaced vacuum $\ket{\alpha_{in}}=D_u(\alpha)\ket{0_{in}}$ where $D(_u\alpha)=e^{\alpha \hat{a}_u^\dagger-\alpha^*\hat{a}_u}$ is the displacement operator relative to the 
-$\hat{a}_u$ operator. All the other input state are left in vacuum which gives the overall input product state :
-
-\begin{equation}
-    \ket{\alpha_{in}}=\ket{\alpha_u}\otimes\ket{0_{d1}}\otimes\ket{0_{d2}} = D_u(\alpha)\ket{0_{in}}.
-\end{equation}
 By just using that $\hat{a}_u\ket{\alpha_{in}}=\alpha_u\ket{\alpha_{in}}$ the expectation value in this state is straightfrowardly computed as :
 \begin{equation}
-    \bra{\alpha_{in}}\hat{N}_u^{out}\ket{\alpha_{in}} = \abs{S_{uu}}^2\abs{\alpha_u}^2 + \abs{S_{ud_2}}^2
+    \bra{\alpha_{in}}\hat{N}_u^{out}\ket{\alpha_{in}} = \abs{S_{uu}}^2\abs{\alpha_u}^2 + \abs{S_{ud_2}}^2\abs{\alpha_u}^2
     \label{eq:stimulated_expectation_value}
 \end{equation}
 The presence of a coherent input state give rise to an additionnal term $\abs{S_{uu}}^2\abs{\alpha_u}^2$ which is the "classical" reflexion of the input mode on the interface.
@@ -1216,6 +1211,6 @@ argument that led to the prediction of rotationnal superradiance in black hole p
 
 In this chapter, we have explored the theoretical framework underlying the observation of Hawking radiation in a polariton quantum fluid. Starting from the Gross-Pitaevskii equation, we derived the Bogoliubov spectrum of collective excitations, highlighting the rich variety of regimes depending on the fluid's density, velocity, and interaction strength. We demonstrated how the interplay between positive- and negative-energy modes leads to the possibility of particle creation at a transcritical interface, analogous to the Hawking effect in black hole physics.
 
-The quantization of Bogoliubov modes revealed the fundamental role of the scattering matrix in describing the mixing of positive- and negative-norm modes at the horizon. This mixing not only enables spontaneous emission from vacuum but also provides a framework to study stimulated emission, where coherent input states amplify the Hawking-like radiation. Importantly, we showed that the amplification of outgoing modes, driven by the presence of negative-energy modes, is a manifestation of superradiance, a phenomenon rooted in energy conservation.
+The quantization of Bogoliubov modes revealed the fundamental role of the scattering matrix in describing the mixing of positive- and negative-norm modes at the horizon. This mixing not only enables spontaneous emission from vacuum but also provides a framework to study stimulated emission, where coherent input states amplify the Hawking-like radiation. Importantly, we showed that the amplification of outgoing modes is driven by the presence of negative-energy modes.
 
-These results establish a robust theoretical foundation for the experimental investigation of analog Hawking radiation in polariton systems. By leveraging the unique properties of polariton fluids, such as their out-of-equilibrium nature and tunable parameters, this platform offers a promising avenue to probe fundamental aspects of quantum field theory in curved spacetime. In the next chapter, we will focus on the experimental implementation of these concepts and the challenges associated with observing Hawking radiation in practice.
+These results establish a theoretical foundation for the experimental investigation of analog Hawking radiation in polariton systems. By leveraging the properties of polariton fluids, such as their out-of-equilibrium nature and tunable parameters, this platform offers a promising avenue to probe fundamental aspects of quantum field theory in curved spacetime. In the next chapter, we will focus on the experimental implementation of these concepts and the challenges associated with observing Hawking radiation in practice.

@@ -1,4 +1,4 @@
-\begin{thebibliography}{54}
+\begin{thebibliography}{55}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibnamefont}[1]{\textsc{#1}}
 \providecommand{\bibfnamefont}[1]{#1}
@@ -279,6 +279,11 @@
 \newblock \emph{Microcavities and Photonic Bandgaps: Physics and Applications}.
 \newblock ISBN 978-94-009-0313-5.
 \newblock \urlprefix\url{https://link.springer.com/book/10.1007/978-94-009-0313-5}.
+
+\bibitem[{Wouters \emph{et~al.}(2008)Wouters, Carusotto \& Ciuti}]{carusotto_inhomogeneous_2008}
+\bibfnamefont{Michiel} \bibnamefont{Wouters}, \bibfnamefont{Iacopo} \bibnamefont{Carusotto} \& \bibfnamefont{Cristiano} \bibnamefont{Ciuti} 2008.
+\newblock \enquote{Spatial and spectral shape of inhomogeneous nonequilibrium exciton-polariton condensates}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRevB.77.115340}{ \emph{Phys. Rev. B} \textbf{77}, p. 115\,340}.
 
 \bibitem[{Zel'dovich()}]{zeldovich__1970}
 \bibfnamefont{Ya.~B.} \bibnamefont{Zel'dovich}.
