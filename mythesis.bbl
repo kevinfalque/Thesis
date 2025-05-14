@@ -1,4 +1,4 @@
-\begin{thebibliography}{55}
+\begin{thebibliography}{57}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibnamefont}[1]{\textsc{#1}}
 \providecommand{\bibfnamefont}[1]{#1}
@@ -15,6 +15,11 @@
 \bibfnamefont{Carlos} \bibnamefont{Barceló}, \bibfnamefont{Stefano} \bibnamefont{Liberati}, \bibfnamefont{Sebastiano} \bibnamefont{Sonego} \& \bibfnamefont{Matt} \bibnamefont{Visser}.
 \newblock \enquote{Hawking-like radiation does not require a trapped region}.
 \newblock \href{http://dx.doi.org/10.1103/PhysRevLett.97.171301}{ \emph{Physical Review Letters} \textbf{97}(17)}.
+
+\bibitem[{Brady \emph{et~al.}(2022)Brady, Agullo \& Kranas}]{agullo_symplectic_2022}
+\bibfnamefont{Anthony~J.} \bibnamefont{Brady}, \bibfnamefont{Ivan} \bibnamefont{Agullo} \& \bibfnamefont{Dimitrios} \bibnamefont{Kranas} 2022.
+\newblock \enquote{Symplectic circuits, entanglement, and stimulated hawking radiation in analogue gravity}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRevD.106.105021}{ \emph{Phys. Rev. D} \textbf{106}, p. 105\,021}.
 
 \bibitem[{Carusotto \& Ciuti(2013)}]{carusotto_quantum_2013}
 \bibfnamefont{Iacopo} \bibnamefont{Carusotto} \& \bibfnamefont{Cristiano} \bibnamefont{Ciuti} 2013.
@@ -86,6 +91,11 @@
 \bibfnamefont{Ir\'en\'ee} \bibnamefont{Fr\'erot}, \bibfnamefont{Amit} \bibnamefont{Vashisht}, \bibfnamefont{Martina} \bibnamefont{Morassi}, \bibfnamefont{Aristide} \bibnamefont{Lema\^{\i}tre}, \bibfnamefont{Sylvain} \bibnamefont{Ravets}, \bibfnamefont{Jacqueline} \bibnamefont{Bloch}, \bibfnamefont{Anna} \bibnamefont{Minguzzi} \& \bibfnamefont{Maxime} \bibnamefont{Richard} 2023.
 \newblock \enquote{Bogoliubov excitations driven by thermal lattice phonons in a quantum fluid of light}.
 \newblock \href{http://dx.doi.org/10.1103/PhysRevX.13.041058}{ \emph{Phys. Rev. X} \textbf{13}, p. 041\,058}.
+
+\bibitem[{Gerace \& Carusotto(2012)}]{carusotto_fluidlightproposal_2012}
+\bibfnamefont{Dario} \bibnamefont{Gerace} \& \bibfnamefont{Iacopo} \bibnamefont{Carusotto} 2012.
+\newblock \enquote{Analog hawking radiation from an acoustic black hole in a flowing polariton superfluid}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRevB.86.144505}{ \emph{Phys. Rev. B} \textbf{86}(14), p. 144\,505}.
 
 \bibitem[{Gross(1961)}]{Gross1961}
 \bibfnamefont{E~P} \bibnamefont{Gross} 1961.

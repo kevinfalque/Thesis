@@ -68,16 +68,19 @@
 \contentsline {section}{\numberline {4.2}Experimental implementation}{103}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Ballistic configuration}{103}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Measurement of the Bogoliubov spectrum}{105}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Measurement of the scattering matrix}{110}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.3}Observation of stimulated Hawking radiation}{110}{subsection.4.2.3}%
 \contentsline {subsubsection}{\numberline {4.2.3.1}Detection of the scattered modes}{110}{subsubsection.4.2.3.1}%
-\contentsline {subsection}{\numberline {4.2.4}A signature of amplification}{112}{subsection.4.2.4}%
-\contentsline {subsubsection}{\numberline {4.2.4.1}Input and output modes descrimination}{113}{subsubsection.4.2.4.1}%
-\contentsline {chapter}{\numberline {5}Bogoliubov modes correlations in polariton quantum fluid}{117}{chapter.5}%
-\contentsline {part}{Appendices}{119}{section*.44}%
-\contentsline {chapter}{\numberline {A}Mean field shaping and monitoring}{121}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Phase printing}{121}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Spatial light modulator.}{121}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Phase measurement}{122}{subsection.A.1.2}%
-\contentsline {subsection}{\numberline {A.1.3}Off axis inteferometry}{122}{subsection.A.1.3}%
-\contentsline {subsection}{\numberline {A.1.4}Controlling the local intensity}{122}{subsection.A.1.4}%
-\contentsline {part}{Bibliography}{125}{section*.48}%
+\contentsline {subsection}{\numberline {4.2.4}Toward the measurement of the scattering matrix}{113}{subsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.4.1}Input and output modes discrimination}{113}{subsubsection.4.2.4.1}%
+\contentsline {subsubsection}{\numberline {4.2.4.2}Real space analysis}{114}{subsubsection.4.2.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.4.3}Signature of amplification}{115}{subsubsection.4.2.4.3}%
+\contentsline {section}{\numberline {4.3}Conclusion}{121}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Bogoliubov modes correlations in polariton quantum fluid}{123}{chapter.5}%
+\contentsline {part}{Appendices}{125}{section*.47}%
+\contentsline {chapter}{\numberline {A}Mean field shaping and monitoring}{127}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Phase printing}{127}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Spatial light modulator.}{127}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Phase measurement}{128}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Off axis inteferometry}{128}{subsection.A.1.3}%
+\contentsline {subsection}{\numberline {A.1.4}Controlling the local intensity}{128}{subsection.A.1.4}%
+\contentsline {part}{Bibliography}{131}{section*.51}%

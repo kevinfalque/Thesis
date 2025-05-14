@@ -45,45 +45,45 @@ Warning--empty year in weinfurtner_measurement_2011
 Warning--missing publisher in weisbuch_microcavities_1996
 Warning--empty year in zeldovich__1970
 Warning--empty title in zeldovich__1970
-You've used 55 entries,
+You've used 57 entries,
             3379 wiz_defined-function locations,
-            1029 strings with 17759 characters,
-and the built_in function-call counts, 71433 in all, are:
-= -- 6726
-> -- 2747
-< -- 262
-+ -- 2640
-- -- 786
-* -- 5353
-:= -- 7155
-add.period$ -- 175
-call.type$ -- 55
-change.case$ -- 501
-chr.to.int$ -- 56
-cite$ -- 87
-duplicate$ -- 6727
-empty$ -- 4292
-format.name$ -- 1365
-if$ -- 14117
+            1045 strings with 18218 characters,
+and the built_in function-call counts, 74031 in all, are:
+= -- 7007
+> -- 2812
+< -- 269
++ -- 2700
+- -- 805
+* -- 5523
+:= -- 7406
+add.period$ -- 181
+call.type$ -- 57
+change.case$ -- 516
+chr.to.int$ -- 58
+cite$ -- 89
+duplicate$ -- 6989
+empty$ -- 4448
+format.name$ -- 1400
+if$ -- 14650
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 654
-newline$ -- 292
-num.names$ -- 220
-pop$ -- 2606
+missing$ -- 675
+newline$ -- 302
+num.names$ -- 228
+pop$ -- 2684
 preamble$ -- 1
-purify$ -- 450
+purify$ -- 463
 quote$ -- 0
-skip$ -- 4107
+skip$ -- 4280
 stack$ -- 0
-substring$ -- 2671
-swap$ -- 5532
-text.length$ -- 262
+substring$ -- 2805
+swap$ -- 5760
+text.length$ -- 269
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 465
+type$ -- 483
 warning$ -- 32
-while$ -- 348
+while$ -- 362
 width$ -- 0
-write$ -- 746
+write$ -- 774
 (There were 34 warnings)
