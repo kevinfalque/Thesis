@@ -1,4 +1,4 @@
-\begin{thebibliography}{57}
+\begin{thebibliography}{60}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibnamefont}[1]{\textsc{#1}}
 \providecommand{\bibfnamefont}[1]{#1}
@@ -11,6 +11,12 @@
 \newblock \enquote{Superfluidity of polaritons in semiconductor microcavities}.
 \newblock \href{http://dx.doi.org/10.1038/nphys1364}{ \emph{Nat. Phys.} \textbf{5}(11), p. 805--810}.
 
+\bibitem[{Bachor(1998)}]{bachor_guide_1998}
+\bibfnamefont{H.A.} \bibnamefont{Bachor} 1998.
+\newblock \emph{A {Guide} to {Experiments} in {Quantum} {Optics}}.
+\newblock ISBN 978-3-527-29298-1.
+\newblock \urlprefix\url{https://books.google.fr/books?id=6vhAAQAAIAAJ}.
+
 \bibitem[{Barceló \emph{et~al.}()Barceló, Liberati, Sonego \& Visser}]{barcelo_hawking-like_2006}
 \bibfnamefont{Carlos} \bibnamefont{Barceló}, \bibfnamefont{Stefano} \bibnamefont{Liberati}, \bibfnamefont{Sebastiano} \bibnamefont{Sonego} \& \bibfnamefont{Matt} \bibnamefont{Visser}.
 \newblock \enquote{Hawking-like radiation does not require a trapped region}.
@@ -20,6 +26,11 @@
 \bibfnamefont{Anthony~J.} \bibnamefont{Brady}, \bibfnamefont{Ivan} \bibnamefont{Agullo} \& \bibfnamefont{Dimitrios} \bibnamefont{Kranas} 2022.
 \newblock \enquote{Symplectic circuits, entanglement, and stimulated hawking radiation in analogue gravity}.
 \newblock \href{http://dx.doi.org/10.1103/PhysRevD.106.105021}{ \emph{Phys. Rev. D} \textbf{106}, p. 105\,021}.
+
+\bibitem[{{Brown, R.} \& {Twiss, R.}(1956)}]{hanbury_brown_twiss_1956}
+\bibnamefont{{Brown, R.}} \& \bibnamefont{{Twiss, R.}} 1956.
+\newblock \enquote{Correlation between photons in two coherent beams of light.}
+\newblock \href{http://dx.doi.org/10.1038/177027a0}{ \emph{Nature} \textbf{177}, p. 27--29}.
 
 \bibitem[{Carusotto \& Ciuti(2013)}]{carusotto_quantum_2013}
 \bibfnamefont{Iacopo} \bibnamefont{Carusotto} \& \bibfnamefont{Cristiano} \bibnamefont{Ciuti} 2013.
@@ -46,6 +57,10 @@
 \newblock \enquote{High-{Resolution} {Coherent} {Probe} {Spectroscopy} of a {Polariton} {Quantum} {Fluid}}.
 \newblock \href{http://dx.doi.org/10.1103/PhysRevLett.129.103601}{ \emph{Physical Review Letters} \textbf{129}(10), p. 103\,601}.
 \newblock Publisher: American Physical Society.
+
+\bibitem[{Claude()}]{fabre_houches_97}
+\bibfnamefont{Fabre} \bibnamefont{Claude}.
+\newblock \enquote{Quantum fluctuations in light beams}.
 
 \bibitem[{Claude(2022)}]{claude_phd}
 \bibfnamefont{Ferdinand} \bibnamefont{Claude} 2022.

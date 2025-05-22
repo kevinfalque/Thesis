@@ -1,6 +1,6 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Contents}{iii}{chapter*.1}%
-\contentsline {chapter}{Remerciements}{v}{chapter*.2}%
+\contentsline {chapter}{Remerciements}{vii}{chapter*.2}%
 \contentsline {part}{I\hspace {1em}Theory of Microcavity Exciton Polaritons}{1}{part.1}%
 \contentsline {chapter}{\numberline {1}Microcavity Exciton Polaritons}{3}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Microcavity Photons}{4}{section.1.1}%
@@ -76,11 +76,22 @@
 \contentsline {subsubsection}{\numberline {4.2.4.3}Signature of amplification}{115}{subsubsection.4.2.4.3}%
 \contentsline {section}{\numberline {4.3}Conclusion}{121}{section.4.3}%
 \contentsline {chapter}{\numberline {5}Bogoliubov modes correlations in polariton quantum fluid}{123}{chapter.5}%
-\contentsline {part}{Appendices}{125}{section*.47}%
-\contentsline {chapter}{\numberline {A}Mean field shaping and monitoring}{127}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Phase printing}{127}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Spatial light modulator.}{127}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Phase measurement}{128}{subsection.A.1.2}%
-\contentsline {subsection}{\numberline {A.1.3}Off axis inteferometry}{128}{subsection.A.1.3}%
-\contentsline {subsection}{\numberline {A.1.4}Controlling the local intensity}{128}{subsection.A.1.4}%
-\contentsline {part}{Bibliography}{131}{section*.51}%
+\contentsline {section}{\numberline {5.1}Quantum noise of an electromagnetic field}{123}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Standard quantum limit}{123}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Intensity and phase fluctuations}{125}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Squeezed states}{125}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Photodectection}{126}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Balanced detection}{127}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Difference measurement}{127}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.4}Correlations in continuous-variables quantum optics}{128}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Experimental implementation}{129}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Excitation scheme}{129}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Experimental setup}{129}{subsection.5.5.2}%
+\contentsline {part}{Appendices}{131}{section*.50}%
+\contentsline {chapter}{\numberline {A}Mean field shaping and monitoring}{133}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Phase printing}{133}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Spatial light modulator.}{133}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Phase measurement}{134}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Off axis inteferometry}{134}{subsection.A.1.3}%
+\contentsline {subsection}{\numberline {A.1.4}Controlling the local intensity}{134}{subsection.A.1.4}%
+\contentsline {part}{Bibliography}{137}{section*.54}%
