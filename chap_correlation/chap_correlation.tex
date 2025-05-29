@@ -155,7 +155,7 @@ At the end, we have a way to measure the power spectral density of the incoming 
 Let us now see how such a device can be used to measure the correlations between two fields.
 
 \section{Balanced detection}
-
+\textcolor{red}{A FINIR}
 Intensity balanced detection is a common detection scheme used to suppress the classical noise commonly present in optical measurements.
 The basic principle of this technique is to use two photodetectors, each measuring the intensity of an optical field, and to subtract their output photo-currents. If the two 
 beams share the same classical noise, the subtraction will cancel it out, leaving only the quantum correlations. A representation of the balanced detection scheme is shown in \autoref{fig:balanced_detection}.
@@ -198,6 +198,7 @@ The difference operator can then be expressed to first order in the fluctuations
 
 
 \section{Correlations in continuous-variables quantum optics}
+\textcolor{red}{A FINIR rajouter calcul}
 \label{sec:corr_cv}
 As a very general statement, two quantities are said to be correlated if they ultimately originate from the same source or quantum process. In this case, a knowledge of one of the two quantities gives informations about the other.
 Take the example of a two photons emission by a non linear process such as a Type II spontaneous parametric down conversion (SPDC). Their correlations is of several natures. The first and most obvious one is temporal in the sense that the two photons are emitted at the same time. This can be
@@ -257,7 +258,7 @@ The microcavity is the same as the one used in the previous chapters but the exp
 \subsection{Bogoliubov coefficients measurement}
 
 
-\textbf{Mean field} We create a static polariton fluid by shinning a pump laser beam of diameter $w=\SI{100}{\micro\meter}$ at normal incidence on the microcavity ie at $k_p=0$. The laser is detuned from the polariton resonance by
+We create a static polariton fluid by shinning a pump laser beam of diameter $w=\SI{100}{\micro\meter}$ at normal incidence on the microcavity ie at $k_p=0$. The laser is detuned from the polariton resonance by
 $\delta = \SI{35}{\giga\hertz}$ in order to operate in a bistable regime. The pump laser is $\sigma_+$ polarized in order to excite a single polariton population \cite{timofeev_exciton_2012}. A typical real space image of the polariton fluid is shown in \autoref{fig:real_space} \textbf{a)}. 
 
 
@@ -426,8 +427,55 @@ Without loss of generality, note however that this measurement was not done on t
 The previous section showed that the efficiency of the emission in a given mode appear to be $k$-dependent. As a consequence, studying correlations for different probe wavevectors might not be the best way to investigate the Bogoliubov modes correlations.
 Instead, we propose to focus on the correlations as a function of the operating point of the polariton fluid on the higher branch of the bistability loop. 
 
-To do so, we fix the probe wavevector to $k_{pr}=\SI{0.2}{\per\micro\meter}$ and set the pump intensity to operate on the high density branch of the hysteresis curve. Then the pump power is ramped down toward the turning point of the bistability loop.
+To do so, we fix the probe wavevector to $k_{pr}=(0,\SI{0.2}{\per\micro\meter})$ and set the pump intensity to operate on the high density branch of the hysteresis curve. Then the pump power is ramped down toward the turning point of the bistability loop.
 In terms of collective excitation, the system goes from a parabolic gapped dispersion to a linear gapless one as explained in \autoref{chap:generation_transonic_fluid}.
 
-At each pump power, the probe frequency is tuned to stay resonant with the normal branch Bogoliubov mode at $k_{pr}$. The correlations between the two conjuate mode are then measured the same way as in the previous section. 
 
+\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{chap_correlation/fig/noises_vs_bistab.pdf}
+    \caption{\textbf{a)} Measured bistability loop of the static polariton fluid at the working point B10-C10 with detuning $\delta=\SI{35}{\giga\hertz}$. The vertical black dashed line on all plots
+    indicates the turning point of the bistability loop. \textbf{b)} Measurement of the individual noises of the two conjugate modes $k_{pr}$ and $-k_{pr}$ as a function of the pump power. The horizontal black dashed line represent the dark noise of the apparatus.
+    \textbf{c)} Excess noises of the two conjugate modes normalized to their respective shot noise calculated from the calibration curve of \autoref{fig:calibration}. The points at pump power below the turning point are not shown because they were to weak to be measured and fall in the dark noise of the apparatus.}
+    \label{fig:noises_vs_bistab}
+\end{figure}
+
+
+At each pump power, the probe frequency is tuned to stay resonant with the normal branch Bogoliubov mode at $k_{pr}$. The correlations between the two conjuate mode are then measured the same way as in the previous section. 
+We start by analyzing the noise of each mode based on \autoref{fig:noises_vs_bistab}. The first subplot \textbf{a)} shows the bistability loop of the polariton fluid under investigation. 
+The measurement of the individual noises is displayed in \textbf{b)}. As visible, the normal branch mode is mucb more noisy than its conjugate counterpart. This is mainly due to the power unbalance between the two modes. To compare them 
+on the same scale we normalize their excess noise to their respective shot noise calculated from the calibration curve of \autoref{fig:noise_vs_optical_power} and plot the result in \textbf{c)}. The normalized excess noise are labelled $S_{k_{pr},-k_{pr}}^*$ for the sake of clarity. As visible, both are always in excess noise for the same reason of the pump \cite{a_baas_quantum_degeneracy2006}. Then the noises increase significantly when the system
+approaches the turning point. This is a typical feature of critical points and phase transitions in physical systems. For example, such behavior is very similiar to what happen in an OPO configuration just below threhold \cite{Zhang:06} : the amplitude quadrature of the signal and idler drastiscally increase in a correlated way
+leading to the formation of two modes bright squeezed state. 
+
+\bigskip
+
+
+In a second time we measure the noise of the difference photocurrent and compute the corresponding correlation in \autoref{fig:c_vs_bistab}. In order to easily see the evolution of the correlations, we also plot the sum of the individual noises as if they were not correlated like we did previously. When the system is far from the turning point and is not even bistable, the difference PSD is almost superimposed to the sum of the individual PSDs which, as shown in \autoref{fig:c_vs_bistab} indicates a very low correlation between the two modes ($C_{k_{pr},-k_{pr}}$\~0.02).
+When the system gets closer to the turning point, the difference PSD becomes lower than the sum of the individual PSDs and the correlation increases to reach a maximum value of $C_{k_{pr},-k_{pr}}=0.61\pm0.05$ near the turning point. It is likely that the correlations would further increase if we were able to operate even closer to the turning point. However, this is not possible in practice because at this point the system becomes
+unstable and any fluctuation makes the system fall back to the low density branch of the bistability loop. Another limiting factor may comes from the residual pump contribution that have not been completely removed by the filtering process and might limit the maximum correlation that can be measured as in \cite{glorieux_etude_nodate}. Furthermore, if we refer 
+to the ideal linear amplifier model \cite{boyd_nl_optics}, increasing the amount of nonlinearity in order to increase the gain of the four wave mixing process should in principle enhance the correlations as well. In a polariton
+system, this can be achieved by increasing the detuning $\delta$ between the pump laser and the polariton resonance. However, this imply high pump laser power to remain in the bistable regime and, up to a certain point, the laser start to heat the sample which in turn results in a reduction of the non linearity and thus of the correlations \cite{romanelli_4wm_2007}.
+
+
+To finish with, one could think that balancing the signals by attenuating the normal branch mode would allow to increase the correlations as in \cite{romanelli_4wm_2007}. In fact, this produre only works when the signals are sighlty unbalanced. In our case the two intensities differ by a factor 10. Such an attenuation
+introduce to much losses on the normal branch mode and makes its intensity statistic tend to a poissonian distribution which suppresses the correlations at the same time.
+
+
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{chap_correlation/fig/correlation_vs_bistab.pdf}
+    \caption{Correlations between Bogoliubov modes as a function of the pump power. 
+    \textbf{a)} Measurement of the difference photocurrent noise. The latter is represented by the purple dots while the red dots indicates the sum of the individual noises as if they were not correlated. \textbf{b)} Correlation coefficient $C_{k_{pr},-k_{pr}}$ between the two conjugate modes as a function of the pump power.}
+    \label{fig:c_vs_bistab}
+\end{figure}
+
+
+
+
+\section{Conclusion}
+
+\textcolor{red}{à faire : conclusion sur les correlation en prenant ern compte le calcul .}

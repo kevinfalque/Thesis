@@ -1,4 +1,4 @@
-\begin{thebibliography}{63}
+\begin{thebibliography}{67}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibnamefont}[1]{\textsc{#1}}
 \providecommand{\bibfnamefont}[1]{#1}
@@ -30,6 +30,11 @@
 \bibfnamefont{Carlos} \bibnamefont{Barceló}, \bibfnamefont{Stefano} \bibnamefont{Liberati}, \bibfnamefont{Sebastiano} \bibnamefont{Sonego} \& \bibfnamefont{Matt} \bibnamefont{Visser}.
 \newblock \enquote{Hawking-like radiation does not require a trapped region}.
 \newblock \href{http://dx.doi.org/10.1103/PhysRevLett.97.171301}{ \emph{Physical Review Letters} \textbf{97}(17)}.
+
+\bibitem[{Boyd(2008)}]{boyd_nl_optics}
+\bibfnamefont{Robert~W.} \bibnamefont{Boyd} 2008.
+\newblock \emph{Nonlinear Optics, Third Edition} (USA) 3rd \'edition.
+\newblock ISBN 0123694701.
 
 \bibitem[{Brady \emph{et~al.}(2022)Brady, Agullo \& Kranas}]{agullo_symplectic_2022}
 \bibfnamefont{Anthony~J.} \bibnamefont{Brady}, \bibfnamefont{Ivan} \bibnamefont{Agullo} \& \bibfnamefont{Dimitrios} \bibnamefont{Kranas} 2022.
@@ -120,6 +125,10 @@
 \bibfnamefont{Dario} \bibnamefont{Gerace} \& \bibfnamefont{Iacopo} \bibnamefont{Carusotto} 2012.
 \newblock \enquote{Analog hawking radiation from an acoustic black hole in a flowing polariton superfluid}.
 \newblock \href{http://dx.doi.org/10.1103/PhysRevB.86.144505}{ \emph{Phys. Rev. B} \textbf{86}(14), p. 144\,505}.
+
+\bibitem[{Glorieux()}]{glorieux_etude_nodate}
+\bibfnamefont{Quentin} \bibnamefont{Glorieux}.
+\newblock \enquote{{ETUDE} {THEORIQUE} {ET} {EXPERIMENTALE} {DES} {CORRELATIONS} {QUANTIQUES} {OBTENUES} {PAR} {MELANGE} {A} {QUATRE} {ONDES} {DANS} {UNE} {VAPEUR} {ATOMIQUE}} .
 
 \bibitem[{Gross(1961)}]{Gross1961}
 \bibfnamefont{E~P} \bibnamefont{Gross} 1961.
@@ -258,6 +267,11 @@
 \newblock \enquote{Excitonic bloch equations for a two-dimensional system of interacting excitons}.
 \newblock \href{http://dx.doi.org/10.1103/PhysRevB.61.13856}{ \emph{Phys. Rev. B} \textbf{61}, p. 13\,856--13\,862}.
 
+\bibitem[{Romanelli \emph{et~al.}(2007)Romanelli, Leyder, Karr, Giacobino \& Bramati}]{romanelli_4wm_2007}
+\bibfnamefont{M.}~\bibnamefont{Romanelli}, \bibfnamefont{C.}~\bibnamefont{Leyder}, \bibfnamefont{J.~Ph.} \bibnamefont{Karr}, \bibfnamefont{E.}~\bibnamefont{Giacobino} \& \bibfnamefont{A.}~\bibnamefont{Bramati} 2007.
+\newblock \enquote{Four wave mixing oscillation in a semiconductor microcavity: Generation of two correlated polariton populations}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRevLett.98.106401}{ \emph{Phys. Rev. Lett.} \textbf{98}, p. 106\,401}.
+
 \bibitem[{Rousseaux \emph{et~al.}()Rousseaux, Mathis, Maïssa, Philbin \& Leonhardt}]{rousseaux_observation_2008}
 \bibfnamefont{Germain} \bibnamefont{Rousseaux}, \bibfnamefont{Christian} \bibnamefont{Mathis}, \bibfnamefont{Philippe} \bibnamefont{Maïssa}, \bibfnamefont{Thomas~G} \bibnamefont{Philbin} \& \bibfnamefont{Ulf} \bibnamefont{Leonhardt}.
 \newblock \enquote{Observation of negative-frequency waves in a water tank: a classical analogue to the hawking effect?}
@@ -327,5 +341,10 @@
 \bibitem[{Zel'dovich()}]{zeldovich__1970}
 \bibfnamefont{Ya.~B.} \bibnamefont{Zel'dovich}.
 \newblock \emph{Pis'ma Zh. Eksp. Teor. Fiz} \textbf{12}, p. 443.
+
+\bibitem[{Zhang \emph{et~al.}(2006)Zhang, Hayasaka \& Kasai}]{Zhang:06}
+\bibfnamefont{Yun} \bibnamefont{Zhang}, \bibfnamefont{Kazuhiro} \bibnamefont{Hayasaka} \& \bibfnamefont{Katsuyuki} \bibnamefont{Kasai} 2006.
+\newblock \enquote{Generation of two-mode bright squeezed light using a noise-suppressed amplified diode laser}.
+\newblock \href{http://dx.doi.org/10.1364/OE.14.013083}{ \emph{Opt. Express} \textbf{14}(26), p. 13\,083--13\,088}.
 
 \end{thebibliography}

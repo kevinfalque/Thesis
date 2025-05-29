@@ -975,6 +975,16 @@ INPUT ./chap_correlation/fig/noise_comparison.pdf
 INPUT ./chap_correlation/fig/noise_comparison.pdf
 INPUT ./chap_correlation/fig/noise_comparison.pdf
 INPUT ./chap_correlation/fig/noise_comparison.pdf
+INPUT ./chap_correlation/fig/noises_vs_bistab.pdf
+INPUT ./chap_correlation/fig/noises_vs_bistab.pdf
+INPUT ./chap_correlation/fig/noises_vs_bistab.pdf
+INPUT ./chap_correlation/fig/noises_vs_bistab.pdf
+INPUT ./chap_correlation/fig/noises_vs_bistab.pdf
+INPUT ./chap_correlation/fig/correlation_vs_bistab.pdf
+INPUT ./chap_correlation/fig/correlation_vs_bistab.pdf
+INPUT ./chap_correlation/fig/correlation_vs_bistab.pdf
+INPUT ./chap_correlation/fig/correlation_vs_bistab.pdf
+INPUT ./chap_correlation/fig/correlation_vs_bistab.pdf
 INPUT ./appendices/appendices.tex
 INPUT ./appendices/appendices.tex
 OUTPUT appendices/appendices.aux

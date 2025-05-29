@@ -82,19 +82,20 @@
 \contentsline {subsection}{\numberline {5.1.3}Squeezed states}{125}{subsection.5.1.3}%
 \contentsline {section}{\numberline {5.2}Photodectection}{126}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Balanced detection}{127}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Difference measurement}{127}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.1}Difference measurement}{128}{subsection.5.3.1}%
 \contentsline {section}{\numberline {5.4}Correlations in continuous-variables quantum optics}{128}{section.5.4}%
 \contentsline {section}{\numberline {5.5}Experimental implementation}{129}{section.5.5}%
 \contentsline {subsection}{\numberline {5.5.1}Bogoliubov coefficients measurement}{129}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Bogoliubov modes correlations}{133}{subsection.5.5.2}%
-\contentsline {subsubsection}{\numberline {5.5.2.1}Shot noise calibration}{133}{subsubsection.5.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.5.2.2}Balanced detection}{134}{subsubsection.5.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.5.2.3}Correlations measurement}{137}{subsubsection.5.5.2.3}%
-\contentsline {part}{Appendices}{139}{section*.55}%
-\contentsline {chapter}{\numberline {A}Mean field shaping and monitoring}{141}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Phase printing}{141}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Spatial light modulator.}{141}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Phase measurement}{142}{subsection.A.1.2}%
-\contentsline {subsection}{\numberline {A.1.3}Off axis inteferometry}{142}{subsection.A.1.3}%
-\contentsline {subsection}{\numberline {A.1.4}Controlling the local intensity}{142}{subsection.A.1.4}%
-\contentsline {part}{Bibliography}{145}{section*.59}%
+\contentsline {subsection}{\numberline {5.5.2}Bogoliubov modes correlations}{132}{subsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.1}Shot noise calibration}{132}{subsubsection.5.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.5.2.2}Balanced detection}{132}{subsubsection.5.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.3}Correlations measurement}{138}{subsubsection.5.5.2.3}%
+\contentsline {section}{\numberline {5.6}Conclusion}{140}{section.5.6}%
+\contentsline {part}{Appendices}{141}{section*.57}%
+\contentsline {chapter}{\numberline {A}Mean field shaping and monitoring}{143}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Phase printing}{143}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Spatial light modulator.}{143}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Phase measurement}{144}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Off axis inteferometry}{144}{subsection.A.1.3}%
+\contentsline {subsection}{\numberline {A.1.4}Controlling the local intensity}{144}{subsection.A.1.4}%
+\contentsline {part}{Bibliography}{147}{section*.61}%
