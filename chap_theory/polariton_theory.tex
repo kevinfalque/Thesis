@@ -51,7 +51,12 @@
 \graphicspath{{./}{./fig/}{./chap_theory/fig/}}
 
 
-
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{0}
+\setcounter{totalnumber}{2}
+\renewcommand{\topfraction}{0.99}
+\renewcommand{\textfraction}{0.01}
+\renewcommand{\floatpagefraction}{0.8}
 
 \part{Theory of Microcavity Exciton Polaritons}
 
@@ -70,7 +75,7 @@ This chapter is dedicated to describe photons and excitons separately before sho
 
 \label{sec:photon}
 
-\begin{figure}[H]
+\begin{figure}[t!]
     \centering
     \includegraphics[width=\textwidth]{chap_theory/fig/cavity_geometry.pdf}
     \caption{Photon in a planar microcavity. Distributed Bragg Reflectors (DBR) mirrors are used to reflect the light and trap it in the cavity. The z-axis is normal to the mirrors, and the x and y axes are in the plane of the mirrors. The angle $\theta$ is defined as the angle of incidence of the electromagnetic field on the mirrors. The field is confined in a region of length $L$ between the two mirrors.}
@@ -99,7 +104,7 @@ with $\omega_\gamma$ the resonance frequency of the cavity and $\delta \omega_\g
 
 where $\Delta \omega_\gamma= c/2L_{cav}$ is the Free Spectral Range (FSR) representing the frequency difference between two successive longitudinal modes of the cavity. To achieve strong coupling with the nonlinear medium, the photon needs to stay trapped in the cavity long enough to interact with the medium. In other words, the quality factor of the cavity must be very high, which means using mirrors with high reflectivities. This can be achieved with Distributed Bragg Reflectors (DBR) mirrors.
 
-\begin{figure}[h]
+\begin{figure}[t!]
     \centering
     \includegraphics[width=1\linewidth]{chap_theory/fig/DBR.pdf}
     \caption{\textbf{DBR and Fabry-Perot cavity reflectivity.} \textbf{(a)} Reflectivity $R$ of a Bragg mirror of 20 pairs of Ga$_{0.9}$Al$_{0.1}$As/AlAs, illuminated at normal incidence for different wavelengths $\lambda$. The DBR has a reflectivity close to 1 over a large range of wavelengths called the stop-band, centered on $\lambda_0$ = 836 nm by tuning the thickness of each of the mirror layers. \textbf{(b)} Corresponding reflectivity of the optical cavity built from the facing of two DBR mirrors identical to that in (a) and separated by a distance $L_{\mathrm{cav}} = 2\lambda_0 / n_{\mathrm{cav}}$, leading to the appearance of a very narrow resonance at $\lambda_0$. Adapted from \cite{claude_phd}.}
@@ -202,7 +207,7 @@ Determining if a material is a metal, a semiconductor or an insulator is then a 
 For metals the conduction band and the valence band overlap, any electric potential difference puts then the electron into motion and create a current. For insulators and semiconducting materials the Fermi energy is in the band gap. For insulators the band gap is typicaly $\sim 3 \ \mathrm{eV}$ making the promotion of an electron to the conduction band highly energy demanding. 
 Finally, the semiconductors gap energy is accessible with photons in the visible domain making these materials perfect candidates for controlled light-matter interactions.
 
-\begin{figure}[h]
+\begin{figure}[t!]
     \centering
     \includegraphics[width=1\linewidth]{chap_theory/fig/band_theory.pdf}
     \caption{\textbf{Energy levels of a set of N atoms.} As N increase the spacing between two successive levels tends to zero and eventually form a continuous band of energy.}
@@ -215,7 +220,7 @@ Finding the exact band structure of a material can be done by solving the Schrod
  The Bloch theorem states that the wave function of such an electron can be written as a plane wave modulated by a periodic function. The periodic function is then expanded in a Fourier series and the Schrodinger equation is solved for each Fourier component. 
  The exact band structure can be rather complicated but a simplified version can be obtained by considering the effective mass approximation \cite{kittel_introduction_2005}. In this picture, the dispersion relation of the electron in the material is typically represented in \autoref{fig:Direct_gap_disp}.
 In this case the minimum of the conduction band and the maximum of the valence band are located at the same point in the Brillouin zone. The material is then said to have a direct band gap \cite{weisbuch_microcavities_1996}.
-\begin{figure}[h]
+\begin{figure}[t!]
     \centering
     \includegraphics[width=0.8\linewidth]{chap_theory/fig/DirectGapDisp.png}
     \caption{\textbf{Band structure of a direct gap semiconductor.} The black solid line represent the conduction and valence band in a bulk semiconductor. The red dashed lines represent the dispersion relation of an exciton. The filling of the valence band by electrons is represented by the shaded red color.}
@@ -251,7 +256,7 @@ feature about the electron-hole interactions that will at the end enable exciton
 
 \bigskip
 \subsubsection{Electron scattering in semiconductors}
-\begin{figure}[h]
+\begin{figure}[t!]
     \centering
     \includegraphics[width=1\linewidth]{chap_theory/fig/intra-inter-band-processes.pdf}
     \caption{\textbf{Schematic representing the scattering between two conduction band electrons.} a) Direct intraband scattering. Filled black dots represent conduction band electrons while the arrows represent a scattering process. b) Two steps scattering involving an electron-hole exchange or creation and annihilation of an exciton, referred as interband scattering.
@@ -260,21 +265,20 @@ feature about the electron-hole interactions that will at the end enable exciton
     \label{fig:inter-intra-scat}
 \end{figure}
 
+\bigskip
 
-\textbf{Intraband scattering :}
-to start with let us consider the direct scattering between two conduction band electrons as presented in \autoref{fig:inter-intra-scat} a). This simple process is referred as intraband scattering since each electron stays in its own band. In the small momentum limit $\mathrm{\textbf{q}}\to 0$ it yields a potential of the form \cite{Combescot_cooper_excitons_2015}:
+\textbf{Intraband scattering.} To start with let us consider the direct scattering between two conduction band electrons as presented in \autoref{fig:inter-intra-scat} a). This simple process is referred as intraband scattering since each electron stays in its own band. In the small momentum limit $\mathrm{\textbf{q}}\to 0$ it yields a potential of the form \cite{Combescot_cooper_excitons_2015}:
 
 \begin{equation}
     V_{\textbf{q}} \simeq \dfrac{4\pi e^2}{L^3 q^2}
 \end{equation}
  
-\noindent in a sample of size L. This form of potential also holds for the scattering between two valence electrons or between a valence and a conduction band electron that stay in their respective bands.
+in a sample of size L. This form of potential also holds for the scattering between two valence electrons or between a valence and a conduction band electron that stay in their respective bands.
 
 \bigskip
 
-\textbf{Interband scattering :}
-processes in which one or two electrons change band are also possible and are referred as interband scattering. In the case of a single 
-interband jump the potential reads $(\frac{q}{\kappa})\times V_{\textbf{q}}= \dfrac{4\pi e^2}{L^3 q \kappa}$ where $\kappa$ is a factor dimensionally equivalent to a wavevector that depends on the material crystalline structure. It then behaves as $1/q$. When both electrons change band the potential is then $(\frac{q}{\kappa})^2V_{\textbf{q}}$ proportionnal to $q^0$
+\textbf{Interband scattering.} Processes in which one or two electrons change band are also possible and are referred as interband scattering. In the case of a single 
+interband jump the potential reads $(\frac{q}{\kappa})\times V_{\textbf{q}}= 4\pi e^2/L^3 q \kappa$ where $\kappa$ is a factor dimensionally equivalent to a wavevector that depends on the material crystalline structure. It then behaves as $1/q$. When both electrons change band the potential is then $(\frac{q}{\kappa})^2V_{\textbf{q}}$ proportionnal to $q^0$
 and thus remaining finite when $q\to 0$. Remarkably, in both the single and two interband jump scenarios, the number of electrons in each band changes by one and two respectively, making these transitions less likely to occur compared to number-conserving processes.
 
 \bigskip
@@ -313,7 +317,7 @@ $1/E_g^2$ dependence. This coupling reflects the fact that intermediate states a
 \bigskip 
 
 
-\begin{figure}[h]
+\begin{figure}[t!]
     \centering
     \includegraphics[width=1\linewidth]{chap_theory/fig/intra_band_dressed_bubbles.pdf}
     \caption{\textbf{Feynman diagrams representing an intraband scattering between a conduction and a valence band electron.} a) Direct intraband scattering. The blue wavy lines represent the Coulomb interaction that make the electrons to change states. b) Two steps scattering involving an intermediate interband exchange that is represented by the bubble in the middle.
@@ -426,13 +430,10 @@ Using the newly defined operators (\ref{eq:hole_creation_operators}) together wi
 
 \end{itemize}
 The latter requires a special attention since it exhibits an attractive interaction and reveals the possibility of excitons formation which was not obvious in the conduction-valence electron picture.
+
 \bigskip
 
-\noindent \large \textbf{Spin conservation in electron scattering } \normalsize
-\bigskip
-
-
-Scattering processes mediated by the Coulomb interaction conserve the spin of the electron for both interband and intraband scatterings due to the rotationnal symmetry of the Coulomb force. As a consequence,
+\textbf{Spin conservation in electron scattering. }Scattering processes mediated by the Coulomb interaction conserve the spin of the electron for both interband and intraband scatterings due to the rotationnal symmetry of the Coulomb force. As a consequence,
 the interactions between electons and holes that we just exhibited are also spin preserving. The latter has important consequences to determine
 selection rules when looking at optical excitation of an electron-hole pair. 
 
@@ -532,7 +533,7 @@ which are made by stacking layers of semiconductor materials with different band
 In our case a quantum well is made of InGaAs placed in between two layers of GaAs. InGaAs has a smaller band gap than the bulk GaAs because of the p-fraction of InAs doping as shown in \autoref{fig:sc_quantum_well} (b). 
 Both electrons and holes then remain confined in the region where the band gap is the smallest (see \autoref{fig:sc_quantum_well} (a)).
 By repeating this "sandwiching" procedure it is possible to create many QW heterostructures as we shall see later.
-\begin{figure}[h]Coulomb
+\begin{figure}[t!]
     \centering
     \includegraphics[width=0.8\linewidth]{chap_theory/fig/InGaAs.pdf}
     \caption{\textbf{Schematic representation of a quantum well heterostructure.} a) Representation of a planar quantum well made of InGaAs placed in between two layers of GaAs. The confinement in the plane is ensured by the gap energy difference between the layers.
@@ -582,7 +583,7 @@ the first 1s exciton state. In the following we will therefore drop the n index 
 \bigskip
 
 
-\noindent \textbf{Bosonic nature of excitons.} Since an exciton is made of two fermions its pseudo spin is an integer. However, when reaching regimes of high excitons densities
+\textbf{Bosonic nature of excitons.} Since an exciton is made of two fermions its pseudo spin is an integer. However, when reaching regimes of high excitons densities
 the fermionic nature of their microscopic components can no longer be neglected \cite{Combescot_2007_exact_pol_pol_interactions}. The composite nature of excitons can be safely dropped provided that the exciton density per unit area 
 is such as $n_X(a_X^{QW})^2 \ll 1$. This condition states that the average distance between excitons is much larger than the exciton Bohr radius. In this regime the excitons can be treated as bosons, namely : 
 
@@ -594,9 +595,7 @@ is such as $n_X(a_X^{QW})^2 \ll 1$. This condition states that the average dista
 
 \bigskip
 
-
-
-\noindent \textbf{Optical selection rules in planar quantum wells.} In bulk semiconductors, a single exciton mode couples exclusively to a single photon mode. In quasi-two-dimensional systems, due to the breaking of translationnal invariance in the growth direction $z$ the momentum
+\textbf{Optical selection rules in planar quantum wells.} In bulk semiconductors, a single exciton mode couples exclusively to a single photon mode. In quasi-two-dimensional systems, due to the breaking of translationnal invariance in the growth direction $z$ the momentum
 conservation during a photon absorption or emission remains valid only for the in-plane component, the $z$-component being fixed by the quantum well width.
 Accordingly, an exciton with wavevector $\mathbf{k}_X=(\kpar^X, k_z^X)$ will interact with a photon with the same in plane wavevector but with any value of $k_z^\gamma$. 
 If we consider a photon of wavevector frequency $\omega$, there is thus a density of states for radiative decay given by \cite{weisbuch_microcavities_1996}:
@@ -722,7 +721,7 @@ this emission occur, also denoted $\Omega_R$ and called vacuum Rabi frequency.
 In order to achieve strong coupling between excitons and photons the challenge is to enhance the probability than an exciton recombine in a given photonic state $(\hbar \kpar, \hbar \omega)$. 
 Solving this problem reduces to changing the density of state $\rho$ in order to suppress sponatenous emission in all unwanted modes.
 As usually done in cavity quantum electrodynamics, this problem is tackled by embedding the quantum well in an high finesse optical microcavity as shown in \autoref{fig:polariton_cavity} (a). 
-\begin{figure}[]
+\begin{figure}[t!]
     \centering
     \includegraphics[width=1\linewidth]{chap_theory/fig/polariton_cavity.pdf}
     \caption{\textbf{Schematic representation of a quantum well embedded in an optical microcavity.} The quantum wells are placed at the antinode of the electric field of the cavity. The cavity is designed to have a longitudinal mode that matches the exciton energy.
@@ -841,7 +840,7 @@ In practice, the substrate is located on a spinning disk to avoid the molecule t
 By taking advantage of this features it is possible to change progressively the thickness of the layer and thus the cavity resonance condition. A given sample
 then has a wide range of exciton-photon detuning that can be adressed in the lab by changing the working point on the cavity. 
 
-\begin{figure}[]
+\begin{figure}[t!]
     \centering
     \includegraphics[width=1\linewidth]{chap_theory/fig/wedge_and_hopfields.pdf}
     \caption{\textbf{Scheme of an optical microcavity with a wedge, polaritons dispersion relations and Hopfield coefficients.} \textbf{a)} Side view of a
@@ -923,7 +922,7 @@ It can be seen that polaritons inherit the low effective mass of the photons mak
 This is particularly interesting for the realisation of polaritonic circuits in the framework of quantum information processing \cite{liew_optical_circuit_2008}.
 The excitonic part of the polariton also brings its own features to the table. In particular, the strong exciton-exciton non linear interactions that
 will turn light into a fluid of interacting particles. This is the subject of the next section.
-\begin{figure}[h]
+\begin{figure}[t!]
     \centering
     \includegraphics[width=0.75\linewidth]{chap_theory/fig/anticrossing.pdf}
     \caption{\textbf{Anticrossing in the strong coupling regime.} Energies of the upper (UP) and lower (LP) polariton branches at $\kvec = 0 \mathrm{\mu m^{-1}}$, with respect to the exciton-photon detuning at zero wavevector $\DeltaEX(\kvec=0)$ and the color-coded squared modulus of the Hopfield coefficient $X^2$ (exciton) and $C^2$ (photon). The yellow and blue dashed lines are respectively the bare exciton and photon energies. 
@@ -1127,7 +1126,6 @@ Since the presence of a fluid in the sample changes the optical resonance throug
 
 \bigskip
 
-
 \textbf{Dark reservoir. }In our description of excitons we mentionned the presence of dark excitons that are not directly coupled to light because of spin selection rules. As a consequence, one could think 
 that they are not involved in the polariton dynamics. It is actually not the case. Indeed, even though they do not interact with photons they can still interact with bright excitons through the many complex electron-hole interactions described in \autoref{sub:exciton_exciton_interaction}. More precisely, they participate to the overall energy renormalization of the polariton fluid outlined by \autoref{eq:renormalized_energy}.
 Forgetting them in the description of the polariton dynamics would then be a mistake \cite{Menard2014, stepanov_dispersion_2019}. To derive a single master equation starting from the many microscopic interactions between photons, dark and bright excitons would require a full spin resolved description and is beyond the scope of this manuscript.
@@ -1147,7 +1145,6 @@ Nevertheless, we will account for their presence phenomenologically by consideri
 A derivation of this equation as well as en extended experimental investigation can be found in \cite{stepanov_dispersion_2019}.
 As it will be shown in the following the presence of a dark reservoir is of great importance when it comes to describing the quantum fluctuations of the polariton fluid.
 
-
 \subsection{Excitation scheme} So far, the derivation of the master equation was initiated by stating that a polaritonic state could be macroscopically populated 
 through optical pumping. However, the pump term was not yet defined in the sense that we did not specify the frequency of the pump photons with respect to the polariton dispersion relation.
 The latter is crucial to determine what are the mechanisms leading to long range coherence. 
@@ -1164,7 +1161,7 @@ Some major differences with atomic BECs are worth mentioning. First, the tempora
 the polaritonic system can never reach equilibrium. Its temporal phase results from a complex interplay between the pump laser and the losses of the system : the phase transition is driven by the pump intensity rather than the temperature.
 
 
-\begin{figure}[H]
+\begin{figure}[t!]
     \centering
     \includegraphics[width=1\linewidth]{chap_theory/fig/polariton_bec.pdf}
     \caption{\textbf{Bose-Einstein condensation of polaritons.} \textbf{a)} Far field emission of the fluid for increasing pump intensity. Above threshold, a strong emission in the zero wavevector mode is observed. \textbf{b)} Polariton dispersion for increasing pump intensities. Above threshold the bottom of the LP branch is macroscopically populated.
@@ -1190,7 +1187,7 @@ non-linearities and resonance conditions is at the heart of what is called optic
 
 \bigskip
 
-\begin{figure}
+\begin{figure}[t!]
     \centering
     \includegraphics[width=1\linewidth]{chap_theory/fig/bistability_grynberg.pdf}
     \caption{\textbf{Optical bistability.} \textbf{a)} Schematic of a ring cavity filled with a Kerr medium. The cavity has a length $L_{cav}^{(0)}$ and the Kerr medium a length $l$. \textbf{b)} Transmission of the cavity as a function of the optical length of the cavity $L_{cav}$. The straight line represent the values $T_{cav}$ as a function of $L_{cav}$ for different values of
@@ -1273,7 +1270,7 @@ This point can only be reached by ramping down the pump power for a system alrea
 The bistable regime requires two distinct solution for $\frac{dI}{dn}=0$ which requires $\Delta>0$ and provides the aforementioned condition $\delta>\sqrt{3/2}\gamlp$.
 From this one can find that the density corresponding to the turning point fulfills $\delta(\kp)=g_{eff}n = gn_0+g_rn_r$. 
 
-\begin{figure}
+\begin{figure}[t!]
     \centering
     \includegraphics[width=0.8\linewidth]{chap_theory/fig/bistability.pdf}
     \caption{\textbf{Optical bistability in a polariton fluid.} \textbf{a)} The polariton density as a function of the pump intensity when $\delta>\frac{\sqrt{3}\gamlp}{2}$. The blue point represents the so called turning point at which the detuning is exactly equal to the interaction energy.
@@ -1309,5 +1306,4 @@ We have detailed the mechanisms behind their formation, interactions, and dynami
 
 A key feature of polariton fluids is their fully optical control, which allows for precise manipulation of their density, velocity, and flow profiles. 
 This capability, enabled by the resonant excitation scheme, makes polariton fluids particularly well-suited for analog gravity experiments. 
-
 In the following chapters, we will build on this theoretical foundation to investigate the experimental realization and observation of analog Hawking radiation in polariton fluids.

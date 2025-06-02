@@ -707,12 +707,12 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
-INPUT ./chap_theory/fig/intra_band_dressed_bubbles.pdf
-INPUT ./chap_theory/fig/intra_band_dressed_bubbles.pdf
-INPUT ./chap_theory/fig/intra_band_dressed_bubbles.pdf
-INPUT ./chap_theory/fig/intra_band_dressed_bubbles.pdf
-INPUT ./chap_theory/fig/intra_band_dressed_bubbles.pdf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
+INPUT ./chap_theory/fig/intra_band_dressed_bubbles.pdf
+INPUT ./chap_theory/fig/intra_band_dressed_bubbles.pdf
+INPUT ./chap_theory/fig/intra_band_dressed_bubbles.pdf
+INPUT ./chap_theory/fig/intra_band_dressed_bubbles.pdf
+INPUT ./chap_theory/fig/intra_band_dressed_bubbles.pdf
 INPUT ./chap_theory/fig/InGaAs.pdf
 INPUT ./chap_theory/fig/InGaAs.pdf
 INPUT ./chap_theory/fig/InGaAs.pdf
