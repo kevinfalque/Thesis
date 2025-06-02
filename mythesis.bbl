@@ -1,4 +1,4 @@
-\begin{thebibliography}{67}
+\begin{thebibliography}{69}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibnamefont}[1]{\textsc{#1}}
 \providecommand{\bibfnamefont}[1]{#1}
@@ -116,6 +116,10 @@
 \newblock \enquote{Recherches sur la th\'eorie des quanta}.
 \newblock \href{http://dx.doi.org/10.1051/anphys/192510030022}{ \emph{Ann. Phys.} \textbf{10}(3), p. 22--128}.
 
+\bibitem[{Fox(2010)}]{opt_prop_solids}
+\bibfnamefont{M.}~\bibnamefont{Fox} 2010.
+\newblock \emph{Optical Properties of Solids- Second Edition} (Oxford University Press).
+
 \bibitem[{Fr\'erot \emph{et~al.}(2023)Fr\'erot, Vashisht, Morassi, Lema\^{\i}tre, Ravets, Bloch, Minguzzi \& Richard}]{I_frerot_PRX_2023}
 \bibfnamefont{Ir\'en\'ee} \bibnamefont{Fr\'erot}, \bibfnamefont{Amit} \bibnamefont{Vashisht}, \bibfnamefont{Martina} \bibnamefont{Morassi}, \bibfnamefont{Aristide} \bibnamefont{Lema\^{\i}tre}, \bibfnamefont{Sylvain} \bibnamefont{Ravets}, \bibfnamefont{Jacqueline} \bibnamefont{Bloch}, \bibfnamefont{Anna} \bibnamefont{Minguzzi} \& \bibfnamefont{Maxime} \bibnamefont{Richard} 2023.
 \newblock \enquote{Bogoliubov excitations driven by thermal lattice phonons in a quantum fluid of light}.
@@ -190,10 +194,10 @@
 \newblock \enquote{Optical stark effect on excitons in gaas quantum wells}.
 \newblock \href{http://dx.doi.org/10.1364/OL.11.000609}{ \emph{Opt. Lett.} \textbf{11}(10), p. 609--611}.
 
-\bibitem[{Li \emph{et~al.}(2022)Li, Claude, Boulier, Giacobino, Glorieux, Bramati \& Ciuti}]{li_dissipative_2022}
-\bibfnamefont{Zejian} \bibnamefont{Li}, \bibfnamefont{Ferdinand} \bibnamefont{Claude}, \bibfnamefont{Thomas} \bibnamefont{Boulier}, \bibfnamefont{Elisabeth} \bibnamefont{Giacobino}, \bibfnamefont{Quentin} \bibnamefont{Glorieux}, \bibfnamefont{Alberto} \bibnamefont{Bramati} \& \bibfnamefont{Cristiano} \bibnamefont{Ciuti} 2022.
-\newblock \enquote{Dissipative phase transition with driving-controlled spatial dimension and diffusive boundary conditions}.
-\newblock \href{http://dx.doi.org/10.1103/PhysRevLett.128.093601}{ \emph{Phys. Rev. Lett.} \textbf{128}, p. 093\,601}.
+\bibitem[{Lerario \emph{et~al.}(2020)Lerario, Ma\^{\i}tre, Boddeda, Glorieux, Giacobino, Pigeon \& Bramati}]{vortex_stream_2020}
+\bibfnamefont{Giovanni} \bibnamefont{Lerario}, \bibfnamefont{Anne} \bibnamefont{Ma\^{\i}tre}, \bibfnamefont{Rajiv} \bibnamefont{Boddeda}, \bibfnamefont{Quentin} \bibnamefont{Glorieux}, \bibfnamefont{Elisabeth} \bibnamefont{Giacobino}, \bibfnamefont{Simon} \bibnamefont{Pigeon} \& \bibfnamefont{Alberto} \bibnamefont{Bramati} 2020.
+\newblock \enquote{Vortex-stream generation and enhanced propagation in a polariton superfluid}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRevResearch.2.023049}{ \emph{Phys. Rev. Res.} \textbf{2}, p. 023\,049}.
 
 \bibitem[{Liebling \emph{et~al.}()Liebling, Blu \& Unser}]{liebling_complex-wave_2004}
 \bibfnamefont{Michael} \bibnamefont{Liebling}, \bibfnamefont{Thierry} \bibnamefont{Blu} \& \bibfnamefont{Michael} \bibnamefont{Unser}.
@@ -262,8 +266,13 @@
 \newblock \enquote{Bogoliubov theory of acoustic hawking radiation in bose-einstein condensates}.
 \newblock \href{http://dx.doi.org/10.1103/PhysRevA.80.043603}{ \emph{Phys. Rev. A} \textbf{80}(4), p. 043\,603}.
 
-\bibitem[{Rochat \emph{et~al.}(2000)Rochat, Ciuti, Savona, Piermarocchi, Quattropani \& Schwendimann}]{Rochat2000}
-\bibfnamefont{G.}~\bibnamefont{Rochat}, \bibfnamefont{C.}~\bibnamefont{Ciuti}, \bibfnamefont{V.}~\bibnamefont{Savona}, \bibfnamefont{C.}~\bibnamefont{Piermarocchi}, \bibfnamefont{A.}~\bibnamefont{Quattropani} \& \bibfnamefont{P.}~\bibnamefont{Schwendimann} 2000.
+\bibitem[{Rochat \emph{et~al.}(2000{\natexlab{a}})Rochat, Ciuti, Savona, Piermarocchi, Quattropani \& Schwendimann}]{Rochat2000}
+\bibfnamefont{G.}~\bibnamefont{Rochat}, \bibfnamefont{C.}~\bibnamefont{Ciuti}, \bibfnamefont{V.}~\bibnamefont{Savona}, \bibfnamefont{C.}~\bibnamefont{Piermarocchi}, \bibfnamefont{A.}~\bibnamefont{Quattropani} \& \bibfnamefont{P.}~\bibnamefont{Schwendimann} 2000{\natexlab{a}}.
+\newblock \enquote{Excitonic bloch equations for a two-dimensional system of interacting excitons}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRevB.61.13856}{ \emph{Phys. Rev. B} \textbf{61}, p. 13\,856--13\,862}.
+
+\bibitem[{Rochat \emph{et~al.}(2000{\natexlab{b}})Rochat, Ciuti, Savona, Piermarocchi, Quattropani \& Schwendimann}]{usui_2000}
+\bibfnamefont{G.}~\bibnamefont{Rochat}, \bibfnamefont{C.}~\bibnamefont{Ciuti}, \bibfnamefont{V.}~\bibnamefont{Savona}, \bibfnamefont{C.}~\bibnamefont{Piermarocchi}, \bibfnamefont{A.}~\bibnamefont{Quattropani} \& \bibfnamefont{P.}~\bibnamefont{Schwendimann} 2000{\natexlab{b}}.
 \newblock \enquote{Excitonic bloch equations for a two-dimensional system of interacting excitons}.
 \newblock \href{http://dx.doi.org/10.1103/PhysRevB.61.13856}{ \emph{Phys. Rev. B} \textbf{61}, p. 13\,856--13\,862}.
 

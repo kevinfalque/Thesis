@@ -2,6 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: mythesis.aux
 The style file: assets/thfrnatay-href.bst
+A level-1 auxiliary file: chap_introduction/chap_introduction.aux
 A level-1 auxiliary file: chap_theory/polariton_theory.aux
 A level-1 auxiliary file: chap_AG_theory/chap_AG_theory.aux
 A level-1 auxiliary file: chap_custom_st/chap_custom_st.aux
@@ -11,9 +12,9 @@ A level-1 auxiliary file: appendices/appendices.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: Quantum_optics_lkb.bib
 Warning--entry type for "fabre_houches_97" isn't style-file defined
---line 741 of file Quantum_optics_lkb.bib
+--line 749 of file Quantum_optics_lkb.bib
 Warning--entry type for "timofeev_exciton_2012" isn't style-file defined
---line 5789 of file Quantum_optics_lkb.bib
+--line 5827 of file Quantum_optics_lkb.bib
 Warning--I didn't find a database entry for "jacquet_hawking_2019"
 Warning--I didn't find a database entry for "brito_gravitational_2015"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
@@ -56,45 +57,45 @@ Warning--empty year in weinfurtner_measurement_2011
 Warning--missing publisher in weisbuch_microcavities_1996
 Warning--empty year in zeldovich__1970
 Warning--empty title in zeldovich__1970
-You've used 67 entries,
+You've used 69 entries,
             3379 wiz_defined-function locations,
-            1110 strings with 20102 characters,
-and the built_in function-call counts, 83107 in all, are:
-= -- 7886
-> -- 3072
-< -- 293
-+ -- 2926
-- -- 882
-* -- 6149
-:= -- 8397
-add.period$ -- 209
-call.type$ -- 67
-change.case$ -- 586
-chr.to.int$ -- 68
-cite$ -- 108
-duplicate$ -- 7869
-empty$ -- 5057
-format.name$ -- 1534
-if$ -- 16461
-int.to.chr$ -- 2
+            1118 strings with 20236 characters,
+and the built_in function-call counts, 85700 in all, are:
+= -- 8150
+> -- 3157
+< -- 301
++ -- 3008
+- -- 906
+* -- 6328
+:= -- 8648
+add.period$ -- 214
+call.type$ -- 69
+change.case$ -- 602
+chr.to.int$ -- 70
+cite$ -- 110
+duplicate$ -- 8122
+empty$ -- 5214
+format.name$ -- 1575
+if$ -- 16978
+int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 765
-newline$ -- 350
-num.names$ -- 264
-pop$ -- 3027
+missing$ -- 787
+newline$ -- 359
+num.names$ -- 272
+pop$ -- 3131
 preamble$ -- 1
-purify$ -- 524
+purify$ -- 539
 quote$ -- 0
-skip$ -- 4780
+skip$ -- 4932
 stack$ -- 0
-substring$ -- 3190
-swap$ -- 6427
-text.length$ -- 293
+substring$ -- 3312
+swap$ -- 6639
+text.length$ -- 301
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 567
+type$ -- 582
 warning$ -- 39
-while$ -- 414
+while$ -- 426
 width$ -- 0
-write$ -- 899
+write$ -- 924
 (There were 43 warnings)
