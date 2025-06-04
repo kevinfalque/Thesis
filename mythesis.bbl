@@ -157,6 +157,11 @@
 \newblock \enquote{Momentum correlations as signature of sonic hawking radiation in bose-einstein condensates}.
 \newblock \href{http://dx.doi.org/10.21468/SciPostPhys.4.4.019}{ \emph{{SciPost} Phys.} \textbf{4}(4), p. 019}.
 
+\bibitem[{Falque \emph{et~al.}(2024)Falque, Delhom, Glorieux, Giacobino, Bramati \& Jacquet}]{falque2024polaritonfluidsquantumfield}
+\bibfnamefont{Kévin} \bibnamefont{Falque}, \bibfnamefont{Adrià} \bibnamefont{Delhom}, \bibfnamefont{Quentin} \bibnamefont{Glorieux}, \bibfnamefont{Elisabeth} \bibnamefont{Giacobino}, \bibfnamefont{Alberto} \bibnamefont{Bramati} \& \bibfnamefont{Maxime~J} \bibnamefont{Jacquet} 2024.
+\newblock \enquote{Polariton fluids as quantum field theory simulators on tailored curved spacetimes}.
+\newblock \eprint{2311.01392} \urlprefix\url{https://arxiv.org/abs/2311.01392}.
+
 \bibitem[{Fox(2010)}]{opt_prop_solids}
 \bibfnamefont{M.}~\bibnamefont{Fox} 2010.
 \newblock \emph{Optical Properties of Solids- Second Edition} (Oxford University Press).
@@ -337,11 +342,6 @@
 \bibfnamefont{Elena} \bibnamefont{Rozas}, \bibfnamefont{Evgeny} \bibnamefont{Sedov}, \bibfnamefont{Yannik} \bibnamefont{Brune}, \bibfnamefont{Sven} \bibnamefont{H\"ofling}, \bibfnamefont{Alexey} \bibnamefont{Kavokin} \& \bibfnamefont{Marc} \bibnamefont{A\ss{}mann} 2023.
 \newblock \enquote{Polariton--dark exciton interactions in bistable semiconductor microcavities}.
 \newblock \href{http://dx.doi.org/10.1103/PhysRevB.108.165411}{ \emph{Phys. Rev. B} \textbf{108}, p. 165\,411}.
-
-\bibitem[{Steger \emph{et~al.}(2013)Steger, Liu, Nelsen, Gautham, Snoke, Balili, Pfeiffer \& West}]{long_range_ballistic_2013}
-\bibfnamefont{Mark} \bibnamefont{Steger}, \bibfnamefont{Gangqiang} \bibnamefont{Liu}, \bibfnamefont{Bryan} \bibnamefont{Nelsen}, \bibfnamefont{Chitra} \bibnamefont{Gautham}, \bibfnamefont{David~W.} \bibnamefont{Snoke}, \bibfnamefont{Ryan} \bibnamefont{Balili}, \bibfnamefont{Loren} \bibnamefont{Pfeiffer} \& \bibfnamefont{Ken} \bibnamefont{West} 2013.
-\newblock \enquote{Long-range ballistic motion and coherent flow of long-lifetime polaritons}.
-\newblock \href{http://dx.doi.org/10.1103/PhysRevB.88.235314}{ \emph{Phys. Rev. B} \textbf{88}, p. 235\,314}.
 
 \bibitem[{Steinhauer()}]{steinhauer_observation_2016}
 \bibfnamefont{Jeff} \bibnamefont{Steinhauer}.

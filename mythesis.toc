@@ -43,21 +43,21 @@
 \contentsline {subsection}{\numberline {3.4.4}Stimulated emission}{73}{subsection.3.4.4}%
 \contentsline {section}{\numberline {3.5}Conclusion}{74}{section.3.5}%
 \contentsline {chapter}{\numberline {4}Optical generation and spectroscopy of arbitrary acoustic horizons}{75}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Optical generation of an arbitrary fluid velocity field}{76}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Optical generation of an arbitrary fluid velocity field}{75}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Waterfall configuration}{76}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Target velocity profile}{76}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Effective 1D fluid}{78}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Experimental spectroscopy of the collective excitation spectrum}{80}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}High resolution pump-probe spectroscopy method}{81}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.1.3}Effective 1D fluid}{79}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Experimental spectroscopy of the collective excitation spectrum}{79}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}High resolution pump-probe spectroscopy method}{80}{subsection.4.2.1}%
 \contentsline {section}{\numberline {4.3}Experimental setup}{81}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Experimental results}{84}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Homogeneous fluid}{84}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Smooth transition geometry}{87}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.4}Experimental results}{82}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Homogeneous fluid}{82}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Smooth transition geometry}{86}{subsection.4.4.2}%
 \contentsline {subsubsection}{\numberline {4.4.2.1}Speed of sound measurement}{87}{subsubsection.4.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.4.2.2}Critical velocity}{88}{subsubsection.4.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}Critical velocity}{87}{subsubsection.4.4.2.2}%
 \contentsline {subsubsection}{\numberline {4.4.2.3}Paired emission frequency range}{90}{subsubsection.4.4.2.3}%
 \contentsline {subsection}{\numberline {4.4.3}Steep horizon geometry}{91}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Quasi-normal mode configuration}{93}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.4}Quasi-normal mode configuration}{92}{subsection.4.4.4}%
 \contentsline {section}{\numberline {4.5}Conclusion}{95}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}Outlook}{95}{subsection.4.5.1}%
 \contentsline {chapter}{\numberline {5}Experimental observation of stimulated Hawking radiation in a polariton quantum fluid}{97}{chapter.5}%
@@ -74,22 +74,22 @@
 \contentsline {subsubsection}{\numberline {5.2.4.2}Real space analysis}{113}{subsubsection.5.2.4.2}%
 \contentsline {subsubsection}{\numberline {5.2.4.3}Signature of amplification}{115}{subsubsection.5.2.4.3}%
 \contentsline {section}{\numberline {5.3}Conclusion}{119}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Bogoliubov modes correlations in polariton quantum fluid}{121}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Bogoliubov modes correlations in a polariton quantum fluid}{121}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Quantum noise of an electromagnetic field}{121}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}Standard quantum limit}{121}{subsection.6.1.1}%
 \contentsline {subsection}{\numberline {6.1.2}Intensity and phase fluctuations}{123}{subsection.6.1.2}%
 \contentsline {subsection}{\numberline {6.1.3}Squeezed states}{123}{subsection.6.1.3}%
 \contentsline {section}{\numberline {6.2}Photodectection}{124}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Balanced detection}{125}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Difference measurement}{126}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.1}Difference measurement}{125}{subsection.6.3.1}%
 \contentsline {section}{\numberline {6.4}Correlations in continuous-variables quantum optics}{126}{section.6.4}%
 \contentsline {section}{\numberline {6.5}Experimental implementation}{127}{section.6.5}%
 \contentsline {subsection}{\numberline {6.5.1}Bogoliubov coefficients measurement}{127}{subsection.6.5.1}%
 \contentsline {subsection}{\numberline {6.5.2}Bogoliubov modes correlations}{129}{subsection.6.5.2}%
 \contentsline {subsubsection}{\numberline {6.5.2.1}Shot noise calibration}{129}{subsubsection.6.5.2.1}%
-\contentsline {subsubsection}{\numberline {6.5.2.2}Balanced detection}{132}{subsubsection.6.5.2.2}%
+\contentsline {subsubsection}{\numberline {6.5.2.2}Balanced detection}{131}{subsubsection.6.5.2.2}%
 \contentsline {subsubsection}{\numberline {6.5.2.3}Correlations measurement}{134}{subsubsection.6.5.2.3}%
-\contentsline {section}{\numberline {6.6}Conclusion}{138}{section.6.6}%
+\contentsline {section}{\numberline {6.6}Conclusion}{137}{section.6.6}%
 \contentsline {part}{Appendices}{139}{section*.59}%
 \contentsline {chapter}{\numberline {A}Mean field shaping and monitoring}{141}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Phase printing}{141}{section.A.1}%
