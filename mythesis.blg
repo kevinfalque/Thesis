@@ -14,7 +14,7 @@ Database file #1: Quantum_optics_lkb.bib
 Warning--entry type for "fabre_houches_97" isn't style-file defined
 --line 749 of file Quantum_optics_lkb.bib
 Warning--entry type for "timofeev_exciton_2012" isn't style-file defined
---line 5827 of file Quantum_optics_lkb.bib
+--line 5825 of file Quantum_optics_lkb.bib
 Warning--I didn't find a database entry for "jacquet_hawking_2019"
 Warning--I didn't find a database entry for "brito_gravitational_2015"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
@@ -24,12 +24,15 @@ Warning--empty year in Amo_fluidlightexp_2009
 Warning--missing publisher in bachor_guide_1998
 Warning--empty year in barcelo_hawking-like_2006
 Warning--missing publisher in boyd_nl_optics
+Warning--empty year in carusotto_numerical_2008
 Warning--can't use both author and editor fields in castin_bose-einstein_2001
 Warning--empty year in fabre_houches_97
 Warning--empty year in cohen-tannoudji_photons_2004
 Warning--missing publisher in cohen-tannoudji_photons_2004
 Warning--empty year in Combescot_cooper_excitons_2015
 Warning--missing publisher in Combescot_cooper_excitons_2015
+Warning--empty year in fabbri_steplike_2011
+Warning--empty year in fabbri_momentum_2018
 Warning--empty year in glorieux_etude_nodate
 Warning--empty journal in glorieux_etude_nodate
 Warning--empty year in grynberg_aspect_fabre
@@ -51,51 +54,51 @@ Warning--empty year in Recati_acousticHR_2009
 Warning--empty year in rousseaux_observation_2008
 Warning--empty year in steinhauer_observation_2016
 Warning--empty year in stepanov_dispersion_2019
-Warning--empty year in unruh_experimental_1981
+Warning--empty year in unruh_universality_2005
 Warning--empty year in Utsunomiya_fluidlightexp_2008
 Warning--empty year in weinfurtner_measurement_2011
 Warning--missing publisher in weisbuch_microcavities_1996
 Warning--empty year in zeldovich__1970
 Warning--empty title in zeldovich__1970
-You've used 69 entries,
+You've used 81 entries,
             3379 wiz_defined-function locations,
-            1118 strings with 20236 characters,
-and the built_in function-call counts, 85700 in all, are:
-= -- 8150
-> -- 3157
-< -- 301
-+ -- 3008
-- -- 906
-* -- 6328
-:= -- 8648
-add.period$ -- 214
-call.type$ -- 69
-change.case$ -- 602
-chr.to.int$ -- 70
-cite$ -- 110
-duplicate$ -- 8122
-empty$ -- 5214
-format.name$ -- 1575
-if$ -- 16978
-int.to.chr$ -- 3
+            1195 strings with 23022 characters,
+and the built_in function-call counts, 98481 in all, are:
+= -- 9332
+> -- 3607
+< -- 345
++ -- 3403
+- -- 1036
+* -- 7297
+:= -- 10024
+add.period$ -- 253
+call.type$ -- 81
+change.case$ -- 695
+chr.to.int$ -- 82
+cite$ -- 125
+duplicate$ -- 9331
+empty$ -- 6046
+format.name$ -- 1807
+if$ -- 19518
+int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 787
-newline$ -- 359
-num.names$ -- 272
-pop$ -- 3131
+missing$ -- 918
+newline$ -- 422
+num.names$ -- 320
+pop$ -- 3577
 preamble$ -- 1
-purify$ -- 539
+purify$ -- 623
 quote$ -- 0
-skip$ -- 4932
+skip$ -- 5621
 stack$ -- 0
-substring$ -- 3312
-swap$ -- 6639
-text.length$ -- 301
+substring$ -- 3770
+swap$ -- 7584
+text.length$ -- 345
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 582
-warning$ -- 39
-while$ -- 426
+type$ -- 681
+warning$ -- 42
+while$ -- 497
 width$ -- 0
-write$ -- 924
-(There were 43 warnings)
+write$ -- 1093
+(There were 46 warnings)

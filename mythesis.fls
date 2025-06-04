@@ -776,6 +776,11 @@ INPUT ./chap_AG_theory/fig/bogo_gap_supersonic_dispersion.pdf
 INPUT ./chap_AG_theory/fig/bogo_gap_supersonic_dispersion.pdf
 INPUT ./chap_AG_theory/fig/bogo_gap_supersonic_dispersion.pdf
 INPUT ./chap_AG_theory/fig/bogo_gap_supersonic_dispersion.pdf
+INPUT ./chap_AG_theory/fig/typical_velocity.pdf
+INPUT ./chap_AG_theory/fig/typical_velocity.pdf
+INPUT ./chap_AG_theory/fig/typical_velocity.pdf
+INPUT ./chap_AG_theory/fig/typical_velocity.pdf
+INPUT ./chap_AG_theory/fig/typical_velocity.pdf
 INPUT ./chap_AG_theory/fig/bogo_gap_dispersion.pdf
 INPUT ./chap_AG_theory/fig/bogo_gap_dispersion.pdf
 INPUT ./chap_AG_theory/fig/bogo_gap_dispersion.pdf
@@ -784,6 +789,11 @@ INPUT ./chap_AG_theory/fig/bogo_gap_dispersion.pdf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmro8.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmro8.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbo10.tfm
+INPUT ./chap_AG_theory/fig/g2_position.pdf
+INPUT ./chap_AG_theory/fig/g2_position.pdf
+INPUT ./chap_AG_theory/fig/g2_position.pdf
+INPUT ./chap_AG_theory/fig/g2_position.pdf
+INPUT ./chap_AG_theory/fig/g2_position.pdf
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/doublestroke/Udsrom.fd

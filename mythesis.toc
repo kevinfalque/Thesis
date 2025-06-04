@@ -29,22 +29,19 @@
 \contentsline {section}{\numberline {2.5}Conclusion}{43}{section.2.5}%
 \contentsline {chapter}{\numberline {3}Hawking radiation in a polariton quantum fluid}{45}{chapter.3}%
 \contentsline {section}{\numberline {3.1}The hydrodynamical analogy}{45}{section.3.1}%
-\contentsline {section}{\numberline {3.2}At the heart of particle creation : Bogoliubov transformation}{46}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}The ambiguity of vacuum definition}{46}{subsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.1.1}The harmonic oscillator}{47}{subsubsection.3.2.1.1}%
-\contentsline {section}{\numberline {3.3}Elementary excitations of the fluid : Bogoliubov theory}{49}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Linearization of the Gross-Pitaevskii equation}{49}{subsection.3.3.1}%
-\contentsline {section}{\numberline {3.4}Homogeneous fluid}{55}{section.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.0.1}Bogoliubov mode energy}{57}{subsubsection.3.4.0.1}%
-\contentsline {subsection}{\numberline {3.4.1}Bogoliubov spectrum characterization}{58}{subsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.1.1}Static fluid}{58}{subsubsection.3.4.1.1}%
-\contentsline {subsubsection}{\numberline {3.4.1.2}Moving polaritons at finite $k_p$}{62}{subsubsection.3.4.1.2}%
-\contentsline {section}{\numberline {3.5}Hawking radiation in a transcritical fluid}{65}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Inhomogeneous pumping}{65}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Modes quantization}{68}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Spontaneous emission}{70}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Stimulated emission}{71}{subsection.3.5.4}%
-\contentsline {section}{\numberline {3.6}Conclusion}{72}{section.3.6}%
+\contentsline {section}{\numberline {3.2}Elementary excitations of the fluid : Bogoliubov theory}{48}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Linearization of the Gross-Pitaevskii equation}{48}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Homogeneous fluid}{54}{section.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.0.1}Bogoliubov mode energy}{56}{subsubsection.3.3.0.1}%
+\contentsline {subsection}{\numberline {3.3.1}Bogoliubov spectrum characterization}{57}{subsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.1.1}Static fluid}{57}{subsubsection.3.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.3.1.2}Moving polaritons at finite $k_p$}{62}{subsubsection.3.3.1.2}%
+\contentsline {section}{\numberline {3.4}Hawking radiation in a transcritical fluid}{64}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Inhomogeneous pumping}{64}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Modes quantization}{68}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Spontaneous emission}{71}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Stimulated emission}{73}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}Conclusion}{74}{section.3.5}%
 \contentsline {chapter}{\numberline {4}Optical generation and spectroscopy of arbitrary acoustic horizons}{75}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Optical generation of an arbitrary fluid velocity field}{76}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Waterfall configuration}{76}{subsection.4.1.1}%
@@ -93,11 +90,11 @@
 \contentsline {subsubsection}{\numberline {6.5.2.2}Balanced detection}{132}{subsubsection.6.5.2.2}%
 \contentsline {subsubsection}{\numberline {6.5.2.3}Correlations measurement}{134}{subsubsection.6.5.2.3}%
 \contentsline {section}{\numberline {6.6}Conclusion}{138}{section.6.6}%
-\contentsline {part}{Appendices}{139}{section*.57}%
+\contentsline {part}{Appendices}{139}{section*.59}%
 \contentsline {chapter}{\numberline {A}Mean field shaping and monitoring}{141}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Phase printing}{141}{section.A.1}%
 \contentsline {subsection}{\numberline {A.1.1}Spatial light modulator.}{141}{subsection.A.1.1}%
 \contentsline {subsection}{\numberline {A.1.2}Phase measurement}{143}{subsection.A.1.2}%
 \contentsline {subsection}{\numberline {A.1.3}Off axis inteferometry}{143}{subsection.A.1.3}%
 \contentsline {subsection}{\numberline {A.1.4}Controlling the local intensity}{143}{subsection.A.1.4}%
-\contentsline {part}{Bibliography}{145}{section*.61}%
+\contentsline {part}{Bibliography}{145}{section*.63}%

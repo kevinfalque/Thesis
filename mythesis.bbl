@@ -1,4 +1,4 @@
-\begin{thebibliography}{69}
+\begin{thebibliography}{81}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibnamefont}[1]{\textsc{#1}}
 \providecommand{\bibfnamefont}[1]{#1}
@@ -9,6 +9,11 @@
 \bibitem[{tim()}]{timofeev_exciton_2012}
 \enquote{Exciton polaritons in microcavities}.
 \newblock \urlprefix\url{http://dx.doi.org/10.1007/978-3-642-24186-4}.
+
+\bibitem[{Amelio \emph{et~al.}(2020)Amelio, Minguzzi, Richard \& Carusotto}]{amelio_galilean_2020}
+\bibfnamefont{Ivan} \bibnamefont{Amelio}, \bibfnamefont{Anna} \bibnamefont{Minguzzi}, \bibfnamefont{Maxime} \bibnamefont{Richard} \& \bibfnamefont{Iacopo} \bibnamefont{Carusotto} 2020.
+\newblock \enquote{Galilean boosts and superfluidity of resonantly driven polariton fluids in the presence of an incoherent reservoir}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRevResearch.2.023158}{ \emph{Phys. Rev. Res.} \textbf{2}, p. 023\,158}.
 
 \bibitem[{Amo \emph{et~al.}()Amo, Lefrère, Pigeon, Adrados, Ciuti, Carusotto, Houdré, Giacobino \& Bramati}]{Amo_fluidlightexp_2009}
 \bibfnamefont{Alberto} \bibnamefont{Amo}, \bibfnamefont{Jérôme} \bibnamefont{Lefrère}, \bibfnamefont{Simon} \bibnamefont{Pigeon}, \bibfnamefont{Claire} \bibnamefont{Adrados}, \bibfnamefont{Cristiano} \bibnamefont{Ciuti}, \bibfnamefont{Iacopo} \bibnamefont{Carusotto}, \bibfnamefont{Romuald} \bibnamefont{Houdré}, \bibfnamefont{Elisabeth} \bibnamefont{Giacobino} \& \bibfnamefont{Alberto} \bibnamefont{Bramati}.
@@ -26,6 +31,11 @@
 \newblock ISBN 978-3-527-29298-1.
 \newblock \urlprefix\url{https://books.google.fr/books?id=6vhAAQAAIAAJ}.
 
+\bibitem[{Barcel\'o \emph{et~al.}(2011)Barcel\'o, Liberati \& Visser}]{barcelo_analogue_2011}
+\bibfnamefont{C.}~\bibnamefont{Barcel\'o}, \bibfnamefont{S.}~\bibnamefont{Liberati} \& \bibfnamefont{M.}~\bibnamefont{Visser} 2011.
+\newblock \enquote{Analogue {Gravity}}.
+\newblock \href{http://dx.doi.org/10.12942/lrr-2011-3}{ \emph{Living Reviews in Relativity} \textbf{14}, p.~3}.
+
 \bibitem[{Barceló \emph{et~al.}()Barceló, Liberati, Sonego \& Visser}]{barcelo_hawking-like_2006}
 \bibfnamefont{Carlos} \bibnamefont{Barceló}, \bibfnamefont{Stefano} \bibnamefont{Liberati}, \bibfnamefont{Sebastiano} \bibnamefont{Sonego} \& \bibfnamefont{Matt} \bibnamefont{Visser}.
 \newblock \enquote{Hawking-like radiation does not require a trapped region}.
@@ -41,6 +51,12 @@
 \newblock \enquote{Symplectic circuits, entanglement, and stimulated hawking radiation in analogue gravity}.
 \newblock \href{http://dx.doi.org/10.1103/PhysRevD.106.105021}{ \emph{Phys. Rev. D} \textbf{106}, p. 105\,021}.
 
+\bibitem[{Brito \emph{et~al.}(2020)Brito, Cardoso \& Pani}]{brito_superradiance_2020_lectures}
+\bibfnamefont{Richard} \bibnamefont{Brito}, \bibfnamefont{Vitor} \bibnamefont{Cardoso} \& \bibfnamefont{Paolo} \bibnamefont{Pani} 2020.
+\newblock \emph{Superradiance: {New} {Frontiers} in {Black} {Hole} {Physics}} \emph{Lecture {Notes} in {Physics}}, tome 971 (Springer International Publishing, Cham).
+\newblock ISBN 978-3-030-46621-3 978-3-030-46622-0.
+\newblock \urlprefix\url{http://dx.doi.org/10.1007/978-3-030-46622-0}.
+
 \bibitem[{{Brown, R.} \& {Twiss, R.}(1956)}]{hanbury_brown_twiss_1956}
 \bibnamefont{{Brown, R.}} \& \bibnamefont{{Twiss, R.}} 1956.
 \newblock \enquote{Correlation between photons in two coherent beams of light.}
@@ -51,10 +67,20 @@
 \newblock \enquote{Quantum fluids of light}.
 \newblock \href{http://dx.doi.org/10.1103/RevModPhys.85.299}{ \emph{Rev. Mod. Phys.} \textbf{85}(1), p. 299--366}.
 
+\bibitem[{Carusotto \emph{et~al.}()Carusotto, Fagnocchi, Recati, Balbinot \& Fabbri}]{carusotto_numerical_2008}
+\bibfnamefont{Iacopo} \bibnamefont{Carusotto}, \bibfnamefont{Serena} \bibnamefont{Fagnocchi}, \bibfnamefont{Alessio} \bibnamefont{Recati}, \bibfnamefont{Roberto} \bibnamefont{Balbinot} \& \bibfnamefont{Alessandro} \bibnamefont{Fabbri}.
+\newblock \enquote{Numerical observation of hawking radiation from acoustic black holes in atomic bose-einstein condensates}.
+\newblock \href{http://dx.doi.org/10.1088/1367-2630/10/10/103001}{ \emph{New Journal of Physics} \textbf{10}(10), p. 103\,001}.
+
 \bibitem[{Castin(2001)}]{castin_bose-einstein_2001}
 \bibfnamefont{Y.}~\bibnamefont{Castin} 2001.
 \newblock \emph{Bose-{Einstein} {Condensates} in {Atomic} {Gases}: {Simple} {Theoretical} {Results}} (Springer Berlin Heidelberg, Berlin, Heidelberg).
 \newblock ISBN 978-3-540-45338-3.
+
+\bibitem[{Castin \& Dum(1998)}]{castin_low-temperature_1998}
+\bibfnamefont{Y.}~\bibnamefont{Castin} \& \bibfnamefont{R.}~\bibnamefont{Dum} 1998.
+\newblock \enquote{Low-temperature bose-einstein condensates in time-dependent traps: Beyond the $u(1)$ symmetry-breaking approach}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRevA.57.3008}{ \emph{Phys. Rev. A} \textbf{57}, p. 3008--3021}.
 
 \bibitem[{Ciuti \emph{et~al.}(1998)Ciuti, Savona, Piermarocchi, Quattropani \& Schwendimann}]{ciuti_carrier_exchanges_1998}
 \bibfnamefont{C.}~\bibnamefont{Ciuti}, \bibfnamefont{V.}~\bibnamefont{Savona}, \bibfnamefont{C.}~\bibnamefont{Piermarocchi}, \bibfnamefont{A.}~\bibnamefont{Quattropani} \& \bibfnamefont{P.}~\bibnamefont{Schwendimann} 1998.
@@ -116,6 +142,21 @@
 \newblock \enquote{Recherches sur la th\'eorie des quanta}.
 \newblock \href{http://dx.doi.org/10.1051/anphys/192510030022}{ \emph{Ann. Phys.} \textbf{10}(3), p. 22--128}.
 
+\bibitem[{Delhom \emph{et~al.}(2024)Delhom, Guerrero, Calizaya~Cabrera, Falque, Bramati, Brady, Jacquet \& Agullo}]{rot_supperradiance_delhom}
+\bibfnamefont{Adri\`a} \bibnamefont{Delhom}, \bibfnamefont{Killian} \bibnamefont{Guerrero}, \bibfnamefont{Paula} \bibnamefont{Calizaya~Cabrera}, \bibfnamefont{K\'evin} \bibnamefont{Falque}, \bibfnamefont{Alberto} \bibnamefont{Bramati}, \bibfnamefont{Anthony~J.} \bibnamefont{Brady}, \bibfnamefont{Maxime~J.} \bibnamefont{Jacquet} \& \bibfnamefont{Ivan} \bibnamefont{Agullo} 2024.
+\newblock \enquote{Entanglement from superradiance and rotating quantum fluids of light}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRevD.109.105024}{ \emph{Phys. Rev. D} \textbf{109}, p. 105\,024}.
+
+\bibitem[{Fabbri \& Mayoral()}]{fabbri_steplike_2011}
+\bibfnamefont{Alessandro} \bibnamefont{Fabbri} \& \bibfnamefont{Carlos} \bibnamefont{Mayoral}.
+\newblock \enquote{Steplike discontinuities in bose-einstein condensates and hawking radiation: The hydrodynamic limit}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRevD.83.124016}{ \emph{Physical Review D} \textbf{83}(12)}.
+
+\bibitem[{Fabbri \& Pavloff()}]{fabbri_momentum_2018}
+\bibfnamefont{Alessandro} \bibnamefont{Fabbri} \& \bibfnamefont{Nicolas} \bibnamefont{Pavloff}.
+\newblock \enquote{Momentum correlations as signature of sonic hawking radiation in bose-einstein condensates}.
+\newblock \href{http://dx.doi.org/10.21468/SciPostPhys.4.4.019}{ \emph{{SciPost} Phys.} \textbf{4}(4), p. 019}.
+
 \bibitem[{Fox(2010)}]{opt_prop_solids}
 \bibfnamefont{M.}~\bibnamefont{Fox} 2010.
 \newblock \emph{Optical Properties of Solids- Second Edition} (Oxford University Press).
@@ -147,6 +188,12 @@
 \bibfnamefont{Pjotrs} \bibnamefont{Grǐsšins}, \bibfnamefont{Hai~Son} \bibnamefont{Nguyen}, \bibfnamefont{Jacqueline} \bibnamefont{Bloch}, \bibfnamefont{Alberto} \bibnamefont{Amo} \& \bibfnamefont{Iacopo} \bibnamefont{Carusotto}.
 \newblock \enquote{Theoretical study of stimulated and spontaneous hawking effects from an acoustic black hole in a hydrodynamically flowing fluid of light}.
 \newblock \href{http://dx.doi.org/10.1103/PhysRevB.94.144518}{ \emph{Phys. Rev. B} \textbf{94}(14), p. 144\,518}.
+
+\bibitem[{Hangleiter \emph{et~al.}(2022)Hangleiter, Carolan \& Thébault}]{hangleiter_analogue_2022}
+\bibfnamefont{Dominik} \bibnamefont{Hangleiter}, \bibfnamefont{Jacques} \bibnamefont{Carolan} \& \bibfnamefont{Karim P.~Y.} \bibnamefont{Thébault} 2022.
+\newblock \emph{Analogue {Quantum} {Simulation}: {A} {New} {Instrument} for {Scientific} {Understanding}} (Springer International Publishing, Cham).
+\newblock ISBN 978-3-030-87215-1 978-3-030-87216-8.
+\newblock \urlprefix\url{http://dx.doi.org/10.1007/978-3-030-87216-8}.
 
 \bibitem[{Hawking()}]{hawking_black_1972}
 \bibfnamefont{S.~W.} \bibnamefont{Hawking}.
@@ -311,10 +358,20 @@
 \newblock \enquote{Criteria of quantum correlation in the measurement of continuous variables in optics}.
 \newblock \href{http://dx.doi.org/hal-00002321v2}{ \emph{Hal open science- Laser Physics} \textbf{15}(2), p. 187}.
 
-\bibitem[{Unruh()}]{unruh_experimental_1981}
-\bibfnamefont{W.~G.} \bibnamefont{Unruh}.
+\bibitem[{Unruh({\natexlab{a}})}]{unruh_experimental_1981}
+\bibfnamefont{W.~G.} \bibnamefont{Unruh} {\natexlab{a}}.
 \newblock \enquote{Experimental black-hole evaporation?}
 \newblock \href{http://dx.doi.org/10.1103/PhysRevLett.46.1351}{ \emph{Physical Review Letters} \textbf{46}(21), p. 1351--1353}.
+
+\bibitem[{Unruh({\natexlab{b}})}]{unruh_!notes_1976}
+\bibfnamefont{W.~G.} \bibnamefont{Unruh} {\natexlab{b}}.
+\newblock \enquote{!notes on black-hole evaporation}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRevD.14.870}{ \emph{Physical Review D} \textbf{14}(4), p. 870--892}.
+
+\bibitem[{Unruh \& Schützhold()}]{unruh_universality_2005}
+\bibfnamefont{William} \bibnamefont{Unruh} \& \bibfnamefont{Ralf} \bibnamefont{Schützhold}.
+\newblock \enquote{Universality of the hawking effect}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRevD.71.024028}{ \emph{Physical Review D} \textbf{71}(2)}.
 
 \bibitem[{Usui(1960)}]{usui_sat_potential_1960}
 \bibfnamefont{Tunemaru} \bibnamefont{Usui} 1960.
@@ -330,6 +387,12 @@
 \bibfnamefont{S.}~\bibnamefont{Utsunomiya}, \bibfnamefont{L.}~\bibnamefont{Tian}, \bibfnamefont{G.}~\bibnamefont{Roumpos}, \bibfnamefont{C.~W.} \bibnamefont{Lai}, \bibfnamefont{N.}~\bibnamefont{Kumada}, \bibfnamefont{T.}~\bibnamefont{Fujisawa}, \bibfnamefont{M.}~\bibnamefont{Kuwata-Gonokami}, \bibfnamefont{A.}~\bibnamefont{Löffler}, \bibfnamefont{S.}~\bibnamefont{Höfling}, \bibfnamefont{A.}~\bibnamefont{Forchel} \emph{et~al.} 2008.
 \newblock \enquote{Observation of {Bogoliubov} excitations in exciton-polariton condensates}.
 \newblock \href{http://dx.doi.org/10.1038/nphys1034}{ \emph{Nature Physics} \textbf{4}(9), p. 700--705}.
+
+\bibitem[{Wald(1994)}]{qft_wald_chicago_1994}
+\bibfnamefont{Robert~M.} \bibnamefont{Wald} 1994.
+\newblock \emph{Quantum field theory in curved spacetime and black hole thermodynamics}.
+\newblock Chicago lectures in physics (University of Chicago Press).
+\newblock ISBN 978-0-226-46766-3.
 
 \bibitem[{Weinfurtner \emph{et~al.}()Weinfurtner, Tedford, Penrice, Unruh \& Lawrence}]{weinfurtner_measurement_2011}
 \bibfnamefont{Silke} \bibnamefont{Weinfurtner}, \bibfnamefont{Edmund~W.} \bibnamefont{Tedford}, \bibfnamefont{Matthew C.~J.} \bibnamefont{Penrice}, \bibfnamefont{William~G.} \bibnamefont{Unruh} \& \bibfnamefont{Gregory~A.} \bibnamefont{Lawrence}.
