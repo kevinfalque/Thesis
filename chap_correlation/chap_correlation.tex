@@ -12,19 +12,19 @@
 
 \graphicspath{{./}{./fig/}{./chap_correlation/fig/}}
 
-\chapter{Bogoliubov modes correlations in polariton quantum fluid}
+\chapter{Bogoliubov modes correlations in a polariton quantum fluid}
 
 \label{chap:correlation}
 
 The study of collective excitations in quantum fluids is fundamental to understand nonequilibrium dynamics and many-body interactions. Furthermore, the analog Hawking radiation
-on which this work is focused, is expected to create non classical correlations between bogoliubov modes, the event horizon acting as a two mode squeezer \cite{agullo_symplectic_2022}. The simplest manifestation
+on which this work is focused, is expected to create non classical correlations between Bogoliubov modes, the event horizon acting as a two mode squeezer \cite{agullo_symplectic_2022}. The simplest manifestation
 of paired correlated emission can be observed in the density fluctuations second order correlation function \cite{nguyen_acoustic_2015, carusotto_stimulatedfluid_2016,jacquet_quantum_2023,steinhauer_observation_2016}.
-This observable exhibits correlation pattern in the density fluctuations of the fluid on both side of the horizon.
-Yet, this has been done only numerically in polaritonic system since the experimental equivalent would require to resolve the polariton lifetime $\sim 10 \mathrm{ps}$. However 
-the strong photonic component of this system suggest that correlations between collective excitations modes must have an optical signature that could be adressed
-with all the tools developpped in quantum optics.
+This observable exhibits a correlation pattern in the density fluctuations of the fluid on both side of the horizon.
+Yet, this has been done only numerically in polaritonic system since the experiment would require to resolve the polariton lifetime $\sim 10 \mathrm{ps}$. However 
+the strong photonic component of this system suggests that correlations between collective excitations modes must have an optical signature that could be addressed
+with all the tools developed in quantum optics.
 In this work, we report the first experimental measurement of correlations between collective excitation modes—Bogoliubov modes—in a static and homogeneous quantum fluid of microcavity exciton-polaritons.
- By using a balanced detection set-up, we measure intensity correlation between the normal and ghost branches, probing the fluctuation dynamics of polariton fluids and extracting the spectral correlations of Bogoliubov excitations.
+ By using a balanced detection set-up, we measure intensity correlation between the normal and ghost branches, probing the fluctuation dynamics of the polariton fluid and extracting the spectral correlations of Bogoliubov excitations.
   We observe a clear enhancement of the intensity correlations when the polariton fluid operates near the turning point of the bistabilty due to the emergence of correlated phonon-like excitations. These correlations, seeded by quantum and thermal fluctuations, provide insights into the role of the nonlinear and phononic interactions in the collective excitations of a polariton quantum fluid.
 
 \section{Quantum noise of an electromagnetic field}
@@ -46,7 +46,7 @@ where we introduced the quadrature operators $\hX$ and $\hY$ defined as :
         \hX = (\hat{a} + \hat{a}^{\dagger})  \ \ \mathrm{and}  \ \
         \hY = i(\hat{a}^{\dagger} - \hat{a}).
 \end{equation}
-The amplitude of the field $E_0=\sqrt{\frac{\hbar \omega}{2\epsilon_0 V}}$ where $\epsilon_0$ is the vacuum permitivity, corresponds to the electric field of a single photon with energy $\hbar \omega$ in the quantization volume $V$. 
+The amplitude of the field $E_0=\sqrt{\frac{\hbar \omega}{2\epsilon_0 V}}$ where $\epsilon_0$ is the vacuum permittivity, corresponds to the electric field of a single photon with energy $\hbar \omega$ in the quantization volume $V$. 
 For a classical field, $X$ and $Y$ are real numbers and correspond to the real and imaginary parts of the complex field amplitude in the Fresnel representation as visible in \autoref{fig:fresnel} \textbf{a)}. In quantum mechanics,
 the quadrature operators are conjugate variables. Indeed, by using the commutation relation of the photon creation and annihilation operators $[\hat{a},\hat{a}^{\dagger}]=1$, we obtain :
 
@@ -54,7 +54,7 @@ the quadrature operators are conjugate variables. Indeed, by using the commutati
     \centering
     \includegraphics[width=0.8\textwidth]{chap_correlation/fig/fresnel.pdf}
     \caption{ \textbf{a)} Fresnel representation of a classical state. \textbf{b)} Quantum representation 
-    of the quadrature operators. The spreaded cloud of points around the mean value $(\langle \hX \rangle, \langle \hY \rangle)$ represents several measurements of the same quantum state. The area of the cloud 
+    of the quadrature operators. The cloud of points around the mean value $(\langle \hX \rangle, \langle \hY \rangle)$ represents several measurements of the same quantum state. The area of the cloud 
     is bounded from below by the Heisenberg uncertainty principle. The quadratures $\hX_{I}$ and $\hY_{\Phi}$ are the amplitude and phase quadratures respectively.}
     \label{fig:fresnel}
 \end{figure}
@@ -71,7 +71,7 @@ More precisely, the variances $\Delta X^2 = \langle \hX^2 \rangle - \langle \hX 
     \Delta X^2 \Delta Y^2 \geq 1
 \end{equation}
 In contrast with the classical case, the vector $(\langle \hX \rangle, \langle \hY \rangle)$ representing the expectation values of the operators is associated with uncertainties whose area is bounded by the Heisenberg principle. 
-The state most closely resembling a classical field is the one in which the fluctuations in both quadratures saturate \autoref{eq:uncertainty}. In this case, the uncertainty area assumes a circular shape with a diameter $E_0$ in the phase space, as illustrated in \autoref{fig:fresnel} \textbf{b)}. In this figure, the field and its fluctuations are not represented on the same scale; a laser field comprises a very large number of photons, whereas the fluctuations are of the order of the field of a single photon. 
+The state most closely resembling a classical field is the one in which the fluctuations in both quadratures saturate \autoref{eq:uncertainty}. In this case, the uncertainty area assumes a circular shape with a diameter $E_0$ in the phase space, as illustrated in \autoref{fig:fresnel} \textbf{b)}. In this figure, the field and its fluctuations are not represented on the same scale; a laser field comprises a very large number of photons, whereas the fluctuations are much smaller. 
 Such a minimum uncertainty state is referred to as a coherent state while the corresponding fluctuations define the standard quantum fluctuations. Coherent
 state are typically produced by a laser way above threshold and are the eigenvector of the annihilation operator $\hat{a}$.
 
@@ -87,22 +87,22 @@ Moving to another set of operators $\hX_{\theta},\hY_{\theta}$ consists in a rot
 
 The rotated operators satisfy the same commutation relation \ref{eq:commut} and the uncertainty relation \ref{eq:uncertainty} remains valid. 
 However, a particular choice of quadratures is often made in the context of quantum optics \cite{grynberg_aspect_fabre} which consists in
-chosing $\theta=\Phi$ where $\Phi$ is the phase of the mean field $\langle \hat{a}\rangle= |\hat{a}|e^{i\Phi}$.  The fluctuations of the corresponding quadrature
-operators that we call $\hX_{I}$ and $\hY_{\Phi}$ are then proportionnal to intensity and phase fluctuations respectively as shown in \autoref{fig:fresnel} ~\textbf{b)}. In the case of 
+choosing $\theta=\Phi$ where $\Phi$ is the phase of the mean field $\langle \hat{a}\rangle= |\hat{a}|e^{i\Phi}$.  The fluctuations of the corresponding quadrature
+operators that we call $\hX_{I}$ and $\hY_{\Phi}$ are then proportional to intensity and phase fluctuations respectively as shown in \autoref{fig:fresnel} ~\textbf{b)}. In the case of 
 a laser beam, the standard quantum limit is also referred to as the shot noise limit and ultimately originate from spontaneous emission of photons in the gain medium which yields a poissonian statistics in the photon arrival time \cite{grynberg_aspect_fabre}.
-Indeed, the measurement of the intensity of a laser beam is subject to statistical noise scalling as the square root of the mean number of photons in the beam.
+Indeed, the measurement of the intensity of a laser beam is subject to statistical noise scaling as the square root of the mean number of photons in the beam.
 
 \begin{equation}
     \label{eq:shotnoise}
     \Delta \hat{N}^2 = \langle \hat{N}\rangle
 \end{equation}
-From an experimental point of view, this relation is helpfull since it provides a direct way to infer the standard quantum limit from an intensity measurement.   
+From an experimental point of view, this relation is helpful since it provides a direct way to infer the standard quantum limit from an intensity measurement.   
 
 
 \subsection{Squeezed states}
 While vacuum fluctuations serve as a reference for quantum fluctuations, there is nevertheless no fundamental restriction against obtaining states in which the fluctuations of a given quadrature, $\hX_{\theta}$, are reduced below the standard quantum limit. Indeed, the Heisenberg inequality pertains to the product of uncertainties.
  This inequality remains satisfied provided that the fluctuations in the orthogonal quadrature $\hY_{\theta}$ increase accordingly. Graphically, their representation is obtained by squeezing the uncertainty area along the direction of the quadrature $\hX_{\theta}$ and stretching it along the direction of $\hY_{\theta}$. The resulting states are referred to as a squeezed state, and are of great interest 
- in quantum optics as they can be used to enhance the sensitivity of measurements. As an example, phase squeezed state are used in LIGO-VIRGO infrastrucutres to resolve the infinitesimal displacements of the interferometer mirrors induced by the passing gravitational waves.
+ in quantum optics as they can be used to enhance the sensitivity of measurements. As an example, phase squeezed state are used in LIGO-VIRGO infrastructures to resolve the infinitesimal displacements of the interferometer mirrors induced by the gravitational waves.
 
 \section{Photodectection}
 \label{sec:photodetection}
