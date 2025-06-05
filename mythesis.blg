@@ -16,7 +16,6 @@ Warning--entry type for "fabre_houches_97" isn't style-file defined
 Warning--entry type for "timofeev_exciton_2012" isn't style-file defined
 --line 5837 of file Quantum_optics_lkb.bib
 Warning--I didn't find a database entry for "jacquet_hawking_2019"
-Warning--I didn't find a database entry for "brito_gravitational_2015"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--to sort, need author or key in timofeev_exciton_2012
 Warning--empty year in timofeev_exciton_2012
@@ -24,6 +23,7 @@ Warning--empty year in Amo_fluidlightexp_2009
 Warning--missing publisher in bachor_guide_1998
 Warning--empty year in barcelo_hawking-like_2006
 Warning--missing publisher in boyd_nl_optics
+Warning--empty year in brito_superradiance_2015
 Warning--empty year in carusotto_numerical_2008
 Warning--can't use both author and editor fields in castin_bose-einstein_2001
 Warning--empty year in fabre_houches_97
@@ -60,45 +60,45 @@ Warning--empty year in weinfurtner_measurement_2011
 Warning--missing publisher in weisbuch_microcavities_1996
 Warning--empty year in zeldovich__1970
 Warning--empty title in zeldovich__1970
-You've used 81 entries,
+You've used 82 entries,
             3379 wiz_defined-function locations,
-            1193 strings with 22976 characters,
-and the built_in function-call counts, 97603 in all, are:
-= -- 9227
-> -- 3585
-< -- 342
-+ -- 3373
-- -- 1030
-* -- 7246
-:= -- 9969
-add.period$ -- 253
-call.type$ -- 81
-change.case$ -- 693
-chr.to.int$ -- 82
-cite$ -- 125
-duplicate$ -- 9237
-empty$ -- 6003
-format.name$ -- 1797
-if$ -- 19330
+            1199 strings with 23151 characters,
+and the built_in function-call counts, 98352 in all, are:
+= -- 9277
+> -- 3623
+< -- 345
++ -- 3403
+- -- 1041
+* -- 7319
+:= -- 10068
+add.period$ -- 256
+call.type$ -- 82
+change.case$ -- 701
+chr.to.int$ -- 83
+cite$ -- 127
+duplicate$ -- 9299
+empty$ -- 6057
+format.name$ -- 1817
+if$ -- 19470
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 912
-newline$ -- 422
-num.names$ -- 320
-pop$ -- 3546
+missing$ -- 922
+newline$ -- 427
+num.names$ -- 324
+pop$ -- 3576
 preamble$ -- 1
-purify$ -- 621
+purify$ -- 628
 quote$ -- 0
-skip$ -- 5551
+skip$ -- 5574
 stack$ -- 0
-substring$ -- 3714
-swap$ -- 7487
-text.length$ -- 342
+substring$ -- 3725
+swap$ -- 7521
+text.length$ -- 345
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 681
-warning$ -- 42
-while$ -- 494
+type$ -- 690
+warning$ -- 43
+while$ -- 498
 width$ -- 0
-write$ -- 1092
+write$ -- 1105
 (There were 46 warnings)
