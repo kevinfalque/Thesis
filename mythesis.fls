@@ -1,8 +1,8 @@
-PWD /home/kfalque/Documents/These-Falquos-main
+PWD /home/kfalque/Documents/These-v3/Thesis
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /home/kfalque/Documents/These-Falquos-main/mythesis.tex
+INPUT /home/kfalque/Documents/These-v3/Thesis/mythesis.tex
 OUTPUT mythesis.log
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/book.cls
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/book.cls

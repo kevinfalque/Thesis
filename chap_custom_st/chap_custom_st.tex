@@ -20,8 +20,8 @@
 
 
 The previous chapter showed that the creation of a sonic horizon in a polariton fluid can lead to spontaneous emission of Bogoliubov modes provided the downstream region exhibits a collective excitation spectrum with
-negative energy modes. Furthermore, it was shown that the strength of the emitted signal depends strongly on the curvature of the horizon, or in other words, its steepness. To ensure that such effect is in principle observable in the laboratory, one needs to fully characterize the mean field of the fluid and locally probe its excitation spectrum. This chapter is dedicated to the description of the full optical generation of arbitrary transcritical fluids as well as the characterization of the excitation spectrum on both sides of the horizon. 
-This measurement revealed for the first time negative energy modes in a supersonic quantum fluid, validating the possibility to observe particle creation in a polariton fluid.
+negative-energy modes. Furthermore, it was shown that the strength of the emitted signal depends strongly on the curvature of the horizon, or in other words, its steepness. To ensure that such an effect is in principle observable in the laboratory, one needs to fully characterize the mean field of the fluid and locally probe its excitation spectrum. This chapter is dedicated to the description of the full optical generation of arbitrary transcritical fluids as well as the characterization of the excitation spectrum on both sides of the horizon. 
+The measurement of this spectrum revealed for the first time negative-energy modes in a supersonic quantum fluid, validating the possibility to observe particle creation in a polariton fluid.
 
 The first part of the chapter will focus on the generation of mean fields with arbitrary velocity profiles through the shaping of the pump laser phase. In the second part, we will present the pump-probe spectroscopy method used to locally measure the collective excitation spectrum, as well
 as the results obtained for several transonic fluids with different parameters. The results obtained are reported in \cite{falque2024polaritonfluidsquantumfield}.
@@ -29,7 +29,7 @@ as the results obtained for several transonic fluids with different parameters. 
 \section{Optical generation of an arbitrary fluid velocity field}
 
 
-Set the coordinates $x$ and $y$ to describe the microcavity plane. As explained in \autoref{chap:polariton_theory}, translational invariance in the $xy$-plane ensure in-plane momentum conservation along photon absorption, while the wavevectors along the
+We use the coordinates $x$ and $y$ to describe the microcavity plane. As explained in \autoref{chap:polariton_theory}, translational invariance in the $xy$-plane ensure in-plane momentum conservation along photon absorption, while the wavevectors along the
 $z$ direction are fixed by the cavity and quantum well lengths. Furthermore, in this experiment, the laser beam is set to be quasi-resonant with the lower polariton branch. As a consequence, the transverse phase of the laser is directly imprinted on the polariton field.
 Indeed, in the low wavevector limit, the lower polariton branch can be safely approximated by a parabola, namely :
 
@@ -47,14 +47,14 @@ which provides a direct link between the driving laser phase and the velocity of
 
 \subsection{Waterfall configuration}
 A first realization of a 1D acoustic black hole in a polaritonic system was done in \cite{nguyen_acoustic_2015} with the so-called waterfall configuration. 
-The setup was composed of a microcavity etched to be one-dimensional (a microwire), and a defect was added in the middle of the wire to act as an external attractive potential and force the polariton flow to accelerate. The pump was only shone in the region upstream of the defect. The downstream region of the flow was then made of polaritons that propagate ballistically and whose speed is fixed by the interaction energy
+The setup was composed of a microcavity etched to be one-dimensional (a microwire), and a defect was added in the middle of the wire to act as an external attractive potential and force the polariton flow to accelerate. The pump only illumtinated the region upstream of the defect. The downstream region of the flow was then made of polaritons that propagate ballistically and whose speed is fixed by the interaction energy
 in the upstream region.
-Even though this configuration provides a natural fluid acceleration, the horizon geometry depends strongly on the defect shape and cannot be tuned easily.  Furthermore, the collective excitation spectrum and the presence of negative energy modes were not investigated, which 
+Even though this configuration provides a natural fluid acceleration, the horizon geometry depends strongly on the defect shape and cannot be tuned easily.  Furthermore, the collective excitation spectrum and the presence of negative-energy modes were not investigated, which 
 prevented from concluding on the nature of the signal observed in the experiment. In this chapter, we present a different approach to generate such flows with an effective 1D fluid fully optically created, as well as a full characterization of the Bogoliubov spectrum.
 
 \subsection{Target velocity profile}
 Before analyzing whether the fluid exceeds a critical velocity, the primary objective is to generate a flow exhibiting two homogeneous regions separated by a sharp transition, each characterized by a well-defined velocity. For clarity, the region preceding the transition will be referred to as the upstream region, with velocity $v_{up}$ while the region following the transition will be designated as the downstream region, with velocity $v_{d}$.
-To model this configuration, a target velocity profile is arbitrarily defined as follows:
+To model this configuration, a target velocity profile is defined as follows:
 \begin{equation}
     v(x)= \frac{v_{d}-v_{up}}{2}\mathrm{tanh}(\frac{x-x_h}{w_h})+\frac{v_{up}+v_{d}}{2}
     \label{eq:target_velocity}
@@ -72,7 +72,7 @@ One can then verify that :
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{chap_custom_st/fig/target_velocity.pdf}
-    \caption{ \textbf{a)} Target velocity profile for input parameters $v_{up}=0.1$, $v_{d}=0.5$, $x_h=0$ and $w_h=1$ in arbitrary units. The red shaded area represent the 
+    \caption{ \textbf{a)} Target velocity profile for input parameters $v_{up}=0.1$, $v_{d}=0.5$, $x_h=0$ and $w_h=1$ in arbitrary units. The red shaded area represents the 
     transition region. \textbf{b)} Corresponding phase profile to be imprinted on the pump laser.}
     \label{fig:target_velocity.pdf}
 \end{figure}
@@ -92,7 +92,7 @@ The latter is plotted in \autoref{fig:target_velocity.pdf} \textbf{b)}. The deri
                       &=\frac{2\pi n_{cav} }{\lambda_0}z+\theta(x)= cst,
     \end{aligned}
 \end{equation}
-which is inverted as $z\propto \phi(x)$. Making a fluid with the desired velocity field then reduces to be able to imprint the phase \autoref{eq:target_phase_profile} on the laser that resonantly excites the fluid. As we will see in the next section, this can be done with a Spatial Light Modulator (SLM). 
+which is inverted as $z\propto \phi(x)$. Making a fluid with the desired velocity field then reduces to be able to imprint the phase given by \autoref{eq:target_phase_profile} on the laser that resonantly excites the fluid. As we will see in the next section, this can be done with a Spatial Light Modulator (SLM). 
 
  A simplified scheme showing how the printing of the target wavefront in the sample plane creates the desired flow is presented in \autoref{fig:wavefront_shapping} \textbf{a)}.
 To verify that the fluid has the expected phase, we use the off-axis interferometry method whose principle is explained in \autoref{sec:phase_measurement}
@@ -102,7 +102,7 @@ As an example, the measured phase corresponding to the mean field displayed in \
     \centering
     \includegraphics[width=1\textwidth]{chap_custom_st/fig/wavefront_shapping.pdf}
     \caption{Simplified scheme of the generation of a transonic fluid. \textbf{a)} The pump laser is shaped with the target phase profile and sent on the microcavity. The corresponding fluid velocity field is represented by the black surface lying on the Quantum Wells (QWs). \textbf{e)} The outgoing photons are collected and the sample 
-    plane is imaged on a CCD camera to obtain the fluid density map.  \textbf{b)} Measured Lower and Upper polariton dispersion at the working point $C6-D6$ at which the experiment was run. By fitting these dispersions,
+    plane is imaged on a CCD camera to obtain the fluid density map.  \textbf{b)} Measured Lower and Upper polariton dispersion at the working point $C5-D6$ (see \autoref{fig:sample_map}) at which the experiment was run. By fitting these dispersions,
     the effective LP mass can be extracted $\mlp= 7.0 \times 10^{-35}$ kg}
     \label{fig:wavefront_shapping}
 \end{figure}
@@ -120,8 +120,8 @@ Once again, this can be achieved using the SLM by locally adjusting the depth of
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{chap_custom_st/fig/phase_example.pdf}
-    \caption{\textbf{a)} Measured phase of the mean field shown in \autoref{fig:wavefront_shapping}. The curvature present in the upstream region is due to the nonlinear self-focusing. The region
-    on interest in which we assume translational invariance is represented by the white dashed rectangle. \textbf{b)}  Cut of the phase in the $y$ direction represented by the dotted white line in the rectangle. The variation to the phase with respect
+    \caption{\textbf{a)} Measured phase of the mean field shown in \autoref{fig:wavefront_shapping}. The curvature of the fringes present in the upstream region is due to the nonlinear self-focusing. The region
+    of interest in which we assume translational invariance is represented by the white dashed rectangle. \textbf{b)}  Cut of the phase in the $y$ direction represented by the dotted white line in the rectangle. The variation to the phase with respect
     to $2\pi$ is equal to 0.3\%. \textbf{c)} Cut of the intensity of the mean field in the $y$ direction at the same location as \textbf{b)}. The corresponding relative intensity variation is equal to 0.3\%.}
     \label{fig:phase_example}
 \end{figure}
@@ -136,12 +136,12 @@ effective spacetimes on which we can study the propagation of the collective exc
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.3\textwidth]{chap_custom_st/fig/setup_bogoliubov.pdf}
-    \caption{Simplified scheme of the pump-probe spectroscopy method. \textbf{a)} At a given in plane wavevector represented by the red arrow, the probe frequency is scanned around the mean field frequency and is transmitted when it resonates with the Bogoliubov branch. \textbf{b)} Typical transmission spectrum of the probe at the wavevector of \textbf{a)}.}
+    \caption{Simplified scheme of the pump-probe spectroscopy method. \textbf{a)} At a given in plane wavevector represented by the red arrow, the probe frequency is scanned around the mean field frequency and is transmitted when it resonates with the Bogoliubov branch. \textbf{b)} Typical transmission spectrum of the probe at the wavevector shown in \textbf{a)}.}
     \label{fig:setup_bogo}
 \end{figure}
 
 So far, the description of the fluid both in velocity and density was one-dimensional despite the fluid is actually a 2D system. This assumption
-relies on the fact that the fluid wavefunction is invariant under translation in the $y$ direction in the  region of interest represented by the white dashed rectangle of \autoref{fig:phase_example}. This area is about $130 \mu m$ long and $30-40 \mu m $ large. 
+relies on the fact that the fluid wavefunction is invariant under translation in the $y$ direction in the region of interest represented by the white dashed rectangle of \autoref{fig:phase_example}. This area is about $\SI{130}{\micro \meter}$ long and $30-\SI{40}{\micro \meter}$ wide. 
 Cuts of both the phase and density in the direction orthogonal to the propagation are shown in \autoref{fig:phase_example} \textbf{b)} and \textbf{c)}. Periodic modulations are present because of back reflection on the protection screen of the camera sensor and are present even without passing through the sample. These modulations can be removed
 using Fourier filtering which allows to compute the variation of the phase with respect to $2\pi$,  $\sigma_y^{ph}/2\pi$= 0.3\% as well as the relative intensity variation $\sigma_y^I/\langle I \rangle$ =3\%. As a consequence,
 we can safely assume that the fluid is effectively 1D in the region of interest. This is in contrast with the work \cite{nguyen_acoustic_2015} previously mentioned. In the present configuration, the shape of the horizon is fixed by the phase of the exciting laser and can be tuned at will, which is crucial to
@@ -159,10 +159,10 @@ study the effect of the horizon steepness on the emitted signals. Moreover, the 
 \section{Experimental spectroscopy of the collective excitation spectrum}
 
 The analog of the Hawking radiation in a polariton fluid is the spontaneous emission of Bogoliubov modes from the horizon. When the system is operating at the turning point of the bistability, the Bogoliubov spectrum 
-is gapless and linear which enables the definition of a speed of sound $c_s = \sqrt{\hbar g n /\mlp}$ and speak without ambiguity of sonic excitation in the low wavevector limit. In this regime, the condition to observe negative energy modes coincides with the fluid being supersonic, as explained in the previous chapter. 
+is gapless and linear which enables the definition of a speed of sound $c_s = \sqrt{\hbar g n /\mlp}$ and speak without ambiguity of sonic excitation in the low wavevector limit. In this regime, the condition to observe negative-energy modes coincides with the fluid being supersonic, as explained in the previous chapter. 
 However, creating a stable fluid at the turning point is quite challenging and the measurement of the spectrum linearity requires experimental techniques that are hard to implement on a moving fluid \cite{claude_phd}. Nevertheless, linearity is not mandatory to observe Hawking radiation since 
-it only requires the mixing between positive and negative energy modes which can be achieved without operating at the turning point. Besides, a gap opening in the Bogoliubov spectrum brings new physics to the table since it widens the study of quasiparticle creation to the case of massive particles. In this
-section, we discard the necessity to have sonic excitations and measure the presence of negative energy modes in a wide range of fluid configurations exploring different asymptotic velocities and horizon steepness.
+it only requires the mixing between positive and negative-energy modes which can be achieved without operating at the turning point. Besides, a gap opening in the Bogoliubov spectrum brings new physics since it widens the study of quasiparticle creation to the case of massive particles. In this
+section, we discard the necessity to have sonic excitations and measure the presence of negative-energy modes in a wide range of fluid configurations exploring various asymptotic velocities and horizon steepness.
 
 
 
@@ -171,29 +171,29 @@ section, we discard the necessity to have sonic excitations and measure the pres
 
 
 
-The measurement of the collective excitations spectrum consists in scanning the mean field resonance by looking at the transmission of a weak probe laser at different incidence angles. First, a polariton fluid is created with a driving laser as described in the previous section. A probe laser is then sent on the sample with a well defined incidence angle corresponding to a precise in plane wavevector, as explained in \autoref{sec:photon}. The frequency of 
+The measurement of the collective excitations spectrum consists in scanning the mean field resonance by measuring the transmission of a weak probe laser at different incidence angles. First, a polariton fluid is created with a driving laser as described in the previous section. A probe laser is then sent on the sample with a well defined incidence angle corresponding to a precise in plane wavevector, as explained in \autoref{sec:photon}. The frequency of 
 the probe is then scanned around the mean field frequency. When the probe frequency matches the frequency of a collective excitation mode, the probe laser gets transmitted by the cavity and can be detected. Frequency scans are then repeated for different incidence angles providing each time a transmission spectrum of the probe as shown in \autoref{fig:setup_bogo}. 
-To make sure that we are in the weak perturbation regime the intensity of the probe is set two orders of magnitude below the pump. To collect only the signal emitted in the perturbation mode, a tunable pinhole is placed in the Fourier plane of the collection path and track the probe in-plane wavevector position to filter out the unwanted photons. Finally, the probe intensity is modulated at $f_{mod}$ in order to isolate its transmission from the very strong signal of the pump. The remaining light is then sent on
-a photodiode connected to a Spectrum analyzer that demodulates the signal at $f_{mod}$ to obtain the transmission spectrum. At the end, all the scans are put together to reconstruct the full Bogoliubov dispersion as typically shown in \autoref{fig:homogeneous_fluid_bogo}.
+To make sure that we are in the weak perturbation regime the intensity of the probe is set two orders of magnitude below that of the pump. To collect only the signal emitted in the perturbation mode, a tunable pinhole is placed in the Fourier plane of the collection path and tracks the probe in-plane wavevector position to filter out the unwanted photons. Finally, the probe intensity is modulated at $f_{mod}$ in order to isolate its transmission from the very strong signal of the pump. The remaining light is then sent on
+a photodiode connected to a Spectrum analyzer that demodulates the signal at $f_{mod}$ to obtain the transmission spectrum. In the end, all the scans are put together to reconstruct the full Bogoliubov dispersion as typically shown in \autoref{fig:homogeneous_fluid_bogo}.
 
 \section{Experimental setup}
 The setup used in this experiment is shown in \autoref{fig:set_up}. The sample is a microcavity consisting of three InGaAs quantum wells sandwiched between two highly reflecting planar GaAs-AlGaAs Bragg mirrors as described in \autoref{chap:polariton_theory}.
-To optimize the light-matter coupling, the quantum wells, separated by GaAs barriers, are located at the three antinodes of the cavity, which has a finesse on the order of 3000. A complete map of this sample 
-is shown in \autoref{fig:sample_map}. This map enables to perform an experiment over several days at the same working point and overcomes the problem due to daily cooling and warming procedures imposed by the open-cycle cryostat.
+To optimize the light-matter coupling, the quantum wells, separated by GaAs barriers, are located at the three antinodes of the cavity, which has a finesse of the order of 3000. A complete map of this sample 
+is shown in \autoref{fig:sample_map}. This map enables to perform an experiment over several days at the same working point and to overcome the problem due to daily cooling and warming procedures imposed by the open-cycle cryostat.
  The experiment described in this chapter was run on the working point $C5-D6$.
  The set-up is divided in three main paths, the pump path, the probe path and the collection path.
 
 
 
  \begin{itemize}
-    \item \textbf{The pump path} represented by the blue box is used to create the steady states of the experiment. The polariton fluid is generated by a circularly polarized CW Ti:Sapphire laser with a sub-MHz linewidth. This laser can be precisely frequency tuned around the LP resonance energy centered around 836 nm in our sample. An acousto-optic modulator (AOM) 
-    together with a Proportional-integral-derivative feedback on the AOM driving RF are used to stabilize the laser intensity and make sure the experiment is constantly run at a single fluid density.
+    \item \textbf{The pump path} represented by the blue box is used to create the steady states of the experiment. The polariton fluid is generated by a circularly polarized CW Ti:Sapphire laser with a sub-MHz linewidth. This laser fequency can be precisely tuned around the LP resonance energy centered around 836 nm in our sample. An acousto-optic modulator (AOM) 
+    together with a Proportional-integral-derivative feedback on the AOM driving RF are used to stabilize the laser intensity and ensure that the experiment is constantly run at a single fluid density.
     The stabilized Gaussian beam is reflected on the spatial light modulator (SLM), which imprints the target phase $\theta_\mathrm{p}(x)=\int v_0(x)dx$ that determines the fluid velocity $v_0(x)$ at each point. The SLM plane is imaged on the input plane of the cavity with two focal-length matched telescopes ($2f-2f$ configuration).
-    \item \textbf{The probe path} represented by the red box is used to measure the collective excitation spectrum. The probe is another tunable CW Ti:Sapphire laser with the same polarization as the pump beam. The probe is sent on the sample with a well defined incidence angle controlled by another SLM on which a tunable step blazed grating is imprinted. The frequency of
+    \item \textbf{The probe path} represented by the red box is used to measure the collective excitation spectrum. The probe is another tunable CW Ti:Sapphire laser with the same polarization as the pump beam. The probe is sent on the sample with a well-defined incidence angle controlled by another SLM on which a tunable step blazed grating is imprinted. The frequency of
     the laser is scanned over $\SI{220}{\giga\hertz}$ around the mean field frequency and monitored by a high resolution wavemeter. An AOM and a Proportional-integral-derivative feedback are also used to both stabilize the intensity along the scan and apply a $f_{mod}=\SI{5}{\mega\hertz}$ intensity modulation.
     \item \textbf{The collection path} located after the sample is used to collect the output signals coming from the fluid. A microscope objective sends the outgoing field on a 50:50 BS. One part is directed to an optical system to make the image both in real and momentum space of the field. For both lasers, a pick-up is made after their respective AOM to have a phase reference and perform off-axis interferometry measurement. Another part is sent to the apparatus described in \autoref{sub:high_resolution_spectroscopy} to measure the transmission spectrum of the probe. The tunable
     pinhole is made with a DMD and is placed in the Fourier plan of a lens, selecting only photons arriving at the position of the pinhole and sending them to the collection photodiode. Given 
-    the relative size of the probe mode and the size of a pixel of the DMD, the resolution of the pinhole can go down to $\delta k = \SI{0.0005}{\per \micro\meter}$. The collection photodiode is then connected to a spectrum analyzer set in zero span at $f_{mod}$ to demodulated the signal and obtain the transmission spectrum of the probe. On both path
+    the relative size of the probe mode and the size of a pixel of the DMD, the resolution of the pinhole can go down to $\delta k = \SI{0.0005}{\per \micro\meter}$. The collection photodiode is then connected to a spectrum analyzer set in zero span at $f_{mod}$ to demodulate the signal and obtain the transmission spectrum of the probe. On both path
     a set of $\lambda/4,\ \lambda/2$ and $PBS$ allows to control and filter the polarization of the signal.  
  \end{itemize}
 
@@ -220,6 +220,25 @@ is controlled in the same way as the probe by printing a tunable step blazed gra
 $\delta(k_p)=\omega_p -\omlp^0- \hbar k_p^2/2\mlp$ is high enough to be in the bistable regime and the input pump intensity is chosen so the system operates on the higher branch of the hystersis curve quite far from the turning point. 
 The probe is set to be two order of magnitude weaker than the pump and it has the same spatial extension and polarization.
 
+\bigskip
+
+\textbf{Direct normal branch measurement.} We create a set of homogeneous fluids with increasing in plane wavevectors $k_p$ while keeping the pump frequency constant. 
+For each fluid, we use the pump-probe spectroscopy method to measure the probe transmission spectrum as shown in \autoref{fig:homogeneous_fluid_bogo}. 
+The DMD is programmed to display pinholes that track the wavevector of the probe laser along the scans. In this case the system measures the direct transmission of the probe. The first measurement \textbf{a)} is made with the pump laser turned off which means in the absence of interactions within the sample.
+The probe transmission then scans the bare cavity resonances and recovers the parabolic shape at low wavevector of LP branch. From this measurement we extract the detuning between the pump laser and the LP branch at zero wavevector
+ $\delta(0) = \SI{33}{\giga\hertz}$. 
+ The blueshift due to interaction lifts the dispersion \textbf{a)} to higher energies whereas the Doppler shift modifies the resonances according to 
+ $\omega' = \omega + \vbf_p\delta \kbf$ where $\vbf_p$ is the fluid velocity $\vbf_p = \hbar \kbf_p/\mlp$.  As the fluid velocity increases, the branch is bendt and moved toward the pump wavevector. 
+ For $k_p\geq 0.3$ we already see some resonances lying under the pump energy. As explained in the previous chapter, the energy sign of a collective mode is given by :
+ 
+ \begin{equation}
+    \mathrm{sign}(E)=\mathrm{sign}(\omega_\mathrm{B})\times \mathrm{sign}(\norm{\delta \psi}_\mathrm{B}) 
+ \end{equation}
+where $\norm{\delta \psi}_\mathrm{B}$  is the norm of the mode defined in \autoref{eq:modified_norm} and $\mathrm{sign}(\omega_\mathrm{B})$ is taken with respect to the pump energy. Since the normal branch has a positive norm, the resonances located
+below the pump frequency are negative-energy modes. As it can be seen, the ghost branch is not visible through direct excitation. This feature has a double origin : first the ghost branch is not optically resonant with the cavity which makes photon injection difficult at its energy. Secondly,
+the Bogoliubov coefficient $v_k$ of the negative norm branch is very small compared to $u_k$.  In the presence of
+a coherent state like the probe, the population then scale as $v_k^2 |\alpha|^2\ll u_k^2|\alpha|^2$ where $\alpha$ is the intracavity amplitude of the probe. 
+
  \begin{figure}[p]
     \centering
     \includegraphics[width=1\textwidth]{chap_custom_st/fig/set_up_spacetime.pdf}
@@ -231,24 +250,6 @@ The probe is set to be two order of magnitude weaker than the pump and it has th
 
 
 \bigskip
-
-\textbf{Direct normal branch measurement.} We create a set of homogeneous fluids with increasing in plane wavevectors $k_p$ while keeping the pump frequency constant. 
-For each fluid, we use the pump-probe spectroscopy method to measure the probe transmission spectrum as shown on \autoref{fig:homogeneous_fluid_bogo}. 
-The DMD is programmed to display pinholes that track the wavevector of the probe laser along the scans. In this case the system measures the direct transmission of the probe. The first measurement \textbf{a)} is made with the pump laser turned off which means in the absence of interactions within the sample.
-The probe transmission then scan the bare cavity resonances and recover the parabolic shape at low wavevector of LP branch. From this measurement we extract the detuning between the pump laser and the LP branch at zero wavevector
- $\delta(0) = \SI{33}{\giga\hertz}$. 
- The blueshift due to interaction lifts the dispersion \textbf{a)} to higher energies whereas the Doppler shift modifies the resonances according to 
- $\omega' = \omega + \vbf_p\delta \kbf$ where $\vbf_p$ is the fluid velocity $\vbf_p = \hbar \kbf_p/\mlp$.  As the fluid velocity increases, the branch is bended and moved toward the pump wavevector. 
- For $k_p\geq 0.3$ we already see some resonances lying under the pump energy. As explained in the previous chapter, the energy sign of a collective mode is given by :
- 
- \begin{equation}
-    \mathrm{sign}(E)=\mathrm{sign}(\omega_\mathrm{B})\times \mathrm{sign}(\norm{\delta \psi}_\mathrm{B}) 
- \end{equation}
- 
-where $Q_{\phi}$ is the norm of the mode defined in \autoref{eq:modified_norm} and $\mathrm{sign}(\omega_\mathrm{B})$ is taken with respect to the pump energy. Since the normal branch has a positive norm, the resonances located
-below the pump frequency are negative energy modes. As it can be seen, the ghost branch is not visible through direct excitation. This feature has a double origin : first the ghost branch is not optically resonant with the cavity which makes photon injection difficult at its energy. Secondly,
-the Bogoliubov coefficient $v_k$ of the negative norm branch is very small compared to $u_k$.  In the presence of
-a coherent state like the probe, the populations then scale as $v_k^2 |\alpha|^2\ll u_k^2|\alpha|^2$ where $\alpha$ is the intracavity amplitude of the probe. 
 
 \begin{figure}[t!]
     \centering
@@ -270,37 +271,37 @@ a coherent state like the probe, the populations then scale as $v_k^2 |\alpha|^2
 
  \begin{subequations}
     \begin{align}
-    (k_p, k_p) &\rightarrow (k_p+\Delta k, k_p-\Delta k),\\
-    (\omega_p, \omega_p) &\rightarrow (\omega_p+\Delta \omega,\omega_p- \Delta \omega).
+    (k_p, k_p) &\rightarrow (k_p+\Delta k \ ,\ k_p-\Delta k),\\
+    (\omega_p, \omega_p) &\rightarrow (\omega_p+\Delta \omega \ , \ \omega_p- \Delta \omega).
     \end{align}
  \end{subequations}
 The emission in the ghost branch is then boosted by a factor $(u_kv_k)^2|\alpha|^2$ \cite{I_frerot_PRX_2023}. In practice, this measurement
 can be done by changing the positions of the tunable pinhole so it tracks wavevectors opposite to the probe with respect to the pump. More precisely,
-when a scan at $k_{pr}=k_p+\Delta k$ is made, the pinhole is set at $k_{pr}=k_p-\Delta k$ to collect the signal emitted in the conjugated mode. 
+when a scan at $k_{pr}=k_p+\Delta k$ is made, the pinhole is set at $k_{pr}=k_p-\Delta k$ to collect the signal emitted in the conjugate mode. 
 
 \bigskip
 
 Here we create again a homogeneous fluid with wavevector $k_p =0.6 \mu m^{-1}$. We then 
-perform direct measurement of the normal branch and indirect measurement of the ghost branch. The results are shown in \autoref{fig:homogeneous_fluid_bogo_ghost} \textbf{a)} and \textbf{\textbf{b)}} respectively.  The modulations on the right side of the direct measurement come from interferences in the substrate of the sample
-that act as a low Q-factor Fabry Perot \cite{claude_phd}. Each scan is normalized to its own maximum for the sake of clarity but 
-the strength of the indirect signals is approximatevily $1-10\%$ of the direct one. The noise present on several scan of \textbf{b)} corresponds to parasitic signals coming from other scatterings process that may send photons at the position of the pinhole and that, in the case of direct measurement, are negligible with respect to the resonance. The reason why the ghost branch does not appear as the symmetric of the normal branch 
-is because the axis $k$ and $f-f_p$ represent the wavevector and frequency of the injected probe and not the emitted signal. However, the pinhole positions first ensure us that the signal is emitted in the opposite wavector mode. To verify that it is also symmetric in frequency, we send the photons collected through the pinhole 
-into a spectrometer to measure their energy. This two tests allox to confirm that the signals taken through indirect measurement in \textbf{\textbf{b)}} indeed come from the ghost branch. As a consequence, it is possible  to symmetrize the indirect data around the pump wavevector and energy to plot the full collective excitation spectrum shown in \autoref{fig:homogeneous_fluid_bogo_ghost} \textbf{c)}. First, one can check that the two branches 
+perform direct measurement of the normal branch and indirect measurement of the ghost branch. The results are shown in \autoref{fig:homogeneous_fluid_bogo_ghost} \textbf{a)} and \textbf{b)} respectively.  The modulations on the right side of the direct measurement come from interferences in the substrate of the sample
+that act as a low Q-factor Fabry-Pérot \cite{claude_phd} microcavity. Each scan is normalized to its own maximum for the sake of clarity but 
+the strength of the indirect signals is approximatively $1\%-10\%$ of the direct one. The noise present on several scans of \textbf{b)} corresponds to parasitic signals coming from other scatterings process that may send photons at the position of the pinhole and that, in the case of direct measurement, are negligible with respect to the resonance. The reason why the ghost branch does not appear as the symmetric counterpart of the normal branch 
+is because the axis $k$ and $f-f_p$ represent the wavevector and frequency of the injected probe and not the emitted signal. However, the pinhole positions first ensure us that the signal is emitted in the opposite wavevector mode. To verify that it is also symmetric in frequency, we send the photons collected through the pinhole 
+into a spectrometer to measure their energy. This two tests allow to confirm that the signals taken through indirect measurement in \textbf{b)} indeed come from the ghost branch. As a consequence, it is possible  to symmetrize the indirect data around the pump wavevector and energy to plot the full collective excitation spectrum shown in \autoref{fig:homogeneous_fluid_bogo_ghost} \textbf{c)}. First, one can check that the two branches 
 are indeed symmetric with respect to the pump represented by the red dot.
 \begin{figure}[t!]
     \centering
     \includegraphics[width=1\textwidth]{chap_custom_st/fig/supersonic_homogenous.pdf}
     \caption{\textbf{a)} Direct measurement of the normal branch of the Bogoliubov spectrum for a homogeneous fluid with in plane wavevector $k_p=\SI{0.6}{\per \micro \meter}.$ \textbf{\textbf{b)}} Indirect measurement of the ghost branch of the Bogoliubov spectrum for the same fluid.
-    \textbf{c)} Extracted resonance energy for each probe wavevector. The blue point are extracted from the direct measurement and correspond directly to the resonances of \textbf{a)}. The orange points are extracted from the indirect measurement. Each couple $(k_{pr}, \omega)$ extracted from \textbf{b)} is symmetrized around the pump position in phase space $(k_p, \omega_p)$ to account for FWM process.}
+    \textbf{c)} Extracted resonance energy for each probe wavevector. The blue points are extracted from the direct measurement and correspond directly to the resonances of \textbf{a)}. The orange points are extracted from the indirect measurement. Each couple $(k_{pr}, \omega)$ extracted from \textbf{b)} is symmetrized around the pump position in phase space $(k_p, \omega_p)$ to account for FWM process.}
     \label{fig:homogeneous_fluid_bogo_ghost}
 \end{figure}
 
-Once again, this measurement is an additional proof that for fluid velocities high enough, negative energy modes can be excited on both positive (normal) and negative (ghost) norm branches.
-It's worth noticing that no effort were put in this experiment to reach the turning point of the bistability loop which did not prevent the observation of negative energy modes. This relaxes 
-the experimental constraints to observe Hawking radiation in a polariton fluid and widens the initial analogy that was made for sonic excitation in a supersonic fluid. More precisely, it can be reformulated as follows :
-a fluid exhibiting a sharp transition between a region with positive energy modes, and another one with negative energy modes available should experience  emission of correlated Bogoliubov modes at the transition.
+This measurement is an additional proof that for fluid velocities high enough, negative-energy modes can be excited on both positive (normal) and negative (ghost) norm branches.
+It is worth noticing that this experiment was not conducted at the turning point of the bistability loop, which did not prevent the observation of negative-energy modes. This relaxes 
+the experimental constraints to observe Hawking radiation in a polariton fluid and broadens the original analogy made for sonic excitation in a supersonic fluid. More specifically,
+a fluid exhibiting a sharp transition between a region supporting positive-energy modes and another supporting negative-energy modes is expected to emit of correlated Bogoliubov modes at the transition.
 These modes are not necessarily phonons and the velocity to exceed to observe them is not necessarily the speed of sound, but rather a critical velocity that depends more generally on the fluid parameters.
-Although this statement seems unclear with respect to the sonic version, it is actually more general and broadens the range of experimental configurations at which Hawking radiation can be observed. In the following 
+This statement is actually more general and broadens the range of experimental configurations at which Hawking radiation can be observed. In the following 
 we will rather speak of transcritical flow and critical velocity instead of "sonic".
 
 
@@ -345,11 +346,9 @@ from the simultaneous fit of the normal and ghost branch of each spectrum with t
 
 \begin{equation}
     \label{eq:lfbogo}
-    \begin{split}
-        \ombog^{\pm}(\delta k)= -\frac{i\gamma}{2}+ v_0(x) \delta k(x)\,\pm \\\sqrt{\left(\frac{\hbar \delta k(x)^2}{2m^*}-\delta(k_p) +2gn(x) +g_\mathrm{r} n_\mathrm{r}    \right)^2-(gn(x))^2},
-    \end{split}
+    \ombog^{\pm}(\delta k)= -\frac{i\gamma}{2}+ v_0(x) \delta k(x)\pm\sqrt{\left(\frac{\hbar \delta k(x)^2}{2m^*}-\delta(k_p) +2gn(x) +g_\mathrm{r} n_\mathrm{r}    \right)^2-(gn(x))^2}
 \end{equation}
-with $\delta k(x)=k-k_p(x)$. The only unknoww parameters in this equation are $gn$ and $g_rn_r$. However, by taking the steady states solution of the Gross Pitaevskii equation coupled to a reservoir \autoref{eq:generalized_GPE} we obtain $n_r\propto n$.
+with $\delta k(x)=k-k_p(x)$. The only unknown parameters in this equation are $gn$ and $g_rn_r$. However, by taking the steady states solution of the Gross Pitaevskii equation coupled to a reservoir \autoref{eq:generalized_GPE} we obtain $n_r\propto n$.
 Based on the work \cite{claude_phd,claude_high-resolution_2022} made on the same sample. We use the value $g_rn_r\approx 1.84gn$ of work \cite{claude_phd} and end 
 with a single free parameter $gn$ to fit the spectra. The fit are represented by the colored dashed line in \autoref{fig:smooth_transition}. The output of the fit gives in fact a value of $gn(r_{pr})$ where $r_{pr}$ is the position of the probe. However, this value can serve 
 as calibration to reconstruct the full $gn(r)$ profile. Indeed, we can safely assume that the output measured intensity is proportional to the 
@@ -366,13 +365,13 @@ The $c_s(x)$ map obtained for the different configurations is represented by the
 
 \subsubsection{Critical velocity} In conservative fluids, sub- and supercritical flows are discriminated by the Mach number $M\coloneqq v_0/c_\mathrm{s}=1$.
 Instead, in our driven-dissipative fluid, the minimum velocity to have a supercritical dispersion is larger than $c_\mathrm{s}$ because of the gap opening in the spectrum.
-As a result, the condition $M=1$, which defines the acoustic horizon in the hydrodynamic limit does not necessarily coincide with the condition to excite negative energy waves in the system. In other words the position at 
+As a result, the condition $M=1$, which defines the acoustic horizon in the hydrodynamic limit does not necessarily coincide with the condition to excite negative-energy waves in the system. In other words, the position at 
 which the velocities exceed $c_\mathrm{s}$ in \autoref{fig:smooth_transition} \textbf{b)} does not define the horizon of the fluid. Indeed, when the system does not operate at the turning
 point of the bistability we have $gn>\delta(k_p)-g_rn_r$, which opens a gap in the dispersion. We rewrite the dispersion in the laboratory frame in a form that allows us to easily identify the effect of the gap on the spectrum,
 
 
 \begin{align}\label{eq:lfbogom}
-    \omega^\pm_\mathrm{B}(\delta k)=&v_0(x) ,\delta k(x)-i\frac{\gamma}{2}\nonumber\pm\Biggl[\left(\frac{\hbar\delta k(x)^2}{2 \mlp}\right)^2+\frac{\hbar \delta k(x)^2}{\mlp}(2g n_0 - \delta(k_\mathrm{p})+g_\mathrm{r}n_\mathrm{r})\\
+    \omega^\pm_\mathrm{B}(\delta k)=&v_0(x)\delta k(x)-i\frac{\gamma}{2}\nonumber\pm\Biggl[\left(\frac{\hbar\delta k(x)^2}{2 \mlp}\right)^2+\frac{\hbar \delta k(x)^2}{\mlp}(2g n_0 - \delta(k_\mathrm{p})+g_\mathrm{r}n_\mathrm{r})\\
     &\,\,+(g n_0 - \delta(k_\mathrm{p})+g_\mathrm{r}n_\mathrm{r})(3 g n_0 - \delta(k_\mathrm{p})+g_\mathrm{r}n_\mathrm{r})\Biggr]^{-1/2}\nonumber\\
     =&v_0(x) \delta k(x)-i\frac{\gamma}{2}\,\pm\sqrt{\left(\frac{\hbar\delta k(x)^2}{2 \mlp}\right)^2+c_\mathrm{B}^2\delta k(x)^2+\mbogo^2c_\mathrm{B}^4}
 \end{align}
@@ -386,14 +385,14 @@ where we defined :
     \end{align}
 \end{subequations}
 
-These two quantities have a well defined physical meaning as explained in \autoref{chap:AG_theory}. 
+These two quantities have a well-defined physical meaning as explained in \autoref{chap:AG_theory}. 
 On the one hand, $\mbogo c_\mathrm{B}^2$ is the energy of $k=0$ modes of the fluctuation field $\delta \psi$, introducing a mass gap which vanishes when the system operates at the turning point of the bistability.
 On the other hand, \autoref{eq:HomogPertWaveEq} is a hyperbolic partial differential equation whose characteristic curves in a fluid at rest are given by $|\pmb{x}|=c_\mathrm{B} t$. These characteristic curves limit the speed at which the excitations can propagate information, defining the sound cones in full analogy to light cones. However, due to the mass gap, the propagation speed of a given bogoliubov mode is $v_{\rm g}=d\omega/dk\leq c_\mathrm{B}$. 
-To clarify this point, we plot a typical gapped Bogoliubov spectrum in \autoref{fig:sound_cone} as well as the corresponding sound cone $c_\mathrm{B}|\delta k|$ as functions of the wavevector $\delta k$ normalized to the inverse of the healing length $1/\xi$. As visible, for $|\delta k \xi|<1$, the group velocity of the Bogoliubov modes is smaller than $c_\mathrm{B}$.
+To clarify this point, we plot a typical gapped Bogoliubov spectrum in \autoref{fig:sound_cone} as well as the corresponding sound cone $c_\mathrm{B}|\delta k|$ as functions of the wavevector $\delta k$ normalized to the inverse of the healing length $1/\xi$. As visible, for $|\delta k \xi|<1$, the group velocities of the Bogoliubov modes are smaller than $c_\mathrm{B}$.
 The latter can then be seen as the limiting speed of propagation of low wavevector perturbations. This is also in analogy to the propagation of modes of a massive relativistic scalar field, which travel at subluminal speeds, reaching only the speed of light in the limit of infinite momentum.
-From \autoref{eq:lfbogom} we see that the field mass $\mbogo$ increases $\abs{\mathrm{Re}(\omega_\mathrm{B}^{\prime\pm})}$ at all $k$, meaning that the critical velocity to have a Doppler effect large enough to excite negative energy  waves is larger than $c_s$.
+From \autoref{eq:lfbogom} we see that the field mass $\mbogo$ increases $\abs{\mathrm{Re}(\omega_\mathrm{B}^{\prime\pm})}$ at all $k$, meaning that the critical velocity to have a Doppler effect large enough to excite negative-energy  waves is larger than $c_s$.
 As explained in \autoref{chap:AG_theory}, for a fluid with a given set of parameters, changing the pump wavevector $k_p$ while keeping the other parameters constant--the pump frequency and intensity--changes the spectrum itself 
-because it modifies the detuning $\delta(k_p)$ and the effective interaction energy $gn$. It is subsequently difficult to derive a general expression for the critical velocity.
+because it modifies the detuning $\delta(k_p)$ and the effective interaction energy $gn$ through the bistabilty curve. It is subsequently difficult to derive a general expression for the critical velocity.
 
 \begin{figure}[t!]
     \centering
@@ -414,14 +413,14 @@ Mach number $M_d=1.34$ greater than one.
 
 \textbf{Cutoff spatial frequency.} The absence of experimental data points at wavevectors $\delta k < 0.10 \mu m^{-1}$ is a consequence of the finite size 
 of the probe beam $\delta_x = \SI{60}{\micro\meter}$ which fixes the spatial extension of the probe in momentum space
- scaling as $2\pi/\delta_x=0.10 \mu m^{-1}$. At very small wavevector, the probe and its conjugated counterpart start to overlap and photons
+ scaling as $2\pi/\delta_x=0.10 \mu m^{-1}$. At very small wavevector, the probe and its conjugate counterpart start to overlap and photons
  coming from both branches are collected by the pinhole. This prevents the effective discrimination between the two modes in the output signal of the photodiode. In practice, the 
  cutoff frequency is computed by a simple optical Rayleigh criterion stating that two points are resolved if the distance between them is larger than the FWHM of the point spread function.
 In our case this directly gives $\delta k_{cut} = 2\pi/\delta_x= 0.10 \mu m^{-1}$.
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{chap_custom_st/fig/critical_velocity_map.pdf}
-    \caption{Critical velocity map as a function of $k_p$ and $gn$ while the reservoir contribution was fixed as $g_rn_r= 1.84gn$. For each couple $(k_p,gn)$ the Bogoliubov spectrum \autoref{eq:lfbogo} is computed : red points correspond to super critical flows and purple points to subcritical flows.
+    \caption{Critical velocity map as a function of $k_p$ and $gn$ while the reservoir contribution was fixed as $g_rn_r= 1.84gn$ and the detuning at zero wavevector kept equal to $\delta(0)=56$. For each couple $(k_p,gn)$ the Bogoliubov spectrum \autoref{eq:lfbogo} is computed : the red area corresponds to super critical flows and the purple one to subcritical flows.
     The points \textbf{c)}, \textbf{d)}, \textbf{e)} and \textbf{f)} correspond to the measured spectrum of \autoref{fig:smooth_transition}. The black dashed line represents the acoustic case where the critical velocity coincides with the speed of sound $c_s = \hbar k_s/\mlp=\sqrt{\hbar gn/\mlp}$ }
     \label{fig:critical_velocity_map}
 \end{figure}
@@ -433,12 +432,12 @@ In our case this directly gives $\delta k_{cut} = 2\pi/\delta_x= 0.10 \mu m^{-1}
 
 \subsubsection{Paired emission frequency range}
 
-The paired emission of correlated mode at the horizon requires the mixing of positive and negative energy modes. Consequently, the finite velocity in the downstream region 
-sets a maximum frequency at which the effect can occur \cite{jacquet_hawking_2019}. This frequency is given by the maximum energy of the negative energy modes that can be excited in the downstream region and is ultimately 
-set by the asymptotic downstream velocity $v_d$ and the interaction energy $gn$. Increasing this range result in a larger number of correlated pairs emitted and is expected to enhance
+The paired emission of correlated mode at the horizon requires the mixing of positive and negative-energy modes. Consequently, the finite velocity in the downstream region 
+sets a maximum frequency at which the effect can occur \cite{jacquet_hawking_2019}. This frequency is given by the maximum energy of the negative-energy modes that can be excited in the downstream region and is ultimately 
+set by the asymptotic downstream velocity $v_d$ and the interaction energy $gn$. Increasing this range results in a larger number of correlated pairs emitted and is expected to enhance
 the overall correlation signal \cite{jacquet_hawking_2019}. 
-In \autoref{fig:hawking_range} we plot the analytical Bogoliubov dispersion corresponding to the measurement of \autoref{fig:smooth_transition} \textbf{c)}, \textbf{e)} and \textbf{f)}.  Paired emission is then possible in the red range of \autoref{fig:hawking_range}  where negative energy modes
-can mix with the positive energy mode of the upstream spectrum, located outside the gap represented in blue.
+In \autoref{fig:hawking_range} we plot the analytical Bogoliubov dispersion corresponding to the measurement of \autoref{fig:smooth_transition} \textbf{c)}, \textbf{e)} and \textbf{f)}.  Paired emission is then possible in the red range of \autoref{fig:hawking_range}  where negative-energy modes
+can mix with the positive-energy mode of the upstream spectrum, located outside the gap represented in blue.
 
 The overall frequency range at which Hawking emission is possible is given by :
 
@@ -446,7 +445,7 @@ The overall frequency range at which Hawking emission is possible is given by :
     \Delta \omega_H \coloneqq  2\omega_{max}- \Delta\omega_{gap}
     \label{eq:hawking_range}
 \end{equation}
-where $\omega_{max}$ is the maximum energy of the negative energy modes that can be excited in the downstream region and $\Delta\omega_{gap}$ the width 
+where $\omega_{max}$ is the maximum energy of the negative-energy modes that can be excited in the downstream region and $\Delta\omega_{gap}$ the width 
 of the gap in the upstream spectrum. We measure $\Delta \omega_H$=6 GHz for the \textbf{e)} configuration and 30 GHz for the fastest flow. 
 Hence, by changing the asymptotic downstream speed our system enables tuning the number of states available for paired emission. Let us now 
 show that we can control another crucial parameter of the Hawking radiation, the steepness of the horizon.
@@ -454,8 +453,8 @@ show that we can control another crucial parameter of the Hawking radiation, the
 \begin{figure}[t!]
     \centering
     \includegraphics[width=1\textwidth]{chap_custom_st/fig/max_freq_hawking.pdf}
-    \caption{\textbf{c)} , \textbf{e)} , \textbf{f)} analytical Bogoliubov dispersion corresponding to the fit of \autoref{fig:smooth_transition} \textbf{c)}, \textbf{e)} and \textbf{f)}. The red range in \textbf{e)} and \textbf{f)} represents the frequency range at which negative energy modes
-    are available that can mix with the positive energy modes outside the gap represented in blue whose value $\Delta \omega_H$ are displayed above each plot.}
+    \caption{\textbf{c)} , \textbf{e)} , \textbf{f)} analytical Bogoliubov dispersion corresponding to the fit of \autoref{fig:smooth_transition} \textbf{c)}, \textbf{e)} and \textbf{f)}. The red color in \textbf{e)} and \textbf{f)} represents the frequency range at which negative-energy modes
+    are available. The blue colored range in \textbf{c)} represents non-propagative modes that lies in the gap. The frequency range $\Delta \omega_H$ in which positive-negative frequency mixing are displayed above each plot.}
     \label{fig:hawking_range}
 \end{figure}
 
@@ -480,9 +479,9 @@ The sharpness of the transition is a crucial parameter to study the strength of 
     \label{eq:steepness}
 \end{equation}
 the hydrodynamic equivalent to surface gravity \cite{barcelo_hawking-like_2006}. However, the discussion in the previous section 
-pointed out that the position $x_H$ at which the fluid velocity exceed the speed of sound does not define the horizon of the fluid, the derivative
+pointed out that the position $x_H$ at which the fluid velocity exceeds the speed of sound does not define the horizon of the fluid, the derivative
 in the definition of $\kappa$ should then be taken at the position where the critical velocity is reached and involves the critical velocity instead of $c_s$.
-In practice this brings only a negligible correction to the value of $\kappa$. 
+In practice this brings only a rather correction to the value of $\kappa$. 
 
 \bigskip
 
@@ -491,7 +490,7 @@ The steepness of the horizon can be tuned in two ways. First, by reducing the wi
 Second, by taking advantage of the dependence of the bistability cycle on the effective detuning $\delta(k_p)$.
 As shown in \autoref{fig:optical_bistability} \textbf{b)} the value of $gn$ with a fixed input intensity increases linearly with the effective detuning until the turning point is reached. More precisely,
 when the pump wavevector is increased,  $\delta(k_p) = \omega_p-\omega_{LP}^{(0)}- \hbar k_p^2/2\mlp$ decreases and so does $gn$ as shown in \autoref{fig:bistab_steep}. In some
-sense the microcavity naturally reduce the density of the fluid when the pump wavevector is increased, moving the laser away from resonance.
+sense the microcavity naturally reduces the density of the fluid when the pump wavevector is increased, moving the laser away from resonance.
 In practice, we tune wisely the energy of the pump laser and the asymptotic upstream and downstream target wavevevectors. The different values of $\delta(k_{up})$ and $\delta(k_{d})$ can
 lead to region with different $gn$ values as shown on \autoref{fig:bistab_steep}.
 
@@ -506,10 +505,13 @@ lead to region with different $gn$ values as shown on \autoref{fig:bistab_steep}
 \end{figure}
 
 Here we exploit this phenomenology and implement the target profile \autoref{eq:target_velocity} with a large difference between $v_\mathrm{d}$ and $v_\mathrm{u}$, a transition width $w_\mathrm{H}=\SI{20}{\micro\meter}$ and a detuning $\delta(0)=\SI{71}{\giga\hertz} \rightarrow\hbar\delta(0)=\SI{0.3}{\milli \electronvolt}$
-\autoref{fig:bh_steep} (\textbf{b)} shows $v_0(x)$ (solid lines) as well as $c_\mathrm{s}(x)$ (dot-dashed lines). The two supercritical fluids created in the smooth configuration 
+\autoref{fig:bh_steep} (\textbf{b)} shows $v_0(x)$ (solid lines) as well as $c_\mathrm{s}(x)$ (dot-dashed lines). The two supercritical fluids created in the smooth configuration shown in \autoref{fig:smooth_transition}
 have an horizon steepness $\kappa$ of $\SI{0.07}{\per \pico \second}$ (red) and $\SI{0.08}{\per \pico \second}$ (purple). In contrast, in the steep geometry implemented here we compute $\kappa = \SI{0.11}{\per \pico \second}$. The excitation spectra are shown in \autoref{fig:bh_steep} \textbf{c)} and \textbf{d)}.
 The frequency range at which paired emission is possible is roughly the same than in the smooth case \textbf{f)} $\Delta \omega_H$= 28 GHz whereas the horizon steepness 
-gets increased by 25\%. This independent tuning of $\kappa$ and the paired emission spectrum is not possible in conservative quantum fluids such as atomic BECs, for example. In these systems, the fluid velocity is kept constant, and the horizon is typically created by engineering 
+gets increased by 25\%. A steep horizon is interesting in the context of Hawking radiation because it is expected to enhance the strenght of the paired emission at the interface and subsesquently facilitate its measurement. 
+
+
+This independent tuning of $\kappa$ and the paired emission spectrum is not possible in conservative quantum fluids such as atomic BECs, for example. In these systems, the fluid velocity is kept constant, and the horizon is typically created by engineering 
 both the trapping potential and the interaction constant which modifies the chemical potentials in each region $\mu _{u,d}=g_{u,d}n_0$ and subsequently the speed of sound. In order to suppress spurious effects coming from the potential step 
 the potential is chosen to exactly compensate the spatial jump in the Hartree energy $\mu_u+ V_u=\mu_d+V_d$ \cite{Recati_acousticHR_2009}. This condition then fixes the asymptotic values of the speed of sound in each region.
 In contrast, due to its out of equilibrium nature and the resonant pumping of the polariton fluid, the fluid parameters can be tuned at will through the pump engineering.
@@ -535,7 +537,6 @@ a velocity peak in the transition region. More precisely, we define the \textit{
     v(x)= \frac{v_{QNM}-v_{up}}{2}\mathrm{tanh}(\frac{x-x_1}{w_1})+ \frac{v_{d}-v_{QNM}}{2}\mathrm{tanh}(\frac{x-x_2}{w_2})+\frac{v_{up}+v_{d}}{2}
     \label{eq:target_velocity_qnm}
 \end{equation}
-
 where $v_{QNM}$ is the velocity of the peak, $v_{up}$ and $v_{d}$ are the upstream and downstream velocities, $x_1$ and $x_2$ are the position of the first and second transition and $w_1$ and $w_2$ are their width.
 The typical corresponding shape is shown in \autoref{fig:qnm_target_velocity}.
 With the same asymptotic parameters as in the smooth horizon configuration of \autoref{fig:smooth_transition} \textbf{e)} we create a fluid with the QNM target velocity profile.
@@ -546,7 +547,6 @@ is greatly enhanced as $\kappa = \SI{0.19}{\per \pico \second}$, almost twice th
 But the most peculiar feature of the QNM configuration is the density dip that comes with the velocity peak. For the reason explained in the previous section,
 the velocity peak imprinted here is associated with a density dip. As the dip is surrounded by two regions of higher density, it forms an effective resonator for Bogoliubov excitation.
 This leads to the appearance of a metastable excitation mode of $\delta \psi$ called a quasi-normal mode: here specifically, a negative-energy standing wave can establish itself inside the resonator (at $\omega_\mathrm{QNM}>\mathrm{max}(\omega_\mathrm{B}^-|_{x>x_\mathrm{H}})$) and tunnel-couple with positive-energy propagating waves on either side \cite{jacquet_quantum_2023}.
-This quasi-normal mode is spontaneously excited by quantum vacuum fluctuations of $\delta \psi$.
 As a result, the Hawking spectrum is predicted to peak at the frequency of the quasi-normal mode, bearing signatures of the near-horizon geometry. 
 In some sense, the QNM configuration is a quantum analogue of the black hole ringdown phase, where the black hole emits gravitational waves with characteristic frequency and damping time \cite{brito_superradiance_2015} that depend on its parameters. 
 
@@ -563,7 +563,7 @@ In some sense, the QNM configuration is a quantum analogue of the black hole rin
 \section{Conclusion}
 
 We demonstrated full optical generation and characterization of the mean field with arbitrary velocity profiles in a polariton fluid, which act as an effectively curved spacetime for 
-Bogoliubov excitations. In each configuration, we were able to measure the collective excitations spectrum of the fluid and state or not if Hawking radiation could be observed. We showed that the critical velocity to observe negative energy modes is not necessarily the speed of sound but rather a critical velocity 
+Bogoliubov excitations. In each configuration, we were able to measure the collective excitations spectrum of the fluid and state if Hawking radiation could be observed or not. We showed that the critical velocity to observe negative-energy modes is not necessarily the speed of sound but rather a critical velocity 
 that depends on the fluid parameters. This widens the range of experimental configurations at which particle creation can be observed. The great versatility of our experimental methods also showed that the steepness of the horizon can be controlled independently of the paired emission spectrum.
 Finally, we demonstrated the possibility of creating complex horizon geometry that could yield peculiar behaviors like Quasi Normal Modes. The great 
 advantage of the system presented here is the large range of field theory scenarios that can be tested in a single setup. Even though

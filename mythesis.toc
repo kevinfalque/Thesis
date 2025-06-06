@@ -55,45 +55,45 @@
 \contentsline {subsection}{\numberline {4.4.2}Smooth transition geometry}{88}{subsection.4.4.2}%
 \contentsline {subsubsection}{\numberline {4.4.2.1}Speed of sound measurement}{88}{subsubsection.4.4.2.1}%
 \contentsline {subsubsection}{\numberline {4.4.2.2}Critical velocity}{90}{subsubsection.4.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.3}Paired emission frequency range}{93}{subsubsection.4.4.2.3}%
-\contentsline {subsection}{\numberline {4.4.3}Steep horizon geometry}{95}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Quasi-normal mode configuration}{96}{subsection.4.4.4}%
-\contentsline {section}{\numberline {4.5}Conclusion}{98}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Experimental observation of stimulated Hawking radiation in a polariton quantum fluid}{99}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Interferometric measurement of the scattering matrix }{99}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Challenges of the measurement}{101}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Interferometric reconstruction of the Fluctuation Field}{103}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Experimental implementation}{105}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Ballistic configuration}{105}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Measurement of the Bogoliubov spectrum}{107}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Observation of stimulated Hawking radiation}{111}{subsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.2.3.1}Detection of the scattered modes}{111}{subsubsection.5.2.3.1}%
-\contentsline {subsection}{\numberline {5.2.4}Toward the measurement of the scattering matrix}{113}{subsection.5.2.4}%
-\contentsline {subsubsection}{\numberline {5.2.4.1}Input and output modes discrimination}{113}{subsubsection.5.2.4.1}%
-\contentsline {subsubsection}{\numberline {5.2.4.2}Real space analysis}{115}{subsubsection.5.2.4.2}%
-\contentsline {subsubsection}{\numberline {5.2.4.3}Signature of amplification}{116}{subsubsection.5.2.4.3}%
-\contentsline {section}{\numberline {5.3}Conclusion}{121}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Bogoliubov modes correlations in a polariton quantum fluid}{123}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Quantum noise of an electromagnetic field}{123}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Standard quantum limit}{123}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Intensity and phase fluctuations}{125}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Squeezed states}{125}{subsection.6.1.3}%
-\contentsline {section}{\numberline {6.2}Photodectection}{126}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Balanced detection}{127}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Difference measurement}{127}{subsection.6.3.1}%
-\contentsline {section}{\numberline {6.4}Correlations in continuous-variables quantum optics}{128}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Experimental implementation}{129}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}Bogoliubov coefficients measurement}{129}{subsection.6.5.1}%
-\contentsline {subsection}{\numberline {6.5.2}Bogoliubov modes correlations}{131}{subsection.6.5.2}%
-\contentsline {subsubsection}{\numberline {6.5.2.1}Shot noise calibration}{131}{subsubsection.6.5.2.1}%
-\contentsline {subsubsection}{\numberline {6.5.2.2}Balanced detection}{133}{subsubsection.6.5.2.2}%
-\contentsline {subsubsection}{\numberline {6.5.2.3}Correlations measurement}{136}{subsubsection.6.5.2.3}%
-\contentsline {section}{\numberline {6.6}Conclusion}{139}{section.6.6}%
-\contentsline {part}{Appendices}{141}{section*.61}%
-\contentsline {chapter}{\numberline {A}Mean field shaping and monitoring}{143}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Phase printing}{143}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Spatial light modulator.}{143}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Phase measurement}{144}{subsection.A.1.2}%
-\contentsline {subsection}{\numberline {A.1.3}Off axis inteferometry}{144}{subsection.A.1.3}%
-\contentsline {subsection}{\numberline {A.1.4}Controlling the local intensity}{144}{subsection.A.1.4}%
-\contentsline {part}{Bibliography}{147}{section*.65}%
+\contentsline {subsubsection}{\numberline {4.4.2.3}Paired emission frequency range}{94}{subsubsection.4.4.2.3}%
+\contentsline {subsection}{\numberline {4.4.3}Steep horizon geometry}{96}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Quasi-normal mode configuration}{97}{subsection.4.4.4}%
+\contentsline {section}{\numberline {4.5}Conclusion}{99}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Experimental observation of stimulated Hawking radiation in a polariton quantum fluid}{101}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Interferometric measurement of the scattering matrix }{101}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Challenges of the measurement}{103}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Interferometric reconstruction of the Fluctuation Field}{105}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Experimental implementation}{107}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Ballistic configuration}{107}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Measurement of the Bogoliubov spectrum}{109}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Observation of stimulated Hawking radiation}{113}{subsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.3.1}Detection of the scattered modes}{113}{subsubsection.5.2.3.1}%
+\contentsline {subsection}{\numberline {5.2.4}Toward the measurement of the scattering matrix}{115}{subsection.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.4.1}Input and output modes discrimination}{115}{subsubsection.5.2.4.1}%
+\contentsline {subsubsection}{\numberline {5.2.4.2}Real space analysis}{117}{subsubsection.5.2.4.2}%
+\contentsline {subsubsection}{\numberline {5.2.4.3}Signature of amplification}{118}{subsubsection.5.2.4.3}%
+\contentsline {section}{\numberline {5.3}Conclusion}{123}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Bogoliubov modes correlations in a polariton quantum fluid}{125}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Quantum noise of an electromagnetic field}{125}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Standard quantum limit}{125}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Intensity and phase fluctuations}{127}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Squeezed states}{127}{subsection.6.1.3}%
+\contentsline {section}{\numberline {6.2}Photodectection}{128}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Balanced detection}{129}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Difference measurement}{129}{subsection.6.3.1}%
+\contentsline {section}{\numberline {6.4}Correlations in continuous-variables quantum optics}{130}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Experimental implementation}{131}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Bogoliubov coefficients measurement}{131}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Bogoliubov modes correlations}{133}{subsection.6.5.2}%
+\contentsline {subsubsection}{\numberline {6.5.2.1}Shot noise calibration}{133}{subsubsection.6.5.2.1}%
+\contentsline {subsubsection}{\numberline {6.5.2.2}Balanced detection}{135}{subsubsection.6.5.2.2}%
+\contentsline {subsubsection}{\numberline {6.5.2.3}Correlations measurement}{138}{subsubsection.6.5.2.3}%
+\contentsline {section}{\numberline {6.6}Conclusion}{141}{section.6.6}%
+\contentsline {part}{Appendices}{143}{section*.61}%
+\contentsline {chapter}{\numberline {A}Mean field shaping and monitoring}{145}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Phase printing}{145}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Spatial light modulator.}{145}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Phase measurement}{146}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Off axis inteferometry}{146}{subsection.A.1.3}%
+\contentsline {subsection}{\numberline {A.1.4}Controlling the local intensity}{146}{subsection.A.1.4}%
+\contentsline {part}{Bibliography}{149}{section*.65}%
