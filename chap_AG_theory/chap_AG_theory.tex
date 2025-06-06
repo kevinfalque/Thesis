@@ -58,37 +58,23 @@
 \label{chap:AG_theory}
 
 Now that polaritons have been introduced, we can start to discuss the theoretical framework that will be used to 
-describe Hawking radiation in a polariton quantum fluid. In this chapter, we will first establish the original hydrodynamical analogy between the propagation 
-of acoustic waves in a moving fluid and scalar fields in curved spacetime. This analogy is at the heart of what motivated the study 
-of Hawking radiation in analog systems, leading to a first variety of experiment in classical systems such as water tanks. These great experiments,
-\cite{rousseaux_observation_2008,weinfurtner_measurement_2011} demonstrated positive to negative frequency conversion of shallow surface waves at the vicinity of a sonic horizon. However the temperature
-of classical fluids is too high to quantize their collective excitation field which prevent the study of quantum effects. More precisely, Hawking radiation is expected 
-to create entanglement between the emitted modes which can not be tested with water waves. Quantum fluids appear then as promising candidate since the 
-fluctuations around the ground or steady state require a quantum treatment to be understood. In fact we will see that tackling a fluid with trans-critical flow with the usual Bogoliubov theory of condensed matter also predict particle creation from vacuum. Studying the effect from this point of view will reveal a strong robustness 
-of the effect beyond the original hydrodynamical approach and widen the range of regimes where Hawking radiation can be observed.
+describe Hawking radiation in a polariton quantum fluid. In this chapter, we first establish the original hydrodynamical analogy between the propagation of acoustic waves in a moving fluid and scalar fields in curved spacetime. This analogy is at the heart of what motivated the study of Hawking radiation in analogue systems, leading to a first variety of experiments in classical systems such as water tanks. These experiments~\cite{rousseaux_observation_2008,weinfurtner_measurement_2011} demonstrated positive to negative frequency conversion of shallow surface waves in the vicinity of a sonic horizon. However, the temperature
+of classical fluids is too high to quantize their collective excitation field, which prevents the study of quantum effects. More precisely, Hawking radiation is expected to create entanglement between the emitted modes,which cannot be tested with water waves. Quantum fluids then appear as promising candidates because fluctuations around the ground or the steady state require a quantum treatment to be understood. In fact we will see that tackling a fluid with trans-critical flow with the usual Bogoliubov theory of condensed matter also predicts particle creation from vacuum. Studying the effect from this point of view will reveal a strong robustness of the effect beyond the original hydrodynamical approach and will widen the range of regimes where Hawking radiation can be observed.
 
 
 \section{The hydrodynamical analogy}
 
 In the previous chapter, we established that the dynamics of microcavity polaritons can be described by a driven dissipative Gross-Pitaevskii equation.
-By writing the wavefunction in term of phase and density the Gross-Pitaevskii equation can be cast into a continuity equation and an Euler equation for a non-barotropic fluid in the pump rotating frame. Starting from the GPE
-a system pumped by a laser of the general form $F_{\tp}e^{i\phi(x,t)}$ lead the fluid to a stationnary state whose wavefunction $\psi(x,t)=\sqrt{n_0}e^{i\phi(x,t)}$ phase and modulus respect :
-\begin{equation}
+By writing the wavefunction in terms of phase and density, the Gross-Pitaevskii equation can be cast into a continuity equation and an Euler equation for a non-barotropic fluid in the pump rotating frame. Starting from the GPE, a system pumped by a laser of the general form $F_{\tp}e^{i\phi(x,t)}$ leads the fluid to a stationary state whose wavefunction $\psi(x,t)=\sqrt{n_0}e^{i\phi(x,t)}$ phase and modulus respect:
     \begin{align}
     \partial_t \phi +& \frac{\mlp v_0^2}{2\hbar}+\frac{\hbar}{2\mlp}\frac{\partial_x^2\sqrt{n_0}}{\sqrt{n_0}}+V_{LP}+gn+g_rn_r+\frac{\re\lrsq{F_{\tp}e^{-i\theta}}}{\mlp}=0\,\\
     \partial_t n_0 +& \partial_x(n_0v)= \gamma n_0 -2\im\lrsq{F_{\tp}e^{-i\theta}}\sqrt{n_0}
     \end{align}
     \label{eq:continuity}
-\end{equation}
-If we neglect the pump and dissipation terms which is basically the situation of a conservative fluid, we recover the original equation describing 
-sound waves in a convergent flow. This is precisely the equation that was used in the initial analogy made by W. Unruh \cite{unruh_experimental_1981}.
-However, the out of equilibrium nature of the microcavity polaritons brings different phenomenology. In particular, perturbations propagating in
-the fluid are not necessary sound waves as we will se latter. It means that the dispersion of these perturbation is not linear and 
-can remarkably exhibit a gap which can be associated to massive excitations. To avoid making approximation and encapsulate as much as possible 
-the complexity of the system it is convenient to make the same calculation in the pump rotating frame. It equivalently means that all frequencies
-will be taken with respect to the pump. In practice this is done by writting the pump $F_{\tp}(x)= F_{\tp}e^{i\theta_p(x)}$ and look for steady state wavefunction 
-of the same form $\psi(x,t)=\sqrt{n_0}e^{i\theta_p(x)}$. Plugging this into the GPE we obtain that the phase and density of the fluid must fullfill the following equations :
-
+If we neglect the pump and dissipation terms, which is basically the situation of a conservative fluid, we recover the original equation describing sound waves in a convergent flow. This is precisely the equation that was used in the initial analogy made by W. Unruh \cite{unruh_experimental_1981}.
+However, the out-of-equilibrium nature of microcavity polaritons brings about a different phenomenology. In particular, perturbations propagating in
+the fluid are not necessarily sound waves as we will see latter. This means that the dispersion of these perturbations is not linear and can remarkably exhibit a gap which can be associated to massive excitations. To avoid making approximation and encapsulate as much as possible of the complexity of the system, it is convenient to make the same calculation in the pump rotating frame. It equivalently means that all frequencies
+will be taken with respect to the pump. In practice, this is done by writing the pump $F_{\tp}(x)= F_{\tp}e^{i\theta_p(x)}$ and looking for steady-state wavefunctions of the same form $\psi(x,t)=\sqrt{n_0}e^{i\theta_p(x)}$. Plugging this into the GPE, we obtain that the phase and density of the fluid must fulfill the following equations:
 \begin{equation}
     \lrsq{-\frac{\hbar}{2\mlp}\nabla^2-i\frac{\hbar}{2}(\vna\cdot\pmb{v_0}) -i\hbar(\pmb{v_0}\cdot\vna)- \delta(v_0)+g_{\rm r}n_{\rm r}+g n_0-\ci\frac{\hbar\gamma}{2}}\sqrt{n_0}+|F_\tp|=0\,,
         \label{eq:StatHomogEOSDens}
@@ -105,14 +91,13 @@ where $$\rho\coloneqq2g n_0- \delta(v_0)+g_{\rm r}n_{\rm r}\qquad\text{and}\qqua
 Note that here we have assumed that there is no external potential without loss of generality since it can be included in the definition of $\rho$.
 
 
-\section{At the heart of particle creation : Bogoliubov transformation}
+\section{At the heart of particle creation : the Bogoliubov transformation}
 
 \subsection{The ambiguity of vacuum definition}
-The quantum vacuum state is defined as the quantum state of a system with the lowest possible energy. Eventhough 
-this definition is commonly used and looks quite intuitive, it in fact implies some deep properties. First, a minimum energy state exists. In a finite dimension
-problem, this is obvious since the spectrum has also a finite dimension but whenever the dimension of the Hilbert space is infinite, the existence of a minimum energy state is a priori not guaranteed.
-Secondly, it seems to depend on the system which suggests that the vacuum is not a universal concept. This is particularly true in the context of quantum field theory in curved spacetime where the vacuum state is observer dependent.
-For instance, in the Unruh effect, an accelerating observer detect a thermal radiation while an inertial observer sees 'standard' vacuum. This ambiguity is
+The quantum vacuum state is defined as the quantum state of a system with the lowest possible energy. Even though 
+this definition is commonly used and seems rather intuitive, it in fact implies some deep properties. First, a minimum energy state exists. In a finite-dimensional problem, this is obvious since the spectrum also has a finite dimension but whenever the dimension of the Hilbert space is infinite, the existence of a minimum energy state is a priori not guaranteed.
+Secondly, it seems to depend on the system, suggesting that the vacuum is not a universal concept. This is particularly true in the context of quantum field theory in curved spacetime where the vacuum state is observer-dependent.
+For instance, in the Unruh effect, an accelerating observer detects a thermal radiation while an inertial observer sees 'standard' vacuum. This ambiguity is
 as at the root of particle creation phenomena like the Hawking effect and once it is understood, make these effects appear less surprising.
 
 
@@ -153,14 +138,11 @@ The corresponding eigenproblem is usually tackled by introducing the creation an
 \end{subequations}
 which satisfy the commutation relation $[\hat{a},\hat{a}^\dagger]=1$.
 Taking the definition of $\hat{a}$ and $\hat{a}^\dagger$ we look a the quantity $\hat{a}^\dagger\hat{a}$ :
-
-\begin{equation}
-    \begin{align}
-    \hat{a}^\dagger\hat{a}&=\frac{1}{2}\lr{\hat{X}-i\hat{P}}\lr{\hat{X}+i\hat{P}} \\
-                          &=\frac{1}{2}\lr{\hat{X}^2+\hat{P}^2+i\lr{\hat{X}\hat{P}-\hat{P}\hat{X}}} \\
-                          &=\frac{1}{2}\lr{\hat{X}^2+\hat{P}^2-1}.
-    \end{align}
-\end{equation}
+\begin{align}
+\hat{a}^\dagger\hat{a}&=\frac{1}{2}\lr{\hat{X}-i\hat{P}}\lr{\hat{X}+i\hat{P}} \\
+                      &=\frac{1}{2}\lr{\hat{X}^2+\hat{P}^2+i\lr{\hat{X}\hat{P}-\hat{P}\hat{X}}} \\
+                      &=\frac{1}{2}\lr{\hat{X}^2+\hat{P}^2-1}.
+\end{align}
 Comparing with \autoref{eq:dimensionless_hamiltonian} we see that :
 
 \begin{equation}
@@ -229,16 +211,14 @@ a positive integer $p$ such that $\nu-p<0$ which contradicts the fact that the s
 
 
 
-\section{Elementary excitations of the fluid : Bogoliubov theory}
-Unlike in classical systems, where Hawking radiation can only be triggered by external disturbances, its analog in quantum fluids may instead arise from vacuum fluctuations. In this context, perturbations of the quantum fluid are emitted at the horizon and propagate in opposite directions, mirroring the behavior expected near a gravitational event horizon. 
-However, while the analogy with black hole physics is supported by the fact that the systems can be described by the same equation, derived in the  hydrodynamical context, nevertheless it should be noted that the systems are very different.
+\section{Elementary excitations of the fluid: Bogoliubov theory}
+Unlike in classical systems, where Hawking radiation can only be triggered by external disturbances, its counterpart in quantum fluids may instead arise from vacuum fluctuations. In this context, perturbations of the quantum fluid are emitted at the horizon and propagate in opposite directions, mirroring the behavior expected near a gravitational event horizon. 
+However, while the analogy with black hole physics is supported by the fact that the systems can be described by the same equation, derived in the  hydrodynamical context, it should be noted that the systems are very different.
 
-Indeed, treating the collective excitations of a transonic Bose-Einstein condensate within the framework of Bogoliubov theory already predicts the spontaneous emission of modes at the horizon from vacuum fluctuations. Fundamentally, both Stephen Hawking's original calculation and its quantum fluid analog rely on a Bogoliubov transformation between two sets of operators \cite{hawking_black_1972}, which ultimately leads to the mixing of creation and annihilation operators.
+Indeed, treating the collective excitations of a transonic Bose-Einstein condensate within the framework of Bogoliubov theory already predicts the spontaneous emission of modes at the horizon from vacuum fluctuations. Fundamentally, both Stephen Hawking's original calculation and its quantum fluid counterpart rely on a Bogoliubov transformation between two sets of operators \cite{hawking_black_1972}, which ultimately leads to the mixing of creation and annihilation operators.
 
-This section will establish the structure of the collective excitation spectrum and demonstrate how specific fluid configurations can give rise to mode emission from vacuum. Furthermore, we will show that the Hawking effect remains robust even when deviating from the original hydrodynamical analogy, and it does not necessarily require the excitations to be sound waves. 
+This section will establish the structure of the collective excitation spectrum and demonstrate how specific fluid configurations can give rise to mode emission from vacuum. Furthermore, we will show that the Hawking effect remains robust even when deviating from the original hydrodynamical regime of the analogy, and it does not necessarily require the excitations to be sound waves. 
 In fact, the intrinsically out-of-equilibrium nature of the polariton system reveals a phenomenology far richer than that of conservative systems, extending the possibility of observing Hawking radiation to massive excitations.
-
-
 
 \subsection{Linearization of the Gross-Pitaevskii equation}
 \label{sec:bogo_modes_derivation}
@@ -658,7 +638,7 @@ Expanding the fluctuations in the eigenvectors basis of $\Lbog$ we obtain :
     \end{aligned}
     \label{eq:energy_bogo_lab_frame}
 \end{equation}
-Let us analyze the case of a static fluid or equivalently what we obtain in the co moving frame. Setting $\kbf_p=0$ the energy contribution is :
+Let us analyze the case of a static fluid or equivalently what we obtain in the co-moving frame. Setting $\kbf_p=0$ the energy contribution is :
 
 \begin{equation}
     \dfrac{1}{2}\bra{\dpsi_k}\eta\Lbog'\ket{\dpsi_k} =\dfrac{1}{2}\hbar\omega'_k\bra{\dpsi_k}\ket{\dpsi_k}_B.
@@ -1100,7 +1080,7 @@ expression can be written for the $out$ global modes noted $\hb_i$. The two sets
 \end{equation}
 
 
-Few comments are in order at this stage. First, since we deal with quadratic Hamiltonian, the matrix is exactly the same obtained in the classical case.
+A few comments are in order at this stage. First, since we deal with quadratic Hamiltonian, the matrix is exactly the same obtained in the classical case.
 From an experimental point of view this property is a crucial asset. Indeed, it means one can reconstruct the full matrix and hence all its quantum 
 properties by just solving the scattering problem for classical modes which are much easier to engineer than quantum state. Any quantum correlation between the modes are in fact encoded in the matrix coefficient 
 under phase and amplitude value of the reflexion-transmission coefficients. Of course, solving the scattering problem
@@ -1160,8 +1140,7 @@ the negative energy mode $d_2$ is present and yields a non zero emission from va
  \begin{equation}
     g^{(2)}(x,x')=\dfrac{\langle{\hat{\dpsi}}^\dagger(x)\hat{\dpsi}^\dagger(x')\hat{\dpsi}(x)\hat{\dpsi}(x')\rangle}{\langle \hat{\dpsi}^\dagger(x)\hat{\dpsi}(x)\rangle\langle \hat{\dpsi}^\dagger(x')\hat{\dpsi}(x')\rangle}
  \end{equation}
- Plenty of numerical study in the group have been performed \cite{jacquet_quantum_2023}, and demonstrated that the interface of transcritical 
- flow of polariton can indeed exhibits Hawking radiation signature in its density correlation map.
+ Numerical studies have been performed in the group~\cite{jacquet_quantum_2023} that demonstrated that the interface of transcritical flow of polariton can indeed exhibits Hawking radiation signature in its density correlation map.
 
 
  An experimental measurement of this correlation map has already been performed in Bose Einstein Condensate of Rb atoms \cite{steinhauer_observation_2016}.
@@ -1208,8 +1187,30 @@ whether $\omega$ is in $[\omega_{gap}, \omega_{max}]$ or not. In the latter case
 carry a fraction of the incoming energy. While when $\omega \in [\omega_{gap}, \omega_{max}]$ the same condition reads $\abs{S_{uu}}^2\abs{\alpha_u}^2+\abs{S_{d_1u}}^2\abs{\alpha_u}^2-\abs{S_{d_2u}}^2\abs{\alpha_u}^2=\abs{\alpha_u}^2$ due to the negative energy mode.
 This directly implies $\abs{S_{uu}}^2\abs{\alpha_u}^2+\abs{S_{d_1u}}^2\abs{\alpha_u}^2\geq \abs{\alpha_u}^2$ which means that the two positive energy channels
 carry more energy than what was injected, the excess being compensated by the negative energy mode. This amplification means that the incoming 
-coherent state extracted energy from the transcritical region by exciting a negative energy mode.This is the same 
-argument that led to the prediction of rotationnal superradiance in black hole physics \cite{hawking_black_1972} as well as in classical electromagnetic systems \cite{zeldovich__1970}.
+coherent state extracted energy from the transcritical region by exciting a negative energy mode. This is the same argument that led to the prediction of rotationnal superradiance in black hole physics \cite{hawking_black_1972} as well as in classical electromagnetic systems \cite{zeldovich__1970}.
+
+\section{Numerical study of stimulated emission}
+Building on the methods developed in~\cite{jacquet_quantum_2023}, we numerically studied the scattering of a coherent probe in a transcritical fluid featuring an acoustic horizon.
+The result is shown in \autoref{fig:fignumerics}.
+
+The amplitudes upstream and downstream are normalized to the peak amplitude of the probe.
+Note that this is different from the peak amplitude of the phonons created by the probe that then propagate towards the horizon before scattering onto it, so this procedure does not allow the evaluation of scattering coefficients $\abs{S_{u\alpha}}$ directly.
+However, it allows a qualitative comparison between the amplitudes in the reflected and transmitted modes.
+
+We see that the amplitude in the reflected mode is strong at low $\omega$ and decreases to an almost constant value ($\approx 10^{-3}$) before $\omega_\mathrm{max}$.
+The same is true for transmission into the negative energy mode (the amplitude is dominated by its complex conjugate according to Bogoliubov theory).
+In that frequency interval, transmission into the positive energy mode is low.
+After the reflection (and transmission into the negative energy mode) dies out, most of the probe amplitude is transmitted into the positive energy mode.
+
+As discussed above, reflection upstream and the accompanying transmission into the negative-energy mode downstream are the hallmarks of amplification by the Hawking effect.
+The ability to explore scattering in the transcritical flow with a monochromatic coherent state thus provides us with a way to contrast various regimes of scattering, i.e. when there is Hawking emission or not.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{chap_AG_theory/fig/fignumerics.pdf}
+    \caption{Numerical simulation of scattering of a coherent probe on a transcritical fluid. \textbf{a)} amplitudes upstream. \textbf{b)} amplitudes downstream. The amplitudes $A$ are normalized to the probe peak $\abs{F_\mathrm{pr}}$.}
+    \label{fig:fignumerics}
+\end{figure}
 
 \section{Conclusion}
 

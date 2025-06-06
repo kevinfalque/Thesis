@@ -18,10 +18,10 @@ to evaporate. The obvious difficulty to test this prediction experimentally is d
 the synchonization of nine telescope across the world to obtain an optical system whose optical aperture is the size the diameter of earth. the black body temperature of 
 
 As mentionned in the previous chapter, the creation of a sonic horizon in a polariton fluid can lead to spontaneous emission of Bogoliubov modes provided the downstream region exhibits a collective excitation spectrum with
- negative energy modes. Furthermore, it was shown that the strength of the emitted signal depends strongly on the curvature of the horizon, or in other words, its steepness. To ensure that such effect is in principle observable in the laboratory, one needs to fully characterize the mean field of the fluid and locally probe its excitation spectrum. This chapter is dedicated to the description of the full optical generation of arbitrary transonic fluids as well as the characterization of the excitation spectrum on both sides of the horizon. 
+ negative energy modes. Furthermore, it was shown that the strength of the emitted signal depends strongly on the curvature of the horizon, or in other words, its steepness. To ensure that such effect is in principle observable in the laboratory, one needs to fully characterize the mean field of the fluid and locally probe its excitation spectrum. This chapter is dedicated to the description of the full optical generation of arbitrary transcritical fluids as well as the characterization of the excitation spectrum on both sides of the horizon. 
 This measurement revealed for the first time negative energy modes in a supersonic quantum fluid, validating the possibility to observe particle creation in a polariton fluid.
 
-The first part of the chapter will focus on the generation of mean fields with arbitrary velocity profiles through the shaping of the pump laser phase. In the second part, I will present the pump probe spectroscopy method used to locally measure the collective excitation spectrum, as well
+The first part of the chapter will focus on the generation of mean fields with arbitrary velocity profiles through the shaping of the pump laser phase. In the second part, we will present the pump-probe spectroscopy method used to locally measure the collective excitation spectrum, as well
 as the results obtained for several transonic fluids with different parameters. The results obtained are reported in Ref ??
 
 \section{Optical generation of an arbitrary fluid velocity field}
@@ -36,7 +36,7 @@ Indeed, in the low wavevector limit, the lower polariton branch can be safely ap
 \end{equation}
 
 The group velocity of a polariton is then $\vbf = \frac{\partial \omega_{LP}}{\partial k} = \frac{\hbar \kbf}{m_{LP}}= \frac{\hbar \kbf_p}{m_{LP}}$ where $\kp$ is the in-plane wavector of the pump laser.
-In the case of a plane wave  we can write $\kp=\vec{\nabla}\theta(\rbf)$ where $\theta(r)$ is the spatial phase. This can safely be generalized to more complex spatial phase profiles,
+In the case of a plane wave we can write $\kp=\vec{\nabla}\theta(\rbf)$ where $\theta(r)$ is the spatial phase. This can safely be generalized to more complex spatial phase profiles,
 which provides a direct link between the driving laser phase and the velocity of the fluid :
 
 \begin{equation}
@@ -46,9 +46,9 @@ which provides a direct link between the driving laser phase and the velocity of
 \subsection{Waterfall configuration}
 
 A first realisation of a 1D acoustic black hole in a polaritonic system was done in \cite{nguyen_acoustic_2015} with the so-called waterfall configuration. 
-The setup was composed of a microcavity etched to be truly one dimensional (a microwire) and a defect was added in the middle of the wire to act as an external attractive potential and force the polariton flow to accelerate. The pump was only shone in the region upstream of the defect. The downstream region of the flow was then made of polaritons that propagate balistically and whose speed is fixed by the interaction energy
+The setup was composed of a microcavity etched to be one-dimensional (a microwire), and a defect was added in the middle of the wire to act as an external attractive potential and force the polariton flow to accelerate. The pump was only shone in the region upstream of the defect. The downstream region of the flow was then made of polaritons that propagate ballistically and whose speed is fixed by the interaction energy
 in the upstream region.
-Even though this configuration provides a natural fluid acceleration, the horizon geometry depends greatly on the defect shape and cannot be tuned easily.  Furthermore, the collective excitation spectrum and the presence of negative energy modes were not investigated, which 
+Even though this configuration provides a natural fluid acceleration, the horizon geometry depends strongly on the defect shape and cannot be tuned easily.  Furthermore, the collective excitation spectrum and the presence of negative energy modes were not investigated, which 
 prevented to conclude on the nature of the signal observed in the experiment. In this chapter, we present a different approach to generate such flows with an effective 1D fluid fully optically created, as well as a full characterization of the Bogoliubov spectrum.
 
 \subsection{Target velocity profile}
@@ -76,7 +76,7 @@ One can then verify that :
     \label{fig:target_velocity.pdf}
 \end{figure}
 
-Such velocity profile provides great flexibility in the choice of the upstream and downstream velocities as well as the steepness and the position of the transition. From this, one can determine the phase that must be imprinted on the pump laser to generate such a flow profile by simple integration of \autoref{eq:target_velocity}, which gives :
+Such a velocity profile provides great flexibility in the choice of the upstream and downstream velocities as well as the steepness and the position of the transition. From this, one can determine the phase that must be imprinted on the pump laser to generate such a flow profile by simple integration of \autoref{eq:target_velocity}, which gives :
 
 \begin{equation}
     \phi(x) = \dfrac{m_{LP}}{\hbar} \int v(x) dx = \dfrac{m_{LP}}{\hbar} \left( \dfrac{v_{d}-v_{up}}{2} w_h \mathrm{ln}(\cosh(\dfrac{x-x_h}{w_h}))+\dfrac{v_{up}+v_{d}}{2}x \right).
@@ -95,14 +95,14 @@ The latter is plotted in \autoref{fig:target_velocity.pdf} b). The derivative of
 which is inverted as $z\propto \phi(x)$. Making a fluid with the desired velocity field then boils down to be able to imprint the phase \autoref{eq:target_phase_profile} on the laser that resonantly excites the fluid. As we will see in the next section, this can be done with a Spatial Light Modulator (SLM). 
 
  A simplified scheme showing how the printing of the target wavefront in the sample plane creates the desired flow.
-To verify that the fluid has the expected phase we use the off-axis interferometry method whose principle is explained in \autoref{sec:phase_measurement}
+To verify that the fluid has the expected phase, we use the off-axis interferometry method whose principle is explained in \autoref{sec:phase_measurement}
 As an example, the measured phase corresponding to the mean field displayed in \autoref{fig:wavefront_shapping} b) is shown in \autoref{fig:phase_example}.
  
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{chap_custom_st/fig/wavefront_shapping.pdf}
     \caption{Simplified scheme of the generation of a transonic fluid. a) The pump laser is shaped with the target phase profile and sent on the microcavity The corresponding fluid velocity field is represented by the black surface lying on the Quantum Wells (QWs). c) The outgoing photons are collected and the sample 
-    plane is imaged on a CCD camera to obtain the fluid density map.  b) Measured Lower and Upper polariton dispersion at the working point $C6-D6$ at which the experiment was run. By fitting this dispersions,
+    plane is imaged on a CCD camera to obtain the fluid density map.  b) Measured Lower and Upper polariton dispersion at the working point $C6-D6$ at which the experiment was run. By fitting these dispersions,
     the effective LP mass can be extracted $\mlp= 7.0 \times 10^{-35}$ kg}
     \label{fig:wavefront_shapping}
 \end{figure}
@@ -120,24 +120,24 @@ Once again, this can be achieved using the SLM by locally adjusting the height o
 
 
 
-To summarize, it is possible to generate and monitor a fluid with arbitrary density and velocity flow by shaping the pump laser both in phase and intensity. We hence have a full optical way to create
-effective space-time on which we can study the propogation of the collective excitations of the fluid near the transition region.
+To summarize, it is possible to generate and monitor a fluid with arbitrary density and velocity flow by shapping the pump laser both in phase and intensity. We hence have a full optical way to create
+effective space time on which we can study the propagation of collective excitation near the transition region.
 
 \subsection{Effective 1D fluid}
 
-So far, the description of the fluid both in velocity and density was one dimensional despite the fluid is actually a 2D system. This assumption
-relies on the fact that the fluid wavefunction is invariant under translation in the $y$ direction in the  region of interest represented by the white dashed rectangle of \autoref{fig:phase_example}. This area is about $130 \mu m$ long and $30-40 \mu m $ large. 
+So far, the description of the fluid both in velocity and density was one-dimensional despite the fluid is actually a 2D system. This assumption
+relies on the fact that the fluid wavefunction is invariant under translation in the $y$ direction in the region of interest represented by the white dashed rectangle of \autoref{fig:phase_example}. This area is about $130 \mu m$ long and $30-40 \mu m $ large. 
 Cuts of both the phase and density in the direction orthogonal to the propagation are shown in \autoref{fig:phase_example} b) and c). Periodic modulations are present because of back reflection on the protection screen of the camera sensor and are present even without passing through the sample. These modulations can be removed
 using Fourier filtering which allows to compute the variation of the phase with respect to $2\pi$,  $\sigma_y^{ph}/2\pi$= 0.3\% as well as the relative intensity variation $\sigma_y^I/\langle I \rangle$ =3\%. As a consequence,
-we can safely assume that the fluid is effectively 1D in the region of interest. This in contrast with the work \cite{nguyen_acoustic_2015} previously mentioned. In the present configuration, the shape of the horizon is fixed by the phase of the exciting laser and can be tuned at will which is crucial to
+we can safely assume that the fluid is effectively 1D in the region of interest. This in contrast with the work \cite{nguyen_acoustic_2015} previously mentioned. In the present configuration, the shape of the horizon is fixed by the phase of the exciting laser and can be tuned at will, which is crucial to
 study the effect of the horizon steepness on the emitted signals. Moreover, the presence of the pump laser in the downstream region brings a double advantage. First, the velocity of the fluid can be changed and does not depend on the interaction energy of the upstream region, allowing to study many fluid configurations.
 Secondly, this experiment does not suffer from the exponential density decay as in the ballistic propagation \cite{long_range_ballistic_2013}. As a consequence, it is possible to probe the collective excitations spectrum in any region of the fluid using the high resolution pump probe spectroscopy method that we will describe in the next section. This 
- method is based  on the measurement of  the response of the system to a weak perturbation. It is hence somehow proportional to the interaction energy of the fluid $gn$ and better suited to pumped fluid \cite{claude_high-resolution_2022}.
+ method is based on the measurement of the response of the system to a weak perturbation. It is hence somehow proportional to the interaction energy of the fluid $gn$ and better suited to pumped fluid \cite{claude_high-resolution_2022}.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{chap_custom_st/fig/phase_example.pdf}
-    \caption{a) Measured phase of the mean field shown in \autoref{fig:wavefront_shapping}.The curvature present in the upstream region is due to the non linear self focusing. The region
+    \caption{a) Measured phase of the mean field shown in \autoref{fig:wavefront_shapping}.The curvature present in the upstream region is due to the nonlinear self focusing. The region
     on interest in which we assume translational invariance is represented by the white dashed rectangle. b)  Cut of the phase in the $y$ direction represented by the dotted white line in the rectangle. The variation to the phase with respect
     to $2\pi$ are equal to 0.3\%. c) Cut of the intensity of the mean field in the $y$ direction at the same location than b). The corresponding relative intensity variation is equal to 0.3\%.}
     \label{fig:phase_example}
@@ -145,16 +145,16 @@ Secondly, this experiment does not suffer from the exponential density decay as 
 
 \section{Experimental spectroscopy of the collective excitation spectrum}
 
-The analog of the Hawking radiation in a polariton fluid is the spontaneous emission of Bogoliubov modes from the horizon. When the system is operating at the turning point of the bistability the Bogoliubov spectrum 
-is gapless and linear which enables to define a speed of sound $c_s = \sqrt{\hbar g n /\mlp}$ and speak without ambiguity of sonic excitation in the low wavevector limit. In this regime, the condition to observe negative energy modes coincides with the fluid being supersonic as explained in the previous chapter. 
+The analog of the Hawking radiation in a polariton fluid is the spontaneous emission of Bogoliubov modes from the horizon. When the system is operating at the turning point of the bistability, the Bogoliubov spectrum 
+is gapless and linear, which enables the definition of a speed of sound $c_s = \sqrt{\hbar g n /\mlp}$ and speak without ambiguity of sonic excitation in the low wavevector limit. In this regime, the condition to observe negative energy modes coincides with the fluid being supersonic, as explained in the previous chapter. 
 However, creating a stable fluid at the turning point is quite challenging and the measurement of the spectrum linearity requires experimental techniques that are hard to implement on a moving fluid \cite{claude_phd}. Nevertheless, linearity is not mandatory to observe Hawking radiation since 
-it only requires the mixing between positive and negative energy modes which can be achieved without operating at the turning point. Besides, a gap opening in the Bogoliubov physics brings new physics on the table since it widens the study of quasiparticle creation to the case of massive particles. In this
-section, we discard the necessity to have sonic excitations and measure the presence of negative energy modes in a wide range of fluid configurations exploring different asymptotic velocities and horizon steepness.
+it only requires the mixing between positive and negative energy modes which can be achieved without operating at the turning point. Besides, a gap opening in the Bogoliubov spectrum brings new physics to the table since it widens the study of quasiparticle creation to the case of massive particles. In this
+section, we discard the necessity to have sonic excitations and measure the presence of negative energy modes in a wide range of fluid configurations, exploring different asymptotic velocities and horizon steepness.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.3\textwidth]{chap_custom_st/fig/setup_bogoliubov.pdf}
-    \caption{Simplified scheme of the pump probe spectroscopy method. a) At a given in plane wavevector represented by the red arrow, the probe frequency is scanned around the mean field frequency and is transmitted when it resonates with the Bogoliubov branch. b) Typical transmission spectrum of the probe at the wavevector of a).}
+    \caption{Simplified scheme of the pump-probe spectroscopy method. a) At a given in-plane wavevector represented by the red arrow, the probe frequency is scanned around the mean field frequency and is transmitted when it resonates with the Bogoliubov branch. b) Typical transmission spectrum of the probe at the wavevector of a).}
     \label{fig:setup_bogo}
 \end{figure}
 
