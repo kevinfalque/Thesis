@@ -1,8 +1,8 @@
-PWD /home/kfalque/Documents/These-v3/Thesis
+PWD /home/kfalque/Documents/These-Falquos/Thesis
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /home/kfalque/Documents/These-v3/Thesis/mythesis.tex
+INPUT /home/kfalque/Documents/These-Falquos/Thesis/mythesis.tex
 OUTPUT mythesis.log
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/book.cls
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/book.cls
@@ -800,6 +800,11 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/doublestroke/dsrom10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
+INPUT ./chap_AG_theory/fig/fignumerics.pdf
+INPUT ./chap_AG_theory/fig/fignumerics.pdf
+INPUT ./chap_AG_theory/fig/fignumerics.pdf
+INPUT ./chap_AG_theory/fig/fignumerics.pdf
+INPUT ./chap_AG_theory/fig/fignumerics.pdf
 INPUT ./chap_custom_st/chap_custom_st.tex
 INPUT ./chap_custom_st/chap_custom_st.tex
 OUTPUT chap_custom_st/chap_custom_st.aux

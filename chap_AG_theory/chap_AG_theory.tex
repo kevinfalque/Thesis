@@ -1164,6 +1164,33 @@ carry more energy than what was injected, the excess being compensated by the ne
 coherent state extracted energy from the transcritical region by exciting a negative energy mode. This is the same 
 argument that led to the prediction of rotational superradiance in black hole physics \cite{hawking_black_1972} as well as in classical electromagnetic systems \cite{zeldovich__1970}.
 
+
+\section{Numerical study of stimulated emission}
+Building on the methods developed in~\cite{jacquet_quantum_2023}, we numerically studied the scattering of a coherent probe in a transcritical fluid featuring an acoustic horizon.
+The result is shown in \autoref{fig:fignumerics}.
+
+The amplitudes upstream and downstream are normalized to the peak amplitude of the probe.
+Note that this is different from the peak amplitude of the phonons created by the probe that then propagate towards the horizon before scattering onto it, so this procedure does not allow the evaluation of scattering coefficients $\abs{S_{u\alpha}}$ directly.
+However, it allows a qualitative comparison between the amplitudes in the reflected and transmitted modes.
+
+We see that the amplitude in the reflected mode is strong at low $\omega$ and decreases to an almost constant value ($\approx 10^{-3}$) before $\omega_\mathrm{max}$.
+The same is true for transmission into the negative energy mode (the amplitude is dominated by its complex conjugate according to Bogoliubov theory).
+In that frequency interval, transmission into the positive energy mode is low.
+After the reflection (and transmission into the negative energy mode) dies out, most of the probe amplitude is transmitted into the positive energy mode.
+
+As discussed above, reflection upstream and the accompanying transmission into the negative-energy mode downstream are the hallmarks of amplification by the Hawking effect.
+The ability to explore scattering in the transcritical flow with a monochromatic coherent state thus provides us with a way to contrast various regimes of scattering, i.e. when there is Hawking emission or not.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{chap_AG_theory/fig/fignumerics.pdf}
+    \caption{Numerical simulation of scattering of a coherent probe on a transcritical fluid. \textbf{a)} amplitudes upstream. \textbf{b)} amplitudes downstream. The amplitudes $A$ are normalized to the probe peak $\abs{F_\mathrm{pr}}$.}
+    \label{fig:fignumerics}
+\end{figure}
+
+
+
+
 \section{Conclusion}
 
 In this chapter, we have explored the theoretical framework underlying the observation of Hawking radiation in a polariton quantum fluid. Starting from the Gross-Pitaevskii equation, we derived the Bogoliubov spectrum of collective excitations, highlighting the rich variety of regimes depending on the fluid's density, velocity, and interaction strength. We demonstrated how the interplay between positive- and negative-energy modes leads to the possibility of particle creation at a transcritical interface, analogous to the Hawking effect in black hole physics.

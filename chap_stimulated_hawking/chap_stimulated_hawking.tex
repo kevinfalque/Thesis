@@ -10,11 +10,11 @@
 
 
 
-In the previous chapter, we demonstrated the experimental realization of a transcritical flow in a polariton quantum fluid through precise optical pump shaping. This allowed us to engineer the fluid's density and velocity profiles to form a transcritical region, a key ingredient for the emergence of a sonic horizon. Additionally, we presented experimental evidence of negative-energy modes in this region, confirming the necessary conditions for the observation of the Hawking effect.
+In the previous chapter, we demonstrated the experimental realization of a transcritical flow in a polariton quantum fluid through precise optical pump shaping. This allowed us to engineer the fluid's density and velocity profiles to form a transcritical region, a key ingredient for the emergence of a sonic horizon. Furthermore, we presented experimental evidence of negative-energy modes in this region, confirming the necessary conditions for the observation of the Hawking effect.
 
 Building on these achievements, this chapter focuses on the experimental observation of stimulated Hawking radiation in a polariton fluid. Stimulated emission provides a controlled way to probe the Hawking effect by injecting a coherent state into the upstream region and measuring its scattering into outgoing modes. This approach allows us to directly study the amplification of positive-energy modes and the role of negative-energy modes in the transcritical region.
 The experimental realization of stimulated Hawking radiation involves several key steps. First, we describe the setup used to inject coherent states into the polariton fluid and the techniques employed to measure the outgoing modes. 
-Next, we detail the partial reconstruction of the scattering matrix, which encodes the mixing of positive- and negative-energy modes and provides direct evidence of energy amplification.
+Next, we introduce a method to analyze the scattered modes. Although the scattering matrix is not directly measured, this approach reveals clear signatures of amplification, providing indirect evidence of the underlying scattering process.
  Finally, we present the results of these measurements, discuss the agreement with theoretical predictions and the robustness of the stimulated Hawking effect.
 The results presented in this chapter not only validate the theoretical predictions of stimulated emission but also establish a pathway toward the observation of spontaneous Hawking radiation. By leveraging the unique properties of polariton fluids, this work demonstrates the potential of these systems as a platform for exploring fundamental aspects of quantum field theory in curved spacetime and beyond.
 
@@ -24,8 +24,8 @@ The results presented in this chapter not only validate the theoretical predicti
     \includegraphics[width=1\textwidth]{chap_stimulated_hawking/fig/typical_dens_2D.pdf}
     \caption{\textbf{a)} Real space image of a transcritical flow of polaritons with detuning $\delta(0)=29 GHz$ and wavevectors $k_u=0.2 \mu m^{-1}$ and $k_d=0.6\mu m^{-1}$. The black arrow represents the impinging mode $u_{in}$ while the blue arrows represent the outgoing modes $u_{out}$, $d_1^{out}$ and $d_2^{out}$. The direction
     of the arrow reflects the sign of the group velocity of each mode.
-    \textbf{b)} Typical Bogoliubov dispersion relation in the upstream subcritical region. The arrows correspond to the modes displayed on the left side of \textbf{a)}. 
-    \textbf{c)} Typical Bogoliubov dispersion relation in the downstream supercritical region. The arrows correspond to the modes displayed on the right side of \textbf{a)}}
+    \textbf{b)} Typical analytical Bogoliubov dispersion relation in the upstream subcritical region. The arrows correspond to the modes displayed on the left side of \textbf{a)}. 
+    \textbf{c)} Typical analytical Bogoliubov dispersion relation in the downstream supercritical region. The arrows correspond to the modes displayed on the right side of \textbf{a)}}
     \label{fig:typical_dens_2D}
 \end{figure}
 
@@ -33,27 +33,27 @@ The results presented in this chapter not only validate the theoretical predicti
 \section{Interferometric measurement of the scattering matrix }
 \label{sec:principle_measurement}
 
-We aim at solving the scattering problem of a coherent state injected in the upstream region impinging on the horizon. Doing so, it is possible
-to partially reconstruct the scattering matrix. This approach is complementary of what has already been done in other works in which 
-the stimulating field was coming from the transcritical region. ???????? 
+We aim at solving the scattering problem of a coherent state injected in the upstream region impinging on the horizon.
+This approach is complementary to what has already been done in the hydrodynamical experiment \cite{euve_scattering_2020} in which
+the stimulating field came from the transcritical region.
 
 \subsection{Challenges of the measurement}
 
 
-Let us take a transcritical flow of polaritons with typical density profile shown in \autoref{fig:typical_dens_2D} \textbf{a)}. The bright
-region on the left correspond to the upstream subcritical region while the other side of the interface is the transcritical region. Typical spectra corresponding to each region are shown in \textbf{b)} and \textbf{c)}.
-The previous chapter made clear that it is possible to locally excite the Bogoliubov dispersion by shinning a weak probe laser at the right couple $(\omega, k)$. Consider then a coherent state
-$\ket{\alpha_{in}}$ in the $u_{in}$ mode of \textbf{b)} that is, an upstream mode impinging on the interface. If its frequency $\omega_{in}$ is within $[\omega_{gap}, \omega_{max}]$ we expect to measure one reflected mode $u_{out}$ and two transmitted modes $d_1^{out}$ and $d_2^{out}$. The latter is the negative
-energy mode responsible for Hawking radiation. Each of this mode has a different wavevector $k_i$.
+Let us take a transcritical flow of polaritons with a typical density profile shown in \autoref{fig:typical_dens_2D} \textbf{a)}. The bright
+region on the left corresponds to the upstream subcritical region, while the other side of the interface is the transcritical region. Typical analytical spectra corresponding to each region are shown in \textbf{b)} and \textbf{c)}.
+The previous chapter evidenced that it is possible to locally excite the Bogoliubov dispersion by shining a weak probe laser at the right couple $(\omega, k)$. Consider then a coherent state
+$\ket{\alpha_{in}}$ in the $u_{in}$ mode of \textbf{b)} that is, an upstream mode that impinges on the interface. If its frequency $\omega_{in}$ is within $[\omega_{gap}, \omega_{max}]$ we expect to measure one reflected mode $u_{out}$ and two transmitted modes $d_1^{out}$ and $d_2^{out}$. The latter is the negative
+energy mode responsible for Hawking radiation. Each of these modes has a different wavevector $k_i$.
 
 \bigskip
 
 
-Experimentally, this situation corresponds to four distinct optical signals exiting the sample at different angles, or equivalently, to four spatially separated spots in the Fourier plane of the cavity. To illustrate the inherent challenges associated with such measurements, we present in \autoref{fig:bh_k_space} \textbf{b)} the typical expected locations of the scattered signals in the Fourier plane corresponding to the fluid configuration of \autoref{fig:typical_dens_2D} \textbf{a)}. The two bright spots correspond to the regions of the fluid characterized by the wavevectors \(k_u\) and \(k_d\). Two principal experimental challenges can be identified. 
+Experimentally, this situation corresponds to four distinct optical signals exiting the sample at different angles, or equivalently, to four spatially separated spots in the Fourier plane of the cavity. To illustrate the inherent challenges associated with such measurements, we present in \autoref{fig:bh_k_space} \textbf{b)} the typical expected locations of the scattered signals in the Fourier plane corresponding to the fluid configuration of \autoref{fig:typical_dens_2D} \textbf{a)}. The two bright spots correspond to the regions of the fluid characterized by the wavevectors \(k_u\) and \(k_d\). 
 
-First, the expected position of the mode \(d_1^{\text{out}}\) nearly coincides with the pump signal in the downstream region. Since the probe intensity must remain at least two orders of magnitude lower than that of the pump to preserve the perturbative regime, the resulting signal-to-noise ratio is extremely low. Consequently, a direct measurement of the \(d_1^{\text{out}}\) mode becomes unfeasible.
+First, the expected position of the mode \(d_1^{\text{out}}\) nearly coincides with the pump signal in the downstream region. Since the probe intensity must remain at least two orders of magnitude lower than that of the pump to preserve the perturbative regime, the resulting signal-to-noise ratio is extremely low. Consequently, a direct measurement of the \(d_1^{\text{out}}\) at wavevectors close to that of the pump mode becomes unfeasible.
 
-Second, in addition to the desired signals at frequency \(\omega_{\text{in}}\), all modes are subject to four-wave mixing processes due to nonlinear interactions with the pumped polaritons. As a result, depending on the fluid parameters, the conjugated modes generated by these interactions may spatially overlap with the reflected or transmitted modes. For example, as illustrated in \autoref{fig:bh_k_space}, the conjugate of the injected mode \(u_{\text{in}}\) appears at the same location in momentum space as the reflected mode \(u_{\text{out}}\). Consequently, placing a pinhole at this position does not permit one to distinguish between the two contributions.
+Second, in addition to the desired signals at frequency \(\omega_{\text{in}}\), all modes are subject to four-wave mixing processes due to nonlinear interactions with the pumped polaritons. As a result, depending on the fluid parameters, the conjugate modes generated by these interactions may spatially overlap with the reflected or transmitted modes. For example, as illustrated in \autoref{fig:bh_k_space}, the conjugate of the injected mode \(u_{\text{in}}\) appears at the same location in momentum space as the reflected mode \(u_{\text{out}}\). Consequently, prevents a clear distinction between the two contributions.
 
 The central challenge of this measurement is thus to detect weak signals on top of a strong background while ensuring that these signals originate from genuine transmission and reflection at the interface --rather than from spurious scattering events or nonlinear mixing. Therefore, the critical experimental objective is to optimize the signal-to-noise ratio, where “noise” refers to all undesired signals. This is achieved by acting on two main experimental parameters:
 
@@ -61,72 +61,71 @@ The central challenge of this measurement is thus to detect weak signals on top 
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{chap_stimulated_hawking/fig/bh_k_space.pdf}
-    \caption{\textbf{a)} Analytical Bogoliubov dispersion of both regions calculated with the parameters of the fluid of \autoref{fig:typical_dens_2D} \textbf{a)}. To reflects what happen in practice, the two dispersion are plotted in the same graph as a function of the wavevector in the laboratory frame $k$. The upstream dispersion
-    is centered at $k_u$ while the downstream one is centered at $k_d$. The red dashed line corresponds to the energy of the injected mode. The wavevectors of the reflected-transmitted is obtained 
-    at the intersections of this line with the Bogoliubov branches and reported in the momentum space \textbf{b)}.The red (resp. green) circle represent the expected location 
-    of the upstream (resp. downstream) modes. Finally, the grey circle represent the conjugated of the injected signal resulting from four wave mixing. \textbf{b)} Momentum space of \autoref{fig:typical_dens_2D} \textbf{a)} : the two bright spots correspond to the two region of the fluid with wavevectors $k_u$ and $k_d$. The colored circle
+    \caption{\textbf{a)} Analytical Bogoliubov dispersion of both regions calculated with the parameters of the fluid of \autoref{fig:typical_dens_2D} \textbf{a)}. To show what happens in practice, the two dispersions are plotted in the same graph as a function of the wavevector in the laboratory frame. The upstream dispersion
+    is centered at $k_u$ while the downstream one is centered at $k_d$. The red dashed line corresponds to the energy of the injected mode. The wavevectors of the reflected-transmitted modes are obtained 
+    at the intersections of this line with the Bogoliubov branches and reported in the momentum space \textbf{b)}. The red (resp. green) circle represents the expected location 
+    of the upstream (resp. downstream) modes. Finally, the grey circle represents the conjugate of the injected signal resulting from four-wave mixing. \textbf{b)} Momentum space of \autoref{fig:typical_dens_2D} \textbf{a)}: the two bright spots correspond to the two regions of the fluid with wavevectors $k_u$ and $k_d$. The colored circle
     are reported from \textbf{a)}.}
     \label{fig:bh_k_space}
 \end{figure}
 
 \begin{itemize}
     \item \textbf{Enhancement of the signal}: As discussed in the previous chapter, this can be accomplished by increasing the steepness of the horizon.
-    \item \textbf{Suppression of the pump background}: The photonic nature of the system allows us to exploit two key properties of ligh --polarization and coherence. Polarization filtering can be applied in the detection path, while coherence enables the use of interferometric techniques, as will be detailed in the following section.
+    \item \textbf{Suppression of the pump background}: The photonic nature of the system allows us to exploit two key properties of light: polarization and coherence. Polarization filtering can be applied in the detection path, while coherence enables the use of interferometric techniques, as will be detailed in the following section.
 \end{itemize}
 
-\textbf{Electronic filtering.} One possible strategy to suppress the pump background is inspired by the method used to measure the excitation spectrum in the previous chapter. By modulating the probe beam intensity at a frequency \(\omega_{\text{mod}}\) accessible in the electronic domain, the signal can later be demodulated, isolating the component arising from the probe-induced excitation. However, in the current context, what previously served as an advantage becomes a limitation. Indeed, the four-wave mixing signals also carry the modulation, thus failing to resolve the overlap problem discussed above. To overcome this, we turn to the optical domain, specifically to interference-based detection schemes.
+\textbf{Electronic filtering.} One possible strategy to suppress the pump background is inspired by the method used to measure the excitation spectrum in the previous chapter. By modulating the intensity of the probe beam at a frequency \(\omega_{\text{mod}}\) accessible in the electronic domain, the signal can later be demodulated, isolating the component arising from the probe-induced excitation. However, in the current context, what previously served as an advantage becomes a limitation. Indeed, the four-wave mixing signals also carry the modulation, thus failing to resolve overlapped modes as explained above. To overcome this, we turn to the optical domain, specifically to interference-based detection schemes.
 
-\subsection{Interferometric reconstruction of the Fluctuation Field}
+\subsection{Interferometric reconstruction of the scattered field}
 
 The measurement is based on the same interferometric technique previously employed to reconstruct the mean field.
- The key distinction here is that the method is now applied to the probe field instead. Although this may appear to be a minor adjustment, it represents a significant conceptual shift that enables a comprehensive characterization of the fluctuations. 
+ The key distinction here is that the method is now applied to the probe field instead. Although this adjustment is minor in practice, it represents a significant conceptual shift that enables a comprehensive characterization of the scattering problem. 
 Before detailing its experimental implementation in the context of the scattering problem, we first examine the insights that such a measurement can provide.
 
 \bigskip
 
-We again consider the generic situation presented above namely, a coherent state injected in the upstream region. The full optical field transmitted through
-the sample can is composed of :
+We again consider the generic situation presented above, namely, a coherent state injected in the upstream region. The full optical field transmitted through
+the sample is composed of :
 
 \begin{itemize}
-    \item The mean field $\psi_0$ oscillating at the pump frequency $\omega_p$.
-    \item The fluctuation field oscillating at the probe frequency $\omega_{in}$ resulting from the scattering of $u_{in}$ on the interface.
-    \item The conjugated field oscillating at the opposite of the probe frequency $-\omega_{in}$ resulting from the four wave mixing of each $+\omega_{in}$ mode with the pump. 
+    \item The mean field $\psi_0$ oscillating at the pump frequency $\omega_p$
+    \item The probe field oscillating at the probe frequency $\omega_p+\omega_{in}$ resulting from the scattering of $u_{in}$ on the interface.
+    \item The conjugate field oscillating at the opposite of the probe frequency $\omega_p-\omega_{in}$ resulting from the four-wave mixing of each $\omega_p+\omega_{in}$ mode with the pump. 
 \end{itemize}
 
 
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{chap_stimulated_hawking/fig/interferogram_fluctuations.pdf}
-    \caption{\textbf{a)} Interferogram resulting from the supersposition of \autoref{fig:typical_dens_2D} \textbf{a)} and a reference beam from the probe laser. The black dashed circle
-    represent the injected probe location. The red inset (resp. blue) is a zoom on the upstream (resp. downstream) region near the interface. 
+    \caption{\textbf{a)} Interferogram resulting from the superposition of \autoref{fig:typical_dens_2D} \textbf{a)} and a reference beam from the probe laser. The black dashed circle
+    represents the injected probe location. The red inset (resp. blue) is a zoom on the upstream (resp. downstream) region near the interface. 
     \textbf{b)} Cut of the interferogram along the red dashed line of the red inset. 
     \textbf{c)} Cut of the interferogram along the blue dashed line of the blue inset. 
     \textbf{d)} Fourier transforms of the cuts \textbf{b)} and \textbf{c)}. The blue curve corresponds to the upstream region with spatial frequency $\Delta k_u\approx\SI{2.11}{\per \micro \meter}$. The red curve corresponds to the downstream region with spatial frequency $\Delta k_d= \SI{2.19}{\per \micro \meter}$. 
      }
     \label{fig:interferogram_fluctuation}
 \end{figure}
-
-
+In what follows, we work in the pump rotating frame, whereby all frequencies are measured relative to $\omega_p$.
 When the probe field is superimposed with a phase reference beam at the probe frequency—obtained as a pick-off from the probe laser—the only components that generate interference fringes are those oscillating at \(+\omega_{\text{in}}\). 
 Each scattered mode is characterized by a distinct wavevector \(k_i\), leading to a unique spatial frequency in the resulting interferogram.
 As an illustrative example, \autoref{fig:interferogram_fluctuation}~\textbf{a)} displays two regions of such an interferogram.
  The first lies within the probe injection area, where the fringe spacing is inversely proportional to \(\abs{\Delta k}\), with \(\Delta k = k_{u_{\text{in}}} - k_{\text{ref}}\) denoting the wavevector mismatch between the injected mode and the reference beam. 
  The second region is located downstream, beyond the probe injection area. The mere presence of interference fringes in this region already confirms that the injected mode has propagated through the interface, while the fringe spacing provides direct information about the wavevector of the transmitted mode.
 
-This interpretation is supported by the spatial Fourier transforms of the two regions, shown in \textbf{d)}. The low-\(\Delta k\) peak corresponds to the continuous background signal—primarily the pump field and the conjugated modes at \(-\omega_{\text{in}}\)—which do not interfere with the reference beam. The central peaks represent the spatial frequencies of the propagating components in each region. Notably, the downstream region exhibits a higher wavevector, consistent with the scattering picture.
+To clarify this, we perform the spatial Fourier transforms of the two regions and show the result in \textbf{d)}. The signal near \(\Delta k=0\) corresponds to the continuous background signal—primarily the pump field and the conjugate modes at \(-\omega_{\text{in}}\)—which do not interfere with the reference beam. It is the analog of the DC signal in electronics. The central peaks represent the spatial frequencies of the propagating components in each region. Notably, the downstream region exhibits a higher wavevector, consistent with the scattering picture.
 
-This preliminary analysis already highlights the power of the technique. By applying numerical masks at different spatial locations, one can selectively extract the Fourier components of the fluctuations. Put more generally, a single interferogram enables full reconstruction of the fluctuation field at the frequency of the injected perturbation. As a result, this method proves particularly well-suited for addressing the scattering problem, as it inherently overcomes all the challenges previously outlined :
+This preliminary analysis already highlights the strength of the technique. By applying numerical masks at different spatial locations, one can selectively extract the Fourier components of the fluctuations. More generally, a single interferogram enables a full reconstruction of the probe field at the frequency of the injected perturbation. As a result, this method proves particularly well-suited for addressing the scattering problem, as it overcomes all the challenges previously outlined :
 
 
 
 \begin{itemize}
-    \item Conjugated modes and background contributions from the pump are inherently filtered out, as they do not interfere with the reference beam and therefore do not generate fringes.
+    \item Conjugate modes and background contributions from the pump are inherently filtered out, as they do not interfere with the reference beam and therefore do not generate fringes.
     \item Each scattered mode gives rise to a distinct spatial frequency in the interferogram, enabling their individual identification and selective extraction.
     \item The interference with the coherent reference beam enhances the signal-to-noise ratio, thereby facilitating the detection of weak scattered components.
 \end{itemize}
 
 
-The interferometric technique outlined above provides a powerful framework for reconstructing the fluctuation field and isolating the scattered modes.
+The interferometric technique outlined above provides a powerful framework for reconstructing the probe field and isolating the scattered modes.
  By leveraging the distinct spatial frequencies of the scattered components and filtering out unwanted contributions, this method enables a precise characterization of the scattering process. In the following section, we detail the experimental implementation of this approach, focusing on the setup and procedures required to reconstruct the scattering matrix and extract the key parameters governing the stimulated Hawking effect.
 
  \section{Experimental implementation}
@@ -143,37 +142,37 @@ The resulting mean-field profile is presented in \autoref{fig:bh_density}.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{chap_stimulated_hawking/fig/bh_density.pdf}
-    \caption{\textbf{a)} Real space image of a transcritical flow of polaritons with detuning $\delta(0)=\SI{48}{\giga\hertz}$. The pump is shinned only 
+    \caption{\textbf{a)} Real space image of a transcritical flow of polaritons with detuning $\delta(0)=\SI{48}{\giga\hertz}$. The pump is shone only 
     in the upstream region with wavevector $k_p=\SI{0.02}{\per \micro \meter}$.
-    The downstream region is made of polaritons propagating ballistically. The black dashed circle represent the location of the injected probe while the white dashed rectangle represent the region 
+    The downstream region is made of polaritons propagating ballistically. The black dashed circle represents the location of the injected probe while the white dashed rectangle represents the region 
     of interest (ROI) for the density and velocity profiles. }
     \label{fig:bh_density}
 \end{figure}
 
 As shown on the corresponding intensity and velocity profiles [see \autoref{fig:bh_balistic}~\textbf{a)}], the downstream region exhibits an exponentially decaying density accompanied by an increasing flow velocity. 
 This behavior naturally arises from the conservation of current, as described by the continuity equation ~\ref{eq:continuity}, in the absence of external pumping. More precisely, it can be shown that 
-away from the pump spot in slowly varying region where the quantum pressure can be neglected, the Gross Pitaevskii equation takes the form of generalized Bernoulli equation for driven dissipative fluid. The wavefunction then takes the form \cite{carusotto_inhomogeneous_2008}: 
+away from the pump spot in a slowly varying region where the quantum pressure can be neglected, the Gross Pitaevskii equation takes the form of a generalized Bernoulli equation for driven dissipative fluids. The wavefunction then takes the form \cite{carusotto_inhomogeneous_2008}: 
 
 \begin{equation}
     \psi_0(x \gg x_h) = \sqrt{n_0}e^{-\frac{x}{l_d}}e^{i k_{fluid}x},
 \end{equation}
 where $1/l_d=\gamlp/2v_g$ is the spatial decaying rate resulting from the product between the fluid group velocity $v_g =\hbar k_{fluid}/\mlp $ and the polariton lifetime $1/\gamlp$. The local wavevector of the polariton fluid $k_{fluid}$ is determined by the equation: 
 \begin{equation} 
-    \hbar \omp = \hbar \omlp + \frac{\hbar^2 k_{fluid}^2}{2m} + gn_0(x) + g_r n_r(x).
+    \omp = \omlp + \frac{\hbar k_{fluid}^2}{2m} + gn_0(x) + g_r n_r(x).
     \label{eq:bernoulli}
 \end{equation}
 Taking the low density limit $gn_0, g_rn_r \to 0$, the asymptotic value of $k_fluid$ is fixed by the detuning $\delta(0)$ in the pumped region as $k_d \coloneqq k_{fluid}(x \gg x_h) = \sqrt{2m\delta(0)}/\hbar$.
 This evolution can also be intuitively understood through an optical analogy: photons propagating from the pumped region encounter a zone of lower polariton density, which corresponds to a higher effective refractive index. According to Snell-Descartes laws of refraction, the wavevectors of the photons are bent toward the normal of the interface, effectively resulting in an increase in the group velocity. 
-The corresponding velocity profile measured by off axis interferometry is depicted in \autoref{fig:bh_balistic}~\textbf{b)}.  The horizon then forms
-spontaneously due to the simultaneous increasment of the flow velocity and the decreasment of the speed of sound.
+The corresponding velocity profile measured by off-axis interferometry is depicted in \autoref{fig:bh_balistic}~\textbf{b)}.  The horizon then forms
+spontaneously due to the simultaneous increase of the flow velocity and the decrease of the speed of sound.
 
 \bigskip
 
 
-\textcolor{red}{\textbf{TODO : add the speed of sound measurement;}}
-In this configuration the surface gravity is $\kappa\approx \SI{18}{\per \pico \second}$ which is two order of magnitude higher than what was obtained 
-in the steepest horizon of the previous chapter. The price we pay for this enhancement is the appearance of oscillations in the fluid density and velocity profiles.
-Indeed, since the pump is no longer present to fix the phase of the system and inject density, the fluid is more sensitive to fabrication defects in the microcavity each of them
+The speed of sound is calibrated with the same method as in \autoref{chap:generation_transonic_fluid} from the Bogoliubov spectrum measurement shown in \autoref{fig:fit_bogo}. The latter allows to obtain the interaction energy $gn_0 =9.6 \pm \SI{0.1}{\giga \hertz}$.
+In this configuration, the surface gravity is $\kappa\approx \SI{18}{\per \pico \second}$, which is two order of magnitude higher than what was obtained 
+in the steepest horizon of the previous chapter. The price to pay for this enhancement is the appearance of oscillations in the downstream fluid density and velocity profiles.
+Indeed, since the pump is no longer present to fix the phase of the system and inject density, the fluid is more sensitive to fabrication defects in the microcavity, each of them
 acting as a scattering center.
 
 
@@ -190,99 +189,101 @@ acting as a scattering center.
 \subsection{Measurement of the Bogoliubov spectrum}
 
 In order to determine whether a detected signal originates from genuine scattering at the interface or from a spurious scattering event, we begin by characterizing the Bogoliubov excitation spectrum of the fluid in each region independently.
-This is done by employing a technique mixing the high resolution pump probe spectroscopy detailed in the previous chapter and the interferometric technique described in the previous section.
+This is done by employing a technique mixing the high-resolution pump-probe spectroscopy detailed in the previous chapter and the interferometric technique described in the previous section.
 
 \bigskip
 
 First, the probe beam is centered in the upstream region close to the interface as represented by the black dashed circle in \autoref{fig:bh_density}~\textbf{a)}.
-A sligth spatial overlap with the downstream region across the interface is voluntarily introduced to have acces to the spectrum of both regions on a single frequency scan as we will see later. To remain in 
-the perturbative regime, the probe intensity is kept two orders of magnitude lower than the pump intensity.
-Then, the whole field is superimposed with a collimated phase reference beam originating from the probe laser. As a rule of thumb, the diameter of the reference is 
-increased to be three times larger than the diameter of the probe beam in order to have the flatest possible phase front.
+A slight spatial overlap with the downstream region across the interface is voluntarily introduced to have access to the spectrum of both regions on a single frequency scan as we will see later. 
+Then, the whole field is superimposed with a collimated phase reference beam originating from the probe laser. As a rule of thumb, the diameter of the reference is increased to be three times larger than the diameter of the probe beam in order to have the flattest possible phase front.
  The angle difference between the two beams is set to obtain the best spatial frequency resolution as explained in \autoref{sec:phase_measurement}.
 
 
-Secondly, the wavevector of the probe beam is tunned from $\SI{-1.0}{\per \micro \meter}$ to $\SI{1.0}{\per \micro \meter}$ by 60 steps of $\Delta k =\SI{0.046}{\per \micro \meter}$.
-At each step, the probe frequency is scanned $\SI{130}{\giga \hertz}$ around the pump frequency. The main difference with the previous experiment arises in the detection scheme. Indeed, instead of modulating 
-the probe intensity to latter isolate the signal by electronic filtering, we use the interferometric technique aforementioned. A single frequency scan consist 
-in a series of 80 interferograms recorded on a CCD camera. A full dataset is then made of $80\times 60$ interferograms where each image has $2056\times 2464$ pixels encoded on 16 bits
-for the best dynamical range. Obviously, compared to the $600$ hundreds points per energy scan available with the previous technique,
-the present procedure suffer from a lack of frequency resolution. This being said, frequency resolution was never a limitation and this drawback
-is largely compensated by the advantages of the interferometric technique. In particular, it allows to measure almost all the relevant observables in a single data set 
-as we shall see now. 
+Secondly, the wavevector of the probe beam is tuned from $\SI{-1.0}{\per \micro \meter}$ to $\SI{1.0}{\per \micro \meter}$ by 60 steps of $\Delta k =\SI{0.046}{\per \micro \meter}$.
+At each step, the probe frequency is scanned $\pm \SI{65}{\giga \hertz}$ around the pump frequency. The main difference from the previous experiment lies in the detection scheme. In fact, instead of modulating the probe intensity to isolate the signal by electronic filtering, we use the aforementioned interferometric technique. A single frequency scan consists of a series of 80 interferograms recorded on a CCD camera. Then, a full dataset is made of $80\times 60$ interferograms, where each image has $2056\times 2464$ pixels encoded on 16 bits
+for the best dynamical range. In principle, the number of frames per scan could be increased by performing a longer energy scan, but this would result in a longer acquisition time. Compared to the $600$ points per energy scan available with the previous technique,
+the present procedure then suffers from a lack of frequency resolution. However, frequency resolution turned out not to be a limitation, and this drawback
+is largely compensated for by the advantages of the interferometric technique. In particular, it allows one to measure almost all the relevant observables in a single data set, as we shall see now. 
 
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{chap_stimulated_hawking/fig/fft_bh_fluctu.pdf}
     \caption{\textbf{a) Probe interferogram.} The probe is located in the upstream region as in \autoref{fig:bh_density}. The white dashed circle represent the numerical mask applied to isolate each region.
     \textbf{b)} Shifted fourier transform of the masked interferogram of the upstream region. The red inset is a zoom on a $\SI{0.2}{\per \micro \meter}$ region around the probe spot where the solid white circle correspond to the numerical pinhole applied to isolate the probe signal.
-    \textbf{c)} Shifted fourier transform of the masked interferogram of the downstream region. The red inset is a zoom on a $\SI{0.2}{\per \micro \meter}$ region around the probe spot where the solid white circle correspond to the numerical pinhole applied to isolate the probe signal.}
+    \textbf{c)} Shifted fourier transform of the masked interferogram of the downstream region. The red inset is a zoom on a $\SI{0.2}{\per \micro \meter}$ region around the probe spot where the solid white circle corresponds to the numerical pinhole applied to isolate the probe signal.}
     \label{fig:fft_bh_fluctu}
 \end{figure}
 
-\textbf{Spectrum reconstruction.} For each interferogram, a Gaussian numerical mask of width \SI{40}{\micro \meter} is (see ~\ref{fig:bh_density}) applied either in the upstream or downstream region to spatially isolate the area of interest. A two-dimensional Fourier transform is then performed on the masked interferograms, yielding the fluctuation spectrum at the probe frequency within the selected region.
-Initially, our objective is to extract the Bogoliubov dispersion relation in each region, which—as discussed in the previous chapter—can be inferred from the transmission spectrum of the probe across the sample. To this end, an additional numerical pinhole, centered on the probe wavevector and with a radius matched to the probe spot, is applied in the Fourier domain of the interferogram, as illustrated in \autoref{fig:fft_bh_fluctu}.
-The integral over the masked fourier planes provides the transmission of the probe in the corresponding region.
+\bigskip
+
+\textbf{Spectrum reconstruction.} For each interferogram, a Gaussian numerical mask of width \SI{40}{\micro \meter} is applied either in the upstream or downstream region to spatially isolate the area of interest (see ~\autoref{fig:bh_density}). A two-dimensional Fourier transform is then performed on the masked interferograms, yielding the fluctuation spectrum at the probe frequency within the selected region.
+Initially, our objective was to extract the Bogoliubov dispersion relation in each region, which, as discussed in the previous chapter, can be inferred from the transmission spectrum of the probe across the sample. To this end, an additional numerical pinhole (centered on the probe wavevector and with a radius matched to the probe spot) is applied in the Fourier domain of the interferogram, as illustrated in \autoref{fig:fft_bh_fluctu}.
+The integral over the masked Fourier planes provides the transmission of the probe in the corresponding region.
 
 
-In summary, for each probe configuration defined by the wavevector-frequency pair \((k_{in}, \omega_{in})\), this procedure yields the transmitted probe intensity \(I_{u,d}(k_{in}, \omega_{in})\) in both upstream and downstream regions.
-At this stage, the reason for positioning the probe beam to slightly overlap with the downstream region becomes evident : it allows for the direct excitation of Bogoliubov modes with minimal influence from the interface. This is essential for benchmarking the dispersion relation of modes transmitted from upstream, and for confirming that they coincide with those excited locally in the downstream region.
-By repeating this procedure for all probe configurations, we obtain the Bogoliubov dispersion in each region, as shown in \autoref{fig:bh_spectrum}.  As anticipated, only the normal branch is accessible via direct excitation. This is not a limitation but rather a deliberate feature of the method, which was specifically chosen for its ability to isolate the positive frequency signals. 
-Besides, knowledge of the normal branch alone is sufficient to reconstruct the full Bogoliubov spectrum, as its structure is inherently symmetric. Moreover, the existence of the ghost branch, particularly its positive-frequency domain which is essential for the Hawking effect in the supercritical regime, was established in the previous chapter. Consequently, we will not try to measure it in the present work.
+In summary, for each probe configuration defined by the \((k_{in}, \omega_{in})\) couple, this procedure yields the transmitted probe intensity \(I_{u,d}(k_{in}, \omega_{in})\) in both the upstream and the downstream regions.
+At this stage, the reason for positioning the probe beam so that it slightly overlaps with the downstream region becomes clear: it allows for the direct excitation of Bogoliubov modes with minimal influence from the interface. This is essential for benchmarking the dispersion relation of modes transmitted from upstream, and for confirming that they coincide with those excited locally in the downstream region.
+By repeating this procedure while varying the probe wavevector and frequency we obtain the Bogoliubov dispersion in each region, as shown in \autoref{fig:fit_bogo}.  As anticipated, only the normal branch is accessible via direct excitation. This is not a limitation since this method was specifically chosen for its ability to isolate positive frequency signals. 
+In addition, knowledge of the normal branch alone is sufficient to reconstruct the full Bogoliubov spectrum, as its structure is intrinsically symmetric with respect to the pump. Moreover, the existence of the ghost branch, particularly its positive-frequency domain, which is essential for the Hawking effect in the supercritical regime, was established in the previous chapter. Consequently, we will not attempt to measure it in this experiment.
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{chap_stimulated_hawking/fig/fit_bogo.pdf}
     \caption{\textbf{a)-b)} \textbf{Upstream-Downstream Bogoliubov spectrum}. The scattered points correspond to the maxima of the transmission spectrum of the probe in the upstream-downstream region. The blue-orange solid 
-    line is the analytical bogoliubov dispersion plotted with the experimental parameters and the non linear interactions $gn_0$ obtained from
-    the fit of the data with the normal bogoliubov branch. The upstream region fit gives $gn_0 =9.6 \pm \SI{0.1}{\giga \hertz}$ while in the downstream we obtain $gn_0=1.2\pm \SI{0.01}{\giga \hertz}$.
-    The vertical errorbars are mainly originating from the frequency resolution of the measurement while the horizontal uncertainties are due to the probe extension in momentum space $\sigma_k =\SI{0.04}{\per \micro \meter}$.}
+    line is the analytical Bogoliubov dispersion plotted with the experimental parameters and the nonlinear interactions $gn_0$ obtained from
+    the fit of the data with the normal Bogoliubov branch. The upstream region fit gives $gn_0 =9.6 \pm \SI{0.1}{\giga \hertz}$ while in the downstream we obtain $gn_0=1.2\pm \SI{0.01}{\giga \hertz}$.
+    The vertical error bars mainly originate from the frequency resolution of the measurement.}
     \label{fig:fit_bogo}
 \end{figure}
 \bigskip 
 
-The upstream spectrum shown in \autoref{fig:fit_bogo}~\textbf{a)} exhibits a gap and a slight doppler shift consistent with the pump wavevector in the pumped upstream region $k_p=\SI{0.023}{\per \micro \meter}$. The data points are fitted with the Bogoliubov dispersion relation \ref{eq:bogo_lab_frame} where $gn_0$ is the only fitting paramterers and the dark reservoir
-is handled the same way as in the previous chapter. 
-We obtain $gn_0=9.6\pm\SI{0.1}{\giga \hertz}$ and find a good agreement of the model with the experimental points. The downstream spectrum shown in \textbf{b)} possess negative frequency modes which is typical of a supercritical flow.
-As explained earlier, the absence of pumping imposes the condition \ref{eq:bernoulli} that can be recast in the form $\delta(k_{fluid})=gn_0+g_rn_r$. It is the counterpart of the turning point condition in the pumped region implying that the Bogoliubov spectrum is expected to be linear far from the interface :
+The upstream spectrum shown in \autoref{fig:fit_bogo}~\textbf{a)} exhibits a gap and a slight Doppler shift consistent with the pump wavevector in the upstream region $k_p=\SI{0.023}{\per \micro \meter}$. The data points are fitted with the Bogoliubov dispersion relation given in \autoref{eq:bogo_lab_frame} where $gn_0$ is the only fitting parameter (the dark reservoir
+is handled in the same way as in the previous chapter ie set to $g_rn_r=1.84gn$). 
+We obtain $gn_0=9.6\pm\SI{0.1}{\giga \hertz}$ and find a good agreement of the model with the experimental points.
 
+The downstream spectrum shown in \autoref{fig:fit_bogo}~\textbf{b)} features negative frequency modes, which is typical of a supercritical flow.
+In the absence of pumping, the system must satisfy the condition given in \autoref{eq:bernoulli}, which can be recast in the form$\delta(k_{fluid})=gn_0+g_rn_r$. It is the counterpart of the turning point condition in the pumped region, implying that the Bogoliubov spectrum is expected to be linear far from the interface:
 \begin{equation}
     \omega_B(k) = v_d(k-k_d) \pm \sqrt{\dfrac{\hbar (k-k_d)^2}{2\mlp} \left({\dfrac{\hbar (k-k_d)^2}{2\mlp}} + g n_0 \right)},
 \end{equation}
-where $v_d = \hbar k_d/\mlp$ is the asymptotic velocity of the fluid measured by off axis inteferometry. The fit gives $gn_0=\SI{1.2 \pm 0.01}{\giga \hertz}$. As visible, the agreement is not as good as in the upstream region. 
-This is due to the fact that in the unpumped region, the fluid is not homogeneous anymore close to the interface as shown in \autoref{fig:bh_balistic} \textbf{b)}. Homogeneity,
-is recovered far from the interface where the density is low enough. But whenever this condition is satisfied, there is no fluid left to probe.  Consequently, the signal measured mainly comes from the transcient region where looking for the bogoliubov modes as plane waves is already an approximation.
-to obtain a beter agreement, a complete diagonalization of the Bogoliubov matrix around the steady state would be necessary in this region. However, this is not the goal of this work and the supercritical feature we are interested in
-remain robust against this approximation.
-This two measurements prove together the presence of an analogue horizon in between the two regions Now that the spectrum of collective excitation is known on both side of the 
-interface. Let us now turn to the measurement of the scattering matrix.
+where $v_d = \hbar k_d/\mlp$ is the asymptotic velocity of the fluid measured by off-axis interferometry. The fit gives $gn_0=\SI{1.2 \pm 0.01}{\giga \hertz}$. As visible in \autoref{fig:fit_bogo}~\textbf{b)}, the agreement is not as good as in the upstream region. 
+This is because in the unpumped region, the fluid is no longer homogeneous close to the interface, as shown in \autoref{fig:bh_balistic} \textbf{b)}.
+Homogeneity is recovered far from the interface, where the density is low, implying that there is no fluid left to probe.
+Consequently, the measured signal comes mainly from the transient region, where looking for the Bogoliubov modes as plane waves is already an approximation.
+To obtain a better agreement between the theoretical curve and the experimental data, a complete diagonalization of the Bogoliubov matrix around the steady state would be necessary in this region to obtain the exact expected Bogoliubov spectrum. However, this is not the goal of this work, and the supercritical feature we are interested in
+remains robust against this approximation.
+
+The shape of the spectrum in each region indicates the presence of an acoustic horizon.
+We can now turn to the measurement of the scattering matrix.
 
 \subsection{Observation of stimulated Hawking radiation}
 \label{sec:scattering_matrix}
 
 \subsubsection{Detection of the scattered modes}
 
-We analyze the emergence of transmitted or reflected modes resulting from an incoming perturbation propagating toward the horizon. 
-We focus on the scattering of the \( u_{in}(k) \) modes. 
-From the maxima of the upstream Bogoliubov spectrum, we select the set of configurations \((k, \omega)\) where the probe is exciting upstream modes with positive group velocity, i.e., \(\partial\omega/\partial k > 0\). 
-For each configuration, we compute the Fourier transform of the probe field in both upstream and downstream regions, following the same separation procedure employed for the Bogoliubov spectrum reconstruction. 
-In contrast to the earlier analysis, we now apply a numerical anti-pinhole to suppress the intense contribution of the \( u_{in} \) mode at the probe position. A peak-detection algorithm is then used to identify the positions of the scattered modes in the Fourier plane and to extract their corresponding wavevectors.
-Each identified wavevector is compared with the Bogoliubov spectrum to confirm its physical relevance and to rule out spurious scattering events. This process is systematically repeated for all configurations associated with \( u_{in} \). The resulting scattering data are summarized in \autoref{fig:fit_bogo_RT} \textbf{a)}. As observed, the modes detected both in the upstream and dowstream regions 
-are in good agreement with their respective Bogoliubov relations.
+We analyze the emergence of transmitted or reflected modes resulting from the scattering of a perturbation impinging on the horizon from the upstream region, namely when the probe excites a \( u_{in}(k) \) mode. 
+
+
+For each $k_{in}$, we compute the Fourier transform of the probe interferogram in both the upstream and downstream regions, following the same separation procedure used for the reconstruction of the Bogoliubov spectrum. 
+In contrast to the earlier analysis, we now apply a numerical anti-pinhole in the Fourier plane to suppress the intense contribution of the \( u_{in} \) mode at the probe position. A peak detection algorithm is then used to identify the positions of the scattered modes in the Fourier plane and to extract their wavevector.
+Each identified wavevector is compared with the Bogoliubov spectrum to confirm its physical relevance and to rule out spurious scattering events. This process is systematically repeated as the probe sequentially excites each $u_{in}$ mode. The resulting scattering data are summarized in \autoref{fig:fit_bogo_RT} \textbf{a)}. As observed, the $(k,\,\omega)$ positions of the modes detected both in the upstream and downstream regions agree well with the Bogoliubov dispersions.
 
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{chap_stimulated_hawking/fig/fit_bogo_RT.pdf}
-    \caption{\textbf{a) Measurement of the reflected modes $u_{out}$} The $u_{in}$ modes excited by the probe are represented by the blue dots. The errorbars are the same than in \autoref{fig:fit_bogo}. For each $u_{in}$ mode
-    the wavevector of the maximum detected in the upstream region is represented by the blue left oriented triangle. The errorbars are the same than for the $u_{in}$ modes with an additionnal contribution on the steeming from our momentum space resolution $\Delta=\SI{0.027}{\per \micro \meter}$ during the peak detection algorithm. The blue solid line
-    is the fit of the upstream Bogoliubov dispersion obtained in \autoref{fig:fit_bogo} \textbf{a)} The black dashed lines defines the frequency range 
-    at which negative-positive energy mixing is possible. The specific configurations $\mathrm{(A)}$ and $\mathrm{(B)}$ are modes taken as examples for latter comparison. The mode $\mathrm{(A)}$ lies in the negative-positive energy mixing region while the mode $\mathrm{(B)}$ lies outside this region.
-    \textbf{b) Measurement of the transmitted modes.} The wavevector of the maximum detected in the downstream region is represented by the orange right oriented triangle. The errorbars are the same than in \textbf{a)}. 
+    \caption{
+    \textbf{Reflection and transmission at the horizon.}
+    \textbf{a) Measurement of the reflected modes $u_{out}$} The $u_{in}$ modes excited by the probe are represented by the blue dots. The error bars are the same as in \autoref{fig:fit_bogo}. For each $u_{in}$ mode,
+    the wavevectors of the maxima detected in the upstream region are represented by the blue left-oriented triangles. The error bars are the same than for the $u_{in}$ modes with an additional contribution due to the resolution in momentum space ($\Delta=\SI{0.027}{\per \micro \meter}$) in the peak detection algorithm.
+    The blue solid line is the fit of the upstream Bogoliubov dispersion obtained in \autoref{fig:fit_bogo}~\textbf{a)}.
+    The black dashed lines define the frequency range at which negative-positive energy mixing is possible.
+    The specific configurations $\mathrm{(A)}$ and $\mathrm{(B)}$ are taken as examples for later comparison. The mode $\mathrm{(A)}$ lies in the negative-positive energy mixing frequency interval, while the mode $\mathrm{(B)}$ lies outside.
+    \textbf{b) Measurement of the transmitted modes.} The wavevectors of the maxima detected in the downstream region are represented by the orange right-oriented triangles. The error bars are the same as in \textbf{a)}. 
     The orange solid line is the fit of the downstream Bogoliubov dispersion obtained in \autoref{fig:fit_bogo} \textbf{b)}. }
     \label{fig:fit_bogo_RT}
 \end{figure}
 
-This measurement demonstrates that the interface scatters the incoming mode as expected from the Bogoliubov theory. However, $d2_{out}$ is not detected in the downstream region. This is due to its negative norm stating the major part of the mode amplitude is on the conjugted branch.
-Indeed, in the bogoliubov basis the excited $d2_{out}$ mode is written as :
+This measurement demonstrates that the interface scatters the incoming modes as expected from the Bogoliubov theory. However, the $d2_{out}$ modes --that are expected on the ghost branch--are not detected in the downstream region. This is due to its negative norm: its amplitude mostly lies on the conjugate branch.
+Indeed, in the Bogoliubov basis the excited $d2_{out}$ mode is written as :
 \begin{equation}
     \begin{pmatrix}
         u_{k_{d2}^{out}} \\
@@ -293,21 +294,27 @@ Indeed, in the bogoliubov basis the excited $d2_{out}$ mode is written as :
     V_{k_{d2}^{out}}
     \end{pmatrix}e^{ik_{d2}^{out}x}e^{-i\omega_{pr}t}, 
 \end{equation}
-where $\omega_{pr}$ is the probe frequency. According to ~\ref{eq:fluctuation_order_parameter} the corresponding fluctuation of the order parameter ie the physical quantity experimentally accessible, is :
+where $\omega_{pr}$ is the probe frequency. According to ~\ref{eq:fluctuation_order_parameter}, the corresponding fluctuation of the order parameter ie the physical quantity experimentally accessible, is :
 \begin{equation}
     \delta\psi_{{d2_{out}}}(x,t)= U_{k_{d2}^{out}}e^{ik_{d2}^{out}x}e^{-i\omega_{pr}t}+V_{k_{d2}^{out}}^*e^{-ik_{d2}^{out}x}e^{i\omega_{pr}t}.
     \label{eq:order_param_d2_out}
 \end{equation}
-Due to its negative norm the bogoliubov amplitudes are such as $\int |U_{k_{d2}^{out}}|^2-|V_{k_{d2}^{out}}|^2=-1$ meaning that  $|V_{k_{d2}^{out}}|^2$ is significantly greater than $|U_{k_{d2}^{out}}|^2$. 
-Consequently, its larger amplitude is at opposite frequency and wavevector, namely, in the $d2_{out}^*$ mode on the normal branch. This explains why the interferometric technique, which 
-can detect only modes at the probe frequency fails to detect the weak amplitude of the $d2_{out}$ mode. To measure it, we use an imaging spectrometer Princeton Instruments SpectraPro SP-2750 mounted with a 1200 lines/mm grating together with a high sensitive CCD camera Teledyne PIXIS 1024. By 
-imaging the Fourier plane of the entire field on the entrance slit of the spectrometer it is possible to directly obtain the spectrum of the fluid including both the pump and the probe contributions.
-As the pump is generally two orders of magnitude brighter than the probe, it quickly saturates the camera sensor preventing to detect weak probe signals. To overcome this issue,
-the pump is filtered out with a rasor blade placed in the real space of the field before the spectrometer. The blade is positioned in order to block the bright upstream region while letting the weak downstream region pass through.
-This allows to set a long exposure time without being blinded by the pump. A typical spectrum taken with a 4 seconds exposure time is shown in \autoref{fig:bh_spectrum}~\textbf{a)}. By superimposing the image with the downstream Bogoliubov dispersion obtained earlier, the different modes are identified and their positions 
-are represented by colored dashed circles. Remarkably, an intensity peak is observed at the $d2_{out}^*$ mode, as visible on the vertical cut \textbf{b)}. It is worth noticing that this peak disappears when the probe 
-is exciting an input mode outside of the negative-positive energy mixing region. Finally, an additionnal peak is observed at twice the probe frequency. We interpret it 
-as the result of a four wave mixing process where two $d1_{out}$ polaritons scatters into a pump mode polariton and a higher energy mode :
+Due to its negative norm the Bogoliubov amplitudes are $\int |U_{k_{d2}^{out}}|^2-|V_{k_{d2}^{out}}|^2=-1$, meaning that  $|V_{k_{d2}^{out}}|^2$ is significantly greater than $|U_{k_{d2}^{out}}|^2$. 
+Consequently, its larger amplitude is at opposite frequency and wavevector, namely, in the $d2_{out}^*$ mode (on the normal branch at negative frequency). This explains why the interferometric technique, which 
+can detect only modes at the probe frequency fails to detect the weak amplitude of the $d2_{out}$ mode.
+
+To measure amplitudes in $d2_{out}^*$, we use an imaging spectrometer Princeton Instruments SpectraPro SP-2750 mounted with a 1200 lines/mm grating together with a high sensitive CCD camera Teledyne PIXIS 1024. By imaging the Fourier plane of the entire field on the entrance slit of the spectrometer it is possible to directly obtain the spectrum of the fluid including both the pump and the probe contributions.
+As the pump is generally two orders of magnitude brighter than the probe, it quickly saturates the camera sensor, preventing the detection of weak probe signals.
+To overcome this issue, the pump is filtered out by a rasor blade placed in real space, before the spectrometer. The blade is positioned so as to block the bright upstream region while letting the weak downstream region pass through.
+This allows setting a long exposure time without being blinded by the pump. A typical spectrum taken with a 4 seconds exposure time is shown in \autoref{fig:spectrum_spectro}~\textbf{a)}. By superimposing the image with the downstream Bogoliubov dispersion obtained earlier, the different modes are identified.
+Their positions are represented by colored dashed circles in \autoref{fig:spectrum_spectro}~\textbf{a)}.
+
+\bigskip
+
+Remarkably, an intensity peak is observed at the $d2_{out}^*$ mode, as shown in the vertical cut in \autoref{fig:spectrum_spectro}\textbf{b)}. To confirm that this mode indeed originates from Hawking radiation, we verified that the peak disappears when the excited $u_{in}$ mode lies outside the negative–positive energy mixing frequency interval.
+
+
+Finally, an additional peak is observed at $\omega = 2\omega_{probe}$ indicated by the green dashed circle in \autoref{fig:spectrum_spectro} \textbf{a)}. We interpret it as the result of a four-wave mixing process where two $d1_{out}$ polaritons scatter into a pump mode polariton and a higher energy mode:
 \begin{equation}
     \begin{aligned}
     (\omega_{pr}, \omega_{pr}) &\to (0, 2\omega_{pr}) \\
@@ -315,20 +322,20 @@ as the result of a four wave mixing process where two $d1_{out}$ polaritons scat
     \end{aligned}
     \label{eq:higher_order_four_wave_mixing}
 \end{equation}
-where $\Delta k= k_{d1}^{out}-k_d$ is the wavevector mismatch between the pump in the downstream region and the $d1_{out}$ mode. This process arises as a consequence of bosonic stimulation resulting from the high occupancy of the pump state, while the linearity of the Bogoliubov spectrum ensures optimal phase matching.
+where $\Delta k=k_{d1}^{out}-k_d$ is the wavevector mismatch between the pump in the downstream region and the $d1_{out}$ mode. This process arises as a consequence of bosonic stimulation resulting from the high occupancy of the pump state, while the linearity of the Bogoliubov spectrum ensures optimal phase matching.
 
 \bigskip
 
-The simultaneous detection of $u_{out}$, $d1_{out}$ and of the $d2_{out}^*$ mode when the probe is exciting a $u_{in}$ mode in the negative-positive energy mixing region is a convincing signature of stimulated Hawking radiation.
-Let us now turn to a more quantitative analysis and see if reflexion and transmission coefficients can be extracted from the data.
+The simultaneous detection of modes $u_{out}$, $d1_{out}$ and $d2_{out}^*$ when the probe is exciting a $u_{in}$ mode in the negative-positive energy mixing region is a convincing signature of stimulated Hawking radiation. Let us now turn to a more quantitative analysis and see whether reflection and transmission coefficients can be extracted from the data.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{chap_stimulated_hawking/fig/disp_supersonic_spectro.pdf}
-    \caption{\textbf{a) Spectrum of the downstream region of the flui.} The spectrum is taken by integrating the whole downstream region of the fluid during 4 seconds
-    with an imaging spectrometer. The orange solid line represent the fit of the Bogoliubov dispersion relation obtained in \autoref{fig:fit_bogo} \textbf{b)}. The dashed black line is the expected location of the $d2_{out}$ mode.
-    The red dashed circle is the $d2_{out}^*$ mode, conjugated of $d2_{out}$. 
-    \textbf{b) Vertical cut of the $d2_{out}^*$ mode.} The intense peak on the right corresponds to the remaining pump contribution. The red dashed vertical line locates the $d2_{out}^*$ mode.}
+    \includegraphics[width=1\textwidth]{chap_stimulated_hawking/fig/disp_supersonic_spectro.pdf}
+    \caption{\textbf{a) Spectrum of the downstream region of the fluid.} The spectrum is obtained by integrating over the whole downstream region of the fluid during 4 seconds
+    with an imaging spectrometer. The orange solid line represents the fit of the Bogoliubov dispersion relation obtained in \autoref{fig:fit_bogo} \textbf{b)}. The dashed purple circles are 
+    the $d1_{out}$ mode and the expected location of the $d2_{out}$.
+    The orange dashed circle is the $d2_{out}^*$ mode, conjugate of $d2_{out}$. The green dashed circle represents a higher order four-wave mixing at twice the probe frequency. The red dashed line indicates the energy cut made in the right subplot.
+    \textbf{b) Vertical cut of the $d2_{out}^*$ mode.} The intense peak on the right corresponds to the remaining pump contribution. The red dashed line is the $d2_{out}^*$ mode energy.}
     \label{fig:spectrum_spectro}
 \end{figure}
 \bigskip
@@ -336,53 +343,50 @@ Let us now turn to a more quantitative analysis and see if reflexion and transmi
 \subsection{Toward the measurement of the scattering matrix}
 \label{sec:scattering_matrix_measurement}
 \subsubsection{Input and output modes discrimination}
-In order to compute reflexion and transmission coefficients, the input and output modes must be defined in a clear way.
-To do so, let us onsider the perturbation field $\delta\psi$ when the probe is exciting a given $in$ mode in the upstream region. In a first approch we restrict our description to 
-what is experimentally accesible with our interfometric method, namely, the field at the probe energy only. In a very general way, the wavefunction can be decomposed as follows:
-
+In order to compute reflection and transmission coefficients, the input and output modes must be defined clearly.
+To do so, let us consider the perturbation field $\delta\psi$ when a $in$ mode is excited. In a first approach, we restrict our description to what is experimentally accessible with our interferometric method.
+Namely, the field at the probe frequency only. In a very general way, the wavefunction can be decomposed as follows:
 \begin{equation}
     \begin{aligned}
-    \delta\psi(x,t) &= \delta \psi_{in}(x,t)+\delta \psi_{res}(x,t) \\
-    &= \delta \psi_{in}(x,t) + \delta \psi_{scat}(x,t) + \delta \psi_{err}(x,t).
+    \delta\psi(x,t) &= \delta \psi_\mathrm{in}(x,t)+\delta \psi_\mathrm{res}(x,t) \\
+    &= \delta \psi_{in}(x,t) + \delta \psi_\mathrm{scat}(x,t) + \delta \psi_\mathrm{err}(x,t).
     \end{aligned}
 \label{eq:scat_decomp}
 \end{equation}
-where $\delta \psi_{in}$ is the ideal incoming mode and $\delta \psi_{res}$ is the residual field. The latter is made of all the other modes that are not in the $in$ mode. The term $\psi_{scat}$ represents all the scaterings that may 
-occur in the fluid. In particular, it contains the outgoing modes $u_{out}$, $d_1^{out}$ and $d_2^{out}$ that are the result of the scattering process. Furthermore, the residual field also accounts for deviations
-of the injected probe beam in the cavity from the perfect gaussian beam defined by $\delta \psi(x,t)$. This contribution $\delta \psi_{err}(x,t)$ is purely optical and can be thought as a biais when $\psi_{in}$ is extracted from the true probe beam as we shall see now.
+where $\delta \psi_\mathrm{in}$ is the ideal incoming mode ie a perfect gaussian of the form :
+\begin{equation}
+\delta \psi_\mathrm{in}= \mathrm{A} e^{\frac{-(x-x_{in})^2}{w}}e^{ik_{in}x}
+\end{equation}
+where $w$ is the width of the mode and A its amplitude. Note that this is the continuous wave counterpart of the probe beam defined in the numerical study \cite{carusotto_fluidlightproposal_2012}.
+Conversely, $\delta \psi_\mathrm{res}$ is the residual field. The latter is made of all the other modes that are not in the $in$ mode. The term $\psi_\mathrm{scat}$ represents all the scattering events that may occur in the fluid. In particular, it contains the outgoing modes $u_{out}$, $d_1^{out}$ and $d_2^{out}$ that are the result of the scattering at the horizon. Furthermore, the residual field also accounts for deviations
+of the injected probe beam in the cavity from the perfect Gaussian beam defined by $\delta \psi_{in}(x,t)$. This contribution $\delta \psi_\mathrm{err}(x,t)$ is purely optical and can be thought of as a bias when $\psi_\mathrm{in}$ is extracted from the true probe beam, as we shall see now.
 
 \bigskip
 
 \textbf{Input mode.} The most reliable method to define the $in$ mode while minimizing potential biases is to perform a Fourier transform of the perturbation field and apply a modal decomposition.
  Following the procedure outlined in the previous section, we first identify the amplitude peak of the injected mode, which constitutes the dominant contribution in Fourier space. 
  Cuts along both axes of the detected peak are presented in \autoref{fig:fit_input_mode}~\textbf{a)} and \textbf{b)}.
-Noticeably, the peak is not perfectly symmetric, exhibiting a slight elongation along the \( k_x \) direction. 
-It remains unclear whether this asymmetry carries information about the scattering process itself or if it merely results from the broadening induced by the fluid's motion. 
-To address this ambiguity, we focus on the \( k_y \) direction, exploiting the translational invariance of the fluid in this axis, as discussed in \autoref{chap:AG_theory}. 
+Noticeably, the peak is not perfectly symmetric and shows a slight elongation along the \( k_x \) direction. 
+It remains unclear whether this asymmetry carries information about the scattering process itself or whether it merely results from the broadening induced by the fluid's motion. 
+To address this ambiguity, we focus on the \( k_y \) direction, exploiting the translational invariance of the fluid along this axis, as discussed in \autoref{chap:AG_theory}. 
 
-The cut along the \( y \)-axis is then fitted with a one-dimensional Gaussian function of the form 
-
+The cut along the \( y \)-axis is then fitted with a one-dimensional Gaussian function of the form
 \[
-f(k_y) = A \exp\left( -\frac{(k_y - k_y^0)^2}{2\sigma^2} \right)
+f(k_y) = \mathrm{A} \exp\left( -\frac{(k_y - k_y^0)^2}{2\sigma^2} \right)
 \]
-
-The resulting fit is shown in \autoref{fig:fit_input_mode}\textbf{a)}, demonstrating excellent agreement with the data. The amplitude \( A \) and width \( \sigma \) obtained from the fit are then employed to define a two-dimensional Gaussian function with the same amplitude and width, centered at the wavevector \( \mathbf{k} \):
-
-
+The resulting fit is shown in \autoref{fig:fit_input_mode}~\textbf{a)}, demonstrating excellent agreement with the data. The amplitude \( \mathrm{A} \) and width \( \sigma \) obtained from the fit are then used to define a two-dimensional Gaussian function with the same amplitude and width, centered on the wavevector \( \mathbf{k}=(k_x^0,k_y^0)=(k_{in},0)\):
 \begin{equation}
     \mathrm{A_{fit}}(k_x,k_y) = \mathrm{A} \mathrm{exp}(-\frac{(k_x-k_x^0)^2}{2\sigma^2}-\frac{(k_y-k_y^0)^2}{2\sigma^2}).
     \label{eq:gaussian_amp} 
 \end{equation}
-To end the definition of the input mode complex field, we need to provide it with a phase. To do so, we look at the phase of the $\delta \tilde{\psi}$ 
-in the vicinity of the peak. Close to the maximum amplitude, the phase is well defined and is approximated by a planar surface by 
-fitting the signal with a function of the form $\theta_{fit}(k_x, k_y)=ak_x+bk_y+c$ where $a$, $b$ and $c$ are the fitting parameters.
-In fact, they encode the position of the in mode in real space and could also be determined by computing the barycenter
-of the probe intensity in real space. This fitting procedure is equivalent to neglect any curvature 
-in the mode wavefront or in other words to assume that the mode is a plane wave. Of course, fluctuations 
-around this ideal phase are expected and may contains information about the scattering process. To take this into account we perform a last step 
-consisting in projecting the overall field $\delta \tilde{\psi}$ on the ideal input mode we just defined ie $\delta \tilde{\psi}_{\mathrm{fit}}(\kvec)= \mathrm{A_{fit}}(\kvec)\mathrm{exp}(i\theta_{\mathrm{fit}}(\kvec))$.
-The resulting field is then given by : 
 
+To end the definition of the input mode complex field, we need to provide it with a phase. To do so, we look at the phase of the $\delta \tilde{\psi}$ 
+in the vicinity of the peak. Close to the maximum amplitude, the phase is well defined and is approximated by a planar surface by fitting the signal with a function of the form $\theta_{fit}(k_x, k_y)=x_0k_x+y_0k_y+c$ where $x_0$, $y_0$ and $c$ are the fitting parameters.
+These encode the position of the $in$ mode in real space.
+This fitting procedure is equivalent to neglecting any curvature in the mode wavefront or, in other words, to assume that the mode has a plane wave phase.
+Of course, fluctuations around this ideal phase are expected and may contain information about the scattering process.
+To take this into account, we perform a last step that consists of projecting the overall field $\delta \tilde{\psi}$ on the ideal input mode we just defined, ie, $\delta \tilde{\psi}_{\mathrm{fit}}(\kvec)= \mathrm{A_{fit}}(\kvec)\mathrm{exp}(i\theta_{\mathrm{fit}}(\kvec))$.
+The resulting field is given by :
 \begin{equation}
     \delta \tilde{\psi}_{in} = \bra{\delta \tilde{\psi}_{\mathrm{fit}}}\ket{\delta \tilde{\psi}} \delta \tilde{\psi}_{\mathrm{fit}}. 
     \label{eq:input_mode_scalar_product}
@@ -391,8 +395,7 @@ The resulting field is then given by :
 \bigskip 
 
 \textbf{Residual field.} From the above expression, we are able to define the residual field as the difference between the injected mode and the overall field $\delta \tilde{\psi}_{res} = \delta \tilde{\psi}-\delta \tilde{\psi}_{in}$. 
-Note that the way $\delta \tilde{\psi}_{in}$ is built through a scalar product ensures that the residual field is orthogonal to the $in$ mode provided $\delta \tilde{\psi}_{fit}$ is normalized :
-
+Note that the way $\delta \tilde{\psi}_{in}$ is built through a scalar product ensures that the residual field is orthogonal to the $in$ mode provided $\delta \tilde{\psi}_{fit}$ is normalized:
 \begin{equation}
     \begin{aligned}
     \bra{\delta \tilde{\psi}_{in}}\ket{\delta \tilde{\psi}_{res}} &=\bra{\delta \tilde{\psi}_{\mathrm{fit}}}\ket{\delta \tilde{\psi}} \left(\bra{\delta \tilde{\psi}_{\mathrm{fit}}}\ket{\delta \tilde{\psi}} - \bra{\delta \tilde{\psi}_{\mathrm{fit}}}\ket{\delta \tilde{\psi}_{in}}\right)\\
@@ -400,32 +403,26 @@ Note that the way $\delta \tilde{\psi}_{in}$ is built through a scalar product e
     &=0.
     \end{aligned}
 \end{equation}
-
-In this manner, the basis chosen for our description is as close as possible to the Bogoliubov plane wave basis explicited in \autoref{chap:AG_theory}. This is a strong assumption 
-that will be discussed in the next following. 
+In this manner, the basis chosen for our description is as close as possible to the Bogoliubov plane wave basis explicitly specified in \autoref{chap:AG_theory}. This is a strong assumption that will be discussed in the following. 
 
 
 \subsubsection{Real space analysis}
-In the previous section, the different modes involved in the scattering process were well separated in momentum space. In this modal picture, the natural procedure to obtain reflexion and transmission coefficients seems
-to be the comparison of the amplitude of the different modes in momentum space. Indeed, in an ideal situation where the only modes involved in the scattering process are the incoming and outgoing modes --or said differently where $\delta\psi_{err}=0$-- each mode results in a well defined peak in the Fourier plane whose maximum and amplitude are directly related to the amplitude and wavevector of the modes respectively. 
+In the previous section, the different modes involved in the scattering process were well separated in momentum space. In this modal picture, the natural procedure to obtain reflection and transmission coefficients seems
+to be the comparison between the amplitudes of the different modes in momentum space. Indeed, in an ideal situation where the only modes involved in the scattering process are the incoming and outgoing modes --or said differently where $\delta\psi_{err}=0$-- each mode results in a well-defined peak in the Fourier plane whose maximum and position are directly related to the amplitude and wavevector of the modes, respectively. 
 
 
-In the present case the situation is rather different since the residual field $\delta \psi_{res}$ is not negligible. To illustrate this point, we perform the inverse fourier transform of the fields and analyze the resulting images in real space.
-The results are shown in \autoref{fig:fit_input_mode}~\textbf{c)} and \textbf{d)}. As expected, the input mode is very close to a perfect gaussian beam since it was constructed precisely to be so.
-The residual field on the other hand is much more complex and contains spurious contributions. For instance, the signal is not zero far from the interface in the upstream region as it would be in the ideal case as shown on the intensity cut in \autoref{fig:fit_input_mode}~\textbf{e)}.
- Indeed, the discussion made in \autoref{sec:ballistic_configuration} also holds for the Bogoliubov modes meaning that the scattered modes --that are not supported by the probe laser--
-are exponentially damped with a characterisitc length fixed by their group velocity and the polariton lifetime as in \autoref{eq:bernoulli}.
+In the present case, the situation is quite different, as the residual field $\delta \psi_{res}$ is not negligible. To illustrate this point, we performed the inverse Fourier transform of the fields and analyzed the resulting images in real space.
+The results are shown in \autoref{fig:fit_input_mode}~\textbf{c)} and \textbf{d)}. As expected, the input mode is very close to a perfect Gaussian beam since it was constructed precisely to be such.
+The residual field, on the other hand, is much more complex and contains spurious contributions. For example, the signal is not zero far from the interface in the upstream region as visible on the intensity cut in \autoref{fig:fit_input_mode}~\textbf{e)} near $x\approx -\SI{60}{\micro \meter}$. This would not be the case if $\psi_{res}$ consisted solely of reflected or transmitted signals at the interface. More specifically, the profile in \textbf{e)} would instead be composed of two decaying exponentials, both originating from the horizon.
+Indeed, the discussion made in \autoref{sec:ballistic_configuration} also holds for the Bogoliubov modes, meaning that the scattered modes --that are not supported by the probe laser--
+are exponentially damped with a characteristic length fixed by their group velocity and the polariton lifetime as in \autoref{eq:bernoulli}.
 
 
-This demonstrates that the way we defined the $in$ mode indeed introduces a bias. Therefore, a direct analysis in Fourier space would include many unwnated contributions making quantitative analysis difficult. 
-A more reliable method is to analyze the data locally in real space in the vicinity of the horizon. This is what is done in analytical works \cite{Recati_acousticHR_2009,carusotto_fluidlightproposal_2012} where the scattering matrix coefficients are computed from the continuity equations of the wavefunctions and their derivatives at the horizon. In fact, this approach is well suited for stationnary flows where the time variable disappears and is the one 
-used to solve textbook quantum mechanics problems \cite{CCT_tome1} where a plane wave coming from $-\infty$ is scattered by a potential barrier. In this case, the reflexion and transmission coefficients can be obtained by taking the ratio of the complex amplitudes of the reflected and transmitted waves to the amplitude of the incoming one a the interface. Usually,
-this can not be done experimentally since the field at a given position is a superposition of all the modes present. Consequently, unless having a perfect knowledge of the incoming mode both in phase and amplitude, an intensity 
-measurement does not allow to discriminate between the different contributions because of the interference between them.
+This demonstrates that the way we defined the $in$ mode indeed introduces a bias. Therefore, a direct analysis in Fourier space would include many unwanted contributions, making quantitative analysis difficult. 
+A more reliable method is to analyze the data locally in real space in the vicinity of the horizon. This is what is done in analytical works \cite{Recati_acousticHR_2009,carusotto_fluidlightproposal_2012} where the scattering matrix coefficients are computed from the continuity equations of the wavefunctions and their derivatives at the horizon \cite{rot_supperradiance_delhom}. This approach is particularly well suited to stationary flows, where the time variable is eliminated. It is the standard method used to solve textbook quantum mechanics problems \cite{CCT_tome1}, such as the scattering of a plane wave incident from $-\infty$ by a potential barrier. In this case, the reflection and transmission coefficients can be obtained by taking the ratio of the complex amplitudes of the reflected and transmitted waves to the amplitude of the incoming one at the interface. Usually, this cannot be done experimentally since the field at a given position is a superposition of all the modes present. Consequently, unless having a perfect knowledge of the incoming mode both in phase and amplitude, an intensity measurement does not allow to discriminate between the different contributions because of the interference between them.
 
 
-In our case, the interferometric method together with the procedure of separating the modes in momentum space and then performing the inverse fourier transform allows to analyze the complex fields independently. This being said,
-a local analysis does not remove the spurious contributions of the residual field even in the vicinity of the interface.
+In our case, the interferometric method together with the procedure of separating the modes in momentum space and then performing the inverse Fourier transform allows analyzing the complex fields independently. However, a local analysis does not remove the spurious contributions of the residual field even in the vicinity of the interface.
 
 
 \begin{figure}
@@ -441,21 +438,18 @@ a local analysis does not remove the spurious contributions of the residual fiel
 
 
 \subsubsection{Signature of amplification}
-Although the previous section highlighted potential inaccuracies introduced by the modal decomposition, the method remains a robust and systematic approach to define the various modes, independent of specific experimental realizations. By this, we mean that the relative energy contribution of the \( in \) mode to the total energy remains consistent regardless of which specific \( in \) mode is excited by the probe. 
-In other words, the bias in the field decomposition is effectively constant across different configurations.  
+Although the previous section highlighted the potential inaccuracies introduced by the modal decomposition, the method remains a robust and systematic approach to define the various modes, independently from specific experimental realizations. That is, the relative energy contribution of the $in$ mode to the total energy remains invariant across different probe configurations, indicating that the bias in the field decomposition is effectively independent of which specific $in$ mode is excited.
 To illustrate this point, we calculate the energy \( \int \mathrm{d}\mathbf{r} \, |\delta\psi_i(\mathbf{r})|^2 \) associated with each mode, as well as the total energy, as functions of the probe wavevector. The results are presented in \autoref{fig:energy_budget}. 
 The subpanel \textbf{b)} shows that the ratio \( E_{in}/E_{tot} \) remains approximately constant at 0.79 with a standard deviation of 0.02.  
 
 
-Moreover, it is noteworthy that the sum of the energies in the \( in \) and \( out \) modes precisely equal the total energy, as evident in \textbf{a)}. Whereas this feature appeared obvious in momentum space since the mode were orthogonal by construction, it is less trivial in real space.
-Indeed, the residual and the scattered fields spatially overlap giving rise to an interference term of the form $\delta \psi_{res}^*(\rbf) \delta \psi_{scat}(\rbf)$. In fact 
-this term sums up to zero when integrated over the whole space.
+Moreover, it should be noted that the sum of the energies in the \( in \) and \( out \) modes precisely equals the total energy, as evident in \textbf{a)}. Whereas this feature appeared obvious in momentum space since the modes were orthogonal by construction, it is less trivial in real space.
+In fact, the residual and scattered fields spatially overlap, giving rise to an interference term of the form $\delta \psi_{res}^*(\rbf) \delta \psi_{scat}(\rbf)$. In fact, this term sums up to zero when integrated over the whole space.
 This is a direct consequence of the Fourier transform isometry property which conserves the $L^2$ scalar product.
 
 \bigskip
 
-To summarize, our method allows to define the input and output modes in a way that is independent of the specific experimental realization. Consequently an increasment of the contributions
-of one mode or the other from one configuration to another carries physical information about the may the input mode interact with the interface.  
+To summarize, our method defines the input and output modes in a manner that is independent of the specific experimental realization. Consequently, variations in the relative contributions of individual modes across different configurations carry physical information about the interaction between the input mode and the interface. 
  \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{chap_stimulated_hawking/fig/energy_budget.pdf}
@@ -464,18 +458,18 @@ of one mode or the other from one configuration to another carries physical info
     \label{fig:energy_budget}
  \end{figure}
 
-To observe a signature of amplification we compare two specific configurations : when the input modes lies in the negative-positive energy mixing region (configuration A) and when it lies outside this region (configuration B). The specific 
-realisation taken for comparison are labeled in \autoref{fig:fit_bogo_RT}~\textbf{a)}. For both configurations, a cut of the intensity in the $x$ direction is performed for each mode. To smooth the data and enhance the signals, an average along the $y$-axis in the region of interest (ROI) defined by the white dashed rectangle of \autoref{fig:fit_input_mode}~\textbf{d)}. 
-The results are shown in \autoref{fig:intensity_comparison}. A first observation is that in both configurations, the $residual$ mode yields an intensity spike at $x=x_h$ reflecting that the residual field is indeed mostly located at the interface. However, the shape of the residual field is an additionnal proof
-that our mode decomposition was not perfect. Indeed, if the residual field was indeed only made of the scattered modes, the intensity profile should yield two descreasing exponential with different characteristic lengths.
-One oriented toward the upstream region with characteristic lenght $l_u=v_u/2\gamlp$ where $v_u$ is the $u_{out}$ mode group velocity, and another oriented toward the downstream region corresponding mostly to $d1_{out}$ with characteristic length $l_{d1}=v_{d1}/2\gamlp$. Furthermore, as remarkable on
-\autoref{fig:fit_bogo_RT}, $|v_{d1}|$ is always greater than $|v_u|$ meaning that the upstream exponential should decrease faster the downstream one. This is not what we observe and the displayed profile seems actually to present the opposite behavior. Once 
-This being said, it does not prevent us to compare the two configurations.
+\bigskip
+
+To observe a signature of amplification, we compare two specific configurations: when the input modes lie in the negative-positive energy mixing interval (configuration A) and when it lies outside of it (configuration B). The specific 
+realizations taken for comparison are labeled in \autoref{fig:fit_bogo_RT}~\textbf{a)}. For both configurations, a cut of the intensity in the $x$ direction is done for each mode. To smooth the data and enhance the signals, an average along the $y$-axis in the region of interest (ROI) defined by the white dashed rectangle of \autoref{fig:fit_input_mode}~\textbf{d)} is performed. 
+The results are shown in \autoref{fig:intensity_comparison}. The first observation is that, in both configurations, the residual mode yields an intensity spike at $x=x_h$ reflecting that the residual field is in fact mostly located at the interface. However, the shape of the residual field is an additional proof that our mode decomposition was not perfect. Indeed, as explained in the previous section, if the residual field consisted solely of scattered modes, the resulting intensity profile would exhibit two decaying exponentials with distinct characteristic lengths.
+One oriented toward the upstream region with characteristic length $l_u=v_u/2\gamlp$ where $v_u$ is the $u_{out}$ mode group velocity, and another oriented toward the downstream region corresponding primarily to $d1_{out}$ with characteristic length $l_{d1}=v_{d1}/2\gamlp$. Furthermore, as remarkable in \autoref{fig:fit_bogo_RT}, $|v_{d1}|$ is always greater than $|v_u|$ meaning that the upstream exponential should decrease faster the downstream one. This is not what we observed and the displayed profile seems actually to present the opposite behavior.
+This being said, it does not prevent us from comparing the two configurations.
 
 
 In configuration (B) the $res$ mode intensity is significantly lower than the $in$ mode and never exceeds it, whereas in configuration (A) where amplification is expected, the $res$ mode intensity becomes larger than that of the $in$ mode at the interface.
-For comparison purposes, we compute the intensities ratios at the interface for both cases. In configuration (B), be obtain $I_{res}/I_{in} = 0.15$ while in configuration (A) we find $I_{res}/I_{in} = 1.89$. This suggests that whenever the input mode lies in the negative-positive energy mixing region, the relative contribution of the residual mode
-is significantly larger than when it lies outside this region while the $in$ mode stayed the same. 
+For comparison purposes, we compute the intensity ratios at the interface for both cases. In configuration (B), be obtain $I_{res}/I_{in} = 0.15$ while in configuration (A) we find $I_{res}/I_{in} = 1.89$. This suggests that whenever the input mode lies in the negative-positive energy mixing region, the relative contribution of the residual mode
+is significantly higher than when it lies outside this frequency interval, while the $in$ mode remained the same. 
 
 \begin{figure}
     \centering
@@ -486,55 +480,55 @@ is significantly larger than when it lies outside this region while the $in$ mod
     \label{fig:intensity_comparison}
 \end{figure}
 
-To highlight that this enhancement arises from the Hawking effect we compute this ratio for all the probe configurations. In each case we take the left and right limit of the ratio $I_{res}(x)/I_{in}(x)$  labeled $L_u$ and $L_d$ respectively.
-These coefficients embed contributions from and the $u_{out}$ and $d1_{out}$ reflexion and transmission and thus give informations on the $|S_{uu}|^2$ and $|S_{d1u}|^2$ coefficients.
+To highlight that this enhancement arises from the Hawking effect, we computed this ratio for all the $u_{in}$ mode. In each case, we take the left and right limit of the ratio $I_{res}(x)/I_{in}(x)$  labeled $L_u$ and $L_d$ respectively :
+ 
+\begin{equation}
+    \begin{aligned}
+        L_u \coloneqq &\lim_{x\to x_H^-}I_{res}(x)/I_{in}(x) \\
+        L_d \coloneqq &\lim_{x\to x_H^+}I_{res}(x)/I_{in}(x)
+    \end{aligned}
+\end{equation}
+    
+These coefficients embed contributions from and the $u_{out}$ and $d1_{out}$ reflection and transmission and thus give information on the $|S_{uu}|^2$ and $|S_{d1u}|^2$ coefficients.
 The results are shown in \autoref{fig:I_ratio_bary}~\textbf{a)}. 
 
-The displayed errorbars come from mainly two sources : the uncertainty on the horizon position and the standard deviation of the energy ratio $E_{in}/E_{tot}$ calculated above.
+The error bars displayed come mainly from two sources: the uncertainty on the horizon position and the standard deviation of the energy ratio $E_{in}/E_{tot}$ calculated above.
 Regarding the horizon position, it was initially defined as the position at which the speed of sound $c_s=\sqrt{gn_0/\mlp}$ equals the fluid velocity $\vbf_0$ while the previous chapter made clear
-that this velocity is not the relevant to define the interface. It means that computing the intensity ratios at $x=x_h$ may introduce an error. To quantify this uncertainty precisely is 
-difficult since the discrepancy between the two velocities doesn't follow a simple law and depend on the fluids parameters. However, it is reasonable to assume that the horizon position lies within the upstream to downstream transition region of the fluid velocity which (see Fig \ref{fig:bh_balistic}) is of the order of $\sigma_{x_h}=\SI{5}{\micro \meter}$.
-To propagate this uncertainty in the coefficients, we compute the intensity ratio at the left and right limit of position $x_i$ where $x_i \in [x_h-\SI{5}{\micro \meter}, x_h+\SI{5}{\micro \meter}]$. Then,
-the mean values (resp. standard deviation) of the reflexion and transmission coefficients are taken as the average (resp. standard deviation) of the left and right limits for all the values of $x_i$. 
+that this velocity is not the relevant one to define the interface. Indeed the critical velocity $v_c$ at which negative energy modes arise is greater than $c_s$. It means that computing the intensity ratios at $x=x_h$ may introduce an error. Quantifying this uncertainty precisely is difficult since the discrepancy between $v_c$ and $c_s$ velocities does not follow a simple law and depends on the fluids parameters. However, it is reasonable to assume that the horizon position lies within the upstream to downstream transition region of the fluid velocity (see Fig \ref{fig:bh_balistic}), which is of the order of $\sigma_{x_h}=\SI{5}{\micro \meter}$.
+To propagate this uncertainty in the coefficients, we computed the intensity ratio at the left and right limits of position $x_i$ where $x_i \in [x_h-\SI{5}{\micro \meter}, x_h+\SI{5}{\micro \meter}]$. Then,
+the mean values (resp. standard deviation) of the reflection and transmission coefficients are taken as the average (resp. standard deviation) of the left and right limits for all values of $x_i$. 
 
-The second main source of uncertainty comes from the energy ratio $E_{in}/E_{tot}$ which is computed from the energy budget shown in \autoref{fig:energy_budget}~\textbf{b)}.
+The second main source of uncertainty comes from the energy ratio $E_{in}/E_{tot}$, which is computed from the energy budget shown in \autoref{fig:energy_budget}~\textbf{b)}.
 In other words, it ultimately originates from the procedure used to define the $in$ and the $res$ modes that, as already mentioned, is not perfect.
-Once again it is hard to report this uncertainty on our local measurements since it was initially obtained by integrating fields on the whole space for all configurations.
-We roughly estimate it by assuming that the relative error on the intensities is the same as the relative error on $E_{in}/E_{tot}$ divided by the area on which integration where made, ie the spatial region accesible with our imaging system that is $226\times\SI{271}{ \micro \meter \squared}$.
-This two contributions are then added quadratically to obtain the final errorbars shown in \autoref{fig:I_ratio_bary}~\textbf{a)}.
+Once again, it is complicated to report this uncertainty on our local measurements since it was initially obtained by integrating fields over the entire space for all configurations.
+We roughly estimate it by assuming that the relative error on the intensities is the same as the relative error on $E_{in}/E_{tot}$ divided by the area corresponding to the full field of view over accessible with our imaging system that is $226\times\SI{271}{ \micro \meter \squared}$. In other words, this hypothesis correspond to consider that the error on 
+$\int |\delta \psi(r)|^2\mathrm{dr}$ is uniformly distributed over the integration area.
+
+These two contributions are then added quadratically to obtain the final error bars shown in \autoref{fig:I_ratio_bary}~\textbf{a)}.
 
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{chap_stimulated_hawking/fig/I_ratio_bary.pdf}
-    \caption{\textbf{a) Intensity ratio.} Estimation of the reflexion and transmission coefficients by taking the left and right limit of the intensity ratio $I_{res}/I_{in}$ at the interface. 
-    The red colored region corresponds to the probe configurations where stimulated hawking radiation is expected. The errorbars are calculted by taking into account uncertainties on the horizon position as well the standard deviation of the energy ratio $E_{in}/E_{tot}$.
-    \textbf{b) Sum of the reflexion and transmission coefficients.} The errorbars results from the quadratic sum of the relative errorbars on the reflexion and transmission coefficients. The red dashed line represent the line $|S_{uu}|^2+|S_{d1u}|^2=1$.}
+    \caption{\textbf{a) Intensity ratio.} Estimation of the reflection and transmission coefficients by taking the left and right limits of the intensity ratio $I_{res}/I_{in}$ at the interface. 
+    The red colored region corresponds to the probe configurations where stimulated hawking radiation is expected. The error bars are calculated by taking into account uncertainties on the horizon position as well as the standard deviation of the energy ratio $E_{in}/E_{tot}$.
+    \textbf{b) Sum of the reflection and transmission coefficients.} The error bars result from the quadratic sum of the relative error bars on the reflection and transmission coefficients. The red dashed line represent the line $L_u+L_d=1$.}
     \label{fig:I_ratio_bary}
 \end{figure}
 
+\bigskip
 
-\textbf{Analysis and discussion.} The first thing to notice is that both the left and right limit of the intensity ratio are enhanced when the input mode lies in the negative-positive energy mixing region. This demonstrates
- that the contribution of the residual field is larger than in the other configurations and suggests
-that the scattering process is indeed different in this region. The sum of this two quantities is shown in \autoref{fig:I_ratio_bary}~\textbf{b)}. As visible,
+\textbf{Analysis and discussion.} The first thing to notice is that the left and right limits of the intensity ratio are enhanced when the input mode lies in the negative-positive energy mixing interval as shown in \autoref{fig:I_ratio_bary}. This demonstrates that the contribution of the residual field is larger than in the other configurations and suggests that the scattering process is indeed different in this frequency interval. The sum of these two quantities is shown in \autoref{fig:I_ratio_bary}~\textbf{b)}. As visible,
 it can exceed one in the Hawking frequency range.
 
-Together with the measurement of the $d2^*_{out}$ modes presented in \autoref{fig:spectrum_spectro} they provide a signature of amplification stemming from 
-negative-positive energy mixing at the interface. However, as explained above, this values should not be quantitavely trusted and do not provide a 
-direct measurement of the reflexion and transmission coefficients despite all the efforts made to account for the discrepancies introduced by the mode decomposition.
-To obtain a quantitative measurement of the scattering coefficients a better definition of the input modes is needed. Indeed, building the input mode from a gaussian fit and a linear phase does not take into account the interplay
-between pumping, propagation and losses. A more accurate estimation would require a complete resolution of the Bogoliubov equation (\ref{eq:bogo_matrix}) by adding a force term 
-to account for the probe laser injection. 
+Together with the measurement of the $d2^*_{out}$ modes presented in \autoref{fig:spectrum_spectro} these results provide a signature of amplification stemming from negative-positive energy mixing at the interface. However, as explained above, these values should not be quantitavely trusted and do not provide a direct measurement of the reflection and transmission coefficients despite all the efforts made to account for the discrepancies introduced by the mode decomposition.
+To obtain a quantitative measurement of the scattering coefficients, a better definition of the input modes is needed. Indeed, building the input mode from a Gaussian fit and a linear phase does not take into account the interplay between pumping, propagation and losses. A more accurate estimation would require a complete resolution of the Bogoliubov equation (\ref{eq:bogo_matrix}) by adding a force term to account for the probe laser injection. 
 
 From an experimental point of view, this can be done by placing the probe laser far enough from the interface in the upstream region so it does not interact with it. This would provide
-a direct way to compare the field with and without the interface and any difference could be interpreted as a horizon feature. A second significant 
-improvement would be to seek for a more homogeneous fluid in the unpumped region. This would reduce spurious scatterings and make the plane wave approximation more reliable.
-This could be achieved either by finding a working point that is free of cavity impurities or by by turning to the geometries 
-created in the revious chapter where the pump laser is everywhere.
-Finally, finding a way to measure $d2_{out}^*$ and more generally, all the conjugated modes, with the same powerfull interferometric method would allow a more straighforward comparison with the other modes 
-as well as real space information about their location, amplitude and phase. Implementing this method require to find a phase reference at the 
-conjugated frequency which is phase locked with the probe laser. A possible solution would be to create two neighbouring fluids with the same lasers, one for the experiment and one to create
-a reference beam through four wave mixing. The advantage of this approach is that the reference beam would be naturally phase locked with the probe laser and directly at the conjugated frequency.
-Furthermore, having a local oscillator at the ghost branch frequency paves the way to quantum noise measurement such as homodyne detection and squeezing measurements \cite{agullo_symplectic_2022}.
+a direct way to compare the field with and without the interface, and any difference could be interpreted as a horizon feature. A second significant 
+improvement would be to create a more homogeneous fluid in the unpumped region. This would reduce spurious scattering events and make the plane wave approximation more reliable.
+This could be achieved either by finding a working point that is free of cavity impurities or by turning to the geometries created in the previous chapter where the pump intensity is finite everywhere.
+Finally, finding a way to measure $d2_{out}^*$ and more generally, all the conjugate modes, with the same powerful interferometric method would allow a more straightforward comparison with the other modes, as well as real space information about their location, amplitude and phase. Implementing this method requires finding a phase reference at the conjugate frequency, which is phase locked with the probe laser. A possible solution would be to create two neighboring fluids with the same lasers, one for the experiment and one to create a reference beam through four-wave mixing. The advantage of this approach is that the reference beam would be naturally phase locked with the probe laser and directly at the conjugate frequency.
+Furthermore, having a local oscillator at the ghost branch frequency paves the way to quantum noise measurements such as homodyne detection and squeezing measurements \cite{agullo_symplectic_2022}.
 
 
 
@@ -543,8 +537,7 @@ Furthermore, having a local oscillator at the ghost branch frequency paves the w
 
 
 In this chapter, we have presented the first experimental observation of stimulated Hawking radiation in a polariton quantum fluid. Using a fully optical approach, we demonstrated the ability to reconstruct the fluctuation field and detect scattered modes, providing evidence of negative-positive energy mixing at the interface.
- This mixing, a hallmark of the Hawking effect, was observed through the detection of outgoing modes and the conjugated mode \(d2_{out}^*\), which together suggest amplification.
- However, it is important to emphasize that our measurements do not yet constitute a direct and quantitative observation of amplification but rather a signature of it.
+ This mixing, a hallmark of the Hawking effect, was observed through the detection of outgoing modes and the conjugate mode \(d2_{out}^*\), which together suggest amplification.
 Our measurement method, based on interferometric techniques, proved to be a powerful tool for isolating and analyzing the scattered modes. This approach highlights the versatility of the polaritonic platform, which, due to its optical nature, is particularly well-suited for such experiments. 
 The results presented here pave the way for a more quantitative analysis of the scattering process, including the reconstruction of the scattering matrix. Such a complete measurement would be a significant step forward, enabling the study of correlations between emitted modes and providing deeper insights into the quantum nature of the Hawking effect.
 This work once again demonstrates the potential of polariton systems as a platform for exploring fundamental aspects of quantum field theory in curved spacetime. The combination of tunability, out-of-equilibrium properties, and full optical accessibility makes polariton fluids uniquely suited for analog gravity experiments, offering a promising avenue for future studies of quantum effects at analog horizons.
