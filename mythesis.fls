@@ -492,6 +492,9 @@ INPUT chap_stimulated_hawking/chap_stimulated_hawking.aux
 INPUT ./chap_correlation/chap_correlation.aux
 INPUT ./chap_correlation/chap_correlation.aux
 INPUT chap_correlation/chap_correlation.aux
+INPUT ./chap_conclusion/conclusion.aux
+INPUT ./chap_conclusion/conclusion.aux
+INPUT chap_conclusion/conclusion.aux
 INPUT ./appendices/appendices.aux
 INPUT ./appendices/appendices.aux
 INPUT appendices/appendices.aux
@@ -973,6 +976,11 @@ INPUT ./chap_correlation/fig/fresnel.pdf
 INPUT ./chap_correlation/fig/fresnel.pdf
 INPUT ./chap_correlation/fig/fresnel.pdf
 INPUT ./chap_correlation/fig/fresnel.pdf
+INPUT ./chap_correlation/fig/fresnel_squeezed.pdf
+INPUT ./chap_correlation/fig/fresnel_squeezed.pdf
+INPUT ./chap_correlation/fig/fresnel_squeezed.pdf
+INPUT ./chap_correlation/fig/fresnel_squeezed.pdf
+INPUT ./chap_correlation/fig/fresnel_squeezed.pdf
 INPUT ./chap_correlation/fig/balanced_detection.pdf
 INPUT ./chap_correlation/fig/balanced_detection.pdf
 INPUT ./chap_correlation/fig/balanced_detection.pdf
@@ -1019,6 +1027,12 @@ INPUT ./chap_correlation/fig/correlation_vs_bistab.pdf
 INPUT ./chap_correlation/fig/correlation_vs_bistab.pdf
 INPUT ./chap_correlation/fig/correlation_vs_bistab.pdf
 INPUT ./chap_correlation/fig/correlation_vs_bistab.pdf
+INPUT ./chap_conclusion/conclusion.tex
+INPUT ./chap_conclusion/conclusion.tex
+OUTPUT chap_conclusion/conclusion.aux
+INPUT ./chap_conclusion/conclusion.tex
+INPUT ./chap_conclusion/conclusion.tex
+INPUT chap_conclusion/conclusion.tex
 INPUT ./appendices/appendices.tex
 INPUT ./appendices/appendices.tex
 OUTPUT appendices/appendices.aux
@@ -1087,6 +1101,9 @@ INPUT chap_stimulated_hawking/chap_stimulated_hawking.aux
 INPUT ./chap_correlation/chap_correlation.aux
 INPUT ./chap_correlation/chap_correlation.aux
 INPUT chap_correlation/chap_correlation.aux
+INPUT ./chap_conclusion/conclusion.aux
+INPUT ./chap_conclusion/conclusion.aux
+INPUT chap_conclusion/conclusion.aux
 INPUT ./appendices/appendices.aux
 INPUT ./appendices/appendices.aux
 INPUT appendices/appendices.aux

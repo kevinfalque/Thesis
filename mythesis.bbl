@@ -1,4 +1,4 @@
-\begin{thebibliography}{83}
+\begin{thebibliography}{84}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibnamefont}[1]{\textsc{#1}}
 \providecommand{\bibfnamefont}[1]{#1}
@@ -186,9 +186,10 @@
 \newblock \enquote{Analog hawking radiation from an acoustic black hole in a flowing polariton superfluid}.
 \newblock \href{http://dx.doi.org/10.1103/PhysRevB.86.144505}{ \emph{Phys. Rev. B} \textbf{86}(14), p. 144\,505}.
 
-\bibitem[{Glorieux()}]{glorieux_etude_nodate}
-\bibfnamefont{Quentin} \bibnamefont{Glorieux}.
-\newblock \enquote{{ETUDE} {THEORIQUE} {ET} {EXPERIMENTALE} {DES} {CORRELATIONS} {QUANTIQUES} {OBTENUES} {PAR} {MELANGE} {A} {QUATRE} {ONDES} {DANS} {UNE} {VAPEUR} {ATOMIQUE}} .
+\bibitem[{Glorieux \emph{et~al.}(2011)Glorieux, Guidoni, Guibal, Likforman \& Coudreau}]{glorieux_quantum_2011}
+\bibfnamefont{Quentin} \bibnamefont{Glorieux}, \bibfnamefont{Luca} \bibnamefont{Guidoni}, \bibfnamefont{Samuel} \bibnamefont{Guibal}, \bibfnamefont{Jean-Pierre} \bibnamefont{Likforman} \& \bibfnamefont{Thomas} \bibnamefont{Coudreau} 2011.
+\newblock \enquote{Quantum correlations by four-wave mixing in an atomic vapor in a nonamplifying regime: Quantum beam splitter for photons}.
+\newblock \href{http://dx.doi.org/10.1103/PhysRevA.84.053826}{ \emph{Phys. Rev. A} \textbf{84}, p. 053\,826}.
 
 \bibitem[{Gross(1961)}]{Gross1961}
 \bibfnamefont{E~P} \bibnamefont{Gross} 1961.
@@ -342,6 +343,11 @@
 \bibfnamefont{M.}~\bibnamefont{Romanelli}, \bibfnamefont{C.}~\bibnamefont{Leyder}, \bibfnamefont{J.~Ph.} \bibnamefont{Karr}, \bibfnamefont{E.}~\bibnamefont{Giacobino} \& \bibfnamefont{A.}~\bibnamefont{Bramati} 2007.
 \newblock \enquote{Four wave mixing oscillation in a semiconductor microcavity: Generation of two correlated polariton populations}.
 \newblock \href{http://dx.doi.org/10.1103/PhysRevLett.98.106401}{ \emph{Phys. Rev. Lett.} \textbf{98}, p. 106\,401}.
+
+\bibitem[{Romanelli \emph{et~al.}(2004)Romanelli, Giacobino \& Bramati}]{Romanelli:04}
+\bibfnamefont{Marco} \bibnamefont{Romanelli}, \bibfnamefont{Elisabeth} \bibnamefont{Giacobino} \& \bibfnamefont{Alberto} \bibnamefont{Bramati} 2004.
+\newblock \enquote{Optimal intensity noise reduction in multimode vertical-cavity surface-emitting lasers by polarization-selective attenuation}.
+\newblock \href{http://dx.doi.org/10.1364/OL.29.001629}{ \emph{Opt. Lett.} \textbf{29}(14), p. 1629--1631}.
 
 \bibitem[{Rousseaux \emph{et~al.}()Rousseaux, Mathis, Maïssa, Philbin \& Leonhardt}]{rousseaux_observation_2008}
 \bibfnamefont{Germain} \bibnamefont{Rousseaux}, \bibfnamefont{Christian} \bibnamefont{Mathis}, \bibfnamefont{Philippe} \bibnamefont{Maïssa}, \bibfnamefont{Thomas~G} \bibnamefont{Philbin} \& \bibfnamefont{Ulf} \bibnamefont{Leonhardt}.
