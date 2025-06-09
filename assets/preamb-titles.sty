@@ -46,7 +46,7 @@
 \renewcommand{\tocetcmark}[1]{\@mkboth{\font@headings{#1}}{\font@headings{#1}}}
 \renewcommand{\chaptermark}[1]{%
 	\markboth {\ifnum \c@secnumdepth >\m@ne%
-	\if@mainmatter \font@headings{\@chapapp \ \thechapter. \ }\fi \fi  \font@headings{#1}}{}%
+	\if@mainmatter \font@headings{\@chapapp \ \thechapter. \ }\fi \fi  }{}%
 }
 \renewcommand{\sectionmark}[1]{%
 	\markright{\ifnum \c@secnumdepth >\z@ \font@headings{\thesection%

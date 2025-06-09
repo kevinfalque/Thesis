@@ -2,102 +2,101 @@
 \contentsline {chapter}{Contents}{iii}{chapter*.1}%
 \contentsline {chapter}{Remerciements}{vii}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {part}{I\hspace {1em}Theory of Microcavity Exciton Polaritons}{3}{part.1}%
-\contentsline {chapter}{\numberline {2}Microcavity Exciton Polaritons}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Microcavity Photons}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Excitons in Semiconductors}{9}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Band theory structure}{9}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Band structure of semiconductors}{9}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Exciton phenomenological approach}{10}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Electron-hole interactions and exciton formation}{12}{subsection.2.2.4}%
-\contentsline {subsubsection}{\numberline {2.2.4.1}Electron scattering in semiconductors}{12}{subsubsection.2.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.2.4.2}From the conduction-valence electrons to the electron-hole picture}{15}{subsubsection.2.2.4.2}%
-\contentsline {subsubsection}{\numberline {2.2.4.3}The electron-hole hamiltonian}{17}{subsubsection.2.2.4.3}%
-\contentsline {subsection}{\numberline {2.2.5}Exciton-photon interaction in bulk semiconductor:}{18}{subsection.2.2.5}%
-\contentsline {subsection}{\numberline {2.2.6}Exciton in 2D quantum well}{19}{subsection.2.2.6}%
-\contentsline {subsection}{\numberline {2.2.7}Exciton-exciton interaction}{23}{subsection.2.2.7}%
-\contentsline {subsubsection}{\numberline {2.2.7.1}Coulomb interaction}{23}{subsubsection.2.2.7.1}%
-\contentsline {subsubsection}{\numberline {2.2.7.2}Fermionic exchange interaction}{23}{subsubsection.2.2.7.2}%
-\contentsline {section}{\numberline {2.3}Excitons-polaritons}{24}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Polariton interactions}{31}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4}Polariton dynamics}{33}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Mean field approximation}{34}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Driven dissipative Gross-Pitaevskii Equation.}{35}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Excitation scheme}{37}{subsection.2.4.3}%
-\contentsline {subsubsection}{\numberline {2.4.3.1}Off resonance excitation}{37}{subsubsection.2.4.3.1}%
-\contentsline {subsubsection}{\numberline {2.4.3.2}Resonant excitation.}{37}{subsubsection.2.4.3.2}%
-\contentsline {section}{\numberline {2.5}Conclusion}{43}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Hawking radiation in a polariton quantum fluid}{45}{chapter.3}%
-\contentsline {section}{\numberline {3.1}The hydrodynamical analogy}{45}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Elementary excitations of the fluid : Bogoliubov theory}{48}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Linearization of the Gross-Pitaevskii equation}{48}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}Homogeneous fluid}{54}{section.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.0.1}Bogoliubov mode energy}{56}{subsubsection.3.3.0.1}%
-\contentsline {subsection}{\numberline {3.3.1}Bogoliubov spectrum characterization}{57}{subsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.1.1}Static fluid}{57}{subsubsection.3.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.3.1.2}Moving polaritons at finite $k_p$}{62}{subsubsection.3.3.1.2}%
-\contentsline {section}{\numberline {3.4}Hawking radiation in a transcritical fluid}{64}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Inhomogeneous pumping}{64}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Modes quantization}{68}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Spontaneous emission}{71}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Stimulated emission}{73}{subsection.3.4.4}%
-\contentsline {section}{\numberline {3.5}Numerical study of stimulated emission}{74}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Conclusion}{74}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Optical generation and spectroscopy of arbitrary acoustic horizons}{77}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Optical generation of an arbitrary fluid velocity field}{77}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Waterfall configuration}{78}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Target velocity profile}{78}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Effective 1D fluid}{81}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Experimental spectroscopy of the collective excitation spectrum}{82}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}High resolution pump-probe spectroscopy method}{82}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}Experimental setup}{84}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Experimental results}{85}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Homogeneous fluid}{85}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Smooth transition geometry}{90}{subsection.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.1}Speed of sound measurement}{90}{subsubsection.4.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.4.2.2}Critical velocity}{92}{subsubsection.4.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.3}Paired emission frequency range}{96}{subsubsection.4.4.2.3}%
-\contentsline {subsection}{\numberline {4.4.3}Steep horizon geometry}{98}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Quasi-normal mode configuration}{99}{subsection.4.4.4}%
-\contentsline {section}{\numberline {4.5}Conclusion}{101}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Experimental observation of stimulated Hawking radiation in a polariton quantum fluid}{103}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Interferometric measurement of the scattering matrix }{103}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Challenges of the measurement}{105}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Interferometric reconstruction of the scattered field}{107}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Experimental implementation}{109}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Ballistic configuration}{109}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Measurement of the Bogoliubov spectrum}{111}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Observation of stimulated Hawking radiation}{115}{subsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.2.3.1}Detection of the scattered modes}{115}{subsubsection.5.2.3.1}%
-\contentsline {subsection}{\numberline {5.2.4}Toward the measurement of the scattering matrix}{117}{subsection.5.2.4}%
-\contentsline {subsubsection}{\numberline {5.2.4.1}Input and output modes discrimination}{117}{subsubsection.5.2.4.1}%
-\contentsline {subsubsection}{\numberline {5.2.4.2}Real space analysis}{120}{subsubsection.5.2.4.2}%
-\contentsline {subsubsection}{\numberline {5.2.4.3}Signature of amplification}{122}{subsubsection.5.2.4.3}%
-\contentsline {section}{\numberline {5.3}Conclusion}{126}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Bogoliubov modes correlations in a polariton quantum fluid}{127}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Quantum noise of an electromagnetic field}{127}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Standard quantum limit}{127}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Intensity and phase fluctuations}{129}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Squeezed states}{129}{subsection.6.1.3}%
-\contentsline {section}{\numberline {6.2}Photodectection}{130}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Balanced detection}{131}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Difference measurement}{132}{subsection.6.3.1}%
-\contentsline {section}{\numberline {6.4}Correlations in continuous-variables quantum optics}{133}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Correlation function.}{133}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.4.2}Bogoliubov modes correlations}{134}{subsection.6.4.2}%
-\contentsline {section}{\numberline {6.5}Experimental implementation}{135}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}Bogoliubov coefficients measurement}{136}{subsection.6.5.1}%
-\contentsline {subsection}{\numberline {6.5.2}Bogoliubov modes correlations}{139}{subsection.6.5.2}%
-\contentsline {subsubsection}{\numberline {6.5.2.1}Shot noise calibration}{139}{subsubsection.6.5.2.1}%
-\contentsline {subsubsection}{\numberline {6.5.2.2}Balanced detection}{140}{subsubsection.6.5.2.2}%
-\contentsline {subsubsection}{\numberline {6.5.2.3}Correlations measurement}{143}{subsubsection.6.5.2.3}%
-\contentsline {section}{\numberline {6.6}Conclusion}{146}{section.6.6}%
-\contentsline {chapter}{\numberline {7}Conclusion}{149}{chapter.7}%
-\contentsline {part}{Appendices}{151}{section*.63}%
-\contentsline {chapter}{\numberline {A}Mean field shaping and monitoring}{153}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Phase printing}{153}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Spatial light modulator.}{153}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Phase measurement}{154}{subsection.A.1.2}%
-\contentsline {subsection}{\numberline {A.1.3}Off axis inteferometry}{154}{subsection.A.1.3}%
-\contentsline {subsection}{\numberline {A.1.4}Controlling the local intensity}{154}{subsection.A.1.4}%
-\contentsline {part}{Bibliography}{157}{section*.67}%
+\contentsline {chapter}{\numberline {2}Microcavity Exciton Polaritons}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Microcavity Photons}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Excitons in Semiconductors}{7}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Band theory structure}{7}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Band structure of semiconductors}{7}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Exciton phenomenological approach}{8}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Electron-hole interactions and exciton formation}{10}{subsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.4.1}Electron scattering in semiconductors}{10}{subsubsection.2.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.2.4.2}From the conduction-valence electrons to the electron-hole picture}{13}{subsubsection.2.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.2.4.3}The electron-hole hamiltonian}{15}{subsubsection.2.2.4.3}%
+\contentsline {subsection}{\numberline {2.2.5}Exciton-photon interaction in bulk semiconductor:}{16}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Exciton in 2D quantum well}{17}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}Exciton-exciton interaction}{21}{subsection.2.2.7}%
+\contentsline {subsubsection}{\numberline {2.2.7.1}Coulomb interaction}{21}{subsubsection.2.2.7.1}%
+\contentsline {subsubsection}{\numberline {2.2.7.2}Fermionic exchange interaction}{21}{subsubsection.2.2.7.2}%
+\contentsline {section}{\numberline {2.3}Excitons-polaritons}{22}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Polariton interactions}{29}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Polariton dynamics}{31}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Mean field approximation}{32}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Driven dissipative Gross-Pitaevskii Equation.}{33}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Excitation scheme}{35}{subsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.3.1}Off resonance excitation}{35}{subsubsection.2.4.3.1}%
+\contentsline {subsubsection}{\numberline {2.4.3.2}Resonant excitation.}{35}{subsubsection.2.4.3.2}%
+\contentsline {section}{\numberline {2.5}Conclusion}{41}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Hawking radiation in a polariton quantum fluid}{43}{chapter.3}%
+\contentsline {section}{\numberline {3.1}The hydrodynamical analogy}{43}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Elementary excitations of the fluid : Bogoliubov theory}{46}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Linearization of the Gross-Pitaevskii equation}{46}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Homogeneous fluid}{52}{section.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.0.1}Bogoliubov mode energy}{54}{subsubsection.3.3.0.1}%
+\contentsline {subsection}{\numberline {3.3.1}Bogoliubov spectrum characterization}{55}{subsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.1.1}Static fluid}{55}{subsubsection.3.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.3.1.2}Moving polaritons at finite $k_p$}{60}{subsubsection.3.3.1.2}%
+\contentsline {section}{\numberline {3.4}Hawking radiation in a transcritical fluid}{62}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Inhomogeneous pumping}{62}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Modes quantization}{66}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Spontaneous emission}{69}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Stimulated emission}{71}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}Numerical study of stimulated emission}{72}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Conclusion}{72}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Optical generation and spectroscopy of arbitrary acoustic horizons}{75}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Optical generation of an arbitrary fluid velocity field}{75}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Waterfall configuration}{76}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Target velocity profile}{76}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Effective 1D fluid}{79}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Experimental spectroscopy of the collective excitation spectrum}{80}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}High resolution pump-probe spectroscopy method}{80}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Experimental setup}{82}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Experimental results}{83}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Homogeneous fluid}{83}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Smooth transition geometry}{88}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}Speed of sound measurement}{88}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}Critical velocity}{90}{subsubsection.4.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.3}Paired emission frequency range}{94}{subsubsection.4.4.2.3}%
+\contentsline {subsection}{\numberline {4.4.3}Steep horizon geometry}{96}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Quasi-normal mode configuration}{97}{subsection.4.4.4}%
+\contentsline {section}{\numberline {4.5}Conclusion}{99}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Experimental observation of stimulated Hawking radiation in a polariton quantum fluid}{101}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Interferometric measurement of the scattering matrix }{101}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Challenges of the measurement}{103}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Interferometric reconstruction of the scattered field}{105}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Experimental implementation}{107}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Ballistic configuration}{107}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Measurement of the Bogoliubov spectrum}{109}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Observation of stimulated Hawking radiation}{113}{subsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.3.1}Detection of the scattered modes}{113}{subsubsection.5.2.3.1}%
+\contentsline {subsection}{\numberline {5.2.4}Toward the measurement of the scattering matrix}{115}{subsection.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.4.1}Input and output modes discrimination}{115}{subsubsection.5.2.4.1}%
+\contentsline {subsubsection}{\numberline {5.2.4.2}Real space analysis}{118}{subsubsection.5.2.4.2}%
+\contentsline {subsubsection}{\numberline {5.2.4.3}Signature of amplification}{120}{subsubsection.5.2.4.3}%
+\contentsline {section}{\numberline {5.3}Conclusion}{124}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Bogoliubov modes correlations in a polariton quantum fluid}{125}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Quantum noise of an electromagnetic field}{125}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Standard quantum limit}{125}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Intensity and phase fluctuations}{127}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Squeezed states}{127}{subsection.6.1.3}%
+\contentsline {section}{\numberline {6.2}Photodectection}{128}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Balanced detection}{129}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Difference measurement}{130}{subsection.6.3.1}%
+\contentsline {section}{\numberline {6.4}Correlations in continuous-variables quantum optics}{131}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Correlation function.}{131}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Bogoliubov modes correlations}{132}{subsection.6.4.2}%
+\contentsline {section}{\numberline {6.5}Experimental implementation}{133}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Bogoliubov coefficients measurement}{134}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Bogoliubov modes correlations}{137}{subsection.6.5.2}%
+\contentsline {subsubsection}{\numberline {6.5.2.1}Shot noise calibration}{137}{subsubsection.6.5.2.1}%
+\contentsline {subsubsection}{\numberline {6.5.2.2}Balanced detection}{138}{subsubsection.6.5.2.2}%
+\contentsline {subsubsection}{\numberline {6.5.2.3}Correlations measurement}{141}{subsubsection.6.5.2.3}%
+\contentsline {section}{\numberline {6.6}Conclusion}{144}{section.6.6}%
+\contentsline {chapter}{\numberline {7}Conclusion}{147}{chapter.7}%
+\contentsline {part}{Appendices}{149}{section*.63}%
+\contentsline {chapter}{\numberline {A}Mean field shaping and monitoring}{151}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Phase printing}{151}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Spatial light modulator.}{151}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Phase measurement}{152}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Off axis inteferometry}{152}{subsection.A.1.3}%
+\contentsline {subsection}{\numberline {A.1.4}Controlling the local intensity}{152}{subsection.A.1.4}%
+\contentsline {part}{Bibliography}{155}{section*.67}%
