@@ -71,28 +71,13 @@ of the effect beyond the original hydrodynamical approach and widen the range of
 \section{The hydrodynamical analogy}
 
 In the previous chapter, we established that the dynamics of microcavity polaritons can be described by a driven dissipative Gross-Pitaevskii equation.
-By writing the wavefunction in terms of phase and density, this equation can be cast into a continuity equation and an Euler equation for a non-barotropic fluid in the pump rotating frame. Starting from the GPE,
-a polariton system resonantly pumped by a laser of the general form $F_{\tp}e^{i\phi(x,t)}$ leads the fluid to a state described by the wavefunction $\psi(x,t)=\sqrt{n_0}e^{i\phi(x,t)}$. The phase and modulus $\psi$ :
-\begin{equation}
-    \begin{align}
-    \partial_t \phi +& \frac{\mlp v_0^2}{2\hbar}+\frac{\hbar}{2\mlp}\frac{\partial_x^2\sqrt{n_0}}{\sqrt{n_0}}+V_{LP}+gn+g_rn_r+\frac{\re\lrsq{F_{\tp}e^{-i\theta}}}{\mlp}=0\,\\
-    \partial_t n_0 +& \partial_x(n_0v)= \gamma n_0 -2\im\lrsq{F_{\tp}e^{-i\theta}}\sqrt{n_0}
-    \end{align}
-    \label{eq:continuity}
-\end{equation}
-If we neglect the drive and dissipation terms which is the situation of a conservative fluid, we recover the original equation describing 
-sound waves in a moving flow. This is precisely the equation that was used in the initial analogy made by W. Unruh \cite{unruh_experimental_1981}.
-However, the out of equilibrium nature of the microcavity polaritons brings different phenomenology. In particular, perturbations propagating in
-the fluid are not necessary sound waves as we will se later. It means that the dispersion of these perturbations is not linear and 
-can remarkably exhibit a gap which can be associated to massive excitations. To avoid making approximations it is convenient to make the same calculations in the pump rotating frame. It equivalently means that all frequencies
-will be taken with respect to the pump. In practice this is done by writing the pump $F_{\tp}(x)= F_{\tp}e^{i\theta_p(x)}$ with $\theta_p(x)=k_px$ and looking for steady state wavefunction 
-of the same form $\psi(x,t)=\sqrt{n_0}e^{i\theta_p(x)}$. Plugging this into the GPE we obtain that the phase and density of the fluid must fulfill the following equation :
+By writing the wavefunction in terms of phase and density, this equation can be cast into a continuity equation and an Euler equation for a non-barotropic fluid in the pump rotating frame. A polariton system resonantly pumped by a laser of the general form $F_{\tp}e^{i(\theta_p(x)-\omega_p t)}$ leads the fluid to a state described by the wavefunction $\psi(x,t)=\sqrt{n_0}e^{i(\theta_p(x)-\omega_p t)}$. Plugging this ansatz into the GPE we obtain that the phase and density of the fluid must fulfill the following equation :
 
 \begin{equation}
     \lrsq{-\frac{\hbar}{2\mlp}\nabla^2-i\frac{\hbar}{2}(\vna\cdot\pmb{v_0}) -i\hbar(\pmb{v_0}\cdot\vna)- \delta(v_0)+g_{\rm r}n_{\rm r}+g n_0-\ci\frac{\hbar\gamma}{2}}\sqrt{n_0}+|F_\tp|=0\,
         \label{eq:StatHomogEOSDens}
 \end{equation}
-with $\hbar \delta(v_0)=\hbar\omega_\tp-\hbar\omega_0-\mlp v_0^2/2$ (note that this is just $\delta(k_p)$ in a homogeneous configuration where $\pmb{v_0}=\hbar\pmb{k_p}/\mlp$).
+with $\hbar \delta(v_0)=\hbar\omega_\tp-\hbar\omega_0-\mlp v_0^2/2$ and $\vbf_0=\hbar \nabla \theta_p/\mlp$. Note that for a plane wave pump with wavevector $\kbf_p$ we recover $\vbf_0=\hbar \kbf_p/\mlp$ and the detuning $\delta(v_0)=\hbar \delta(k_\tp)$.
 To study the low energy collective perturbations of the fluid state we linearize the system around the steady state by writing the wavefunction
 $\psi(x,t)=(\sqrt{n_0}+e^{-\gamma t/2}\delta\psi(x))e^{i\theta_p(x)}$ where the term $e^{-\gamma t/2}$ account for the losses as we will see later. Injecting this expression in \autoref{reservoir_eq} and using \autoref{eq:StatHomogEOSDens} we obtain to linear order in $\delta\psi$ :
 
@@ -422,7 +407,7 @@ where
     b_\kbf = \int \dr u_k^*(\rbf)\dpsi(\rbf)-v_k^*(\rbf)\dpsi(\rbf). 
 \end{equation}
 
-The redundancy of the first line of ~\eqref{eq:general_solution_for_fluctuations_classical} being the complex conjugate of the second is the price we pay now for our initial assumption that considered $\dpsi$ and $\dpsi^*$ as independent variables. The advantage of the
+Note that we recover that the first line of ~\eqref{eq:general_solution_for_fluctuations_classical} is the complex conjugate of the second which justify our initial assumption that considered $\dpsi$ and $\dpsi^*$ as independent variables. The advantage of the
 procedure followed here is the natural emergence of the inner product of \autoref{eq:inner_product} from the symmetries of $\Lbog$. It allows for the definition of a norm and the establishment of orthogonality among the eigenvectors, 
 thereby revealing the structure of the solution space as the direct sum of two dual subspaces. This decomposition results in norms with opposite signs and paired complex-conjugate eigenvalues. Another possible approach would have been
 to directly look for solutions as linear combinations of plane waves with opposite frequencies as it is done in \cite{pethick_bose-einstein_2008}. This method however does not provide a natural way to define a norm and, as we shall

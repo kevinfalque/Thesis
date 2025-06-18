@@ -1,4 +1,4 @@
-\begin{thebibliography}{84}
+\begin{thebibliography}{83}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibnamefont}[1]{\textsc{#1}}
 \providecommand{\bibfnamefont}[1]{#1}
@@ -374,13 +374,8 @@
 \newblock \enquote{Criteria of quantum correlation in the measurement of continuous variables in optics}.
 \newblock \href{http://dx.doi.org/hal-00002321v2}{ \emph{Hal open science- Laser Physics} \textbf{15}(2), p. 187}.
 
-\bibitem[{Unruh({\natexlab{a}})}]{unruh_experimental_1981}
-\bibfnamefont{W.~G.} \bibnamefont{Unruh} {\natexlab{a}}.
-\newblock \enquote{Experimental black-hole evaporation?}
-\newblock \href{http://dx.doi.org/10.1103/PhysRevLett.46.1351}{ \emph{Physical Review Letters} \textbf{46}(21), p. 1351--1353}.
-
-\bibitem[{Unruh({\natexlab{b}})}]{unruh_!notes_1976}
-\bibfnamefont{W.~G.} \bibnamefont{Unruh} {\natexlab{b}}.
+\bibitem[{Unruh()}]{unruh_!notes_1976}
+\bibfnamefont{W.~G.} \bibnamefont{Unruh}.
 \newblock \enquote{!notes on black-hole evaporation}.
 \newblock \href{http://dx.doi.org/10.1103/PhysRevD.14.870}{ \emph{Physical Review D} \textbf{14}(4), p. 870--892}.
 

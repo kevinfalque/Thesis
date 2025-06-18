@@ -26,6 +26,7 @@ with all the tools developed in quantum optics.
 In this work, we report the first experimental measurement of correlations between collective excitation modes—Bogoliubov modes—in a static and homogeneous quantum fluid of microcavity exciton-polaritons.
  By using a balanced detection set-up, we measure intensity correlation between the normal and ghost branches, probing the fluctuation dynamics of the polariton fluid and extracting the spectral correlations of Bogoliubov excitations.
   We observe a clear enhancement of the intensity correlations when the polariton fluid operates near the turning point of the bistabilty due to the emergence of correlated phonon-like excitations. These correlations, seeded by quantum and thermal fluctuations, provide insights into the role of the nonlinear and phononic interactions in the collective excitations of a polariton quantum fluid.
+This work paves the way towards the measurement of quantum correlations between modes emitted by an analog horizon.
 
 \section{Quantum noise of an electromagnetic field}
 \label{sec:intro_cv}
@@ -73,7 +74,7 @@ More precisely, the variances $\Delta X^2 = \langle \hX^2 \rangle - \langle \hX 
 In contrast with the classical case, the vector $(\langle \hX \rangle, \langle \hY \rangle)$ representing the expectation values of the operators is associated with uncertainties whose area is bounded by the Heisenberg principle. 
 The state most closely resembling a classical field is the one in which the fluctuations in both quadratures saturate \autoref{eq:uncertainty}. In this case, the uncertainty area assumes a circular shape with a diameter $E_0$ in the phase space, as illustrated in \autoref{fig:fresnel} \textbf{b)}. In this figure, the field and its fluctuations are not represented on the same scale; a laser field comprises a very large number of photons, whereas the fluctuations are much smaller. 
 Such a minimum uncertainty state is referred to as a coherent state while the corresponding fluctuations define the standard quantum fluctuations. Coherent
-state are typically produced by a laser way above threshold and are the eigenvector of the annihilation operator $\hat{a}$.
+states are typically produced by a laser way above threshold and are the eigenvectors of the annihilation operator $\hat{a}$.
 
 \subsection{Intensity and phase fluctuations}
 
@@ -108,6 +109,7 @@ While vacuum fluctuations serve as a reference for quantum fluctuations, there i
     \centering
     \includegraphics[width=0.5\textwidth]{chap_correlation/fig/fresnel_squeezed.pdf}
     \caption{Representation of a squeezed state in the phase space. The uncertainty area is squeezed below the SQL along the $\hY_{\Phi}$ phase quadrature and correspondingly stretched along the $\hX_{I}$ intensity quadrature. The uncertainty area is still bounded by the Heisenberg uncertainty principle.}
+    \label{fig:squeezed_state}
 \end{figure}
 
 
@@ -149,8 +151,8 @@ Furthermore, by writting $N_e=\bar{i}\Delta t/e$ we obtain :
     \Delta i^2 = \dfrac{e\bar{i}}{\Delta t}.
 \end{equation}
 This relation shows that the variance of the photocurrent is inversely proportional to the time interval over which the current is measured. In the frequency
-domain it means that the variance is proportionnal to the bandwidth of the measurement apparatus $\delta f=1/2\Delta t$. 
-Furthermore, in the case where the latter can be modeled by a narrow band-pass filter centered on an analysis frequency $\omega_c$ it can be shown \cite{fabre_houches_97}
+domain it means that the variance is proportional to the bandwidth of the measurement apparatus $\delta f=1/2\Delta t$. 
+Furthermore, in the case where the measurement devices can be modeled by a narrow band-pass filter centered on an analysis frequency $\omega_c$ it can be shown \cite{fabre_houches_97}
 that the variance of the photocurrent is related to its power spectral density (PSD) as :
 
 \begin{equation}
@@ -158,7 +160,7 @@ that the variance of the photocurrent is related to its power spectral density (
     \Delta i^2 = 2\delta f S_i(\omega).
 \end{equation}
 This is precisely how a spectrum analyzer works. It measures the power spectral density of the photocurrent $S_i(\omega)$ by integrating its variance over a given bandwidth $\delta f$ usually limited by the resolution 
-bandwith (RBW) of the spectrum analyzer.
+bandwidth (RBW) of the spectrum analyzer.
 At the end, we have a way to measure the power spectral density of the incoming light field by measuring the variance of the photocurrent. 
 Let us now see how such a device can be used to measure the correlations between two fields.
 
@@ -166,7 +168,8 @@ Let us now see how such a device can be used to measure the correlations between
 Intensity balanced detection is a common detection scheme used to suppress the classical noise commonly present in optical measurements and measure the intensity noise of a beam.
 The basic principle of this technique is to use two photodetectors, each measuring the intensity of an optical field, and to subtract their output photo-currents. If the two 
 beams share the same classical noise, the subtraction will cancel it out, leaving only the quantum correlations. A representation of the balanced detection scheme is shown in \autoref{fig:balanced_detection}.
-Usually, these kind of apparatus are also able to measure the sum of the two photo-currents which is proportional to the total noise of the two beams. However,
+Such apparatuses are typically also capable of measuring the sum of the two photocurrents, whose noise is proportional to the total noise of the two beams.
+ However,
 as we will see in the next section, measuring the difference together with the individual photo-currents is sufficient to obtain the correlation function of the two fields.
 \begin{figure}
     \centering
@@ -197,11 +200,11 @@ The difference operator can then be expressed to first order in the fluctuations
 \begin{equation}
     \label{eq:diff_op2}
     \begin{aligned}
-    \hat{N_-} &= (|\alpha|^2e^{i\Phi}+\delta \hat{a}^\dagger)(|\alpha|e^{i\Phi}+\delta \hat{a}) - (|\beta|^2e^{i\Psi}+\delta \hat{b}^\dagger)(|\beta|e^{i\Psi}+\delta \hat{b}) \\
-    &= |\alpha|^2 - |\beta|^2 +(|\alpha|\delta \hX_a^\Phi + |\beta|\delta \hX_b^\Psi) 
+    \hat{N_-} &= (|\alpha|e^{-i\Phi}+\delta \hat{a}^\dagger)(|\alpha|e^{i\Phi}+\delta \hat{a}) - (|\beta|e^{-i\Psi}+\delta \hat{b}^\dagger)(|\beta|e^{i\Psi}+\delta \hat{b}) \\
+    &= |\alpha|^2 - |\beta|^2 +(|\alpha|\delta \hX_a^\Phi - |\beta|\delta \hX_b^\Psi) 
     \end{aligned}
 \end{equation}
-The mean value $<N_->=|\alpha|-^2-|\beta|^2$ provides information about the average intensity difference between the two beams. In the balanced case—that is, when this difference vanishes—the fluctuations of the difference can be expressed as:
+The mean value $<N_->=|\alpha|^2-|\beta|^2$ provides information about the average intensity difference between the two beams. In the balanced case—that is, when this difference vanishes—the fluctuations of the difference can be expressed as:
 \begin{equation}
     \label{eq:diff_fluctuation}
     \delta \hat{N_-} = |\alpha|(\delta \hX_a^\Phi - \delta \hX_b^\Psi).
@@ -211,11 +214,11 @@ In practice, we will measure the variance of the difference operator as we will 
 \section{Correlations in continuous-variables quantum optics}
 
 \label{sec:corr_cv}
-As a very general statement, two quantities are said to be correlated if they ultimately originate from the same source or quantum process. In this case, a knowledge of one of the two quantities gives informations about the other.
+As a very general statement, two quantities are usually correlated if they ultimately originate from the same source or quantum process. In this case, a knowledge of one of the two quantities gives information about the other.
 Take the example of a two photons emission by a non linear process such as a Type II spontaneous parametric down conversion (SPDC). Their correlations is of several natures. The first and most obvious one is temporal in the sense that the two photons are emitted at the same time. This can be
 quantified by looking at the second order intensity correlation function $g^{(2)}(t,t')$, which is the probability of detecting a photon at time $t$ and another one at time $t'$ \cite{hanbury_brown_twiss_1956}. They can also 
 be correlated through their polarization meaning that if one photon is detected in a given polarization, the other one will be detected in the orthogonal polarization. Reversing the picture,
-the measurement of a given type of correlations can thus provide informations about the quantum nature of the process that generated them.
+the measurement of a given type of correlations can thus provide information about the quantum nature of the process that generated them.
 
 \subsection{Correlation function.} Let us consider a quantum operator evolving in time $\hat{f}(t)$. The autocorrelation of $\hf$ at time $t$ and $t'$ is defined as :
 
@@ -274,7 +277,7 @@ By measuring the PSD of the difference operator $S_{-}(\omega)$ and the individu
 
 Let us now consider a static homogeneous polariton fluid created by a pump with frequency and wavevector $(\omega_p$, $k_p$), operating on the high density branch of the bistability curve as we did in the previous chapters.
 We set our description in the rotating frame of the pump laser so that in the following we will drop the pump frequency $\omega_p$ and wavevector $k_p$.
-A given bogoliubov mode at $(k,\omega)$ on the normal branch, and its conjugate mode at $(-k,-\omega)$ on the ghost branch, are expected to be correlated.
+A given Bogoliubov mode at $(k,\omega)$ on the normal branch, and its conjugate mode at $(-k,-\omega)$ on the ghost branch, are expected to be correlated.
 Indeed, they ultimately result from a four-wave mixing process that is the parametric scattering of two pump polaritons into two Bogoliubov modes at $(k,\omega)$ and $(-k,-\omega)$.
 More precisely, the phase matching and energy conservation conditions of the four-wave mixing process read as :
 
@@ -285,16 +288,16 @@ More precisely, the phase matching and energy conservation conditions of the fou
 \textbf{Bogoliubov coefficients.} According to the Bogoliubov theory, the Bogoliubov amplitudes $u_{k}$ and $v_{k}$ related to the normal branch mode and the ghost branch mode respectively are given by \cite{castin_bose-einstein_2001,pitaevskij_bose-einstein_2016} :
 
 \begin{align}
-    u_k &= \sqrt{\frac{1}{2} \left( \frac{\epsilon_k + g n_0}{\omega^+_B(k)} + 1 \right)}, \\
-    v_k &= -\sqrt{\frac{1}{2} \left( \frac{\epsilon_k + g n_0}{\omega^+_B(k)} - 1 \right)}.
+    u_k &= \sqrt{\frac{1}{2} \left( \frac{\epsilon_k + 2g n_0-\delta}{\omega^+_B(k)} + 1 \right)}, \\
+    v_k &= -\sqrt{\frac{1}{2} \left( \frac{\epsilon_k + 2g n_0-\delta}{\omega^+_B(k)} - 1 \right)}.
 \end{align}
-where $gn_0$ is the interaction energy, $\epsilon_k=\hbar k^2/2\mlp$ is the kinetic energy with $\mlp$ the polaritons effective mass, and $\omega^+_B(k)$ is the positive norm Bogoliubov frequency that we remind here :
+where $gn_0$ is the interaction energy, $\epsilon_k=\hbar k^2/2\mlp$ is the kinetic energy with $\mlp$ the polaritons effective mass, and $\omega^+_B(k)$ is the positive norm Bogoliubov frequency :
 
 \begin{equation}
     \omega^{+}_B(k)=\sqrt{\left(\dfrac{\hbar k^2}{2\mlp}-\delta +2g n_0\right)^2 - \left(g n_0\right)^2}
 \end{equation}
 with $\delta = \omega_p - \omega_{LP}$ the detuning between the pump laser and the polariton resonance frequency $\omega_{LP}$ at zero wavevector. Note that 
-the reservoir contribution was not taken into account without loss of generality since its contribution can be absorbed in the detuning $\delta$.
+the reservoir contribution was not taken into account without loss of generality since its contribution can be included in the detuning $\delta$.
 
 \bigskip
 
@@ -311,7 +314,7 @@ Using the input-output formalism~\cite{I_frerot_PRX_2023}, one can compute the e
     I_G(-k_{pr},-\omega_{pr}) &= |v_{k_{pr}}u_{k_{pr}}|^2 |\alpha|^2 \ \mathrm{ for \ the \ ghost \  branch.}
     \end{aligned}
 \end{equation}
-where $|\alpha|^2$ is the intracavity probe intensity. This two intensities are expected to yield high correlation since they result from a nonlinear four-wave mixing process \cite{glorieux_quantum_2011,romanelli_4wm_2007}. Measurging this correlation is the goal of this experiment.
+where $|\alpha|^2$ is the intracavity probe intensity. This two intensities are expected to yield high correlation since they result from a nonlinear four-wave mixing process \cite{glorieux_quantum_2011,romanelli_4wm_2007}. Measuring this correlation is the goal of this experiment.
 
 By computing the ratio of the two intensities, we can eliminate the probe contribution and obtain the Bogoliubov coefficients ratio $u_{k_{pr}}^2/v_{k_{pr}}^2$. 
 The asymptotic behavior of this ratio is then expected to scale as~\cite{castin_bose-einstein_2001}. :
@@ -328,8 +331,8 @@ As a result, the beams on the normal and ghost branches are balanced at low wave
 \section{Experimental implementation}
 \label{sec:exp_impl}
 
-The set up used is similar to the one used in the previous experiement with the addition of a balanced detection scheme that will be detailled in the next section. 
-The microcavity is the same as the one used in the previous chapters but the experiment is runned at the working point B10-C10 (see \autoref{fig:sample_map}).
+The set up used is similar to the one used in the previous experiment with the addition of a balanced detection scheme that will be detailled in the next section. 
+The microcavity is the same as the one used in the previous chapters but the experiment is run at the working point B10-C10 (see \autoref{fig:sample_map}).
 
 \bigskip
 
@@ -353,19 +356,19 @@ $\delta = \SI{35}{\giga\hertz}$ in order to operate in a bistable regime. The pu
 
 \bigskip
 
-To begin with, the collective excitation spectrum of the fluid is measured with the same method than in \autoref{chap:generation_transonic_fluid}. The pump laser intensity is set to operate close to the turning point of the higher branch of the bistability loop but sufficiently far from it to have a stable polariton fluid. 
+To begin with, the collective excitation spectrum of the fluid is measured with the same method as in \autoref{chap:generation_transonic_fluid}. The pump laser intensity is set to operate close to the turning point of the higher branch of the bistability loop but sufficiently far from it to have a stable polariton fluid. 
 The normal branch shown in \autoref{fig:uv_analysis} \textbf{a)} is measured through direct excitation ie by placing pinholes that track the probe wavevector in the Fourier space at each energy scan.
- Conversely, the ghost branch shown in \textbf{b)} is measured through 4WM excitation meaning that the pinholes are systematically positioned at the opposited wavevector $-k_{pr}$. At each couple $(k,\omega)$ and $(-k, -\omega)$ the corresponding intensities are measured by fitting the resonance peaks 
+ Conversely, the ghost branch shown in \textbf{b)} is measured through 4WM excitation meaning that the pinholes are systematically positioned at the opposite wavevector $-k_{pr}$. At each couple $(k,\omega)$ and $(-k, -\omega)$ the corresponding intensities are measured by fitting the resonance peaks 
 by a Lorentzian function. As outlined by the previous section, by then computing the ratio of the two quantities, the probe contribution disappears and we can have acces to the Bogoliubov coefficients ratio $u_{k_{pr}}^2/v_{k_{pr}}^2$. 
-\autoref{fig:uv_analysis} \textbf{c)} shows this ratio as a function of the probe wavevector $k_{pr}$. At low wavevector, the ratio tends to a constant value which is expected from the Bogoliubov theory as explained in the previous section. A quantitative value of this value can non be extracted from the data
-because at low wavevector the measurement method does not allow to discriminate the two conjugated modes. However, one can appreciate that the ratio is close to one which is consistent with the theoretical prediction.
+\autoref{fig:uv_analysis} \textbf{c)} shows this ratio as a function of the probe wavevector $k_{pr}$. At low wavevector, the ratio tends to a constant value which is expected from the Bogoliubov theory as explained in the previous section. A quantitative estimate of this value cannot be extracted from the data, as the measurement method does not allow for discrimination between the two conjugate modes at low wavevectors.
+However, one can estimate that the ratio is close to one which is consistent with the theoretical prediction.
 At high wavevector $u_{k_{pr}}^2/v_{k_{pr}}^2$ is expected to follow a $k^4$ law as previously explained. To discuss this feature, we take the data for $|k_{pr}| > 1/\xi\approx\SI{0.35}{\per\micro\meter}$ and fit them with a power law of the form $ak^\beta$ with $a$ and $\beta$ as fitting parameter. The healing length $\xi=\SI{3}{\micro\meter}$ is estimated from the detuning $\delta =\SI{35}{\giga\hertz}$ which is slightly lower than the interaction energy $gn_0$ since the system operates close to the turning point of the bistability loop.
 
 \bigskip
 
-The resulting fit are represented by the red dashed line in \autoref{fig:uv_analysis} \textbf{c)}. The fit gives a value of $\beta=3.74\pm0.5$ for negative wavevector whereas for positive wavevector we obtain $\beta=1.47\pm{0.5}$. The first value is consistent with the Bogoliubov theory prediction of $\beta=4$ while the second one is not. The uncertainty on $\beta$ is of $13\%$ for $k<0$ and $34\%$ for $k>0$. 
- This asymetry between the two branches is not well understood and may be due to a sample effect that is not perfectly istropic. Indeed, 
-as explained in \autoref{chap:generation_transonic_fluid}, the sample exhibits a so called wedge which can be understood as a small tilt of the microcavity DBR mirrors. This creates a direction along which the photon resonance energy increases as a function of the cavity width.
+The resulting fits are represented by the red dashed lines in \autoref{fig:uv_analysis} \textbf{c)}. The fit gives a value of $\beta=3.74\pm0.5$ for negative wavevector whereas for positive wavevector we obtain $\beta=1.47\pm{0.5}$. The first value is consistent with the Bogoliubov theory prediction of $\beta=4$ while the second one is not. The uncertainty on $\beta$ is of $13\%$ for $k<0$ and $34\%$ for $k>0$. 
+ This asymmetry between the two branches is not well understood and may be due to a sample effect that is not perfectly isotropic. Indeed, 
+as explained in \autoref{chap:generation_transonic_fluid}, the sample exhibits a wedge which is a small tilt of the microcavity DBR mirrors. This creates a direction along which the photon resonance energy increases as a function of the cavity width.
 This breaking of symmetry may result in a $k$-dependent efficiency of the emission that is not taken into account in the initial model. A way to verify this hypothesis would be to precisely characterize the wedge as well as the $k$-dependance of the DBR reflectivity and run numerical simulations of angle and energy resolved emission. 
 
 It is worth noticing that at low wavevector $|k_{pr}|<\SI{0.5}{\per\micro\meter}$ where $k$ and $-k$ are closer to each other, symmetry between the branch is restored which support the anisotropy hypothesis 
@@ -386,7 +389,7 @@ In view of measuring correlations between the Bogoliubov modes, the validation t
     \centering
     \includegraphics[width=1\textwidth]{chap_correlation/fig/uv_analysis.pdf}
     \caption{\textbf{Bogoliubov dispersion measurement.} \textbf{a)} Normal branch measurement. \textbf{b)} Ghost branch measurement. As explained in \autoref{chap:generation_transonic_fluid}, the black solid rectangle
-    centered at $k=0$ on both plots represents the region where the two conjugate modes start to overlap in the $k$-space and thus cannot be resolved. The white dashed circles represent two conjuagted bogoliubov modes whose emission are compared to exctract the Bogoliubov coefficients $u$ and $v$.}
+    centered at $k=0$ on both plots represents the region where the two conjugate modes start to overlap in the $k$-space and thus cannot be resolved. The white dashed circles represent two conjugated Bogoliubov modes whose emission are compared to extract the Bogoliubov coefficients $u$ and $v$.}
     \label{fig:uv_analysis}
 \end{figure} 
 
@@ -410,18 +413,23 @@ there is no need to make the measurement for the two lasers and the linear coeff
     \label{fig:calibration}
 \end{figure}
 
+\bigskip
+
 The results are presented in \autoref{fig:calibration}.
 As expected, the variance of the photocurrent is linear with the laser power. This calibration curve is then used to make sure that the lasers are shot noise limited by verifying that, for a given laser power 
-its power spectral density falls on the calibration curve. Of course, the settings of the spectrum analyzer as well as the photodetector must be exactly the same as the ones used for the calibration process. Since the quantum noise 
+its power spectral density falls on the calibration curve. This verification was done for both lasers used in the experiment, the pump and the probe, and both of them were found to be at the standard quantum limit ensuring that no classical noise is 
+ introduced in the system.
+
+Of course, the settings of the spectrum analyzer as well as the photodetector must be exactly the same as the ones used for the calibration process. Since the quantum noise 
 is a white noise, the calibration as well as the experiment can be in principle done at any frequency. However, it is convenient to chose an analysis frequency at least in the MHz range to the $1/f$ electronic noise as well as classical noises like vibrations while staying in the photodetector bandwidth of few MHz. These vibrations are mainly due to the vacuum pump connected to the cryostat whose 
-frequency do not exceed hundreds of kilohertz. Further increasing the analysis frequency mean that the photodetector bandwith must be accordingly increased which would result in a reduction of the apparatus gain and thus of the signal to noise ratio.
+frequency do not exceed hundreds of kilohertz. Further increasing the analysis frequency mean that the photodetector bandwidth must be accordingly increased which would result in a reduction of the apparatus gain and thus of the signal to noise ratio.
 To have the best compromise between these constraints, the calibration and the experiment were done at $\SI{1.5}{\mega\hertz}$. 
 
-Using the calibration curve, we verified that both of the lasers used in the experiment are shot noise limited thus ensuring that no classical noise is introduced in the system.
+
  
 
 
-The photodiodes used in this experiment are industrial Thorlabs PDB450A photodiodes with adjustable gain. The latter is set to $10^4$ in order to have a bandwith of $\SI{4}{\mega\hertz}$.
+The photodiodes used in this experiment are industrial Thorlabs PDB450A photodiodes with adjustable gain. The latter is set to $10^4$ in order to have a bandwidth of $\SI{4}{\mega\hertz}$.
 The spectrum analyzer is a RIGOL DSA-815 in zero span mode at $\SI{1.5}{\mega\hertz}$. The resolution bandwidth (RBW) as well as the video bandwidth (VBW) are set to $\SI{100}{\kilo\hertz}$ in order to have a good compromise between the signal to noise ratio and the measurement time.
 The sweep time is set to $\SI{100}{\milli\second}$.
 
@@ -429,25 +437,25 @@ The sweep time is set to $\SI{100}{\milli\second}$.
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{chap_correlation/fig/half_mirror.pdf}
-    \caption{Experimental set up used to measure the correlations between Bogoliubov modes. The red arrow represent the propagation direction of the light.
-    The first real space filtering is done with an adjutable iris diaphragm while the filterings in Fourier space are done with pinholes of diameter $w=\SI{300}{\micro\meter}$ to match the size of the 
-    probe. A motorized beam blocker is placed on each optical path to measure the noise of each beam separately. The focal lenghts of the lenses are chosen to magnify the image so its matches the size of the photodiodes sensors that are $d=\SI{800}{\micro\meter}$ in diameter. The two photodiodes are connected to a spectrum analyzer in zero span mode at $\SI{1.5}{\mega\hertz}$. The resolution bandwidth (RBW) and the video bandwidth (VBW) are set to $\SI{100}{\kilo\hertz}$.}
+    \caption{Experimental set up used to measure the correlations between Bogoliubov modes. The red arrows represent the propagation direction of the light.
+    The first real space filtering is done with an adjustable iris diaphragm while the filtering in Fourier space is done with pinholes of diameter $w=\SI{300}{\micro\meter}$ to match the size of the 
+    probe. A motorized beam blocker is placed on each optical path to measure the noise of each beam separately. The focal lengths of the lenses are chosen to magnify the image so its matches the size of the photodiodes sensors that are $d=\SI{800}{\micro\meter}$ in diameter. The two photodiodes are connected to a spectrum analyzer in zero span mode at $\SI{1.5}{\mega\hertz}$. The resolution bandwidth (RBW) and the video bandwidth (VBW) are set to $\SI{100}{\kilo\hertz}$.}
     \label{fig:set_up_balanced}
 \end{figure}
 
 \subsubsection{Balanced detection}
-Once the polariton fluid is established, we fix the probe wavevector to $k_{pr}=\SI{0.2}{\per\micro\meter}$ and tune the laser frequency to be resonant with the normal branch of the bogoliubov dispersion. The field outgoing the microcavity is then directed to a balanced detection setup, illustrated in \autoref{fig:set_up_balanced}.
+Once the polariton fluid is established, we fix the probe wavevector to $k_{pr}=\SI{0.2}{\per\micro\meter}$ and tune the laser frequency to be resonant with the normal branch of the Bogoliubov dispersion. The field outgoing the microcavity is then directed to a balanced detection setup, illustrated in \autoref{fig:set_up_balanced}.
 To measure the correlations between the Bogoliubov modes, it is essential to isolate the two conjugate modes from each other but also from the pump. 
 
 \bigskip
 
 \indent If the photodiodes collect residual light from the pump, the detection scheme may yield a spurious non-zero correlation even in the absence of the probe. Indeed, although the pump laser generating the mean field is shot-noise limited, the photonic component of the polariton fluid escaping the microcavity is not.
-This excess noise originates from the Kerr effect inside the cavity, which leads to self-phase modulation of the polariton field. As a result, additional intensity and phase fluctuations are introduced in the fluid. If one spatially isolate two region of the fluid, the fluctuations in the mean field will be correlated, leading to a non-zero correlation signal in the balanced detection scheme.
+This excess noise originates from the Kerr effect inside the cavity, which leads to self-phase modulation of the polariton field. As a result, additional intensity and phase fluctuations are introduced in the fluid. If one spatially isolate two regions of the fluid, the fluctuations in the mean field will be correlated, leading to a non-zero correlation signal in the balanced detection scheme.
 However, these correlations do not stem from the nonlinear scattering process under investigation, but rather from the single mode character of the polariton fluid as demonstrated in \cite{a_baas_quantum_degeneracy2006}.
 
 \bigskip
 
-\indent To prevent this, we first proceed to a filtering of the polariton fluid in real space as shown in \autoref{fig:set_up_balanced}. The real space image of the polariton fluid is filtered using a pinhole of diameter $w=\SI{100}{\micro\meter}$, which is the same as the pump beam diameter.
+\indent To prevent this, we first perform a spatial filtering of the polariton fluid in real space, as illustrated in \autoref{fig:set_up_balanced}. The real-space image of the polariton fluid is filtered using an adjustable iris, whose aperture is set to match the diameter of the pump beam.
 The purpose of this filtering is to remove the light coming from the edges of the polariton fluid, which, as explained in the previous chapter, expels polaritons at high momentum and may yield a spurious signal in the detection scheme.
 The filtered image is then left to propagate, allowing the Bogoliubov signals at $k_{\mathrm{pr}}$ and $-k_{\mathrm{pr}}$, as well as the mean field at $k = 0$, to become spatially separated in the far field.
  Then, a half mirror is used to split the light into two paths as shown in \autoref{fig:set_up_balanced}.
@@ -458,7 +466,7 @@ the top and bottom halves belong to two different paths of the balanced detectio
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{chap_correlation/fig/mosaic_4wm.pdf}
-    \caption{\textbf{Fourier plane of the field with two probe beams injected in the system}. The two beams are injected at $k_{pr}=(0.2,0)$ and $k_{pr}=(0,0.2)$. The red dashed circle represent the conjuagte mode along the $y$-axis and the yellow dashed circles the modes along the $x$-direction. The half mirror is rotated by 45° to separate the top left and right bottom part of the field
+    \caption{\textbf{Fourier plane of the field with two probe beams injected in the system}. The two beams are injected at $k_{pr}=(0.2,0)$ and $k_{pr}=(0,0.2)$. The red dashed circle represent the conjugate mode along the $y$-axis and the yellow dashed circles the modes along the $x$-direction. The half mirror is rotated by 45° to separate the top left and right bottom part of the field
     which is represented by the purple dashed line. The pinholes are placed in the Fourier plane at the appropriate wavevector to measure the correlations between two conjugate modes or between two modes that are not conjugate.}
     \label{fig:sanity_check}
 \end{figure}
@@ -470,11 +478,11 @@ four wave mixing processes. Both of them come from the same laser : one has a no
 Each of the two probe beams generates its own conjugate mode at its respective opposite wavevector as shown in \autoref{fig:sanity_check}. 
 One can notice that the modes along the $y$-axis are less intense than these along $x$ despite the input size and intensity of the two beam is the same. This once again supports the idea that the emission efficiency in one mode or the other is $k$-dependent. 
 
-The verification consists in measuring the correlations between two conjuagte modes and compare it to the correlation between two modes that are not.
+The verification consists in measuring the correlations between two conjugate modes and compare it to the correlation between two modes that are independent.
 If the measurement is dominated by pump contributions one should measure the same result for both cases. To do so, we rotate the half mirror by 45° around its normal axis in order to separate the top left part of the field from the bottom right part and send them to the two optical paths. The separation is explicited
 by the diagonal purple dashed line in \autoref{fig:sanity_check}. Then, depending on which couple we want to measure the correlations, we place the pinholes in the Fourier plane at the appropriate wavevector.
 The results are shown in \autoref{fig:noise_comparison}. The panel \textbf{a)} displays the PSD of the photocurrent difference for the two conjugate modes $k_x$ and $k_x^*$ while \textbf{b)} shows the same measurement for the two modes $k_y$ and $k_y^*$. 
-A simple way to infer if the beams are correlated is to compare the difference PSD to the sum of the individual PSDs as if they were not correlated. As visible, in the first case \textbf{a)}, the difference PSD is below the sum of the individual PSDs, which indicates that the two modes are correlated. In contrast, in the second case \textbf{b)}, the difference PSD is superimposed to the sum of the individual PSDs, which indicates that the two modes are not correlated. 
+A simple way to infer if the beams are correlated is to compare the difference PSD to the sum of the individual PSDs. From \autoref{eq:diff_psd2} on can see that these two quantities are equal in the absence of correlation ie when $C=0$. As visible, in the first case \textbf{a)}, the difference PSD is below the sum of the individual PSDs, which indicates that the two modes are correlated. In contrast, in the second case \textbf{b)}, the difference PSD is superimposed to the sum of the individual PSDs, which indicates that the two modes are not correlated. 
 
 More precisely, we measure a correlation coefficient $C_{k_x,k_x^*}=0.11\pm{0.01}$ for the first case and $C_{k_x,k_y^*}=0.01\pm{0.005}$ for the second one. The error bars are estimated from the standard deviation of the PSDs over the swipe time of the spectrum analyzer.
 This result confirms that modes originating from the same four wave mixing process are correlated while modes originating from different processes are not and that the measurement is 
@@ -485,7 +493,7 @@ not dominated mean field contributions.
     \centering
     \includegraphics[width=1\textwidth]{chap_correlation/fig/noise_comparison.pdf}
     \caption{Sanity check correlation measurement. \textbf{a)} Power spectral density of the photocurrent difference for two conjugate modes $k_x$ and $k_x*$. \textbf{b)} Power spectral density of the photocurrent difference for two modes that are not conjuated $k_x$ and $k_y^*$. To smooth 
-    the date is noise is averaged on 10 sweeps of the spectrum analyzer. In both panels, the red dashed line represents the sum of the two individual photocurrent power spectral density as if they were not correlated. The black dashed line is the dark electronic noise of the apparatus.} 
+    the data, the noise is averaged on 10 sweeps of the spectrum analyzer. In both panels, the red dashed line represents the sum of the two individual photocurrent PSD measured independently. The black dashed line is the dark electronic noise of the apparatus.} 
     \label{fig:noise_comparison}
 \end{figure}
 
@@ -494,10 +502,10 @@ not dominated mean field contributions.
 \subsubsection{Correlations measurement}
 \label{sec:exp_corr_measurement}
 
-The previous section showed that the efficiency of the emission in a given mode appear to be $k$-dependent. As a consequence, studying correlations for different probe wavevectors might not be the best way to investigate the Bogoliubov modes correlations.
+The previous section showed that the efficiency of the emission in a given mode appears to be $k$-dependent. As a consequence, studying correlations for different probe wavevectors might not be the best way to investigate the Bogoliubov modes correlations.
 Instead, we propose to focus on the correlations as a function of the operating point of the polariton fluid on the higher branch of the bistability loop. 
 
-To do so, we fix the probe wavevector to $k_{pr}=(0\,\ \SI{0.2}{\per\micro\meter})$ and set the pump intensity to operate on the high density branch of the hysteresis curve. Then the pump power is ramped down toward the turning point of the bistability loop.
+To do so, we fix the probe wavevector to $k_{pr}=(0\ ,\ \SI{0.2}{\per\micro\meter})$ and set the pump intensity to operate on the high density branch of the hysteresis curve. Then the pump power is ramped down toward the turning point of the bistability loop.
 In terms of collective excitation, the system goes from a parabolic gapped dispersion to a linear gapless one as explained in \autoref{chap:generation_transonic_fluid}.
 
 
@@ -514,8 +522,9 @@ In terms of collective excitation, the system goes from a parabolic gapped dispe
 At each pump power, the probe frequency is tuned to stay resonant with the normal branch Bogoliubov mode at $k_{pr}$. The correlations between the two conjuate mode are then measured the same way as in the previous section. 
 We start by analyzing the noise of each mode based on \autoref{fig:noises_vs_bistab}. The first plot in \autoref{fig:noises_vs_bistab}~\textbf{a)} shows the bistability loop of the polariton fluid under investigation. 
 The measurement of the individual noises is displayed in \autoref{fig:noises_vs_bistab}~\textbf{b)}. The normal branch mode is much more noisy than its conjugate counterpart. This is mainly due to the power unbalance between the two modes. To compare them 
-on the same scale we normalize their excess noise to their respective shot noise calculated from the calibration curve of \autoref{fig:noise_vs_optical_power} and plot the result in \autoref{fig:noises_vs_bistab}~\textbf{c)}. The normalized excess noise are labelled $S_{k_{pr},-k_{pr}}^*$ for the sake of clarity. Both exhibit excess noise due to nonlinear interactions \cite{a_baas_quantum_degeneracy2006}. Then the noises increase significantly when the system
-approaches the turning point. This is a typical feature of critical points and phase transitions in physical systems. For example, such behavior is very similiar to what happen in an OPO configuration just below threhold \cite{Zhang:06} : the amplitude quadrature of the signal and idler drastiscally increase in a correlated way
+on the same scale we normalize their excess noise to their respective shot noise calculated from the calibration curve of \autoref{fig:calibration} and plot the result in \autoref{fig:noises_vs_bistab}~\textbf{c)}. The normalized excess noise are labelled $S_{k_{pr},-k_{pr}}^*$ for the sake of clarity. Both exhibit excess noise due to nonlinear interactions \cite{a_baas_quantum_degeneracy2006}. Then the noises increase significantly when the system
+approaches the turning point. This is a typical feature of critical points and phase transitions in physical systems. For example, such behavior is closely analogous to what occurs in an optical parametric oscillator (OPO) configuration just below threshold
+\cite{Zhang:06} : the amplitude quadrature of the signal and idler drastically increase in a correlated way
 leading to the formation of two modes squeezed state. 
 
 \bigskip
@@ -523,16 +532,17 @@ leading to the formation of two modes squeezed state.
 
 In a second time we measure the noise of the difference photocurrent and compute the corresponding correlation in \autoref{fig:c_vs_bistab}. In order to easily see the evolution of the correlations, we also plot the sum of the individual noises as if they were not correlated like we did previously. When the system is far from the turning point and is not even bistable, the difference PSD is almost superimposed to the sum of the individual PSDs which, as shown in \autoref{fig:c_vs_bistab}. This behavior indicates a low correlation between the two modes ($C_{k_{pr},-k_{pr}}\approx0.02$).
 When the system gets closer to the turning point, the difference PSD becomes lower than the sum of the individual PSDs and the correlation increases to reach a maximum value of $C_{k_{pr},-k_{pr}}=0.61\pm0.05$ near the turning point. It is likely that the correlations would further increase if we were able to operate even closer to the turning point. However, this is not possible in practice because at this point the system becomes
-unstable and any fluctuation makes the system falls back to the low density branch of the bistability loop.
+unstable and any fluctuation makes the system fall back to the low density branch of the bistability loop.
 
 Furthermore, if we refer 
 to the ideal linear amplifier model \cite{boyd_nl_optics}, increasing the amount of nonlinearity in order to increase the gain of the four wave mixing process should in principle enhance the correlations as well. In a polariton
-system, this can be achieved by increasing the detuning $\delta$ between the pump laser and the polariton resonance. However, this imply high pump laser power to remain in the bistable regime and, up to a certain point, the laser starts to heat the sample which in turn results in a reduction of the non linearity and thus of the correlations \cite{romanelli_4wm_2007}.
+system, this can be achieved by increasing the detuning $\delta$ between the pump laser and the polariton resonance. However, this implies high pump laser power to remain in the bistable regime and, up to a certain point, the laser starts to heat the sample which in turn results in a reduction of the nonlinearity and thus of the correlations \cite{romanelli_4wm_2007}.
 
 
-To finish with, one could think that balancing the signals by attenuating the normal branch mode would allow to increase the correlations. In fact the work \cite{Romanelli:04} showed that rather than balaning the beam intensities, correlations could 
-be enhanced by balancing the individual noises of the two modes. However, in our case the two intensities and two individiual noises differ by a factor 10 and 7 respectively. In any case such an attenuation
-introduce too much losses on the normal branch mode and makes its intensity statistic tend to a poissonian distribution which suppresses the correlations at the same time.
+Finally, one might consider that balancing the signals by attenuating the mode on the normal branch could enhance the observed correlations.
+ In fact the work \cite{Romanelli:04} showed that rather than balancing the beam intensities, correlations could 
+be enhanced by balancing the individual noises of the two modes. However, in our case the two intensities and two individiual noises differ by a factor 10 and 7 respectively. In any case, such attenuation introduces excessive losses on the normal branch mode and causes its intensity statistics to approach a Poissonian distribution, thereby suppressing the correlations.
+In any case, such attenuation introduces excessive losses on the normal branch mode and causes its intensity statistics to approach a Poissonian distribution, thereby suppressing the correlations.
 
 
 
@@ -542,7 +552,7 @@ introduce too much losses on the normal branch mode and makes its intensity stat
     \centering
     \includegraphics[width=1\textwidth]{chap_correlation/fig/correlation_vs_bistab.pdf}
     \caption{Correlations between Bogoliubov modes as a function of the pump power. 
-    \textbf{a)} Measurement of the difference photocurrent noise. The latter is represented by the purple dots while the red dots indicates the sum of the individual noises as if they were not correlated. \textbf{b)} Correlation coefficient $C_{k_{pr},-k_{pr}}$ between the two conjugate modes as a function of the pump power.}
+    \textbf{a)} Measurement of the difference photocurrent noise. The latter is represented by the purple dots while the red dots indicates the sum of the individual noises measured independently. \textbf{b)} Correlation coefficient $C_{k_{pr},-k_{pr}}$ between the two conjugate modes as a function of the pump power.}
     \label{fig:c_vs_bistab}
 \end{figure}
 
@@ -553,7 +563,7 @@ In this chapter, we have investigated the correlations between Bogoliubov modes 
 
 We first validated the experimental setup by ensuring that the lasers used in the experiment were shot-noise limited and that the balanced detection scheme was capable of isolating quantum correlations from classical noise. An experiment check confirmed that the measured correlations were indeed due to the nonlinear scattering process and not dominated by residual pump contributions or single-mode effects.
 
-The analysis of the Bogoliubov coefficients revealed that the emission in the normal and ghost branches becomes balanced at low wavevectors, despited showing an asymmetry suggesting a $k$-depence in the emission efficiency. Furthermore, we observed that the correlations increase significantly as the system approaches the turning point of the bistability loop, where the four-wave mixing process is the most efficient. This behavior highlights the critical role of the bistable regime in amplifying quantum correlations.
+The analysis of the Bogoliubov coefficients revealed that the emission in the normal and ghost branches becomes balanced at low wavevectors, despite showing an asymmetry suggesting a $k$-depence in the emission efficiency. Furthermore, we observed that the correlations increase significantly as the system approaches the turning point of the bistability loop, where the four-wave mixing process is the most efficient. This behavior highlights the critical role of the bistable regime in amplifying quantum correlations.
 
 The maximum correlation coefficient measured was $C_{k_{pr},-k_{pr}} = 0.61 \pm 0.05$, achieved near the turning point of the bistability loop. This result demonstrates the potential of polariton systems for generating strongly correlated quantum states, which could be further optimized by operating closer to the turning point or by tuning the system parameters to enhance the nonlinear gain.
 

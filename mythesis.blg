@@ -53,51 +53,52 @@ Warning--empty year in Recati_acousticHR_2009
 Warning--empty year in rousseaux_observation_2008
 Warning--empty year in steinhauer_observation_2016
 Warning--empty year in stepanov_dispersion_2019
+Warning--empty year in unruh_!notes_1976
 Warning--empty year in unruh_universality_2005
 Warning--empty year in Utsunomiya_fluidlightexp_2008
 Warning--empty year in weinfurtner_measurement_2011
 Warning--missing publisher in weisbuch_microcavities_1996
 Warning--empty year in zeldovich__1970
 Warning--empty title in zeldovich__1970
-You've used 84 entries,
+You've used 83 entries,
             3379 wiz_defined-function locations,
-            1220 strings with 23897 characters,
-and the built_in function-call counts, 102653 in all, are:
-= -- 9745
-> -- 3769
-< -- 360
-+ -- 3556
-- -- 1082
-* -- 7617
-:= -- 10436
-add.period$ -- 263
-call.type$ -- 84
-change.case$ -- 723
-chr.to.int$ -- 85
+            1214 strings with 23748 characters,
+and the built_in function-call counts, 101328 in all, are:
+= -- 9572
+> -- 3755
+< -- 358
++ -- 3542
+- -- 1078
+* -- 7553
+:= -- 10318
+add.period$ -- 260
+call.type$ -- 83
+change.case$ -- 717
+chr.to.int$ -- 84
 cite$ -- 127
-duplicate$ -- 9723
-empty$ -- 6282
-format.name$ -- 1891
-if$ -- 20346
-int.to.chr$ -- 4
+duplicate$ -- 9573
+empty$ -- 6208
+format.name$ -- 1885
+if$ -- 20071
+int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 952
-newline$ -- 438
-num.names$ -- 332
-pop$ -- 3711
+missing$ -- 943
+newline$ -- 433
+num.names$ -- 328
+pop$ -- 3674
 preamble$ -- 1
-purify$ -- 648
+purify$ -- 643
 quote$ -- 0
-skip$ -- 5868
+skip$ -- 5764
 stack$ -- 0
-substring$ -- 3929
-swap$ -- 7917
-text.length$ -- 360
+substring$ -- 3848
+swap$ -- 7776
+text.length$ -- 358
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 708
-warning$ -- 41
-while$ -- 516
+type$ -- 699
+warning$ -- 42
+while$ -- 508
 width$ -- 0
-write$ -- 1138
-(There were 44 warnings)
+write$ -- 1123
+(There were 45 warnings)
